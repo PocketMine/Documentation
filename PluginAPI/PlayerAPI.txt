@@ -72,7 +72,7 @@ public function getByClientID($clientID)
 	Description:
 		Returns data about a player using a player's ClientID.
 	Parameters:
-		$name = clientID of a user to return data about.
+		$ClientID = clientID of a user to return data about.
 	Return Values: 
 		An array of data about a particular player.
 		
