@@ -37,7 +37,15 @@ public function teleport($name, $target)
 		true = If teleported successfully
 		false = If teleporting failed.
 		
-tppos//
+public function tppos($name, $x, $y, $z)
+	Description:
+		Teleports a player to a specific coordinates
+	Parameters:
+		$name = Name of the person to teleport
+		$x, $y, $z = Coordinates
+	Return Values:
+		true = If successful
+		false = If not successful
 
 public function get($name)
 	Description:
