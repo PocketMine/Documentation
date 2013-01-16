@@ -58,3 +58,35 @@ public function sunset()
 		None
 	Return Values: 
 		None
+		
+public function get($raw = false)
+	Description:
+		Gets the current minecraft time on the server.
+	Parameters:
+		Unknown
+	Return Values:
+		Uncertain
+
+public function add($time)
+	Description:
+		Adds an amount of time to the current server time.
+	Parameters:
+		$time = amount of time to add.
+	Return Values:
+		None
+		
+public function getPhase($time = false)
+	Description:
+		Gets the current phase of the current minecraft time.
+	Parameters:
+		Uncertain.
+	Return Values:
+		day, sunset, night, sunrise
+		
+public function set($time)
+	Description:
+		Sets the server time to a specic time
+	Parameters:
+		$time = Time to set
+	Return Values:
+		None.
