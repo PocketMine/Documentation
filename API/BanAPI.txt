@@ -75,3 +75,30 @@ public function reload()
 		None
 	Return Values:
 		None
+		
+public function isIPBanned($ip)
+	Description:
+		Checks if a player is IPBanned
+	Parameters:
+		$ip = ip of a player to check for ban
+	Return Values
+		true = if banned
+		false = if not banned
+
+public function isBanned($username)
+	Description:
+		Checks if a player Banned
+	Parameters:
+		$username = username of a player to check for ban
+	Return Values
+		true = Banned
+		false = Not banned
+		
+public function inWhitelist($username)
+	Description:
+		Checks if a player Whitelisted
+	Parameters:
+		$username = username of a player to check for whitelist
+	Return Values
+		true = Whitelisted
+		false = Not Whitelisted
