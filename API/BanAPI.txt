@@ -58,3 +58,20 @@ public function pardonIP($ip)
 		$ip = ip to pardon
 	Return Values:
 		None
+		
+public function kick($username, $reason)
+	Description:
+		Kicks a person out of the server
+	Parameters:
+		$username = username of a player to kick
+		$reason = reason for kicking the player
+	Return Values:
+		None
+
+public function reload()
+	Description:
+		Reloads the ban configuration files
+	Parameters:
+		None
+	Return Values:
+		None
