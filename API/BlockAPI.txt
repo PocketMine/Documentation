@@ -23,18 +23,63 @@ the Free Software Foundation, either version 3 of the License, or
 #
 #BlokAPI Function Documentation.
 #
-#Version Alpha
-#Revision Alpha
+#Version 2
+#Revision 1
 
-public function blockBreak($data, $event)
+define("BLOCK_UPDATE_NORMAL", 0);
+define("BLOCK_UPDATE_RANDOM", 1);
+define("BLOCK_UPDATE_SCHEDULED", 2);
+define("BLOCK_UPDATE_WEAK", 3);
+
+public static function get($id, $meta = 0, $v = false)
 	Description:
-		Breajs a block on the map.
-	Parameters:
-		$name = Array of
-			$data["x"] = x coordinate
-			$data["y"] = y coordinate
-			$data["z"] = z coordinate
-		$event //
-	Return Values: 
-		true = If the block is unbreakable
 		
+
+public static function getItem($id, $meta = 0, $count = 1)
+	Description:
+		
+
+public function setBlock($block, $id, $meta, $update = true, $tiles = false)
+
+public function getBlock($x, $y = 0, $z = 0)
+
+public function getBlockFace(Block $block, $face)
+
+public function playerBlockBreak(Player $player, Vector3 $vector)
+
+public function drop($x, $y, $z, $block, $meta, $stack = 1)
+
+public function playerBlockAction(Player $player, Vector3 $vector, $face, $fx, $fy, $fz)
+
+public function blockScheduler($data)
+
+public function updateBlockRemote($data, $event)
+	Description:
+		Does a BLOCK_UPDATE_RANDOM block update to a specific block
+	Parameters:
+		$x, $y, $z = Coordinates.
+		$event = Must be block.update
+	Return Values:
+		None
+
+public function flowLavaOn($source, $face)
+
+public function flowWaterOn($source, $face, &$spread = null)
+
+public function updateBlock($x, $y, $z, $type = BLOCK_UPDATE_NORMAL)
+	Description:
+		Updates a single block.
+	Parameters:
+		$x, $y, $z = Coordinates. Center of a 3x3 cube
+		$type = Type of Block Update. See the Define at the top
+	Return Values:
+		None
+
+public function updateBlocksAround($x, $y, $z, $type)
+	Description:
+		Updates blocks around in a 3x3 cube
+	Parameters:
+		$x, $y, $z = Coordinates. Center of a 3x3 cube
+		$type = Type of Block Update. See the Define at the top. Defaults to Normal Update
+	Return Values:
+		None
