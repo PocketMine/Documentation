@@ -24,8 +24,8 @@ the Free Software Foundation, either version 3 of the License, or
 #
 #PlayerAPI Function Documentation.
 #
-#Version Alpha
-#Revision Alpha
+#Version 1
+#Revision 1.0.0
 
 public function teleport($name, $target)
 	Description:

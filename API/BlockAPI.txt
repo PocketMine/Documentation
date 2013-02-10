@@ -23,8 +23,8 @@ the Free Software Foundation, either version 3 of the License, or
 #
 #BlokAPI Function Documentation.
 #
-#Version 2
-#Revision 1
+#Version 1
+#Revision 2.0.0
 
 define("BLOCK_UPDATE_NORMAL", 0);
 define("BLOCK_UPDATE_RANDOM", 1);

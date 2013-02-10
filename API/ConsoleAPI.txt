@@ -24,8 +24,8 @@ the Free Software Foundation, either version 3 of the License, or
 #
 #ConsoleAPI Function Documentation.
 #
-#Version Alpha
-#Revision Alpha
+#Version 1
+#Revision 1.0.0
 
 public function run($line = "")
 	Description:
