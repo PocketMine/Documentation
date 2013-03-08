@@ -27,6 +27,15 @@ the Free Software Foundation, either version 3 of the License, or
 #Version 1
 #Revision 1.0.0
 
+public function isOp($username)
+	Description:
+		Checks if a user is an OP
+	Parameters:
+		$username = username to check
+	Return Values:
+		TRUE if OP
+		FALSE if else
+
 public function ban($username)
 	Description:
 		Bans a username
