@@ -1,4 +1,4 @@
-
+```
            -
          /   \
       /         \
@@ -18,16 +18,7 @@ This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
-
-#Authored By: shoghicp
-#Author's Email: sekjun9878@gmail.com
-#
-#BanAPI Function Documentation.
-#
-#Version 1
-#Revision 1.0.0
-#
-#This article is a copy from gist. This needs cleaning up. If you can, please clean up and send a pull request.
+```
 
 * **Some event data has been ommited, due to future deletion or redundancy**
 * Please check PocketMine source code for additional information.
