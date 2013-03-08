@@ -34,6 +34,16 @@ public function broadcast($message)
 	Return Values:
 		None
 
+public function sendTo($owner, $text, $player)
+	Description:
+		Sends a message to a specific player
+	Parameters:
+		$owner = Owner of the message
+		$text = The Actual text to send
+		$player = The Player to send the message to
+	Return Values:
+		None
+
 public function send($owner, $text, $whitelist = false, $blacklist = false)
 	Description:
 		Sends a message to every player on the server but specifying who sent the message
