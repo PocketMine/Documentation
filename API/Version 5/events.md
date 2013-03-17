@@ -85,5 +85,9 @@ the Free Software Foundation, either version 3 of the License, or
 * *Sent when a player tries to place a block, after place checks*
 * `array(player => object Player, block => object Block, target => object Block, item => object Item)`
 
+#### player.container.slot
+* *Sent when a player tries to update a container slot*
+* `array(player => object Player, tile => object Tile, slot => int Slot ID, slotdata => object Item, itemdata => object Item)`
+
 
 ## PocketMine-MP Events

@@ -24,8 +24,8 @@ the Free Software Foundation, either version 3 of the License, or
 #
 #BanAPI Function Documentation.
 #
-#Version 1
-#Revision 1.0.0
+#Version 4
+#Revision 1.1.0
 
 public function isOp($username)
 	Description:

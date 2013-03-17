@@ -23,7 +23,7 @@ the Free Software Foundation, either version 3 of the License, or
 #
 #BlokAPI Function Documentation.
 #
-#Version 1
+#Version 4
 #Revision 1.0.0
 
 public function broadcast($message)
