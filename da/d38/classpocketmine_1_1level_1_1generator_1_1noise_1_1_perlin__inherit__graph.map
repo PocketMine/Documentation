@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$db/d37/classpocketmine_1_1level_1_1generator_1_1noise_1_1_simplex.html" title="{pocketmine\\level\\generator\\noise\\Simplex\n|# $offsetW\l# $SQRT_3\l# $SQRT_5\l# $F2\l# $G2\l# $G22\l# $F3\l# $G3\l# $F4\l# $G4\l# $G42\l# $G43\l# $G44\l# $grad4\l# $simplex\l|+ __construct()\l+ getNoise3D()\l+ getNoise2D()\l# dot2D()\l# dot3D()\l# dot4D()\l}" alt="" coords="11,550,275,965"/>
+<area shape="rect" id="node2" href="$d8/db5/classpocketmine_1_1level_1_1generator_1_1noise_1_1_generator.html" title="{pocketmine\\level\\generator\\noise\\Generator\n|# $perm\l# $offsetX\l# $offsetY\l# $offsetZ\l# $octaves\l# $frequency\l# $amplitude\l|+ getNoise2D()\l+ getNoise3D()\l+ noise2D()\l+ noise3D()\l+ setOffset()\l+ floor()\l+ fade()\l+ lerp()\l+ grad()\l}" alt="" coords="5,5,280,333"/>
+</map>

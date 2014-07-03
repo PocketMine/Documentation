@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$dd/dba/classpocketmine_1_1tile_1_1_chest.html" title="{pocketmine\\tile\\Chest\n|# $inventory\l# $doubleInventory\l|+ __construct()\l+ saveNBT()\l+ getSize()\l+ getItem()\l+ setItem()\l+ getInventory()\l+ getRealInventory()\l+ isPaired()\l+ getPair()\l+ pairWith()\l+ unpair()\l+ getSpawnCompound()\l# getSlotIndex()\l# checkPairing()\l}" alt="" coords="5,725,168,1053"/>
+<area shape="rect" id="node7" href="$dc/de2/classpocketmine_1_1tile_1_1_sign.html" title="{pocketmine\\tile\\Sign\n||+ __construct()\l+ setText()\l+ getText()\l+ getSpawnCompound()\l}" alt="" coords="192,821,355,958"/>
+<area shape="rect" id="node2" href="$da/d5b/classpocketmine_1_1tile_1_1_tile.html" title="{pocketmine\\tile\\Tile\n|+ SIGN\l+ CHEST\l+ FURNACE\l+ $chunk\l+ $name\l+ $id\l+ $x\l+ $y\l+ $z\l+ $attach\l+ $metadata\l+ $closed\l+ $namedtag\l+ $tileCount\l+ $needUpdate\l# $lastUpdate\l# $server\l|+ __construct()\l+ getID()\l+ saveNBT()\l+ onUpdate()\l+ scheduleUpdate()\l+ __destruct()\l+ close()\l+ getName()\l}" alt="" coords="112,6,248,490"/>
+</map>

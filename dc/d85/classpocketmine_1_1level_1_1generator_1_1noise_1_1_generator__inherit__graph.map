@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$dd/dc3/classpocketmine_1_1level_1_1generator_1_1noise_1_1_perlin.html" title="{pocketmine\\level\\generator\\noise\\Perlin\n|+ $grad3\l|+ __construct()\l+ getNoise3D()\l+ getNoise2D()\l}" alt="" coords="17,381,268,501"/>
+<area shape="rect" id="node5" href="$db/d37/classpocketmine_1_1level_1_1generator_1_1noise_1_1_simplex.html" title="{pocketmine\\level\\generator\\noise\\Simplex\n|# $offsetW\l# $SQRT_3\l# $SQRT_5\l# $F2\l# $G2\l# $G22\l# $F3\l# $G3\l# $F4\l# $G4\l# $G42\l# $G43\l# $G44\l# $grad4\l# $simplex\l|+ __construct()\l+ getNoise3D()\l+ getNoise2D()\l# dot2D()\l# dot3D()\l# dot4D()\l}" alt="" coords="11,550,275,965"/>
+</map>

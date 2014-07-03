@@ -1,0 +1,28 @@
+var classpocketmine_1_1level_1_1generator_1_1_generation_manager =
+[
+    [ "__construct", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a7a1be369a84f31d139f021089c6ece11", null ],
+    [ "closeLevel", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a0ec6ffef8a97587af5933b314a724e26", null ],
+    [ "enqueueChunk", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a881c36adab0d660c7dadfb8fd9bfe551", null ],
+    [ "generateChunk", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a7c1d15f4b33fe4ac615c73831fb29617", null ],
+    [ "getLogger", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a0506d1f19c21ba2efae998b7b5751e06", null ],
+    [ "openLevel", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a8c6054a8ac6d82ed6fd087ad6663e975", null ],
+    [ "readPacket", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a126dbfe21b24a1f5f8b15e53dcb71068", null ],
+    [ "receiveChunk", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#abdd5934a5ce0811c6ac5197e5f0814c2", null ],
+    [ "requestChunk", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a216f69972248a00546df9cb9c75714dc", null ],
+    [ "sendChunk", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#af8575cc11f6da3c87a104e1f3c22c835", null ],
+    [ "socketRead", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a727463d8dd764bb5033a12e2ceb29fc0", null ],
+    [ "$generatedQueue", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a0a194e395a42c08d50190a44797ded7e", null ],
+    [ "$levels", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a1b9d19dc2f9f8723eec4773f730d53f0", null ],
+    [ "$loader", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#aad76f10a295096b84b55f2154899d81b", null ],
+    [ "$logger", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a4ee5bf2bd2605a94862d23de696c4ac2", null ],
+    [ "$needsChunk", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#aa06e55841c42a2dbaeafa5ff841ff63c", null ],
+    [ "$requestQueue", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a96fc036846e11845f6fd4164bd26679d", null ],
+    [ "$shutdown", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#aee7def9f9e54cc395947fb9f4e8385ed", null ],
+    [ "$socket", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a3d45328e52b6cbc64e05910fc5c9b9b3", null ],
+    [ "PACKET_ADD_NAMESPACE", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a4674e67b19f5e4b19e7b8023f9a4acf0", null ],
+    [ "PACKET_CLOSE_LEVEL", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a70507c2615916d01723811fbef339291", null ],
+    [ "PACKET_OPEN_LEVEL", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a997c5b7bdfd0227ca9480ffeef0c2397", null ],
+    [ "PACKET_REQUEST_CHUNK", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a3aa19bd60b1dac0e077c58c6b78cceb1", null ],
+    [ "PACKET_SEND_CHUNK", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#af8696f430d37c6c7c1316f7857f5303d", null ],
+    [ "PACKET_SHUTDOWN", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html#a90b304a6fcc3754f314c8dff36d84fec", null ]
+];

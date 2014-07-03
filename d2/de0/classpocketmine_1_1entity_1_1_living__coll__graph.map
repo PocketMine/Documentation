@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$d2/d3c/classpocketmine_1_1entity_1_1_entity.html" title="{pocketmine\\entity\\Entity\n|+ $passenger\l+ $vehicle\l+ $chunkX\l+ $chunkZ\l+ $chunk\l+ $lastX\l+ $lastY\l+ $lastZ\l+ $motionX\l+ $motionY\land 25 more...+ $entityCount\l+ $needUpdate\l# $hasSpawned\l# $id\l# $age\l# $isStatic\l# $isColliding\l# $inWater\l# $fireProof\l# $spawnTime\l# $gravity\l# $drag\l# $server\l|+ __construct()\l+ saveNBT()\l+ getViewers()\l+ spawnTo()\l+ despawnFrom()\l+ attack()\l+ heal()\l+ getHealth()\l+ setHealth()\l+ getMaxHealth()\land 38 more...# initEntity()\l# checkObstruction()\l# updateFallState()\l# switchLevel()\l# checkBlockCollision()\l}" alt="" coords="5,5,197,715"/>
+<area shape="rect" id="node4" href="$d7/da6/interfacepocketmine_1_1entity_1_1_damageable.html" title="{pocketmine\\entity\\Damageable\n||}" alt="" coords="221,317,424,403"/>
+</map>

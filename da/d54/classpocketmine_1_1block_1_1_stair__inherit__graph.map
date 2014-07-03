@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$d1/d40/classpocketmine_1_1block_1_1_acacia_wood_stairs.html" title="{pocketmine\\block\\AcaciaWoodStairs\n||+ __construct()\l+ getDrops()\l}" alt="" coords="5,1139,240,1242"/>
+<area shape="rect" id="node11" href="$d0/d44/classpocketmine_1_1block_1_1_birch_wood_stairs.html" title="{pocketmine\\block\\BirchWoodStairs\n||+ __construct()\l+ getDrops()\l}" alt="" coords="264,1139,491,1242"/>
+<area shape="rect" id="node13" href="$d1/d79/classpocketmine_1_1block_1_1_brick_stairs.html" title="{pocketmine\\block\\BrickStairs\n||+ __construct()\l}" alt="" coords="515,1148,707,1233"/>
+<area shape="rect" id="node15" href="$de/d87/classpocketmine_1_1block_1_1_cobblestone_stairs.html" title="{pocketmine\\block\\CobblestoneStairs\n||+ __construct()\l}" alt="" coords="731,1148,965,1233"/>
+<area shape="rect" id="node17" href="$df/dad/classpocketmine_1_1block_1_1_dark_oak_wood_stairs.html" title="{pocketmine\\block\\DarkOakWoodStairs\n||+ __construct()\l+ getDrops()\l}" alt="" coords="989,1139,1237,1242"/>
+<area shape="rect" id="node19" href="$dd/dd0/classpocketmine_1_1block_1_1_jungle_wood_stairs.html" title="{pocketmine\\block\\JungleWoodStairs\n||+ __construct()\l+ getDrops()\l}" alt="" coords="1261,1139,1496,1242"/>
+<area shape="rect" id="node21" href="$d4/d84/classpocketmine_1_1block_1_1_nether_brick_stairs.html" title="{pocketmine\\block\\NetherBrickStairs\n||+ __construct()\l}" alt="" coords="1520,1148,1749,1233"/>
+<area shape="rect" id="node23" href="$d5/d34/classpocketmine_1_1block_1_1_quartz_stairs.html" title="{pocketmine\\block\\QuartzStairs\n||+ __construct()\l}" alt="" coords="1773,1148,1973,1233"/>
+<area shape="rect" id="node25" href="$d7/d6a/classpocketmine_1_1block_1_1_sandstone_stairs.html" title="{pocketmine\\block\\SandstoneStairs\n||+ __construct()\l}" alt="" coords="1997,1148,2221,1233"/>
+<area shape="rect" id="node27" href="$d9/d52/classpocketmine_1_1block_1_1_spruce_wood_stairs.html" title="{pocketmine\\block\\SpruceWoodStairs\n||+ __construct()\l+ getDrops()\l}" alt="" coords="2245,1139,2483,1242"/>
+<area shape="rect" id="node29" href="$d9/d64/classpocketmine_1_1block_1_1_stone_brick_stairs.html" title="{pocketmine\\block\\StoneBrickStairs\n||+ __construct()\l}" alt="" coords="2507,1148,2733,1233"/>
+<area shape="rect" id="node31" href="$dd/db1/classpocketmine_1_1block_1_1_wood_stairs.html" title="{pocketmine\\block\\WoodStairs\n||+ __construct()\l+ getBreakTime()\l+ getDrops()\l}" alt="" coords="2757,1131,2952,1251"/>
+<area shape="rect" id="node2" href="$d5/d1b/classpocketmine_1_1block_1_1_transparent.html" title="{pocketmine\\block\\Transparent\n||+ __construct()\l}" alt="" coords="1408,829,1605,915"/>
+<area shape="rect" id="node4" href="$d0/d81/classpocketmine_1_1block_1_1_generic.html" title="{pocketmine\\block\\Generic\n||+ __construct()\l+ place()\l+ isBreakable()\l+ onBreak()\l+ onUpdate()\l+ onActivate()\l}" alt="" coords="1420,609,1593,781"/>
+<area shape="rect" id="node6" href="$d7/d27/classpocketmine_1_1block_1_1_block.html" title="{pocketmine\\block\\Block\n|+ AIR\l+ STONE\l+ GRASS\l+ DIRT\l+ COBBLESTONE\l+ COBBLE\l+ PLANK\l+ PLANKS\l+ WOODEN_PLANK\l+ WOODEN_PLANKS\land 163 more...+ $creative\l+ $list\l# $id\l# $meta\l# $name\l# $breakTime\l# $hardness\l|+ __construct()\l+ getHardness()\l+ getName()\l+ getID()\l+ getDamage()\l+ setDamage()\l+ position()\l+ getDrops()\l+ getBreakTime()\l+ getSide()\land 11 more...+ init()\l+ get()\l}" alt="" coords="1417,6,1596,559"/>
+</map>

@@ -1,0 +1,27 @@
+var classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager =
+[
+    [ "__construct", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a92c60f66abf78365f391123084648323", null ],
+    [ "generateChunk", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a240d03550c2d8971d011b410c46a317d", null ],
+    [ "getBlockDataAt", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#ad206cb0951645d4d6d3e23700ae7a786", null ],
+    [ "getBlockIdAt", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a1f45c94491c14d111201d4380e4a73a8", null ],
+    [ "getChangedChunks", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#add645035f450625abc3f67501d00b97f", null ],
+    [ "getChunk", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a43b916ec4575c2050a568026b94cb7a0", null ],
+    [ "getID", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#af9a2283ee55fff2f4bfd51c93abd5c5a", null ],
+    [ "getSeed", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a7e2b9d0adad52dafcd799c9ffc6baecd", null ],
+    [ "isChunkGenerated", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#afb40db42bf63fefe125ebe281d63e1bf", null ],
+    [ "isChunkPopulated", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a66b3084286d12afbf90dbba75a9139ef", null ],
+    [ "populateChunk", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#afddc25c1b33d5db7d9f59fdf2613c061", null ],
+    [ "requestChunk", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#aaf19e2e1bf0a7900f6f4a4102553161b", null ],
+    [ "setBlockDataAt", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a4932faa9f40457e9f431e22f1d64245f", null ],
+    [ "setBlockIdAt", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#ade63db02936b690117faca49a2c21b57", null ],
+    [ "setChunk", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a808c914bdb51aab40d2803c2854b3a4d", null ],
+    [ "setChunkGenerated", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#af55d231f69eee4cfb4a716d008985977", null ],
+    [ "setChunkPopulated", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a6b44d96fab906e2e5516f499d4184f47", null ],
+    [ "shutdown", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#ad5c6fb593ff4a338422812ebf3c23f37", null ],
+    [ "$chunks", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#aec9881a1947639d3a00ef89763640f8a", null ],
+    [ "$generator", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a550386820303fc8fd3058fa7e00b843f", null ],
+    [ "$levelID", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a247502ea9c95c57fd12ce4b1e663d25e", null ],
+    [ "$manager", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#af8bdb2e2e32c5a35fe75303478ec35e0", null ],
+    [ "$seed", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a2e40cfb8135a8d6a52a19e61c531efc5", null ],
+    [ "$unloadQueue", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a4c23e1e453ea22b8cb99d404eaa381e4", null ]
+];

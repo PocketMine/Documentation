@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$de/d3d/classpocketmine_1_1entity_1_1_creeper.html" title="{pocketmine\\entity\\Creeper\n||}" alt="" coords="5,1181,179,1267"/>
+<area shape="rect" id="node13" href="$d4/d3e/classpocketmine_1_1entity_1_1_enderman.html" title="{pocketmine\\entity\\Enderman\n||}" alt="" coords="203,1181,389,1267"/>
+<area shape="rect" id="node15" href="$d8/d41/classpocketmine_1_1entity_1_1_silverfish.html" title="{pocketmine\\entity\\Silverfish\n||}" alt="" coords="413,1181,595,1267"/>
+<area shape="rect" id="node17" href="$d7/d19/classpocketmine_1_1entity_1_1_skeleton.html" title="{pocketmine\\entity\\Skeleton\n||}" alt="" coords="619,1181,797,1267"/>
+<area shape="rect" id="node19" href="$d8/d2d/classpocketmine_1_1entity_1_1_spider.html" title="{pocketmine\\entity\\Spider\n||}" alt="" coords="821,1181,987,1267"/>
+<area shape="rect" id="node21" href="$d0/da7/classpocketmine_1_1entity_1_1_zombie.html" title="{pocketmine\\entity\\Zombie\n||}" alt="" coords="1011,1181,1181,1267"/>
+<area shape="rect" id="node2" href="$d1/db7/classpocketmine_1_1entity_1_1_creature.html" title="{pocketmine\\entity\\Creature\n||}" alt="" coords="516,915,695,1000"/>
+<area shape="rect" id="node4" href="$df/d0c/classpocketmine_1_1entity_1_1_living.html" title="{pocketmine\\entity\\Living\n|# $gravity\l# $drag\l|# initEntity()\l}" alt="" coords="524,763,687,866"/>
+<area shape="rect" id="node6" href="$d2/d3c/classpocketmine_1_1entity_1_1_entity.html" title="{pocketmine\\entity\\Entity\n|+ $passenger\l+ $vehicle\l+ $chunkX\l+ $chunkZ\l+ $chunk\l+ $lastX\l+ $lastY\l+ $lastZ\l+ $motionX\l+ $motionY\land 25 more...+ $entityCount\l+ $needUpdate\l# $hasSpawned\l# $id\l# $age\l# $isStatic\l# $isColliding\l# $inWater\l# $fireProof\l# $spawnTime\l# $gravity\l# $drag\l# $server\l|+ __construct()\l+ saveNBT()\l+ getViewers()\l+ spawnTo()\l+ despawnFrom()\l+ attack()\l+ heal()\l+ getHealth()\l+ setHealth()\l+ getMaxHealth()\land 38 more...# initEntity()\l# checkObstruction()\l# updateFallState()\l# switchLevel()\l# checkBlockCollision()\l}" alt="" coords="399,5,591,715"/>
+<area shape="rect" id="node8" href="$d7/da6/interfacepocketmine_1_1entity_1_1_damageable.html" title="{pocketmine\\entity\\Damageable\n||}" alt="" coords="615,317,817,403"/>
+<area shape="rect" id="node23" href="$db/d86/classpocketmine_1_1entity_1_1_pig_zombie.html" title="{pocketmine\\entity\\PigZombie\n||}" alt="" coords="1001,1315,1191,1400"/>
+</map>

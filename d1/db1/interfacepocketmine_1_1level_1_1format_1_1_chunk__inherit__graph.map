@@ -1,0 +1,3 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$dc/de8/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_chunk.html" title="{pocketmine\\level\\format\\generic\\BaseChunk\n|# $sections\l# $entities\l# $tiles\l# $biomeIds\l# $biomeColors\l# $level\l# $x\l# $z\l|+ getX()\l+ getZ()\l+ getLevel()\l+ getBlock()\l+ setBlock()\l+ getBlockId()\l+ setBlockId()\l+ getBlockData()\l+ setBlockData()\l+ getBlockSkyLight()\land 22 more...# __construct()\l}" alt="" coords="5,313,283,693"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$df/d5e/classpocketmine_1_1scheduler_1_1_task.html#ae7663c3ff9b6c6948c40ea9581ed9398" title="pocketmine\\scheduler\\Task\\getTaskId" alt="" coords="463,5,705,35"/>
+<area shape="rect" id="node5" href="$df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a3cf7454be9911ea585af23c81846c4f2" title="pocketmine\\scheduler\\AsyncTask\\isFinished" alt="" coords="443,59,725,88"/>
+<area shape="rect" id="node7" href="$df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a62de45ffabf1019c71e14ca0c3b12e54" title="pocketmine\\scheduler\\AsyncTask\\onCompletion" alt="" coords="433,112,735,141"/>
+</map>

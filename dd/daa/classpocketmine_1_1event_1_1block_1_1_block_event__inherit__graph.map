@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html" title="{pocketmine\\event\\block\\BlockBreakEvent\n|+ $handlerList\l# $player\l# $item\l# $instaBreak\l|+ __construct()\l+ getPlayer()\l+ getItem()\l+ getInstaBreak()\l+ setInstaBreak()\l}" alt="" coords="5,334,269,541"/>
+<area shape="rect" id="node7" href="$de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html" title="{pocketmine\\event\\block\\BlockPlaceEvent\n|+ $handlerList\l# $player\l# $item\l# $blockReplace\l# $blockAgainst\l|+ __construct()\l+ getPlayer()\l+ getItem()\l+ getBlockReplaced()\l+ getBlockAgainst()\l}" alt="" coords="293,325,557,549"/>
+<area shape="rect" id="node2" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="200,6,363,143"/>
+</map>

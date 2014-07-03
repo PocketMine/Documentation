@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$d9/d20/classpocketmine_1_1block_1_1_door.html" title="{pocketmine\\block\\Door\n||+ __construct()\l+ onUpdate()\l+ place()\l+ onBreak()\l+ onActivate()\l}" alt="" coords="27,963,181,1117"/>
+<area shape="rect" id="node4" href="$d5/d1b/classpocketmine_1_1block_1_1_transparent.html" title="{pocketmine\\block\\Transparent\n||+ __construct()\l}" alt="" coords="5,829,203,915"/>
+<area shape="rect" id="node6" href="$d0/d81/classpocketmine_1_1block_1_1_generic.html" title="{pocketmine\\block\\Generic\n||+ __construct()\l+ place()\l+ isBreakable()\l+ onBreak()\l+ onUpdate()\l+ onActivate()\l}" alt="" coords="17,609,191,781"/>
+<area shape="rect" id="node8" href="$d7/d27/classpocketmine_1_1block_1_1_block.html" title="{pocketmine\\block\\Block\n|+ AIR\l+ STONE\l+ GRASS\l+ DIRT\l+ COBBLESTONE\l+ COBBLE\l+ PLANK\l+ PLANKS\l+ WOODEN_PLANK\l+ WOODEN_PLANKS\land 163 more...+ $creative\l+ $list\l# $id\l# $meta\l# $name\l# $breakTime\l# $hardness\l|+ __construct()\l+ getHardness()\l+ getName()\l+ getID()\l+ getDamage()\l+ setDamage()\l+ position()\l+ getDrops()\l+ getBreakTime()\l+ getSide()\land 11 more...+ init()\l+ get()\l}" alt="" coords="15,6,193,559"/>
+</map>

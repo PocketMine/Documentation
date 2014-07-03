@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$d6/df1/classpocketmine_1_1command_1_1_command.html#a073c7631b60f7760565da0147a7c85ef" title="pocketmine\\command\\Command\\broadcastCommandMessage" alt="" coords="376,5,763,35"/>
+<area shape="rect" id="node5" href="$d7/d87/classpocketmine_1_1command_1_1defaults_1_1_me_command.html#a013d1266e540b1eb98d612ada8654d76" title="pocketmine\\command\\defaults\\MeCommand\\execute" alt="" coords="404,59,735,88"/>
+<area shape="rect" id="node7" href="$da/d23/classpocketmine_1_1command_1_1defaults_1_1_ban_command.html#a66deff18b9dcbdbf709d68a8c249f16f" title="pocketmine\\command\\defaults\\BanCommand\\execute" alt="" coords="401,112,737,141"/>
+<area shape="rect" id="node9" href="$d5/d3c/classpocketmine_1_1command_1_1defaults_1_1_say_command.html#a9c0da35a72d17c3bfc04da0dc9b7bd6e" title="pocketmine\\command\\defaults\\SayCommand\\execute" alt="" coords="401,165,737,195"/>
+<area shape="rect" id="node11" href="$d7/d4c/classpocketmine_1_1command_1_1defaults_1_1_tell_command.html#abc7ab52cd728fde2465bbaf36805250c" title="pocketmine\\command\\defaults\\TellCommand\\execute" alt="" coords="403,219,736,248"/>
+<area shape="rect" id="node13" href="$dc/dd8/classpocketmine_1_1command_1_1defaults_1_1_deop_command.html#aa675014e6fe1b79f68803ccdb156e438" title="pocketmine\\command\\defaults\\DeopCommand\\execute" alt="" coords="397,272,741,301"/>
+<area shape="rect" id="node15" href="$df/d64/classpocketmine_1_1command_1_1defaults_1_1_op_command.html#accb0972a60ce1d83d1b79cdefa26695c" title="pocketmine\\command\\defaults\\OpCommand\\execute" alt="" coords="404,325,735,355"/>
+<area shape="rect" id="node17" href="$d0/d2f/classpocketmine_1_1command_1_1defaults_1_1_spawnpoint_command.html#ac85d21f18b0e16b0c68d11fffd1abfce" title="pocketmine\\command\\defaults\\SpawnpointCommand\\execute" alt="" coords="379,379,760,408"/>
+<area shape="rect" id="node19" href="$d8/d3e/classpocketmine_1_1command_1_1defaults_1_1_give_command.html#ae534bc7f08639dd58e1c4352bc0a4690" title="pocketmine\\command\\defaults\\GiveCommand\\execute" alt="" coords="399,432,740,461"/>
+<area shape="rect" id="node21" href="$d7/de4/classpocketmine_1_1command_1_1defaults_1_1_gamemode_command.html#ab9bc857fdbb0e8affc63127db3608d15" title="pocketmine\\command\\defaults\\GamemodeCommand\\execute" alt="" coords="379,485,760,515"/>
+<area shape="rect" id="node23" href="$df/d66/classpocketmine_1_1command_1_1defaults_1_1_set_world_spawn_command.html#ae5a37595aa4d031cbea3ef4de479831a" title="pocketmine\\command\\defaults\\SetWorldSpawnCommand\\execute" alt="" coords="365,539,773,568"/>
+<area shape="rect" id="node25" href="$d3/d02/classpocketmine_1_1command_1_1defaults_1_1_teleport_command.html#ae22cb93e0624b0a76caa8d2dc36f32ed" title="pocketmine\\command\\defaults\\TeleportCommand\\execute" alt="" coords="389,592,749,621"/>
+</map>

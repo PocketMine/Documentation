@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$dd/dba/classpocketmine_1_1tile_1_1_chest.html" title="{pocketmine\\tile\\Chest\n|# $inventory\l# $doubleInventory\l|+ __construct()\l+ saveNBT()\l+ getSize()\l+ getItem()\l+ setItem()\l+ getInventory()\l+ getRealInventory()\l+ isPaired()\l+ getPair()\l+ pairWith()\l+ unpair()\l+ getSpawnCompound()\l# getSlotIndex()\l# checkPairing()\l}" alt="" coords="5,173,168,501"/>
+<area shape="rect" id="node5" href="$d7/d7c/classpocketmine_1_1tile_1_1_furnace.html" title="{pocketmine\\tile\\Furnace\n|# $inventory\l|+ __construct()\l+ saveNBT()\l+ getSize()\l+ getItem()\l+ setItem()\l+ getInventory()\l+ onUpdate()\l# getSlotIndex()\l}" alt="" coords="192,234,352,441"/>
+</map>

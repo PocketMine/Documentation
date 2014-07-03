@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$de/dc8/classpocketmine_1_1plugin_1_1_plugin_logger.html#a8f50decce99234ae368b27e1d7b19b9b" title="pocketmine\\plugin\\PluginLogger\\__construct" alt="" coords="347,5,624,35"/>
+<area shape="rect" id="node5" href="$d5/dbf/classpocketmine_1_1plugin_1_1_phar_plugin_loader.html#a985f7c0ace2ec6802539845a794fe438" title="pocketmine\\plugin\\PharPluginLoader\\disablePlugin" alt="" coords="328,59,643,88"/>
+<area shape="rect" id="node7" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#a18d858c73a7983a070c729894529f8f1" title="pocketmine\\plugin\\PluginManager\\disablePlugin" alt="" coords="336,112,635,141"/>
+<area shape="rect" id="node9" href="$d5/dbf/classpocketmine_1_1plugin_1_1_phar_plugin_loader.html#a8edb63dbb6c377f924046478175676c0" title="pocketmine\\plugin\\PharPluginLoader\\enablePlugin" alt="" coords="331,165,640,195"/>
+<area shape="rect" id="node11" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#a09c0b6fc8f7e5ff24c345d874eab9350" title="pocketmine\\plugin\\PluginManager\\enablePlugin" alt="" coords="339,219,632,248"/>
+<area shape="rect" id="node13" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#ad20c63327fabb56c57d577fc7e30725e" title="pocketmine\\plugin\\PluginManager\\isPluginEnabled" alt="" coords="328,272,643,301"/>
+<area shape="rect" id="node15" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#ae9b60788bece074ae0b35205cd0a2a3e" title="pocketmine\\plugin\\PluginManager\\parseYamlCommands" alt="" coords="311,325,660,355"/>
+</map>

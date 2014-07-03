@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$d3/dc3/classpocketmine_1_1event_1_1level_1_1_spawn_change_event.html" title="{pocketmine\\event\\level\\SpawnChangeEvent\n|+ $handlerList\l|+ __construct()\l+ getPreviousSpawn()\l}" alt="" coords="5,326,283,429"/>
+<area shape="rect" id="node2" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="63,6,225,143"/>
+</map>

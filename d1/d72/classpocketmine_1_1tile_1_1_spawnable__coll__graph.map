@@ -1,0 +1,3 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$da/d5b/classpocketmine_1_1tile_1_1_tile.html" title="{pocketmine\\tile\\Tile\n|+ SIGN\l+ CHEST\l+ FURNACE\l+ $chunk\l+ $name\l+ $id\l+ $x\l+ $y\l+ $z\l+ $attach\l+ $metadata\l+ $closed\l+ $namedtag\l+ $tileCount\l+ $needUpdate\l# $lastUpdate\l# $server\l|+ __construct()\l+ getID()\l+ saveNBT()\l+ onUpdate()\l+ scheduleUpdate()\l+ __destruct()\l+ close()\l+ getName()\l}" alt="" coords="27,6,163,490"/>
+</map>

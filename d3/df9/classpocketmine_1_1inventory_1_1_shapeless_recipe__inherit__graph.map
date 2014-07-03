@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$d8/d7b/classpocketmine_1_1inventory_1_1_big_shapeless_recipe.html" title="{pocketmine\\inventory\\BigShapelessRecipe\n||}" alt="" coords="5,395,275,480"/>
+<area shape="rect" id="node7" href="$d5/da2/classpocketmine_1_1inventory_1_1_stonecutter_shapeless_recipe.html" title="{pocketmine\\inventory\\StonecutterShapelessRecipe\n||}" alt="" coords="299,395,616,480"/>
+<area shape="rect" id="node2" href="$d7/d3c/interfacepocketmine_1_1inventory_1_1_recipe.html" title="{pocketmine\\inventory\\Recipe\n||+ getResult()\l+ registerToCraftingManager()\l}" alt="" coords="201,6,396,109"/>
+</map>

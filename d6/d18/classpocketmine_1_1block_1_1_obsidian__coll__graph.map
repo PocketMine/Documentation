@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$d7/d17/classpocketmine_1_1block_1_1_solid.html" title="{pocketmine\\block\\Solid\n||+ __construct()\l}" alt="" coords="16,829,173,915"/>
+<area shape="rect" id="node4" href="$d0/d81/classpocketmine_1_1block_1_1_generic.html" title="{pocketmine\\block\\Generic\n||+ __construct()\l+ place()\l+ isBreakable()\l+ onBreak()\l+ onUpdate()\l+ onActivate()\l}" alt="" coords="8,609,181,781"/>
+<area shape="rect" id="node6" href="$d7/d27/classpocketmine_1_1block_1_1_block.html" title="{pocketmine\\block\\Block\n|+ AIR\l+ STONE\l+ GRASS\l+ DIRT\l+ COBBLESTONE\l+ COBBLE\l+ PLANK\l+ PLANKS\l+ WOODEN_PLANK\l+ WOODEN_PLANKS\land 163 more...+ $creative\l+ $list\l# $id\l# $meta\l# $name\l# $breakTime\l# $hardness\l|+ __construct()\l+ getHardness()\l+ getName()\l+ getID()\l+ getDamage()\l+ setDamage()\l+ position()\l+ getDrops()\l+ getBreakTime()\l+ getSide()\land 11 more...+ init()\l+ get()\l}" alt="" coords="5,6,184,559"/>
+</map>

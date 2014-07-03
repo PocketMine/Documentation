@@ -1,0 +1,28 @@
+var namespacepocketmine_1_1inventory =
+[
+    [ "BaseInventory", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html", null ],
+    [ "BaseTransaction", "db/db5/classpocketmine_1_1inventory_1_1_base_transaction.html", null ],
+    [ "BigShapelessRecipe", "d8/d7b/classpocketmine_1_1inventory_1_1_big_shapeless_recipe.html", null ],
+    [ "ChestInventory", "d3/dd8/classpocketmine_1_1inventory_1_1_chest_inventory.html", null ],
+    [ "ContainerInventory", "dc/d02/classpocketmine_1_1inventory_1_1_container_inventory.html", null ],
+    [ "CraftingInventory", "df/d13/classpocketmine_1_1inventory_1_1_crafting_inventory.html", null ],
+    [ "CraftingManager", "d3/d9f/classpocketmine_1_1inventory_1_1_crafting_manager.html", null ],
+    [ "CraftingTransactionGroup", "d6/d42/classpocketmine_1_1inventory_1_1_crafting_transaction_group.html", null ],
+    [ "CustomInventory", "d3/d01/classpocketmine_1_1inventory_1_1_custom_inventory.html", null ],
+    [ "DoubleChestInventory", "d6/d3e/classpocketmine_1_1inventory_1_1_double_chest_inventory.html", null ],
+    [ "Fuel", "dd/d62/classpocketmine_1_1inventory_1_1_fuel.html", null ],
+    [ "FurnaceInventory", "dc/d34/classpocketmine_1_1inventory_1_1_furnace_inventory.html", null ],
+    [ "FurnaceRecipe", "db/db2/classpocketmine_1_1inventory_1_1_furnace_recipe.html", null ],
+    [ "Inventory", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html", null ],
+    [ "InventoryHolder", "d2/d91/interfacepocketmine_1_1inventory_1_1_inventory_holder.html", null ],
+    [ "InventoryType", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html", null ],
+    [ "PlayerInventory", "dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html", null ],
+    [ "Recipe", "d7/d3c/interfacepocketmine_1_1inventory_1_1_recipe.html", null ],
+    [ "ShapedRecipe", "d7/d21/classpocketmine_1_1inventory_1_1_shaped_recipe.html", null ],
+    [ "ShapelessRecipe", "d6/d74/classpocketmine_1_1inventory_1_1_shapeless_recipe.html", null ],
+    [ "SimpleTransactionGroup", "df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html", null ],
+    [ "SlotType", "d1/d49/classpocketmine_1_1inventory_1_1_slot_type.html", null ],
+    [ "StonecutterShapelessRecipe", "d5/da2/classpocketmine_1_1inventory_1_1_stonecutter_shapeless_recipe.html", null ],
+    [ "Transaction", "d8/d63/interfacepocketmine_1_1inventory_1_1_transaction.html", null ],
+    [ "TransactionGroup", "da/da3/interfacepocketmine_1_1inventory_1_1_transaction_group.html", null ]
+];

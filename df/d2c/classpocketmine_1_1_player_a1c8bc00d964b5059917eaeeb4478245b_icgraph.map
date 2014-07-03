@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$d4/ddf/classpocketmine_1_1entity_1_1_human.html#af4c61f87d778bee7be3b780c661cc968" title="pocketmine\\entity\\Human\\despawnFrom" alt="" coords="281,5,537,35"/>
+<area shape="rect" id="node5" href="$d2/d3c/classpocketmine_1_1entity_1_1_entity.html#ad0e2fe5c3105fd5881967898c2f6b60c" title="pocketmine\\entity\\Entity\\despawnFrom" alt="" coords="285,59,533,88"/>
+<area shape="rect" id="node7" href="$dc/d02/classpocketmine_1_1inventory_1_1_container_inventory.html#a8938f6f72d2e2c069f2385db5ac3c7db" title="pocketmine\\inventory\\ContainerInventory\\onClose" alt="" coords="253,112,565,141"/>
+<area shape="rect" id="node9" href="$dc/d02/classpocketmine_1_1inventory_1_1_container_inventory.html#aea6c5161d4a1c36119440a95beb7c78c" title="pocketmine\\inventory\\ContainerInventory\\onOpen" alt="" coords="255,165,564,195"/>
+<area shape="rect" id="node11" href="$d4/ddf/classpocketmine_1_1entity_1_1_human.html#afa990ecbe7137a0775f24d821595118e" title="pocketmine\\entity\\Human\\spawnTo" alt="" coords="296,219,523,248"/>
+<area shape="rect" id="node13" href="$d5/d1a/classpocketmine_1_1entity_1_1_dropped_item.html#ae2d005f3b93b53a88f15407f4a98f702" title="pocketmine\\entity\\DroppedItem\\spawnTo" alt="" coords="279,272,540,301"/>
+</map>

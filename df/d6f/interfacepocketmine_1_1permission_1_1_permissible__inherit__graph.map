@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html" title="{pocketmine\\permission\\PermissibleBase\n||+ __construct()\l+ isOp()\l+ setOp()\l+ isPermissionSet()\l+ hasPermission()\l+ addAttachment()\l+ removeAttachment()\l+ recalculatePermissions()\l+ clearPermissions()\l+ calculateChildPermissions()\l+ getEffectivePermissions()\l}" alt="" coords="5,379,264,637"/>
+<area shape="rect" id="node2" href="$dd/d17/interfacepocketmine_1_1permission_1_1_server_operator.html" title="{pocketmine\\permission\\ServerOperator\n||+ isOp()\l+ setOp()\l}" alt="" coords="11,6,259,109"/>
+</map>

@@ -1,0 +1,3 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$d5/d41/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_level_provider.html" title="{pocketmine\\level\\format\\generic\\BaseLevelProvider\n|# $level\l# $path\l# $levelData\l|+ __construct()\l+ getPath()\l+ getServer()\l+ getLevel()\l+ getName()\l+ getTime()\l+ setTime()\l+ getSeed()\l+ setSeed()\l+ getSpawn()\l+ setSpawn()\l+ getLevelData()\l+ saveLevelData()\l}" alt="" coords="5,331,325,659"/>
+</map>

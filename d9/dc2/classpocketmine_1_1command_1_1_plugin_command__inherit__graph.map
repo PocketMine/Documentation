@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$d6/df1/classpocketmine_1_1command_1_1_command.html" title="{pocketmine\\command\\Command\n|# $description\l# $usageMessage\l|+ __construct()\l+ execute()\l+ getName()\l+ getPermission()\l+ setPermission()\l+ testPermission()\l+ testPermissionSilent()\l+ getLabel()\l+ setLabel()\l+ register()\land 10 more...+ broadcastCommandMessage()\l}" alt="" coords="5,6,301,282"/>
+<area shape="rect" id="node4" href="$d4/d58/interfacepocketmine_1_1command_1_1_plugin_identifiable_command.html" title="{pocketmine\\command\\PluginIdentifiableCommand\n||+ getPlugin()\l}" alt="" coords="325,101,637,187"/>
+</map>

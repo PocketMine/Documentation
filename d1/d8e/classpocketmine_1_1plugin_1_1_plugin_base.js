@@ -1,0 +1,28 @@
+var classpocketmine_1_1plugin_1_1_plugin_base =
+[
+    [ "getCommand", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#ab3d6a3761a0be785a9dcbb00d319550d", null ],
+    [ "getConfig", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a97e9780b3d4d91a2e47df63c82a00854", null ],
+    [ "getDataFolder", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a7974e729aef35c3c3f3c66370bfe4087", null ],
+    [ "getDescription", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a0f970e341bc2c398d551f74f3ce79b90", null ],
+    [ "getFile", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a7460814b7eb3c4c0498f2c90e31c4534", null ],
+    [ "getLogger", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a12252d8a233f8687aa9c8b850eeec811", null ],
+    [ "getName", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#afbc5a790c40382bb653526de7f199945", null ],
+    [ "getPluginLoader", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#acc33ed17d94c08d8f70e611de1c35c66", null ],
+    [ "getResource", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#ac11ea5fb17ff8771ad6fed452bec07ed", null ],
+    [ "getResources", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a23c8261b78d1bd34b072f54caec6e6d7", null ],
+    [ "getServer", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a38b51366d0bdfc252610eaea9ea2de6b", null ],
+    [ "init", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a97a312dd07402575fd388df5ee044591", null ],
+    [ "isDisabled", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#af503ea4e26ff8a0d660b10f0efe89049", null ],
+    [ "isEnabled", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#aeac6dbec291ce12a94b6be170026181c", null ],
+    [ "isInitialized", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#adcbf29c14d00378e47959afea89395a3", null ],
+    [ "isPhar", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a1964dff217ebb983924c97c38427d409", null ],
+    [ "onCommand", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a8858887f734af3ddc5f38f50a0b1462c", null ],
+    [ "onDisable", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a6257d7f6663608ddbeae784c63991abb", null ],
+    [ "onEnable", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#ae33d8a71e513ca02ea36cefc72748e5a", null ],
+    [ "onLoad", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a3b76eb57b9f97cb5e80c07b8ff5d7659", null ],
+    [ "reloadConfig", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a144e81368da8a3f6cca234f3e5684e53", null ],
+    [ "saveConfig", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a3486eeeecc001c5465174c83bff6a4ec", null ],
+    [ "saveDefaultConfig", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a2d45815644a5b030a532e8c670c88b2b", null ],
+    [ "saveResource", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a9698840614d2d1d714ce32bf7bdf0aa9", null ],
+    [ "setEnabled", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a47fee5efa5041b6a13b4ac9212348a18", null ]
+];

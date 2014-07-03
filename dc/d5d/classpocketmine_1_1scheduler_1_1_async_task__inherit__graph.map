@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$da/d91/classpocketmine_1_1scheduler_1_1_send_usage_task.html" title="{pocketmine\\scheduler\\SendUsageTask\n|+ $endpoint\l+ $data\l|+ __construct()\l+ onRun()\l+ onCompletion()\l}" alt="" coords="5,550,256,687"/>
+<area shape="rect" id="node2" href="$d0/d82/class_threaded.html" title="{Threaded\n||+ chunk()\l+ count()\l+ getTerminationInfo()\l+ isRunning()\l+ isTerminated()\l+ isWaiting()\l+ lock()\l+ merge()\l+ notify()\l+ offsetGet()\land 8 more...}" alt="" coords="56,5,205,264"/>
+</map>

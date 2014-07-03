@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$d7/d7c/classpocketmine_1_1tile_1_1_furnace.html" title="{pocketmine\\tile\\Furnace\n|# $inventory\l|+ __construct()\l+ saveNBT()\l+ getSize()\l+ getItem()\l+ setItem()\l+ getInventory()\l+ onUpdate()\l# getSlotIndex()\l}" alt="" coords="5,539,165,746"/>
+<area shape="rect" id="node5" href="$d7/d8c/classpocketmine_1_1tile_1_1_spawnable.html" title="{pocketmine\\tile\\Spawnable\n||+ spawnTo()\l+ getSpawnCompound()\l+ __construct()\l+ spawnToAll()\l}" alt="" coords="189,574,368,711"/>
+<area shape="rect" id="node7" href="$dd/dba/classpocketmine_1_1tile_1_1_chest.html" title="{pocketmine\\tile\\Chest\n|# $inventory\l# $doubleInventory\l|+ __construct()\l+ saveNBT()\l+ getSize()\l+ getItem()\l+ setItem()\l+ getInventory()\l+ getRealInventory()\l+ isPaired()\l+ getPair()\l+ pairWith()\l+ unpair()\l+ getSpawnCompound()\l# getSlotIndex()\l# checkPairing()\l}" alt="" coords="104,795,267,1123"/>
+<area shape="rect" id="node9" href="$dc/de2/classpocketmine_1_1tile_1_1_sign.html" title="{pocketmine\\tile\\Sign\n||+ __construct()\l+ setText()\l+ getText()\l+ getSpawnCompound()\l}" alt="" coords="291,890,453,1027"/>
+</map>

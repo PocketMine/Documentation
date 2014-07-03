@@ -1,0 +1,25 @@
+var namespacepocketmine =
+[
+    [ "Achievement", "d1/df2/classpocketmine_1_1_achievement.html", null ],
+    [ "IPlayer", "d1/d6e/interfacepocketmine_1_1_i_player.html", null ],
+    [ "OfflinePlayer", "d9/d5f/classpocketmine_1_1_offline_player.html", null ],
+    [ "Player", "df/d2c/classpocketmine_1_1_player.html", null ],
+    [ "Server", "d5/df7/classpocketmine_1_1_server.html", null ],
+    [ "ANSI", "d2/d69/namespacepocketmine.html#adb1e5f962041981753b85ec4c5eb446d", null ],
+    [ "DATA", "d2/d69/namespacepocketmine.html#a268814e41ee29cb07d30df071fb355d0", null ],
+    [ "INT32_MASK", "d2/d69/namespacepocketmine.html#a1db13c30e29ad67767c212c54fd01d2d", null ],
+    [ "PLUGIN_PATH", "d2/d69/namespacepocketmine.html#a2fb4b8af08bdf1389289ee2692a81b76", null ],
+    [ "START_TIME", "d2/d69/namespacepocketmine.html#a7c01d1240e5b45405ae0ca1bcfdf82ac", null ],
+    [ "error_handler", "d2/d69/namespacepocketmine.html#a744c74660bdb89c2269fc8b736438986", null ],
+    [ "getTrace", "d2/d69/namespacepocketmine.html#a5047d6701c03ae0dada392c319d37200", null ],
+    [ "kill", "d2/d69/namespacepocketmine.html#aabf80c0881f8a7aaa0c98999e3485fd3", null ],
+    [ "$errors", "d2/d69/namespacepocketmine.html#a001ef3c241b540294575bf0a51d3b9bc", null ],
+    [ "$logger", "d2/d69/namespacepocketmine.html#a780c61a5a82c808c9b4d4f0b563a9b8d", null ],
+    [ "$opts", "d2/d69/namespacepocketmine.html#a08489b389ace3a0be48cd9082a8dcada", null ],
+    [ "$server", "d2/d69/namespacepocketmine.html#a07412ce0ac4a057ee6fc86e948035395", null ],
+    [ "API_VERSION", "d2/d69/namespacepocketmine.html#a9e9d289a05b674b4102cfbc15edaf7b9", null ],
+    [ "CODENAME", "d2/d69/namespacepocketmine.html#a8bfc1c74c0d47bc845fdc400751ce6de", null ],
+    [ "MINECRAFT_VERSION", "d2/d69/namespacepocketmine.html#a78b5091e98dba26b10cfea96aab808f6", null ],
+    [ "PHP_VERSION", "d2/d69/namespacepocketmine.html#a6b1aeb5a7bfa64d5df23a4bc5a5a2d72", null ],
+    [ "VERSION", "d2/d69/namespacepocketmine.html#aa6f4c39842d245ed4820a3731ddf8ba9", null ]
+];

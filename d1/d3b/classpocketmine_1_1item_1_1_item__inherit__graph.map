@@ -1,0 +1,50 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$dd/dd1/classpocketmine_1_1item_1_1_apple.html" title="{pocketmine\\item\\Apple\n||+ __construct()\l}" alt="" coords="5,703,160,788"/>
+<area shape="rect" id="node5" href="$da/d64/classpocketmine_1_1item_1_1_bed.html" title="{pocketmine\\item\\Bed\n||+ __construct()\l}" alt="" coords="184,703,328,788"/>
+<area shape="rect" id="node7" href="$df/da9/classpocketmine_1_1item_1_1_beetroot_seeds.html" title="{pocketmine\\item\\BeetrootSeeds\n||+ __construct()\l}" alt="" coords="352,703,560,788"/>
+<area shape="rect" id="node9" href="$df/d75/classpocketmine_1_1item_1_1_beetroot_soup.html" title="{pocketmine\\item\\BeetrootSoup\n||+ __construct()\l}" alt="" coords="584,703,784,788"/>
+<area shape="rect" id="node11" href="$d5/d6a/classpocketmine_1_1item_1_1_block.html" title="{pocketmine\\item\\Block\n||+ __construct()\l+ setDamage()\l+ getBlock()\l}" alt="" coords="808,685,963,805"/>
+<area shape="rect" id="node13" href="$db/d8c/classpocketmine_1_1item_1_1_bowl.html" title="{pocketmine\\item\\Bowl\n||+ __construct()\l}" alt="" coords="987,703,1136,788"/>
+<area shape="rect" id="node15" href="$d0/d39/classpocketmine_1_1item_1_1_brick.html" title="{pocketmine\\item\\Brick\n||+ __construct()\l}" alt="" coords="1160,703,1312,788"/>
+<area shape="rect" id="node17" href="$d9/d64/classpocketmine_1_1item_1_1_bucket.html" title="{pocketmine\\item\\Bucket\n||+ __construct()\l+ onActivate()\l}" alt="" coords="1336,694,1499,797"/>
+<area shape="rect" id="node19" href="$df/dfa/classpocketmine_1_1item_1_1_cake.html" title="{pocketmine\\item\\Cake\n||+ __construct()\l}" alt="" coords="1523,703,1675,788"/>
+<area shape="rect" id="node21" href="$d4/d82/classpocketmine_1_1item_1_1_carrot.html" title="{pocketmine\\item\\Carrot\n||+ __construct()\l}" alt="" coords="1699,703,1856,788"/>
+<area shape="rect" id="node23" href="$d6/d5a/classpocketmine_1_1item_1_1_coal.html" title="{pocketmine\\item\\Coal\n||+ __construct()\l}" alt="" coords="1880,703,2029,788"/>
+<area shape="rect" id="node25" href="$d9/da8/classpocketmine_1_1item_1_1_diamond.html" title="{pocketmine\\item\\Diamond\n||+ __construct()\l}" alt="" coords="2053,703,2227,788"/>
+<area shape="rect" id="node27" href="$db/df0/classpocketmine_1_1item_1_1_feather.html" title="{pocketmine\\item\\Feather\n||+ __construct()\l}" alt="" coords="2251,703,2416,788"/>
+<area shape="rect" id="node29" href="$d4/d10/classpocketmine_1_1item_1_1_gold_ingot.html" title="{pocketmine\\item\\GoldIngot\n||+ __construct()\l}" alt="" coords="2440,703,2619,788"/>
+<area shape="rect" id="node31" href="$d0/d2a/classpocketmine_1_1item_1_1_iron_door.html" title="{pocketmine\\item\\IronDoor\n||+ __construct()\l}" alt="" coords="2643,703,2813,788"/>
+<area shape="rect" id="node33" href="$d2/d9c/classpocketmine_1_1item_1_1_iron_ingot.html" title="{pocketmine\\item\\IronIngot\n||+ __construct()\l}" alt="" coords="2837,703,3011,788"/>
+<area shape="rect" id="node35" href="$de/da4/classpocketmine_1_1item_1_1_melon_seeds.html" title="{pocketmine\\item\\MelonSeeds\n||+ __construct()\l}" alt="" coords="3035,703,3229,788"/>
+<area shape="rect" id="node37" href="$dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html" title="{pocketmine\\item\\MushroomStew\n||+ __construct()\l}" alt="" coords="3253,703,3467,788"/>
+<area shape="rect" id="node39" href="$d1/df6/classpocketmine_1_1item_1_1_painting.html" title="{pocketmine\\item\\Painting\n||+ __construct()\l+ onActivate()\l}" alt="" coords="3491,694,3659,797"/>
+<area shape="rect" id="node41" href="$db/d9d/classpocketmine_1_1item_1_1_potato.html" title="{pocketmine\\item\\Potato\n||+ __construct()\l}" alt="" coords="3683,703,3843,788"/>
+<area shape="rect" id="node43" href="$d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html" title="{pocketmine\\item\\PumpkinSeeds\n||+ __construct()\l}" alt="" coords="3867,703,4077,788"/>
+<area shape="rect" id="node45" href="$de/d78/classpocketmine_1_1item_1_1_sign.html" title="{pocketmine\\item\\Sign\n||+ __construct()\l}" alt="" coords="4101,703,4248,788"/>
+<area shape="rect" id="node47" href="$d9/d7d/classpocketmine_1_1item_1_1_spawn_egg.html" title="{pocketmine\\item\\SpawnEgg\n||+ __construct()\l+ onActivate()\l}" alt="" coords="4272,694,4456,797"/>
+<area shape="rect" id="node49" href="$db/db5/classpocketmine_1_1item_1_1_stick.html" title="{pocketmine\\item\\Stick\n||+ __construct()\l}" alt="" coords="4480,703,4632,788"/>
+<area shape="rect" id="node51" href="$da/d01/classpocketmine_1_1item_1_1_sugarcane.html" title="{pocketmine\\item\\Sugarcane\n||+ __construct()\l}" alt="" coords="4656,703,4840,788"/>
+<area shape="rect" id="node53" href="$da/de7/classpocketmine_1_1item_1_1_tool.html" title="{pocketmine\\item\\Tool\n||+ __construct()\l+ useOn()\l+ getMaxDurability()\l+ isPickaxe()\l+ isAxe()\l+ isSword()\l+ isShovel()\l+ isHoe()\l+ isShears()\l+ isTool()\l}" alt="" coords="4864,625,5011,866"/>
+<area shape="rect" id="node95" href="$d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html" title="{pocketmine\\item\\WheatSeeds\n||+ __construct()\l}" alt="" coords="5035,703,5232,788"/>
+<area shape="rect" id="node97" href="$dd/d44/classpocketmine_1_1item_1_1_wooden_door.html" title="{pocketmine\\item\\WoodenDoor\n||+ __construct()\l}" alt="" coords="5256,703,5453,788"/>
+<area shape="rect" id="node55" href="$d5/dbc/classpocketmine_1_1item_1_1_bow.html" title="{pocketmine\\item\\Bow\n||+ __construct()\l}" alt="" coords="2809,924,2956,1009"/>
+<area shape="rect" id="node57" href="$d3/dcb/classpocketmine_1_1item_1_1_diamond_axe.html" title="{pocketmine\\item\\DiamondAxe\n||+ __construct()\l}" alt="" coords="2980,924,3177,1009"/>
+<area shape="rect" id="node59" href="$d7/dbd/classpocketmine_1_1item_1_1_diamond_hoe.html" title="{pocketmine\\item\\DiamondHoe\n||+ __construct()\l}" alt="" coords="3201,924,3399,1009"/>
+<area shape="rect" id="node61" href="$df/d0f/classpocketmine_1_1item_1_1_diamond_pickaxe.html" title="{pocketmine\\item\\DiamondPickaxe\n||+ __construct()\l}" alt="" coords="3423,924,3644,1009"/>
+<area shape="rect" id="node63" href="$d3/da2/classpocketmine_1_1item_1_1_diamond_shovel.html" title="{pocketmine\\item\\DiamondShovel\n||+ __construct()\l}" alt="" coords="3668,924,3881,1009"/>
+<area shape="rect" id="node65" href="$d8/dcd/classpocketmine_1_1item_1_1_diamond_sword.html" title="{pocketmine\\item\\DiamondSword\n||+ __construct()\l}" alt="" coords="3905,924,4116,1009"/>
+<area shape="rect" id="node67" href="$d5/db8/classpocketmine_1_1item_1_1_flint_steel.html" title="{pocketmine\\item\\FlintSteel\n||+ __construct()\l+ onActivate()\l}" alt="" coords="4140,915,4316,1018"/>
+<area shape="rect" id="node69" href="$da/d8f/classpocketmine_1_1item_1_1_gold_axe.html" title="{pocketmine\\item\\GoldAxe\n||+ __construct()\l}" alt="" coords="4340,924,4511,1009"/>
+<area shape="rect" id="node71" href="$d3/d69/classpocketmine_1_1item_1_1_gold_hoe.html" title="{pocketmine\\item\\GoldHoe\n||+ __construct()\l}" alt="" coords="4535,924,4708,1009"/>
+<area shape="rect" id="node73" href="$db/deb/classpocketmine_1_1item_1_1_gold_pickaxe.html" title="{pocketmine\\item\\GoldPickaxe\n||+ __construct()\l}" alt="" coords="4732,924,4927,1009"/>
+<area shape="rect" id="node75" href="$db/d16/classpocketmine_1_1item_1_1_gold_shovel.html" title="{pocketmine\\item\\GoldShovel\n||+ __construct()\l}" alt="" coords="4951,924,5140,1009"/>
+<area shape="rect" id="node77" href="$d4/db7/classpocketmine_1_1item_1_1_gold_sword.html" title="{pocketmine\\item\\GoldSword\n||+ __construct()\l}" alt="" coords="5164,924,5351,1009"/>
+<area shape="rect" id="node79" href="$d0/da0/classpocketmine_1_1item_1_1_iron_axe.html" title="{pocketmine\\item\\IronAxe\n||+ __construct()\l}" alt="" coords="5375,924,5540,1009"/>
+<area shape="rect" id="node81" href="$d9/d07/classpocketmine_1_1item_1_1_iron_hoe.html" title="{pocketmine\\item\\IronHoe\n||+ __construct()\l}" alt="" coords="5564,924,5732,1009"/>
+<area shape="rect" id="node83" href="$da/d73/classpocketmine_1_1item_1_1_iron_pickaxe.html" title="{pocketmine\\item\\IronPickaxe\n||+ __construct()\l}" alt="" coords="5756,924,5945,1009"/>
+<area shape="rect" id="node85" href="$dd/df5/classpocketmine_1_1item_1_1_iron_shovel.html" title="{pocketmine\\item\\IronShovel\n||+ __construct()\l}" alt="" coords="5969,924,6153,1009"/>
+<area shape="rect" id="node87" href="$d9/da3/classpocketmine_1_1item_1_1_iron_sword.html" title="{pocketmine\\item\\IronSword\n||+ __construct()\l}" alt="" coords="6177,924,6359,1009"/>
+<area shape="rect" id="node89" href="$dd/d7b/classpocketmine_1_1item_1_1_shears.html" title="{pocketmine\\item\\Shears\n||+ __construct()\l}" alt="" coords="6383,924,6545,1009"/>
+<area shape="rect" id="node91" href="$d3/dfd/classpocketmine_1_1item_1_1_stone_axe.html" title="{pocketmine\\item\\StoneAxe\n||+ __construct()\l}" alt="" coords="6569,924,6748,1009"/>
+<area shape="rect" id="node93" href="$de/db3/classpocketmine_1_1item_1_1_stone_hoe.html" title="{pocketmine\\item\\StoneHoe\n||+ __construct()\l}" alt="" coords="6772,924,6951,1009"/>
+</map>

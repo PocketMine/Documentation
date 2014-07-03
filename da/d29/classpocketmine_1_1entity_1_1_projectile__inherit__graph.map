@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$d1/d2a/classpocketmine_1_1entity_1_1_arrow.html" title="{pocketmine\\entity\\Arrow\n||}" alt="" coords="5,896,168,981"/>
+<area shape="rect" id="node7" href="$d5/d0e/classpocketmine_1_1entity_1_1_egg.html" title="{pocketmine\\entity\\Egg\n||}" alt="" coords="192,896,344,981"/>
+<area shape="rect" id="node9" href="$d2/d3d/classpocketmine_1_1entity_1_1_ender_pearl.html" title="{pocketmine\\entity\\EnderPearl\n||}" alt="" coords="368,896,560,981"/>
+<area shape="rect" id="node11" href="$db/dc9/classpocketmine_1_1entity_1_1_snowball.html" title="{pocketmine\\entity\\Snowball\n||}" alt="" coords="584,896,765,981"/>
+<area shape="rect" id="node2" href="$d2/d3c/classpocketmine_1_1entity_1_1_entity.html" title="{pocketmine\\entity\\Entity\n|+ $passenger\l+ $vehicle\l+ $chunkX\l+ $chunkZ\l+ $chunk\l+ $lastX\l+ $lastY\l+ $lastZ\l+ $motionX\l+ $motionY\land 25 more...+ $entityCount\l+ $needUpdate\l# $hasSpawned\l# $id\l# $age\l# $isStatic\l# $isColliding\l# $inWater\l# $fireProof\l# $spawnTime\l# $gravity\l# $drag\l# $server\l|+ __construct()\l+ saveNBT()\l+ getViewers()\l+ spawnTo()\l+ despawnFrom()\l+ attack()\l+ heal()\l+ getHealth()\l+ setHealth()\l+ getMaxHealth()\land 38 more...# initEntity()\l# checkObstruction()\l# updateFallState()\l# switchLevel()\l# checkBlockCollision()\l}" alt="" coords="269,5,461,715"/>
+</map>

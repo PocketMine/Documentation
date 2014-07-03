@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$d8/dd0/classpocketmine_1_1command_1_1_remote_console_command_sender.html" title="{pocketmine\\command\\RemoteConsoleCommandSender\n||+ sendMessage()\l+ getMessage()\l+ getName()\l}" alt="" coords="5,515,355,635"/>
+<area shape="rect" id="node2" href="$d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html" title="{pocketmine\\command\\CommandSender\n||+ sendMessage()\l+ getServer()\l+ getName()\l}" alt="" coords="53,5,307,125"/>
+</map>

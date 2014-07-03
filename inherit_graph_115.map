@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$d4/d00/interface_logger.html" title="Logger" alt="" coords="260,32,321,61"/>
+<area shape="rect" id="node3" href="$d9/d4f/interface_attachable_logger.html" title="AttachableLogger" alt="" coords="529,5,652,35"/>
+<area shape="rect" id="node7" href="$d0/d55/class_threaded_logger.html" title="ThreadedLogger" alt="" coords="533,59,648,88"/>
+<area shape="rect" id="node5" href="$de/dc8/classpocketmine_1_1plugin_1_1_plugin_logger.html" title="pocketmine\\plugin\\PluginLogger" alt="" coords="795,5,1000,35"/>
+<area shape="rect" id="node9" href="$d3/db3/class_attachable_threaded_logger.html" title="AttachableThreadedLogger" alt="" coords="809,59,985,88"/>
+<area shape="rect" id="node11" href="$d9/d27/classpocketmine_1_1utils_1_1_main_logger.html" title="pocketmine\\utils\\MainLogger" alt="" coords="1063,59,1249,88"/>
+<area shape="rect" id="node12" href="$d9/d7d/interface_logger_attachment.html" title="LoggerAttachment" alt="" coords="5,379,133,408"/>
+<area shape="rect" id="node14" href="$d2/d6c/class_threaded_logger_attachment.html" title="ThreadedLoggerAttachment" alt="" coords="200,379,381,408"/>
+<area shape="rect" id="node15" href="$d0/d82/class_threaded.html" title="Threaded" alt="" coords="32,325,107,355"/>
+<area shape="rect" id="node17" href="$df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html" title="pocketmine\\scheduler\\AsyncTask" alt="" coords="181,325,400,355"/>
+<area shape="rect" id="node21" href="$d8/d18/class_thread.html" title="Thread" alt="" coords="260,219,321,248"/>
+<area shape="rect" id="node19" href="$da/d91/classpocketmine_1_1scheduler_1_1_send_usage_task.html" title="pocketmine\\scheduler\\SendUsageTask" alt="" coords="465,379,716,408"/>
+<area shape="rect" id="node23" href="$dd/de2/classpocketmine_1_1command_1_1_command_reader.html" title="pocketmine\\command\\CommandReader" alt="" coords="463,112,719,141"/>
+<area shape="rect" id="node25" href="$d6/de7/classpocketmine_1_1level_1_1generator_1_1_generation_thread.html" title="pocketmine\\level\\generator\\GenerationThread" alt="" coords="448,165,733,195"/>
+<area shape="rect" id="node27" href="$d3/d92/classpocketmine_1_1network_1_1rcon_1_1_r_c_o_n_instance.html" title="pocketmine\\network\\rcon\\RCONInstance" alt="" coords="460,219,721,248"/>
+<area shape="rect" id="node29" href="$d1/d8d/classraklib_1_1server_1_1_rak_lib_server.html" title="raklib\\server\\RakLibServer" alt="" coords="503,272,679,301"/>
+<area shape="rect" id="node32" href="$d3/d0a/class_worker.html" title="Worker" alt="" coords="559,325,623,355"/>
+<area shape="rect" id="node34" href="$d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html" title="pocketmine\\scheduler\\AsyncWorker" alt="" coords="781,325,1013,355"/>
+</map>
