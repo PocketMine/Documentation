@@ -87,7 +87,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="../../df/d2c/classpocketmine_1_1_player.html" target="_top" xlink:title="{pocketmine\\Player\n|+ SURVIVAL\l+ CREATIVE\l+ ADVENTURE\l+ SPECTATOR\l+ VIEW\l+ MAX_QUEUE\l+ SURVIVAL_SLOTS\l+ CREATIVE_SLOTS\l+ $spawned\l+ $loggedIn\land 7 more...# $interface\l# $windowCnt\l# $windows\l# $windowIndex\l# $sendIndex\l# $currentTransaction\l# $isCrafting\l# $lastMovement\l# $forceMovement\l# $connected\land 13 more...|+ isBanned()\l+ setBanned()\l+ isWhitelisted()\l+ setWhitelisted()\l+ getPlayer()\l+ getFirstPlayed()\l+ getLastPlayed()\l+ hasPlayedBefore()\l+ spawnTo()\l+ despawnFrom()\land 54 more...# initEntity()\l# getCreativeBlock()\l}">
+<a xlink:href="../../df/d2c/classpocketmine_1_1_player.html" target="_top" xlink:title="{pocketmine\\Player\n|+ SURVIVAL\l+ CREATIVE\l+ ADVENTURE\l+ SPECTATOR\l+ VIEW\l+ MAX_QUEUE\l+ SURVIVAL_SLOTS\l+ CREATIVE_SLOTS\l+ $spawned\l+ $loggedIn\land 7 more...# $interface\l# $windowCnt\l# $windows\l# $windowIndex\l# $sendIndex\l# $currentTransaction\l# $isCrafting\l# $lastMovement\l# $forceMovement\l# $connected\land 13 more...|+ isBanned()\l+ setBanned()\l+ isWhitelisted()\l+ setWhitelisted()\l+ getPlayer()\l+ getFirstPlayed()\l+ getLastPlayed()\l+ hasPlayedBefore()\l+ spawnTo()\l+ despawnFrom()\land 55 more...# initEntity()\l# getCreativeBlock()\l}">
 <polygon fill="white" stroke="black" points="144,-1 144,-467 276,-467 276,-1 144,-1"/>
 <text text-anchor="middle" x="210" y="-454" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\Player</text>
 <polyline fill="none" stroke="black" points="144,-446 276,-446 "/>
@@ -123,7 +123,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="152" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">+ hasPlayedBefore()</text>
 <text text-anchor="start" x="152" y="-48" font-family="Helvetica,sans-Serif" font-size="10.00">+ spawnTo()</text>
 <text text-anchor="start" x="152" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ despawnFrom()</text>
-<text text-anchor="start" x="152" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">and 54 more...# initEntity()</text>
+<text text-anchor="start" x="152" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">and 55 more...# initEntity()</text>
 <text text-anchor="start" x="152" y="-9" font-family="Helvetica,sans-Serif" font-size="10.00"># getCreativeBlock()</text>
 </a>
 </g>

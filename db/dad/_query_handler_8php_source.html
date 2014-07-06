@@ -136,114 +136,115 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00032"></a><a class="code" href="../../dd/dee/classpocketmine_1_1network_1_1query_1_1_query_handler.html">00032</a> <span class="keyword">class </span><a class="code" href="../../dd/dee/classpocketmine_1_1network_1_1query_1_1_query_handler.html">QueryHandler</a>{
 <a name="l00033"></a>00033     <span class="keyword">private</span> $socket, $server, $lastToken, $token, $longData, $timeout;
 <a name="l00034"></a>00034 
-<a name="l00035"></a>00035     <span class="keyword">public</span> <span class="keyword">function</span> __construct(){
-<a name="l00036"></a>00036         $this-&gt;server = Server::getInstance();
-<a name="l00037"></a>00037         $this-&gt;server-&gt;getLogger()-&gt;info(<span class="stringliteral">&quot;Starting GS4 status listener&quot;</span>);
-<a name="l00038"></a>00038         $addr = ($ip = $this-&gt;server-&gt;getIp()) != <span class="stringliteral">&quot;&quot;</span> ? $ip : <span class="stringliteral">&quot;0.0.0.0&quot;</span>;
-<a name="l00039"></a>00039         $port = $this-&gt;server-&gt;getPort();
-<a name="l00040"></a>00040         $this-&gt;server-&gt;getLogger()-&gt;info(<span class="stringliteral">&quot;Setting query port to $port&quot;</span>);
-<a name="l00041"></a>00041         <span class="comment">/*</span>
-<a name="l00042"></a>00042 <span class="comment">        The Query protocol is built on top of the existing Minecraft PE UDP network stack.</span>
-<a name="l00043"></a>00043 <span class="comment">        Because the 0xFE packet does not exist in the MCPE protocol,</span>
-<a name="l00044"></a>00044 <span class="comment">        we can identify Query packets and remove them from the packet queue.</span>
-<a name="l00045"></a>00045 <span class="comment">        </span>
-<a name="l00046"></a>00046 <span class="comment">        Then, the Query class handles itself sending the packets in raw form, because</span>
-<a name="l00047"></a>00047 <span class="comment">        packets can conflict with the MCPE ones.</span>
-<a name="l00048"></a>00048 <span class="comment">        */</span>
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050         $this-&gt;regenerateToken();
-<a name="l00051"></a>00051         $this-&gt;lastToken = $this-&gt;token;
-<a name="l00052"></a>00052         $this-&gt;regenerateInfo();
-<a name="l00053"></a>00053         $this-&gt;server-&gt;getLogger()-&gt;info(<span class="stringliteral">&quot;Query running on $addr:$port&quot;</span>);
-<a name="l00054"></a>00054     }
-<a name="l00055"></a>00055 
-<a name="l00056"></a>00056     <span class="keyword">public</span> <span class="keyword">function</span> regenerateInfo(){
-<a name="l00057"></a>00057         $str = <span class="stringliteral">&quot;&quot;</span>;
-<a name="l00058"></a>00058         $plist = <span class="stringliteral">&quot;PocketMine-MP &quot;</span> . $this-&gt;server-&gt;getPocketMineVersion();
-<a name="l00059"></a>00059         $pl = $this-&gt;server-&gt;getPluginManager()-&gt;getPlugins();
-<a name="l00060"></a>00060         <span class="keywordflow">if</span>(count($pl) &gt; 0){
-<a name="l00061"></a>00061             $plist .= <span class="stringliteral">&quot;:&quot;</span>;
-<a name="l00062"></a>00062             <span class="keywordflow">foreach</span>($pl as $p){
-<a name="l00063"></a>00063                 $d = $p-&gt;getDescription();
-<a name="l00064"></a>00064                 $plist .= <span class="stringliteral">&quot; &quot;</span> . str_replace(array(<span class="stringliteral">&quot;;&quot;</span>, <span class="stringliteral">&quot;:&quot;</span>, <span class="stringliteral">&quot; &quot;</span>), array(<span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;_&quot;</span>), $d-&gt;getName()) . <span class="stringliteral">&quot; &quot;</span> . str_replace(array(<span class="stringliteral">&quot;;&quot;</span>, <span class="stringliteral">&quot;:&quot;</span>, <span class="stringliteral">&quot; &quot;</span>), array(<span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;_&quot;</span>), $d-&gt;getVersion()) . <span class="stringliteral">&quot;;&quot;</span>;
-<a name="l00065"></a>00065             }
-<a name="l00066"></a>00066             $plist = substr($plist, 0, -1);
-<a name="l00067"></a>00067         }
-<a name="l00068"></a>00068         $KVdata = array(
-<a name="l00069"></a>00069             <span class="stringliteral">&quot;splitnum&quot;</span> =&gt; chr(128),
-<a name="l00070"></a>00070             <span class="stringliteral">&quot;hostname&quot;</span> =&gt; $this-&gt;server-&gt;getServerName(),
-<a name="l00071"></a>00071             <span class="stringliteral">&quot;gametype&quot;</span> =&gt; ($this-&gt;server-&gt;getGamemode() &amp; 0x01) === 0 ? <span class="stringliteral">&quot;SMP&quot;</span> : <span class="stringliteral">&quot;CMP&quot;</span>,
-<a name="l00072"></a>00072             <span class="stringliteral">&quot;game_id&quot;</span> =&gt; <span class="stringliteral">&quot;MINECRAFTPE&quot;</span>,
-<a name="l00073"></a>00073             <span class="stringliteral">&quot;version&quot;</span> =&gt; $this-&gt;server-&gt;getVersion(),
-<a name="l00074"></a>00074             <span class="stringliteral">&quot;server_engine&quot;</span> =&gt; $this-&gt;server-&gt;getName() . <span class="stringliteral">&quot; &quot;</span> . $this-&gt;server-&gt;getPocketMineVersion(),
-<a name="l00075"></a>00075             <span class="stringliteral">&quot;plugins&quot;</span> =&gt; $plist,
-<a name="l00076"></a>00076             <span class="stringliteral">&quot;map&quot;</span> =&gt; $this-&gt;server-&gt;getDefaultLevel()-&gt;getName(),
-<a name="l00077"></a>00077             <span class="stringliteral">&quot;numplayers&quot;</span> =&gt; count($this-&gt;server-&gt;getOnlinePlayers()),
-<a name="l00078"></a>00078             <span class="stringliteral">&quot;maxplayers&quot;</span> =&gt; $this-&gt;server-&gt;getMaxPlayers(),
-<a name="l00079"></a>00079             <span class="stringliteral">&quot;whitelist&quot;</span> =&gt; $this-&gt;server-&gt;hasWhitelist() === <span class="keyword">true</span> ? <span class="stringliteral">&quot;on&quot;</span> : <span class="stringliteral">&quot;off&quot;</span>,
-<a name="l00080"></a>00080             <span class="stringliteral">&quot;hostport&quot;</span> =&gt; $this-&gt;server-&gt;getPort()
-<a name="l00081"></a>00081         );
-<a name="l00082"></a>00082         <span class="keywordflow">foreach</span>($KVdata as $key =&gt; $value){
-<a name="l00083"></a>00083             $str .= $key . <span class="stringliteral">&quot;\x00&quot;</span> . $value . <span class="stringliteral">&quot;\x00&quot;</span>;
-<a name="l00084"></a>00084         }
-<a name="l00085"></a>00085         $str .= <span class="stringliteral">&quot;\x00\x01player_\x00\x00&quot;</span>;
-<a name="l00086"></a>00086         <span class="keywordflow">foreach</span>($this-&gt;server-&gt;getOnlinePlayers() as $player){
-<a name="l00087"></a>00087             <span class="keywordflow">if</span>($player-&gt;getName() != <span class="stringliteral">&quot;&quot;</span>){
-<a name="l00088"></a>00088                 $str .= $player-&gt;getName() . <span class="stringliteral">&quot;\x00&quot;</span>;
-<a name="l00089"></a>00089             }
-<a name="l00090"></a>00090         }
-<a name="l00091"></a>00091         $str .= <span class="stringliteral">&quot;\x00&quot;</span>;
-<a name="l00092"></a>00092         $this-&gt;longData = $str;
-<a name="l00093"></a>00093         $this-&gt;timeout = microtime(<span class="keyword">true</span>) + 5;
-<a name="l00094"></a>00094     }
-<a name="l00095"></a>00095 
-<a name="l00096"></a>00096     <span class="keyword">public</span> <span class="keyword">function</span> regenerateToken(){
-<a name="l00097"></a>00097         $this-&gt;lastToken = $this-&gt;token;
-<a name="l00098"></a>00098         $this-&gt;token = Utils::getRandomBytes(16, <span class="keyword">false</span>);
-<a name="l00099"></a>00099     }
-<a name="l00100"></a>00100 
-<a name="l00101"></a>00101     <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> getTokenString($token, $salt){
-<a name="l00102"></a>00102         <span class="keywordflow">return</span> Binary::readInt(substr(hash(<span class="stringliteral">&quot;sha512&quot;</span>, $salt . <span class="stringliteral">&quot;:&quot;</span> . $token, <span class="keyword">true</span>), 7, 4));
-<a name="l00103"></a>00103     }
-<a name="l00104"></a>00104 
-<a name="l00105"></a>00105     <span class="keyword">public</span> <span class="keyword">function</span> handle(<a class="code" href="../../dc/d3a/classpocketmine_1_1network_1_1query_1_1_query_packet.html">QueryPacket</a> $packet){
-<a name="l00106"></a>00106         $packet-&gt;decode();
-<a name="l00107"></a>00107         <span class="keywordflow">switch</span>($packet-&gt;packetType){
-<a name="l00108"></a>00108             <span class="keywordflow">case</span> QueryPacket::HANDSHAKE: <span class="comment">//Handshake</span>
-<a name="l00109"></a>00109                 $pk = <span class="keyword">new</span> <a class="code" href="../../dc/d3a/classpocketmine_1_1network_1_1query_1_1_query_packet.html">QueryPacket</a>;
-<a name="l00110"></a>00110                 $pk-&gt;ip = $packet-&gt;ip;
-<a name="l00111"></a>00111                 $pk-&gt;port = $packet-&gt;port;
-<a name="l00112"></a>00112                 $pk-&gt;packetType = QueryPacket::HANDSHAKE;
-<a name="l00113"></a>00113                 $pk-&gt;sessionID = $packet-&gt;sessionID;
-<a name="l00114"></a>00114                 $pk-&gt;payload = self::getTokenString($this-&gt;token, $packet-&gt;ip) . <span class="stringliteral">&quot;\x00&quot;</span>;
-<a name="l00115"></a>00115                 $pk-&gt;encode();
-<a name="l00116"></a>00116                 $this-&gt;server-&gt;sendPacket($pk);
-<a name="l00117"></a>00117                 <span class="keywordflow">break</span>;
-<a name="l00118"></a>00118             <span class="keywordflow">case</span> QueryPacket::STATISTICS: <span class="comment">//Stat</span>
-<a name="l00119"></a>00119                 $token = Binary::readInt(substr($packet-&gt;payload, 0, 4));
-<a name="l00120"></a>00120                 <span class="keywordflow">if</span>($token !== self::getTokenString($this-&gt;token, $packet-&gt;ip) and $token !== self::getTokenString($this-&gt;lastToken, $packet-&gt;ip)){
-<a name="l00121"></a>00121                     <span class="keywordflow">break</span>;
-<a name="l00122"></a>00122                 }
-<a name="l00123"></a>00123                 $pk = <span class="keyword">new</span> <a class="code" href="../../dc/d3a/classpocketmine_1_1network_1_1query_1_1_query_packet.html">QueryPacket</a>;
-<a name="l00124"></a>00124                 $pk-&gt;ip = $packet-&gt;ip;
-<a name="l00125"></a>00125                 $pk-&gt;port = $packet-&gt;port;
-<a name="l00126"></a>00126                 $pk-&gt;packetType = QueryPacket::STATISTICS;
-<a name="l00127"></a>00127                 $pk-&gt;sessionID = $packet-&gt;sessionID;
-<a name="l00128"></a>00128                 <span class="keywordflow">if</span>(strlen($packet-&gt;payload) === 8){
-<a name="l00129"></a>00129                     <span class="keywordflow">if</span>($this-&gt;timeout &lt; microtime(<span class="keyword">true</span>)){
-<a name="l00130"></a>00130                         $this-&gt;regenerateInfo();
-<a name="l00131"></a>00131                     }
-<a name="l00132"></a>00132                     $pk-&gt;payload = $this-&gt;longData;
-<a name="l00133"></a>00133                 }<span class="keywordflow">else</span>{
-<a name="l00134"></a>00134                     $pk-&gt;payload = $this-&gt;server-&gt;getServerName() . <span class="stringliteral">&quot;\x00&quot;</span> . (($this-&gt;server-&gt;getGamemode() &amp; 0x01) === 0 ? <span class="stringliteral">&quot;SMP&quot;</span> : <span class="stringliteral">&quot;CMP&quot;</span>) . <span class="stringliteral">&quot;\x00&quot;</span> . $this-&gt;server-&gt;getDefaultLevel()-&gt;getName() . <span class="stringliteral">&quot;\x00&quot;</span> . count($this-&gt;server-&gt;getOnlinePlayers()) . <span class="stringliteral">&quot;\x00&quot;</span> . $this-&gt;server-&gt;getMaxPlayers() . <span class="stringliteral">&quot;\x00&quot;</span> . Binary::writeLShort($this-&gt;server-&gt;getPort()) . $this-&gt;server-&gt;getIp() . <span class="stringliteral">&quot;\x00&quot;</span>;
-<a name="l00135"></a>00135                 }
-<a name="l00136"></a>00136                 $pk-&gt;encode();
-<a name="l00137"></a>00137                 $this-&gt;server-&gt;sendPacket($pk);
-<a name="l00138"></a>00138                 <span class="keywordflow">break</span>;
-<a name="l00139"></a>00139         }
-<a name="l00140"></a>00140     }
-<a name="l00141"></a>00141 
-<a name="l00142"></a>00142 }
+<a name="l00035"></a>00035     <span class="keyword">const</span> HANDSHAKE = 9;
+<a name="l00036"></a>00036     <span class="keyword">const</span> STATISTICS = 0;
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038     <span class="keyword">public</span> <span class="keyword">function</span> __construct(){
+<a name="l00039"></a>00039         $this-&gt;server = Server::getInstance();
+<a name="l00040"></a>00040         $this-&gt;server-&gt;getLogger()-&gt;info(<span class="stringliteral">&quot;Starting GS4 status listener&quot;</span>);
+<a name="l00041"></a>00041         $addr = ($ip = $this-&gt;server-&gt;getIp()) != <span class="stringliteral">&quot;&quot;</span> ? $ip : <span class="stringliteral">&quot;0.0.0.0&quot;</span>;
+<a name="l00042"></a>00042         $port = $this-&gt;server-&gt;getPort();
+<a name="l00043"></a>00043         $this-&gt;server-&gt;getLogger()-&gt;info(<span class="stringliteral">&quot;Setting query port to $port&quot;</span>);
+<a name="l00044"></a>00044         <span class="comment">/*</span>
+<a name="l00045"></a>00045 <span class="comment">        The Query protocol is built on top of the existing Minecraft PE UDP network stack.</span>
+<a name="l00046"></a>00046 <span class="comment">        Because the 0xFE packet does not exist in the MCPE protocol,</span>
+<a name="l00047"></a>00047 <span class="comment">        we can identify Query packets and remove them from the packet queue.</span>
+<a name="l00048"></a>00048 <span class="comment">        </span>
+<a name="l00049"></a>00049 <span class="comment">        Then, the Query class handles itself sending the packets in raw form, because</span>
+<a name="l00050"></a>00050 <span class="comment">        packets can conflict with the MCPE ones.</span>
+<a name="l00051"></a>00051 <span class="comment">        */</span>
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053         $this-&gt;regenerateToken();
+<a name="l00054"></a>00054         $this-&gt;lastToken = $this-&gt;token;
+<a name="l00055"></a>00055         $this-&gt;regenerateInfo();
+<a name="l00056"></a>00056         $this-&gt;server-&gt;getLogger()-&gt;info(<span class="stringliteral">&quot;Query running on $addr:$port&quot;</span>);
+<a name="l00057"></a>00057     }
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059     <span class="keyword">public</span> <span class="keyword">function</span> regenerateInfo(){
+<a name="l00060"></a>00060         $str = <span class="stringliteral">&quot;&quot;</span>;
+<a name="l00061"></a>00061         $plist = <span class="stringliteral">&quot;PocketMine-MP &quot;</span> . $this-&gt;server-&gt;getPocketMineVersion();
+<a name="l00062"></a>00062         $pl = $this-&gt;server-&gt;getPluginManager()-&gt;getPlugins();
+<a name="l00063"></a>00063         <span class="keywordflow">if</span>(count($pl) &gt; 0){
+<a name="l00064"></a>00064             $plist .= <span class="stringliteral">&quot;:&quot;</span>;
+<a name="l00065"></a>00065             <span class="keywordflow">foreach</span>($pl as $p){
+<a name="l00066"></a>00066                 $d = $p-&gt;getDescription();
+<a name="l00067"></a>00067                 $plist .= <span class="stringliteral">&quot; &quot;</span> . str_replace(array(<span class="stringliteral">&quot;;&quot;</span>, <span class="stringliteral">&quot;:&quot;</span>, <span class="stringliteral">&quot; &quot;</span>), array(<span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;_&quot;</span>), $d-&gt;getName()) . <span class="stringliteral">&quot; &quot;</span> . str_replace(array(<span class="stringliteral">&quot;;&quot;</span>, <span class="stringliteral">&quot;:&quot;</span>, <span class="stringliteral">&quot; &quot;</span>), array(<span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;_&quot;</span>), $d-&gt;getVersion()) . <span class="stringliteral">&quot;;&quot;</span>;
+<a name="l00068"></a>00068             }
+<a name="l00069"></a>00069             $plist = substr($plist, 0, -1);
+<a name="l00070"></a>00070         }
+<a name="l00071"></a>00071         $KVdata = array(
+<a name="l00072"></a>00072             <span class="stringliteral">&quot;splitnum&quot;</span> =&gt; chr(128),
+<a name="l00073"></a>00073             <span class="stringliteral">&quot;hostname&quot;</span> =&gt; $this-&gt;server-&gt;getServerName(),
+<a name="l00074"></a>00074             <span class="stringliteral">&quot;gametype&quot;</span> =&gt; ($this-&gt;server-&gt;getGamemode() &amp; 0x01) === 0 ? <span class="stringliteral">&quot;SMP&quot;</span> : <span class="stringliteral">&quot;CMP&quot;</span>,
+<a name="l00075"></a>00075             <span class="stringliteral">&quot;game_id&quot;</span> =&gt; <span class="stringliteral">&quot;MINECRAFTPE&quot;</span>,
+<a name="l00076"></a>00076             <span class="stringliteral">&quot;version&quot;</span> =&gt; $this-&gt;server-&gt;getVersion(),
+<a name="l00077"></a>00077             <span class="stringliteral">&quot;server_engine&quot;</span> =&gt; $this-&gt;server-&gt;getName() . <span class="stringliteral">&quot; &quot;</span> . $this-&gt;server-&gt;getPocketMineVersion(),
+<a name="l00078"></a>00078             <span class="stringliteral">&quot;plugins&quot;</span> =&gt; $plist,
+<a name="l00079"></a>00079             <span class="stringliteral">&quot;map&quot;</span> =&gt; $this-&gt;server-&gt;getDefaultLevel()-&gt;getName(),
+<a name="l00080"></a>00080             <span class="stringliteral">&quot;numplayers&quot;</span> =&gt; count($this-&gt;server-&gt;getOnlinePlayers()),
+<a name="l00081"></a>00081             <span class="stringliteral">&quot;maxplayers&quot;</span> =&gt; $this-&gt;server-&gt;getMaxPlayers(),
+<a name="l00082"></a>00082             <span class="stringliteral">&quot;whitelist&quot;</span> =&gt; $this-&gt;server-&gt;hasWhitelist() === <span class="keyword">true</span> ? <span class="stringliteral">&quot;on&quot;</span> : <span class="stringliteral">&quot;off&quot;</span>,
+<a name="l00083"></a>00083             <span class="stringliteral">&quot;hostport&quot;</span> =&gt; $this-&gt;server-&gt;getPort()
+<a name="l00084"></a>00084         );
+<a name="l00085"></a>00085         <span class="keywordflow">foreach</span>($KVdata as $key =&gt; $value){
+<a name="l00086"></a>00086             $str .= $key . <span class="stringliteral">&quot;\x00&quot;</span> . $value . <span class="stringliteral">&quot;\x00&quot;</span>;
+<a name="l00087"></a>00087         }
+<a name="l00088"></a>00088         $str .= <span class="stringliteral">&quot;\x00\x01player_\x00\x00&quot;</span>;
+<a name="l00089"></a>00089         <span class="keywordflow">foreach</span>($this-&gt;server-&gt;getOnlinePlayers() as $player){
+<a name="l00090"></a>00090             <span class="keywordflow">if</span>($player-&gt;getName() != <span class="stringliteral">&quot;&quot;</span>){
+<a name="l00091"></a>00091                 $str .= $player-&gt;getName() . <span class="stringliteral">&quot;\x00&quot;</span>;
+<a name="l00092"></a>00092             }
+<a name="l00093"></a>00093         }
+<a name="l00094"></a>00094         $str .= <span class="stringliteral">&quot;\x00&quot;</span>;
+<a name="l00095"></a>00095         $this-&gt;longData = $str;
+<a name="l00096"></a>00096         $this-&gt;timeout = microtime(<span class="keyword">true</span>) + 5;
+<a name="l00097"></a>00097     }
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099     <span class="keyword">public</span> <span class="keyword">function</span> regenerateToken(){
+<a name="l00100"></a>00100         $this-&gt;lastToken = $this-&gt;token;
+<a name="l00101"></a>00101         $this-&gt;token = Utils::getRandomBytes(16, <span class="keyword">false</span>);
+<a name="l00102"></a>00102     }
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104     <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> getTokenString($token, $salt){
+<a name="l00105"></a>00105         <span class="keywordflow">return</span> Binary::readInt(substr(hash(<span class="stringliteral">&quot;sha512&quot;</span>, $salt . <span class="stringliteral">&quot;:&quot;</span> . $token, <span class="keyword">true</span>), 7, 4));
+<a name="l00106"></a>00106     }
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108     <span class="keyword">public</span> <span class="keyword">function</span> handle($address, $port, $packet){
+<a name="l00109"></a>00109         $offset = 2;
+<a name="l00110"></a>00110         $packetType = ord($packet{$offset++});
+<a name="l00111"></a>00111         $sessionID = Binary::readInt(substr($packet, $offset, 4));
+<a name="l00112"></a>00112         $offset += 4;
+<a name="l00113"></a>00113         $payload = substr($packet, $offset);
+<a name="l00114"></a>00114 
+<a name="l00115"></a>00115         <span class="keywordflow">switch</span>($packetType){
+<a name="l00116"></a>00116             <span class="keywordflow">case</span> self::HANDSHAKE: <span class="comment">//Handshake</span>
+<a name="l00117"></a>00117                 $reply = chr(self::HANDSHAKE);
+<a name="l00118"></a>00118                 $reply .= Binary::writeInt($sessionID);
+<a name="l00119"></a>00119                 $reply .= self::getTokenString($this-&gt;token, $address) . <span class="stringliteral">&quot;\x00&quot;</span>;
+<a name="l00120"></a>00120 
+<a name="l00121"></a>00121                 $this-&gt;server-&gt;sendPacket($address, $port, $reply);
+<a name="l00122"></a>00122                 <span class="keywordflow">break</span>;
+<a name="l00123"></a>00123             <span class="keywordflow">case</span> self::STATISTICS: <span class="comment">//Stat</span>
+<a name="l00124"></a>00124                 $token = Binary::readInt(substr($payload, 0, 4));
+<a name="l00125"></a>00125                 <span class="keywordflow">if</span>($token !== self::getTokenString($this-&gt;token, $address) and $token !== self::getTokenString($this-&gt;lastToken, $ip)){
+<a name="l00126"></a>00126                     <span class="keywordflow">break</span>;
+<a name="l00127"></a>00127                 }
+<a name="l00128"></a>00128                 $reply = chr(self::STATISTICS);
+<a name="l00129"></a>00129                 $reply .= Binary::writeInt($sessionID);
+<a name="l00130"></a>00130                 <span class="keywordflow">if</span>(strlen($payload) === 8){
+<a name="l00131"></a>00131                     <span class="keywordflow">if</span>($this-&gt;timeout &lt; microtime(<span class="keyword">true</span>)){
+<a name="l00132"></a>00132                         $this-&gt;regenerateInfo();
+<a name="l00133"></a>00133                     }
+<a name="l00134"></a>00134                     $reply .= $this-&gt;longData;
+<a name="l00135"></a>00135                 }<span class="keywordflow">else</span>{
+<a name="l00136"></a>00136                     $reply .= $this-&gt;server-&gt;getServerName() . <span class="stringliteral">&quot;\x00&quot;</span> . (($this-&gt;server-&gt;getGamemode() &amp; 0x01) === 0 ? <span class="stringliteral">&quot;SMP&quot;</span> : <span class="stringliteral">&quot;CMP&quot;</span>) . <span class="stringliteral">&quot;\x00&quot;</span> . $this-&gt;server-&gt;getDefaultLevel()-&gt;getName() . <span class="stringliteral">&quot;\x00&quot;</span> . count($this-&gt;server-&gt;getOnlinePlayers()) . <span class="stringliteral">&quot;\x00&quot;</span> . $this-&gt;server-&gt;getMaxPlayers() . <span class="stringliteral">&quot;\x00&quot;</span> . Binary::writeLShort($this-&gt;server-&gt;getPort()) . $this-&gt;server-&gt;getIp() . <span class="stringliteral">&quot;\x00&quot;</span>;
+<a name="l00137"></a>00137                 }
+<a name="l00138"></a>00138                 $this-&gt;server-&gt;sendPacket($address, $port, $reply);
+<a name="l00139"></a>00139                 <span class="keywordflow">break</span>;
+<a name="l00140"></a>00140         }
+<a name="l00141"></a>00141     }
+<a name="l00142"></a>00142 
+<a name="l00143"></a>00143 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -264,7 +265,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><b>QueryHandler.php</b>      </li>
 
-    <li class="footer">Generated on Thu Jul 3 2014 11:38:33 for PocketMine-MP by
+    <li class="footer">Generated on Sat Jul 5 2014 22:04:04 for PocketMine-MP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

@@ -21,8 +21,8 @@ var searchData=
   ['fromstring',['fromString',['../d3/d64/classpocketmine_1_1permission_1_1_ban_entry.html#a95cc2220e816675ac35018752dd81c26',1,'pocketmine::permission::BanEntry']]],
   ['fuel',['Fuel',['../dd/d62/classpocketmine_1_1inventory_1_1_fuel.html',1,'pocketmine::inventory']]],
   ['fullchunkdatapacket',['FullChunkDataPacket',['../df/d7e/classpocketmine_1_1network_1_1protocol_1_1_full_chunk_data_packet.html',1,'pocketmine::network::protocol']]],
-  ['furnace',['Furnace',['../d4/d66/classpocketmine_1_1block_1_1_furnace.html',1,'pocketmine::block']]],
   ['furnace',['Furnace',['../d7/d7c/classpocketmine_1_1tile_1_1_furnace.html',1,'pocketmine::tile']]],
+  ['furnace',['Furnace',['../d4/d66/classpocketmine_1_1block_1_1_furnace.html',1,'pocketmine::block']]],
   ['furnaceinventory',['FurnaceInventory',['../dc/d34/classpocketmine_1_1inventory_1_1_furnace_inventory.html',1,'pocketmine::inventory']]],
   ['furnacerecipe',['FurnaceRecipe',['../db/db2/classpocketmine_1_1inventory_1_1_furnace_recipe.html',1,'pocketmine::inventory']]]
 ];

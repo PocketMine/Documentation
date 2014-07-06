@@ -2,7 +2,7 @@ var searchData=
 [
   ['handleencapsulated',['handleEncapsulated',['../d5/d5d/interfaceraklib_1_1server_1_1_server_instance.html#ab06db601822f6b7d1fb499bcf2a1db4f',1,'raklib::server::ServerInstance']]],
   ['handleoption',['handleOption',['../d5/d5d/interfaceraklib_1_1server_1_1_server_instance.html#abbb059c70f31bc313c76f35aaca6dbb7',1,'raklib::server::ServerInstance']]],
-  ['handlepacket',['handlePacket',['../d2/d6e/classraklib_1_1server_1_1_server_handler.html#ac27b9238307c42c8713c7d623e3b9d4f',1,'raklib::server::ServerHandler']]],
+  ['handlepacket',['handlePacket',['../d5/df7/classpocketmine_1_1_server.html#a7b11edead6520050643a511d0c7b4a84',1,'pocketmine::Server\handlePacket()'],['../d2/d6e/classraklib_1_1server_1_1_server_handler.html#ac27b9238307c42c8713c7d623e3b9d4f',1,'raklib::server::ServerHandler\handlePacket()']]],
   ['handlerlist',['HandlerList',['../d0/d8a/classpocketmine_1_1event_1_1_handler_list.html',1,'pocketmine::event']]],
   ['hanging',['Hanging',['../d2/ddd/classpocketmine_1_1entity_1_1_hanging.html',1,'pocketmine::entity']]],
   ['hardenedclay',['HardenedClay',['../da/d55/classpocketmine_1_1block_1_1_hardened_clay.html',1,'pocketmine::block']]],

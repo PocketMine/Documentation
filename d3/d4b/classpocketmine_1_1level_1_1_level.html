@@ -195,6 +195,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d4b/classpocketmine_1_1level_1_1_level.html#a14ade0a441485f14702c186e3277f44a">isChunkPopulated</a> ($x, $z)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d4b/classpocketmine_1_1level_1_1_level.html#a5aed9df8ce4444d0dd880884adf6bf1d">getSpawnLocation</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d4b/classpocketmine_1_1level_1_1_level.html#a63f7175d8a8b38046986a673f2b4fb0b">setSpawnLocation</a> (Vector3 $pos)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a9c8f42e584dc9fbbfe754ee2978072"></a><!-- doxytag: member="pocketmine::level::Level::requestChunk" ref="a6a9c8f42e584dc9fbbfe754ee2978072" args="($x, $z, Player $player)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>requestChunk</b> ($x, $z, <a class="el" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a> $player)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d4b/classpocketmine_1_1level_1_1_level.html#a8f95a1e0b2d1b6149796ab3b292a0f82">removeEntity</a> (Entity $entity)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d4b/classpocketmine_1_1level_1_1_level.html#a8533578eba18ea36860528846f7e5e75">addEntity</a> (Entity $entity)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d4b/classpocketmine_1_1level_1_1_level.html#a70f7b187512895925a1048f446b4839f">addTile</a> (Tile $tile)</td></tr>
@@ -286,10 +288,19 @@ Protected Attributes</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$changedBlocks</b> = []</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdc615038222d26b1d653a3859492916"></a><!-- doxytag: member="pocketmine::level::Level::$changedCount" ref="abdc615038222d26b1d653a3859492916" args="" -->
 &#160;</td><td class="memItemRight" valign="bottom"><b>$changedCount</b> = []</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea2a394e1f760766844990356e247e8a"></a><!-- doxytag: member="pocketmine::level::Level::$chunkTickRadius" ref="aea2a394e1f760766844990356e247e8a" args="" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>$chunkTickRadius</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefd517111d7081a32e5e8697b636e936"></a><!-- doxytag: member="pocketmine::level::Level::$chunkTickList" ref="aefd517111d7081a32e5e8697b636e936" args="" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>$chunkTickList</b> = []</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad055d40717249e43832f5aacdc85512c"></a><!-- doxytag: member="pocketmine::level::Level::$chunksPerTick" ref="ad055d40717249e43832f5aacdc85512c" args="" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>$chunksPerTick</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3356ea54ea801811a1e7e9579e6f262"></a><!-- doxytag: member="pocketmine::level::Level::$clearChunksOnTick" ref="aa3356ea54ea801811a1e7e9579e6f262" args="" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>$clearChunksOnTick</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><b>$randomTickBlocks</b></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00069">69</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00071">71</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a54358e69dbb9fbfa15ef46bdef439c7e"></a><!-- doxytag: member="pocketmine::level::Level::__construct" ref="a54358e69dbb9fbfa15ef46bdef439c7e" args="(Server $server, $name, $path, $provider)" -->
 <div class="memitem">
@@ -344,19 +355,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00154">154</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
-
-<p>References <a class="el" href="../../d5/dec/_server_8php_source.html#l00460">pocketmine\Server\getLogger()</a>.</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d4b/classpocketmine_1_1level_1_1_level_a54358e69dbb9fbfa15ef46bdef439c7e_cgraph.svg" width="478" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00188">188</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -388,7 +387,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01327">1327</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01419">1419</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -419,7 +418,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01342">1342</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01434">1434</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -438,7 +437,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <p>WARNING: Do not use this, it's only for internal use. Changes to this function won't be recorded on the version. </p>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00310">310</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00359">359</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -476,7 +475,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00134">134</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00168">168</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -519,7 +518,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00620">620</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00721">721</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -545,7 +544,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00288">288</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00337">337</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -589,7 +588,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00302">302</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00351">351</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -608,7 +607,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00214">214</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00253">253</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -645,7 +644,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01097">1097</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01198">1198</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -682,7 +681,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01087">1087</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01188">1188</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -709,7 +708,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Block </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00551">551</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00652">652</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -756,7 +755,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/dd9/interfacepocketmine_1_1level_1_1_chunk_manager.html#acc8db92230c2ec3231b919572239cd53">pocketmine\level\ChunkManager</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01015">1015</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01116">1116</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -803,7 +802,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/dd9/interfacepocketmine_1_1level_1_1_chunk_manager.html#a796e8b536df6dc1f568bedbd8bf42d5d">pocketmine\level\ChunkManager</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00990">990</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01091">1091</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -848,7 +847,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int 0-15 </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01065">1065</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01166">1166</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -867,7 +866,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>BlockMetadataStore </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00177">177</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00216">216</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -912,7 +911,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int 0-15 </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01040">1040</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01141">1141</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -956,7 +955,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>SimpleChunk </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01141">1141</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01242">1242</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1000,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Chunk </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01130">1130</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01231">1231</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +1038,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Entity[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00965">965</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01066">1066</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1077,7 +1076,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Tile[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00977">977</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01078">1078</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1115,7 +1114,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Entity[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00853">853</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00954">954</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1141,7 +1140,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Block[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00475">475</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00576">576</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1178,7 +1177,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>AxisAlignedBB[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00515">515</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00616">616</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1198,7 +1197,7 @@ Protected Attributes</h2></td></tr>
 <p>Gets the list of all the entitites in this level</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Entity[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00841">841</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00942">942</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1224,7 +1223,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Entity </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00832">832</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00933">933</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1244,7 +1243,7 @@ Protected Attributes</h2></td></tr>
 <p>Returns the <a class="el" href="../../d3/d4b/classpocketmine_1_1level_1_1_level.html">Level</a> folder name</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01522">1522</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01614">1614</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1282,7 +1281,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int 0-127 </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01178">1178</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01279">1279</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1302,15 +1301,15 @@ Protected Attributes</h2></td></tr>
 <p>Returns the unique level identifier</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00200">200</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00239">239</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 <p>Referenced by <a class="el" href="../../de/d08/_generation_request_manager_8php_source.html#l00061">pocketmine\level\generator\GenerationRequestManager\closeLevel()</a>, and <a class="el" href="../../de/d08/_generation_request_manager_8php_source.html#l00051">pocketmine\level\generator\GenerationRequestManager\openLevel()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d4b/classpocketmine_1_1level_1_1_level_a64a56c2a5d8680274ebd9b7c3117cc69_icgraph.svg" width="662" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1334,7 +1333,7 @@ Protected Attributes</h2></td></tr>
 <p>Returns the <a class="el" href="../../d3/d4b/classpocketmine_1_1level_1_1_level.html">Level</a> name</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01513">1513</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01605">1605</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1372,7 +1371,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Entity[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00884">884</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00985">985</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1392,7 +1391,7 @@ Protected Attributes</h2></td></tr>
 <p>Returns a list of the players in this level</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a>[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00930">930</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01031">1031</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1411,7 +1410,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>LevelProvider </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00191">191</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00230">230</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1437,7 +1436,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool|Position </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01456">1456</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01548">1548</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1457,15 +1456,15 @@ Protected Attributes</h2></td></tr>
 <p>Gets the level seed</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01560">1560</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01652">1652</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 <p>Referenced by <a class="el" href="../../de/d08/_generation_request_manager_8php_source.html#l00051">pocketmine\level\generator\GenerationRequestManager\openLevel()</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/d4b/classpocketmine_1_1level_1_1_level_ac5345349fc5efaf63b8396b39b5f6960_icgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1488,7 +1487,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html">Server</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00184">184</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00223">223</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1508,7 +1507,7 @@ Protected Attributes</h2></td></tr>
 <p>Returns the raw spawnpoint</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="../../db/d9b/classpocketmine_1_1level_1_1_position.html">Position</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01447">1447</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01539">1539</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1528,7 +1527,7 @@ Protected Attributes</h2></td></tr>
 <p>Returns a <a class="el" href="../../db/d9b/classpocketmine_1_1level_1_1_position.html">Position</a> pointing to the spawn</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="../../db/d9b/classpocketmine_1_1level_1_1_position.html">Position</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01221">1221</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01322">1322</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1555,15 +1554,15 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool|Tile </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00941">941</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01042">1042</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 <p>References <a class="el" href="../../d7/d0f/_position_8php_source.html#l00055">pocketmine\level\Position\getLevel()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/d4b/classpocketmine_1_1level_1_1_level_a63d7cd706f0d0437e25db76d34f7f987_cgraph.svg" width="483" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1593,7 +1592,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Tile </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00921">921</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01022">1022</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1613,7 +1612,7 @@ Protected Attributes</h2></td></tr>
 <p>Returns a list of the Tile entities in this level</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Tile[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00912">912</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01013">1013</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1633,7 +1632,7 @@ Protected Attributes</h2></td></tr>
 <p>Gets the current time</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01504">1504</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01596">1596</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1671,7 +1670,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a>[][] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00262">262</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00311">311</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1708,7 +1707,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01202">1202</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01303">1303</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1745,7 +1744,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01370">1370</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01462">1462</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1782,7 +1781,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01192">1192</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01293">1293</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1819,7 +1818,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01212">1212</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01313">1313</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1845,7 +1844,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00503">503</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00604">604</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1883,7 +1882,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01435">1435</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01527">1527</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1927,7 +1926,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01381">1381</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01473">1473</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1959,7 +1958,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01305">1305</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01397">1397</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -1990,7 +1989,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01354">1354</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01446">1446</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2016,7 +2015,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00435">435</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00534">534</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2052,7 +2051,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00466">466</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00567">567</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2077,7 +2076,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00221">221</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00260">260</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2134,7 +2133,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01117">1117</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01218">1218</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2177,7 +2176,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01106">1106</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01207">1207</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2229,7 +2228,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00570">570</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00671">671</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2282,7 +2281,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/dd9/interfacepocketmine_1_1level_1_1_chunk_manager.html#af702712d371a325af1d79583ea072ae6">pocketmine\level\ChunkManager</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01027">1027</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01128">1128</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2335,7 +2334,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d4/dd9/interfacepocketmine_1_1level_1_1_chunk_manager.html#a97ef25fee5009b0d96a41a40e1d60116">pocketmine\level\ChunkManager</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01002">1002</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01103">1103</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2386,7 +2385,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01077">1077</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01178">1178</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2437,7 +2436,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01052">1052</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01153">1153</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2463,7 +2462,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01569">1569</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01661">1661</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2489,7 +2488,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01495">1495</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01587">1587</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2515,7 +2514,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01230">1230</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01331">1331</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2541,7 +2540,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01531">1531</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01623">1623</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2560,7 +2559,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <p>Start the time again, if it was stopped </p>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01549">1549</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01641">1641</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2579,7 +2578,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <p>Stops the time for the level, will not save the lock state to disk </p>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01540">1540</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l01632">1632</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2606,7 +2605,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00232">232</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00271">271</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2642,7 +2641,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00452">452</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00553">553</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2687,7 +2686,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>boolean </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00661">661</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00762">762</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2731,7 +2730,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00276">276</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00325">325</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2804,7 +2803,25 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>boolean </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00727">727</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00828">828</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a0bcf8ec32063b216d015c8b836cdc98d"></a><!-- doxytag: member="pocketmine::level::Level::$randomTickBlocks" ref="a0bcf8ec32063b216d015c8b836cdc98d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine::level\Level::$randomTickBlocks<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Initial value:</b><div class="fragment"><pre class="fragment"> [
+        Block::GRASS =&gt; <span class="keyword">true</span>
+</pre></div>
+<p>Definition at line <a class="el" href="../../d7/d6b/_level_8php_source.html#l00136">136</a> of file <a class="el" href="../../d7/d6b/_level_8php_source.html">Level.php</a>.</p>
 
 </div>
 </div>
@@ -2833,7 +2850,7 @@ Protected Attributes</h2></td></tr>
       <li class="navelem"><a class="el" href="../../d1/d22/namespacepocketmine_1_1level.html">level</a>      </li>
       <li class="navelem"><a class="el" href="../../d3/d4b/classpocketmine_1_1level_1_1_level.html">Level</a>      </li>
 
-    <li class="footer">Generated on Thu Jul 3 2014 11:38:36 for PocketMine-MP by
+    <li class="footer">Generated on Sat Jul 5 2014 22:04:07 for PocketMine-MP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

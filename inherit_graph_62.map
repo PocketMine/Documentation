@@ -1,16 +1,3 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html" title="pocketmine\\nbt\\tag\\Tag" alt="" coords="7,245,164,275"/>
-<area shape="rect" id="node3" href="$d9/d85/classpocketmine_1_1nbt_1_1tag_1_1_end.html" title="pocketmine\\nbt\\tag\\End" alt="" coords="235,219,395,248"/>
-<area shape="rect" id="node5" href="$d9/dc5/classpocketmine_1_1nbt_1_1tag_1_1_named_tag.html" title="pocketmine\\nbt\\tag\\NamedTag" alt="" coords="215,272,415,301"/>
-<area shape="rect" id="node7" href="$d7/d81/classpocketmine_1_1nbt_1_1tag_1_1_byte.html" title="pocketmine\\nbt\\tag\\Byte" alt="" coords="483,5,645,35"/>
-<area shape="rect" id="node9" href="$d4/d12/classpocketmine_1_1nbt_1_1tag_1_1_byte_array.html" title="pocketmine\\nbt\\tag\\ByteArray" alt="" coords="467,59,661,88"/>
-<area shape="rect" id="node11" href="$d6/d15/classpocketmine_1_1nbt_1_1tag_1_1_compound.html" title="pocketmine\\nbt\\tag\\Compound" alt="" coords="464,112,664,141"/>
-<area shape="rect" id="node13" href="$d8/dcf/classpocketmine_1_1nbt_1_1tag_1_1_double.html" title="pocketmine\\nbt\\tag\\Double" alt="" coords="475,165,653,195"/>
-<area shape="rect" id="node15" href="$da/d56/classpocketmine_1_1nbt_1_1tag_1_1_enum.html" title="pocketmine\\nbt\\tag\\Enum" alt="" coords="479,219,649,248"/>
-<area shape="rect" id="node17" href="$d6/de7/classpocketmine_1_1nbt_1_1tag_1_1_float.html" title="pocketmine\\nbt\\tag\\Float" alt="" coords="481,272,647,301"/>
-<area shape="rect" id="node19" href="$d8/ddd/classpocketmine_1_1nbt_1_1tag_1_1_int.html" title="pocketmine\\nbt\\tag\\Int" alt="" coords="488,325,640,355"/>
-<area shape="rect" id="node21" href="$d1/dcf/classpocketmine_1_1nbt_1_1tag_1_1_int_array.html" title="pocketmine\\nbt\\tag\\IntArray" alt="" coords="473,379,655,408"/>
-<area shape="rect" id="node23" href="$d4/d70/classpocketmine_1_1nbt_1_1tag_1_1_long.html" title="pocketmine\\nbt\\tag\\Long" alt="" coords="481,432,647,461"/>
-<area shape="rect" id="node25" href="$d8/d9c/classpocketmine_1_1nbt_1_1tag_1_1_short.html" title="pocketmine\\nbt\\tag\\Short" alt="" coords="480,485,648,515"/>
-<area shape="rect" id="node27" href="$df/dd5/classpocketmine_1_1nbt_1_1tag_1_1_string.html" title="pocketmine\\nbt\\tag\\String" alt="" coords="479,539,649,568"/>
+<area shape="rect" id="node1" href="$d5/d67/classpocketmine_1_1nbt_1_1_n_b_t.html" title="pocketmine\\nbt\\NBT" alt="" coords="7,5,148,35"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$de/db1/classpocketmine_1_1level_1_1generator_1_1object_1_1_object.html" title="pocketmine\\level\\generator\\object\\Object" alt="" coords="5,5,264,35"/>
+<area shape="rect" id="node1" href="$d8/db5/classpocketmine_1_1level_1_1generator_1_1noise_1_1_generator.html" title="pocketmine\\level\\generator\\noise\\Generator" alt="" coords="5,5,280,35"/>
+<area shape="rect" id="node3" href="$dd/dc3/classpocketmine_1_1level_1_1generator_1_1noise_1_1_perlin.html" title="pocketmine\\level\\generator\\noise\\Perlin" alt="" coords="328,5,579,35"/>
+<area shape="rect" id="node5" href="$db/d37/classpocketmine_1_1level_1_1generator_1_1noise_1_1_simplex.html" title="pocketmine\\level\\generator\\noise\\Simplex" alt="" coords="627,5,891,35"/>
 </map>

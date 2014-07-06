@@ -143,139 +143,145 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00045"></a>00045 
 <a name="l00046"></a>00046     <span class="keyword">protected</span> $asyncTasks = 0;
 <a name="l00047"></a>00047 
-<a name="l00049"></a>00049     <span class="keyword">private</span> $ids = 1;
+<a name="l00049"></a>00049     <span class="keyword">protected</span> $asyncTaskStorage = [];
 <a name="l00050"></a>00050 
-<a name="l00052"></a>00052     <span class="keyword">protected</span> $currentTick = 0;
+<a name="l00052"></a>00052     <span class="keyword">private</span> $ids = 1;
 <a name="l00053"></a>00053 
-<a name="l00054"></a>00054     <span class="keyword">public</span> <span class="keyword">function</span> __construct(){
-<a name="l00055"></a>00055         $this-&gt;queue = <span class="keyword">new</span> ReversePriorityQueue();
-<a name="l00056"></a>00056         $this-&gt;asyncPool = new \Pool(self::$WORKERS, <span class="stringliteral">&quot;pocketmine\\scheduler\\AsyncWorker&quot;</span>);
-<a name="l00057"></a>00057     }
-<a name="l00058"></a>00058 
-<a name="l00064"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#ac87b9d7cfa49508f6fc26507b7fbc126">00064</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#ac87b9d7cfa49508f6fc26507b7fbc126">scheduleTask</a>(<a class="code" href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html">Task</a> $task){
-<a name="l00065"></a>00065         <span class="keywordflow">return</span> $this-&gt;addTask($task, -1, -1);
-<a name="l00066"></a>00066     }
-<a name="l00067"></a>00067 
-<a name="l00076"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a0ffb26c09fca8aa8d746f740be90ba1c">00076</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a0ffb26c09fca8aa8d746f740be90ba1c">scheduleAsyncTask</a>(<a class="code" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">AsyncTask</a> $task){
-<a name="l00077"></a>00077         $this-&gt;asyncPool-&gt;submit($task);
-<a name="l00078"></a>00078         ++$this-&gt;asyncTasks;
-<a name="l00079"></a>00079     }
-<a name="l00080"></a>00080 
-<a name="l00087"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a15bf6c820f57933fa4f54b23440c39b0">00087</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a15bf6c820f57933fa4f54b23440c39b0">scheduleDelayedTask</a>(<a class="code" href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html">Task</a> $task, $delay){
-<a name="l00088"></a>00088         <span class="keywordflow">return</span> $this-&gt;addTask($task, (<span class="keywordtype">int</span>) $delay, -1);
-<a name="l00089"></a>00089     }
-<a name="l00090"></a>00090 
-<a name="l00097"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a6fec809330ef1f74618a1fb3aa8cefab">00097</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a6fec809330ef1f74618a1fb3aa8cefab">scheduleRepeatingTask</a>(<a class="code" href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html">Task</a> $task, $period){
-<a name="l00098"></a>00098         <span class="keywordflow">return</span> $this-&gt;addTask($task, -1, (<span class="keywordtype">int</span>) $period);
-<a name="l00099"></a>00099     }
-<a name="l00100"></a>00100 
-<a name="l00108"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#af6cfda7645ff1a32c050c54945b7b6f4">00108</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#af6cfda7645ff1a32c050c54945b7b6f4">scheduleDelayedRepeatingTask</a>(<a class="code" href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html">Task</a> $task, $delay, $period){
-<a name="l00109"></a>00109         <span class="keywordflow">return</span> $this-&gt;addTask($task, (<span class="keywordtype">int</span>) $delay, (<span class="keywordtype">int</span>) $period);
-<a name="l00110"></a>00110     }
-<a name="l00111"></a>00111 
-<a name="l00115"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#ae08f358aa823d178539007f3f307486e">00115</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#ae08f358aa823d178539007f3f307486e">cancelTask</a>($taskId){
-<a name="l00116"></a>00116         <span class="keywordflow">if</span>(isset($this-&gt;tasks[$taskId])){
-<a name="l00117"></a>00117             $this-&gt;tasks[$taskId]-&gt;cancel();
-<a name="l00118"></a>00118             unset($this-&gt;tasks[$taskId]);
-<a name="l00119"></a>00119         }
-<a name="l00120"></a>00120     }
-<a name="l00121"></a>00121 
-<a name="l00125"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#ac85de2200030db98a2ff76f29c878c12">00125</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#ac85de2200030db98a2ff76f29c878c12">cancelTasks</a>(Plugin $plugin){
-<a name="l00126"></a>00126         <span class="keywordflow">foreach</span>($this-&gt;tasks as $taskId =&gt; $task){
-<a name="l00127"></a>00127             $ptask = $task-&gt;getTask();
-<a name="l00128"></a>00128             <span class="keywordflow">if</span>($ptask instanceof <a class="code" href="../../d5/d2e/classpocketmine_1_1scheduler_1_1_plugin_task.html">PluginTask</a> and $ptask-&gt;<a class="code" href="../../d5/d2e/classpocketmine_1_1scheduler_1_1_plugin_task.html#a5ae8fe2dd6644393048c4b749ee19830">getOwner</a>() === $plugin){
-<a name="l00129"></a>00129                 $task-&gt;cancel();
-<a name="l00130"></a>00130                 unset($this-&gt;tasks[$taskId]);
-<a name="l00131"></a>00131             }
-<a name="l00132"></a>00132         }
-<a name="l00133"></a>00133     }
-<a name="l00134"></a>00134 
-<a name="l00135"></a>00135     <span class="keyword">public</span> <span class="keyword">function</span> cancelAllTasks(){
-<a name="l00136"></a>00136         <span class="keywordflow">foreach</span>($this-&gt;tasks as $task){
-<a name="l00137"></a>00137             $task-&gt;cancel();
-<a name="l00138"></a>00138         }
-<a name="l00139"></a>00139         $this-&gt;tasks = [];
-<a name="l00140"></a>00140         $this-&gt;asyncPool-&gt;shutdown();
-<a name="l00141"></a>00141         $this-&gt;asyncTasks = 0;
-<a name="l00142"></a>00142     }
-<a name="l00143"></a>00143 
-<a name="l00149"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#acb459a9f55c0c1a77ea810dcd3a1127e">00149</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#acb459a9f55c0c1a77ea810dcd3a1127e">isQueued</a>($taskId){
-<a name="l00150"></a>00150         <span class="keywordflow">return</span> isset($this-&gt;tasks[$taskId]);
-<a name="l00151"></a>00151     }
-<a name="l00152"></a>00152 
-<a name="l00162"></a>00162     <span class="keyword">private</span> <span class="keyword">function</span> addTask(<a class="code" href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html">Task</a> $task, $delay, $period){
-<a name="l00163"></a>00163         <span class="keywordflow">if</span>($task instanceof <a class="code" href="../../d5/d2e/classpocketmine_1_1scheduler_1_1_plugin_task.html">PluginTask</a> and !$task-&gt;getOwner()-&gt;isEnabled()){
-<a name="l00164"></a>00164             <span class="keywordflow">throw</span> new \Exception(<span class="stringliteral">&quot;Plugin attempted to register a task while disabled&quot;</span>);
-<a name="l00165"></a>00165         }
-<a name="l00166"></a>00166 
-<a name="l00167"></a>00167         <span class="keywordflow">if</span>($delay &lt;= 0){
-<a name="l00168"></a>00168             $delay = -1;
+<a name="l00055"></a>00055     <span class="keyword">protected</span> $currentTick = 0;
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057     <span class="keyword">public</span> <span class="keyword">function</span> __construct(){
+<a name="l00058"></a>00058         $this-&gt;queue = <span class="keyword">new</span> ReversePriorityQueue();
+<a name="l00059"></a>00059         $this-&gt;asyncPool = new \Pool(self::$WORKERS, <span class="stringliteral">&quot;pocketmine\\scheduler\\AsyncWorker&quot;</span>);
+<a name="l00060"></a>00060     }
+<a name="l00061"></a>00061 
+<a name="l00067"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#ac87b9d7cfa49508f6fc26507b7fbc126">00067</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#ac87b9d7cfa49508f6fc26507b7fbc126">scheduleTask</a>(<a class="code" href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html">Task</a> $task){
+<a name="l00068"></a>00068         <span class="keywordflow">return</span> $this-&gt;addTask($task, -1, -1);
+<a name="l00069"></a>00069     }
+<a name="l00070"></a>00070 
+<a name="l00079"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a0ffb26c09fca8aa8d746f740be90ba1c">00079</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a0ffb26c09fca8aa8d746f740be90ba1c">scheduleAsyncTask</a>(<a class="code" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">AsyncTask</a> $task){
+<a name="l00080"></a>00080         $this-&gt;asyncPool-&gt;submit($task);
+<a name="l00081"></a>00081         $this-&gt;asyncTaskStorage[spl_object_hash($task)] = $task;
+<a name="l00082"></a>00082         ++$this-&gt;asyncTasks;
+<a name="l00083"></a>00083     }
+<a name="l00084"></a>00084 
+<a name="l00091"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a15bf6c820f57933fa4f54b23440c39b0">00091</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a15bf6c820f57933fa4f54b23440c39b0">scheduleDelayedTask</a>(<a class="code" href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html">Task</a> $task, $delay){
+<a name="l00092"></a>00092         <span class="keywordflow">return</span> $this-&gt;addTask($task, (<span class="keywordtype">int</span>) $delay, -1);
+<a name="l00093"></a>00093     }
+<a name="l00094"></a>00094 
+<a name="l00101"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a6fec809330ef1f74618a1fb3aa8cefab">00101</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a6fec809330ef1f74618a1fb3aa8cefab">scheduleRepeatingTask</a>(<a class="code" href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html">Task</a> $task, $period){
+<a name="l00102"></a>00102         <span class="keywordflow">return</span> $this-&gt;addTask($task, -1, (<span class="keywordtype">int</span>) $period);
+<a name="l00103"></a>00103     }
+<a name="l00104"></a>00104 
+<a name="l00112"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#af6cfda7645ff1a32c050c54945b7b6f4">00112</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#af6cfda7645ff1a32c050c54945b7b6f4">scheduleDelayedRepeatingTask</a>(<a class="code" href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html">Task</a> $task, $delay, $period){
+<a name="l00113"></a>00113         <span class="keywordflow">return</span> $this-&gt;addTask($task, (<span class="keywordtype">int</span>) $delay, (<span class="keywordtype">int</span>) $period);
+<a name="l00114"></a>00114     }
+<a name="l00115"></a>00115 
+<a name="l00119"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#ae08f358aa823d178539007f3f307486e">00119</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#ae08f358aa823d178539007f3f307486e">cancelTask</a>($taskId){
+<a name="l00120"></a>00120         <span class="keywordflow">if</span>(isset($this-&gt;tasks[$taskId])){
+<a name="l00121"></a>00121             $this-&gt;tasks[$taskId]-&gt;cancel();
+<a name="l00122"></a>00122             unset($this-&gt;tasks[$taskId]);
+<a name="l00123"></a>00123         }
+<a name="l00124"></a>00124     }
+<a name="l00125"></a>00125 
+<a name="l00129"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#ac85de2200030db98a2ff76f29c878c12">00129</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#ac85de2200030db98a2ff76f29c878c12">cancelTasks</a>(Plugin $plugin){
+<a name="l00130"></a>00130         <span class="keywordflow">foreach</span>($this-&gt;tasks as $taskId =&gt; $task){
+<a name="l00131"></a>00131             $ptask = $task-&gt;getTask();
+<a name="l00132"></a>00132             <span class="keywordflow">if</span>($ptask instanceof <a class="code" href="../../d5/d2e/classpocketmine_1_1scheduler_1_1_plugin_task.html">PluginTask</a> and $ptask-&gt;<a class="code" href="../../d5/d2e/classpocketmine_1_1scheduler_1_1_plugin_task.html#a5ae8fe2dd6644393048c4b749ee19830">getOwner</a>() === $plugin){
+<a name="l00133"></a>00133                 $task-&gt;cancel();
+<a name="l00134"></a>00134                 unset($this-&gt;tasks[$taskId]);
+<a name="l00135"></a>00135             }
+<a name="l00136"></a>00136         }
+<a name="l00137"></a>00137     }
+<a name="l00138"></a>00138 
+<a name="l00139"></a>00139     <span class="keyword">public</span> <span class="keyword">function</span> cancelAllTasks(){
+<a name="l00140"></a>00140         <span class="keywordflow">foreach</span>($this-&gt;tasks as $task){
+<a name="l00141"></a>00141             $task-&gt;cancel();
+<a name="l00142"></a>00142         }
+<a name="l00143"></a>00143         $this-&gt;tasks = [];
+<a name="l00144"></a>00144         $this-&gt;asyncPool-&gt;shutdown();
+<a name="l00145"></a>00145         $this-&gt;asyncTasks = 0;
+<a name="l00146"></a>00146     }
+<a name="l00147"></a>00147 
+<a name="l00153"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#acb459a9f55c0c1a77ea810dcd3a1127e">00153</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#acb459a9f55c0c1a77ea810dcd3a1127e">isQueued</a>($taskId){
+<a name="l00154"></a>00154         <span class="keywordflow">return</span> isset($this-&gt;tasks[$taskId]);
+<a name="l00155"></a>00155     }
+<a name="l00156"></a>00156 
+<a name="l00166"></a>00166     <span class="keyword">private</span> <span class="keyword">function</span> addTask(<a class="code" href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html">Task</a> $task, $delay, $period){
+<a name="l00167"></a>00167         <span class="keywordflow">if</span>($task instanceof <a class="code" href="../../d5/d2e/classpocketmine_1_1scheduler_1_1_plugin_task.html">PluginTask</a> and !$task-&gt;getOwner()-&gt;isEnabled()){
+<a name="l00168"></a>00168             <span class="keywordflow">throw</span> new \Exception(<span class="stringliteral">&quot;Plugin attempted to register a task while disabled&quot;</span>);
 <a name="l00169"></a>00169         }
 <a name="l00170"></a>00170 
-<a name="l00171"></a>00171         <span class="keywordflow">if</span>($period === 1){
-<a name="l00172"></a>00172             $period = 1;
-<a name="l00173"></a>00173         }elseif($period &lt; -1){
-<a name="l00174"></a>00174             $period = -1;
-<a name="l00175"></a>00175         }
-<a name="l00176"></a>00176 
-<a name="l00177"></a>00177         <span class="keywordflow">return</span> $this-&gt;handle(<span class="keyword">new</span> TaskHandler($task, $this-&gt;nextId(), $delay, $period));
-<a name="l00178"></a>00178     }
-<a name="l00179"></a>00179 
-<a name="l00180"></a>00180     <span class="keyword">private</span> <span class="keyword">function</span> handle(TaskHandler $handler){
-<a name="l00181"></a>00181         <span class="keywordflow">if</span>($handler-&gt;isDelayed()){
-<a name="l00182"></a>00182             $nextRun = $this-&gt;currentTick + $handler-&gt;getDelay();
-<a name="l00183"></a>00183         }<span class="keywordflow">else</span>{
-<a name="l00184"></a>00184             $nextRun = $this-&gt;currentTick;
-<a name="l00185"></a>00185         }
-<a name="l00186"></a>00186 
-<a name="l00187"></a>00187         $handler-&gt;setNextRun($nextRun);
-<a name="l00188"></a>00188         $this-&gt;tasks[$handler-&gt;getTaskId()] = $handler;
-<a name="l00189"></a>00189         $this-&gt;queue-&gt;insert($handler, $nextRun);
+<a name="l00171"></a>00171         <span class="keywordflow">if</span>($delay &lt;= 0){
+<a name="l00172"></a>00172             $delay = -1;
+<a name="l00173"></a>00173         }
+<a name="l00174"></a>00174 
+<a name="l00175"></a>00175         <span class="keywordflow">if</span>($period &lt; -1){
+<a name="l00176"></a>00176             $period = -1;
+<a name="l00177"></a>00177         }elseif($period &lt; 1){
+<a name="l00178"></a>00178             $period = 1;
+<a name="l00179"></a>00179         }
+<a name="l00180"></a>00180 
+<a name="l00181"></a>00181         <span class="keywordflow">return</span> $this-&gt;handle(<span class="keyword">new</span> TaskHandler($task, $this-&gt;nextId(), $delay, $period));
+<a name="l00182"></a>00182     }
+<a name="l00183"></a>00183 
+<a name="l00184"></a>00184     <span class="keyword">private</span> <span class="keyword">function</span> handle(TaskHandler $handler){
+<a name="l00185"></a>00185         <span class="keywordflow">if</span>($handler-&gt;isDelayed()){
+<a name="l00186"></a>00186             $nextRun = $this-&gt;currentTick + $handler-&gt;getDelay();
+<a name="l00187"></a>00187         }<span class="keywordflow">else</span>{
+<a name="l00188"></a>00188             $nextRun = $this-&gt;currentTick;
+<a name="l00189"></a>00189         }
 <a name="l00190"></a>00190 
-<a name="l00191"></a>00191         <span class="keywordflow">return</span> $handler;
-<a name="l00192"></a>00192     }
-<a name="l00193"></a>00193 
-<a name="l00197"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a2026bad21c32e05b36686d929dc39bd8">00197</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a2026bad21c32e05b36686d929dc39bd8">mainThreadHeartbeat</a>($currentTick){
-<a name="l00198"></a>00198         $this-&gt;currentTick = $currentTick;
-<a name="l00199"></a>00199         <span class="keywordflow">while</span>($this-&gt;isReady($this-&gt;currentTick)){
-<a name="l00200"></a>00200             $task = $this-&gt;queue-&gt;extract();
-<a name="l00201"></a>00201             <span class="keywordflow">if</span>($task-&gt;isCancelled()){
-<a name="l00202"></a>00202                 unset($this-&gt;tasks[$task-&gt;<a class="code" href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html#ae7663c3ff9b6c6948c40ea9581ed9398">getTaskId</a>()]);
-<a name="l00203"></a>00203                 <span class="keywordflow">continue</span>;
-<a name="l00204"></a>00204             }<span class="keywordflow">else</span>{
-<a name="l00205"></a>00205                 $task-&gt;run($this-&gt;currentTick);
-<a name="l00206"></a>00206             }
-<a name="l00207"></a>00207             <span class="keywordflow">if</span>($task-&gt;isRepeating()){
-<a name="l00208"></a>00208                 $task-&gt;setNextRun($this-&gt;currentTick + $task-&gt;getPeriod());
-<a name="l00209"></a>00209                 $this-&gt;queue-&gt;insert($task, $this-&gt;currentTick + $task-&gt;getPeriod());
-<a name="l00210"></a>00210             }<span class="keywordflow">else</span>{
-<a name="l00211"></a>00211                 $task-&gt;remove();
-<a name="l00212"></a>00212                 unset($this-&gt;tasks[$task-&gt;<a class="code" href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html#ae7663c3ff9b6c6948c40ea9581ed9398">getTaskId</a>()]);
-<a name="l00213"></a>00213             }
-<a name="l00214"></a>00214         }
-<a name="l00215"></a>00215 
-<a name="l00216"></a>00216         <span class="keywordflow">if</span>($this-&gt;asyncTasks &gt; 0){ <span class="comment">//Garbage collector</span>
-<a name="l00217"></a>00217             $this-&gt;asyncPool-&gt;collect(<span class="keyword">function</span> (<a class="code" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">AsyncTask</a> $task){
-<a name="l00218"></a>00218                 <span class="keywordflow">if</span>($task-&gt;<a class="code" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a3cf7454be9911ea585af23c81846c4f2">isFinished</a>()){
-<a name="l00219"></a>00219                     --$this-&gt;asyncTasks;
-<a name="l00220"></a>00220                     $task-&gt;<a class="code" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a62de45ffabf1019c71e14ca0c3b12e54">onCompletion</a>(Server::getInstance());
-<a name="l00221"></a>00221                     <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00222"></a>00222                 }
-<a name="l00223"></a>00223 
-<a name="l00224"></a>00224                 <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00225"></a>00225             });
-<a name="l00226"></a>00226         }
-<a name="l00227"></a>00227     }
-<a name="l00228"></a>00228 
-<a name="l00229"></a>00229     <span class="keyword">private</span> <span class="keyword">function</span> isReady($currentTicks){
-<a name="l00230"></a>00230         <span class="keywordflow">return</span> count($this-&gt;tasks) &gt; 0 and $this-&gt;queue-&gt;current()-&gt;getNextRun() &lt;= $currentTicks;
-<a name="l00231"></a>00231     }
-<a name="l00232"></a>00232 
-<a name="l00236"></a>00236     <span class="keyword">private</span> <span class="keyword">function</span> nextId(){
-<a name="l00237"></a>00237         <span class="keywordflow">return</span> $this-&gt;ids++;
+<a name="l00191"></a>00191         $handler-&gt;setNextRun($nextRun);
+<a name="l00192"></a>00192         $this-&gt;tasks[$handler-&gt;getTaskId()] = $handler;
+<a name="l00193"></a>00193         $this-&gt;queue-&gt;insert($handler, $nextRun);
+<a name="l00194"></a>00194 
+<a name="l00195"></a>00195         <span class="keywordflow">return</span> $handler;
+<a name="l00196"></a>00196     }
+<a name="l00197"></a>00197 
+<a name="l00201"></a><a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a2026bad21c32e05b36686d929dc39bd8">00201</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a2026bad21c32e05b36686d929dc39bd8">mainThreadHeartbeat</a>($currentTick){
+<a name="l00202"></a>00202         $this-&gt;currentTick = $currentTick;
+<a name="l00203"></a>00203         <span class="keywordflow">while</span>($this-&gt;isReady($this-&gt;currentTick)){
+<a name="l00204"></a>00204             $task = $this-&gt;queue-&gt;extract();
+<a name="l00205"></a>00205             <span class="keywordflow">if</span>($task-&gt;isCancelled()){
+<a name="l00206"></a>00206                 unset($this-&gt;tasks[$task-&gt;<a class="code" href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html#ae7663c3ff9b6c6948c40ea9581ed9398">getTaskId</a>()]);
+<a name="l00207"></a>00207                 <span class="keywordflow">continue</span>;
+<a name="l00208"></a>00208             }<span class="keywordflow">else</span>{
+<a name="l00209"></a>00209                 $task-&gt;run($this-&gt;currentTick);
+<a name="l00210"></a>00210             }
+<a name="l00211"></a>00211             <span class="keywordflow">if</span>($task-&gt;isRepeating()){
+<a name="l00212"></a>00212                 $task-&gt;setNextRun($this-&gt;currentTick + $task-&gt;getPeriod());
+<a name="l00213"></a>00213                 $this-&gt;queue-&gt;insert($task, $this-&gt;currentTick + $task-&gt;getPeriod());
+<a name="l00214"></a>00214             }<span class="keywordflow">else</span>{
+<a name="l00215"></a>00215                 $task-&gt;remove();
+<a name="l00216"></a>00216                 unset($this-&gt;tasks[$task-&gt;<a class="code" href="../../df/d5e/classpocketmine_1_1scheduler_1_1_task.html#ae7663c3ff9b6c6948c40ea9581ed9398">getTaskId</a>()]);
+<a name="l00217"></a>00217             }
+<a name="l00218"></a>00218         }
+<a name="l00219"></a>00219 
+<a name="l00220"></a>00220         <span class="keywordflow">if</span>($this-&gt;asyncTasks &gt; 0){ <span class="comment">//Garbage collector</span>
+<a name="l00221"></a>00221             $this-&gt;asyncPool-&gt;collect([$this, <span class="stringliteral">&quot;collectAsyncTask&quot;</span>]);
+<a name="l00222"></a>00222         }
+<a name="l00223"></a>00223     }
+<a name="l00224"></a>00224 
+<a name="l00225"></a>00225     <span class="keyword">public</span> <span class="keyword">function</span> collectAsyncTask(<a class="code" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">AsyncTask</a> $task){
+<a name="l00226"></a>00226         <span class="keywordflow">if</span>($task-&gt;<a class="code" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a3cf7454be9911ea585af23c81846c4f2">isFinished</a>() and !$task-&gt;<a class="code" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a74414d119df5847e27b764b51351d6ef">isCompleted</a>()){
+<a name="l00227"></a>00227             --$this-&gt;asyncTasks;
+<a name="l00228"></a>00228             $task-&gt;<a class="code" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a62de45ffabf1019c71e14ca0c3b12e54">onCompletion</a>(Server::getInstance());
+<a name="l00229"></a>00229             $task-&gt;setCompleted();
+<a name="l00230"></a>00230             unset($this-&gt;asyncTaskStorage[spl_object_hash($task)]);
+<a name="l00231"></a>00231             <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00232"></a>00232         }
+<a name="l00233"></a>00233         <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00234"></a>00234     }
+<a name="l00235"></a>00235 
+<a name="l00236"></a>00236     <span class="keyword">private</span> <span class="keyword">function</span> isReady($currentTicks){
+<a name="l00237"></a>00237         <span class="keywordflow">return</span> count($this-&gt;tasks) &gt; 0 and $this-&gt;queue-&gt;current()-&gt;getNextRun() &lt;= $currentTicks;
 <a name="l00238"></a>00238     }
 <a name="l00239"></a>00239 
-<a name="l00240"></a>00240 }
+<a name="l00243"></a>00243     <span class="keyword">private</span> <span class="keyword">function</span> nextId(){
+<a name="l00244"></a>00244         <span class="keywordflow">return</span> $this-&gt;ids++;
+<a name="l00245"></a>00245     }
+<a name="l00246"></a>00246 
+<a name="l00247"></a>00247 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -296,7 +302,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><b>ServerScheduler.php</b>      </li>
 
-    <li class="footer">Generated on Thu Jul 3 2014 11:38:33 for PocketMine-MP by
+    <li class="footer">Generated on Sat Jul 5 2014 22:04:04 for PocketMine-MP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

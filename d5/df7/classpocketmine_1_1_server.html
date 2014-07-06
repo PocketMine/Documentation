@@ -157,6 +157,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a3f09f0e8b2925c01d97c2a767c0eadad">getTicksPerSecond</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a28497b688d55ae15e185a0078813c9e1">getInterfaces</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a0a77866f12dab7c5a92cdb40cc1784e8">addInterface</a> (SourceInterface $interface)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#abfbccdc805ed1f787769d9c12ba8ba39">removeInterface</a> (SourceInterface $interface)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a91629a8535231964b63adcaf1dfed7ec">sendPacket</a> ($address, $port, $payload)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a7b11edead6520050643a511d0c7b4a84">handlePacket</a> ($address, $port, $payload)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#ade8d430cfe9a43fa0dd5b3c515e63101">getCommandMap</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#ab173ee59d49782e9a9fd13a1cdc39cbf">getOnlinePlayers</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac801d7f3320a54acfcdf0496c2ca7795"></a><!-- doxytag: member="pocketmine::Server::addRecipe" ref="ac801d7f3320a54acfcdf0496c2ca7795" args="(Recipe $recipe)" -->
@@ -247,7 +250,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>The class that manages everything </p>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00085">85</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00088">88</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="af97447fb9c82067aab4c6fd9e2dfea6c"></a><!-- doxytag: member="pocketmine::Server::__construct" ref="af97447fb9c82067aab4c6fd9e2dfea6c" args="(\SplClassLoader $autoloader,\ThreadedLogger $logger, $filePath, $dataPath, $pluginPath)" -->
 <div class="memitem">
@@ -302,7 +305,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01303">1303</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01349">1349</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -328,7 +331,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00546">546</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00551">551</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -353,7 +356,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01194">1194</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01240">1240</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -378,7 +381,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01218">1218</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01264">1264</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -404,7 +407,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01479">1479</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01525">1525</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -441,7 +444,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01512">1512</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01558">1558</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -479,7 +482,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01561">1561</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01607">1607</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -504,7 +507,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01522">1522</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01568">1568</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -523,7 +526,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00425">425</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00430">430</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -542,7 +545,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00228">228</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00233">233</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -561,7 +564,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00214">214</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00219">219</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -580,7 +583,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>string[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01270">1270</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01316">1316</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -599,7 +602,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>SimpleCommandMap </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00553">553</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00586">586</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -636,7 +639,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>boolean </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01134">1134</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01180">1180</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -673,7 +676,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01111">1111</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01157">1157</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -710,7 +713,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01061">1061</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01107">1107</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -729,7 +732,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>CraftingManager </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00502">502</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00507">507</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -748,7 +751,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00242">242</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00247">247</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -767,7 +770,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00439">439</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00444">444</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -786,7 +789,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>Level </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00785">785</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00818">818</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -805,7 +808,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00404">404</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00409">409</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -831,7 +834,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00376">376</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00381">381</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -850,7 +853,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>EntityMetadataStore </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00467">467</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00472">472</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -869,7 +872,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00235">235</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00240">240</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -888,7 +891,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00312">312</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00317">317</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -907,7 +910,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00305">305</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00310">310</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -934,7 +937,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00345">345</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00350">350</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -961,7 +964,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00323">323</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00328">328</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -980,7 +983,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00298">298</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00303">303</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -999,7 +1002,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>GenerationRequestManager </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00516">516</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00521">521</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1018,7 +1021,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html">Server</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01292">1292</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01338">1338</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1037,7 +1040,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>SourceInterface[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00539">539</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00544">544</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1056,7 +1059,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00277">277</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00282">282</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1075,7 +1078,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>BanList </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01187">1187</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01233">1233</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1101,7 +1104,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Level </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00816">816</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00849">849</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1127,7 +1130,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Level </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00829">829</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00862">862</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1146,7 +1149,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>LevelMetadataStore </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00481">481</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00486">486</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1165,7 +1168,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>Level[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00778">778</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00811">811</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1184,7 +1187,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00291">291</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00296">296</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1203,7 +1206,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00453">453</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00458">458</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 <p>Referenced by <a class="el" href="../../de/d08/_generation_request_manager_8php_source.html#l00040">pocketmine\level\generator\GenerationRequestManager\__construct()</a>.</p>
 
@@ -1234,16 +1237,16 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00460">460</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00465">465</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
-<p>Referenced by <a class="el" href="../../de/d08/_generation_request_manager_8php_source.html#l00040">pocketmine\level\generator\GenerationRequestManager\__construct()</a>, and <a class="el" href="../../d7/d6b/_level_8php_source.html#l00154">pocketmine\level\Level\__construct()</a>.</p>
+<p>Referenced by <a class="el" href="../../de/d08/_generation_request_manager_8php_source.html#l00040">pocketmine\level\generator\GenerationRequestManager\__construct()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/df7/classpocketmine_1_1_server_a5b32c69f8f444fc6b2768a5afc0af656_icgraph.svg" width="667" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/df7/classpocketmine_1_1_server_a5b32c69f8f444fc6b2768a5afc0af656_icgraph.svg" width="667" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </p>
@@ -1265,7 +1268,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00256">256</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00261">261</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1284,7 +1287,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00446">446</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00451">451</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1303,7 +1306,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00193">193</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00198">198</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1322,7 +1325,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>BanList </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01180">1180</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01226">1226</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1348,7 +1351,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>OfflinePlayer|Player </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00573">573</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00606">606</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1374,7 +1377,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Compound </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00589">589</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00622">622</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 <p>Referenced by <a class="el" href="../../de/dca/_offline_player_8php_source.html#l00039">pocketmine\OfflinePlayer\__construct()</a>.</p>
 
@@ -1405,7 +1408,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a>[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00560">560</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00593">593</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1424,7 +1427,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>Config </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01259">1259</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01305">1305</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1450,7 +1453,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00710">710</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00743">743</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1476,7 +1479,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00735">735</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00768">768</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1495,7 +1498,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>PlayerMetadataStore </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00474">474</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00479">479</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1521,7 +1524,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>PluginIdentifiableCommand </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01169">1169</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01215">1215</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1540,7 +1543,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>PluginManager </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00495">495</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00500">500</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1559,7 +1562,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00249">249</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00254">254</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1578,7 +1581,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00207">207</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00212">212</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1597,7 +1600,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00263">263</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00268">268</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1634,7 +1637,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>mixed </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01076">1076</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01122">1122</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1653,7 +1656,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>ServerScheduler </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00509">509</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00514">514</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1672,7 +1675,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00284">284</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00289">289</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1691,7 +1694,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00418">418</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00423">423</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1710,7 +1713,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00523">523</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00528">528</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1730,7 +1733,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <p>Returns the last server TPS measure</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>float </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00532">532</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00537">537</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1749,7 +1752,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>AutoUpdater </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00488">488</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00493">493</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1768,7 +1771,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00221">221</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00226">226</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1787,7 +1790,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00270">270</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00275">275</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1806,7 +1809,50 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>Config </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01252">1252</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01298">1298</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b11edead6520050643a511d0c7b4a84"></a><!-- doxytag: member="pocketmine::Server::handlePacket" ref="a7b11edead6520050643a511d0c7b4a84" args="($address, $port, $payload)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\<a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a7b11edead6520050643a511d0c7b4a84">Server::handlePacket</a> </td>
+          <td>(</td>
+          <td class="paramtype">$&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&#160;</td>
+          <td class="paramname"><em>payload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$address</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$port</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$payload</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00577">577</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1825,7 +1871,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00411">411</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00416">416</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1844,7 +1890,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00432">432</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00437">437</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1870,7 +1916,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01032">1032</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01078">1078</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1896,7 +1942,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00807">807</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00840">840</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1922,7 +1968,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01245">1245</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01291">1291</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1941,7 +1987,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00200">200</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00205">205</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -1967,7 +2013,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01236">1236</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01282">1282</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2000,7 +2046,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00858">858</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00896">896</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2025,7 +2071,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01538">1538</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01584">1584</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2051,7 +2097,32 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a>[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00751">751</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00784">784</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abfbccdc805ed1f787769d9c12ba8ba39"></a><!-- doxytag: member="pocketmine::Server::removeInterface" ref="abfbccdc805ed1f787769d9c12ba8ba39" args="(SourceInterface $interface)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\<a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#abfbccdc805ed1f787769d9c12ba8ba39">Server::removeInterface</a> </td>
+          <td>(</td>
+          <td class="paramtype">SourceInterface $&#160;</td>
+          <td class="paramname"><em>interface</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">SourceInterface</td><td class="paramname">$interface</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00558">558</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2076,7 +2147,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01206">1206</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01252">1252</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2101,7 +2172,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00769">769</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00802">802</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 <p>References <a class="el" href="../../d9/d76/_player_8php_source.html#l00469">pocketmine\Player\getAddress()</a>, <a class="el" href="../../d9/d76/_player_8php_source.html#l00476">pocketmine\Player\getPort()</a>, and <a class="el" href="../../d9/d76/_player_8php_source.html#l00284">pocketmine\Player\isOnline()</a>.</p>
 
@@ -2138,7 +2209,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01226">1226</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01272">1272</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2174,7 +2245,50 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00699">699</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00732">732</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a91629a8535231964b63adcaf1dfed7ec"></a><!-- doxytag: member="pocketmine::Server::sendPacket" ref="a91629a8535231964b63adcaf1dfed7ec" args="($address, $port, $payload)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\<a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a91629a8535231964b63adcaf1dfed7ec">Server::sendPacket</a> </td>
+          <td>(</td>
+          <td class="paramtype">$&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&#160;</td>
+          <td class="paramname"><em>payload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$address</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$port</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$payload</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00568">568</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2210,7 +2324,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01160">1160</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01206">1206</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2246,7 +2360,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01124">1124</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01170">1170</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2282,7 +2396,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01101">1101</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01147">1147</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2308,7 +2422,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00796">796</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00829">829</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2327,7 +2441,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <p>Shutdowns the server correctly </p>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01620">1620</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01666">1666</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2346,7 +2460,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <p>Starts the PocketMine-MP server and starts processing ticks and packets </p>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01661">1661</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01707">1707</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2365,7 +2479,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <p>Tries to execute a server tick </p>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01940">1940</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01986">1986</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2400,8 +2514,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </table>
   </dd>
 </dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00843">843</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00878">878</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2429,7 +2544,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
       <li class="navelem"><a class="el" href="../../d2/d69/namespacepocketmine.html">pocketmine</a>      </li>
       <li class="navelem"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html">Server</a>      </li>
 
-    <li class="footer">Generated on Thu Jul 3 2014 11:38:33 for PocketMine-MP by
+    <li class="footer">Generated on Sat Jul 5 2014 22:04:04 for PocketMine-MP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

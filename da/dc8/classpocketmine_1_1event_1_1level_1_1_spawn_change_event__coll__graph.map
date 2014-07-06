@@ -1,4 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$d5/dbb/classpocketmine_1_1event_1_1level_1_1_level_event.html" title="{pocketmine\\event\\level\\LevelEvent\n|# $level\l|+ getLevel()\l}" alt="" coords="32,192,256,277"/>
+<area shape="rect" id="node2" href="$d5/dbb/classpocketmine_1_1event_1_1level_1_1_level_event.html" title="{pocketmine\\event\\level\\LevelEvent\n||+ __construct()\l+ getLevel()\l}" alt="" coords="32,193,256,295"/>
 <area shape="rect" id="node4" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="63,6,225,143"/>
 </map>

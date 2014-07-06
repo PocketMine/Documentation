@@ -174,6 +174,7 @@ var hierarchy =
       [ "pocketmine\\event\\inventory\\InventoryOpenEvent", "db/da4/classpocketmine_1_1event_1_1inventory_1_1_inventory_open_event.html", null ],
       [ "pocketmine\\event\\inventory\\InventoryPickupItemEvent", "db/d63/classpocketmine_1_1event_1_1inventory_1_1_inventory_pickup_item_event.html", null ],
       [ "pocketmine\\event\\inventory\\InventoryTransactionEvent", "dc/dd1/classpocketmine_1_1event_1_1inventory_1_1_inventory_transaction_event.html", null ],
+      [ "pocketmine\\event\\level\\LevelUnloadEvent", "db/d6b/classpocketmine_1_1event_1_1level_1_1_level_unload_event.html", null ],
       [ "pocketmine\\event\\player\\PlayerAchievementAwardedEvent", "dc/dc4/classpocketmine_1_1event_1_1player_1_1_player_achievement_awarded_event.html", null ],
       [ "pocketmine\\event\\player\\PlayerAnimationEvent", "d0/d3e/classpocketmine_1_1event_1_1player_1_1_player_animation_event.html", null ],
       [ "pocketmine\\event\\player\\PlayerChatEvent", "df/d8f/classpocketmine_1_1event_1_1player_1_1_player_chat_event.html", null ],
@@ -198,6 +199,7 @@ var hierarchy =
       [ "pocketmine\\level\\generator\\GenerationChunkManager", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html", null ],
       [ "pocketmine\\level\\Level", "d3/d4b/classpocketmine_1_1level_1_1_level.html", null ]
     ] ],
+    [ "pocketmine\\level\\ChunkRequestTask", "d0/d63/classpocketmine_1_1level_1_1_chunk_request_task.html", null ],
     [ "pocketmine\\level\\format\\ChunkSection", "d1/da6/interfacepocketmine_1_1level_1_1format_1_1_chunk_section.html", [
       [ "pocketmine\\level\\format\\anvil\\ChunkSection", "d3/db6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_chunk_section.html", null ],
       [ "pocketmine\\level\\format\\generic\\EmptyChunkSection", "d8/df0/classpocketmine_1_1level_1_1format_1_1generic_1_1_empty_chunk_section.html", null ],
@@ -375,6 +377,10 @@ var hierarchy =
       ] ],
       [ "pocketmine\\event\\inventory\\InventoryTransactionEvent", "dc/dd1/classpocketmine_1_1event_1_1inventory_1_1_inventory_transaction_event.html", null ],
       [ "pocketmine\\event\\level\\LevelEvent", "d5/dbb/classpocketmine_1_1event_1_1level_1_1_level_event.html", [
+        [ "pocketmine\\event\\level\\LevelInitEvent", "d6/da9/classpocketmine_1_1event_1_1level_1_1_level_init_event.html", null ],
+        [ "pocketmine\\event\\level\\LevelLoadEvent", "d6/d2e/classpocketmine_1_1event_1_1level_1_1_level_load_event.html", null ],
+        [ "pocketmine\\event\\level\\LevelSaveEvent", "d3/d3b/classpocketmine_1_1event_1_1level_1_1_level_save_event.html", null ],
+        [ "pocketmine\\event\\level\\LevelUnloadEvent", "db/d6b/classpocketmine_1_1event_1_1level_1_1_level_unload_event.html", null ],
         [ "pocketmine\\event\\level\\SpawnChangeEvent", "d3/dc3/classpocketmine_1_1event_1_1level_1_1_spawn_change_event.html", null ]
       ] ],
       [ "pocketmine\\event\\player\\PlayerEvent", "d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html", [
@@ -622,7 +628,6 @@ var hierarchy =
       [ "pocketmine\\entity\\Skeleton", "d7/d19/classpocketmine_1_1entity_1_1_skeleton.html", null ]
     ] ],
     [ "pocketmine\\network\\query\\QueryHandler", "dd/dee/classpocketmine_1_1network_1_1query_1_1_query_handler.html", null ],
-    [ "pocketmine\\network\\query\\QueryPacket", "dc/d3a/classpocketmine_1_1network_1_1query_1_1_query_packet.html", null ],
     [ "raklib\\RakLib", "d8/df8/classraklib_1_1_rak_lib.html", null ],
     [ "pocketmine\\utils\\Random", "db/dcb/classpocketmine_1_1utils_1_1_random.html", null ],
     [ "pocketmine\\network\\rcon\\RCON", "d9/d60/classpocketmine_1_1network_1_1rcon_1_1_r_c_o_n.html", null ],

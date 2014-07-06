@@ -50,6 +50,7 @@ var classpocketmine_1_1_player =
     [ "removeMetadata", "df/d2c/classpocketmine_1_1_player.html#a7906761982a736317f2b18e3af617c6e", null ],
     [ "removeWindow", "df/d2c/classpocketmine_1_1_player.html#afa911b0cb5d837f19b25c788c6fcb1e7", null ],
     [ "save", "df/d2c/classpocketmine_1_1_player.html#a5ca632b75ba3c04f5964e5092b38032e", null ],
+    [ "sendChunk", "df/d2c/classpocketmine_1_1_player.html#afaee3b4151f8e813520f6fdd182af683", null ],
     [ "sendMessage", "df/d2c/classpocketmine_1_1_player.html#a11b329b6a29f6499ef382e068080c69e", null ],
     [ "sendNextChunk", "df/d2c/classpocketmine_1_1_player.html#a6d56c71a3ea8ecd88592937e098fdae9", null ],
     [ "sendSettings", "df/d2c/classpocketmine_1_1_player.html#acddc8b7ce9c3b80d0aeed314db8a3445", null ],

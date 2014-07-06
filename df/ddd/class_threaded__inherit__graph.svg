@@ -62,19 +62,21 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html" target="_top" xlink:title="{pocketmine\\scheduler\\AsyncTask\n||+ run()\l+ isFinished()\l+ getResult()\l+ hasResult()\l+ setResult()\l+ onRun()\l+ onCompletion()\l}">
-<polygon fill="white" stroke="black" points="259,-822.5 259,-963.5 423,-963.5 423,-822.5 259,-822.5"/>
-<text text-anchor="middle" x="341" y="-950.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\scheduler\AsyncTask</text>
-<polyline fill="none" stroke="black" points="259,-942.5 423,-942.5 "/>
-<text text-anchor="middle" x="341" y="-929.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="259,-921.5 423,-921.5 "/>
-<text text-anchor="start" x="267" y="-908.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ run()</text>
-<text text-anchor="start" x="267" y="-895.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isFinished()</text>
-<text text-anchor="start" x="267" y="-882.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getResult()</text>
-<text text-anchor="start" x="267" y="-869.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ hasResult()</text>
-<text text-anchor="start" x="267" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setResult()</text>
-<text text-anchor="start" x="267" y="-843.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onRun()</text>
-<text text-anchor="start" x="267" y="-830.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onCompletion()</text>
+<a xlink:href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html" target="_top" xlink:title="{pocketmine\\scheduler\\AsyncTask\n||+ run()\l+ isFinished()\l+ isCompleted()\l+ setCompleted()\l+ getResult()\l+ hasResult()\l+ setResult()\l+ onRun()\l+ onCompletion()\l}">
+<polygon fill="white" stroke="black" points="259,-809.5 259,-976.5 423,-976.5 423,-809.5 259,-809.5"/>
+<text text-anchor="middle" x="341" y="-963.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\scheduler\AsyncTask</text>
+<polyline fill="none" stroke="black" points="259,-955.5 423,-955.5 "/>
+<text text-anchor="middle" x="341" y="-942.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="259,-934.5 423,-934.5 "/>
+<text text-anchor="start" x="267" y="-921.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ run()</text>
+<text text-anchor="start" x="267" y="-908.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isFinished()</text>
+<text text-anchor="start" x="267" y="-895.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isCompleted()</text>
+<text text-anchor="start" x="267" y="-882.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setCompleted()</text>
+<text text-anchor="start" x="267" y="-869.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getResult()</text>
+<text text-anchor="start" x="267" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ hasResult()</text>
+<text text-anchor="start" x="267" y="-843.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setResult()</text>
+<text text-anchor="start" x="267" y="-830.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onRun()</text>
+<text text-anchor="start" x="267" y="-817.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ onCompletion()</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
@@ -144,8 +146,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge4" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M251.912,-815.311C233.169,-797.717 213.954,-778.694 197,-760 172.824,-733.344 148.395,-701.356 129.399,-675.101"/>
-<polygon fill="none" stroke="midnightblue" points="249.643,-817.981 259.345,-822.238 254.415,-812.86 249.643,-817.981"/>
+<path fill="none" stroke="midnightblue" d="M251.578,-814.997C232.94,-797.491 213.853,-778.582 197,-760 172.824,-733.344 148.395,-701.356 129.399,-675.101"/>
+<polygon fill="none" stroke="midnightblue" points="249.269,-817.63 258.969,-821.89 254.043,-812.51 249.269,-817.63"/>
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>

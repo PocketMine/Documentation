@@ -129,6 +129,8 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>cancelAllTasks</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#acb459a9f55c0c1a77ea810dcd3a1127e">isQueued</a> ($taskId)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#a2026bad21c32e05b36686d929dc39bd8">mainThreadHeartbeat</a> ($currentTick)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a115adb9c23a2b868075dd006f6d67b70"></a><!-- doxytag: member="pocketmine::scheduler::ServerScheduler::collectAsyncTask" ref="a115adb9c23a2b868075dd006f6d67b70" args="(AsyncTask $task)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>collectAsyncTask</b> (<a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html">AsyncTask</a> $task)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5e714177b1f9dfe244d8a1d38a27455"></a><!-- doxytag: member="pocketmine::scheduler::ServerScheduler::$WORKERS" ref="ab5e714177b1f9dfe244d8a1d38a27455" args="" -->
@@ -143,6 +145,8 @@ Protected Attributes</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$asyncPool</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abaddac9a171ecda64e8988f939fa00ce"></a><!-- doxytag: member="pocketmine::scheduler::ServerScheduler::$asyncTasks" ref="abaddac9a171ecda64e8988f939fa00ce" args="" -->
 &#160;</td><td class="memItemRight" valign="bottom"><b>$asyncTasks</b> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2b561bfcae14bfd3212a8151f1d086c"></a><!-- doxytag: member="pocketmine::scheduler::ServerScheduler::$asyncTaskStorage" ref="ab2b561bfcae14bfd3212a8151f1d086c" args="" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>$asyncTaskStorage</b> = []</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a890a6f692d185bb6e226ca3f951774bb"></a><!-- doxytag: member="pocketmine::scheduler::ServerScheduler::$currentTick" ref="a890a6f692d185bb6e226ca3f951774bb" args="" -->
 &#160;</td><td class="memItemRight" valign="bottom"><b>$currentTick</b> = 0</td></tr>
 </table>
@@ -171,7 +175,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00115">115</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00119">119</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
 
 </div>
 </div>
@@ -196,7 +200,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00125">125</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00129">129</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
 
 <p>References <a class="el" href="../../d0/dde/_plugin_task_8php_source.html#l00044">pocketmine\scheduler\PluginTask\getOwner()</a>.</p>
 
@@ -234,7 +238,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00149">149</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00153">153</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
 
 </div>
 </div>
@@ -259,16 +263,16 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00197">197</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00201">201</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
 
-<p>References <a class="el" href="../../df/d19/_task_8php_source.html#l00039">pocketmine\scheduler\Task\getTaskId()</a>, <a class="el" href="../../dd/d42/_async_task_8php_source.html#l00047">pocketmine\scheduler\AsyncTask\isFinished()</a>, and <a class="el" href="../../df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a62de45ffabf1019c71e14ca0c3b12e54">pocketmine\scheduler\AsyncTask\onCompletion()</a>.</p>
+<p>References <a class="el" href="../../df/d19/_task_8php_source.html#l00039">pocketmine\scheduler\Task\getTaskId()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler_a2026bad21c32e05b36686d929dc39bd8_cgraph.svg" width="100%" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler_a2026bad21c32e05b36686d929dc39bd8_cgraph.svg" width="100%" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </p>
@@ -298,7 +302,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00076">76</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00079">79</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
 
 </div>
 </div>
@@ -342,7 +346,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>null|TaskHandler </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00108">108</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00112">112</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
 
 </div>
 </div>
@@ -379,7 +383,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>null|TaskHandler </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00087">87</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00091">91</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
 
 </div>
 </div>
@@ -416,7 +420,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>null|TaskHandler </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00097">97</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00101">101</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
 
 </div>
 </div>
@@ -442,7 +446,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>null|TaskHandler </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00064">64</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html#l00067">67</a> of file <a class="el" href="../../dd/d11/_server_scheduler_8php_source.html">ServerScheduler.php</a>.</p>
 
 </div>
 </div>
@@ -471,7 +475,7 @@ Protected Attributes</h2></td></tr>
       <li class="navelem"><a class="el" href="../../d3/d75/namespacepocketmine_1_1scheduler.html">scheduler</a>      </li>
       <li class="navelem"><a class="el" href="../../d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html">ServerScheduler</a>      </li>
 
-    <li class="footer">Generated on Thu Jul 3 2014 11:38:37 for PocketMine-MP by
+    <li class="footer">Generated on Sat Jul 5 2014 22:04:07 for PocketMine-MP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>
