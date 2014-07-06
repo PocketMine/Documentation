@@ -1,8 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$db/de9/classpocketmine_1_1level_1_1generator_1_1populator_1_1_populator.html" title="pocketmine\\level\\generator\\populator\\Populator" alt="" coords="7,112,300,141"/>
-<area shape="rect" id="node3" href="$dc/d88/classpocketmine_1_1level_1_1generator_1_1populator_1_1_mineshaft.html" title="pocketmine\\level\\generator\\populator\\Mineshaft" alt="" coords="349,5,645,35"/>
-<area shape="rect" id="node5" href="$d4/d19/classpocketmine_1_1level_1_1generator_1_1populator_1_1_ore.html" title="pocketmine\\level\\generator\\populator\\Ore" alt="" coords="368,59,627,88"/>
-<area shape="rect" id="node7" href="$df/dd0/classpocketmine_1_1level_1_1generator_1_1populator_1_1_pond.html" title="pocketmine\\level\\generator\\populator\\Pond" alt="" coords="363,112,632,141"/>
-<area shape="rect" id="node9" href="$d5/d9e/classpocketmine_1_1level_1_1generator_1_1populator_1_1_tall_grass.html" title="pocketmine\\level\\generator\\populator\\TallGrass" alt="" coords="351,165,644,195"/>
-<area shape="rect" id="node11" href="$d5/d35/classpocketmine_1_1level_1_1generator_1_1populator_1_1_tree.html" title="pocketmine\\level\\generator\\populator\\Tree" alt="" coords="365,219,629,248"/>
+<area shape="rect" id="node1" href="$d6/dd0/classpocketmine_1_1level_1_1generator_1_1object_1_1_tree.html" title="pocketmine\\level\\generator\\object\\Tree" alt="" coords="7,85,252,115"/>
+<area shape="rect" id="node3" href="$d1/d75/classpocketmine_1_1level_1_1generator_1_1object_1_1_big_tree.html" title="pocketmine\\level\\generator\\object\\BigTree" alt="" coords="312,5,579,35"/>
+<area shape="rect" id="node5" href="$d6/d86/classpocketmine_1_1level_1_1generator_1_1object_1_1_pine_tree.html" title="pocketmine\\level\\generator\\object\\PineTree" alt="" coords="309,59,581,88"/>
+<area shape="rect" id="node7" href="$d9/d33/classpocketmine_1_1level_1_1generator_1_1object_1_1_small_tree.html" title="pocketmine\\level\\generator\\object\\SmallTree" alt="" coords="305,112,585,141"/>
+<area shape="rect" id="node9" href="$dc/dbc/classpocketmine_1_1level_1_1generator_1_1object_1_1_spruce_tree.html" title="pocketmine\\level\\generator\\object\\SpruceTree" alt="" coords="301,165,589,195"/>
 </map>

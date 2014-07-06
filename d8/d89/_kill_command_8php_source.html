@@ -130,40 +130,47 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00022"></a>00022 <span class="keyword">namespace </span>pocketmine\command\defaults;
 <a name="l00023"></a>00023 
 <a name="l00024"></a>00024 use pocketmine\command\CommandSender;
-<a name="l00025"></a>00025 use pocketmine\Player;
-<a name="l00026"></a>00026 use pocketmine\utils\TextFormat;
-<a name="l00027"></a>00027 
-<a name="l00028"></a><a class="code" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html">00028</a> <span class="keyword">class </span><a class="code" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html">KillCommand</a> <span class="keyword">extends</span> <a class="code" href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">VanillaCommand</a>{
+<a name="l00025"></a>00025 use pocketmine\event\entity\EntityDamageEvent;
+<a name="l00026"></a>00026 use pocketmine\Player;
+<a name="l00027"></a>00027 use pocketmine\Server;
+<a name="l00028"></a>00028 use pocketmine\utils\TextFormat;
 <a name="l00029"></a>00029 
-<a name="l00030"></a>00030     <span class="keyword">public</span> <span class="keyword">function</span> __construct($name){
-<a name="l00031"></a>00031         parent::__construct(
-<a name="l00032"></a>00032             $name,
-<a name="l00033"></a>00033             <span class="stringliteral">&quot;Commits suicide, only usable as a player&quot;</span>,
-<a name="l00034"></a>00034             <span class="stringliteral">&quot;/kill&quot;</span>,
-<a name="l00035"></a>00035             [<span class="stringliteral">&quot;suicide&quot;</span>]
-<a name="l00036"></a>00036         );
-<a name="l00037"></a>00037         $this-&gt;setPermission(<span class="stringliteral">&quot;pocketmine.command.kill&quot;</span>);
-<a name="l00038"></a>00038     }
-<a name="l00039"></a>00039 
-<a name="l00040"></a><a class="code" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html#acd6c78f74d8652cb2dd46579e0fd0894">00040</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html#acd6c78f74d8652cb2dd46579e0fd0894">execute</a>(<a class="code" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">CommandSender</a> $sender, $currentAlias, array $args){
-<a name="l00041"></a>00041         <span class="keywordflow">if</span>(!$this-&gt;testPermission($sender)){
-<a name="l00042"></a>00042             <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00043"></a>00043         }
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045         <span class="keywordflow">if</span>($sender instanceof <a class="code" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a>){
-<a name="l00046"></a>00046             <span class="comment">//TODO: EntityDamageEvent</span>
-<a name="l00047"></a>00047 
-<a name="l00048"></a>00048             <span class="comment">//$ev-&gt;setLastDamageCause()</span>
-<a name="l00049"></a>00049             $sender-&gt;setHealth(0);
-<a name="l00050"></a>00050             <span class="comment">//TODO: set update</span>
-<a name="l00051"></a>00051             $sender-&gt;<a class="code" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#a84dfc3ca6b3d6aec33ca38b9ff39af1e">sendMessage</a>(<span class="stringliteral">&quot;Ouch. That look like it hurt.&quot;</span>);
-<a name="l00052"></a>00052         }<span class="keywordflow">else</span>{
-<a name="l00053"></a>00053             $sender-&gt;<a class="code" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#a84dfc3ca6b3d6aec33ca38b9ff39af1e">sendMessage</a>(TextFormat::RED . <span class="stringliteral">&quot;You can only perform this command as a player&quot;</span>);
-<a name="l00054"></a>00054         }
+<a name="l00030"></a><a class="code" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html">00030</a> <span class="keyword">class </span><a class="code" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html">KillCommand</a> <span class="keyword">extends</span> <a class="code" href="../../d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html">VanillaCommand</a>{
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032     <span class="keyword">public</span> <span class="keyword">function</span> __construct($name){
+<a name="l00033"></a>00033         parent::__construct(
+<a name="l00034"></a>00034             $name,
+<a name="l00035"></a>00035             <span class="stringliteral">&quot;Commits suicide, only usable as a player&quot;</span>,
+<a name="l00036"></a>00036             <span class="stringliteral">&quot;/kill&quot;</span>,
+<a name="l00037"></a>00037             [<span class="stringliteral">&quot;suicide&quot;</span>]
+<a name="l00038"></a>00038         );
+<a name="l00039"></a>00039         $this-&gt;setPermission(<span class="stringliteral">&quot;pocketmine.command.kill&quot;</span>);
+<a name="l00040"></a>00040     }
+<a name="l00041"></a>00041 
+<a name="l00042"></a><a class="code" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html#acd6c78f74d8652cb2dd46579e0fd0894">00042</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html#acd6c78f74d8652cb2dd46579e0fd0894">execute</a>(<a class="code" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html">CommandSender</a> $sender, $currentAlias, array $args){
+<a name="l00043"></a>00043         <span class="keywordflow">if</span>(!$this-&gt;testPermission($sender)){
+<a name="l00044"></a>00044             <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00045"></a>00045         }
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047         <span class="keywordflow">if</span>($sender instanceof <a class="code" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a>){
+<a name="l00048"></a>00048             <span class="comment">//TODO: EntityDamageEvent</span>
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050             Server::getInstance()-&gt;getPluginManager()-&gt;callEvent($ev = <span class="keyword">new</span> EntityDamageEvent($sender, EntityDamageEvent::CAUSE_SUICIDE, 1000));
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052             <span class="keywordflow">if</span>($ev-&gt;isCancelled()){
+<a name="l00053"></a>00053                 <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00054"></a>00054             }
 <a name="l00055"></a>00055 
-<a name="l00056"></a>00056         <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00057"></a>00057     }
-<a name="l00058"></a>00058 }
+<a name="l00056"></a>00056             $sender-&gt;setLastDamageCause($ev);
+<a name="l00057"></a>00057             $sender-&gt;setHealth(0);
+<a name="l00058"></a>00058             $sender-&gt;<a class="code" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#a84dfc3ca6b3d6aec33ca38b9ff39af1e">sendMessage</a>(<span class="stringliteral">&quot;Ouch. That look like it hurt.&quot;</span>);
+<a name="l00059"></a>00059         }<span class="keywordflow">else</span>{
+<a name="l00060"></a>00060             $sender-&gt;<a class="code" href="../../d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#a84dfc3ca6b3d6aec33ca38b9ff39af1e">sendMessage</a>(TextFormat::RED . <span class="stringliteral">&quot;You can only perform this command as a player&quot;</span>);
+<a name="l00061"></a>00061         }
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063         <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00064"></a>00064     }
+<a name="l00065"></a>00065 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -184,7 +191,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><b>KillCommand.php</b>      </li>
 
-    <li class="footer">Generated on Sat Jul 5 2014 22:04:03 for PocketMine-MP by
+    <li class="footer">Generated on Sun Jul 6 2014 17:13:00 for PocketMine-MP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

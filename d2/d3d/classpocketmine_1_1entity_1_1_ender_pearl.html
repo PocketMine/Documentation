@@ -142,12 +142,13 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>getViewers</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a89c38db3f189bb142d4d9f61434dcffa">spawnTo</a> (<a class="el" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a> $player)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#ad0e2fe5c3105fd5881967898c2f6b60c">despawnFrom</a> (<a class="el" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a> $player)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5aa8749181539ea41e41833a859d5ace"></a><!-- doxytag: member="pocketmine::entity::EnderPearl::attack" ref="a5aa8749181539ea41e41833a859d5ace" args="($damage, $source=&quot;generic&quot;)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><b>attack</b> ($damage, $source=&quot;generic&quot;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5adf642ac0f2b356d5e6b5f45370eab4"></a><!-- doxytag: member="pocketmine::entity::EnderPearl::heal" ref="a5adf642ac0f2b356d5e6b5f45370eab4" args="($amount, $source=&quot;generic&quot;)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><b>heal</b> ($amount, $source=&quot;generic&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a03af41d1205a97bf91705ed6b6a7a5bd">attack</a> ($damage, $source=EntityDamageEvent::CAUSE_MAGIC)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4650d89ca6432c4d93650c4a83dd3a4c"></a><!-- doxytag: member="pocketmine::entity::EnderPearl::heal" ref="a4650d89ca6432c4d93650c4a83dd3a4c" args="($amount)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>heal</b> ($amount)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a0070e86138b1bb1c8f0efe904abb0566">getHealth</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a71b839be63501d55a10873ca8718134f">setHealth</a> ($amount)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a2dbf8d994f5b61320cb2bc64d493eb17">setLastDamageCause</a> ($type)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a002454edb17ea82c05dbfd7a8e50a4fe">getLastDamageCause</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#adf37e872282e3dc566464dac41ce92ad">getMaxHealth</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a83edc4e8ff7b3323b4893b5f75955735">setMaxHealth</a> ($amount)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7429ae9356f0ccf0ef9ae0f9bfa0da6c"></a><!-- doxytag: member="pocketmine::entity::EnderPearl::canCollideWith" ref="a7429ae9356f0ccf0ef9ae0f9bfa0da6c" args="(Entity $entity)" -->
@@ -320,6 +321,8 @@ Protected Attributes</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$hasSpawned</b> = []</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae252271840137da3d59868e6b6acfd59"></a><!-- doxytag: member="pocketmine::entity::EnderPearl::$id" ref="ae252271840137da3d59868e6b6acfd59" args="" -->
 &#160;</td><td class="memItemRight" valign="bottom"><b>$id</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ee237d5294f517e3bce337007a1f7b3"></a><!-- doxytag: member="pocketmine::entity::EnderPearl::$lastDamageCause" ref="a1ee237d5294f517e3bce337007a1f7b3" args="" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>$lastDamageCause</b> = null</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7e53ecc613b746106afa15d98e768a8"></a><!-- doxytag: member="pocketmine::entity::EnderPearl::$age" ref="ab7e53ecc613b746106afa15d98e768a8" args="" -->
 &#160;</td><td class="memItemRight" valign="bottom"><b>$age</b> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49626a84307079bfd347b8cd9157ed11"></a><!-- doxytag: member="pocketmine::entity::EnderPearl::$isStatic" ref="a49626a84307079bfd347b8cd9157ed11" args="" -->
@@ -343,6 +346,43 @@ Protected Attributes</h2></td></tr>
 <div class="textblock">
 <p>Definition at line <a class="el" href="../../d4/d7d/_ender_pearl_8php_source.html#l00025">25</a> of file <a class="el" href="../../d4/d7d/_ender_pearl_8php_source.html">EnderPearl.php</a>.</p>
 </div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a03af41d1205a97bf91705ed6b6a7a5bd"></a><!-- doxytag: member="pocketmine::entity::EnderPearl::attack" ref="a03af41d1205a97bf91705ed6b6a7a5bd" args="($damage, $source=EntityDamageEvent::CAUSE_MAGIC)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\entity\<a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a03af41d1205a97bf91705ed6b6a7a5bd">Entity::attack</a> </td>
+          <td>(</td>
+          <td class="paramtype">$&#160;</td>
+          <td class="paramname"><em>damage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&#160;</td>
+          <td class="paramname"><em>source</em> = <code>EntityDamageEvent::CAUSE_MAGIC</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [abstract, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">float</td><td class="paramname">$damage</td><td></td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;EntityDamageEvent</td><td class="paramname">$source</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>mixed </dd></dl>
+
+<p>Reimplemented in <a class="el" href="../../d5/d1a/classpocketmine_1_1entity_1_1_dropped_item.html#a601b18e0a3d5cd76c17861b2b7468270">pocketmine\entity\DroppedItem</a>, and <a class="el" href="../../df/d0c/classpocketmine_1_1entity_1_1_living.html#a954fa7bc7fd683cdd72a299c95421a8d">pocketmine\entity\Living</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ab1be7fd02dbb8a4a6f6219085367efb2"></a><!-- doxytag: member="pocketmine::entity::EnderPearl::checkBlockCollision" ref="ab1be7fd02dbb8a4a6f6219085367efb2" args="(&amp;$list=array())" -->
 <div class="memitem">
 <div class="memproto">
@@ -365,7 +405,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Block[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00802">802</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00833">833</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
 
 </div>
 </div>
@@ -392,9 +432,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html#af4c61f87d778bee7be3b780c661cc968">pocketmine\entity\Human</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00236">236</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00240">240</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
 
-<p>References <a class="el" href="../../d9/d76/_player_8php_source.html#l00720">pocketmine\Player\dataPacket()</a>.</p>
+<p>References <a class="el" href="../../d9/d76/_player_8php_source.html#l00726">pocketmine\Player\dataPacket()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -423,7 +463,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>Vector3 </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00470">470</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00501">501</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
 
 </div>
 </div>
@@ -442,7 +482,26 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00252">252</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00262">262</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a002454edb17ea82c05dbfd7a8e50a4fe"></a><!-- doxytag: member="pocketmine::entity::EnderPearl::getLastDamageCause" ref="a002454edb17ea82c05dbfd7a8e50a4fe" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\entity\<a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a002454edb17ea82c05dbfd7a8e50a4fe">Entity::getLastDamageCause</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="return"><dt><b>Returns:</b></dt><dd>int|EntityDamageEvent|null </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00298">298</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
 
 </div>
 </div>
@@ -461,7 +520,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00275">275</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00305">305</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
 
 </div>
 </div>
@@ -487,7 +546,32 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00261">261</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00271">271</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2dbf8d994f5b61320cb2bc64d493eb17"></a><!-- doxytag: member="pocketmine::entity::EnderPearl::setLastDamageCause" ref="a2dbf8d994f5b61320cb2bc64d493eb17" args="($type)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pocketmine\entity\<a class="el" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a2dbf8d994f5b61320cb2bc64d493eb17">Entity::setLastDamageCause</a> </td>
+          <td>(</td>
+          <td class="paramtype">$&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int&#160;|&#160;EntityDamageEvent</td><td class="paramname">$type</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00291">291</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
 
 </div>
 </div>
@@ -512,7 +596,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00282">282</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00312">312</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
 
 </div>
 </div>
@@ -539,7 +623,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="../../d5/d1a/classpocketmine_1_1entity_1_1_dropped_item.html#ae2d005f3b93b53a88f15407f4a98f702">pocketmine\entity\DroppedItem</a>, and <a class="el" href="../../d4/ddf/classpocketmine_1_1entity_1_1_human.html#afa990ecbe7137a0775f24d821595118e">pocketmine\entity\Human</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00227">227</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00231">231</a> of file <a class="el" href="../../d1/d1d/_entity_8php_source.html">Entity.php</a>.</p>
 
 </div>
 </div>
@@ -568,7 +652,7 @@ Protected Attributes</h2></td></tr>
       <li class="navelem"><a class="el" href="../../d7/db9/namespacepocketmine_1_1entity.html">entity</a>      </li>
       <li class="navelem"><a class="el" href="../../d2/d3d/classpocketmine_1_1entity_1_1_ender_pearl.html">EnderPearl</a>      </li>
 
-    <li class="footer">Generated on Sat Jul 5 2014 22:04:06 for PocketMine-MP by
+    <li class="footer">Generated on Sun Jul 6 2014 17:13:02 for PocketMine-MP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

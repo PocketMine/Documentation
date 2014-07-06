@@ -240,9 +240,9 @@ var sectionId = 'dynsection-3';
 </g>
 <!-- Node18 -->
 <g id="node35" class="node"><title>Node18</title>
-<a xlink:href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html#acd6c78f74d8652cb2dd46579e0fd0894" target="_top" xlink:title="pocketmine\\command\\defaults\\KillCommand\\execute">
-<polygon fill="white" stroke="black" points="326.5,-560.5 326.5,-581.5 575.5,-581.5 575.5,-560.5 326.5,-560.5"/>
-<text text-anchor="middle" x="451" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\KillCommand\execute</text>
+<a xlink:href="../../d7/d4c/classpocketmine_1_1command_1_1defaults_1_1_tell_command.html#abc7ab52cd728fde2465bbaf36805250c" target="_top" xlink:title="pocketmine\\command\\defaults\\TellCommand\\execute">
+<polygon fill="white" stroke="black" points="325.5,-560.5 325.5,-581.5 576.5,-581.5 576.5,-560.5 325.5,-560.5"/>
+<text text-anchor="middle" x="451" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\TellCommand\execute</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node18 -->
@@ -276,38 +276,38 @@ var sectionId = 'dynsection-3';
 </g>
 <!-- Node21 -->
 <g id="node41" class="node"><title>Node21</title>
-<a xlink:href="../../d7/dce/classpocketmine_1_1command_1_1defaults_1_1_kick_command.html#af534396b397410abe92f6c44aca06f88" target="_top" xlink:title="pocketmine\\command\\defaults\\KickCommand\\execute">
-<polygon fill="white" stroke="black" points="323.5,-440.5 323.5,-461.5 578.5,-461.5 578.5,-440.5 323.5,-440.5"/>
-<text text-anchor="middle" x="451" y="-448.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\KickCommand\execute</text>
+<a xlink:href="../../da/d23/classpocketmine_1_1command_1_1defaults_1_1_ban_command.html#a66deff18b9dcbdbf709d68a8c249f16f" target="_top" xlink:title="pocketmine\\command\\defaults\\BanCommand\\execute">
+<polygon fill="white" stroke="black" points="324.5,-440.5 324.5,-461.5 577.5,-461.5 577.5,-440.5 324.5,-440.5"/>
+<text text-anchor="middle" x="451" y="-448.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\BanCommand\execute</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node21 -->
 <g id="edge40" class="edge"><title>Node1&#45;&gt;Node21</title>
-<path fill="none" stroke="midnightblue" d="M143.2,-592.326C169.734,-561.2 227.831,-499.339 292,-471 301.926,-466.617 312.517,-463.105 323.341,-460.3"/>
+<path fill="none" stroke="midnightblue" d="M143.2,-592.326C169.734,-561.2 227.831,-499.339 292,-471 302.18,-466.504 313.061,-462.925 324.175,-460.086"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="140.313,-590.323 136.575,-600.236 145.679,-594.817 140.313,-590.323"/>
 </g>
 <!-- Node22 -->
 <g id="node43" class="node"><title>Node22</title>
-<a xlink:href="../../d7/d4c/classpocketmine_1_1command_1_1defaults_1_1_tell_command.html#abc7ab52cd728fde2465bbaf36805250c" target="_top" xlink:title="pocketmine\\command\\defaults\\TellCommand\\execute">
-<polygon fill="white" stroke="black" points="325.5,-400.5 325.5,-421.5 576.5,-421.5 576.5,-400.5 325.5,-400.5"/>
-<text text-anchor="middle" x="451" y="-408.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\TellCommand\execute</text>
+<a xlink:href="../../d7/dce/classpocketmine_1_1command_1_1defaults_1_1_kick_command.html#af534396b397410abe92f6c44aca06f88" target="_top" xlink:title="pocketmine\\command\\defaults\\KickCommand\\execute">
+<polygon fill="white" stroke="black" points="323.5,-400.5 323.5,-421.5 578.5,-421.5 578.5,-400.5 323.5,-400.5"/>
+<text text-anchor="middle" x="451" y="-408.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\KickCommand\execute</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node22 -->
 <g id="edge42" class="edge"><title>Node1&#45;&gt;Node22</title>
-<path fill="none" stroke="midnightblue" d="M139.204,-591.391C162.253,-553.108 219.003,-468.864 292,-431 302.373,-425.62 313.622,-421.466 325.18,-418.282"/>
+<path fill="none" stroke="midnightblue" d="M139.204,-591.391C162.253,-553.108 219.003,-468.864 292,-431 301.755,-425.94 312.286,-421.965 323.119,-418.861"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="136.146,-589.686 134.081,-600.077 142.176,-593.242 136.146,-589.686"/>
 </g>
 <!-- Node23 -->
 <g id="node45" class="node"><title>Node23</title>
-<a xlink:href="../../da/d23/classpocketmine_1_1command_1_1defaults_1_1_ban_command.html#a66deff18b9dcbdbf709d68a8c249f16f" target="_top" xlink:title="pocketmine\\command\\defaults\\BanCommand\\execute">
-<polygon fill="white" stroke="black" points="324.5,-360.5 324.5,-381.5 577.5,-381.5 577.5,-360.5 324.5,-360.5"/>
-<text text-anchor="middle" x="451" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\BanCommand\execute</text>
+<a xlink:href="../../d1/d1c/classpocketmine_1_1command_1_1defaults_1_1_version_command.html#a4f59f946974e5a7010dac1cecc6a6302" target="_top" xlink:title="pocketmine\\command\\defaults\\VersionCommand\\execute">
+<polygon fill="white" stroke="black" points="316.5,-360.5 316.5,-381.5 585.5,-381.5 585.5,-360.5 316.5,-360.5"/>
+<text text-anchor="middle" x="451" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\VersionCommand\execute</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node23 -->
 <g id="edge44" class="edge"><title>Node1&#45;&gt;Node23</title>
-<path fill="none" stroke="midnightblue" d="M136.302,-590.89C155.905,-546.233 209.694,-438.967 292,-391 301.976,-385.186 312.895,-380.732 324.191,-377.349"/>
+<path fill="none" stroke="midnightblue" d="M136.302,-590.89C155.905,-546.233 209.694,-438.967 292,-391 299.692,-386.517 307.945,-382.843 316.5,-379.844"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="132.965,-589.789 132.249,-600.36 139.401,-592.543 132.965,-589.789"/>
 </g>
 <!-- Node24 -->
@@ -324,21 +324,21 @@ var sectionId = 'dynsection-3';
 </g>
 <!-- Node25 -->
 <g id="node49" class="node"><title>Node25</title>
-<a xlink:href="../../d1/d1c/classpocketmine_1_1command_1_1defaults_1_1_version_command.html#a4f59f946974e5a7010dac1cecc6a6302" target="_top" xlink:title="pocketmine\\command\\defaults\\VersionCommand\\execute">
-<polygon fill="white" stroke="black" points="316.5,-280.5 316.5,-301.5 585.5,-301.5 585.5,-280.5 316.5,-280.5"/>
-<text text-anchor="middle" x="451" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\VersionCommand\execute</text>
+<a xlink:href="../../d0/d2f/classpocketmine_1_1command_1_1defaults_1_1_spawnpoint_command.html#ac85d21f18b0e16b0c68d11fffd1abfce" target="_top" xlink:title="pocketmine\\command\\defaults\\SpawnpointCommand\\execute">
+<polygon fill="white" stroke="black" points="307.5,-280.5 307.5,-301.5 594.5,-301.5 594.5,-280.5 307.5,-280.5"/>
+<text text-anchor="middle" x="451" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\SpawnpointCommand\execute</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node25 -->
 <g id="edge48" class="edge"><title>Node1&#45;&gt;Node25</title>
-<path fill="none" stroke="midnightblue" d="M132.43,-590.396C145.597,-534.647 190.101,-380.388 292,-311 299.474,-305.911 307.613,-301.791 316.127,-298.478"/>
+<path fill="none" stroke="midnightblue" d="M132.43,-590.396C145.597,-534.647 190.101,-380.388 292,-311 297.289,-307.398 302.911,-304.282 308.764,-301.594"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="128.947,-589.928 130.146,-600.455 135.773,-591.478 128.947,-589.928"/>
 </g>
 <!-- Node26 -->
 <g id="node51" class="node"><title>Node26</title>
-<a xlink:href="../../d0/d2f/classpocketmine_1_1command_1_1defaults_1_1_spawnpoint_command.html#ac85d21f18b0e16b0c68d11fffd1abfce" target="_top" xlink:title="pocketmine\\command\\defaults\\SpawnpointCommand\\execute">
-<polygon fill="white" stroke="black" points="307.5,-240.5 307.5,-261.5 594.5,-261.5 594.5,-240.5 307.5,-240.5"/>
-<text text-anchor="middle" x="451" y="-248.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\SpawnpointCommand\execute</text>
+<a xlink:href="../../d7/de4/classpocketmine_1_1command_1_1defaults_1_1_gamemode_command.html#ab9bc857fdbb0e8affc63127db3608d15" target="_top" xlink:title="pocketmine\\command\\defaults\\GamemodeCommand\\execute">
+<polygon fill="white" stroke="black" points="308,-240.5 308,-261.5 594,-261.5 594,-240.5 308,-240.5"/>
+<text text-anchor="middle" x="451" y="-248.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\GamemodeCommand\execute</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node26 -->
@@ -360,38 +360,38 @@ var sectionId = 'dynsection-3';
 </g>
 <!-- Node28 -->
 <g id="node55" class="node"><title>Node28</title>
-<a xlink:href="../../d7/de4/classpocketmine_1_1command_1_1defaults_1_1_gamemode_command.html#ab9bc857fdbb0e8affc63127db3608d15" target="_top" xlink:title="pocketmine\\command\\defaults\\GamemodeCommand\\execute">
-<polygon fill="white" stroke="black" points="308,-160.5 308,-181.5 594,-181.5 594,-160.5 308,-160.5"/>
-<text text-anchor="middle" x="451" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\GamemodeCommand\execute</text>
+<a xlink:href="../../da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#ac5ab34b69ac2d49775598b82200a3edc" target="_top" xlink:title="pocketmine\\command\\defaults\\HelpCommand\\execute">
+<polygon fill="white" stroke="black" points="323,-160.5 323,-181.5 579,-181.5 579,-160.5 323,-160.5"/>
+<text text-anchor="middle" x="451" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\HelpCommand\execute</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node28 -->
 <g id="edge54" class="edge"><title>Node1&#45;&gt;Node28</title>
-<path fill="none" stroke="midnightblue" d="M129.054,-590.119C133.791,-520.433 159.216,-294.444 292,-191 296.938,-187.153 302.237,-183.828 307.794,-180.962"/>
+<path fill="none" stroke="midnightblue" d="M129.054,-590.119C133.791,-520.433 159.216,-294.444 292,-191 301.218,-183.819 311.691,-178.456 322.759,-174.507"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="125.551,-590.063 128.44,-600.256 132.538,-590.486 125.551,-590.063"/>
 </g>
 <!-- Node29 -->
 <g id="node57" class="node"><title>Node29</title>
-<a xlink:href="../../da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#ac5ab34b69ac2d49775598b82200a3edc" target="_top" xlink:title="pocketmine\\command\\defaults\\HelpCommand\\execute">
-<polygon fill="white" stroke="black" points="323,-120.5 323,-141.5 579,-141.5 579,-120.5 323,-120.5"/>
-<text text-anchor="middle" x="451" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\HelpCommand\execute</text>
+<a xlink:href="../../d3/d02/classpocketmine_1_1command_1_1defaults_1_1_teleport_command.html#ae22cb93e0624b0a76caa8d2dc36f32ed" target="_top" xlink:title="pocketmine\\command\\defaults\\TeleportCommand\\execute">
+<polygon fill="white" stroke="black" points="315.5,-120.5 315.5,-141.5 586.5,-141.5 586.5,-120.5 315.5,-120.5"/>
+<text text-anchor="middle" x="451" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\TeleportCommand\execute</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node29 -->
 <g id="edge56" class="edge"><title>Node1&#45;&gt;Node29</title>
-<path fill="none" stroke="midnightblue" d="M132.353,-590.43C150.042,-508.837 219.083,-209.571 292,-151 301.218,-143.595 311.758,-138.098 322.927,-134.078"/>
+<path fill="none" stroke="midnightblue" d="M132.353,-590.43C150.042,-508.837 219.083,-209.571 292,-151 299.049,-145.337 306.872,-140.79 315.157,-137.167"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="128.878,-589.939 130.202,-600.451 135.723,-591.408 128.878,-589.939"/>
 </g>
 <!-- Node30 -->
 <g id="node59" class="node"><title>Node30</title>
-<a xlink:href="../../d3/d02/classpocketmine_1_1command_1_1defaults_1_1_teleport_command.html#ae22cb93e0624b0a76caa8d2dc36f32ed" target="_top" xlink:title="pocketmine\\command\\defaults\\TeleportCommand\\execute">
-<polygon fill="white" stroke="black" points="315.5,-80.5 315.5,-101.5 586.5,-101.5 586.5,-80.5 315.5,-80.5"/>
-<text text-anchor="middle" x="451" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\TeleportCommand\execute</text>
+<a xlink:href="../../dc/d6e/classpocketmine_1_1command_1_1defaults_1_1_kill_command.html#acd6c78f74d8652cb2dd46579e0fd0894" target="_top" xlink:title="pocketmine\\command\\defaults\\KillCommand\\execute">
+<polygon fill="white" stroke="black" points="326.5,-80.5 326.5,-101.5 575.5,-101.5 575.5,-80.5 326.5,-80.5"/>
+<text text-anchor="middle" x="451" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">pocketmine\command\defaults\KillCommand\execute</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node30 -->
 <g id="edge58" class="edge"><title>Node1&#45;&gt;Node30</title>
-<path fill="none" stroke="midnightblue" d="M131.763,-590.334C147.868,-504.235 213.748,-175.517 292,-111 299.084,-105.159 306.984,-100.492 315.371,-96.7932"/>
+<path fill="none" stroke="midnightblue" d="M131.763,-590.334C147.868,-504.235 213.748,-175.517 292,-111 302.089,-102.682 313.833,-96.7436 326.284,-92.5921"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="128.275,-589.948 129.898,-600.418 135.158,-591.221 128.275,-589.948"/>
 </g>
 <!-- Node31 -->

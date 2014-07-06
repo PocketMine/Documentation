@@ -1,8 +1,3 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$d7/d3c/interfacepocketmine_1_1inventory_1_1_recipe.html" title="pocketmine\\inventory\\Recipe" alt="" coords="7,59,196,88"/>
-<area shape="rect" id="node3" href="$db/db2/classpocketmine_1_1inventory_1_1_furnace_recipe.html" title="pocketmine\\inventory\\FurnaceRecipe" alt="" coords="253,5,491,35"/>
-<area shape="rect" id="node5" href="$d7/d21/classpocketmine_1_1inventory_1_1_shaped_recipe.html" title="pocketmine\\inventory\\ShapedRecipe" alt="" coords="255,59,489,88"/>
-<area shape="rect" id="node7" href="$d6/d74/classpocketmine_1_1inventory_1_1_shapeless_recipe.html" title="pocketmine\\inventory\\ShapelessRecipe" alt="" coords="247,112,497,141"/>
-<area shape="rect" id="node9" href="$d8/d7b/classpocketmine_1_1inventory_1_1_big_shapeless_recipe.html" title="pocketmine\\inventory\\BigShapelessRecipe" alt="" coords="572,85,841,115"/>
-<area shape="rect" id="node11" href="$d5/da2/classpocketmine_1_1inventory_1_1_stonecutter_shapeless_recipe.html" title="pocketmine\\inventory\\StonecutterShapelessRecipe" alt="" coords="548,139,865,168"/>
+<area shape="rect" id="node1" href="$d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html" title="pocketmine\\inventory\\InventoryType" alt="" coords="7,5,239,35"/>
 </map>

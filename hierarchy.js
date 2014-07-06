@@ -164,11 +164,15 @@ var hierarchy =
       [ "pocketmine\\event\\block\\BlockBreakEvent", "de/d3a/classpocketmine_1_1event_1_1block_1_1_block_break_event.html", null ],
       [ "pocketmine\\event\\block\\BlockPlaceEvent", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html", null ],
       [ "pocketmine\\event\\entity\\EntityArmorChangeEvent", "d5/daa/classpocketmine_1_1event_1_1entity_1_1_entity_armor_change_event.html", null ],
+      [ "pocketmine\\event\\entity\\EntityDamageEvent", "d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html", [
+        [ "pocketmine\\event\\entity\\EntityDamageByEntityEvent", "d0/d34/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_entity_event.html", null ]
+      ] ],
       [ "pocketmine\\event\\entity\\EntityExplodeEvent", "d9/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_explode_event.html", null ],
       [ "pocketmine\\event\\entity\\EntityInventoryChangeEvent", "d3/d5e/classpocketmine_1_1event_1_1entity_1_1_entity_inventory_change_event.html", null ],
       [ "pocketmine\\event\\entity\\EntityLevelChangeEvent", "d4/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_level_change_event.html", null ],
       [ "pocketmine\\event\\entity\\EntityMotionEvent", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html", null ],
       [ "pocketmine\\event\\entity\\EntityMoveEvent", "d4/d22/classpocketmine_1_1event_1_1entity_1_1_entity_move_event.html", null ],
+      [ "pocketmine\\event\\entity\\EntityRegainHealthEvent", "da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html", null ],
       [ "pocketmine\\event\\entity\\EntityTeleportEvent", "dc/df2/classpocketmine_1_1event_1_1entity_1_1_entity_teleport_event.html", null ],
       [ "pocketmine\\event\\inventory\\CraftItemEvent", "d0/d1a/classpocketmine_1_1event_1_1inventory_1_1_craft_item_event.html", null ],
       [ "pocketmine\\event\\inventory\\InventoryOpenEvent", "db/da4/classpocketmine_1_1event_1_1inventory_1_1_inventory_open_event.html", null ],
@@ -360,12 +364,15 @@ var hierarchy =
       ] ],
       [ "pocketmine\\event\\entity\\EntityEvent", "de/d84/classpocketmine_1_1event_1_1entity_1_1_entity_event.html", [
         [ "pocketmine\\event\\entity\\EntityArmorChangeEvent", "d5/daa/classpocketmine_1_1event_1_1entity_1_1_entity_armor_change_event.html", null ],
+        [ "pocketmine\\event\\entity\\EntityDamageEvent", "d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html", null ],
+        [ "pocketmine\\event\\entity\\EntityDeathEvent", "d7/d1e/classpocketmine_1_1event_1_1entity_1_1_entity_death_event.html", null ],
         [ "pocketmine\\event\\entity\\EntityDespawnEvent", "dc/d06/classpocketmine_1_1event_1_1entity_1_1_entity_despawn_event.html", null ],
         [ "pocketmine\\event\\entity\\EntityExplodeEvent", "d9/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_explode_event.html", null ],
         [ "pocketmine\\event\\entity\\EntityInventoryChangeEvent", "d3/d5e/classpocketmine_1_1event_1_1entity_1_1_entity_inventory_change_event.html", null ],
         [ "pocketmine\\event\\entity\\EntityLevelChangeEvent", "d4/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_level_change_event.html", null ],
         [ "pocketmine\\event\\entity\\EntityMotionEvent", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html", null ],
         [ "pocketmine\\event\\entity\\EntityMoveEvent", "d4/d22/classpocketmine_1_1event_1_1entity_1_1_entity_move_event.html", null ],
+        [ "pocketmine\\event\\entity\\EntityRegainHealthEvent", "da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html", null ],
         [ "pocketmine\\event\\entity\\EntitySpawnEvent", "df/d6f/classpocketmine_1_1event_1_1entity_1_1_entity_spawn_event.html", null ],
         [ "pocketmine\\event\\entity\\EntityTeleportEvent", "dc/df2/classpocketmine_1_1event_1_1entity_1_1_entity_teleport_event.html", null ]
       ] ],
@@ -597,6 +604,7 @@ var hierarchy =
     [ "pocketmine\\permission\\PermissionAttachment", "d0/d95/classpocketmine_1_1permission_1_1_permission_attachment.html", null ],
     [ "pocketmine\\permission\\PermissionAttachmentInfo", "d5/d9f/classpocketmine_1_1permission_1_1_permission_attachment_info.html", null ],
     [ "pocketmine\\permission\\PermissionRemovedExecutor", "d3/dc4/interfacepocketmine_1_1permission_1_1_permission_removed_executor.html", null ],
+    [ "pocketmine\\event\\player\\PlayerDeathEvent", "d7/d7d/classpocketmine_1_1event_1_1player_1_1_player_death_event.html", null ],
     [ "pocketmine\\plugin\\Plugin", "d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html", [
       [ "pocketmine\\plugin\\PluginBase", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html", null ]
     ] ],

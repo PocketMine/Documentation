@@ -44,6 +44,7 @@ var searchData=
   ['attachablelogger',['AttachableLogger',['../d9/d4f/interface_attachable_logger.html',1,'']]],
   ['attachablethreadedlogger',['AttachableThreadedLogger',['../d3/db3/class_attachable_threaded_logger.html',1,'']]],
   ['attachmentremoved',['attachmentRemoved',['../d3/dc4/interfacepocketmine_1_1permission_1_1_permission_removed_executor.html#a8ba44939d354b0bfe5a4342c94741e85',1,'pocketmine::permission::PermissionRemovedExecutor']]],
+  ['attack',['attack',['../d5/d1a/classpocketmine_1_1entity_1_1_dropped_item.html#a601b18e0a3d5cd76c17861b2b7468270',1,'pocketmine::entity::DroppedItem\attack()'],['../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a03af41d1205a97bf91705ed6b6a7a5bd',1,'pocketmine::entity::Entity\attack()'],['../df/d0c/classpocketmine_1_1entity_1_1_living.html#a954fa7bc7fd683cdd72a299c95421a8d',1,'pocketmine::entity::Living\attack()']]],
   ['autoupdater',['AutoUpdater',['../df/dd9/classpocketmine_1_1updater_1_1_auto_updater.html',1,'pocketmine::updater']]],
   ['awardachievement',['awardAchievement',['../df/d2c/classpocketmine_1_1_player.html#ada5f649ef3f1fa2b64b92c12f3f49291',1,'pocketmine::Player']]],
   ['axisalignedbb',['AxisAlignedBB',['../dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html',1,'pocketmine::math']]]

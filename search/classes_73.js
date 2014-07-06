@@ -81,6 +81,6 @@ var searchData=
   ['stonewall',['StoneWall',['../da/d43/classpocketmine_1_1block_1_1_stone_wall.html',1,'pocketmine::block']]],
   ['stopcommand',['StopCommand',['../d2/d16/classpocketmine_1_1command_1_1defaults_1_1_stop_command.html',1,'pocketmine::command::defaults']]],
   ['string',['String',['../df/dd5/classpocketmine_1_1nbt_1_1tag_1_1_string.html',1,'pocketmine::nbt::tag']]],
-  ['sugarcane',['Sugarcane',['../da/d01/classpocketmine_1_1item_1_1_sugarcane.html',1,'pocketmine::item']]],
-  ['sugarcane',['Sugarcane',['../da/da9/classpocketmine_1_1block_1_1_sugarcane.html',1,'pocketmine::block']]]
+  ['sugarcane',['Sugarcane',['../da/da9/classpocketmine_1_1block_1_1_sugarcane.html',1,'pocketmine::block']]],
+  ['sugarcane',['Sugarcane',['../da/d01/classpocketmine_1_1item_1_1_sugarcane.html',1,'pocketmine::item']]]
 ];

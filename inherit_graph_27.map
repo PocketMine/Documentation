@@ -1,3 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$d0/d63/classpocketmine_1_1level_1_1_chunk_request_task.html" title="pocketmine\\level\\ChunkRequestTask" alt="" coords="5,5,245,35"/>
+<area shape="rect" id="node1" href="$d4/dd9/interfacepocketmine_1_1level_1_1_chunk_manager.html" title="pocketmine\\level\\ChunkManager" alt="" coords="7,32,217,61"/>
+<area shape="rect" id="node3" href="$da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html" title="pocketmine\\level\\generator\\GenerationChunkManager" alt="" coords="267,5,600,35"/>
+<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html" title="pocketmine\\level\\Level" alt="" coords="356,59,511,88"/>
 </map>

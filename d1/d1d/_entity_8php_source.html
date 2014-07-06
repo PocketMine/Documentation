@@ -130,953 +130,980 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00025"></a>00025 <span class="keyword">namespace </span>pocketmine\entity;
 <a name="l00026"></a>00026 
 <a name="l00027"></a>00027 use pocketmine\block\Block;
-<a name="l00028"></a>00028 use pocketmine\event\entity\EntityDespawnEvent;
-<a name="l00029"></a>00029 use pocketmine\event\entity\EntityLevelChangeEvent;
-<a name="l00030"></a>00030 use pocketmine\event\entity\EntityMotionEvent;
-<a name="l00031"></a>00031 use pocketmine\event\entity\EntityMoveEvent;
-<a name="l00032"></a>00032 use pocketmine\event\entity\EntitySpawnEvent;
-<a name="l00033"></a>00033 use pocketmine\event\entity\EntityTeleportEvent;
-<a name="l00034"></a>00034 use pocketmine\level\format\Chunk;
-<a name="l00035"></a>00035 use pocketmine\level\Level;
-<a name="l00036"></a>00036 use pocketmine\level\Position;
-<a name="l00037"></a>00037 use pocketmine\math\AxisAlignedBB;
-<a name="l00038"></a>00038 use pocketmine\math\Vector3 as Vector3;
-<a name="l00039"></a>00039 use pocketmine\metadata\Metadatable;
-<a name="l00040"></a>00040 use pocketmine\metadata\MetadataValue;
-<a name="l00041"></a>00041 use pocketmine\nbt\tag\Byte;
-<a name="l00042"></a>00042 use pocketmine\nbt\tag\Compound;
-<a name="l00043"></a>00043 use pocketmine\nbt\tag\Float;
-<a name="l00044"></a>00044 use pocketmine\nbt\tag\Short;
-<a name="l00045"></a>00045 use pocketmine\network\protocol\MoveEntityPacket;
-<a name="l00046"></a>00046 use pocketmine\network\protocol\MovePlayerPacket;
-<a name="l00047"></a>00047 use pocketmine\network\protocol\RemoveEntityPacket;
-<a name="l00048"></a>00048 use pocketmine\network\protocol\SetEntityMotionPacket;
-<a name="l00049"></a>00049 use pocketmine\network\protocol\SetTimePacket;
-<a name="l00050"></a>00050 use pocketmine\network\protocol\UnloadChunkPacket;
-<a name="l00051"></a>00051 use pocketmine\Network;
-<a name="l00052"></a>00052 use pocketmine\Player;
-<a name="l00053"></a>00053 use pocketmine\plugin\Plugin;
-<a name="l00054"></a>00054 use pocketmine\Server;
-<a name="l00055"></a>00055 
-<a name="l00056"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">00056</a> <span class="keyword">abstract</span> <span class="keyword">class </span><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> <span class="keyword">extends</span> Position implements Metadatable{
-<a name="l00057"></a>00057     <span class="keyword">public</span> <span class="keyword">static</span> $entityCount = 1;
-<a name="l00058"></a>00058 
-<a name="l00062"></a>00062     <span class="keyword">public</span> <span class="keyword">static</span> $needUpdate = [];
-<a name="l00063"></a>00063 
-<a name="l00067"></a>00067     <span class="keyword">protected</span> $hasSpawned = [];
-<a name="l00068"></a>00068 
-<a name="l00069"></a>00069     <span class="keyword">protected</span> $id;
+<a name="l00028"></a>00028 use pocketmine\event\entity\EntityDamageEvent;
+<a name="l00029"></a>00029 use pocketmine\event\entity\EntityDeathEvent;
+<a name="l00030"></a>00030 use pocketmine\event\entity\EntityDespawnEvent;
+<a name="l00031"></a>00031 use pocketmine\event\entity\EntityLevelChangeEvent;
+<a name="l00032"></a>00032 use pocketmine\event\entity\EntityMotionEvent;
+<a name="l00033"></a>00033 use pocketmine\event\entity\EntityMoveEvent;
+<a name="l00034"></a>00034 use pocketmine\event\entity\EntitySpawnEvent;
+<a name="l00035"></a>00035 use pocketmine\event\entity\EntityTeleportEvent;
+<a name="l00036"></a>00036 use pocketmine\level\format\Chunk;
+<a name="l00037"></a>00037 use pocketmine\level\Level;
+<a name="l00038"></a>00038 use pocketmine\level\Position;
+<a name="l00039"></a>00039 use pocketmine\math\AxisAlignedBB;
+<a name="l00040"></a>00040 use pocketmine\math\Vector3 as Vector3;
+<a name="l00041"></a>00041 use pocketmine\metadata\Metadatable;
+<a name="l00042"></a>00042 use pocketmine\metadata\MetadataValue;
+<a name="l00043"></a>00043 use pocketmine\nbt\tag\Byte;
+<a name="l00044"></a>00044 use pocketmine\nbt\tag\Compound;
+<a name="l00045"></a>00045 use pocketmine\nbt\tag\Float;
+<a name="l00046"></a>00046 use pocketmine\nbt\tag\Short;
+<a name="l00047"></a>00047 use pocketmine\network\protocol\MoveEntityPacket;
+<a name="l00048"></a>00048 use pocketmine\network\protocol\MovePlayerPacket;
+<a name="l00049"></a>00049 use pocketmine\network\protocol\RemoveEntityPacket;
+<a name="l00050"></a>00050 use pocketmine\network\protocol\SetEntityMotionPacket;
+<a name="l00051"></a>00051 use pocketmine\network\protocol\SetTimePacket;
+<a name="l00052"></a>00052 use pocketmine\network\protocol\UnloadChunkPacket;
+<a name="l00053"></a>00053 use pocketmine\Network;
+<a name="l00054"></a>00054 use pocketmine\Player;
+<a name="l00055"></a>00055 use pocketmine\plugin\Plugin;
+<a name="l00056"></a>00056 use pocketmine\Server;
+<a name="l00057"></a>00057 
+<a name="l00058"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">00058</a> <span class="keyword">abstract</span> <span class="keyword">class </span><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> <span class="keyword">extends</span> Position implements Metadatable{
+<a name="l00059"></a>00059     <span class="keyword">public</span> <span class="keyword">static</span> $entityCount = 1;
+<a name="l00060"></a>00060 
+<a name="l00064"></a>00064     <span class="keyword">public</span> <span class="keyword">static</span> $needUpdate = [];
+<a name="l00065"></a>00065 
+<a name="l00069"></a>00069     <span class="keyword">protected</span> $hasSpawned = [];
 <a name="l00070"></a>00070 
-<a name="l00071"></a>00071     <span class="keyword">public</span> $passenger = null;
-<a name="l00072"></a>00072     <span class="keyword">public</span> $vehicle = null;
-<a name="l00073"></a>00073 
-<a name="l00075"></a>00075     <span class="keyword">public</span> $chunkX;
-<a name="l00077"></a>00077     <span class="keyword">public</span> $chunkZ;
-<a name="l00078"></a>00078 
-<a name="l00080"></a>00080     <span class="keyword">public</span> $chunk;
-<a name="l00081"></a>00081 
-<a name="l00082"></a>00082     <span class="keyword">public</span> $lastX;
-<a name="l00083"></a>00083     <span class="keyword">public</span> $lastY;
-<a name="l00084"></a>00084     <span class="keyword">public</span> $lastZ;
+<a name="l00071"></a>00071     <span class="keyword">protected</span> $id;
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073     <span class="keyword">public</span> $passenger = null;
+<a name="l00074"></a>00074     <span class="keyword">public</span> $vehicle = null;
+<a name="l00075"></a>00075 
+<a name="l00077"></a>00077     <span class="keyword">public</span> $chunkX;
+<a name="l00079"></a>00079     <span class="keyword">public</span> $chunkZ;
+<a name="l00080"></a>00080 
+<a name="l00082"></a>00082     <span class="keyword">public</span> $chunk;
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084     <span class="keyword">protected</span> $lastDamageCause = null;
 <a name="l00085"></a>00085 
-<a name="l00086"></a>00086     <span class="keyword">public</span> $motionX;
-<a name="l00087"></a>00087     <span class="keyword">public</span> $motionY;
-<a name="l00088"></a>00088     <span class="keyword">public</span> $motionZ;
-<a name="l00089"></a>00089     <span class="keyword">public</span> $lastMotionX;
-<a name="l00090"></a>00090     <span class="keyword">public</span> $lastMotionY;
-<a name="l00091"></a>00091     <span class="keyword">public</span> $lastMotionZ;
-<a name="l00092"></a>00092 
-<a name="l00093"></a>00093     <span class="keyword">public</span> $yaw;
-<a name="l00094"></a>00094     <span class="keyword">public</span> $pitch;
-<a name="l00095"></a>00095     <span class="keyword">public</span> $lastYaw;
-<a name="l00096"></a>00096     <span class="keyword">public</span> $lastPitch;
-<a name="l00097"></a>00097 
-<a name="l00099"></a>00099     <span class="keyword">public</span> $boundingBox;
-<a name="l00100"></a>00100     <span class="keyword">public</span> $onGround;
-<a name="l00101"></a>00101     <span class="keyword">public</span> $inBlock = <span class="keyword">false</span>;
-<a name="l00102"></a>00102     <span class="keyword">public</span> $positionChanged;
-<a name="l00103"></a>00103     <span class="keyword">public</span> $motionChanged;
-<a name="l00104"></a>00104     <span class="keyword">public</span> $dead;
-<a name="l00105"></a>00105     <span class="keyword">protected</span> $age = 0;
-<a name="l00106"></a>00106 
-<a name="l00107"></a>00107     <span class="keyword">public</span> $height;
-<a name="l00108"></a>00108     <span class="keyword">public</span> $width;
-<a name="l00109"></a>00109     <span class="keyword">public</span> $length;
+<a name="l00086"></a>00086     <span class="keyword">public</span> $lastX;
+<a name="l00087"></a>00087     <span class="keyword">public</span> $lastY;
+<a name="l00088"></a>00088     <span class="keyword">public</span> $lastZ;
+<a name="l00089"></a>00089 
+<a name="l00090"></a>00090     <span class="keyword">public</span> $motionX;
+<a name="l00091"></a>00091     <span class="keyword">public</span> $motionY;
+<a name="l00092"></a>00092     <span class="keyword">public</span> $motionZ;
+<a name="l00093"></a>00093     <span class="keyword">public</span> $lastMotionX;
+<a name="l00094"></a>00094     <span class="keyword">public</span> $lastMotionY;
+<a name="l00095"></a>00095     <span class="keyword">public</span> $lastMotionZ;
+<a name="l00096"></a>00096 
+<a name="l00097"></a>00097     <span class="keyword">public</span> $yaw;
+<a name="l00098"></a>00098     <span class="keyword">public</span> $pitch;
+<a name="l00099"></a>00099     <span class="keyword">public</span> $lastYaw;
+<a name="l00100"></a>00100     <span class="keyword">public</span> $lastPitch;
+<a name="l00101"></a>00101 
+<a name="l00103"></a>00103     <span class="keyword">public</span> $boundingBox;
+<a name="l00104"></a>00104     <span class="keyword">public</span> $onGround;
+<a name="l00105"></a>00105     <span class="keyword">public</span> $inBlock = <span class="keyword">false</span>;
+<a name="l00106"></a>00106     <span class="keyword">public</span> $positionChanged;
+<a name="l00107"></a>00107     <span class="keyword">public</span> $motionChanged;
+<a name="l00108"></a>00108     <span class="keyword">public</span> $dead;
+<a name="l00109"></a>00109     <span class="keyword">protected</span> $age = 0;
 <a name="l00110"></a>00110 
-<a name="l00112"></a>00112     <span class="keyword">private</span> $health = 20;
-<a name="l00113"></a>00113     <span class="keyword">private</span> $maxHealth = 20;
+<a name="l00111"></a>00111     <span class="keyword">public</span> $height;
+<a name="l00112"></a>00112     <span class="keyword">public</span> $width;
+<a name="l00113"></a>00113     <span class="keyword">public</span> $length;
 <a name="l00114"></a>00114 
-<a name="l00115"></a>00115     <span class="keyword">public</span> $fallDistance;
-<a name="l00116"></a>00116     <span class="keyword">public</span> $ticksLived;
-<a name="l00117"></a>00117     <span class="keyword">public</span> $lastUpdate;
-<a name="l00118"></a>00118     <span class="keyword">public</span> $maxFireTicks;
-<a name="l00119"></a>00119     <span class="keyword">public</span> $fireTicks;
-<a name="l00120"></a>00120     <span class="keyword">public</span> $airTicks;
-<a name="l00121"></a>00121     <span class="keyword">public</span> $namedtag;
-<a name="l00122"></a>00122     <span class="keyword">protected</span> $isStatic = <span class="keyword">false</span>;
-<a name="l00123"></a>00123     <span class="keyword">protected</span> $isColliding = <span class="keyword">false</span>;
-<a name="l00124"></a>00124 
-<a name="l00125"></a>00125     <span class="keyword">protected</span> $inWater;
-<a name="l00126"></a>00126     <span class="keyword">public</span> $noDamageTicks;
-<a name="l00127"></a>00127     <span class="keyword">private</span> $justCreated;
-<a name="l00128"></a>00128     <span class="keyword">protected</span> $fireProof;
-<a name="l00129"></a>00129     <span class="keyword">private</span> $invulnerable;
-<a name="l00130"></a>00130 
-<a name="l00131"></a>00131     <span class="keyword">protected</span> $spawnTime;
-<a name="l00132"></a>00132 
-<a name="l00133"></a>00133     <span class="keyword">protected</span> $gravity;
-<a name="l00134"></a>00134     <span class="keyword">protected</span> $drag;
-<a name="l00135"></a>00135 
-<a name="l00137"></a>00137     <span class="keyword">protected</span> $server;
-<a name="l00138"></a>00138 
-<a name="l00139"></a>00139     <span class="keyword">public</span> $closed = <span class="keyword">false</span>;
-<a name="l00140"></a>00140 
-<a name="l00141"></a>00141 
-<a name="l00142"></a>00142     <span class="keyword">public</span> <span class="keyword">function</span> __construct(Chunk $chunk, Compound $nbt){
-<a name="l00143"></a>00143         $this-&gt;<span class="keywordtype">id</span> = Entity::$entityCount++;
-<a name="l00144"></a>00144         $this-&gt;justCreated = <span class="keyword">true</span>;
-<a name="l00145"></a>00145         $this-&gt;namedtag = $nbt;
-<a name="l00146"></a>00146         $this-&gt;chunk = $chunk;
-<a name="l00147"></a>00147         $this-&gt;setLevel($chunk-&gt;getLevel()-&gt;getLevel(), <span class="keyword">true</span>); <span class="comment">//Create a hard reference</span>
-<a name="l00148"></a>00148         $this-&gt;server = $chunk-&gt;getLevel()-&gt;getLevel()-&gt;getServer();
-<a name="l00149"></a>00149 
-<a name="l00150"></a>00150         $this-&gt;boundingBox = <span class="keyword">new</span> AxisAlignedBB(0, 0, 0, 0, 0, 0);
-<a name="l00151"></a>00151         $this-&gt;setPositionAndRotation(<span class="keyword">new</span> Vector3(
-<a name="l00152"></a>00152                 $this-&gt;namedtag[<span class="stringliteral">&quot;Pos&quot;</span>][0],
-<a name="l00153"></a>00153                 $this-&gt;namedtag[<span class="stringliteral">&quot;Pos&quot;</span>][1],
-<a name="l00154"></a>00154                 $this-&gt;namedtag[<span class="stringliteral">&quot;Pos&quot;</span>][2]),
-<a name="l00155"></a>00155             $this-&gt;namedtag-&gt;Rotation[0],
-<a name="l00156"></a>00156             $this-&gt;namedtag-&gt;Rotation[1]
-<a name="l00157"></a>00157         );
-<a name="l00158"></a>00158         $this-&gt;setMotion(<span class="keyword">new</span> Vector3(
-<a name="l00159"></a>00159                 $this-&gt;namedtag[<span class="stringliteral">&quot;Motion&quot;</span>][0],
-<a name="l00160"></a>00160                 $this-&gt;namedtag[<span class="stringliteral">&quot;Motion&quot;</span>][1],
-<a name="l00161"></a>00161                 $this-&gt;namedtag[<span class="stringliteral">&quot;Motion&quot;</span>][2])
-<a name="l00162"></a>00162         );
-<a name="l00163"></a>00163 
-<a name="l00164"></a>00164         <span class="keywordflow">if</span>(!isset($this-&gt;namedtag-&gt;FallDistance)){
-<a name="l00165"></a>00165             $this-&gt;namedtag-&gt;FallDistance = <span class="keyword">new</span> Float(<span class="stringliteral">&quot;FallDistance&quot;</span>, 0);
-<a name="l00166"></a>00166         }
-<a name="l00167"></a>00167         $this-&gt;fallDistance = $this-&gt;namedtag[<span class="stringliteral">&quot;FallDistance&quot;</span>];
-<a name="l00168"></a>00168 
-<a name="l00169"></a>00169         <span class="keywordflow">if</span>(!isset($this-&gt;namedtag-&gt;Fire)){
-<a name="l00170"></a>00170             $this-&gt;namedtag-&gt;Fire = <span class="keyword">new</span> Short(<span class="stringliteral">&quot;Fire&quot;</span>, 0);
-<a name="l00171"></a>00171         }
-<a name="l00172"></a>00172         $this-&gt;fireTicks = $this-&gt;namedtag[<span class="stringliteral">&quot;Fire&quot;</span>];
-<a name="l00173"></a>00173 
-<a name="l00174"></a>00174         <span class="keywordflow">if</span>(!isset($this-&gt;namedtag-&gt;Air)){
-<a name="l00175"></a>00175             $this-&gt;namedtag-&gt;Air = <span class="keyword">new</span> Short(<span class="stringliteral">&quot;Air&quot;</span>, 300);
-<a name="l00176"></a>00176         }
-<a name="l00177"></a>00177         $this-&gt;airTicks = $this-&gt;namedtag[<span class="stringliteral">&quot;Air&quot;</span>];
-<a name="l00178"></a>00178 
-<a name="l00179"></a>00179         <span class="keywordflow">if</span>(!isset($this-&gt;namedtag-&gt;OnGround)){
-<a name="l00180"></a>00180             $this-&gt;namedtag-&gt;OnGround = <span class="keyword">new</span> Byte(<span class="stringliteral">&quot;OnGround&quot;</span>, 1);
-<a name="l00181"></a>00181         }
-<a name="l00182"></a>00182         $this-&gt;onGround = $this-&gt;namedtag[<span class="stringliteral">&quot;OnGround&quot;</span>] &gt; 0 ? <span class="keyword">true</span> : <span class="keyword">false</span>;
-<a name="l00183"></a>00183 
-<a name="l00184"></a>00184         <span class="keywordflow">if</span>(!isset($this-&gt;namedtag-&gt;Invulnerable)){
-<a name="l00185"></a>00185             $this-&gt;namedtag-&gt;Invulnerable = <span class="keyword">new</span> Byte(<span class="stringliteral">&quot;Invulnerable&quot;</span>, 0);
-<a name="l00186"></a>00186         }
-<a name="l00187"></a>00187         $this-&gt;invulnerable = $this-&gt;namedtag[<span class="stringliteral">&quot;Invulnerable&quot;</span>] &gt; 0 ? <span class="keyword">true</span> : <span class="keyword">false</span>;
-<a name="l00188"></a>00188 
-<a name="l00189"></a>00189         $this-&gt;chunk-&gt;addEntity($this);
-<a name="l00190"></a>00190         $this-&gt;getLevel()-&gt;addEntity($this);
-<a name="l00191"></a>00191         $this-&gt;initEntity();
-<a name="l00192"></a>00192         $this-&gt;lastUpdate = $this-&gt;spawnTime = microtime(<span class="keyword">true</span>);
-<a name="l00193"></a>00193         $this-&gt;justCreated = <span class="keyword">false</span>;
-<a name="l00194"></a>00194         $this-&gt;server-&gt;getPluginManager()-&gt;callEvent(<span class="keyword">new</span> EntitySpawnEvent($this));
-<a name="l00195"></a>00195         $this-&gt;scheduleUpdate();
-<a name="l00196"></a>00196 
-<a name="l00197"></a>00197     }
-<a name="l00198"></a>00198 
-<a name="l00199"></a>00199     <span class="keyword">public</span> <span class="keyword">function</span> saveNBT(){
-<a name="l00200"></a>00200         $this-&gt;namedtag[<span class="stringliteral">&quot;Pos&quot;</span>][0] = $this-&gt;x;
-<a name="l00201"></a>00201         $this-&gt;namedtag[<span class="stringliteral">&quot;Pos&quot;</span>][1] = $this-&gt;y;
-<a name="l00202"></a>00202         $this-&gt;namedtag[<span class="stringliteral">&quot;Pos&quot;</span>][2] = $this-&gt;z;
-<a name="l00203"></a>00203 
-<a name="l00204"></a>00204         $this-&gt;namedtag[<span class="stringliteral">&quot;Motion&quot;</span>][0] = $this-&gt;motionX;
-<a name="l00205"></a>00205         $this-&gt;namedtag[<span class="stringliteral">&quot;Motion&quot;</span>][1] = $this-&gt;motionY;
-<a name="l00206"></a>00206         $this-&gt;namedtag[<span class="stringliteral">&quot;Motion&quot;</span>][2] = $this-&gt;motionZ;
+<a name="l00116"></a>00116     <span class="keyword">private</span> $health = 20;
+<a name="l00117"></a>00117     <span class="keyword">private</span> $maxHealth = 20;
+<a name="l00118"></a>00118 
+<a name="l00119"></a>00119     <span class="keyword">public</span> $fallDistance;
+<a name="l00120"></a>00120     <span class="keyword">public</span> $ticksLived;
+<a name="l00121"></a>00121     <span class="keyword">public</span> $lastUpdate;
+<a name="l00122"></a>00122     <span class="keyword">public</span> $maxFireTicks;
+<a name="l00123"></a>00123     <span class="keyword">public</span> $fireTicks;
+<a name="l00124"></a>00124     <span class="keyword">public</span> $airTicks;
+<a name="l00125"></a>00125     <span class="keyword">public</span> $namedtag;
+<a name="l00126"></a>00126     <span class="keyword">protected</span> $isStatic = <span class="keyword">false</span>;
+<a name="l00127"></a>00127     <span class="keyword">protected</span> $isColliding = <span class="keyword">false</span>;
+<a name="l00128"></a>00128 
+<a name="l00129"></a>00129     <span class="keyword">protected</span> $inWater;
+<a name="l00130"></a>00130     <span class="keyword">public</span> $noDamageTicks;
+<a name="l00131"></a>00131     <span class="keyword">private</span> $justCreated;
+<a name="l00132"></a>00132     <span class="keyword">protected</span> $fireProof;
+<a name="l00133"></a>00133     <span class="keyword">private</span> $invulnerable;
+<a name="l00134"></a>00134 
+<a name="l00135"></a>00135     <span class="keyword">protected</span> $spawnTime;
+<a name="l00136"></a>00136 
+<a name="l00137"></a>00137     <span class="keyword">protected</span> $gravity;
+<a name="l00138"></a>00138     <span class="keyword">protected</span> $drag;
+<a name="l00139"></a>00139 
+<a name="l00141"></a>00141     <span class="keyword">protected</span> $server;
+<a name="l00142"></a>00142 
+<a name="l00143"></a>00143     <span class="keyword">public</span> $closed = <span class="keyword">false</span>;
+<a name="l00144"></a>00144 
+<a name="l00145"></a>00145 
+<a name="l00146"></a>00146     <span class="keyword">public</span> <span class="keyword">function</span> __construct(Chunk $chunk, Compound $nbt){
+<a name="l00147"></a>00147         $this-&gt;<span class="keywordtype">id</span> = Entity::$entityCount++;
+<a name="l00148"></a>00148         $this-&gt;justCreated = <span class="keyword">true</span>;
+<a name="l00149"></a>00149         $this-&gt;namedtag = $nbt;
+<a name="l00150"></a>00150         $this-&gt;chunk = $chunk;
+<a name="l00151"></a>00151         $this-&gt;setLevel($chunk-&gt;getLevel()-&gt;getLevel(), <span class="keyword">true</span>); <span class="comment">//Create a hard reference</span>
+<a name="l00152"></a>00152         $this-&gt;server = $chunk-&gt;getLevel()-&gt;getLevel()-&gt;getServer();
+<a name="l00153"></a>00153 
+<a name="l00154"></a>00154         $this-&gt;boundingBox = <span class="keyword">new</span> AxisAlignedBB(0, 0, 0, 0, 0, 0);
+<a name="l00155"></a>00155         $this-&gt;setPositionAndRotation(<span class="keyword">new</span> Vector3(
+<a name="l00156"></a>00156                 $this-&gt;namedtag[<span class="stringliteral">&quot;Pos&quot;</span>][0],
+<a name="l00157"></a>00157                 $this-&gt;namedtag[<span class="stringliteral">&quot;Pos&quot;</span>][1],
+<a name="l00158"></a>00158                 $this-&gt;namedtag[<span class="stringliteral">&quot;Pos&quot;</span>][2]),
+<a name="l00159"></a>00159             $this-&gt;namedtag-&gt;Rotation[0],
+<a name="l00160"></a>00160             $this-&gt;namedtag-&gt;Rotation[1]
+<a name="l00161"></a>00161         );
+<a name="l00162"></a>00162         $this-&gt;setMotion(<span class="keyword">new</span> Vector3(
+<a name="l00163"></a>00163                 $this-&gt;namedtag[<span class="stringliteral">&quot;Motion&quot;</span>][0],
+<a name="l00164"></a>00164                 $this-&gt;namedtag[<span class="stringliteral">&quot;Motion&quot;</span>][1],
+<a name="l00165"></a>00165                 $this-&gt;namedtag[<span class="stringliteral">&quot;Motion&quot;</span>][2])
+<a name="l00166"></a>00166         );
+<a name="l00167"></a>00167 
+<a name="l00168"></a>00168         <span class="keywordflow">if</span>(!isset($this-&gt;namedtag-&gt;FallDistance)){
+<a name="l00169"></a>00169             $this-&gt;namedtag-&gt;FallDistance = <span class="keyword">new</span> Float(<span class="stringliteral">&quot;FallDistance&quot;</span>, 0);
+<a name="l00170"></a>00170         }
+<a name="l00171"></a>00171         $this-&gt;fallDistance = $this-&gt;namedtag[<span class="stringliteral">&quot;FallDistance&quot;</span>];
+<a name="l00172"></a>00172 
+<a name="l00173"></a>00173         <span class="keywordflow">if</span>(!isset($this-&gt;namedtag-&gt;Fire)){
+<a name="l00174"></a>00174             $this-&gt;namedtag-&gt;Fire = <span class="keyword">new</span> Short(<span class="stringliteral">&quot;Fire&quot;</span>, 0);
+<a name="l00175"></a>00175         }
+<a name="l00176"></a>00176         $this-&gt;fireTicks = $this-&gt;namedtag[<span class="stringliteral">&quot;Fire&quot;</span>];
+<a name="l00177"></a>00177 
+<a name="l00178"></a>00178         <span class="keywordflow">if</span>(!isset($this-&gt;namedtag-&gt;Air)){
+<a name="l00179"></a>00179             $this-&gt;namedtag-&gt;Air = <span class="keyword">new</span> Short(<span class="stringliteral">&quot;Air&quot;</span>, 300);
+<a name="l00180"></a>00180         }
+<a name="l00181"></a>00181         $this-&gt;airTicks = $this-&gt;namedtag[<span class="stringliteral">&quot;Air&quot;</span>];
+<a name="l00182"></a>00182 
+<a name="l00183"></a>00183         <span class="keywordflow">if</span>(!isset($this-&gt;namedtag-&gt;OnGround)){
+<a name="l00184"></a>00184             $this-&gt;namedtag-&gt;OnGround = <span class="keyword">new</span> Byte(<span class="stringliteral">&quot;OnGround&quot;</span>, 1);
+<a name="l00185"></a>00185         }
+<a name="l00186"></a>00186         $this-&gt;onGround = $this-&gt;namedtag[<span class="stringliteral">&quot;OnGround&quot;</span>] &gt; 0 ? <span class="keyword">true</span> : <span class="keyword">false</span>;
+<a name="l00187"></a>00187 
+<a name="l00188"></a>00188         <span class="keywordflow">if</span>(!isset($this-&gt;namedtag-&gt;Invulnerable)){
+<a name="l00189"></a>00189             $this-&gt;namedtag-&gt;Invulnerable = <span class="keyword">new</span> Byte(<span class="stringliteral">&quot;Invulnerable&quot;</span>, 0);
+<a name="l00190"></a>00190         }
+<a name="l00191"></a>00191         $this-&gt;invulnerable = $this-&gt;namedtag[<span class="stringliteral">&quot;Invulnerable&quot;</span>] &gt; 0 ? <span class="keyword">true</span> : <span class="keyword">false</span>;
+<a name="l00192"></a>00192 
+<a name="l00193"></a>00193         $this-&gt;chunk-&gt;addEntity($this);
+<a name="l00194"></a>00194         $this-&gt;getLevel()-&gt;addEntity($this);
+<a name="l00195"></a>00195         $this-&gt;initEntity();
+<a name="l00196"></a>00196         $this-&gt;lastUpdate = $this-&gt;spawnTime = microtime(<span class="keyword">true</span>);
+<a name="l00197"></a>00197         $this-&gt;justCreated = <span class="keyword">false</span>;
+<a name="l00198"></a>00198         $this-&gt;server-&gt;getPluginManager()-&gt;callEvent(<span class="keyword">new</span> EntitySpawnEvent($this));
+<a name="l00199"></a>00199         $this-&gt;scheduleUpdate();
+<a name="l00200"></a>00200 
+<a name="l00201"></a>00201     }
+<a name="l00202"></a>00202 
+<a name="l00203"></a>00203     <span class="keyword">public</span> <span class="keyword">function</span> saveNBT(){
+<a name="l00204"></a>00204         $this-&gt;namedtag[<span class="stringliteral">&quot;Pos&quot;</span>][0] = $this-&gt;x;
+<a name="l00205"></a>00205         $this-&gt;namedtag[<span class="stringliteral">&quot;Pos&quot;</span>][1] = $this-&gt;y;
+<a name="l00206"></a>00206         $this-&gt;namedtag[<span class="stringliteral">&quot;Pos&quot;</span>][2] = $this-&gt;z;
 <a name="l00207"></a>00207 
-<a name="l00208"></a>00208         $this-&gt;namedtag[<span class="stringliteral">&quot;Rotation&quot;</span>][0] = $this-&gt;yaw;
-<a name="l00209"></a>00209         $this-&gt;namedtag[<span class="stringliteral">&quot;Rotation&quot;</span>][1] = $this-&gt;pitch;
-<a name="l00210"></a>00210 
-<a name="l00211"></a>00211         $this-&gt;namedtag[<span class="stringliteral">&quot;FallDistance&quot;</span>] = $this-&gt;fallDistance;
-<a name="l00212"></a>00212         $this-&gt;namedtag[<span class="stringliteral">&quot;Fire&quot;</span>] = $this-&gt;fireTicks;
-<a name="l00213"></a>00213         $this-&gt;namedtag[<span class="stringliteral">&quot;Air&quot;</span>] = $this-&gt;airTicks;
-<a name="l00214"></a>00214         $this-&gt;namedtag[<span class="stringliteral">&quot;OnGround&quot;</span>] = $this-&gt;onGround == <span class="keyword">true</span> ? 1 : 0;
-<a name="l00215"></a>00215         $this-&gt;namedtag[<span class="stringliteral">&quot;Invulnerable&quot;</span>] = $this-&gt;invulnerable == <span class="keyword">true</span> ? 1 : 0;
-<a name="l00216"></a>00216     }
-<a name="l00217"></a>00217 
-<a name="l00218"></a>00218     <span class="keyword">protected</span> <span class="keyword">abstract</span> <span class="keyword">function</span> initEntity();
-<a name="l00219"></a>00219 
-<a name="l00220"></a>00220     <span class="keyword">public</span> <span class="keyword">function</span> getViewers(){
-<a name="l00221"></a>00221         <span class="keywordflow">return</span> $this-&gt;hasSpawned;
-<a name="l00222"></a>00222     }
+<a name="l00208"></a>00208         $this-&gt;namedtag[<span class="stringliteral">&quot;Motion&quot;</span>][0] = $this-&gt;motionX;
+<a name="l00209"></a>00209         $this-&gt;namedtag[<span class="stringliteral">&quot;Motion&quot;</span>][1] = $this-&gt;motionY;
+<a name="l00210"></a>00210         $this-&gt;namedtag[<span class="stringliteral">&quot;Motion&quot;</span>][2] = $this-&gt;motionZ;
+<a name="l00211"></a>00211 
+<a name="l00212"></a>00212         $this-&gt;namedtag[<span class="stringliteral">&quot;Rotation&quot;</span>][0] = $this-&gt;yaw;
+<a name="l00213"></a>00213         $this-&gt;namedtag[<span class="stringliteral">&quot;Rotation&quot;</span>][1] = $this-&gt;pitch;
+<a name="l00214"></a>00214 
+<a name="l00215"></a>00215         $this-&gt;namedtag[<span class="stringliteral">&quot;FallDistance&quot;</span>] = $this-&gt;fallDistance;
+<a name="l00216"></a>00216         $this-&gt;namedtag[<span class="stringliteral">&quot;Fire&quot;</span>] = $this-&gt;fireTicks;
+<a name="l00217"></a>00217         $this-&gt;namedtag[<span class="stringliteral">&quot;Air&quot;</span>] = $this-&gt;airTicks;
+<a name="l00218"></a>00218         $this-&gt;namedtag[<span class="stringliteral">&quot;OnGround&quot;</span>] = $this-&gt;onGround == <span class="keyword">true</span> ? 1 : 0;
+<a name="l00219"></a>00219         $this-&gt;namedtag[<span class="stringliteral">&quot;Invulnerable&quot;</span>] = $this-&gt;invulnerable == <span class="keyword">true</span> ? 1 : 0;
+<a name="l00220"></a>00220     }
+<a name="l00221"></a>00221 
+<a name="l00222"></a>00222     <span class="keyword">protected</span> <span class="keyword">abstract</span> <span class="keyword">function</span> initEntity();
 <a name="l00223"></a>00223 
-<a name="l00227"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a89c38db3f189bb142d4d9f61434dcffa">00227</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a89c38db3f189bb142d4d9f61434dcffa">spawnTo</a>(<a class="code" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a> $player){
-<a name="l00228"></a>00228         <span class="keywordflow">if</span>(!isset($this-&gt;hasSpawned[$player-&gt;getID()]) and isset($player-&gt;usedChunks[Level::chunkHash($this-&gt;chunk-&gt;getX(), $this-&gt;chunk-&gt;getZ())])){
-<a name="l00229"></a>00229             $this-&gt;hasSpawned[$player-&gt;getID()] = $player;
-<a name="l00230"></a>00230         }
-<a name="l00231"></a>00231     }
-<a name="l00232"></a>00232 
-<a name="l00236"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#ad0e2fe5c3105fd5881967898c2f6b60c">00236</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#ad0e2fe5c3105fd5881967898c2f6b60c">despawnFrom</a>(<a class="code" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a> $player){
-<a name="l00237"></a>00237         <span class="keywordflow">if</span>(isset($this-&gt;hasSpawned[$player-&gt;getID()])){
-<a name="l00238"></a>00238             $pk = <span class="keyword">new</span> RemoveEntityPacket;
-<a name="l00239"></a>00239             $pk-&gt;eid = $this-&gt;id;
-<a name="l00240"></a>00240             $player-&gt;<a class="code" href="../../df/d2c/classpocketmine_1_1_player.html#a1c8bc00d964b5059917eaeeb4478245b">dataPacket</a>($pk);
-<a name="l00241"></a>00241             unset($this-&gt;hasSpawned[$player-&gt;getID()]);
-<a name="l00242"></a>00242         }
-<a name="l00243"></a>00243     }
-<a name="l00244"></a>00244 
-<a name="l00245"></a>00245     <span class="keyword">abstract</span> <span class="keyword">function</span> attack($damage, $source = <span class="stringliteral">&quot;generic&quot;</span>);
-<a name="l00246"></a>00246 
-<a name="l00247"></a>00247     <span class="keyword">abstract</span> <span class="keyword">function</span> heal($amount, $source = <span class="stringliteral">&quot;generic&quot;</span>);
+<a name="l00224"></a>00224     <span class="keyword">public</span> <span class="keyword">function</span> getViewers(){
+<a name="l00225"></a>00225         <span class="keywordflow">return</span> $this-&gt;hasSpawned;
+<a name="l00226"></a>00226     }
+<a name="l00227"></a>00227 
+<a name="l00231"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a89c38db3f189bb142d4d9f61434dcffa">00231</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a89c38db3f189bb142d4d9f61434dcffa">spawnTo</a>(<a class="code" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a> $player){
+<a name="l00232"></a>00232         <span class="keywordflow">if</span>(!isset($this-&gt;hasSpawned[$player-&gt;getID()]) and isset($player-&gt;usedChunks[Level::chunkHash($this-&gt;chunk-&gt;getX(), $this-&gt;chunk-&gt;getZ())])){
+<a name="l00233"></a>00233             $this-&gt;hasSpawned[$player-&gt;getID()] = $player;
+<a name="l00234"></a>00234         }
+<a name="l00235"></a>00235     }
+<a name="l00236"></a>00236 
+<a name="l00240"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#ad0e2fe5c3105fd5881967898c2f6b60c">00240</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#ad0e2fe5c3105fd5881967898c2f6b60c">despawnFrom</a>(<a class="code" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a> $player){
+<a name="l00241"></a>00241         <span class="keywordflow">if</span>(isset($this-&gt;hasSpawned[$player-&gt;getID()])){
+<a name="l00242"></a>00242             $pk = <span class="keyword">new</span> RemoveEntityPacket;
+<a name="l00243"></a>00243             $pk-&gt;eid = $this-&gt;id;
+<a name="l00244"></a>00244             $player-&gt;<a class="code" href="../../df/d2c/classpocketmine_1_1_player.html#a1c8bc00d964b5059917eaeeb4478245b">dataPacket</a>($pk);
+<a name="l00245"></a>00245             unset($this-&gt;hasSpawned[$player-&gt;getID()]);
+<a name="l00246"></a>00246         }
+<a name="l00247"></a>00247     }
 <a name="l00248"></a>00248 
-<a name="l00252"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a0070e86138b1bb1c8f0efe904abb0566">00252</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a0070e86138b1bb1c8f0efe904abb0566">getHealth</a>(){
-<a name="l00253"></a>00253         <span class="keywordflow">return</span> $this-&gt;health;
-<a name="l00254"></a>00254     }
-<a name="l00255"></a>00255 
-<a name="l00261"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a71b839be63501d55a10873ca8718134f">00261</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a71b839be63501d55a10873ca8718134f">setHealth</a>($amount){
-<a name="l00262"></a>00262         <span class="keywordflow">if</span>($amount &lt; 0){
-<a name="l00263"></a>00263             $this-&gt;health = 0;
-<a name="l00264"></a>00264             $this-&gt;dead = <span class="keyword">true</span>;
-<a name="l00265"></a>00265         }elseif($amount &gt; $this-&gt;getMaxHealth()){
-<a name="l00266"></a>00266             $this-&gt;health = $this-&gt;getMaxHealth();
-<a name="l00267"></a>00267         }<span class="keywordflow">else</span>{
-<a name="l00268"></a>00268             $this-&gt;health = (int) $amount;
-<a name="l00269"></a>00269         }
-<a name="l00270"></a>00270     }
-<a name="l00271"></a>00271 
-<a name="l00275"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#adf37e872282e3dc566464dac41ce92ad">00275</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#adf37e872282e3dc566464dac41ce92ad">getMaxHealth</a>(){
-<a name="l00276"></a>00276         <span class="keywordflow">return</span> $this-&gt;maxHealth;
-<a name="l00277"></a>00277     }
-<a name="l00278"></a>00278 
-<a name="l00282"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a83edc4e8ff7b3323b4893b5f75955735">00282</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a83edc4e8ff7b3323b4893b5f75955735">setMaxHealth</a>($amount){
-<a name="l00283"></a>00283         $this-&gt;maxHealth = (int) $amount;
-<a name="l00284"></a>00284         $this-&gt;health = (int) min($this-&gt;health, $this-&gt;maxHealth);
-<a name="l00285"></a>00285     }
-<a name="l00286"></a>00286 
-<a name="l00287"></a>00287     <span class="keyword">public</span> <span class="keyword">function</span> canCollideWith(<a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $entity){
-<a name="l00288"></a>00288         <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00289"></a>00289     }
-<a name="l00290"></a>00290 
-<a name="l00291"></a>00291     <span class="keyword">protected</span> <span class="keyword">function</span> checkObstruction($x, $y, $z){
-<a name="l00292"></a>00292         $i = (int) $x;
-<a name="l00293"></a>00293         $j = (int) $y;
-<a name="l00294"></a>00294         $k = (int) $z;
-<a name="l00295"></a>00295 
-<a name="l00296"></a>00296         $diffX = $x - $i;
-<a name="l00297"></a>00297         $diffY = $y - $j;
-<a name="l00298"></a>00298         $diffZ = $z - $k;
-<a name="l00299"></a>00299 
-<a name="l00300"></a>00300         $start = microtime(<span class="keyword">true</span>);
-<a name="l00301"></a>00301         $list = $this-&gt;getLevel()-&gt;getCollisionBlocks($this-&gt;boundingBox);
-<a name="l00302"></a>00302 
-<a name="l00303"></a>00303         <span class="keywordflow">if</span>(count($list) === 0 and $this-&gt;getLevel()-&gt;isFullBlock(<span class="keyword">new</span> Vector3($i, $j, $k))){
-<a name="l00304"></a>00304             <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00305"></a>00305         }<span class="keywordflow">else</span>{
-<a name="l00306"></a>00306             $flag = !$this-&gt;getLevel()-&gt;isFullBlock(<span class="keyword">new</span> Vector3($i - 1, $j, $k));
-<a name="l00307"></a>00307             $flag1 = !$this-&gt;getLevel()-&gt;isFullBlock(<span class="keyword">new</span> Vector3($i + 1, $j, $k));
-<a name="l00308"></a>00308             <span class="comment">//$flag2 = !$this-&gt;getLevel()-&gt;isFullBlock(new Vector3($i, $j - 1, $k));</span>
-<a name="l00309"></a>00309             $flag3 = !$this-&gt;getLevel()-&gt;isFullBlock(<span class="keyword">new</span> Vector3($i, $j + 1, $k));
-<a name="l00310"></a>00310             $flag4 = !$this-&gt;getLevel()-&gt;isFullBlock(<span class="keyword">new</span> Vector3($i, $j, $k - 1));
-<a name="l00311"></a>00311             $flag5 = !$this-&gt;getLevel()-&gt;isFullBlock(<span class="keyword">new</span> Vector3($i, $j, $k + 1));
-<a name="l00312"></a>00312 
-<a name="l00313"></a>00313             $direction = 3; <span class="comment">//UP!</span>
-<a name="l00314"></a>00314             $limit = 9999;
-<a name="l00315"></a>00315 
-<a name="l00316"></a>00316             <span class="keywordflow">if</span>($flag){
-<a name="l00317"></a>00317                 $limit = $diffX;
-<a name="l00318"></a>00318                 $direction = 0;
-<a name="l00319"></a>00319             }
+<a name="l00255"></a>00255     <span class="keyword">abstract</span> <span class="keyword">function</span> attack($damage, $source = EntityDamageEvent::CAUSE_MAGIC);
+<a name="l00256"></a>00256 
+<a name="l00257"></a>00257     <span class="keyword">abstract</span> <span class="keyword">function</span> heal($amount);
+<a name="l00258"></a>00258 
+<a name="l00262"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a0070e86138b1bb1c8f0efe904abb0566">00262</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a0070e86138b1bb1c8f0efe904abb0566">getHealth</a>(){
+<a name="l00263"></a>00263         <span class="keywordflow">return</span> $this-&gt;health;
+<a name="l00264"></a>00264     }
+<a name="l00265"></a>00265 
+<a name="l00271"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a71b839be63501d55a10873ca8718134f">00271</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a71b839be63501d55a10873ca8718134f">setHealth</a>($amount){
+<a name="l00272"></a>00272         <span class="keywordflow">if</span>($amount === $this-&gt;health){
+<a name="l00273"></a>00273             <span class="keywordflow">return</span>;
+<a name="l00274"></a>00274         }
+<a name="l00275"></a>00275 
+<a name="l00276"></a>00276         <span class="keywordflow">if</span>($amount &lt;= 0){
+<a name="l00277"></a>00277             $this-&gt;health = 0;
+<a name="l00278"></a>00278             <span class="keywordflow">if</span>($this-&gt;dead !== <span class="keyword">true</span>){
+<a name="l00279"></a>00279                 $this-&gt;kill();
+<a name="l00280"></a>00280             }
+<a name="l00281"></a>00281         }elseif($amount &gt; $this-&gt;getMaxHealth()){
+<a name="l00282"></a>00282             $this-&gt;health = $this-&gt;getMaxHealth();
+<a name="l00283"></a>00283         }<span class="keywordflow">else</span>{
+<a name="l00284"></a>00284             $this-&gt;health = (int) $amount;
+<a name="l00285"></a>00285         }
+<a name="l00286"></a>00286     }
+<a name="l00287"></a>00287 
+<a name="l00291"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a2dbf8d994f5b61320cb2bc64d493eb17">00291</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a2dbf8d994f5b61320cb2bc64d493eb17">setLastDamageCause</a>($type){
+<a name="l00292"></a>00292         $this-&gt;lastDamageCause = $type;
+<a name="l00293"></a>00293     }
+<a name="l00294"></a>00294 
+<a name="l00298"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a002454edb17ea82c05dbfd7a8e50a4fe">00298</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a002454edb17ea82c05dbfd7a8e50a4fe">getLastDamageCause</a>(){
+<a name="l00299"></a>00299         <span class="keywordflow">return</span> $this-&gt;lastDamageCause;
+<a name="l00300"></a>00300     }
+<a name="l00301"></a>00301 
+<a name="l00305"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#adf37e872282e3dc566464dac41ce92ad">00305</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#adf37e872282e3dc566464dac41ce92ad">getMaxHealth</a>(){
+<a name="l00306"></a>00306         <span class="keywordflow">return</span> $this-&gt;maxHealth;
+<a name="l00307"></a>00307     }
+<a name="l00308"></a>00308 
+<a name="l00312"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a83edc4e8ff7b3323b4893b5f75955735">00312</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a83edc4e8ff7b3323b4893b5f75955735">setMaxHealth</a>($amount){
+<a name="l00313"></a>00313         $this-&gt;maxHealth = (int) $amount;
+<a name="l00314"></a>00314         $this-&gt;health = (int) min($this-&gt;health, $this-&gt;maxHealth);
+<a name="l00315"></a>00315     }
+<a name="l00316"></a>00316 
+<a name="l00317"></a>00317     <span class="keyword">public</span> <span class="keyword">function</span> canCollideWith(<a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html">Entity</a> $entity){
+<a name="l00318"></a>00318         <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00319"></a>00319     }
 <a name="l00320"></a>00320 
-<a name="l00321"></a>00321             <span class="keywordflow">if</span>($flag1 and 1 - $diffX &lt; $limit){
-<a name="l00322"></a>00322                 $limit = 1 - $diffX;
-<a name="l00323"></a>00323                 $direction = 1;
-<a name="l00324"></a>00324             }
+<a name="l00321"></a>00321     <span class="keyword">protected</span> <span class="keyword">function</span> checkObstruction($x, $y, $z){
+<a name="l00322"></a>00322         $i = (int) $x;
+<a name="l00323"></a>00323         $j = (int) $y;
+<a name="l00324"></a>00324         $k = (int) $z;
 <a name="l00325"></a>00325 
-<a name="l00326"></a>00326             <span class="keywordflow">if</span>($flag3 and 1 - $diffY &lt; $limit){
-<a name="l00327"></a>00327                 $limit = 1 - $diffY;
-<a name="l00328"></a>00328                 $direction = 3;
-<a name="l00329"></a>00329             }
-<a name="l00330"></a>00330 
-<a name="l00331"></a>00331             <span class="keywordflow">if</span>($flag4 and $diffZ &lt; $limit){
-<a name="l00332"></a>00332                 $limit = $diffZ;
-<a name="l00333"></a>00333                 $direction = 4;
-<a name="l00334"></a>00334             }
-<a name="l00335"></a>00335 
-<a name="l00336"></a>00336             <span class="keywordflow">if</span>($flag5 and 1 - $diffZ &lt; $limit){
-<a name="l00337"></a>00337                 $direction = 5;
-<a name="l00338"></a>00338             }
-<a name="l00339"></a>00339 
-<a name="l00340"></a>00340             $force = lcg_value() * 0.2 + 0.1;
+<a name="l00326"></a>00326         $diffX = $x - $i;
+<a name="l00327"></a>00327         $diffY = $y - $j;
+<a name="l00328"></a>00328         $diffZ = $z - $k;
+<a name="l00329"></a>00329 
+<a name="l00330"></a>00330         $list = $this-&gt;getLevel()-&gt;getCollisionBlocks($this-&gt;boundingBox);
+<a name="l00331"></a>00331 
+<a name="l00332"></a>00332         <span class="keywordflow">if</span>(count($list) === 0 and !$this-&gt;getLevel()-&gt;isFullBlock(<span class="keyword">new</span> Vector3($i, $j, $k))){
+<a name="l00333"></a>00333             <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00334"></a>00334         }<span class="keywordflow">else</span>{
+<a name="l00335"></a>00335             $flag = !$this-&gt;getLevel()-&gt;isFullBlock(<span class="keyword">new</span> Vector3($i - 1, $j, $k));
+<a name="l00336"></a>00336             $flag1 = !$this-&gt;getLevel()-&gt;isFullBlock(<span class="keyword">new</span> Vector3($i + 1, $j, $k));
+<a name="l00337"></a>00337             <span class="comment">//$flag2 = !$this-&gt;getLevel()-&gt;isFullBlock(new Vector3($i, $j - 1, $k));</span>
+<a name="l00338"></a>00338             $flag3 = !$this-&gt;getLevel()-&gt;isFullBlock(<span class="keyword">new</span> Vector3($i, $j + 1, $k));
+<a name="l00339"></a>00339             $flag4 = !$this-&gt;getLevel()-&gt;isFullBlock(<span class="keyword">new</span> Vector3($i, $j, $k - 1));
+<a name="l00340"></a>00340             $flag5 = !$this-&gt;getLevel()-&gt;isFullBlock(<span class="keyword">new</span> Vector3($i, $j, $k + 1));
 <a name="l00341"></a>00341 
-<a name="l00342"></a>00342             <span class="keywordflow">if</span>($direction === 0){
-<a name="l00343"></a>00343                 $this-&gt;motionX = -$force;
+<a name="l00342"></a>00342             $direction = 3; <span class="comment">//UP!</span>
+<a name="l00343"></a>00343             $limit = 9999;
 <a name="l00344"></a>00344 
-<a name="l00345"></a>00345                 <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00346"></a>00346             }
-<a name="l00347"></a>00347 
-<a name="l00348"></a>00348             <span class="keywordflow">if</span>($direction === 1){
-<a name="l00349"></a>00349                 $this-&gt;motionX = $force;
-<a name="l00350"></a>00350 
-<a name="l00351"></a>00351                 <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00352"></a>00352             }
-<a name="l00353"></a>00353 
-<a name="l00354"></a>00354             <span class="comment">//No direction 2</span>
-<a name="l00355"></a>00355 
-<a name="l00356"></a>00356             <span class="keywordflow">if</span>($direction === 3){
-<a name="l00357"></a>00357                 $this-&gt;motionY = $force;
-<a name="l00358"></a>00358 
-<a name="l00359"></a>00359                 <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00360"></a>00360             }
-<a name="l00361"></a>00361 
-<a name="l00362"></a>00362             <span class="keywordflow">if</span>($direction === 4){
-<a name="l00363"></a>00363                 $this-&gt;motionZ = -$force;
+<a name="l00345"></a>00345             <span class="keywordflow">if</span>($flag){
+<a name="l00346"></a>00346                 $limit = $diffX;
+<a name="l00347"></a>00347                 $direction = 0;
+<a name="l00348"></a>00348             }
+<a name="l00349"></a>00349 
+<a name="l00350"></a>00350             <span class="keywordflow">if</span>($flag1 and 1 - $diffX &lt; $limit){
+<a name="l00351"></a>00351                 $limit = 1 - $diffX;
+<a name="l00352"></a>00352                 $direction = 1;
+<a name="l00353"></a>00353             }
+<a name="l00354"></a>00354 
+<a name="l00355"></a>00355             <span class="keywordflow">if</span>($flag3 and 1 - $diffY &lt; $limit){
+<a name="l00356"></a>00356                 $limit = 1 - $diffY;
+<a name="l00357"></a>00357                 $direction = 3;
+<a name="l00358"></a>00358             }
+<a name="l00359"></a>00359 
+<a name="l00360"></a>00360             <span class="keywordflow">if</span>($flag4 and $diffZ &lt; $limit){
+<a name="l00361"></a>00361                 $limit = $diffZ;
+<a name="l00362"></a>00362                 $direction = 4;
+<a name="l00363"></a>00363             }
 <a name="l00364"></a>00364 
-<a name="l00365"></a>00365                 <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00366"></a>00366             }
-<a name="l00367"></a>00367 
-<a name="l00368"></a>00368             <span class="keywordflow">if</span>($direction === 5){
-<a name="l00369"></a>00369                 $this-&gt;motionY = $force;
-<a name="l00370"></a>00370             }
-<a name="l00371"></a>00371 
-<a name="l00372"></a>00372             <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00365"></a>00365             <span class="keywordflow">if</span>($flag5 and 1 - $diffZ &lt; $limit){
+<a name="l00366"></a>00366                 $direction = 5;
+<a name="l00367"></a>00367             }
+<a name="l00368"></a>00368 
+<a name="l00369"></a>00369             $force = lcg_value() * 0.2 + 0.1;
+<a name="l00370"></a>00370 
+<a name="l00371"></a>00371             <span class="keywordflow">if</span>($direction === 0){
+<a name="l00372"></a>00372                 $this-&gt;motionX = -$force;
 <a name="l00373"></a>00373 
-<a name="l00374"></a>00374         }
-<a name="l00375"></a>00375     }
+<a name="l00374"></a>00374                 <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00375"></a>00375             }
 <a name="l00376"></a>00376 
-<a name="l00377"></a>00377     <span class="keyword">public</span> <span class="keyword">function</span> entityBaseTick(){
-<a name="l00378"></a>00378         <span class="comment">//TODO: check vehicles</span>
-<a name="l00379"></a>00379         <span class="keywordflow">if</span>($this-&gt;dead === <span class="keyword">true</span> and !($this instanceof Player)){
-<a name="l00380"></a>00380             $this-&gt;close();
-<a name="l00381"></a>00381 
-<a name="l00382"></a>00382             <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00383"></a>00383         }
+<a name="l00377"></a>00377             <span class="keywordflow">if</span>($direction === 1){
+<a name="l00378"></a>00378                 $this-&gt;motionX = $force;
+<a name="l00379"></a>00379 
+<a name="l00380"></a>00380                 <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00381"></a>00381             }
+<a name="l00382"></a>00382 
+<a name="l00383"></a>00383             <span class="comment">//No direction 2</span>
 <a name="l00384"></a>00384 
-<a name="l00385"></a>00385         $hasUpdate = <span class="keyword">false</span>;
-<a name="l00386"></a>00386         $this-&gt;updateMovement();
+<a name="l00385"></a>00385             <span class="keywordflow">if</span>($direction === 3){
+<a name="l00386"></a>00386                 $this-&gt;motionY = $force;
 <a name="l00387"></a>00387 
-<a name="l00388"></a>00388         <span class="keywordflow">if</span>($this-&gt;handleWaterMovement()){
-<a name="l00389"></a>00389             $this-&gt;fallDistance = 0;
-<a name="l00390"></a>00390             $this-&gt;inWater = <span class="keyword">true</span>;
-<a name="l00391"></a>00391             $this-&gt;extinguish();
-<a name="l00392"></a>00392         }<span class="keywordflow">else</span>{
-<a name="l00393"></a>00393             $this-&gt;inWater = <span class="keyword">false</span>;
-<a name="l00394"></a>00394         }
-<a name="l00395"></a>00395 
-<a name="l00396"></a>00396         <span class="keywordflow">if</span>($this-&gt;y &lt; -64){
-<a name="l00397"></a>00397             $this-&gt;kill();
-<a name="l00398"></a>00398         }
-<a name="l00399"></a>00399 
-<a name="l00400"></a>00400         <span class="keywordflow">if</span>($this-&gt;fireTicks &gt; 0){
-<a name="l00401"></a>00401             <span class="keywordflow">if</span>($this-&gt;fireProof){
-<a name="l00402"></a>00402                 $this-&gt;fireTicks -= 4;
-<a name="l00403"></a>00403                 <span class="keywordflow">if</span>($this-&gt;fireTicks &lt; 0){
-<a name="l00404"></a>00404                     $this-&gt;fireTicks = 0;
-<a name="l00405"></a>00405                 }
-<a name="l00406"></a>00406             }<span class="keywordflow">else</span>{
-<a name="l00407"></a>00407                 <span class="keywordflow">if</span>(($this-&gt;fireTicks % 20) === 0){
-<a name="l00408"></a>00408                     $this-&gt;attack(1, <span class="stringliteral">&quot;onFire&quot;</span>);
-<a name="l00409"></a>00409                 }
-<a name="l00410"></a>00410                 --$this-&gt;fireTicks;
-<a name="l00411"></a>00411             }
-<a name="l00412"></a>00412             $hasUpdate = <span class="keyword">true</span>;
-<a name="l00413"></a>00413         }
-<a name="l00414"></a>00414 
-<a name="l00415"></a>00415         <span class="keywordflow">if</span>($this-&gt;handleLavaMovement()){
-<a name="l00416"></a>00416             $this-&gt;attack(4, <span class="stringliteral">&quot;lava&quot;</span>);
-<a name="l00417"></a>00417             $this-&gt;setOnFire(15);
-<a name="l00418"></a>00418             $hasUpdate = <span class="keyword">true</span>;
-<a name="l00419"></a>00419             $this-&gt;fallDistance *= 0.5;
-<a name="l00420"></a>00420         }
-<a name="l00421"></a>00421 
-<a name="l00422"></a>00422         ++$this-&gt;age;
-<a name="l00423"></a>00423         ++$this-&gt;ticksLived;
-<a name="l00424"></a>00424     }
-<a name="l00425"></a>00425 
-<a name="l00426"></a>00426     <span class="keyword">public</span> <span class="keyword">function</span> updateMovement(){
-<a name="l00427"></a>00427         <span class="keywordflow">if</span>($this-&gt;x !== $this-&gt;lastX or $this-&gt;y !== $this-&gt;lastY or $this-&gt;z !== $this-&gt;lastZ or $this-&gt;yaw !== $this-&gt;lastYaw or $this-&gt;pitch !== $this-&gt;lastPitch){
-<a name="l00428"></a>00428             $this-&gt;lastX = $this-&gt;x;
-<a name="l00429"></a>00429             $this-&gt;lastY = $this-&gt;y;
-<a name="l00430"></a>00430             $this-&gt;lastZ = $this-&gt;z;
-<a name="l00431"></a>00431 
-<a name="l00432"></a>00432             $this-&gt;lastYaw = $this-&gt;yaw;
-<a name="l00433"></a>00433             $this-&gt;lastPitch = $this-&gt;pitch;
-<a name="l00434"></a>00434 
-<a name="l00435"></a>00435             <span class="keywordflow">if</span>($this instanceof Human){
-<a name="l00436"></a>00436                 $pk = <span class="keyword">new</span> MovePlayerPacket;
-<a name="l00437"></a>00437                 $pk-&gt;eid = $this-&gt;id;
-<a name="l00438"></a>00438                 $pk-&gt;x = $this-&gt;x;
-<a name="l00439"></a>00439                 $pk-&gt;y = $this-&gt;y;
-<a name="l00440"></a>00440                 $pk-&gt;z = $this-&gt;z;
-<a name="l00441"></a>00441                 $pk-&gt;yaw = $this-&gt;yaw;
-<a name="l00442"></a>00442                 $pk-&gt;pitch = $this-&gt;pitch;
-<a name="l00443"></a>00443                 $pk-&gt;bodyYaw = $this-&gt;yaw;
-<a name="l00444"></a>00444             }<span class="keywordflow">else</span>{
-<a name="l00445"></a>00445                 <span class="comment">//TODO: add to move list</span>
-<a name="l00446"></a>00446                 $pk = <span class="keyword">new</span> MoveEntityPacket();
-<a name="l00447"></a>00447                 $pk-&gt;entities = [
-<a name="l00448"></a>00448                     [$this-&gt;id, $this-&gt;x, $this-&gt;y, $this-&gt;z, $this-&gt;yaw, $this-&gt;pitch]
-<a name="l00449"></a>00449                 ];
-<a name="l00450"></a>00450             }
-<a name="l00451"></a>00451             $this-&gt;server-&gt;broadcastPacket($this-&gt;hasSpawned, $pk);
-<a name="l00452"></a>00452         }
-<a name="l00453"></a>00453 
-<a name="l00454"></a>00454         <span class="keywordflow">if</span>(!($this instanceof Player) and ($this-&gt;lastMotionX != $this-&gt;motionX or $this-&gt;lastMotionY != $this-&gt;motionY or $this-&gt;lastMotionZ != $this-&gt;motionZ)){
-<a name="l00455"></a>00455             $this-&gt;lastMotionX = $this-&gt;motionX;
-<a name="l00456"></a>00456             $this-&gt;lastMotionY = $this-&gt;motionY;
-<a name="l00457"></a>00457             $this-&gt;lastMotionZ = $this-&gt;motionZ;
-<a name="l00458"></a>00458 
-<a name="l00459"></a>00459             $pk = <span class="keyword">new</span> SetEntityMotionPacket;
-<a name="l00460"></a>00460             $pk-&gt;entities = [
-<a name="l00461"></a>00461                 [$this-&gt;getID(), $this-&gt;motionX, $this-&gt;motionY, $this-&gt;motionZ]
-<a name="l00462"></a>00462             ];
-<a name="l00463"></a>00463             $this-&gt;server-&gt;broadcastPacket($this-&gt;hasSpawned, $pk);
-<a name="l00464"></a>00464         }
-<a name="l00465"></a>00465     }
-<a name="l00466"></a>00466 
-<a name="l00470"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#abacf7fc4f84e0ad112ba17638dc5cd1d">00470</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#abacf7fc4f84e0ad112ba17638dc5cd1d">getDirectionVector</a>(){
-<a name="l00471"></a>00471         $pitch = ($this-&gt;pitch * M_PI) / 180;
-<a name="l00472"></a>00472         $yaw = (($this-&gt;yaw + 90) * M_PI) / 180;
-<a name="l00473"></a>00473 
-<a name="l00474"></a>00474         $y = -sin(deg2rad($this-&gt;pitch));
-<a name="l00475"></a>00475         $xz = cos(deg2rad($this-&gt;pitch));
-<a name="l00476"></a>00476         $x = -$xz * sin(deg2rad($this-&gt;yaw));
-<a name="l00477"></a>00477         $z = $xz * cos(deg2rad($this-&gt;yaw));
-<a name="l00478"></a>00478 
-<a name="l00479"></a>00479         <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3($x, $y, $z);
-<a name="l00480"></a>00480     }
-<a name="l00481"></a>00481 
-<a name="l00482"></a>00482     <span class="keyword">public</span> <span class="keyword">function</span> onUpdate(){
-<a name="l00483"></a>00483         <span class="keywordflow">if</span>($this-&gt;closed !== <span class="keyword">false</span>){
-<a name="l00484"></a>00484             <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00485"></a>00485         }
-<a name="l00486"></a>00486 
-<a name="l00487"></a>00487         $hasUpdate = $this-&gt;entityBaseTick();
-<a name="l00488"></a>00488 
-<a name="l00489"></a>00489         <span class="comment">//if($this-&gt;isStatic())</span>
-<a name="l00490"></a>00490         <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00491"></a>00491         <span class="comment">//return !($this instanceof Player);</span>
-<a name="l00492"></a>00492     }
-<a name="l00493"></a>00493 
-<a name="l00494"></a>00494     <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">function</span> scheduleUpdate(){
-<a name="l00495"></a>00495         Entity::$needUpdate[$this-&gt;id] = $this;
+<a name="l00388"></a>00388                 <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00389"></a>00389             }
+<a name="l00390"></a>00390 
+<a name="l00391"></a>00391             <span class="keywordflow">if</span>($direction === 4){
+<a name="l00392"></a>00392                 $this-&gt;motionZ = -$force;
+<a name="l00393"></a>00393 
+<a name="l00394"></a>00394                 <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00395"></a>00395             }
+<a name="l00396"></a>00396 
+<a name="l00397"></a>00397             <span class="keywordflow">if</span>($direction === 5){
+<a name="l00398"></a>00398                 $this-&gt;motionY = $force;
+<a name="l00399"></a>00399             }
+<a name="l00400"></a>00400 
+<a name="l00401"></a>00401             <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00402"></a>00402 
+<a name="l00403"></a>00403         }
+<a name="l00404"></a>00404     }
+<a name="l00405"></a>00405 
+<a name="l00406"></a>00406     <span class="keyword">public</span> <span class="keyword">function</span> entityBaseTick(){
+<a name="l00407"></a>00407         <span class="comment">//TODO: check vehicles</span>
+<a name="l00408"></a>00408         <span class="keywordflow">if</span>($this-&gt;dead === <span class="keyword">true</span> and !($this instanceof Player)){
+<a name="l00409"></a>00409             $this-&gt;close();
+<a name="l00410"></a>00410 
+<a name="l00411"></a>00411             <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00412"></a>00412         }elseif($this-&gt;dead === <span class="keyword">true</span>){
+<a name="l00413"></a>00413             $this-&gt;despawnFromAll();
+<a name="l00414"></a>00414         }
+<a name="l00415"></a>00415 
+<a name="l00416"></a>00416         $hasUpdate = <span class="keyword">false</span>;
+<a name="l00417"></a>00417         $this-&gt;updateMovement();
+<a name="l00418"></a>00418 
+<a name="l00419"></a>00419         <span class="keywordflow">if</span>($this-&gt;handleWaterMovement()){
+<a name="l00420"></a>00420             $this-&gt;fallDistance = 0;
+<a name="l00421"></a>00421             $this-&gt;inWater = <span class="keyword">true</span>;
+<a name="l00422"></a>00422             $this-&gt;extinguish();
+<a name="l00423"></a>00423         }<span class="keywordflow">else</span>{
+<a name="l00424"></a>00424             $this-&gt;inWater = <span class="keyword">false</span>;
+<a name="l00425"></a>00425         }
+<a name="l00426"></a>00426 
+<a name="l00427"></a>00427         <span class="keywordflow">if</span>($this-&gt;y &lt; -64){
+<a name="l00428"></a>00428             $this-&gt;kill();
+<a name="l00429"></a>00429         }
+<a name="l00430"></a>00430 
+<a name="l00431"></a>00431         <span class="keywordflow">if</span>($this-&gt;fireTicks &gt; 0){
+<a name="l00432"></a>00432             <span class="keywordflow">if</span>($this-&gt;fireProof){
+<a name="l00433"></a>00433                 $this-&gt;fireTicks -= 4;
+<a name="l00434"></a>00434                 <span class="keywordflow">if</span>($this-&gt;fireTicks &lt; 0){
+<a name="l00435"></a>00435                     $this-&gt;fireTicks = 0;
+<a name="l00436"></a>00436                 }
+<a name="l00437"></a>00437             }<span class="keywordflow">else</span>{
+<a name="l00438"></a>00438                 <span class="keywordflow">if</span>(($this-&gt;fireTicks % 20) === 0){
+<a name="l00439"></a>00439                     $this-&gt;attack(1, <span class="stringliteral">&quot;onFire&quot;</span>);
+<a name="l00440"></a>00440                 }
+<a name="l00441"></a>00441                 --$this-&gt;fireTicks;
+<a name="l00442"></a>00442             }
+<a name="l00443"></a>00443             $hasUpdate = <span class="keyword">true</span>;
+<a name="l00444"></a>00444         }
+<a name="l00445"></a>00445 
+<a name="l00446"></a>00446         <span class="keywordflow">if</span>($this-&gt;handleLavaMovement()){
+<a name="l00447"></a>00447             $this-&gt;attack(4, <span class="stringliteral">&quot;lava&quot;</span>);
+<a name="l00448"></a>00448             $this-&gt;setOnFire(15);
+<a name="l00449"></a>00449             $hasUpdate = <span class="keyword">true</span>;
+<a name="l00450"></a>00450             $this-&gt;fallDistance *= 0.5;
+<a name="l00451"></a>00451         }
+<a name="l00452"></a>00452 
+<a name="l00453"></a>00453         ++$this-&gt;age;
+<a name="l00454"></a>00454         ++$this-&gt;ticksLived;
+<a name="l00455"></a>00455     }
+<a name="l00456"></a>00456 
+<a name="l00457"></a>00457     <span class="keyword">public</span> <span class="keyword">function</span> updateMovement(){
+<a name="l00458"></a>00458         <span class="keywordflow">if</span>($this-&gt;x !== $this-&gt;lastX or $this-&gt;y !== $this-&gt;lastY or $this-&gt;z !== $this-&gt;lastZ or $this-&gt;yaw !== $this-&gt;lastYaw or $this-&gt;pitch !== $this-&gt;lastPitch){
+<a name="l00459"></a>00459             $this-&gt;lastX = $this-&gt;x;
+<a name="l00460"></a>00460             $this-&gt;lastY = $this-&gt;y;
+<a name="l00461"></a>00461             $this-&gt;lastZ = $this-&gt;z;
+<a name="l00462"></a>00462 
+<a name="l00463"></a>00463             $this-&gt;lastYaw = $this-&gt;yaw;
+<a name="l00464"></a>00464             $this-&gt;lastPitch = $this-&gt;pitch;
+<a name="l00465"></a>00465 
+<a name="l00466"></a>00466             <span class="keywordflow">if</span>($this instanceof Human){
+<a name="l00467"></a>00467                 $pk = <span class="keyword">new</span> MovePlayerPacket;
+<a name="l00468"></a>00468                 $pk-&gt;eid = $this-&gt;id;
+<a name="l00469"></a>00469                 $pk-&gt;x = $this-&gt;x;
+<a name="l00470"></a>00470                 $pk-&gt;y = $this-&gt;y;
+<a name="l00471"></a>00471                 $pk-&gt;z = $this-&gt;z;
+<a name="l00472"></a>00472                 $pk-&gt;yaw = $this-&gt;yaw;
+<a name="l00473"></a>00473                 $pk-&gt;pitch = $this-&gt;pitch;
+<a name="l00474"></a>00474                 $pk-&gt;bodyYaw = $this-&gt;yaw;
+<a name="l00475"></a>00475             }<span class="keywordflow">else</span>{
+<a name="l00476"></a>00476                 <span class="comment">//TODO: add to move list</span>
+<a name="l00477"></a>00477                 $pk = <span class="keyword">new</span> MoveEntityPacket();
+<a name="l00478"></a>00478                 $pk-&gt;entities = [
+<a name="l00479"></a>00479                     [$this-&gt;id, $this-&gt;x, $this-&gt;y, $this-&gt;z, $this-&gt;yaw, $this-&gt;pitch]
+<a name="l00480"></a>00480                 ];
+<a name="l00481"></a>00481             }
+<a name="l00482"></a>00482             Server::broadcastPacket($this-&gt;hasSpawned, $pk);
+<a name="l00483"></a>00483         }
+<a name="l00484"></a>00484 
+<a name="l00485"></a>00485         <span class="keywordflow">if</span>(!($this instanceof Player) and ($this-&gt;lastMotionX != $this-&gt;motionX or $this-&gt;lastMotionY != $this-&gt;motionY or $this-&gt;lastMotionZ != $this-&gt;motionZ)){
+<a name="l00486"></a>00486             $this-&gt;lastMotionX = $this-&gt;motionX;
+<a name="l00487"></a>00487             $this-&gt;lastMotionY = $this-&gt;motionY;
+<a name="l00488"></a>00488             $this-&gt;lastMotionZ = $this-&gt;motionZ;
+<a name="l00489"></a>00489 
+<a name="l00490"></a>00490             $pk = <span class="keyword">new</span> SetEntityMotionPacket;
+<a name="l00491"></a>00491             $pk-&gt;entities = [
+<a name="l00492"></a>00492                 [$this-&gt;getID(), $this-&gt;motionX, $this-&gt;motionY, $this-&gt;motionZ]
+<a name="l00493"></a>00493             ];
+<a name="l00494"></a>00494             Server::broadcastPacket($this-&gt;hasSpawned, $pk);
+<a name="l00495"></a>00495         }
 <a name="l00496"></a>00496     }
 <a name="l00497"></a>00497 
-<a name="l00498"></a>00498     <span class="keyword">public</span> <span class="keyword">function</span> setOnFire($seconds){
-<a name="l00499"></a>00499         $ticks = $seconds * 20;
-<a name="l00500"></a>00500         <span class="keywordflow">if</span>($ticks &gt; $this-&gt;fireTicks){
-<a name="l00501"></a>00501             $this-&gt;fireTicks = $ticks;
-<a name="l00502"></a>00502         }
-<a name="l00503"></a>00503     }
+<a name="l00501"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#abacf7fc4f84e0ad112ba17638dc5cd1d">00501</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#abacf7fc4f84e0ad112ba17638dc5cd1d">getDirectionVector</a>(){
+<a name="l00502"></a>00502         $pitch = ($this-&gt;pitch * M_PI) / 180;
+<a name="l00503"></a>00503         $yaw = (($this-&gt;yaw + 90) * M_PI) / 180;
 <a name="l00504"></a>00504 
-<a name="l00505"></a>00505     <span class="keyword">public</span> <span class="keyword">function</span> getDirection(){
-<a name="l00506"></a>00506         $rotation = ($this-&gt;yaw - 90) % 360;
-<a name="l00507"></a>00507         <span class="keywordflow">if</span>($rotation &lt; 0){
-<a name="l00508"></a>00508             $rotation += 360.0;
-<a name="l00509"></a>00509         }
-<a name="l00510"></a>00510         <span class="keywordflow">if</span>((0 &lt;= $rotation and $rotation &lt; 45) or (315 &lt;= $rotation and $rotation &lt; 360)){
-<a name="l00511"></a>00511             <span class="keywordflow">return</span> 2; <span class="comment">//North</span>
-<a name="l00512"></a>00512         }elseif(45 &lt;= $rotation and $rotation &lt; 135){
-<a name="l00513"></a>00513             <span class="keywordflow">return</span> 3; <span class="comment">//East</span>
-<a name="l00514"></a>00514         }elseif(135 &lt;= $rotation and $rotation &lt; 225){
-<a name="l00515"></a>00515             <span class="keywordflow">return</span> 0; <span class="comment">//South</span>
-<a name="l00516"></a>00516         }elseif(225 &lt;= $rotation and $rotation &lt; 315){
-<a name="l00517"></a>00517             <span class="keywordflow">return</span> 1; <span class="comment">//West</span>
-<a name="l00518"></a>00518         }<span class="keywordflow">else</span>{
-<a name="l00519"></a>00519             <span class="keywordflow">return</span> null;
-<a name="l00520"></a>00520         }
-<a name="l00521"></a>00521     }
-<a name="l00522"></a>00522 
-<a name="l00523"></a>00523     <span class="keyword">public</span> <span class="keyword">function</span> extinguish(){
-<a name="l00524"></a>00524         $this-&gt;fireTicks = 0;
-<a name="l00525"></a>00525     }
-<a name="l00526"></a>00526 
-<a name="l00527"></a>00527     <span class="keyword">public</span> <span class="keyword">function</span> canTriggerWalking(){
-<a name="l00528"></a>00528         <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00529"></a>00529     }
-<a name="l00530"></a>00530 
-<a name="l00531"></a>00531     <span class="keyword">protected</span> <span class="keyword">function</span> updateFallState($distanceThisTick, $onGround){
-<a name="l00532"></a>00532         <span class="keywordflow">if</span>($onGround === <span class="keyword">true</span>){
-<a name="l00533"></a>00533             <span class="keywordflow">if</span>($this-&gt;fallDistance &gt; 0){
-<a name="l00534"></a>00534                 <span class="keywordflow">if</span>($this instanceof Living){
-<a name="l00535"></a>00535                     <span class="comment">//TODO</span>
-<a name="l00536"></a>00536                 }
-<a name="l00537"></a>00537 
-<a name="l00538"></a>00538                 $this-&gt;fall($this-&gt;fallDistance);
-<a name="l00539"></a>00539                 $this-&gt;fallDistance = 0;
-<a name="l00540"></a>00540             }
-<a name="l00541"></a>00541         }elseif($distanceThisTick &lt; 0){
-<a name="l00542"></a>00542             $this-&gt;fallDistance -= $distanceThisTick;
-<a name="l00543"></a>00543         }
-<a name="l00544"></a>00544     }
-<a name="l00545"></a>00545 
-<a name="l00546"></a>00546     <span class="keyword">public</span> <span class="keyword">function</span> getBoundingBox(){
-<a name="l00547"></a>00547         <span class="keywordflow">return</span> $this-&gt;boundingBox;
-<a name="l00548"></a>00548     }
-<a name="l00549"></a>00549 
-<a name="l00550"></a>00550     <span class="keyword">public</span> <span class="keyword">function</span> fall($fallDistance){ <span class="comment">//TODO</span>
-<a name="l00551"></a>00551 
+<a name="l00505"></a>00505         $y = -sin(deg2rad($this-&gt;pitch));
+<a name="l00506"></a>00506         $xz = cos(deg2rad($this-&gt;pitch));
+<a name="l00507"></a>00507         $x = -$xz * sin(deg2rad($this-&gt;yaw));
+<a name="l00508"></a>00508         $z = $xz * cos(deg2rad($this-&gt;yaw));
+<a name="l00509"></a>00509 
+<a name="l00510"></a>00510         <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3($x, $y, $z);
+<a name="l00511"></a>00511     }
+<a name="l00512"></a>00512 
+<a name="l00513"></a>00513     <span class="keyword">public</span> <span class="keyword">function</span> onUpdate(){
+<a name="l00514"></a>00514         <span class="keywordflow">if</span>($this-&gt;closed !== <span class="keyword">false</span>){
+<a name="l00515"></a>00515             <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00516"></a>00516         }
+<a name="l00517"></a>00517 
+<a name="l00518"></a>00518         $hasUpdate = $this-&gt;entityBaseTick();
+<a name="l00519"></a>00519 
+<a name="l00520"></a>00520         <span class="comment">//if($this-&gt;isStatic())</span>
+<a name="l00521"></a>00521         <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00522"></a>00522         <span class="comment">//return !($this instanceof Player);</span>
+<a name="l00523"></a>00523     }
+<a name="l00524"></a>00524 
+<a name="l00525"></a>00525     <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">function</span> scheduleUpdate(){
+<a name="l00526"></a>00526         Entity::$needUpdate[$this-&gt;id] = $this;
+<a name="l00527"></a>00527     }
+<a name="l00528"></a>00528 
+<a name="l00529"></a>00529     <span class="keyword">public</span> <span class="keyword">function</span> setOnFire($seconds){
+<a name="l00530"></a>00530         $ticks = $seconds * 20;
+<a name="l00531"></a>00531         <span class="keywordflow">if</span>($ticks &gt; $this-&gt;fireTicks){
+<a name="l00532"></a>00532             $this-&gt;fireTicks = $ticks;
+<a name="l00533"></a>00533         }
+<a name="l00534"></a>00534     }
+<a name="l00535"></a>00535 
+<a name="l00536"></a>00536     <span class="keyword">public</span> <span class="keyword">function</span> getDirection(){
+<a name="l00537"></a>00537         $rotation = ($this-&gt;yaw - 90) % 360;
+<a name="l00538"></a>00538         <span class="keywordflow">if</span>($rotation &lt; 0){
+<a name="l00539"></a>00539             $rotation += 360.0;
+<a name="l00540"></a>00540         }
+<a name="l00541"></a>00541         <span class="keywordflow">if</span>((0 &lt;= $rotation and $rotation &lt; 45) or (315 &lt;= $rotation and $rotation &lt; 360)){
+<a name="l00542"></a>00542             <span class="keywordflow">return</span> 2; <span class="comment">//North</span>
+<a name="l00543"></a>00543         }elseif(45 &lt;= $rotation and $rotation &lt; 135){
+<a name="l00544"></a>00544             <span class="keywordflow">return</span> 3; <span class="comment">//East</span>
+<a name="l00545"></a>00545         }elseif(135 &lt;= $rotation and $rotation &lt; 225){
+<a name="l00546"></a>00546             <span class="keywordflow">return</span> 0; <span class="comment">//South</span>
+<a name="l00547"></a>00547         }elseif(225 &lt;= $rotation and $rotation &lt; 315){
+<a name="l00548"></a>00548             <span class="keywordflow">return</span> 1; <span class="comment">//West</span>
+<a name="l00549"></a>00549         }<span class="keywordflow">else</span>{
+<a name="l00550"></a>00550             <span class="keywordflow">return</span> null;
+<a name="l00551"></a>00551         }
 <a name="l00552"></a>00552     }
 <a name="l00553"></a>00553 
-<a name="l00554"></a>00554     <span class="keyword">public</span> <span class="keyword">function</span> handleWaterMovement(){ <span class="comment">//TODO</span>
-<a name="l00555"></a>00555 
+<a name="l00554"></a>00554     <span class="keyword">public</span> <span class="keyword">function</span> extinguish(){
+<a name="l00555"></a>00555         $this-&gt;fireTicks = 0;
 <a name="l00556"></a>00556     }
 <a name="l00557"></a>00557 
-<a name="l00558"></a>00558     <span class="keyword">public</span> <span class="keyword">function</span> handleLavaMovement(){ <span class="comment">//TODO</span>
-<a name="l00559"></a>00559 
+<a name="l00558"></a>00558     <span class="keyword">public</span> <span class="keyword">function</span> canTriggerWalking(){
+<a name="l00559"></a>00559         <span class="keywordflow">return</span> <span class="keyword">true</span>;
 <a name="l00560"></a>00560     }
 <a name="l00561"></a>00561 
-<a name="l00562"></a>00562     <span class="keyword">public</span> <span class="keyword">function</span> getEyeHeight(){
-<a name="l00563"></a>00563         <span class="keywordflow">return</span> 0;
-<a name="l00564"></a>00564     }
-<a name="l00565"></a>00565 
-<a name="l00566"></a>00566     <span class="keyword">public</span> <span class="keyword">function</span> moveFlying(){ <span class="comment">//TODO</span>
-<a name="l00567"></a>00567 
-<a name="l00568"></a>00568     }
-<a name="l00569"></a>00569 
-<a name="l00570"></a>00570     <span class="keyword">public</span> <span class="keyword">function</span> onCollideWithPlayer(Human $entityPlayer){
-<a name="l00571"></a>00571 
-<a name="l00572"></a>00572     }
-<a name="l00573"></a>00573 
-<a name="l00574"></a>00574     <span class="keyword">protected</span> <span class="keyword">function</span> switchLevel(Level $targetLevel){
-<a name="l00575"></a>00575         <span class="keywordflow">if</span>($this-&gt;isValid()){
-<a name="l00576"></a>00576             $this-&gt;server-&gt;getPluginManager()-&gt;callEvent($ev = <span class="keyword">new</span> EntityLevelChangeEvent($this, $this-&gt;getLevel(), $targetLevel));
-<a name="l00577"></a>00577             <span class="keywordflow">if</span>($ev-&gt;isCancelled()){
-<a name="l00578"></a>00578                 <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00579"></a>00579             }
+<a name="l00562"></a>00562     <span class="keyword">protected</span> <span class="keyword">function</span> updateFallState($distanceThisTick, $onGround){
+<a name="l00563"></a>00563         <span class="keywordflow">if</span>($onGround === <span class="keyword">true</span>){
+<a name="l00564"></a>00564             <span class="keywordflow">if</span>($this-&gt;fallDistance &gt; 0){
+<a name="l00565"></a>00565                 <span class="keywordflow">if</span>($this instanceof Living){
+<a name="l00566"></a>00566                     <span class="comment">//TODO</span>
+<a name="l00567"></a>00567                 }
+<a name="l00568"></a>00568 
+<a name="l00569"></a>00569                 $this-&gt;fall($this-&gt;fallDistance);
+<a name="l00570"></a>00570                 $this-&gt;fallDistance = 0;
+<a name="l00571"></a>00571             }
+<a name="l00572"></a>00572         }elseif($distanceThisTick &lt; 0){
+<a name="l00573"></a>00573             $this-&gt;fallDistance -= $distanceThisTick;
+<a name="l00574"></a>00574         }
+<a name="l00575"></a>00575     }
+<a name="l00576"></a>00576 
+<a name="l00577"></a>00577     <span class="keyword">public</span> <span class="keyword">function</span> getBoundingBox(){
+<a name="l00578"></a>00578         <span class="keywordflow">return</span> $this-&gt;boundingBox;
+<a name="l00579"></a>00579     }
 <a name="l00580"></a>00580 
-<a name="l00581"></a>00581             $this-&gt;getLevel()-&gt;removeEntity($this);
-<a name="l00582"></a>00582             $this-&gt;chunk-&gt;removeEntity($this);
-<a name="l00583"></a>00583             $this-&gt;despawnFromAll();
-<a name="l00584"></a>00584             <span class="keywordflow">if</span>($this instanceof Player){
-<a name="l00585"></a>00585                 <span class="keywordflow">foreach</span>($this-&gt;usedChunks as $index =&gt; $d){
-<a name="l00586"></a>00586                     $X = null;
-<a name="l00587"></a>00587                     $Z = null;
-<a name="l00588"></a>00588                     Level::getXZ($index, $X, $Z);
-<a name="l00589"></a>00589                     <span class="keywordflow">foreach</span>($this-&gt;getLevel()-&gt;getChunkEntities($X, $Z) as $entity){
-<a name="l00590"></a>00590                         $entity-&gt;despawnFrom($this);
-<a name="l00591"></a>00591                     }
+<a name="l00581"></a>00581     <span class="keyword">public</span> <span class="keyword">function</span> fall($fallDistance){ <span class="comment">//TODO</span>
+<a name="l00582"></a>00582 
+<a name="l00583"></a>00583     }
+<a name="l00584"></a>00584 
+<a name="l00585"></a>00585     <span class="keyword">public</span> <span class="keyword">function</span> handleWaterMovement(){ <span class="comment">//TODO</span>
+<a name="l00586"></a>00586 
+<a name="l00587"></a>00587     }
+<a name="l00588"></a>00588 
+<a name="l00589"></a>00589     <span class="keyword">public</span> <span class="keyword">function</span> handleLavaMovement(){ <span class="comment">//TODO</span>
+<a name="l00590"></a>00590 
+<a name="l00591"></a>00591     }
 <a name="l00592"></a>00592 
-<a name="l00593"></a>00593                     $pk = <span class="keyword">new</span> UnloadChunkPacket();
-<a name="l00594"></a>00594                     $pk-&gt;chunkX = $X;
-<a name="l00595"></a>00595                     $pk-&gt;chunkZ = $Z;
-<a name="l00596"></a>00596                     $this-&gt;dataPacket($pk);
-<a name="l00597"></a>00597                 }
-<a name="l00598"></a>00598                 $this-&gt;getLevel()-&gt;freeAllChunks($this);
-<a name="l00599"></a>00599             }
-<a name="l00600"></a>00600         }
-<a name="l00601"></a>00601         $this-&gt;setLevel($targetLevel, <span class="keyword">true</span>); <span class="comment">//Hard reference</span>
-<a name="l00602"></a>00602         $this-&gt;getLevel()-&gt;addEntity($this);
-<a name="l00603"></a>00603         <span class="keywordflow">if</span>($this instanceof Player){
-<a name="l00604"></a>00604             $this-&gt;usedChunks = [];
-<a name="l00605"></a>00605             $pk = <span class="keyword">new</span> SetTimePacket();
-<a name="l00606"></a>00606             $pk-&gt;time = $this-&gt;getLevel()-&gt;getTime();
-<a name="l00607"></a>00607             $pk-&gt;started = $this-&gt;getLevel()-&gt;stopTime == <span class="keyword">false</span>;
-<a name="l00608"></a>00608             $this-&gt;dataPacket($pk);
-<a name="l00609"></a>00609         }
-<a name="l00610"></a>00610         $this-&gt;chunk = null;
+<a name="l00593"></a>00593     <span class="keyword">public</span> <span class="keyword">function</span> getEyeHeight(){
+<a name="l00594"></a>00594         <span class="keywordflow">return</span> 0;
+<a name="l00595"></a>00595     }
+<a name="l00596"></a>00596 
+<a name="l00597"></a>00597     <span class="keyword">public</span> <span class="keyword">function</span> moveFlying(){ <span class="comment">//TODO</span>
+<a name="l00598"></a>00598 
+<a name="l00599"></a>00599     }
+<a name="l00600"></a>00600 
+<a name="l00601"></a>00601     <span class="keyword">public</span> <span class="keyword">function</span> onCollideWithPlayer(Human $entityPlayer){
+<a name="l00602"></a>00602 
+<a name="l00603"></a>00603     }
+<a name="l00604"></a>00604 
+<a name="l00605"></a>00605     <span class="keyword">protected</span> <span class="keyword">function</span> switchLevel(Level $targetLevel){
+<a name="l00606"></a>00606         <span class="keywordflow">if</span>($this-&gt;isValid()){
+<a name="l00607"></a>00607             $this-&gt;server-&gt;getPluginManager()-&gt;callEvent($ev = <span class="keyword">new</span> EntityLevelChangeEvent($this, $this-&gt;getLevel(), $targetLevel));
+<a name="l00608"></a>00608             <span class="keywordflow">if</span>($ev-&gt;isCancelled()){
+<a name="l00609"></a>00609                 <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00610"></a>00610             }
 <a name="l00611"></a>00611 
-<a name="l00612"></a>00612         <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00613"></a>00613     }
-<a name="l00614"></a>00614 
-<a name="l00615"></a>00615     <span class="keyword">public</span> <span class="keyword">function</span> getPosition(){
-<a name="l00616"></a>00616         <span class="keywordflow">return</span> <span class="keyword">new</span> Position($this-&gt;x, $this-&gt;y, $this-&gt;z, $this-&gt;getLevel());
-<a name="l00617"></a>00617     }
-<a name="l00618"></a>00618 
-<a name="l00619"></a>00619     <span class="keyword">public</span> <span class="keyword">function</span> collision(){
-<a name="l00620"></a>00620         $this-&gt;isColliding = <span class="keyword">true</span>;
-<a name="l00621"></a>00621         $this-&gt;fallDistance = 0;
-<a name="l00622"></a>00622     }
+<a name="l00612"></a>00612             $this-&gt;getLevel()-&gt;removeEntity($this);
+<a name="l00613"></a>00613             $this-&gt;chunk-&gt;removeEntity($this);
+<a name="l00614"></a>00614             $this-&gt;despawnFromAll();
+<a name="l00615"></a>00615             <span class="keywordflow">if</span>($this instanceof Player){
+<a name="l00616"></a>00616                 <span class="keywordflow">foreach</span>($this-&gt;usedChunks as $index =&gt; $d){
+<a name="l00617"></a>00617                     $X = null;
+<a name="l00618"></a>00618                     $Z = null;
+<a name="l00619"></a>00619                     Level::getXZ($index, $X, $Z);
+<a name="l00620"></a>00620                     <span class="keywordflow">foreach</span>($this-&gt;getLevel()-&gt;getChunkEntities($X, $Z) as $entity){
+<a name="l00621"></a>00621                         $entity-&gt;despawnFrom($this);
+<a name="l00622"></a>00622                     }
 <a name="l00623"></a>00623 
-<a name="l00624"></a>00624     <span class="keyword">public</span> <span class="keyword">function</span> move($dx, $dy, $dz){
-<a name="l00625"></a>00625         <span class="comment">//$collision = [];</span>
-<a name="l00626"></a>00626         <span class="comment">//$this-&gt;checkBlockCollision($collision);</span>
-<a name="l00627"></a>00627         <span class="keywordflow">if</span>($dx == 0 and $dz == 0 and $dy == 0){
-<a name="l00628"></a>00628             <span class="keywordflow">return</span>;
-<a name="l00629"></a>00629         }
-<a name="l00630"></a>00630 
-<a name="l00631"></a>00631         $ox = $this-&gt;x;
-<a name="l00632"></a>00632         $oy = $this-&gt;y;
-<a name="l00633"></a>00633         $oz = $this-&gt;z;
-<a name="l00634"></a>00634 
-<a name="l00635"></a>00635         <span class="keywordflow">if</span>($this-&gt;isColliding){ <span class="comment">//With an entity</span>
-<a name="l00636"></a>00636             $this-&gt;isColliding = <span class="keyword">false</span>;
-<a name="l00637"></a>00637             $dx *= 0.25;
-<a name="l00638"></a>00638             $dy *= 0.05;
-<a name="l00639"></a>00639             $dz *= 0.25;
-<a name="l00640"></a>00640             $this-&gt;motionX = 0;
-<a name="l00641"></a>00641             $this-&gt;motionY = 0;
-<a name="l00642"></a>00642             $this-&gt;motionZ = 0;
-<a name="l00643"></a>00643         }
-<a name="l00644"></a>00644 
-<a name="l00645"></a>00645         $movX = $dx;
-<a name="l00646"></a>00646         $movY = $dy;
-<a name="l00647"></a>00647         $movZ = $dz;
-<a name="l00648"></a>00648 
-<a name="l00649"></a>00649         <span class="comment">/*$sneakFlag = $this-&gt;onGround and $this instanceof Player;</span>
-<a name="l00650"></a>00650 <span class="comment"></span>
-<a name="l00651"></a>00651 <span class="comment">        if($sneakFlag){</span>
-<a name="l00652"></a>00652 <span class="comment">            for($mov = 0.05; $dx != 0.0 and count($this-&gt;getLevel()-&gt;getCollisionCubes($this, $this-&gt;boundingBox-&gt;getOffsetBoundingBox($dx, -1, 0))) === 0; $movX = $dx){</span>
-<a name="l00653"></a>00653 <span class="comment">                if($dx &lt; $mov and $dx &gt;= -$mov){</span>
-<a name="l00654"></a>00654 <span class="comment">                    $dx = 0;</span>
-<a name="l00655"></a>00655 <span class="comment">                }elseif($dx &gt; 0){</span>
-<a name="l00656"></a>00656 <span class="comment">                    $dx -= $mov;</span>
-<a name="l00657"></a>00657 <span class="comment">                }else{</span>
-<a name="l00658"></a>00658 <span class="comment">                    $dx += $mov;</span>
-<a name="l00659"></a>00659 <span class="comment">                }</span>
-<a name="l00660"></a>00660 <span class="comment">            }</span>
-<a name="l00661"></a>00661 <span class="comment"></span>
-<a name="l00662"></a>00662 <span class="comment">            for(; $dz != 0.0 and count($this-&gt;getLevel()-&gt;getCollisionCubes($this, $this-&gt;boundingBox-&gt;getOffsetBoundingBox(0, -1, $dz))) === 0; $movZ = $dz){</span>
-<a name="l00663"></a>00663 <span class="comment">                if($dz &lt; $mov and $dz &gt;= -$mov){</span>
-<a name="l00664"></a>00664 <span class="comment">                    $dz = 0;</span>
-<a name="l00665"></a>00665 <span class="comment">                }elseif($dz &gt; 0){</span>
-<a name="l00666"></a>00666 <span class="comment">                    $dz -= $mov;</span>
-<a name="l00667"></a>00667 <span class="comment">                }else{</span>
-<a name="l00668"></a>00668 <span class="comment">                    $dz += $mov;</span>
-<a name="l00669"></a>00669 <span class="comment">                }</span>
-<a name="l00670"></a>00670 <span class="comment">            }</span>
-<a name="l00671"></a>00671 <span class="comment"></span>
-<a name="l00672"></a>00672 <span class="comment">            //TODO: big messy loop</span>
-<a name="l00673"></a>00673 <span class="comment">        }*/</span>
-<a name="l00674"></a>00674 
-<a name="l00675"></a>00675         <span class="keywordflow">if</span>(count($this-&gt;getLevel()-&gt;getCollisionCubes($this, $this-&gt;boundingBox-&gt;getOffsetBoundingBox(0, $dy, 0))) &gt; 0){
-<a name="l00676"></a>00676             $dy = 0;
-<a name="l00677"></a>00677             $dx = 0;
-<a name="l00678"></a>00678             $dz = 0;
-<a name="l00679"></a>00679         }
-<a name="l00680"></a>00680 
-<a name="l00681"></a>00681         $fallingFlag = $this-&gt;onGround or ($dy != $movY and $movY &lt; 0);
-<a name="l00682"></a>00682 
-<a name="l00683"></a>00683         <span class="keywordflow">if</span>($dx != 0){
-<a name="l00684"></a>00684             <span class="keywordflow">if</span>(count($this-&gt;getLevel()-&gt;getCollisionCubes($this, $this-&gt;boundingBox-&gt;getOffsetBoundingBox($dx, 0, 0))) &gt; 0){
-<a name="l00685"></a>00685                 $dy = 0;
-<a name="l00686"></a>00686                 $dx = 0;
-<a name="l00687"></a>00687                 $dz = 0;
-<a name="l00688"></a>00688             }
-<a name="l00689"></a>00689         }
-<a name="l00690"></a>00690 
-<a name="l00691"></a>00691         <span class="keywordflow">if</span>($dz != 0){
-<a name="l00692"></a>00692             <span class="keywordflow">if</span>(count($this-&gt;getLevel()-&gt;getCollisionCubes($this, $this-&gt;boundingBox-&gt;getOffsetBoundingBox(0, 0, $dz))) &gt; 0){
-<a name="l00693"></a>00693                 $dy = 0;
-<a name="l00694"></a>00694                 $dx = 0;
-<a name="l00695"></a>00695                 $dz = 0;
-<a name="l00696"></a>00696             }
-<a name="l00697"></a>00697         }
-<a name="l00698"></a>00698 
-<a name="l00699"></a>00699         <span class="keywordflow">if</span>($movX != $dx or $movZ != $dz or $fallingFlag){
-<a name="l00700"></a>00700 
-<a name="l00701"></a>00701             $cx = $dx;
-<a name="l00702"></a>00702             $cy = $dy;
-<a name="l00703"></a>00703             $cz = $dz;
-<a name="l00704"></a>00704             $dx = $movX;
-<a name="l00705"></a>00705             $dy = 0;
-<a name="l00706"></a>00706             $dz = $movZ;
-<a name="l00707"></a>00707             $oldBB = clone $this-&gt;boundingBox;
-<a name="l00708"></a>00708             $list = $this-&gt;getLevel()-&gt;getCollisionCubes($this, $this-&gt;boundingBox-&gt;getOffsetBoundingBox($movX, $dy, $movZ));
-<a name="l00709"></a>00709 
-<a name="l00710"></a>00710 
-<a name="l00711"></a>00711             <span class="keywordflow">foreach</span>($list as $bb){
-<a name="l00712"></a>00712                 $dy = $bb-&gt;calculateYOffset($this-&gt;boundingBox, $dy);
-<a name="l00713"></a>00713             }
-<a name="l00714"></a>00714 
-<a name="l00715"></a>00715             $this-&gt;boundingBox-&gt;addCoord(0, $dy, 0);
-<a name="l00716"></a>00716 
-<a name="l00717"></a>00717             <span class="keywordflow">if</span>($movY != $dy){
-<a name="l00718"></a>00718                 $dx = 0;
-<a name="l00719"></a>00719                 $dy = 0;
-<a name="l00720"></a>00720                 $dz = 0;
-<a name="l00721"></a>00721             }
-<a name="l00722"></a>00722 
-<a name="l00723"></a>00723             <span class="keywordflow">foreach</span>($list as $bb){
-<a name="l00724"></a>00724                 $dx = $bb-&gt;calculateXOffset($this-&gt;boundingBox, $dx);
-<a name="l00725"></a>00725             }
-<a name="l00726"></a>00726 
-<a name="l00727"></a>00727             $this-&gt;boundingBox-&gt;addCoord($dx, 0, 0);
-<a name="l00728"></a>00728 
-<a name="l00729"></a>00729             <span class="keywordflow">if</span>($movX != $dx){
-<a name="l00730"></a>00730                 $dx = 0;
-<a name="l00731"></a>00731                 $dy = 0;
-<a name="l00732"></a>00732                 $dz = 0;
-<a name="l00733"></a>00733             }
-<a name="l00734"></a>00734 
-<a name="l00735"></a>00735             <span class="keywordflow">foreach</span>($list as $bb){
-<a name="l00736"></a>00736                 $dz = $bb-&gt;calculateZOffset($this-&gt;boundingBox, $dz);
-<a name="l00737"></a>00737             }
-<a name="l00738"></a>00738 
-<a name="l00739"></a>00739             $this-&gt;boundingBox-&gt;addCoord(0, 0, $dz);
+<a name="l00624"></a>00624                     $pk = <span class="keyword">new</span> UnloadChunkPacket();
+<a name="l00625"></a>00625                     $pk-&gt;chunkX = $X;
+<a name="l00626"></a>00626                     $pk-&gt;chunkZ = $Z;
+<a name="l00627"></a>00627                     $this-&gt;dataPacket($pk);
+<a name="l00628"></a>00628                 }
+<a name="l00629"></a>00629                 $this-&gt;getLevel()-&gt;freeAllChunks($this);
+<a name="l00630"></a>00630             }
+<a name="l00631"></a>00631         }
+<a name="l00632"></a>00632         $this-&gt;setLevel($targetLevel, <span class="keyword">true</span>); <span class="comment">//Hard reference</span>
+<a name="l00633"></a>00633         $this-&gt;getLevel()-&gt;addEntity($this);
+<a name="l00634"></a>00634         <span class="keywordflow">if</span>($this instanceof Player){
+<a name="l00635"></a>00635             $this-&gt;usedChunks = [];
+<a name="l00636"></a>00636             $pk = <span class="keyword">new</span> SetTimePacket();
+<a name="l00637"></a>00637             $pk-&gt;time = $this-&gt;getLevel()-&gt;getTime();
+<a name="l00638"></a>00638             $pk-&gt;started = $this-&gt;getLevel()-&gt;stopTime == <span class="keyword">false</span>;
+<a name="l00639"></a>00639             $this-&gt;dataPacket($pk);
+<a name="l00640"></a>00640         }
+<a name="l00641"></a>00641         $this-&gt;chunk = null;
+<a name="l00642"></a>00642 
+<a name="l00643"></a>00643         <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00644"></a>00644     }
+<a name="l00645"></a>00645 
+<a name="l00646"></a>00646     <span class="keyword">public</span> <span class="keyword">function</span> getPosition(){
+<a name="l00647"></a>00647         <span class="keywordflow">return</span> <span class="keyword">new</span> Position($this-&gt;x, $this-&gt;y, $this-&gt;z, $this-&gt;getLevel());
+<a name="l00648"></a>00648     }
+<a name="l00649"></a>00649 
+<a name="l00650"></a>00650     <span class="keyword">public</span> <span class="keyword">function</span> collision(){
+<a name="l00651"></a>00651         $this-&gt;isColliding = <span class="keyword">true</span>;
+<a name="l00652"></a>00652         $this-&gt;fallDistance = 0;
+<a name="l00653"></a>00653     }
+<a name="l00654"></a>00654 
+<a name="l00655"></a>00655     <span class="keyword">public</span> <span class="keyword">function</span> move($dx, $dy, $dz){
+<a name="l00656"></a>00656         <span class="comment">//$collision = [];</span>
+<a name="l00657"></a>00657         <span class="comment">//$this-&gt;checkBlockCollision($collision);</span>
+<a name="l00658"></a>00658         <span class="keywordflow">if</span>($dx == 0 and $dz == 0 and $dy == 0){
+<a name="l00659"></a>00659             <span class="keywordflow">return</span>;
+<a name="l00660"></a>00660         }
+<a name="l00661"></a>00661 
+<a name="l00662"></a>00662         $ox = $this-&gt;x;
+<a name="l00663"></a>00663         $oy = $this-&gt;y;
+<a name="l00664"></a>00664         $oz = $this-&gt;z;
+<a name="l00665"></a>00665 
+<a name="l00666"></a>00666         <span class="keywordflow">if</span>($this-&gt;isColliding){ <span class="comment">//With an entity</span>
+<a name="l00667"></a>00667             $this-&gt;isColliding = <span class="keyword">false</span>;
+<a name="l00668"></a>00668             $dx *= 0.25;
+<a name="l00669"></a>00669             $dy *= 0.05;
+<a name="l00670"></a>00670             $dz *= 0.25;
+<a name="l00671"></a>00671             $this-&gt;motionX = 0;
+<a name="l00672"></a>00672             $this-&gt;motionY = 0;
+<a name="l00673"></a>00673             $this-&gt;motionZ = 0;
+<a name="l00674"></a>00674         }
+<a name="l00675"></a>00675 
+<a name="l00676"></a>00676         $movX = $dx;
+<a name="l00677"></a>00677         $movY = $dy;
+<a name="l00678"></a>00678         $movZ = $dz;
+<a name="l00679"></a>00679 
+<a name="l00680"></a>00680         <span class="comment">/*$sneakFlag = $this-&gt;onGround and $this instanceof Player;</span>
+<a name="l00681"></a>00681 <span class="comment"></span>
+<a name="l00682"></a>00682 <span class="comment">        if($sneakFlag){</span>
+<a name="l00683"></a>00683 <span class="comment">            for($mov = 0.05; $dx != 0.0 and count($this-&gt;getLevel()-&gt;getCollisionCubes($this, $this-&gt;boundingBox-&gt;getOffsetBoundingBox($dx, -1, 0))) === 0; $movX = $dx){</span>
+<a name="l00684"></a>00684 <span class="comment">                if($dx &lt; $mov and $dx &gt;= -$mov){</span>
+<a name="l00685"></a>00685 <span class="comment">                    $dx = 0;</span>
+<a name="l00686"></a>00686 <span class="comment">                }elseif($dx &gt; 0){</span>
+<a name="l00687"></a>00687 <span class="comment">                    $dx -= $mov;</span>
+<a name="l00688"></a>00688 <span class="comment">                }else{</span>
+<a name="l00689"></a>00689 <span class="comment">                    $dx += $mov;</span>
+<a name="l00690"></a>00690 <span class="comment">                }</span>
+<a name="l00691"></a>00691 <span class="comment">            }</span>
+<a name="l00692"></a>00692 <span class="comment"></span>
+<a name="l00693"></a>00693 <span class="comment">            for(; $dz != 0.0 and count($this-&gt;getLevel()-&gt;getCollisionCubes($this, $this-&gt;boundingBox-&gt;getOffsetBoundingBox(0, -1, $dz))) === 0; $movZ = $dz){</span>
+<a name="l00694"></a>00694 <span class="comment">                if($dz &lt; $mov and $dz &gt;= -$mov){</span>
+<a name="l00695"></a>00695 <span class="comment">                    $dz = 0;</span>
+<a name="l00696"></a>00696 <span class="comment">                }elseif($dz &gt; 0){</span>
+<a name="l00697"></a>00697 <span class="comment">                    $dz -= $mov;</span>
+<a name="l00698"></a>00698 <span class="comment">                }else{</span>
+<a name="l00699"></a>00699 <span class="comment">                    $dz += $mov;</span>
+<a name="l00700"></a>00700 <span class="comment">                }</span>
+<a name="l00701"></a>00701 <span class="comment">            }</span>
+<a name="l00702"></a>00702 <span class="comment"></span>
+<a name="l00703"></a>00703 <span class="comment">            //TODO: big messy loop</span>
+<a name="l00704"></a>00704 <span class="comment">        }*/</span>
+<a name="l00705"></a>00705 
+<a name="l00706"></a>00706         <span class="keywordflow">if</span>(count($this-&gt;getLevel()-&gt;getCollisionCubes($this, $this-&gt;boundingBox-&gt;getOffsetBoundingBox(0, $dy, 0))) &gt; 0){
+<a name="l00707"></a>00707             $dy = 0;
+<a name="l00708"></a>00708             $dx = 0;
+<a name="l00709"></a>00709             $dz = 0;
+<a name="l00710"></a>00710         }
+<a name="l00711"></a>00711 
+<a name="l00712"></a>00712         $fallingFlag = $this-&gt;onGround or ($dy != $movY and $movY &lt; 0);
+<a name="l00713"></a>00713 
+<a name="l00714"></a>00714         <span class="keywordflow">if</span>($dx != 0){
+<a name="l00715"></a>00715             <span class="keywordflow">if</span>(count($this-&gt;getLevel()-&gt;getCollisionCubes($this, $this-&gt;boundingBox-&gt;getOffsetBoundingBox($dx, 0, 0))) &gt; 0){
+<a name="l00716"></a>00716                 $dy = 0;
+<a name="l00717"></a>00717                 $dx = 0;
+<a name="l00718"></a>00718                 $dz = 0;
+<a name="l00719"></a>00719             }
+<a name="l00720"></a>00720         }
+<a name="l00721"></a>00721 
+<a name="l00722"></a>00722         <span class="keywordflow">if</span>($dz != 0){
+<a name="l00723"></a>00723             <span class="keywordflow">if</span>(count($this-&gt;getLevel()-&gt;getCollisionCubes($this, $this-&gt;boundingBox-&gt;getOffsetBoundingBox(0, 0, $dz))) &gt; 0){
+<a name="l00724"></a>00724                 $dy = 0;
+<a name="l00725"></a>00725                 $dx = 0;
+<a name="l00726"></a>00726                 $dz = 0;
+<a name="l00727"></a>00727             }
+<a name="l00728"></a>00728         }
+<a name="l00729"></a>00729 
+<a name="l00730"></a>00730         <span class="keywordflow">if</span>($movX != $dx or $movZ != $dz or $fallingFlag){
+<a name="l00731"></a>00731 
+<a name="l00732"></a>00732             $cx = $dx;
+<a name="l00733"></a>00733             $cy = $dy;
+<a name="l00734"></a>00734             $cz = $dz;
+<a name="l00735"></a>00735             $dx = $movX;
+<a name="l00736"></a>00736             $dy = 0;
+<a name="l00737"></a>00737             $dz = $movZ;
+<a name="l00738"></a>00738             $oldBB = clone $this-&gt;boundingBox;
+<a name="l00739"></a>00739             $list = $this-&gt;getLevel()-&gt;getCollisionCubes($this, $this-&gt;boundingBox-&gt;getOffsetBoundingBox($movX, $dy, $movZ));
 <a name="l00740"></a>00740 
-<a name="l00741"></a>00741             <span class="keywordflow">if</span>($movZ != $dz){
-<a name="l00742"></a>00742                 $dx = 0;
-<a name="l00743"></a>00743                 $dy = 0;
-<a name="l00744"></a>00744                 $dz = 0;
-<a name="l00745"></a>00745             }
-<a name="l00746"></a>00746 
-<a name="l00747"></a>00747             <span class="keywordflow">if</span>($movY != $dy){
-<a name="l00748"></a>00748                 $dy = 0;
-<a name="l00749"></a>00749                 <span class="keywordflow">foreach</span>($list as $bb){
-<a name="l00750"></a>00750                     $dy = $bb-&gt;calculateYOffset($this-&gt;boundingBox, $dy);
-<a name="l00751"></a>00751                 }
-<a name="l00752"></a>00752 
-<a name="l00753"></a>00753                 $this-&gt;boundingBox-&gt;addCoord(0, $dy, 0);
-<a name="l00754"></a>00754             }
-<a name="l00755"></a>00755 
-<a name="l00756"></a>00756             <span class="keywordflow">if</span>($cx * $cx + $cz * $cz &gt; $dx * $dx + $dz * $dz){
-<a name="l00757"></a>00757                 $dx = $cx;
-<a name="l00758"></a>00758                 $dy = $cy;
-<a name="l00759"></a>00759                 $dz = $cz;
-<a name="l00760"></a>00760                 $this-&gt;boundingBox-&gt;setBB($oldBB);
-<a name="l00761"></a>00761             }
-<a name="l00762"></a>00762         }
-<a name="l00763"></a>00763 
-<a name="l00764"></a>00764         $this-&gt;x = ($this-&gt;boundingBox-&gt;minX + $this-&gt;boundingBox-&gt;maxX) / 2;
-<a name="l00765"></a>00765         $this-&gt;y = $this-&gt;boundingBox-&gt;minY + $this-&gt;height;
-<a name="l00766"></a>00766         $this-&gt;z = ($this-&gt;boundingBox-&gt;minZ + $this-&gt;boundingBox-&gt;maxZ) / 2;
-<a name="l00767"></a>00767 
-<a name="l00768"></a>00768         $this-&gt;onGround = $movY != $dy and $movY &lt; 0;
-<a name="l00769"></a>00769         $this-&gt;updateFallState($dy, $this-&gt;onGround);
-<a name="l00770"></a>00770 
-<a name="l00771"></a>00771         <span class="keywordflow">if</span>($movX != $dx){
-<a name="l00772"></a>00772             $this-&gt;motionX = 0;
-<a name="l00773"></a>00773         }
-<a name="l00774"></a>00774 
-<a name="l00775"></a>00775         <span class="keywordflow">if</span>($movY != $dy){
-<a name="l00776"></a>00776             $this-&gt;motionY = 0;
-<a name="l00777"></a>00777         }
-<a name="l00778"></a>00778 
-<a name="l00779"></a>00779         <span class="keywordflow">if</span>($movZ != $dz){
-<a name="l00780"></a>00780             $this-&gt;motionZ = 0;
-<a name="l00781"></a>00781         }
-<a name="l00782"></a>00782 
-<a name="l00783"></a>00783         <span class="comment">//$this-&gt;boundingBox-&gt;addCoord($dx, $dy, $dz);</span>
-<a name="l00784"></a>00784         <span class="comment">//$this-&gt;x += $dx;</span>
-<a name="l00785"></a>00785         <span class="comment">//$this-&gt;y += $dy;</span>
-<a name="l00786"></a>00786         <span class="comment">//$this-&gt;z += $dz;</span>
-<a name="l00787"></a>00787 
-<a name="l00788"></a>00788         $cx = $this-&gt;x - $ox;
-<a name="l00789"></a>00789         $cy = $this-&gt;y - $oy;
-<a name="l00790"></a>00790         $cz = $this-&gt;z - $oz;
-<a name="l00791"></a>00791 
-<a name="l00792"></a>00792         <span class="comment">//TODO: vehicle collision events (first we need to spawn them!)</span>
-<a name="l00793"></a>00793 
+<a name="l00741"></a>00741 
+<a name="l00742"></a>00742             <span class="keywordflow">foreach</span>($list as $bb){
+<a name="l00743"></a>00743                 $dy = $bb-&gt;calculateYOffset($this-&gt;boundingBox, $dy);
+<a name="l00744"></a>00744             }
+<a name="l00745"></a>00745 
+<a name="l00746"></a>00746             $this-&gt;boundingBox-&gt;addCoord(0, $dy, 0);
+<a name="l00747"></a>00747 
+<a name="l00748"></a>00748             <span class="keywordflow">if</span>($movY != $dy){
+<a name="l00749"></a>00749                 $dx = 0;
+<a name="l00750"></a>00750                 $dy = 0;
+<a name="l00751"></a>00751                 $dz = 0;
+<a name="l00752"></a>00752             }
+<a name="l00753"></a>00753 
+<a name="l00754"></a>00754             <span class="keywordflow">foreach</span>($list as $bb){
+<a name="l00755"></a>00755                 $dx = $bb-&gt;calculateXOffset($this-&gt;boundingBox, $dx);
+<a name="l00756"></a>00756             }
+<a name="l00757"></a>00757 
+<a name="l00758"></a>00758             $this-&gt;boundingBox-&gt;addCoord($dx, 0, 0);
+<a name="l00759"></a>00759 
+<a name="l00760"></a>00760             <span class="keywordflow">if</span>($movX != $dx){
+<a name="l00761"></a>00761                 $dx = 0;
+<a name="l00762"></a>00762                 $dy = 0;
+<a name="l00763"></a>00763                 $dz = 0;
+<a name="l00764"></a>00764             }
+<a name="l00765"></a>00765 
+<a name="l00766"></a>00766             <span class="keywordflow">foreach</span>($list as $bb){
+<a name="l00767"></a>00767                 $dz = $bb-&gt;calculateZOffset($this-&gt;boundingBox, $dz);
+<a name="l00768"></a>00768             }
+<a name="l00769"></a>00769 
+<a name="l00770"></a>00770             $this-&gt;boundingBox-&gt;addCoord(0, 0, $dz);
+<a name="l00771"></a>00771 
+<a name="l00772"></a>00772             <span class="keywordflow">if</span>($movZ != $dz){
+<a name="l00773"></a>00773                 $dx = 0;
+<a name="l00774"></a>00774                 $dy = 0;
+<a name="l00775"></a>00775                 $dz = 0;
+<a name="l00776"></a>00776             }
+<a name="l00777"></a>00777 
+<a name="l00778"></a>00778             <span class="keywordflow">if</span>($movY != $dy){
+<a name="l00779"></a>00779                 $dy = 0;
+<a name="l00780"></a>00780                 <span class="keywordflow">foreach</span>($list as $bb){
+<a name="l00781"></a>00781                     $dy = $bb-&gt;calculateYOffset($this-&gt;boundingBox, $dy);
+<a name="l00782"></a>00782                 }
+<a name="l00783"></a>00783 
+<a name="l00784"></a>00784                 $this-&gt;boundingBox-&gt;addCoord(0, $dy, 0);
+<a name="l00785"></a>00785             }
+<a name="l00786"></a>00786 
+<a name="l00787"></a>00787             <span class="keywordflow">if</span>($cx * $cx + $cz * $cz &gt; $dx * $dx + $dz * $dz){
+<a name="l00788"></a>00788                 $dx = $cx;
+<a name="l00789"></a>00789                 $dy = $cy;
+<a name="l00790"></a>00790                 $dz = $cz;
+<a name="l00791"></a>00791                 $this-&gt;boundingBox-&gt;setBB($oldBB);
+<a name="l00792"></a>00792             }
+<a name="l00793"></a>00793         }
 <a name="l00794"></a>00794 
-<a name="l00795"></a>00795     }
-<a name="l00796"></a>00796 
-<a name="l00802"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#ab1be7fd02dbb8a4a6f6219085367efb2">00802</a>     <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#ab1be7fd02dbb8a4a6f6219085367efb2">checkBlockCollision</a>(&amp;$list = array()){
-<a name="l00803"></a>00803         $minX = floor($this-&gt;boundingBox-&gt;minX + 0.001);
-<a name="l00804"></a>00804         $minY = floor($this-&gt;boundingBox-&gt;minY + 0.001);
-<a name="l00805"></a>00805         $minZ = floor($this-&gt;boundingBox-&gt;minZ + 0.001);
-<a name="l00806"></a>00806         $maxX = floor($this-&gt;boundingBox-&gt;maxX + 0.001);
-<a name="l00807"></a>00807         $maxY = floor($this-&gt;boundingBox-&gt;maxY + 0.001);
-<a name="l00808"></a>00808         $maxZ = floor($this-&gt;boundingBox-&gt;maxZ + 0.001);
+<a name="l00795"></a>00795         $this-&gt;x = ($this-&gt;boundingBox-&gt;minX + $this-&gt;boundingBox-&gt;maxX) / 2;
+<a name="l00796"></a>00796         $this-&gt;y = $this-&gt;boundingBox-&gt;minY + $this-&gt;height;
+<a name="l00797"></a>00797         $this-&gt;z = ($this-&gt;boundingBox-&gt;minZ + $this-&gt;boundingBox-&gt;maxZ) / 2;
+<a name="l00798"></a>00798 
+<a name="l00799"></a>00799         $this-&gt;onGround = $movY != $dy and $movY &lt; 0;
+<a name="l00800"></a>00800         $this-&gt;updateFallState($dy, $this-&gt;onGround);
+<a name="l00801"></a>00801 
+<a name="l00802"></a>00802         <span class="keywordflow">if</span>($movX != $dx){
+<a name="l00803"></a>00803             $this-&gt;motionX = 0;
+<a name="l00804"></a>00804         }
+<a name="l00805"></a>00805 
+<a name="l00806"></a>00806         <span class="keywordflow">if</span>($movY != $dy){
+<a name="l00807"></a>00807             $this-&gt;motionY = 0;
+<a name="l00808"></a>00808         }
 <a name="l00809"></a>00809 
-<a name="l00810"></a>00810         <span class="keywordflow">for</span>($z = $minZ; $z &lt;= $maxZ; ++$z){
-<a name="l00811"></a>00811             <span class="keywordflow">for</span>($x = $minX; $x &lt;= $maxX; ++$x){
-<a name="l00812"></a>00812                 <span class="keywordflow">for</span>($y = $minY; $y &lt;= $maxY; ++$y){
-<a name="l00813"></a>00813                     $this-&gt;getLevel()-&gt;getBlock(<span class="keyword">new</span> Vector3($x, $y, $z))-&gt;collidesWithBB($this-&gt;boundingBox, $list);
-<a name="l00814"></a>00814                 }
-<a name="l00815"></a>00815             }
-<a name="l00816"></a>00816         }
-<a name="l00817"></a>00817 
-<a name="l00818"></a>00818         <span class="keywordflow">return</span> $list;
-<a name="l00819"></a>00819     }
-<a name="l00820"></a>00820 
-<a name="l00821"></a>00821     <span class="keyword">public</span> <span class="keyword">function</span> setPositionAndRotation(Vector3 $pos, $yaw, $pitch, $force = <span class="keyword">false</span>){
-<a name="l00822"></a>00822         <span class="keywordflow">if</span>($this-&gt;setPosition($pos, $force) === <span class="keyword">true</span>){
-<a name="l00823"></a>00823             $this-&gt;setRotation($yaw, $pitch);
+<a name="l00810"></a>00810         <span class="keywordflow">if</span>($movZ != $dz){
+<a name="l00811"></a>00811             $this-&gt;motionZ = 0;
+<a name="l00812"></a>00812         }
+<a name="l00813"></a>00813 
+<a name="l00814"></a>00814         $this-&gt;boundingBox-&gt;addCoord($dx, $dy, $dz);
+<a name="l00815"></a>00815         $this-&gt;x += $dx;
+<a name="l00816"></a>00816         $this-&gt;y += $dy;
+<a name="l00817"></a>00817         $this-&gt;z += $dz;
+<a name="l00818"></a>00818 
+<a name="l00819"></a>00819         $cx = $this-&gt;x - $ox;
+<a name="l00820"></a>00820         $cy = $this-&gt;y - $oy;
+<a name="l00821"></a>00821         $cz = $this-&gt;z - $oz;
+<a name="l00822"></a>00822 
+<a name="l00823"></a>00823         <span class="comment">//TODO: vehicle collision events (first we need to spawn them!)</span>
 <a name="l00824"></a>00824 
-<a name="l00825"></a>00825             <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00826"></a>00826         }
+<a name="l00825"></a>00825 
+<a name="l00826"></a>00826     }
 <a name="l00827"></a>00827 
-<a name="l00828"></a>00828         <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00829"></a>00829     }
-<a name="l00830"></a>00830 
-<a name="l00831"></a>00831     <span class="keyword">public</span> <span class="keyword">function</span> setRotation($yaw, $pitch){
-<a name="l00832"></a>00832         $this-&gt;yaw = $yaw;
-<a name="l00833"></a>00833         $this-&gt;pitch = $pitch;
-<a name="l00834"></a>00834         $this-&gt;scheduleUpdate();
-<a name="l00835"></a>00835     }
-<a name="l00836"></a>00836 
-<a name="l00837"></a>00837     <span class="keyword">public</span> <span class="keyword">function</span> setPosition(Vector3 $pos, $force = <span class="keyword">false</span>){
-<a name="l00838"></a>00838         <span class="keywordflow">if</span>($pos instanceof Position and $pos-&gt;getLevel() instanceof Level and $pos-&gt;getLevel() !== $this-&gt;getLevel()){
-<a name="l00839"></a>00839             <span class="keywordflow">if</span>($this-&gt;switchLevel($pos-&gt;getLevel()) === <span class="keyword">false</span>){
-<a name="l00840"></a>00840                 <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00841"></a>00841             }
-<a name="l00842"></a>00842         }
-<a name="l00843"></a>00843 
-<a name="l00844"></a>00844         <span class="keywordflow">if</span>(!$this-&gt;justCreated and $force !== <span class="keyword">true</span>){
-<a name="l00845"></a>00845             $ev = <span class="keyword">new</span> EntityMoveEvent($this, $pos);
-<a name="l00846"></a>00846             <span class="keywordflow">if</span>($this instanceof Player){
-<a name="l00847"></a>00847                 <span class="keywordflow">for</span>($side = 2; $side &lt;= 5; ++$side){
-<a name="l00848"></a>00848                     $vector = $pos-&gt;getSide($side, 2);
-<a name="l00849"></a>00849                     <span class="keywordflow">if</span>(!isset($this-&gt;usedChunks[Level::chunkHash($vector-&gt;x &gt;&gt; 4, $vector-&gt;z &gt;&gt; 4)])){
-<a name="l00850"></a>00850                         $ev-&gt;setCancelled(<span class="keyword">true</span>);
-<a name="l00851"></a>00851                         <span class="keywordflow">break</span>;
-<a name="l00852"></a>00852                     }
-<a name="l00853"></a>00853                 }
-<a name="l00854"></a>00854             }
-<a name="l00855"></a>00855             $this-&gt;server-&gt;getPluginManager()-&gt;callEvent($ev);
-<a name="l00856"></a>00856             <span class="keywordflow">if</span>($ev-&gt;isCancelled()){
-<a name="l00857"></a>00857                 <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00858"></a>00858             }
-<a name="l00859"></a>00859         }
-<a name="l00860"></a>00860 
-<a name="l00861"></a>00861         $this-&gt;x = $pos-&gt;x;
-<a name="l00862"></a>00862         $this-&gt;y = $pos-&gt;y;
-<a name="l00863"></a>00863         $this-&gt;z = $pos-&gt;z;
-<a name="l00864"></a>00864 
-<a name="l00865"></a>00865         $radius = $this-&gt;width / 2;
-<a name="l00866"></a>00866         $this-&gt;boundingBox-&gt;setBounds($pos-&gt;x - $radius, $pos-&gt;y, $pos-&gt;z - $radius, $pos-&gt;x + $radius, $pos-&gt;y + $this-&gt;height, $pos-&gt;z + $radius);
+<a name="l00833"></a><a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#ab1be7fd02dbb8a4a6f6219085367efb2">00833</a>     <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code" href="../../d2/d3c/classpocketmine_1_1entity_1_1_entity.html#ab1be7fd02dbb8a4a6f6219085367efb2">checkBlockCollision</a>(&amp;$list = array()){
+<a name="l00834"></a>00834         $minX = floor($this-&gt;boundingBox-&gt;minX + 0.001);
+<a name="l00835"></a>00835         $minY = floor($this-&gt;boundingBox-&gt;minY + 0.001);
+<a name="l00836"></a>00836         $minZ = floor($this-&gt;boundingBox-&gt;minZ + 0.001);
+<a name="l00837"></a>00837         $maxX = floor($this-&gt;boundingBox-&gt;maxX + 0.001);
+<a name="l00838"></a>00838         $maxY = floor($this-&gt;boundingBox-&gt;maxY + 0.001);
+<a name="l00839"></a>00839         $maxZ = floor($this-&gt;boundingBox-&gt;maxZ + 0.001);
+<a name="l00840"></a>00840 
+<a name="l00841"></a>00841         <span class="keywordflow">for</span>($z = $minZ; $z &lt;= $maxZ; ++$z){
+<a name="l00842"></a>00842             <span class="keywordflow">for</span>($x = $minX; $x &lt;= $maxX; ++$x){
+<a name="l00843"></a>00843                 <span class="keywordflow">for</span>($y = $minY; $y &lt;= $maxY; ++$y){
+<a name="l00844"></a>00844                     $this-&gt;getLevel()-&gt;getBlock(<span class="keyword">new</span> Vector3($x, $y, $z))-&gt;collidesWithBB($this-&gt;boundingBox, $list);
+<a name="l00845"></a>00845                 }
+<a name="l00846"></a>00846             }
+<a name="l00847"></a>00847         }
+<a name="l00848"></a>00848 
+<a name="l00849"></a>00849         <span class="keywordflow">return</span> $list;
+<a name="l00850"></a>00850     }
+<a name="l00851"></a>00851 
+<a name="l00852"></a>00852     <span class="keyword">public</span> <span class="keyword">function</span> setPositionAndRotation(Vector3 $pos, $yaw, $pitch, $force = <span class="keyword">false</span>){
+<a name="l00853"></a>00853         <span class="keywordflow">if</span>($this-&gt;setPosition($pos, $force) === <span class="keyword">true</span>){
+<a name="l00854"></a>00854             $this-&gt;setRotation($yaw, $pitch);
+<a name="l00855"></a>00855 
+<a name="l00856"></a>00856             <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00857"></a>00857         }
+<a name="l00858"></a>00858 
+<a name="l00859"></a>00859         <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00860"></a>00860     }
+<a name="l00861"></a>00861 
+<a name="l00862"></a>00862     <span class="keyword">public</span> <span class="keyword">function</span> setRotation($yaw, $pitch){
+<a name="l00863"></a>00863         $this-&gt;yaw = $yaw;
+<a name="l00864"></a>00864         $this-&gt;pitch = $pitch;
+<a name="l00865"></a>00865         $this-&gt;scheduleUpdate();
+<a name="l00866"></a>00866     }
 <a name="l00867"></a>00867 
-<a name="l00868"></a>00868 
-<a name="l00869"></a>00869         <span class="keywordflow">if</span>($this-&gt;chunk === null or ($this-&gt;chunk-&gt;getX() !== ($this-&gt;x &gt;&gt; 4) and $this-&gt;chunk-&gt;getZ() !== ($this-&gt;z &gt;&gt; 4))){
-<a name="l00870"></a>00870             <span class="keywordflow">if</span>($this-&gt;chunk instanceof Chunk){
-<a name="l00871"></a>00871                 $this-&gt;chunk-&gt;removeEntity($this);
+<a name="l00868"></a>00868     <span class="keyword">public</span> <span class="keyword">function</span> setPosition(Vector3 $pos, $force = <span class="keyword">false</span>){
+<a name="l00869"></a>00869         <span class="keywordflow">if</span>($pos instanceof Position and $pos-&gt;getLevel() instanceof Level and $pos-&gt;getLevel() !== $this-&gt;getLevel()){
+<a name="l00870"></a>00870             <span class="keywordflow">if</span>($this-&gt;switchLevel($pos-&gt;getLevel()) === <span class="keyword">false</span>){
+<a name="l00871"></a>00871                 <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00872"></a>00872             }
-<a name="l00873"></a>00873             $this-&gt;getLevel()-&gt;loadChunk($this-&gt;x &gt;&gt; 4, $this-&gt;z &gt;&gt; 4);
-<a name="l00874"></a>00874             $this-&gt;chunk = $this-&gt;getLevel()-&gt;getChunkAt($this-&gt;x &gt;&gt; 4, $this-&gt;z &gt;&gt; 4);
-<a name="l00875"></a>00875 
-<a name="l00876"></a>00876             <span class="keywordflow">if</span>(!$this-&gt;justCreated){
-<a name="l00877"></a>00877                 $newChunk = $this-&gt;getLevel()-&gt;getUsingChunk($this-&gt;x &gt;&gt; 4, $this-&gt;z &gt;&gt; 4);
-<a name="l00878"></a>00878                 <span class="keywordflow">foreach</span>($this-&gt;hasSpawned as $player){
-<a name="l00879"></a>00879                     <span class="keywordflow">if</span>(!isset($newChunk[$player-&gt;getID()])){
-<a name="l00880"></a>00880                         $this-&gt;despawnFrom($player);
-<a name="l00881"></a>00881                     }<span class="keywordflow">else</span>{
-<a name="l00882"></a>00882                         unset($newChunk[$player-&gt;getID()]);
+<a name="l00873"></a>00873         }
+<a name="l00874"></a>00874 
+<a name="l00875"></a>00875         <span class="keywordflow">if</span>(!$this-&gt;justCreated and $force !== <span class="keyword">true</span>){
+<a name="l00876"></a>00876             $ev = <span class="keyword">new</span> EntityMoveEvent($this, $pos);
+<a name="l00877"></a>00877             <span class="keywordflow">if</span>($this instanceof Player){
+<a name="l00878"></a>00878                 <span class="keywordflow">for</span>($side = 2; $side &lt;= 5; ++$side){
+<a name="l00879"></a>00879                     $vector = $pos-&gt;getSide($side, 2);
+<a name="l00880"></a>00880                     <span class="keywordflow">if</span>(!isset($this-&gt;usedChunks[Level::chunkHash($vector-&gt;x &gt;&gt; 4, $vector-&gt;z &gt;&gt; 4)])){
+<a name="l00881"></a>00881                         $ev-&gt;setCancelled(<span class="keyword">true</span>);
+<a name="l00882"></a>00882                         <span class="keywordflow">break</span>;
 <a name="l00883"></a>00883                     }
 <a name="l00884"></a>00884                 }
-<a name="l00885"></a>00885                 <span class="keywordflow">foreach</span>($newChunk as $player){
-<a name="l00886"></a>00886                     $this-&gt;spawnTo($player);
-<a name="l00887"></a>00887                 }
-<a name="l00888"></a>00888             }
-<a name="l00889"></a>00889 
-<a name="l00890"></a>00890             $this-&gt;chunk-&gt;addEntity($this);
-<a name="l00891"></a>00891         }
-<a name="l00892"></a>00892 
-<a name="l00893"></a>00893         $this-&gt;scheduleUpdate();
-<a name="l00894"></a>00894 
-<a name="l00895"></a>00895         <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00896"></a>00896     }
-<a name="l00897"></a>00897 
-<a name="l00898"></a>00898     <span class="keyword">public</span> <span class="keyword">function</span> getMotion(){
-<a name="l00899"></a>00899         <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3($this-&gt;motionX, $this-&gt;motionY, $this-&gt;motionZ);
-<a name="l00900"></a>00900     }
-<a name="l00901"></a>00901 
-<a name="l00902"></a>00902     <span class="keyword">public</span> <span class="keyword">function</span> setMotion(Vector3 $motion){
-<a name="l00903"></a>00903         <span class="keywordflow">if</span>(!$this-&gt;justCreated){
-<a name="l00904"></a>00904             Server::getInstance()-&gt;getPluginManager()-&gt;callEvent($ev = <span class="keyword">new</span> EntityMotionEvent($this, $motion));
-<a name="l00905"></a>00905             <span class="keywordflow">if</span>($ev-&gt;isCancelled()){
-<a name="l00906"></a>00906                 <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00907"></a>00907             }
-<a name="l00908"></a>00908         }
-<a name="l00909"></a>00909         $this-&gt;motionX = $motion-&gt;x;
-<a name="l00910"></a>00910         $this-&gt;motionY = $motion-&gt;y;
-<a name="l00911"></a>00911         $this-&gt;motionZ = $motion-&gt;z;
-<a name="l00912"></a>00912         <span class="keywordflow">if</span>(!$this-&gt;justCreated){
-<a name="l00913"></a>00913             $this-&gt;scheduleUpdate();
-<a name="l00914"></a>00914         }
-<a name="l00915"></a>00915     }
-<a name="l00916"></a>00916 
-<a name="l00917"></a>00917     <span class="keyword">public</span> <span class="keyword">function</span> isOnGround(){
-<a name="l00918"></a>00918         <span class="keywordflow">return</span> $this-&gt;onGround === <span class="keyword">true</span>;
-<a name="l00919"></a>00919     }
+<a name="l00885"></a>00885             }
+<a name="l00886"></a>00886             $this-&gt;server-&gt;getPluginManager()-&gt;callEvent($ev);
+<a name="l00887"></a>00887             <span class="keywordflow">if</span>($ev-&gt;isCancelled()){
+<a name="l00888"></a>00888                 <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00889"></a>00889             }
+<a name="l00890"></a>00890         }
+<a name="l00891"></a>00891 
+<a name="l00892"></a>00892         $this-&gt;x = $pos-&gt;x;
+<a name="l00893"></a>00893         $this-&gt;y = $pos-&gt;y;
+<a name="l00894"></a>00894         $this-&gt;z = $pos-&gt;z;
+<a name="l00895"></a>00895 
+<a name="l00896"></a>00896         $radius = $this-&gt;width / 2;
+<a name="l00897"></a>00897         $this-&gt;boundingBox-&gt;setBounds($pos-&gt;x - $radius, $pos-&gt;y, $pos-&gt;z - $radius, $pos-&gt;x + $radius, $pos-&gt;y + $this-&gt;height, $pos-&gt;z + $radius);
+<a name="l00898"></a>00898 
+<a name="l00899"></a>00899 
+<a name="l00900"></a>00900         <span class="keywordflow">if</span>($this-&gt;chunk === null or ($this-&gt;chunk-&gt;getX() !== ($this-&gt;x &gt;&gt; 4) and $this-&gt;chunk-&gt;getZ() !== ($this-&gt;z &gt;&gt; 4))){
+<a name="l00901"></a>00901             <span class="keywordflow">if</span>($this-&gt;chunk instanceof Chunk){
+<a name="l00902"></a>00902                 $this-&gt;chunk-&gt;removeEntity($this);
+<a name="l00903"></a>00903             }
+<a name="l00904"></a>00904             $this-&gt;getLevel()-&gt;loadChunk($this-&gt;x &gt;&gt; 4, $this-&gt;z &gt;&gt; 4);
+<a name="l00905"></a>00905             $this-&gt;chunk = $this-&gt;getLevel()-&gt;getChunkAt($this-&gt;x &gt;&gt; 4, $this-&gt;z &gt;&gt; 4);
+<a name="l00906"></a>00906 
+<a name="l00907"></a>00907             <span class="keywordflow">if</span>(!$this-&gt;justCreated){
+<a name="l00908"></a>00908                 $newChunk = $this-&gt;getLevel()-&gt;getUsingChunk($this-&gt;x &gt;&gt; 4, $this-&gt;z &gt;&gt; 4);
+<a name="l00909"></a>00909                 <span class="keywordflow">foreach</span>($this-&gt;hasSpawned as $player){
+<a name="l00910"></a>00910                     <span class="keywordflow">if</span>(!isset($newChunk[$player-&gt;getID()])){
+<a name="l00911"></a>00911                         $this-&gt;despawnFrom($player);
+<a name="l00912"></a>00912                     }<span class="keywordflow">else</span>{
+<a name="l00913"></a>00913                         unset($newChunk[$player-&gt;getID()]);
+<a name="l00914"></a>00914                     }
+<a name="l00915"></a>00915                 }
+<a name="l00916"></a>00916                 <span class="keywordflow">foreach</span>($newChunk as $player){
+<a name="l00917"></a>00917                     $this-&gt;spawnTo($player);
+<a name="l00918"></a>00918                 }
+<a name="l00919"></a>00919             }
 <a name="l00920"></a>00920 
-<a name="l00921"></a>00921     <span class="keyword">public</span> <span class="keyword">function</span> kill(){
-<a name="l00922"></a>00922         $this-&gt;dead = <span class="keyword">true</span>;
-<a name="l00923"></a>00923         $this-&gt;scheduleUpdate();
-<a name="l00924"></a>00924     }
+<a name="l00921"></a>00921             $this-&gt;chunk-&gt;addEntity($this);
+<a name="l00922"></a>00922         }
+<a name="l00923"></a>00923 
+<a name="l00924"></a>00924         $this-&gt;scheduleUpdate();
 <a name="l00925"></a>00925 
-<a name="l00926"></a>00926     <span class="keyword">public</span> <span class="keyword">function</span> teleport(Vector3 $pos, $yaw = <span class="keyword">false</span>, $pitch = <span class="keyword">false</span>){
-<a name="l00927"></a>00927         $from = Position::fromObject($this, $this-&gt;getLevel());
-<a name="l00928"></a>00928         $to = Position::fromObject($pos, $pos instanceof Position ? $pos-&gt;getLevel() : $this-&gt;getLevel());
-<a name="l00929"></a>00929         $this-&gt;server-&gt;getPluginManager()-&gt;callEvent($ev = <span class="keyword">new</span> EntityTeleportEvent($this, $from, $to));
-<a name="l00930"></a>00930         <span class="keywordflow">if</span>($ev-&gt;isCancelled()){
-<a name="l00931"></a>00931             <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00932"></a>00932         }
-<a name="l00933"></a>00933         $pos = $ev-&gt;getTo();
-<a name="l00934"></a>00934 
-<a name="l00935"></a>00935         $this-&gt;setMotion(<span class="keyword">new</span> Vector3(0, 0, 0));
-<a name="l00936"></a>00936         <span class="keywordflow">if</span>($this-&gt;setPositionAndRotation($pos, $yaw === <span class="keyword">false</span> ? $this-&gt;yaw : $yaw, $pitch === <span class="keyword">false</span> ? $this-&gt;pitch : $pitch, <span class="keyword">true</span>) !== <span class="keyword">false</span>){
-<a name="l00937"></a>00937             <span class="keywordflow">if</span>($this instanceof Player){
-<a name="l00938"></a>00938                 $this-&gt;airTicks = 300;
-<a name="l00939"></a>00939                 $this-&gt;fallDistance = 0;
-<a name="l00940"></a>00940                 $this-&gt;orderChunks();
-<a name="l00941"></a>00941                 $this-&gt;chunkLoadTask-&gt;setNextRun(0);
-<a name="l00942"></a>00942                 $this-&gt;forceMovement = $pos;
-<a name="l00943"></a>00943 
-<a name="l00944"></a>00944                 $pk = <span class="keyword">new</span> MovePlayerPacket;
-<a name="l00945"></a>00945                 $pk-&gt;eid = 0;
-<a name="l00946"></a>00946                 $pk-&gt;x = $this-&gt;x;
-<a name="l00947"></a>00947                 $pk-&gt;y = $this-&gt;y;
-<a name="l00948"></a>00948                 $pk-&gt;z = $this-&gt;z;
-<a name="l00949"></a>00949                 $pk-&gt;bodyYaw = $this-&gt;yaw;
-<a name="l00950"></a>00950                 $pk-&gt;pitch = $this-&gt;pitch;
-<a name="l00951"></a>00951                 $pk-&gt;yaw = $this-&gt;yaw;
-<a name="l00952"></a>00952                 $this-&gt;dataPacket($pk);
-<a name="l00953"></a>00953             }
+<a name="l00926"></a>00926         <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00927"></a>00927     }
+<a name="l00928"></a>00928 
+<a name="l00929"></a>00929     <span class="keyword">public</span> <span class="keyword">function</span> getMotion(){
+<a name="l00930"></a>00930         <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3($this-&gt;motionX, $this-&gt;motionY, $this-&gt;motionZ);
+<a name="l00931"></a>00931     }
+<a name="l00932"></a>00932 
+<a name="l00933"></a>00933     <span class="keyword">public</span> <span class="keyword">function</span> setMotion(Vector3 $motion){
+<a name="l00934"></a>00934         <span class="keywordflow">if</span>(!$this-&gt;justCreated){
+<a name="l00935"></a>00935             Server::getInstance()-&gt;getPluginManager()-&gt;callEvent($ev = <span class="keyword">new</span> EntityMotionEvent($this, $motion));
+<a name="l00936"></a>00936             <span class="keywordflow">if</span>($ev-&gt;isCancelled()){
+<a name="l00937"></a>00937                 <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00938"></a>00938             }
+<a name="l00939"></a>00939         }
+<a name="l00940"></a>00940         $this-&gt;motionX = $motion-&gt;x;
+<a name="l00941"></a>00941         $this-&gt;motionY = $motion-&gt;y;
+<a name="l00942"></a>00942         $this-&gt;motionZ = $motion-&gt;z;
+<a name="l00943"></a>00943         <span class="keywordflow">if</span>(!$this-&gt;justCreated){
+<a name="l00944"></a>00944             <span class="keywordflow">if</span>($this instanceof Player){
+<a name="l00945"></a>00945                 $pk = <span class="keyword">new</span> SetEntityMotionPacket;
+<a name="l00946"></a>00946                 $pk-&gt;entities = [
+<a name="l00947"></a>00947                     [0, $this-&gt;motionX, $this-&gt;motionY, $this-&gt;motionZ]
+<a name="l00948"></a>00948                 ];
+<a name="l00949"></a>00949                 $this-&gt;dataPacket($pk);
+<a name="l00950"></a>00950             }
+<a name="l00951"></a>00951             $this-&gt;updateMovement();
+<a name="l00952"></a>00952         }
+<a name="l00953"></a>00953     }
 <a name="l00954"></a>00954 
-<a name="l00955"></a>00955             <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00956"></a>00956         }
-<a name="l00957"></a>00957 
-<a name="l00958"></a>00958         <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00959"></a>00959     }
-<a name="l00960"></a>00960 
-<a name="l00961"></a>00961     <span class="keyword">public</span> <span class="keyword">function</span> getID(){
-<a name="l00962"></a>00962         <span class="keywordflow">return</span> $this-&gt;id;
+<a name="l00955"></a>00955     <span class="keyword">public</span> <span class="keyword">function</span> isOnGround(){
+<a name="l00956"></a>00956         <span class="keywordflow">return</span> $this-&gt;onGround === <span class="keyword">true</span>;
+<a name="l00957"></a>00957     }
+<a name="l00958"></a>00958 
+<a name="l00959"></a>00959     <span class="keyword">public</span> <span class="keyword">function</span> kill(){
+<a name="l00960"></a>00960         $this-&gt;setHealth(0);
+<a name="l00961"></a>00961         $this-&gt;dead = <span class="keyword">true</span>;
+<a name="l00962"></a>00962         $this-&gt;scheduleUpdate();
 <a name="l00963"></a>00963     }
 <a name="l00964"></a>00964 
-<a name="l00965"></a>00965     <span class="keyword">public</span> <span class="keyword">function</span> spawnToAll(){
-<a name="l00966"></a>00966         <span class="keywordflow">foreach</span>($this-&gt;getLevel()-&gt;getUsingChunk($this-&gt;x &gt;&gt; 4, $this-&gt;z &gt;&gt; 4) as $player){
-<a name="l00967"></a>00967             <span class="keywordflow">if</span>(isset($player-&gt;id) and $player-&gt;spawned === <span class="keyword">true</span>){
-<a name="l00968"></a>00968                 $this-&gt;spawnTo($player);
-<a name="l00969"></a>00969             }
-<a name="l00970"></a>00970         }
-<a name="l00971"></a>00971     }
-<a name="l00972"></a>00972 
-<a name="l00973"></a>00973     <span class="keyword">public</span> <span class="keyword">function</span> despawnFromAll(){
-<a name="l00974"></a>00974         <span class="keywordflow">foreach</span>($this-&gt;hasSpawned as $player){
-<a name="l00975"></a>00975             $this-&gt;despawnFrom($player);
-<a name="l00976"></a>00976         }
-<a name="l00977"></a>00977     }
-<a name="l00978"></a>00978 
-<a name="l00979"></a>00979     <span class="keyword">public</span> <span class="keyword">function</span> close(){
-<a name="l00980"></a>00980         <span class="keywordflow">if</span>($this-&gt;closed === <span class="keyword">false</span>){
-<a name="l00981"></a>00981             $this-&gt;closed = <span class="keyword">true</span>;
-<a name="l00982"></a>00982             unset(Entity::$needUpdate[$this-&gt;<span class="keywordtype">id</span>]);
-<a name="l00983"></a>00983             <span class="keywordflow">if</span>($this-&gt;chunk instanceof Chunk){
-<a name="l00984"></a>00984                 $this-&gt;chunk-&gt;removeEntity($this);
-<a name="l00985"></a>00985             }
-<a name="l00986"></a>00986             $this-&gt;getLevel()-&gt;removeEntity($this);
-<a name="l00987"></a>00987             $this-&gt;despawnFromAll();
-<a name="l00988"></a>00988             $this-&gt;server-&gt;getPluginManager()-&gt;callEvent(<span class="keyword">new</span> EntityDespawnEvent($this));
-<a name="l00989"></a>00989         }
-<a name="l00990"></a>00990     }
-<a name="l00991"></a>00991 
-<a name="l00992"></a>00992     <span class="keyword">abstract</span> <span class="keyword">public</span> <span class="keyword">function</span> getData();
+<a name="l00965"></a>00965     <span class="keyword">public</span> <span class="keyword">function</span> teleport(Vector3 $pos, $yaw = <span class="keyword">false</span>, $pitch = <span class="keyword">false</span>){
+<a name="l00966"></a>00966         $from = Position::fromObject($this, $this-&gt;getLevel());
+<a name="l00967"></a>00967         $to = Position::fromObject($pos, $pos instanceof Position ? $pos-&gt;getLevel() : $this-&gt;getLevel());
+<a name="l00968"></a>00968         $this-&gt;server-&gt;getPluginManager()-&gt;callEvent($ev = <span class="keyword">new</span> EntityTeleportEvent($this, $from, $to));
+<a name="l00969"></a>00969         <span class="keywordflow">if</span>($ev-&gt;isCancelled()){
+<a name="l00970"></a>00970             <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00971"></a>00971         }
+<a name="l00972"></a>00972         $pos = $ev-&gt;getTo();
+<a name="l00973"></a>00973 
+<a name="l00974"></a>00974         $this-&gt;setMotion(<span class="keyword">new</span> Vector3(0, 0, 0));
+<a name="l00975"></a>00975         <span class="keywordflow">if</span>($this-&gt;setPositionAndRotation($pos, $yaw === <span class="keyword">false</span> ? $this-&gt;yaw : $yaw, $pitch === <span class="keyword">false</span> ? $this-&gt;pitch : $pitch, <span class="keyword">true</span>) !== <span class="keyword">false</span>){
+<a name="l00976"></a>00976             <span class="keywordflow">if</span>($this instanceof Player){
+<a name="l00977"></a>00977                 $this-&gt;airTicks = 300;
+<a name="l00978"></a>00978                 $this-&gt;fallDistance = 0;
+<a name="l00979"></a>00979                 $this-&gt;orderChunks();
+<a name="l00980"></a>00980                 $this-&gt;chunkLoadTask-&gt;setNextRun(0);
+<a name="l00981"></a>00981                 $this-&gt;forceMovement = $pos;
+<a name="l00982"></a>00982 
+<a name="l00983"></a>00983                 $pk = <span class="keyword">new</span> MovePlayerPacket;
+<a name="l00984"></a>00984                 $pk-&gt;eid = 0;
+<a name="l00985"></a>00985                 $pk-&gt;x = $this-&gt;x;
+<a name="l00986"></a>00986                 $pk-&gt;y = $this-&gt;y;
+<a name="l00987"></a>00987                 $pk-&gt;z = $this-&gt;z;
+<a name="l00988"></a>00988                 $pk-&gt;bodyYaw = $this-&gt;yaw;
+<a name="l00989"></a>00989                 $pk-&gt;pitch = $this-&gt;pitch;
+<a name="l00990"></a>00990                 $pk-&gt;yaw = $this-&gt;yaw;
+<a name="l00991"></a>00991                 $this-&gt;dataPacket($pk);
+<a name="l00992"></a>00992             }
 <a name="l00993"></a>00993 
-<a name="l00994"></a>00994     <span class="keyword">public</span> <span class="keyword">function</span> __destruct(){
-<a name="l00995"></a>00995         $this-&gt;close();
-<a name="l00996"></a>00996     }
-<a name="l00997"></a>00997 
-<a name="l00998"></a>00998     <span class="keyword">public</span> <span class="keyword">function</span> setMetadata($metadataKey, MetadataValue $metadataValue){
-<a name="l00999"></a>00999         $this-&gt;server-&gt;getEntityMetadata()-&gt;setMetadata($this, $metadataKey, $metadataValue);
-<a name="l01000"></a>01000     }
-<a name="l01001"></a>01001 
-<a name="l01002"></a>01002     <span class="keyword">public</span> <span class="keyword">function</span> getMetadata($metadataKey){
-<a name="l01003"></a>01003         <span class="keywordflow">return</span> $this-&gt;server-&gt;getEntityMetadata()-&gt;getMetadata($this, $metadataKey);
-<a name="l01004"></a>01004     }
-<a name="l01005"></a>01005 
-<a name="l01006"></a>01006     <span class="keyword">public</span> <span class="keyword">function</span> hasMetadata($metadataKey){
-<a name="l01007"></a>01007         <span class="keywordflow">return</span> $this-&gt;server-&gt;getEntityMetadata()-&gt;hasMetadata($this, $metadataKey);
-<a name="l01008"></a>01008     }
-<a name="l01009"></a>01009 
-<a name="l01010"></a>01010     <span class="keyword">public</span> <span class="keyword">function</span> removeMetadata($metadataKey, Plugin $plugin){
-<a name="l01011"></a>01011         $this-&gt;server-&gt;getEntityMetadata()-&gt;removeMetadata($this, $metadataKey, $plugin);
-<a name="l01012"></a>01012     }
-<a name="l01013"></a>01013 
-<a name="l01014"></a>01014 }
+<a name="l00994"></a>00994             <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00995"></a>00995         }
+<a name="l00996"></a>00996 
+<a name="l00997"></a>00997         <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00998"></a>00998     }
+<a name="l00999"></a>00999 
+<a name="l01000"></a>01000     <span class="keyword">public</span> <span class="keyword">function</span> getID(){
+<a name="l01001"></a>01001         <span class="keywordflow">return</span> $this-&gt;id;
+<a name="l01002"></a>01002     }
+<a name="l01003"></a>01003 
+<a name="l01004"></a>01004     <span class="keyword">public</span> <span class="keyword">function</span> spawnToAll(){
+<a name="l01005"></a>01005         <span class="keywordflow">foreach</span>($this-&gt;getLevel()-&gt;getUsingChunk($this-&gt;x &gt;&gt; 4, $this-&gt;z &gt;&gt; 4) as $player){
+<a name="l01006"></a>01006             <span class="keywordflow">if</span>(isset($player-&gt;id) and $player-&gt;spawned === <span class="keyword">true</span>){
+<a name="l01007"></a>01007                 $this-&gt;spawnTo($player);
+<a name="l01008"></a>01008             }
+<a name="l01009"></a>01009         }
+<a name="l01010"></a>01010     }
+<a name="l01011"></a>01011 
+<a name="l01012"></a>01012     <span class="keyword">public</span> <span class="keyword">function</span> despawnFromAll(){
+<a name="l01013"></a>01013         <span class="keywordflow">foreach</span>($this-&gt;hasSpawned as $player){
+<a name="l01014"></a>01014             $this-&gt;despawnFrom($player);
+<a name="l01015"></a>01015         }
+<a name="l01016"></a>01016     }
+<a name="l01017"></a>01017 
+<a name="l01018"></a>01018     <span class="keyword">public</span> <span class="keyword">function</span> close(){
+<a name="l01019"></a>01019         <span class="keywordflow">if</span>($this-&gt;closed === <span class="keyword">false</span>){
+<a name="l01020"></a>01020             $this-&gt;closed = <span class="keyword">true</span>;
+<a name="l01021"></a>01021             unset(Entity::$needUpdate[$this-&gt;<span class="keywordtype">id</span>]);
+<a name="l01022"></a>01022             <span class="keywordflow">if</span>($this-&gt;chunk instanceof Chunk){
+<a name="l01023"></a>01023                 $this-&gt;chunk-&gt;removeEntity($this);
+<a name="l01024"></a>01024             }
+<a name="l01025"></a>01025             $this-&gt;getLevel()-&gt;removeEntity($this);
+<a name="l01026"></a>01026             $this-&gt;despawnFromAll();
+<a name="l01027"></a>01027             $this-&gt;server-&gt;getPluginManager()-&gt;callEvent(<span class="keyword">new</span> EntityDespawnEvent($this));
+<a name="l01028"></a>01028         }
+<a name="l01029"></a>01029     }
+<a name="l01030"></a>01030 
+<a name="l01031"></a>01031     <span class="keyword">abstract</span> <span class="keyword">public</span> <span class="keyword">function</span> getData();
+<a name="l01032"></a>01032 
+<a name="l01033"></a>01033     <span class="keyword">public</span> <span class="keyword">function</span> __destruct(){
+<a name="l01034"></a>01034         $this-&gt;close();
+<a name="l01035"></a>01035     }
+<a name="l01036"></a>01036 
+<a name="l01037"></a>01037     <span class="keyword">public</span> <span class="keyword">function</span> setMetadata($metadataKey, MetadataValue $metadataValue){
+<a name="l01038"></a>01038         $this-&gt;server-&gt;getEntityMetadata()-&gt;setMetadata($this, $metadataKey, $metadataValue);
+<a name="l01039"></a>01039     }
+<a name="l01040"></a>01040 
+<a name="l01041"></a>01041     <span class="keyword">public</span> <span class="keyword">function</span> getMetadata($metadataKey){
+<a name="l01042"></a>01042         <span class="keywordflow">return</span> $this-&gt;server-&gt;getEntityMetadata()-&gt;getMetadata($this, $metadataKey);
+<a name="l01043"></a>01043     }
+<a name="l01044"></a>01044 
+<a name="l01045"></a>01045     <span class="keyword">public</span> <span class="keyword">function</span> hasMetadata($metadataKey){
+<a name="l01046"></a>01046         <span class="keywordflow">return</span> $this-&gt;server-&gt;getEntityMetadata()-&gt;hasMetadata($this, $metadataKey);
+<a name="l01047"></a>01047     }
+<a name="l01048"></a>01048 
+<a name="l01049"></a>01049     <span class="keyword">public</span> <span class="keyword">function</span> removeMetadata($metadataKey, Plugin $plugin){
+<a name="l01050"></a>01050         $this-&gt;server-&gt;getEntityMetadata()-&gt;removeMetadata($this, $metadataKey, $plugin);
+<a name="l01051"></a>01051     }
+<a name="l01052"></a>01052 
+<a name="l01053"></a>01053 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -1097,7 +1124,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><b>Entity.php</b>      </li>
 
-    <li class="footer">Generated on Sat Jul 5 2014 22:04:03 for PocketMine-MP by
+    <li class="footer">Generated on Sun Jul 6 2014 17:13:00 for PocketMine-MP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

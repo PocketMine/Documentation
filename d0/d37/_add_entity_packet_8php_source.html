@@ -158,9 +158,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l00050"></a>00050         $this-&gt;putFloat($this-&gt;z);
 <a name="l00051"></a>00051         $this-&gt;putInt($this-&gt;did);
 <a name="l00052"></a>00052         <span class="keywordflow">if</span>($this-&gt;did &gt; 0){
-<a name="l00053"></a>00053             $this-&gt;putShort($this-&gt;speedX);
-<a name="l00054"></a>00054             $this-&gt;putShort($this-&gt;speedY);
-<a name="l00055"></a>00055             $this-&gt;putShort($this-&gt;speedZ);
+<a name="l00053"></a>00053             $this-&gt;putShort($this-&gt;speedX * 8000);
+<a name="l00054"></a>00054             $this-&gt;putShort($this-&gt;speedY * 8000);
+<a name="l00055"></a>00055             $this-&gt;putShort($this-&gt;speedZ * 8000);
 <a name="l00056"></a>00056         }
 <a name="l00057"></a>00057     }
 <a name="l00058"></a>00058 
@@ -185,7 +185,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><b>AddEntityPacket.php</b>      </li>
 
-    <li class="footer">Generated on Sat Jul 5 2014 22:04:03 for PocketMine-MP by
+    <li class="footer">Generated on Sun Jul 6 2014 17:12:59 for PocketMine-MP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

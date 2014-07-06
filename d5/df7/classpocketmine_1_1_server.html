@@ -203,7 +203,6 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a54adb1578aafddec9f34c1af3f660b45">getCommandAliases</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#af97447fb9c82067aab4c6fd9e2dfea6c">__construct</a> (\SplClassLoader $autoloader,\<a class="el" href="../../d0/d55/class_threaded_logger.html">ThreadedLogger</a> $logger, $filePath, $dataPath, $pluginPath)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a42a1b94e72b0cb2072709c314ea0e78a">broadcastMessage</a> ($message)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a2713a3d6f609a81b92d53a8a8af68b42">broadcastPacket</a> (array $players, DataPacket $packet)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a45d2d1a0000140935158e800b8ce8e51">enablePlugins</a> ($type)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#ae3201921c5012ba0d6849106a0037675">loadPlugin</a> (Plugin $plugin)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12a52314216dc220ce0537ea6acaa9e7"></a><!-- doxytag: member="pocketmine::Server::disablePlugins" ref="a12a52314216dc220ce0537ea6acaa9e7" args="()" -->
@@ -240,6 +239,7 @@ Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#addd964a3db05684e48bf62080fabcb2c">getGamemodeFromString</a> ($str)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a3839746528326c085edb1f04498f473a">getDifficultyFromString</a> ($str)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e">getInstance</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a3f4968a94dbe06c71c5649fd1dd41e7f">broadcastPacket</a> (array $players, DataPacket $packet)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e044bb25f8adf01592c75c846b2f017"></a><!-- doxytag: member="pocketmine::Server::BROADCAST_CHANNEL_ADMINISTRATIVE" ref="a0e044bb25f8adf01592c75c846b2f017" args="" -->
@@ -407,16 +407,16 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01525">1525</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01531">1531</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2713a3d6f609a81b92d53a8a8af68b42"></a><!-- doxytag: member="pocketmine::Server::broadcastPacket" ref="a2713a3d6f609a81b92d53a8a8af68b42" args="(array $players, DataPacket $packet)" -->
+<a class="anchor" id="a3f4968a94dbe06c71c5649fd1dd41e7f"></a><!-- doxytag: member="pocketmine::Server::broadcastPacket" ref="a3f4968a94dbe06c71c5649fd1dd41e7f" args="(array $players, DataPacket $packet)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pocketmine\<a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a2713a3d6f609a81b92d53a8a8af68b42">Server::broadcastPacket</a> </td>
+          <td class="memname">static pocketmine\<a class="el" href="../../d5/df7/classpocketmine_1_1_server.html#a3f4968a94dbe06c71c5649fd1dd41e7f">Server::broadcastPacket</a> </td>
           <td>(</td>
           <td class="paramtype">array $&#160;</td>
           <td class="paramname"><em>players</em>, </td>
@@ -430,7 +430,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td><code> [static]</code></td>
         </tr>
       </table>
 </div>
@@ -444,7 +444,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01558">1558</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01564">1564</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -482,7 +482,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01607">1607</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01613">1613</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -507,7 +507,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01568">1568</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01574">1574</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2071,7 +2071,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01584">1584</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01590">1590</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2174,7 +2174,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 
 <p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l00802">802</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
-<p>References <a class="el" href="../../d9/d76/_player_8php_source.html#l00469">pocketmine\Player\getAddress()</a>, <a class="el" href="../../d9/d76/_player_8php_source.html#l00476">pocketmine\Player\getPort()</a>, and <a class="el" href="../../d9/d76/_player_8php_source.html#l00284">pocketmine\Player\isOnline()</a>.</p>
+<p>References <a class="el" href="../../d9/d76/_player_8php_source.html#l00475">pocketmine\Player\getAddress()</a>, <a class="el" href="../../d9/d76/_player_8php_source.html#l00482">pocketmine\Player\getPort()</a>, and <a class="el" href="../../d9/d76/_player_8php_source.html#l00290">pocketmine\Player\isOnline()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -2441,7 +2441,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <p>Shutdowns the server correctly </p>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01666">1666</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01672">1672</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2460,7 +2460,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <p>Starts the PocketMine-MP server and starts processing ticks and packets </p>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01707">1707</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01713">1713</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2479,7 +2479,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
 <div class="memdoc">
 <p>Tries to execute a server tick </p>
 
-<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01986">1986</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dec/_server_8php_source.html#l01992">1992</a> of file <a class="el" href="../../d5/dec/_server_8php_source.html">Server.php</a>.</p>
 
 </div>
 </div>
@@ -2544,7 +2544,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BROADCAST_CHANNEL_US
       <li class="navelem"><a class="el" href="../../d2/d69/namespacepocketmine.html">pocketmine</a>      </li>
       <li class="navelem"><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html">Server</a>      </li>
 
-    <li class="footer">Generated on Sat Jul 5 2014 22:04:04 for PocketMine-MP by
+    <li class="footer">Generated on Sun Jul 6 2014 17:13:00 for PocketMine-MP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

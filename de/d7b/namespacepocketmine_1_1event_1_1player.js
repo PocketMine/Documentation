@@ -4,6 +4,7 @@ var namespacepocketmine_1_1event_1_1player =
     [ "PlayerAnimationEvent", "d0/d3e/classpocketmine_1_1event_1_1player_1_1_player_animation_event.html", null ],
     [ "PlayerChatEvent", "df/d8f/classpocketmine_1_1event_1_1player_1_1_player_chat_event.html", null ],
     [ "PlayerCommandPreprocessEvent", "d3/dd2/classpocketmine_1_1event_1_1player_1_1_player_command_preprocess_event.html", null ],
+    [ "PlayerDeathEvent", "d7/d7d/classpocketmine_1_1event_1_1player_1_1_player_death_event.html", null ],
     [ "PlayerDropItemEvent", "d2/d16/classpocketmine_1_1event_1_1player_1_1_player_drop_item_event.html", null ],
     [ "PlayerEvent", "d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html", null ],
     [ "PlayerGameModeChangeEvent", "db/d3e/classpocketmine_1_1event_1_1player_1_1_player_game_mode_change_event.html", null ],

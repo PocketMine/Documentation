@@ -1,4 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$d4/ddf/classpocketmine_1_1entity_1_1_human.html" title="{pocketmine\\entity\\Human\n|+ $width\l+ $length\l+ $height\l# $nameTag\l# $inventory\l|+ getInventory()\l+ saveNBT()\l+ spawnTo()\l+ despawnFrom()\l+ getData()\l+ attack()\l+ heal()\l# initEntity()\l}" alt="" coords="5,139,176,415"/>
-<area shape="rect" id="node5" href="$d7/d19/classpocketmine_1_1entity_1_1_skeleton.html" title="{pocketmine\\entity\\Skeleton\n||}" alt="" coords="200,235,379,320"/>
+<area shape="rect" id="node3" href="$d4/ddf/classpocketmine_1_1entity_1_1_human.html" title="{pocketmine\\entity\\Human\n|+ $width\l+ $length\l+ $height\l# $nameTag\l# $inventory\l|+ getInventory()\l+ getName()\l+ saveNBT()\l+ spawnTo()\l+ despawnFrom()\l+ getData()\l# initEntity()\l}" alt="" coords="5,139,176,397"/>
+<area shape="rect" id="node5" href="$d7/d19/classpocketmine_1_1entity_1_1_skeleton.html" title="{pocketmine\\entity\\Skeleton\n||}" alt="" coords="200,225,379,311"/>
 </map>

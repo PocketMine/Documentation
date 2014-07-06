@@ -1,4 +1,3 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$d5/d36/interfacepocketmine_1_1plugin_1_1_plugin_loader.html" title="pocketmine\\plugin\\PluginLoader" alt="" coords="7,5,212,35"/>
-<area shape="rect" id="node3" href="$d5/dbf/classpocketmine_1_1plugin_1_1_phar_plugin_loader.html" title="pocketmine\\plugin\\PharPluginLoader" alt="" coords="263,5,495,35"/>
+<area shape="rect" id="node1" href="$d3/d16/classpocketmine_1_1plugin_1_1_plugin_description.html" title="pocketmine\\plugin\\PluginDescription" alt="" coords="7,5,239,35"/>
 </map>

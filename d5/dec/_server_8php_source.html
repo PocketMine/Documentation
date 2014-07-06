@@ -1111,602 +1111,608 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a name="l01379"></a>01379         $version = <span class="keyword">new</span> VersionString($this-&gt;getPocketMineVersion());
 <a name="l01380"></a>01380         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Starting Minecraft: PE server version &quot;</span> . TextFormat::AQUA . $this-&gt;getVersion());
 <a name="l01381"></a>01381 
-<a name="l01382"></a>01382         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Loading properties...&quot;</span>);
+<a name="l01382"></a>01382         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Loading pocketmine.yml...&quot;</span>);
 <a name="l01383"></a>01383         <span class="keywordflow">if</span>(!file_exists($this-&gt;dataPath . <span class="stringliteral">&quot;pocketmine.yml&quot;</span>)){
-<a name="l01384"></a>01384             @file_put_contents($this-&gt;dataPath . <span class="stringliteral">&quot;pocketmine.yml&quot;</span>, file_get_contents($this-&gt;filePath . <span class="stringliteral">&quot;src/pocketmine/resources/pocketmine.yml&quot;</span>));
-<a name="l01385"></a>01385         }
-<a name="l01386"></a>01386         $this-&gt;config = <span class="keyword">new</span> Config($this-&gt;dataPath . <span class="stringliteral">&quot;pocketmine.yml&quot;</span>, Config::YAML, []);
-<a name="l01387"></a>01387         $this-&gt;properties = <span class="keyword">new</span> Config($this-&gt;dataPath . <span class="stringliteral">&quot;server.properties&quot;</span>, Config::PROPERTIES, array(
-<a name="l01388"></a>01388             <span class="stringliteral">&quot;motd&quot;</span> =&gt; <span class="stringliteral">&quot;Minecraft: PE Server&quot;</span>,
-<a name="l01389"></a>01389             <span class="stringliteral">&quot;server-port&quot;</span> =&gt; 19132,
-<a name="l01390"></a>01390             <span class="stringliteral">&quot;memory-limit&quot;</span> =&gt; <span class="stringliteral">&quot;256M&quot;</span>,
-<a name="l01391"></a>01391             <span class="stringliteral">&quot;white-list&quot;</span> =&gt; <span class="keyword">false</span>,
-<a name="l01392"></a>01392             <span class="stringliteral">&quot;announce-player-achievements&quot;</span> =&gt; <span class="keyword">true</span>,
-<a name="l01393"></a>01393             <span class="stringliteral">&quot;spawn-protection&quot;</span> =&gt; 16,
-<a name="l01394"></a>01394             <span class="stringliteral">&quot;view-distance&quot;</span> =&gt; 8,
-<a name="l01395"></a>01395             <span class="stringliteral">&quot;max-players&quot;</span> =&gt; 20,
-<a name="l01396"></a>01396             <span class="stringliteral">&quot;allow-flight&quot;</span> =&gt; <span class="keyword">false</span>,
-<a name="l01397"></a>01397             <span class="stringliteral">&quot;spawn-animals&quot;</span> =&gt; <span class="keyword">true</span>,
-<a name="l01398"></a>01398             <span class="stringliteral">&quot;spawn-mobs&quot;</span> =&gt; <span class="keyword">true</span>,
-<a name="l01399"></a>01399             <span class="stringliteral">&quot;gamemode&quot;</span> =&gt; 0,
-<a name="l01400"></a>01400             <span class="stringliteral">&quot;force-gamemode&quot;</span> =&gt; <span class="keyword">false</span>,
-<a name="l01401"></a>01401             <span class="stringliteral">&quot;hardcore&quot;</span> =&gt; <span class="keyword">false</span>,
-<a name="l01402"></a>01402             <span class="stringliteral">&quot;pvp&quot;</span> =&gt; <span class="keyword">true</span>,
-<a name="l01403"></a>01403             <span class="stringliteral">&quot;difficulty&quot;</span> =&gt; 1,
-<a name="l01404"></a>01404             <span class="stringliteral">&quot;generator-settings&quot;</span> =&gt; <span class="stringliteral">&quot;&quot;</span>,
-<a name="l01405"></a>01405             <span class="stringliteral">&quot;level-name&quot;</span> =&gt; <span class="stringliteral">&quot;world&quot;</span>,
-<a name="l01406"></a>01406             <span class="stringliteral">&quot;level-seed&quot;</span> =&gt; <span class="stringliteral">&quot;&quot;</span>,
-<a name="l01407"></a>01407             <span class="stringliteral">&quot;level-type&quot;</span> =&gt; <span class="stringliteral">&quot;DEFAULT&quot;</span>,
-<a name="l01408"></a>01408             <span class="stringliteral">&quot;enable-query&quot;</span> =&gt; <span class="keyword">true</span>,
-<a name="l01409"></a>01409             <span class="stringliteral">&quot;enable-rcon&quot;</span> =&gt; <span class="keyword">false</span>,
-<a name="l01410"></a>01410             <span class="stringliteral">&quot;rcon.password&quot;</span> =&gt; substr(base64_encode(Utils::getRandomBytes(20, <span class="keyword">false</span>)), 3, 10),
-<a name="l01411"></a>01411             <span class="stringliteral">&quot;auto-save&quot;</span> =&gt; <span class="keyword">true</span>,
-<a name="l01412"></a>01412         ));
-<a name="l01413"></a>01413 
-<a name="l01414"></a>01414         ServerScheduler::$WORKERS = $this-&gt;getProperty(<span class="stringliteral">&quot;settings.async-workers&quot;</span>, ServerScheduler::$WORKERS);
-<a name="l01415"></a>01415 
-<a name="l01416"></a>01416         $this-&gt;scheduler = <span class="keyword">new</span> ServerScheduler();
-<a name="l01417"></a>01417 
-<a name="l01418"></a>01418         <span class="keywordflow">if</span>($this-&gt;getConfigBoolean(<span class="stringliteral">&quot;enable-rcon&quot;</span>, <span class="keyword">false</span>) === <span class="keyword">true</span>){
-<a name="l01419"></a>01419             $this-&gt;rcon = <span class="keyword">new</span> RCON($this-&gt;getConfigString(<span class="stringliteral">&quot;rcon.password&quot;</span>, <span class="stringliteral">&quot;&quot;</span>), $this-&gt;getConfigInt(<span class="stringliteral">&quot;rcon.port&quot;</span>, $this-&gt;getPort()), ($ip = $this-&gt;getIp()) != <span class="stringliteral">&quot;&quot;</span> ? $ip : <span class="stringliteral">&quot;0.0.0.0&quot;</span>, $this-&gt;getConfigInt(<span class="stringliteral">&quot;rcon.threads&quot;</span>, 1), $this-&gt;getConfigInt(<span class="stringliteral">&quot;rcon.clients-per-thread&quot;</span>, 50));
-<a name="l01420"></a>01420         }
+<a name="l01384"></a>01384             $content = file_get_contents($this-&gt;filePath . <span class="stringliteral">&quot;src/pocketmine/resources/pocketmine.yml&quot;</span>);
+<a name="l01385"></a>01385             <span class="keywordflow">if</span>($version-&gt;isDev()){
+<a name="l01386"></a>01386                 $content = str_replace(<span class="stringliteral">&quot;preferred-channel: stable&quot;</span>, <span class="stringliteral">&quot;preferred-channel: beta&quot;</span>, $content);
+<a name="l01387"></a>01387             }
+<a name="l01388"></a>01388             @file_put_contents($this-&gt;dataPath . <span class="stringliteral">&quot;pocketmine.yml&quot;</span>, $content);
+<a name="l01389"></a>01389         }
+<a name="l01390"></a>01390         $this-&gt;config = <span class="keyword">new</span> Config($this-&gt;dataPath . <span class="stringliteral">&quot;pocketmine.yml&quot;</span>, Config::YAML, []);
+<a name="l01391"></a>01391 
+<a name="l01392"></a>01392         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Loading server properties...&quot;</span>);
+<a name="l01393"></a>01393         $this-&gt;properties = <span class="keyword">new</span> Config($this-&gt;dataPath . <span class="stringliteral">&quot;server.properties&quot;</span>, Config::PROPERTIES, array(
+<a name="l01394"></a>01394             <span class="stringliteral">&quot;motd&quot;</span> =&gt; <span class="stringliteral">&quot;Minecraft: PE Server&quot;</span>,
+<a name="l01395"></a>01395             <span class="stringliteral">&quot;server-port&quot;</span> =&gt; 19132,
+<a name="l01396"></a>01396             <span class="stringliteral">&quot;memory-limit&quot;</span> =&gt; <span class="stringliteral">&quot;256M&quot;</span>,
+<a name="l01397"></a>01397             <span class="stringliteral">&quot;white-list&quot;</span> =&gt; <span class="keyword">false</span>,
+<a name="l01398"></a>01398             <span class="stringliteral">&quot;announce-player-achievements&quot;</span> =&gt; <span class="keyword">true</span>,
+<a name="l01399"></a>01399             <span class="stringliteral">&quot;spawn-protection&quot;</span> =&gt; 16,
+<a name="l01400"></a>01400             <span class="stringliteral">&quot;view-distance&quot;</span> =&gt; 8,
+<a name="l01401"></a>01401             <span class="stringliteral">&quot;max-players&quot;</span> =&gt; 20,
+<a name="l01402"></a>01402             <span class="stringliteral">&quot;allow-flight&quot;</span> =&gt; <span class="keyword">false</span>,
+<a name="l01403"></a>01403             <span class="stringliteral">&quot;spawn-animals&quot;</span> =&gt; <span class="keyword">true</span>,
+<a name="l01404"></a>01404             <span class="stringliteral">&quot;spawn-mobs&quot;</span> =&gt; <span class="keyword">true</span>,
+<a name="l01405"></a>01405             <span class="stringliteral">&quot;gamemode&quot;</span> =&gt; 0,
+<a name="l01406"></a>01406             <span class="stringliteral">&quot;force-gamemode&quot;</span> =&gt; <span class="keyword">false</span>,
+<a name="l01407"></a>01407             <span class="stringliteral">&quot;hardcore&quot;</span> =&gt; <span class="keyword">false</span>,
+<a name="l01408"></a>01408             <span class="stringliteral">&quot;pvp&quot;</span> =&gt; <span class="keyword">true</span>,
+<a name="l01409"></a>01409             <span class="stringliteral">&quot;difficulty&quot;</span> =&gt; 1,
+<a name="l01410"></a>01410             <span class="stringliteral">&quot;generator-settings&quot;</span> =&gt; <span class="stringliteral">&quot;&quot;</span>,
+<a name="l01411"></a>01411             <span class="stringliteral">&quot;level-name&quot;</span> =&gt; <span class="stringliteral">&quot;world&quot;</span>,
+<a name="l01412"></a>01412             <span class="stringliteral">&quot;level-seed&quot;</span> =&gt; <span class="stringliteral">&quot;&quot;</span>,
+<a name="l01413"></a>01413             <span class="stringliteral">&quot;level-type&quot;</span> =&gt; <span class="stringliteral">&quot;DEFAULT&quot;</span>,
+<a name="l01414"></a>01414             <span class="stringliteral">&quot;enable-query&quot;</span> =&gt; <span class="keyword">true</span>,
+<a name="l01415"></a>01415             <span class="stringliteral">&quot;enable-rcon&quot;</span> =&gt; <span class="keyword">false</span>,
+<a name="l01416"></a>01416             <span class="stringliteral">&quot;rcon.password&quot;</span> =&gt; substr(base64_encode(Utils::getRandomBytes(20, <span class="keyword">false</span>)), 3, 10),
+<a name="l01417"></a>01417             <span class="stringliteral">&quot;auto-save&quot;</span> =&gt; <span class="keyword">true</span>,
+<a name="l01418"></a>01418         ));
+<a name="l01419"></a>01419 
+<a name="l01420"></a>01420         ServerScheduler::$WORKERS = $this-&gt;getProperty(<span class="stringliteral">&quot;settings.async-workers&quot;</span>, ServerScheduler::$WORKERS);
 <a name="l01421"></a>01421 
-<a name="l01422"></a>01422         $this-&gt;maxPlayers = $this-&gt;getConfigInt(<span class="stringliteral">&quot;max-players&quot;</span>, 20);
+<a name="l01422"></a>01422         $this-&gt;scheduler = <span class="keyword">new</span> ServerScheduler();
 <a name="l01423"></a>01423 
-<a name="l01424"></a>01424         <span class="keywordflow">if</span>(($memory = str_replace(<span class="stringliteral">&quot;B&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, strtoupper($this-&gt;getConfigString(<span class="stringliteral">&quot;memory-limit&quot;</span>, <span class="stringliteral">&quot;128M&quot;</span>)))) !== <span class="keyword">false</span>){
-<a name="l01425"></a>01425             $value = array(<span class="stringliteral">&quot;M&quot;</span> =&gt; 1, <span class="stringliteral">&quot;G&quot;</span> =&gt; 1024);
-<a name="l01426"></a>01426             $real = ((int) substr($memory, 0, -1)) * $value[substr($memory, -1)];
-<a name="l01427"></a>01427             <span class="keywordflow">if</span>($real &lt; 128){
-<a name="l01428"></a>01428                 $this-&gt;logger-&gt;warning(<span class="stringliteral">&quot;PocketMine-MP may not work right with less than 128MB of RAM&quot;</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, 0);
-<a name="l01429"></a>01429             }
-<a name="l01430"></a>01430             @ini_set(<span class="stringliteral">&quot;memory_limit&quot;</span>, $memory);
-<a name="l01431"></a>01431         }<span class="keywordflow">else</span>{
-<a name="l01432"></a>01432             $this-&gt;setConfigString(<span class="stringliteral">&quot;memory-limit&quot;</span>, <span class="stringliteral">&quot;128M&quot;</span>);
-<a name="l01433"></a>01433         }
-<a name="l01434"></a>01434 
-<a name="l01435"></a>01435         <span class="keywordflow">if</span>($this-&gt;getConfigBoolean(<span class="stringliteral">&quot;hardcore&quot;</span>, <span class="keyword">false</span>) === <span class="keyword">true</span> and $this-&gt;getDifficulty() &lt; 3){
-<a name="l01436"></a>01436             $this-&gt;setConfigInt(<span class="stringliteral">&quot;difficulty&quot;</span>, 3);
-<a name="l01437"></a>01437         }
-<a name="l01438"></a>01438 
-<a name="l01439"></a>01439         define(<span class="stringliteral">&quot;pocketmine\\DEBUG&quot;</span>, $this-&gt;getProperty(<span class="stringliteral">&quot;debug.level&quot;</span>, 1));
-<a name="l01440"></a>01440         <span class="keywordflow">if</span>($this-&gt;logger instanceof MainLogger){
-<a name="l01441"></a>01441             $this-&gt;logger-&gt;setLogDebug(\pocketmine\DEBUG &gt; 1);
-<a name="l01442"></a>01442         }
-<a name="l01443"></a>01443         define(<span class="stringliteral">&quot;ADVANCED_CACHE&quot;</span>, $this-&gt;getProperty(<span class="stringliteral">&quot;settings.advanced-cache&quot;</span>, <span class="keyword">false</span>));
-<a name="l01444"></a>01444         <span class="keywordflow">if</span>(ADVANCED_CACHE == <span class="keyword">true</span>){
-<a name="l01445"></a>01445             $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Advanced cache enabled&quot;</span>);
-<a name="l01446"></a>01446         }
-<a name="l01447"></a>01447 
-<a name="l01448"></a>01448         Level::$COMPRESSION_LEVEL = $this-&gt;getProperty(<span class="stringliteral">&quot;chunk-sending.compression-level&quot;</span>, 7);
-<a name="l01449"></a>01449 
-<a name="l01450"></a>01450         <span class="keywordflow">if</span>(defined(<span class="stringliteral">&quot;pocketmine\\DEBUG&quot;</span>) and \pocketmine\DEBUG &gt;= 0 and function_exists(<span class="stringliteral">&quot;cli_set_process_title&quot;</span>)){
-<a name="l01451"></a>01451             @cli_set_process_title(<span class="stringliteral">&quot;PocketMine-MP &quot;</span> . $this-&gt;getPocketMineVersion());
+<a name="l01424"></a>01424         <span class="keywordflow">if</span>($this-&gt;getConfigBoolean(<span class="stringliteral">&quot;enable-rcon&quot;</span>, <span class="keyword">false</span>) === <span class="keyword">true</span>){
+<a name="l01425"></a>01425             $this-&gt;rcon = <span class="keyword">new</span> RCON($this-&gt;getConfigString(<span class="stringliteral">&quot;rcon.password&quot;</span>, <span class="stringliteral">&quot;&quot;</span>), $this-&gt;getConfigInt(<span class="stringliteral">&quot;rcon.port&quot;</span>, $this-&gt;getPort()), ($ip = $this-&gt;getIp()) != <span class="stringliteral">&quot;&quot;</span> ? $ip : <span class="stringliteral">&quot;0.0.0.0&quot;</span>, $this-&gt;getConfigInt(<span class="stringliteral">&quot;rcon.threads&quot;</span>, 1), $this-&gt;getConfigInt(<span class="stringliteral">&quot;rcon.clients-per-thread&quot;</span>, 50));
+<a name="l01426"></a>01426         }
+<a name="l01427"></a>01427 
+<a name="l01428"></a>01428         $this-&gt;maxPlayers = $this-&gt;getConfigInt(<span class="stringliteral">&quot;max-players&quot;</span>, 20);
+<a name="l01429"></a>01429 
+<a name="l01430"></a>01430         <span class="keywordflow">if</span>(($memory = str_replace(<span class="stringliteral">&quot;B&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, strtoupper($this-&gt;getConfigString(<span class="stringliteral">&quot;memory-limit&quot;</span>, <span class="stringliteral">&quot;128M&quot;</span>)))) !== <span class="keyword">false</span>){
+<a name="l01431"></a>01431             $value = array(<span class="stringliteral">&quot;M&quot;</span> =&gt; 1, <span class="stringliteral">&quot;G&quot;</span> =&gt; 1024);
+<a name="l01432"></a>01432             $real = ((int) substr($memory, 0, -1)) * $value[substr($memory, -1)];
+<a name="l01433"></a>01433             <span class="keywordflow">if</span>($real &lt; 128){
+<a name="l01434"></a>01434                 $this-&gt;logger-&gt;warning(<span class="stringliteral">&quot;PocketMine-MP may not work right with less than 128MB of RAM&quot;</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, 0);
+<a name="l01435"></a>01435             }
+<a name="l01436"></a>01436             @ini_set(<span class="stringliteral">&quot;memory_limit&quot;</span>, $memory);
+<a name="l01437"></a>01437         }<span class="keywordflow">else</span>{
+<a name="l01438"></a>01438             $this-&gt;setConfigString(<span class="stringliteral">&quot;memory-limit&quot;</span>, <span class="stringliteral">&quot;128M&quot;</span>);
+<a name="l01439"></a>01439         }
+<a name="l01440"></a>01440 
+<a name="l01441"></a>01441         <span class="keywordflow">if</span>($this-&gt;getConfigBoolean(<span class="stringliteral">&quot;hardcore&quot;</span>, <span class="keyword">false</span>) === <span class="keyword">true</span> and $this-&gt;getDifficulty() &lt; 3){
+<a name="l01442"></a>01442             $this-&gt;setConfigInt(<span class="stringliteral">&quot;difficulty&quot;</span>, 3);
+<a name="l01443"></a>01443         }
+<a name="l01444"></a>01444 
+<a name="l01445"></a>01445         define(<span class="stringliteral">&quot;pocketmine\\DEBUG&quot;</span>, $this-&gt;getProperty(<span class="stringliteral">&quot;debug.level&quot;</span>, 1));
+<a name="l01446"></a>01446         <span class="keywordflow">if</span>($this-&gt;logger instanceof MainLogger){
+<a name="l01447"></a>01447             $this-&gt;logger-&gt;setLogDebug(\pocketmine\DEBUG &gt; 1);
+<a name="l01448"></a>01448         }
+<a name="l01449"></a>01449         define(<span class="stringliteral">&quot;ADVANCED_CACHE&quot;</span>, $this-&gt;getProperty(<span class="stringliteral">&quot;settings.advanced-cache&quot;</span>, <span class="keyword">false</span>));
+<a name="l01450"></a>01450         <span class="keywordflow">if</span>(ADVANCED_CACHE == <span class="keyword">true</span>){
+<a name="l01451"></a>01451             $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Advanced cache enabled&quot;</span>);
 <a name="l01452"></a>01452         }
 <a name="l01453"></a>01453 
-<a name="l01454"></a>01454         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Starting Minecraft PE server on &quot;</span> . ($this-&gt;getIp() === <span class="stringliteral">&quot;&quot;</span> ? <span class="stringliteral">&quot;*&quot;</span> : $this-&gt;getIp()) . <span class="stringliteral">&quot;:&quot;</span> . $this-&gt;getPort());
-<a name="l01455"></a>01455         define(<span class="stringliteral">&quot;BOOTUP_RANDOM&quot;</span>, Utils::getRandomBytes(16));
-<a name="l01456"></a>01456         $this-&gt;serverID = Binary::readLong(substr(Utils::getUniqueID(<span class="keyword">true</span>, $this-&gt;getIp() . $this-&gt;getPort()), 0, 8));
-<a name="l01457"></a>01457 
-<a name="l01458"></a>01458         $this-&gt;addInterface($this-&gt;mainInterface = <span class="keyword">new</span> RakLibInterface($this));
+<a name="l01454"></a>01454         Level::$COMPRESSION_LEVEL = $this-&gt;getProperty(<span class="stringliteral">&quot;chunk-sending.compression-level&quot;</span>, 7);
+<a name="l01455"></a>01455 
+<a name="l01456"></a>01456         <span class="keywordflow">if</span>(defined(<span class="stringliteral">&quot;pocketmine\\DEBUG&quot;</span>) and \pocketmine\DEBUG &gt;= 0 and function_exists(<span class="stringliteral">&quot;cli_set_process_title&quot;</span>)){
+<a name="l01457"></a>01457             @cli_set_process_title(<span class="stringliteral">&quot;PocketMine-MP &quot;</span> . $this-&gt;getPocketMineVersion());
+<a name="l01458"></a>01458         }
 <a name="l01459"></a>01459 
-<a name="l01460"></a>01460         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;This server is running PocketMine-MP version &quot;</span> . ($version-&gt;isDev() ? TextFormat::YELLOW : <span class="stringliteral">&quot;&quot;</span>) . $version-&gt;get(<span class="keyword">false</span>) . TextFormat::RESET . <span class="stringliteral">&quot; \&quot;&quot;</span> . $this-&gt;getCodename() . <span class="stringliteral">&quot;\&quot; (API &quot;</span> . $this-&gt;getApiVersion() . <span class="stringliteral">&quot;)&quot;</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, 0);
-<a name="l01461"></a>01461         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;PocketMine-MP is distributed under the LGPL License&quot;</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, 0);
-<a name="l01462"></a>01462 
-<a name="l01463"></a>01463         $this-&gt;consoleSender = <span class="keyword">new</span> ConsoleCommandSender();
-<a name="l01464"></a>01464         $this-&gt;commandMap = <span class="keyword">new</span> SimpleCommandMap($this);
+<a name="l01460"></a>01460         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Starting Minecraft PE server on &quot;</span> . ($this-&gt;getIp() === <span class="stringliteral">&quot;&quot;</span> ? <span class="stringliteral">&quot;*&quot;</span> : $this-&gt;getIp()) . <span class="stringliteral">&quot;:&quot;</span> . $this-&gt;getPort());
+<a name="l01461"></a>01461         define(<span class="stringliteral">&quot;BOOTUP_RANDOM&quot;</span>, Utils::getRandomBytes(16));
+<a name="l01462"></a>01462         $this-&gt;serverID = Binary::readLong(substr(Utils::getUniqueID(<span class="keyword">true</span>, $this-&gt;getIp() . $this-&gt;getPort()), 0, 8));
+<a name="l01463"></a>01463 
+<a name="l01464"></a>01464         $this-&gt;addInterface($this-&gt;mainInterface = <span class="keyword">new</span> RakLibInterface($this));
 <a name="l01465"></a>01465 
-<a name="l01466"></a>01466         InventoryType::init();
-<a name="l01467"></a>01467         Block::init();
-<a name="l01468"></a>01468         Item::init();
-<a name="l01469"></a>01469         $this-&gt;craftingManager = <span class="keyword">new</span> CraftingManager();
-<a name="l01470"></a>01470 
-<a name="l01471"></a>01471         $this-&gt;pluginManager = <span class="keyword">new</span> PluginManager($this, $this-&gt;commandMap);
-<a name="l01472"></a>01472         $this-&gt;pluginManager-&gt;subscribeToPermission(Server::BROADCAST_CHANNEL_ADMINISTRATIVE, $this-&gt;consoleSender);
-<a name="l01473"></a>01473         $this-&gt;pluginManager-&gt;registerInterface(<span class="stringliteral">&quot;pocketmine\\plugin\\PharPluginLoader&quot;</span>);
-<a name="l01474"></a>01474         $this-&gt;pluginManager-&gt;loadPlugins($this-&gt;pluginPath);
-<a name="l01475"></a>01475 
-<a name="l01476"></a>01476         $this-&gt;updater = <span class="keyword">new</span> AutoUpdater($this, $this-&gt;getProperty(<span class="stringliteral">&quot;auto-updater.host&quot;</span>, <span class="stringliteral">&quot;www.pocketmine.net&quot;</span>));
-<a name="l01477"></a>01477 
-<a name="l01478"></a>01478         $this-&gt;enablePlugins(PluginLoadOrder::STARTUP);
-<a name="l01479"></a>01479 
-<a name="l01480"></a>01480         $this-&gt;generationManager = <span class="keyword">new</span> GenerationRequestManager($this);
+<a name="l01466"></a>01466         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;This server is running PocketMine-MP version &quot;</span> . ($version-&gt;isDev() ? TextFormat::YELLOW : <span class="stringliteral">&quot;&quot;</span>) . $version-&gt;get(<span class="keyword">false</span>) . TextFormat::RESET . <span class="stringliteral">&quot; \&quot;&quot;</span> . $this-&gt;getCodename() . <span class="stringliteral">&quot;\&quot; (API &quot;</span> . $this-&gt;getApiVersion() . <span class="stringliteral">&quot;)&quot;</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, 0);
+<a name="l01467"></a>01467         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;PocketMine-MP is distributed under the LGPL License&quot;</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, 0);
+<a name="l01468"></a>01468 
+<a name="l01469"></a>01469         $this-&gt;consoleSender = <span class="keyword">new</span> ConsoleCommandSender();
+<a name="l01470"></a>01470         $this-&gt;commandMap = <span class="keyword">new</span> SimpleCommandMap($this);
+<a name="l01471"></a>01471 
+<a name="l01472"></a>01472         InventoryType::init();
+<a name="l01473"></a>01473         Block::init();
+<a name="l01474"></a>01474         Item::init();
+<a name="l01475"></a>01475         $this-&gt;craftingManager = <span class="keyword">new</span> CraftingManager();
+<a name="l01476"></a>01476 
+<a name="l01477"></a>01477         $this-&gt;pluginManager = <span class="keyword">new</span> PluginManager($this, $this-&gt;commandMap);
+<a name="l01478"></a>01478         $this-&gt;pluginManager-&gt;subscribeToPermission(Server::BROADCAST_CHANNEL_ADMINISTRATIVE, $this-&gt;consoleSender);
+<a name="l01479"></a>01479         $this-&gt;pluginManager-&gt;registerInterface(<span class="stringliteral">&quot;pocketmine\\plugin\\PharPluginLoader&quot;</span>);
+<a name="l01480"></a>01480         $this-&gt;pluginManager-&gt;loadPlugins($this-&gt;pluginPath);
 <a name="l01481"></a>01481 
-<a name="l01482"></a>01482         LevelProviderManager::addProvider($this, <span class="stringliteral">&quot;pocketmine\\level\\format\\anvil\\Anvil&quot;</span>);
+<a name="l01482"></a>01482         $this-&gt;updater = <span class="keyword">new</span> AutoUpdater($this, $this-&gt;getProperty(<span class="stringliteral">&quot;auto-updater.host&quot;</span>, <span class="stringliteral">&quot;www.pocketmine.net&quot;</span>));
 <a name="l01483"></a>01483 
-<a name="l01484"></a>01484 
-<a name="l01485"></a>01485         Generator::addGenerator(<span class="stringliteral">&quot;pocketmine\\level\\generator\\Flat&quot;</span>, <span class="stringliteral">&quot;flat&quot;</span>);
-<a name="l01486"></a>01486         Generator::addGenerator(<span class="stringliteral">&quot;pocketmine\\level\\generator\\Normal&quot;</span>, <span class="stringliteral">&quot;normal&quot;</span>);
-<a name="l01487"></a>01487         Generator::addGenerator(<span class="stringliteral">&quot;pocketmine\\level\\generator\\Normal&quot;</span>, <span class="stringliteral">&quot;default&quot;</span>);
-<a name="l01488"></a>01488 
-<a name="l01489"></a>01489         <span class="keywordflow">if</span>($this-&gt;getDefaultLevel() === null){
-<a name="l01490"></a>01490             $default = $this-&gt;getConfigString(<span class="stringliteral">&quot;level-name&quot;</span>, <span class="stringliteral">&quot;world&quot;</span>);
-<a name="l01491"></a>01491             <span class="keywordflow">if</span>(trim($default) == <span class="stringliteral">&quot;&quot;</span>){
-<a name="l01492"></a>01492                 trigger_error(<span class="stringliteral">&quot;level-name cannot be null, using default&quot;</span>, E_USER_WARNING);
-<a name="l01493"></a>01493                 $default = <span class="stringliteral">&quot;world&quot;</span>;
-<a name="l01494"></a>01494                 $this-&gt;setConfigString(<span class="stringliteral">&quot;level-name&quot;</span>, <span class="stringliteral">&quot;world&quot;</span>);
-<a name="l01495"></a>01495             }
-<a name="l01496"></a>01496             <span class="keywordflow">if</span>($this-&gt;loadLevel($default) === <span class="keyword">false</span>){
-<a name="l01497"></a>01497                 $seed = $this-&gt;getConfigInt(<span class="stringliteral">&quot;level-seed&quot;</span>, time());
-<a name="l01498"></a>01498                 $this-&gt;generateLevel($default, $seed === 0 ? time() : $seed);
-<a name="l01499"></a>01499             }
-<a name="l01500"></a>01500 
-<a name="l01501"></a>01501             $this-&gt;setDefaultLevel($this-&gt;getLevelByName($default));
-<a name="l01502"></a>01502         }
-<a name="l01503"></a>01503 
-<a name="l01504"></a>01504 
-<a name="l01505"></a>01505         $this-&gt;properties-&gt;save();
+<a name="l01484"></a>01484         $this-&gt;enablePlugins(PluginLoadOrder::STARTUP);
+<a name="l01485"></a>01485 
+<a name="l01486"></a>01486         $this-&gt;generationManager = <span class="keyword">new</span> GenerationRequestManager($this);
+<a name="l01487"></a>01487 
+<a name="l01488"></a>01488         LevelProviderManager::addProvider($this, <span class="stringliteral">&quot;pocketmine\\level\\format\\anvil\\Anvil&quot;</span>);
+<a name="l01489"></a>01489 
+<a name="l01490"></a>01490 
+<a name="l01491"></a>01491         Generator::addGenerator(<span class="stringliteral">&quot;pocketmine\\level\\generator\\Flat&quot;</span>, <span class="stringliteral">&quot;flat&quot;</span>);
+<a name="l01492"></a>01492         Generator::addGenerator(<span class="stringliteral">&quot;pocketmine\\level\\generator\\Normal&quot;</span>, <span class="stringliteral">&quot;normal&quot;</span>);
+<a name="l01493"></a>01493         Generator::addGenerator(<span class="stringliteral">&quot;pocketmine\\level\\generator\\Normal&quot;</span>, <span class="stringliteral">&quot;default&quot;</span>);
+<a name="l01494"></a>01494 
+<a name="l01495"></a>01495         <span class="keywordflow">if</span>($this-&gt;getDefaultLevel() === null){
+<a name="l01496"></a>01496             $default = $this-&gt;getConfigString(<span class="stringliteral">&quot;level-name&quot;</span>, <span class="stringliteral">&quot;world&quot;</span>);
+<a name="l01497"></a>01497             <span class="keywordflow">if</span>(trim($default) == <span class="stringliteral">&quot;&quot;</span>){
+<a name="l01498"></a>01498                 trigger_error(<span class="stringliteral">&quot;level-name cannot be null, using default&quot;</span>, E_USER_WARNING);
+<a name="l01499"></a>01499                 $default = <span class="stringliteral">&quot;world&quot;</span>;
+<a name="l01500"></a>01500                 $this-&gt;setConfigString(<span class="stringliteral">&quot;level-name&quot;</span>, <span class="stringliteral">&quot;world&quot;</span>);
+<a name="l01501"></a>01501             }
+<a name="l01502"></a>01502             <span class="keywordflow">if</span>($this-&gt;loadLevel($default) === <span class="keyword">false</span>){
+<a name="l01503"></a>01503                 $seed = $this-&gt;getConfigInt(<span class="stringliteral">&quot;level-seed&quot;</span>, time());
+<a name="l01504"></a>01504                 $this-&gt;generateLevel($default, $seed === 0 ? time() : $seed);
+<a name="l01505"></a>01505             }
 <a name="l01506"></a>01506 
-<a name="l01507"></a>01507         $this-&gt;scheduler-&gt;scheduleDelayedRepeatingTask(<span class="keyword">new</span> CallbackTask(<span class="stringliteral">&quot;pocketmine\\utils\\Cache::cleanup&quot;</span>), $this-&gt;getProperty(<span class="stringliteral">&quot;ticks-per.cache-cleanup&quot;</span>, 900), $this-&gt;getProperty(<span class="stringliteral">&quot;ticks-per.cache-cleanup&quot;</span>, 900));
-<a name="l01508"></a>01508         <span class="keywordflow">if</span>($this-&gt;getConfigBoolean(<span class="stringliteral">&quot;auto-save&quot;</span>, <span class="keyword">true</span>) === <span class="keyword">true</span> and $this-&gt;getProperty(<span class="stringliteral">&quot;ticks-per.autosave&quot;</span>, 6000) &gt; 0){
-<a name="l01509"></a>01509             $this-&gt;scheduler-&gt;scheduleDelayedRepeatingTask(<span class="keyword">new</span> CallbackTask(array($this, <span class="stringliteral">&quot;doAutoSave&quot;</span>)), $this-&gt;getProperty(<span class="stringliteral">&quot;ticks-per.autosave&quot;</span>, 6000), $this-&gt;getProperty(<span class="stringliteral">&quot;ticks-per.autosave&quot;</span>, 6000));
-<a name="l01510"></a>01510         }
-<a name="l01511"></a>01511 
-<a name="l01512"></a>01512         <span class="keywordflow">if</span>($this-&gt;getProperty(<span class="stringliteral">&quot;chunk-gc.period-in-ticks&quot;</span>, 600) &gt; 0){
-<a name="l01513"></a>01513             $this-&gt;scheduler-&gt;scheduleDelayedRepeatingTask(<span class="keyword">new</span> CallbackTask(array($this, <span class="stringliteral">&quot;doLevelGC&quot;</span>)), $this-&gt;getProperty(<span class="stringliteral">&quot;chunk-gc.period-in-ticks&quot;</span>, 600), $this-&gt;getProperty(<span class="stringliteral">&quot;chunk-gc.period-in-ticks&quot;</span>, 600));
-<a name="l01514"></a>01514         }
-<a name="l01515"></a>01515 
-<a name="l01516"></a>01516         $this-&gt;enablePlugins(PluginLoadOrder::POSTWORLD);
+<a name="l01507"></a>01507             $this-&gt;setDefaultLevel($this-&gt;getLevelByName($default));
+<a name="l01508"></a>01508         }
+<a name="l01509"></a>01509 
+<a name="l01510"></a>01510 
+<a name="l01511"></a>01511         $this-&gt;properties-&gt;save();
+<a name="l01512"></a>01512 
+<a name="l01513"></a>01513         $this-&gt;scheduler-&gt;scheduleDelayedRepeatingTask(<span class="keyword">new</span> CallbackTask(<span class="stringliteral">&quot;pocketmine\\utils\\Cache::cleanup&quot;</span>), $this-&gt;getProperty(<span class="stringliteral">&quot;ticks-per.cache-cleanup&quot;</span>, 900), $this-&gt;getProperty(<span class="stringliteral">&quot;ticks-per.cache-cleanup&quot;</span>, 900));
+<a name="l01514"></a>01514         <span class="keywordflow">if</span>($this-&gt;getConfigBoolean(<span class="stringliteral">&quot;auto-save&quot;</span>, <span class="keyword">true</span>) === <span class="keyword">true</span> and $this-&gt;getProperty(<span class="stringliteral">&quot;ticks-per.autosave&quot;</span>, 6000) &gt; 0){
+<a name="l01515"></a>01515             $this-&gt;scheduler-&gt;scheduleDelayedRepeatingTask(<span class="keyword">new</span> CallbackTask(array($this, <span class="stringliteral">&quot;doAutoSave&quot;</span>)), $this-&gt;getProperty(<span class="stringliteral">&quot;ticks-per.autosave&quot;</span>, 6000), $this-&gt;getProperty(<span class="stringliteral">&quot;ticks-per.autosave&quot;</span>, 6000));
+<a name="l01516"></a>01516         }
 <a name="l01517"></a>01517 
-<a name="l01518"></a>01518     }
-<a name="l01519"></a>01519 
-<a name="l01525"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a42a1b94e72b0cb2072709c314ea0e78a">01525</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a42a1b94e72b0cb2072709c314ea0e78a">broadcastMessage</a>($message){
-<a name="l01526"></a>01526         <span class="keywordflow">return</span> $this-&gt;broadcast($message, self::BROADCAST_CHANNEL_USERS);
-<a name="l01527"></a>01527     }
-<a name="l01528"></a>01528 
-<a name="l01535"></a>01535     <span class="keyword">public</span> <span class="keyword">function</span> broadcast($message, $permissions){
-<a name="l01537"></a>01537         $recipients = [];
-<a name="l01538"></a>01538         <span class="keywordflow">foreach</span>(explode(<span class="stringliteral">&quot;;&quot;</span>, $permissions) as $permission){
-<a name="l01539"></a>01539             <span class="keywordflow">foreach</span>($this-&gt;pluginManager-&gt;getPermissionSubscriptions($permission) as $permissible){
-<a name="l01540"></a>01540                 <span class="keywordflow">if</span>($permissible instanceof CommandSender and $permissible-&gt;hasPermission($permission)){
-<a name="l01541"></a>01541                     $recipients[spl_object_hash($permissible)] = $permissible; <span class="comment">// do not send messages directly, or some might be repeated</span>
-<a name="l01542"></a>01542                 }
-<a name="l01543"></a>01543             }
-<a name="l01544"></a>01544         }
-<a name="l01545"></a>01545 
-<a name="l01546"></a>01546         <span class="keywordflow">foreach</span>($recipients as $recipient){
-<a name="l01547"></a>01547             $recipient-&gt;sendMessage($message);
-<a name="l01548"></a>01548         }
-<a name="l01549"></a>01549         <span class="keywordflow">return</span> count($recipients);
-<a name="l01550"></a>01550     }
+<a name="l01518"></a>01518         <span class="keywordflow">if</span>($this-&gt;getProperty(<span class="stringliteral">&quot;chunk-gc.period-in-ticks&quot;</span>, 600) &gt; 0){
+<a name="l01519"></a>01519             $this-&gt;scheduler-&gt;scheduleDelayedRepeatingTask(<span class="keyword">new</span> CallbackTask(array($this, <span class="stringliteral">&quot;doLevelGC&quot;</span>)), $this-&gt;getProperty(<span class="stringliteral">&quot;chunk-gc.period-in-ticks&quot;</span>, 600), $this-&gt;getProperty(<span class="stringliteral">&quot;chunk-gc.period-in-ticks&quot;</span>, 600));
+<a name="l01520"></a>01520         }
+<a name="l01521"></a>01521 
+<a name="l01522"></a>01522         $this-&gt;enablePlugins(PluginLoadOrder::POSTWORLD);
+<a name="l01523"></a>01523 
+<a name="l01524"></a>01524     }
+<a name="l01525"></a>01525 
+<a name="l01531"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a42a1b94e72b0cb2072709c314ea0e78a">01531</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a42a1b94e72b0cb2072709c314ea0e78a">broadcastMessage</a>($message){
+<a name="l01532"></a>01532         <span class="keywordflow">return</span> $this-&gt;broadcast($message, self::BROADCAST_CHANNEL_USERS);
+<a name="l01533"></a>01533     }
+<a name="l01534"></a>01534 
+<a name="l01541"></a>01541     <span class="keyword">public</span> <span class="keyword">function</span> broadcast($message, $permissions){
+<a name="l01543"></a>01543         $recipients = [];
+<a name="l01544"></a>01544         <span class="keywordflow">foreach</span>(explode(<span class="stringliteral">&quot;;&quot;</span>, $permissions) as $permission){
+<a name="l01545"></a>01545             <span class="keywordflow">foreach</span>($this-&gt;pluginManager-&gt;getPermissionSubscriptions($permission) as $permissible){
+<a name="l01546"></a>01546                 <span class="keywordflow">if</span>($permissible instanceof CommandSender and $permissible-&gt;hasPermission($permission)){
+<a name="l01547"></a>01547                     $recipients[spl_object_hash($permissible)] = $permissible; <span class="comment">// do not send messages directly, or some might be repeated</span>
+<a name="l01548"></a>01548                 }
+<a name="l01549"></a>01549             }
+<a name="l01550"></a>01550         }
 <a name="l01551"></a>01551 
-<a name="l01558"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a2713a3d6f609a81b92d53a8a8af68b42">01558</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a2713a3d6f609a81b92d53a8a8af68b42">broadcastPacket</a>(array $players, DataPacket $packet){
-<a name="l01559"></a>01559         <span class="keywordflow">foreach</span>($players as $player){
-<a name="l01560"></a>01560             $player-&gt;dataPacket(clone $packet);
-<a name="l01561"></a>01561         }
-<a name="l01562"></a>01562     }
-<a name="l01563"></a>01563 
-<a name="l01564"></a>01564 
-<a name="l01568"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a45d2d1a0000140935158e800b8ce8e51">01568</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a45d2d1a0000140935158e800b8ce8e51">enablePlugins</a>($type){
-<a name="l01569"></a>01569         <span class="keywordflow">foreach</span>($this-&gt;pluginManager-&gt;getPlugins() as $plugin){
-<a name="l01570"></a>01570             <span class="keywordflow">if</span>(!$plugin-&gt;isEnabled() and $plugin-&gt;getDescription()-&gt;getOrder() === $type){
-<a name="l01571"></a>01571                 $this-&gt;loadPlugin($plugin);
-<a name="l01572"></a>01572             }
-<a name="l01573"></a>01573         }
-<a name="l01574"></a>01574 
-<a name="l01575"></a>01575         <span class="keywordflow">if</span>($type === PluginLoadOrder::POSTWORLD){
-<a name="l01576"></a>01576             $this-&gt;commandMap-&gt;registerServerAliases();
-<a name="l01577"></a>01577             DefaultPermissions::registerCorePermissions();
-<a name="l01578"></a>01578         }
-<a name="l01579"></a>01579     }
+<a name="l01552"></a>01552         <span class="keywordflow">foreach</span>($recipients as $recipient){
+<a name="l01553"></a>01553             $recipient-&gt;sendMessage($message);
+<a name="l01554"></a>01554         }
+<a name="l01555"></a>01555         <span class="keywordflow">return</span> count($recipients);
+<a name="l01556"></a>01556     }
+<a name="l01557"></a>01557 
+<a name="l01564"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a3f4968a94dbe06c71c5649fd1dd41e7f">01564</a>     <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a3f4968a94dbe06c71c5649fd1dd41e7f">broadcastPacket</a>(array $players, DataPacket $packet){
+<a name="l01565"></a>01565         <span class="keywordflow">foreach</span>($players as $player){
+<a name="l01566"></a>01566             $player-&gt;dataPacket(clone $packet);
+<a name="l01567"></a>01567         }
+<a name="l01568"></a>01568     }
+<a name="l01569"></a>01569 
+<a name="l01570"></a>01570 
+<a name="l01574"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a45d2d1a0000140935158e800b8ce8e51">01574</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a45d2d1a0000140935158e800b8ce8e51">enablePlugins</a>($type){
+<a name="l01575"></a>01575         <span class="keywordflow">foreach</span>($this-&gt;pluginManager-&gt;getPlugins() as $plugin){
+<a name="l01576"></a>01576             <span class="keywordflow">if</span>(!$plugin-&gt;isEnabled() and $plugin-&gt;getDescription()-&gt;getOrder() === $type){
+<a name="l01577"></a>01577                 $this-&gt;loadPlugin($plugin);
+<a name="l01578"></a>01578             }
+<a name="l01579"></a>01579         }
 <a name="l01580"></a>01580 
-<a name="l01584"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#ae3201921c5012ba0d6849106a0037675">01584</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#ae3201921c5012ba0d6849106a0037675">loadPlugin</a>(Plugin $plugin){
-<a name="l01585"></a>01585         $this-&gt;pluginManager-&gt;enablePlugin($plugin);
-<a name="l01586"></a>01586     }
-<a name="l01587"></a>01587 
-<a name="l01588"></a>01588     <span class="keyword">public</span> <span class="keyword">function</span> disablePlugins(){
-<a name="l01589"></a>01589         $this-&gt;pluginManager-&gt;disablePlugins();
-<a name="l01590"></a>01590     }
-<a name="l01591"></a>01591 
-<a name="l01592"></a>01592     <span class="keyword">public</span> <span class="keyword">function</span> checkConsole(){
-<a name="l01593"></a>01593         <span class="keywordflow">if</span>(($line = $this-&gt;console-&gt;getLine()) !== null){
-<a name="l01594"></a>01594             $this-&gt;pluginManager-&gt;callEvent($ev = <span class="keyword">new</span> ServerCommandEvent($this-&gt;consoleSender, $line));
-<a name="l01595"></a>01595             $this-&gt;dispatchCommand($this-&gt;consoleSender, $ev-&gt;getCommand());
-<a name="l01596"></a>01596         }
-<a name="l01597"></a>01597     }
-<a name="l01598"></a>01598 
-<a name="l01607"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a5dcbe6191809a32aa98358e68c115197">01607</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a5dcbe6191809a32aa98358e68c115197">dispatchCommand</a>(CommandSender $sender, $commandLine){
-<a name="l01608"></a>01608         <span class="keywordflow">if</span>($this-&gt;commandMap-&gt;dispatch($sender, $commandLine)){
-<a name="l01609"></a>01609             <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l01610"></a>01610         }
-<a name="l01611"></a>01611 
-<a name="l01612"></a>01612         <span class="keywordflow">if</span>($sender instanceof <a class="code" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a>){
-<a name="l01613"></a>01613             $sender-&gt;sendMessage(<span class="stringliteral">&quot;Unknown command. Type \&quot;/help\&quot; for help.&quot;</span>);
-<a name="l01614"></a>01614         }<span class="keywordflow">else</span>{
-<a name="l01615"></a>01615             $sender-&gt;sendMessage(<span class="stringliteral">&quot;Unknown command. Type \&quot;help\&quot; for help.&quot;</span>);
+<a name="l01581"></a>01581         <span class="keywordflow">if</span>($type === PluginLoadOrder::POSTWORLD){
+<a name="l01582"></a>01582             $this-&gt;commandMap-&gt;registerServerAliases();
+<a name="l01583"></a>01583             DefaultPermissions::registerCorePermissions();
+<a name="l01584"></a>01584         }
+<a name="l01585"></a>01585     }
+<a name="l01586"></a>01586 
+<a name="l01590"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#ae3201921c5012ba0d6849106a0037675">01590</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#ae3201921c5012ba0d6849106a0037675">loadPlugin</a>(Plugin $plugin){
+<a name="l01591"></a>01591         $this-&gt;pluginManager-&gt;enablePlugin($plugin);
+<a name="l01592"></a>01592     }
+<a name="l01593"></a>01593 
+<a name="l01594"></a>01594     <span class="keyword">public</span> <span class="keyword">function</span> disablePlugins(){
+<a name="l01595"></a>01595         $this-&gt;pluginManager-&gt;disablePlugins();
+<a name="l01596"></a>01596     }
+<a name="l01597"></a>01597 
+<a name="l01598"></a>01598     <span class="keyword">public</span> <span class="keyword">function</span> checkConsole(){
+<a name="l01599"></a>01599         <span class="keywordflow">if</span>(($line = $this-&gt;console-&gt;getLine()) !== null){
+<a name="l01600"></a>01600             $this-&gt;pluginManager-&gt;callEvent($ev = <span class="keyword">new</span> ServerCommandEvent($this-&gt;consoleSender, $line));
+<a name="l01601"></a>01601             $this-&gt;dispatchCommand($this-&gt;consoleSender, $ev-&gt;getCommand());
+<a name="l01602"></a>01602         }
+<a name="l01603"></a>01603     }
+<a name="l01604"></a>01604 
+<a name="l01613"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a5dcbe6191809a32aa98358e68c115197">01613</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a5dcbe6191809a32aa98358e68c115197">dispatchCommand</a>(CommandSender $sender, $commandLine){
+<a name="l01614"></a>01614         <span class="keywordflow">if</span>($this-&gt;commandMap-&gt;dispatch($sender, $commandLine)){
+<a name="l01615"></a>01615             <span class="keywordflow">return</span> <span class="keyword">true</span>;
 <a name="l01616"></a>01616         }
 <a name="l01617"></a>01617 
-<a name="l01618"></a>01618         <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l01619"></a>01619     }
-<a name="l01620"></a>01620 
-<a name="l01621"></a>01621     <span class="keyword">public</span> <span class="keyword">function</span> reload(){
-<a name="l01622"></a>01622         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Saving levels...&quot;</span>);
+<a name="l01618"></a>01618         <span class="keywordflow">if</span>($sender instanceof <a class="code" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a>){
+<a name="l01619"></a>01619             $sender-&gt;sendMessage(<span class="stringliteral">&quot;Unknown command. Type \&quot;/help\&quot; for help.&quot;</span>);
+<a name="l01620"></a>01620         }<span class="keywordflow">else</span>{
+<a name="l01621"></a>01621             $sender-&gt;sendMessage(<span class="stringliteral">&quot;Unknown command. Type \&quot;help\&quot; for help.&quot;</span>);
+<a name="l01622"></a>01622         }
 <a name="l01623"></a>01623 
-<a name="l01624"></a>01624         <span class="keywordflow">foreach</span>($this-&gt;levels as $level){
-<a name="l01625"></a>01625             $level-&gt;save();
-<a name="l01626"></a>01626         }
-<a name="l01627"></a>01627 
-<a name="l01628"></a>01628         $this-&gt;pluginManager-&gt;disablePlugins();
-<a name="l01629"></a>01629         $this-&gt;pluginManager-&gt;clearPlugins();
-<a name="l01630"></a>01630         $this-&gt;commandMap-&gt;clearCommands();
-<a name="l01631"></a>01631 
-<a name="l01632"></a>01632         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Reloading properties...&quot;</span>);
-<a name="l01633"></a>01633         $this-&gt;properties-&gt;reload();
-<a name="l01634"></a>01634         $this-&gt;maxPlayers = $this-&gt;getConfigInt(<span class="stringliteral">&quot;max-players&quot;</span>, 20);
-<a name="l01635"></a>01635 
-<a name="l01636"></a>01636         <span class="keywordflow">if</span>(($memory = str_replace(<span class="stringliteral">&quot;B&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, strtoupper($this-&gt;getConfigString(<span class="stringliteral">&quot;memory-limit&quot;</span>, <span class="stringliteral">&quot;256M&quot;</span>)))) !== <span class="keyword">false</span>){
-<a name="l01637"></a>01637             $value = array(<span class="stringliteral">&quot;M&quot;</span> =&gt; 1, <span class="stringliteral">&quot;G&quot;</span> =&gt; 1024);
-<a name="l01638"></a>01638             $real = ((int) substr($memory, 0, -1)) * $value[substr($memory, -1)];
-<a name="l01639"></a>01639             <span class="keywordflow">if</span>($real &lt; 256){
-<a name="l01640"></a>01640                 $this-&gt;logger-&gt;warning(<span class="stringliteral">&quot;PocketMine-MP may not work right with less than 256MB of RAM&quot;</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, 0);
-<a name="l01641"></a>01641             }
-<a name="l01642"></a>01642             @ini_set(<span class="stringliteral">&quot;memory_limit&quot;</span>, $memory);
-<a name="l01643"></a>01643         }<span class="keywordflow">else</span>{
-<a name="l01644"></a>01644             $this-&gt;setConfigString(<span class="stringliteral">&quot;memory-limit&quot;</span>, <span class="stringliteral">&quot;128M&quot;</span>);
-<a name="l01645"></a>01645         }
-<a name="l01646"></a>01646 
-<a name="l01647"></a>01647         <span class="keywordflow">if</span>($this-&gt;getConfigBoolean(<span class="stringliteral">&quot;hardcore&quot;</span>, <span class="keyword">false</span>) === <span class="keyword">true</span> and $this-&gt;getDifficulty() &lt; 3){
-<a name="l01648"></a>01648             $this-&gt;setConfigInt(<span class="stringliteral">&quot;difficulty&quot;</span>, 3);
-<a name="l01649"></a>01649         }
-<a name="l01650"></a>01650 
-<a name="l01651"></a>01651         $this-&gt;banByIP-&gt;load();
-<a name="l01652"></a>01652         $this-&gt;banByName-&gt;load();
-<a name="l01653"></a>01653         $this-&gt;reloadWhitelist();
-<a name="l01654"></a>01654         $this-&gt;operators-&gt;reload();
-<a name="l01655"></a>01655 
+<a name="l01624"></a>01624         <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l01625"></a>01625     }
+<a name="l01626"></a>01626 
+<a name="l01627"></a>01627     <span class="keyword">public</span> <span class="keyword">function</span> reload(){
+<a name="l01628"></a>01628         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Saving levels...&quot;</span>);
+<a name="l01629"></a>01629 
+<a name="l01630"></a>01630         <span class="keywordflow">foreach</span>($this-&gt;levels as $level){
+<a name="l01631"></a>01631             $level-&gt;save();
+<a name="l01632"></a>01632         }
+<a name="l01633"></a>01633 
+<a name="l01634"></a>01634         $this-&gt;pluginManager-&gt;disablePlugins();
+<a name="l01635"></a>01635         $this-&gt;pluginManager-&gt;clearPlugins();
+<a name="l01636"></a>01636         $this-&gt;commandMap-&gt;clearCommands();
+<a name="l01637"></a>01637 
+<a name="l01638"></a>01638         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Reloading properties...&quot;</span>);
+<a name="l01639"></a>01639         $this-&gt;properties-&gt;reload();
+<a name="l01640"></a>01640         $this-&gt;maxPlayers = $this-&gt;getConfigInt(<span class="stringliteral">&quot;max-players&quot;</span>, 20);
+<a name="l01641"></a>01641 
+<a name="l01642"></a>01642         <span class="keywordflow">if</span>(($memory = str_replace(<span class="stringliteral">&quot;B&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, strtoupper($this-&gt;getConfigString(<span class="stringliteral">&quot;memory-limit&quot;</span>, <span class="stringliteral">&quot;256M&quot;</span>)))) !== <span class="keyword">false</span>){
+<a name="l01643"></a>01643             $value = array(<span class="stringliteral">&quot;M&quot;</span> =&gt; 1, <span class="stringliteral">&quot;G&quot;</span> =&gt; 1024);
+<a name="l01644"></a>01644             $real = ((int) substr($memory, 0, -1)) * $value[substr($memory, -1)];
+<a name="l01645"></a>01645             <span class="keywordflow">if</span>($real &lt; 256){
+<a name="l01646"></a>01646                 $this-&gt;logger-&gt;warning(<span class="stringliteral">&quot;PocketMine-MP may not work right with less than 256MB of RAM&quot;</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, 0);
+<a name="l01647"></a>01647             }
+<a name="l01648"></a>01648             @ini_set(<span class="stringliteral">&quot;memory_limit&quot;</span>, $memory);
+<a name="l01649"></a>01649         }<span class="keywordflow">else</span>{
+<a name="l01650"></a>01650             $this-&gt;setConfigString(<span class="stringliteral">&quot;memory-limit&quot;</span>, <span class="stringliteral">&quot;128M&quot;</span>);
+<a name="l01651"></a>01651         }
+<a name="l01652"></a>01652 
+<a name="l01653"></a>01653         <span class="keywordflow">if</span>($this-&gt;getConfigBoolean(<span class="stringliteral">&quot;hardcore&quot;</span>, <span class="keyword">false</span>) === <span class="keyword">true</span> and $this-&gt;getDifficulty() &lt; 3){
+<a name="l01654"></a>01654             $this-&gt;setConfigInt(<span class="stringliteral">&quot;difficulty&quot;</span>, 3);
+<a name="l01655"></a>01655         }
 <a name="l01656"></a>01656 
-<a name="l01657"></a>01657         $this-&gt;pluginManager-&gt;registerInterface(<span class="stringliteral">&quot;pocketmine\\plugin\\PharPluginLoader&quot;</span>);
-<a name="l01658"></a>01658         $this-&gt;pluginManager-&gt;loadPlugins($this-&gt;pluginPath);
-<a name="l01659"></a>01659         $this-&gt;enablePlugins(PluginLoadOrder::STARTUP);
-<a name="l01660"></a>01660         $this-&gt;enablePlugins(PluginLoadOrder::POSTWORLD);
-<a name="l01661"></a>01661     }
+<a name="l01657"></a>01657         $this-&gt;banByIP-&gt;load();
+<a name="l01658"></a>01658         $this-&gt;banByName-&gt;load();
+<a name="l01659"></a>01659         $this-&gt;reloadWhitelist();
+<a name="l01660"></a>01660         $this-&gt;operators-&gt;reload();
+<a name="l01661"></a>01661 
 <a name="l01662"></a>01662 
-<a name="l01666"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a5ea673149c3d2e0fbc7146d72d128563">01666</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a5ea673149c3d2e0fbc7146d72d128563">shutdown</a>(){
-<a name="l01667"></a>01667         $this-&gt;isRunning = <span class="keyword">false</span>;
-<a name="l01668"></a>01668     }
-<a name="l01669"></a>01669 
-<a name="l01670"></a>01670     <span class="keyword">public</span> <span class="keyword">function</span> forceShutdown(){
-<a name="l01671"></a>01671         $this-&gt;shutdown();
-<a name="l01672"></a>01672         <span class="keywordflow">if</span>($this-&gt;rcon instanceof RCON){
-<a name="l01673"></a>01673             $this-&gt;rcon-&gt;stop();
-<a name="l01674"></a>01674         }
+<a name="l01663"></a>01663         $this-&gt;pluginManager-&gt;registerInterface(<span class="stringliteral">&quot;pocketmine\\plugin\\PharPluginLoader&quot;</span>);
+<a name="l01664"></a>01664         $this-&gt;pluginManager-&gt;loadPlugins($this-&gt;pluginPath);
+<a name="l01665"></a>01665         $this-&gt;enablePlugins(PluginLoadOrder::STARTUP);
+<a name="l01666"></a>01666         $this-&gt;enablePlugins(PluginLoadOrder::POSTWORLD);
+<a name="l01667"></a>01667     }
+<a name="l01668"></a>01668 
+<a name="l01672"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a5ea673149c3d2e0fbc7146d72d128563">01672</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a5ea673149c3d2e0fbc7146d72d128563">shutdown</a>(){
+<a name="l01673"></a>01673         $this-&gt;isRunning = <span class="keyword">false</span>;
+<a name="l01674"></a>01674     }
 <a name="l01675"></a>01675 
-<a name="l01676"></a>01676         <span class="keywordflow">if</span>($this-&gt;getProperty(<span class="stringliteral">&quot;settings.upnp-forwarding&quot;</span>, <span class="keyword">false</span>) === <span class="keyword">true</span>){
-<a name="l01677"></a>01677             $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;[UPnP] Removing port forward...&quot;</span>);
-<a name="l01678"></a>01678             UPnP::RemovePortForward($this-&gt;getPort());
-<a name="l01679"></a>01679         }
-<a name="l01680"></a>01680 
-<a name="l01681"></a>01681         $this-&gt;pluginManager-&gt;disablePlugins();
-<a name="l01682"></a>01682 
-<a name="l01683"></a>01683         <span class="keywordflow">foreach</span>($this-&gt;players as $player){
-<a name="l01684"></a>01684             $player-&gt;close(TextFormat::YELLOW . $player-&gt;getName() . <span class="stringliteral">&quot; has left the game&quot;</span>, $this-&gt;getProperty(<span class="stringliteral">&quot;settings.shutdown-message&quot;</span>, <span class="stringliteral">&quot;Server closed&quot;</span>));
+<a name="l01676"></a>01676     <span class="keyword">public</span> <span class="keyword">function</span> forceShutdown(){
+<a name="l01677"></a>01677         $this-&gt;shutdown();
+<a name="l01678"></a>01678         <span class="keywordflow">if</span>($this-&gt;rcon instanceof RCON){
+<a name="l01679"></a>01679             $this-&gt;rcon-&gt;stop();
+<a name="l01680"></a>01680         }
+<a name="l01681"></a>01681 
+<a name="l01682"></a>01682         <span class="keywordflow">if</span>($this-&gt;getProperty(<span class="stringliteral">&quot;settings.upnp-forwarding&quot;</span>, <span class="keyword">false</span>) === <span class="keyword">true</span>){
+<a name="l01683"></a>01683             $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;[UPnP] Removing port forward...&quot;</span>);
+<a name="l01684"></a>01684             UPnP::RemovePortForward($this-&gt;getPort());
 <a name="l01685"></a>01685         }
 <a name="l01686"></a>01686 
-<a name="l01687"></a>01687         <span class="keywordflow">foreach</span>($this-&gt;getLevels() as $level){
-<a name="l01688"></a>01688             $this-&gt;unloadLevel($level, <span class="keyword">true</span>);
-<a name="l01689"></a>01689         }
-<a name="l01690"></a>01690         $this-&gt;generationManager-&gt;shutdown();
-<a name="l01691"></a>01691 
-<a name="l01692"></a>01692         HandlerList::unregisterAll();
-<a name="l01693"></a>01693         $this-&gt;scheduler-&gt;cancelAllTasks();
-<a name="l01694"></a>01694         $this-&gt;scheduler-&gt;mainThreadHeartbeat(PHP_INT_MAX);
-<a name="l01695"></a>01695 
-<a name="l01696"></a>01696         $this-&gt;properties-&gt;save();
+<a name="l01687"></a>01687         $this-&gt;pluginManager-&gt;disablePlugins();
+<a name="l01688"></a>01688 
+<a name="l01689"></a>01689         <span class="keywordflow">foreach</span>($this-&gt;players as $player){
+<a name="l01690"></a>01690             $player-&gt;close(TextFormat::YELLOW . $player-&gt;getName() . <span class="stringliteral">&quot; has left the game&quot;</span>, $this-&gt;getProperty(<span class="stringliteral">&quot;settings.shutdown-message&quot;</span>, <span class="stringliteral">&quot;Server closed&quot;</span>));
+<a name="l01691"></a>01691         }
+<a name="l01692"></a>01692 
+<a name="l01693"></a>01693         <span class="keywordflow">foreach</span>($this-&gt;getLevels() as $level){
+<a name="l01694"></a>01694             $this-&gt;unloadLevel($level, <span class="keyword">true</span>);
+<a name="l01695"></a>01695         }
+<a name="l01696"></a>01696         $this-&gt;generationManager-&gt;shutdown();
 <a name="l01697"></a>01697 
-<a name="l01698"></a>01698         $this-&gt;console-&gt;kill();
-<a name="l01699"></a>01699         <span class="keywordflow">foreach</span>($this-&gt;interfaces as $interface){
-<a name="l01700"></a>01700             $interface-&gt;shutdown();
-<a name="l01701"></a>01701         }
-<a name="l01702"></a>01702     }
+<a name="l01698"></a>01698         HandlerList::unregisterAll();
+<a name="l01699"></a>01699         $this-&gt;scheduler-&gt;cancelAllTasks();
+<a name="l01700"></a>01700         $this-&gt;scheduler-&gt;mainThreadHeartbeat(PHP_INT_MAX);
+<a name="l01701"></a>01701 
+<a name="l01702"></a>01702         $this-&gt;properties-&gt;save();
 <a name="l01703"></a>01703 
-<a name="l01707"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#ac6822634150519db3dce79e3b590e79a">01707</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#ac6822634150519db3dce79e3b590e79a">start</a>(){
-<a name="l01708"></a>01708 
-<a name="l01709"></a>01709         <span class="keywordflow">if</span>($this-&gt;getConfigBoolean(<span class="stringliteral">&quot;enable-query&quot;</span>, <span class="keyword">true</span>) === <span class="keyword">true</span>){
-<a name="l01710"></a>01710             $this-&gt;queryHandler = <span class="keyword">new</span> QueryHandler();
-<a name="l01711"></a>01711 
-<a name="l01712"></a>01712         }
-<a name="l01713"></a>01713 
+<a name="l01704"></a>01704         $this-&gt;console-&gt;kill();
+<a name="l01705"></a>01705         <span class="keywordflow">foreach</span>($this-&gt;interfaces as $interface){
+<a name="l01706"></a>01706             $interface-&gt;shutdown();
+<a name="l01707"></a>01707         }
+<a name="l01708"></a>01708     }
+<a name="l01709"></a>01709 
+<a name="l01713"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#ac6822634150519db3dce79e3b590e79a">01713</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#ac6822634150519db3dce79e3b590e79a">start</a>(){
 <a name="l01714"></a>01714 
-<a name="l01715"></a>01715         <span class="keywordflow">if</span>($this-&gt;getProperty(<span class="stringliteral">&quot;settings.send-usage&quot;</span>, <span class="keyword">true</span>) !== <span class="keyword">false</span>){
-<a name="l01716"></a>01716             $this-&gt;scheduler-&gt;scheduleDelayedRepeatingTask(<span class="keyword">new</span> CallbackTask(array($this, <span class="stringliteral">&quot;sendUsage&quot;</span>)), 6000, 6000);
-<a name="l01717"></a>01717             $this-&gt;sendUsage();
+<a name="l01715"></a>01715         <span class="keywordflow">if</span>($this-&gt;getConfigBoolean(<span class="stringliteral">&quot;enable-query&quot;</span>, <span class="keyword">true</span>) === <span class="keyword">true</span>){
+<a name="l01716"></a>01716             $this-&gt;queryHandler = <span class="keyword">new</span> QueryHandler();
+<a name="l01717"></a>01717 
 <a name="l01718"></a>01718         }
 <a name="l01719"></a>01719 
 <a name="l01720"></a>01720 
-<a name="l01721"></a>01721         <span class="keywordflow">if</span>($this-&gt;getProperty(<span class="stringliteral">&quot;settings.upnp-forwarding&quot;</span>, <span class="keyword">false</span>) == <span class="keyword">true</span>){
-<a name="l01722"></a>01722             $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;[UPnP] Trying to port forward...&quot;</span>);
-<a name="l01723"></a>01723             UPnP::PortForward($this-&gt;getPort());
+<a name="l01721"></a>01721         <span class="keywordflow">if</span>($this-&gt;getProperty(<span class="stringliteral">&quot;settings.send-usage&quot;</span>, <span class="keyword">true</span>) !== <span class="keyword">false</span>){
+<a name="l01722"></a>01722             $this-&gt;scheduler-&gt;scheduleDelayedRepeatingTask(<span class="keyword">new</span> CallbackTask(array($this, <span class="stringliteral">&quot;sendUsage&quot;</span>)), 6000, 6000);
+<a name="l01723"></a>01723             $this-&gt;sendUsage();
 <a name="l01724"></a>01724         }
 <a name="l01725"></a>01725 
-<a name="l01726"></a>01726         $this-&gt;tickCounter = 0;
-<a name="l01727"></a>01727 
-<a name="l01728"></a>01728         <span class="comment">//register_shutdown_function(array($this, &quot;dumpError&quot;));</span>
-<a name="l01729"></a>01729         register_shutdown_function(array($this, <span class="stringliteral">&quot;forceShutdown&quot;</span>));
-<a name="l01730"></a>01730         <span class="keywordflow">if</span>(function_exists(<span class="stringliteral">&quot;pcntl_signal&quot;</span>)){
-<a name="l01731"></a>01731             pcntl_signal(SIGTERM, array($this, <span class="stringliteral">&quot;shutdown&quot;</span>));
-<a name="l01732"></a>01732             pcntl_signal(SIGINT, array($this, <span class="stringliteral">&quot;shutdown&quot;</span>));
-<a name="l01733"></a>01733             pcntl_signal(SIGHUP, array($this, <span class="stringliteral">&quot;shutdown&quot;</span>));
-<a name="l01734"></a>01734         }
-<a name="l01735"></a>01735 
-<a name="l01736"></a>01736         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Default game type: &quot;</span> . self::getGamemodeString($this-&gt;getGamemode())); <span class="comment">//TODO: string name</span>
-<a name="l01737"></a>01737 
-<a name="l01738"></a>01738         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Done (&quot;</span> . round(microtime(<span class="keyword">true</span>) - \pocketmine\START_TIME, 3) . <span class="stringliteral">&#39;s)! For help, type &quot;help&quot; or &quot;?&quot;&#39;</span>);
-<a name="l01739"></a>01739 
-<a name="l01740"></a>01740         <span class="keywordflow">if</span>(Utils::getOS() === <span class="stringliteral">&quot;win&quot;</span>){ <span class="comment">//Workaround less usleep() waste</span>
-<a name="l01741"></a>01741             $this-&gt;tickProcessorWindows();
-<a name="l01742"></a>01742         }<span class="keywordflow">else</span>{
-<a name="l01743"></a>01743             $this-&gt;tickProcessor();
-<a name="l01744"></a>01744         }
-<a name="l01745"></a>01745         $this-&gt;forceShutdown();
-<a name="l01746"></a>01746     }
-<a name="l01747"></a>01747 
-<a name="l01748"></a>01748     <span class="keyword">private</span> <span class="keyword">function</span> tickProcessorWindows(){
-<a name="l01749"></a>01749         $lastLoop = 0;
-<a name="l01750"></a>01750         <span class="keywordflow">while</span>($this-&gt;isRunning){
-<a name="l01751"></a>01751             <span class="keywordflow">foreach</span>($this-&gt;interfaces as $interface){
-<a name="l01752"></a>01752                 <span class="keywordflow">if</span>($interface-&gt;process()){
-<a name="l01753"></a>01753                     $lastLoop = 0;
-<a name="l01754"></a>01754                 }
-<a name="l01755"></a>01755             }
-<a name="l01756"></a>01756             $this-&gt;generationManager-&gt;handlePackets();
-<a name="l01757"></a>01757 
-<a name="l01758"></a>01758             <span class="keywordflow">if</span>(($ticks = $this-&gt;tick()) !== <span class="keyword">true</span>){
-<a name="l01759"></a>01759                 ++$lastLoop;
-<a name="l01760"></a>01760                 <span class="keywordflow">if</span>($lastLoop &gt; 128){
-<a name="l01761"></a>01761                     usleep(1000);
-<a name="l01762"></a>01762                 }
-<a name="l01763"></a>01763             }<span class="keywordflow">else</span>{
-<a name="l01764"></a>01764                 $lastLoop = 0;
-<a name="l01765"></a>01765             }
-<a name="l01766"></a>01766         }
-<a name="l01767"></a>01767     }
-<a name="l01768"></a>01768 
-<a name="l01769"></a>01769     <span class="keyword">public</span> <span class="keyword">function</span> checkTicks(){
-<a name="l01770"></a>01770         <span class="keywordflow">if</span>($this-&gt;getTicksPerSecond() &lt; 12){
-<a name="l01771"></a>01771             $this-&gt;logger-&gt;warning(<span class="stringliteral">&quot;Can&#39;t keep up! Is the server overloaded?&quot;</span>);
+<a name="l01726"></a>01726 
+<a name="l01727"></a>01727         <span class="keywordflow">if</span>($this-&gt;getProperty(<span class="stringliteral">&quot;settings.upnp-forwarding&quot;</span>, <span class="keyword">false</span>) == <span class="keyword">true</span>){
+<a name="l01728"></a>01728             $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;[UPnP] Trying to port forward...&quot;</span>);
+<a name="l01729"></a>01729             UPnP::PortForward($this-&gt;getPort());
+<a name="l01730"></a>01730         }
+<a name="l01731"></a>01731 
+<a name="l01732"></a>01732         $this-&gt;tickCounter = 0;
+<a name="l01733"></a>01733 
+<a name="l01734"></a>01734         <span class="comment">//register_shutdown_function(array($this, &quot;dumpError&quot;));</span>
+<a name="l01735"></a>01735         register_shutdown_function(array($this, <span class="stringliteral">&quot;forceShutdown&quot;</span>));
+<a name="l01736"></a>01736         <span class="keywordflow">if</span>(function_exists(<span class="stringliteral">&quot;pcntl_signal&quot;</span>)){
+<a name="l01737"></a>01737             pcntl_signal(SIGTERM, array($this, <span class="stringliteral">&quot;shutdown&quot;</span>));
+<a name="l01738"></a>01738             pcntl_signal(SIGINT, array($this, <span class="stringliteral">&quot;shutdown&quot;</span>));
+<a name="l01739"></a>01739             pcntl_signal(SIGHUP, array($this, <span class="stringliteral">&quot;shutdown&quot;</span>));
+<a name="l01740"></a>01740         }
+<a name="l01741"></a>01741 
+<a name="l01742"></a>01742         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Default game type: &quot;</span> . self::getGamemodeString($this-&gt;getGamemode())); <span class="comment">//TODO: string name</span>
+<a name="l01743"></a>01743 
+<a name="l01744"></a>01744         $this-&gt;logger-&gt;info(<span class="stringliteral">&quot;Done (&quot;</span> . round(microtime(<span class="keyword">true</span>) - \pocketmine\START_TIME, 3) . <span class="stringliteral">&#39;s)! For help, type &quot;help&quot; or &quot;?&quot;&#39;</span>);
+<a name="l01745"></a>01745 
+<a name="l01746"></a>01746         <span class="keywordflow">if</span>(Utils::getOS() === <span class="stringliteral">&quot;win&quot;</span>){ <span class="comment">//Workaround less usleep() waste</span>
+<a name="l01747"></a>01747             $this-&gt;tickProcessorWindows();
+<a name="l01748"></a>01748         }<span class="keywordflow">else</span>{
+<a name="l01749"></a>01749             $this-&gt;tickProcessor();
+<a name="l01750"></a>01750         }
+<a name="l01751"></a>01751         $this-&gt;forceShutdown();
+<a name="l01752"></a>01752     }
+<a name="l01753"></a>01753 
+<a name="l01754"></a>01754     <span class="keyword">private</span> <span class="keyword">function</span> tickProcessorWindows(){
+<a name="l01755"></a>01755         $lastLoop = 0;
+<a name="l01756"></a>01756         <span class="keywordflow">while</span>($this-&gt;isRunning){
+<a name="l01757"></a>01757             <span class="keywordflow">foreach</span>($this-&gt;interfaces as $interface){
+<a name="l01758"></a>01758                 <span class="keywordflow">if</span>($interface-&gt;process()){
+<a name="l01759"></a>01759                     $lastLoop = 0;
+<a name="l01760"></a>01760                 }
+<a name="l01761"></a>01761             }
+<a name="l01762"></a>01762             $this-&gt;generationManager-&gt;handlePackets();
+<a name="l01763"></a>01763 
+<a name="l01764"></a>01764             <span class="keywordflow">if</span>(($ticks = $this-&gt;tick()) !== <span class="keyword">true</span>){
+<a name="l01765"></a>01765                 ++$lastLoop;
+<a name="l01766"></a>01766                 <span class="keywordflow">if</span>($lastLoop &gt; 128){
+<a name="l01767"></a>01767                     usleep(1000);
+<a name="l01768"></a>01768                 }
+<a name="l01769"></a>01769             }<span class="keywordflow">else</span>{
+<a name="l01770"></a>01770                 $lastLoop = 0;
+<a name="l01771"></a>01771             }
 <a name="l01772"></a>01772         }
 <a name="l01773"></a>01773     }
 <a name="l01774"></a>01774 
-<a name="l01775"></a>01775     <span class="keyword">public</span> <span class="keyword">function</span> checkMemory(){
-<a name="l01776"></a>01776         <span class="comment">//TODO</span>
-<a name="l01777"></a>01777         $info = $this-&gt;debugInfo();
-<a name="l01778"></a>01778         $data = $info[<span class="stringliteral">&quot;memory_usage&quot;</span>] . <span class="stringliteral">&quot;,&quot;</span> . $info[<span class="stringliteral">&quot;players&quot;</span>] . <span class="stringliteral">&quot;,&quot;</span> . $info[<span class="stringliteral">&quot;entities&quot;</span>];
-<a name="l01779"></a>01779         $i = count($this-&gt;memoryStats) - 1;
-<a name="l01780"></a>01780         <span class="keywordflow">if</span>($i &lt; 0 or $this-&gt;memoryStats[$i] !== $data){
-<a name="l01781"></a>01781             $this-&gt;memoryStats[] = $data;
-<a name="l01782"></a>01782         }
-<a name="l01783"></a>01783     }
-<a name="l01784"></a>01784 
-<a name="l01785"></a>01785     <span class="keyword">public</span> <span class="keyword">function</span> dumpError(){
-<a name="l01786"></a>01786         <span class="comment">//TODO</span>
-<a name="l01787"></a>01787         <span class="keywordflow">if</span>($this-&gt;stop === <span class="keyword">true</span>){
-<a name="l01788"></a>01788             <span class="keywordflow">return</span>;
-<a name="l01789"></a>01789         }
-<a name="l01790"></a>01790         ini_set(<span class="stringliteral">&quot;memory_limit&quot;</span>, <span class="stringliteral">&quot;-1&quot;</span>); <span class="comment">//Fix error dump not dumped on memory problems</span>
-<a name="l01791"></a>01791         $this-&gt;logger-&gt;emergency(<span class="stringliteral">&quot;An unrecoverable has occurred and the server has crashed. Creating an error dump&quot;</span>);
-<a name="l01792"></a>01792         $dump = <span class="stringliteral">&quot;```\r\n# PocketMine-MP Error Dump &quot;</span> . date(<span class="stringliteral">&quot;D M j H:i:s T Y&quot;</span>) . <span class="stringliteral">&quot;\r\n&quot;</span>;
-<a name="l01793"></a>01793         $er = error_get_last();
-<a name="l01794"></a>01794         $errorConversion = array(
-<a name="l01795"></a>01795             E_ERROR =&gt; <span class="stringliteral">&quot;E_ERROR&quot;</span>,
-<a name="l01796"></a>01796             E_WARNING =&gt; <span class="stringliteral">&quot;E_WARNING&quot;</span>,
-<a name="l01797"></a>01797             E_PARSE =&gt; <span class="stringliteral">&quot;E_PARSE&quot;</span>,
-<a name="l01798"></a>01798             E_NOTICE =&gt; <span class="stringliteral">&quot;E_NOTICE&quot;</span>,
-<a name="l01799"></a>01799             E_CORE_ERROR =&gt; <span class="stringliteral">&quot;E_CORE_ERROR&quot;</span>,
-<a name="l01800"></a>01800             E_CORE_WARNING =&gt; <span class="stringliteral">&quot;E_CORE_WARNING&quot;</span>,
-<a name="l01801"></a>01801             E_COMPILE_ERROR =&gt; <span class="stringliteral">&quot;E_COMPILE_ERROR&quot;</span>,
-<a name="l01802"></a>01802             E_COMPILE_WARNING =&gt; <span class="stringliteral">&quot;E_COMPILE_WARNING&quot;</span>,
-<a name="l01803"></a>01803             E_USER_ERROR =&gt; <span class="stringliteral">&quot;E_USER_ERROR&quot;</span>,
-<a name="l01804"></a>01804             E_USER_WARNING =&gt; <span class="stringliteral">&quot;E_USER_WARNING&quot;</span>,
-<a name="l01805"></a>01805             E_USER_NOTICE =&gt; <span class="stringliteral">&quot;E_USER_NOTICE&quot;</span>,
-<a name="l01806"></a>01806             E_STRICT =&gt; <span class="stringliteral">&quot;E_STRICT&quot;</span>,
-<a name="l01807"></a>01807             E_RECOVERABLE_ERROR =&gt; <span class="stringliteral">&quot;E_RECOVERABLE_ERROR&quot;</span>,
-<a name="l01808"></a>01808             E_DEPRECATED =&gt; <span class="stringliteral">&quot;E_DEPRECATED&quot;</span>,
-<a name="l01809"></a>01809             E_USER_DEPRECATED =&gt; <span class="stringliteral">&quot;E_USER_DEPRECATED&quot;</span>,
-<a name="l01810"></a>01810         );
-<a name="l01811"></a>01811         $er[<span class="stringliteral">&quot;type&quot;</span>] = isset($errorConversion[$er[<span class="stringliteral">&quot;type&quot;</span>]]) ? $errorConversion[$er[<span class="stringliteral">&quot;type&quot;</span>]] : $er[<span class="stringliteral">&quot;type&quot;</span>];
-<a name="l01812"></a>01812         $dump .= <span class="stringliteral">&quot;Error: &quot;</span> . var_export($er, <span class="keyword">true</span>) . <span class="stringliteral">&quot;\r\n\r\n&quot;</span>;
-<a name="l01813"></a>01813         <span class="keywordflow">if</span>(stripos($er[<span class="stringliteral">&quot;file&quot;</span>], <span class="stringliteral">&quot;plugin&quot;</span>) !== <span class="keyword">false</span>){
-<a name="l01814"></a>01814             $dump .= <span class="stringliteral">&quot;THIS ERROR WAS CAUSED BY A PLUGIN. REPORT IT TO THE PLUGIN DEVELOPER.\r\n&quot;</span>;
-<a name="l01815"></a>01815         }
-<a name="l01816"></a>01816 
-<a name="l01817"></a>01817         $dump .= <span class="stringliteral">&quot;Code: \r\n&quot;</span>;
-<a name="l01818"></a>01818         $file = @file($er[<span class="stringliteral">&quot;file&quot;</span>], FILE_IGNORE_NEW_LINES);
-<a name="l01819"></a>01819         <span class="keywordflow">for</span>($l = max(0, $er[<span class="stringliteral">&quot;line&quot;</span>] - 10); $l &lt; $er[<span class="stringliteral">&quot;line&quot;</span>] + 10; ++$l){
-<a name="l01820"></a>01820             $dump .= <span class="stringliteral">&quot;[&quot;</span> . ($l + 1) . <span class="stringliteral">&quot;] &quot;</span> . @$file[$l] . <span class="stringliteral">&quot;\r\n&quot;</span>;
+<a name="l01775"></a>01775     <span class="keyword">public</span> <span class="keyword">function</span> checkTicks(){
+<a name="l01776"></a>01776         <span class="keywordflow">if</span>($this-&gt;getTicksPerSecond() &lt; 12){
+<a name="l01777"></a>01777             $this-&gt;logger-&gt;warning(<span class="stringliteral">&quot;Can&#39;t keep up! Is the server overloaded?&quot;</span>);
+<a name="l01778"></a>01778         }
+<a name="l01779"></a>01779     }
+<a name="l01780"></a>01780 
+<a name="l01781"></a>01781     <span class="keyword">public</span> <span class="keyword">function</span> checkMemory(){
+<a name="l01782"></a>01782         <span class="comment">//TODO</span>
+<a name="l01783"></a>01783         $info = $this-&gt;debugInfo();
+<a name="l01784"></a>01784         $data = $info[<span class="stringliteral">&quot;memory_usage&quot;</span>] . <span class="stringliteral">&quot;,&quot;</span> . $info[<span class="stringliteral">&quot;players&quot;</span>] . <span class="stringliteral">&quot;,&quot;</span> . $info[<span class="stringliteral">&quot;entities&quot;</span>];
+<a name="l01785"></a>01785         $i = count($this-&gt;memoryStats) - 1;
+<a name="l01786"></a>01786         <span class="keywordflow">if</span>($i &lt; 0 or $this-&gt;memoryStats[$i] !== $data){
+<a name="l01787"></a>01787             $this-&gt;memoryStats[] = $data;
+<a name="l01788"></a>01788         }
+<a name="l01789"></a>01789     }
+<a name="l01790"></a>01790 
+<a name="l01791"></a>01791     <span class="keyword">public</span> <span class="keyword">function</span> dumpError(){
+<a name="l01792"></a>01792         <span class="comment">//TODO</span>
+<a name="l01793"></a>01793         <span class="keywordflow">if</span>($this-&gt;stop === <span class="keyword">true</span>){
+<a name="l01794"></a>01794             <span class="keywordflow">return</span>;
+<a name="l01795"></a>01795         }
+<a name="l01796"></a>01796         ini_set(<span class="stringliteral">&quot;memory_limit&quot;</span>, <span class="stringliteral">&quot;-1&quot;</span>); <span class="comment">//Fix error dump not dumped on memory problems</span>
+<a name="l01797"></a>01797         $this-&gt;logger-&gt;emergency(<span class="stringliteral">&quot;An unrecoverable has occurred and the server has crashed. Creating an error dump&quot;</span>);
+<a name="l01798"></a>01798         $dump = <span class="stringliteral">&quot;```\r\n# PocketMine-MP Error Dump &quot;</span> . date(<span class="stringliteral">&quot;D M j H:i:s T Y&quot;</span>) . <span class="stringliteral">&quot;\r\n&quot;</span>;
+<a name="l01799"></a>01799         $er = error_get_last();
+<a name="l01800"></a>01800         $errorConversion = array(
+<a name="l01801"></a>01801             E_ERROR =&gt; <span class="stringliteral">&quot;E_ERROR&quot;</span>,
+<a name="l01802"></a>01802             E_WARNING =&gt; <span class="stringliteral">&quot;E_WARNING&quot;</span>,
+<a name="l01803"></a>01803             E_PARSE =&gt; <span class="stringliteral">&quot;E_PARSE&quot;</span>,
+<a name="l01804"></a>01804             E_NOTICE =&gt; <span class="stringliteral">&quot;E_NOTICE&quot;</span>,
+<a name="l01805"></a>01805             E_CORE_ERROR =&gt; <span class="stringliteral">&quot;E_CORE_ERROR&quot;</span>,
+<a name="l01806"></a>01806             E_CORE_WARNING =&gt; <span class="stringliteral">&quot;E_CORE_WARNING&quot;</span>,
+<a name="l01807"></a>01807             E_COMPILE_ERROR =&gt; <span class="stringliteral">&quot;E_COMPILE_ERROR&quot;</span>,
+<a name="l01808"></a>01808             E_COMPILE_WARNING =&gt; <span class="stringliteral">&quot;E_COMPILE_WARNING&quot;</span>,
+<a name="l01809"></a>01809             E_USER_ERROR =&gt; <span class="stringliteral">&quot;E_USER_ERROR&quot;</span>,
+<a name="l01810"></a>01810             E_USER_WARNING =&gt; <span class="stringliteral">&quot;E_USER_WARNING&quot;</span>,
+<a name="l01811"></a>01811             E_USER_NOTICE =&gt; <span class="stringliteral">&quot;E_USER_NOTICE&quot;</span>,
+<a name="l01812"></a>01812             E_STRICT =&gt; <span class="stringliteral">&quot;E_STRICT&quot;</span>,
+<a name="l01813"></a>01813             E_RECOVERABLE_ERROR =&gt; <span class="stringliteral">&quot;E_RECOVERABLE_ERROR&quot;</span>,
+<a name="l01814"></a>01814             E_DEPRECATED =&gt; <span class="stringliteral">&quot;E_DEPRECATED&quot;</span>,
+<a name="l01815"></a>01815             E_USER_DEPRECATED =&gt; <span class="stringliteral">&quot;E_USER_DEPRECATED&quot;</span>,
+<a name="l01816"></a>01816         );
+<a name="l01817"></a>01817         $er[<span class="stringliteral">&quot;type&quot;</span>] = isset($errorConversion[$er[<span class="stringliteral">&quot;type&quot;</span>]]) ? $errorConversion[$er[<span class="stringliteral">&quot;type&quot;</span>]] : $er[<span class="stringliteral">&quot;type&quot;</span>];
+<a name="l01818"></a>01818         $dump .= <span class="stringliteral">&quot;Error: &quot;</span> . var_export($er, <span class="keyword">true</span>) . <span class="stringliteral">&quot;\r\n\r\n&quot;</span>;
+<a name="l01819"></a>01819         <span class="keywordflow">if</span>(stripos($er[<span class="stringliteral">&quot;file&quot;</span>], <span class="stringliteral">&quot;plugin&quot;</span>) !== <span class="keyword">false</span>){
+<a name="l01820"></a>01820             $dump .= <span class="stringliteral">&quot;THIS ERROR WAS CAUSED BY A PLUGIN. REPORT IT TO THE PLUGIN DEVELOPER.\r\n&quot;</span>;
 <a name="l01821"></a>01821         }
-<a name="l01822"></a>01822         $dump .= <span class="stringliteral">&quot;\r\n\r\n&quot;</span>;
-<a name="l01823"></a>01823         $dump .= <span class="stringliteral">&quot;Backtrace: \r\n&quot;</span>;
-<a name="l01824"></a>01824         <span class="keywordflow">foreach</span>(getTrace() as $line){
-<a name="l01825"></a>01825             $dump .= <span class="stringliteral">&quot;$line\r\n&quot;</span>;
-<a name="l01826"></a>01826         }
-<a name="l01827"></a>01827         $dump .= <span class="stringliteral">&quot;\r\n\r\n&quot;</span>;
-<a name="l01828"></a>01828         $version = <span class="keyword">new</span> VersionString();
-<a name="l01829"></a>01829         $dump .= <span class="stringliteral">&quot;PocketMine-MP version: &quot;</span> . $version-&gt;get(<span class="keyword">false</span>). <span class="stringliteral">&quot; #&quot;</span> . $version-&gt;getNumber() . <span class="stringliteral">&quot; [Protocol &quot;</span> . Info::CURRENT_PROTOCOL . <span class="stringliteral">&quot;; API &quot;</span> . API_VERSION . <span class="stringliteral">&quot;]\r\n&quot;</span>;
-<a name="l01830"></a>01830         $dump .= <span class="stringliteral">&quot;Git commit: &quot;</span> . GIT_COMMIT . <span class="stringliteral">&quot;\r\n&quot;</span>;
-<a name="l01831"></a>01831         $dump .= <span class="stringliteral">&quot;uname -a: &quot;</span> . php_uname(<span class="stringliteral">&quot;a&quot;</span>) . <span class="stringliteral">&quot;\r\n&quot;</span>;
-<a name="l01832"></a>01832         $dump .= <span class="stringliteral">&quot;PHP Version: &quot;</span> . phpversion() . <span class="stringliteral">&quot;\r\n&quot;</span>;
-<a name="l01833"></a>01833         $dump .= <span class="stringliteral">&quot;Zend version: &quot;</span> . zend_version() . <span class="stringliteral">&quot;\r\n&quot;</span>;
-<a name="l01834"></a>01834         $dump .= <span class="stringliteral">&quot;OS : &quot;</span> . PHP_OS . <span class="stringliteral">&quot;, &quot;</span> . Utils::getOS() . <span class="stringliteral">&quot;\r\n&quot;</span>;
-<a name="l01835"></a>01835         $dump .= <span class="stringliteral">&quot;Debug Info: &quot;</span> . var_export($this-&gt;debugInfo(<span class="keyword">false</span>), <span class="keyword">true</span>) . <span class="stringliteral">&quot;\r\n\r\n\r\n&quot;</span>;
-<a name="l01836"></a>01836         global $arguments;
-<a name="l01837"></a>01837         $dump .= <span class="stringliteral">&quot;Parameters: &quot;</span> . var_export($arguments, <span class="keyword">true</span>) . <span class="stringliteral">&quot;\r\n\r\n\r\n&quot;</span>;
-<a name="l01838"></a>01838         $p = $this-&gt;api-&gt;getProperties();
-<a name="l01839"></a>01839         <span class="keywordflow">if</span>($p[<span class="stringliteral">&quot;rcon.password&quot;</span>] != <span class="stringliteral">&quot;&quot;</span>){
-<a name="l01840"></a>01840             $p[<span class="stringliteral">&quot;rcon.password&quot;</span>] = <span class="stringliteral">&quot;******&quot;</span>;
-<a name="l01841"></a>01841         }
-<a name="l01842"></a>01842         $dump .= <span class="stringliteral">&quot;server.properties: &quot;</span> . var_export($p, <span class="keyword">true</span>) . <span class="stringliteral">&quot;\r\n\r\n\r\n&quot;</span>;
-<a name="l01843"></a>01843         <span class="keywordflow">if</span>(class_exists(<span class="stringliteral">&quot;pocketmine\\plugin\\PluginManager&quot;</span>, <span class="keyword">false</span>)){
-<a name="l01844"></a>01844             $dump .= <span class="stringliteral">&quot;Loaded plugins:\r\n&quot;</span>;
-<a name="l01845"></a>01845             <span class="keywordflow">foreach</span>($this-&gt;getPluginManager()-&gt;getPlugins() as $p){
-<a name="l01846"></a>01846                 $d = $p-&gt;getDescription();
-<a name="l01847"></a>01847                 $dump .= $d-&gt;getName() . <span class="stringliteral">&quot; &quot;</span> . $d-&gt;getVersion() . <span class="stringliteral">&quot; by &quot;</span> . implode(<span class="stringliteral">&quot;, &quot;</span>, $d-&gt;getAuthors()) . <span class="stringliteral">&quot;\r\n&quot;</span>;
-<a name="l01848"></a>01848             }
-<a name="l01849"></a>01849             $dump .= <span class="stringliteral">&quot;\r\n\r\n&quot;</span>;
-<a name="l01850"></a>01850         }
-<a name="l01851"></a>01851 
-<a name="l01852"></a>01852         $extensions = [];
-<a name="l01853"></a>01853         <span class="keywordflow">foreach</span>(get_loaded_extensions() as $ext){
-<a name="l01854"></a>01854             $extensions[$ext] = phpversion($ext);
-<a name="l01855"></a>01855         }
-<a name="l01856"></a>01856 
-<a name="l01857"></a>01857         $dump .= <span class="stringliteral">&quot;Loaded Modules: &quot;</span> . var_export($extensions, <span class="keyword">true</span>) . <span class="stringliteral">&quot;\r\n&quot;</span>;
-<a name="l01858"></a>01858         $this-&gt;checkMemory();
-<a name="l01859"></a>01859         $dump .= <span class="stringliteral">&quot;Memory Usage Tracking: \r\n&quot;</span> . chunk_split(base64_encode(gzdeflate(implode(<span class="stringliteral">&quot;;&quot;</span>, $this-&gt;memoryStats), 9))) . <span class="stringliteral">&quot;\r\n&quot;</span>;
-<a name="l01860"></a>01860         ob_start();
-<a name="l01861"></a>01861         phpinfo();
-<a name="l01862"></a>01862         $dump .= <span class="stringliteral">&quot;\r\nphpinfo(): \r\n&quot;</span> . chunk_split(base64_encode(gzdeflate(ob_get_contents(), 9))) . <span class="stringliteral">&quot;\r\n&quot;</span>;
-<a name="l01863"></a>01863         ob_end_clean();
-<a name="l01864"></a>01864         $dump .= <span class="stringliteral">&quot;\r\n```&quot;</span>;
-<a name="l01865"></a>01865         $name = <span class="stringliteral">&quot;Error_Dump_&quot;</span> . date(<span class="stringliteral">&quot;D_M_j-H.i.s-T_Y&quot;</span>);
-<a name="l01866"></a>01866         <span class="comment">//log($dump, $name, true, 0, true);</span>
-<a name="l01867"></a>01867         $this-&gt;logger-&gt;emergency(<span class="stringliteral">&quot;Please submit the \&quot;{$name}.log\&quot; file to the Bug Reporting page. Give as much info as you can.&quot;</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, 0);
-<a name="l01868"></a>01868     }
-<a name="l01869"></a>01869 
-<a name="l01870"></a>01870     <span class="keyword">private</span> <span class="keyword">function</span> tickProcessor(){
-<a name="l01871"></a>01871         $lastLoop = 0;
-<a name="l01872"></a>01872         <span class="keywordflow">while</span>($this-&gt;isRunning){
-<a name="l01873"></a>01873 
-<a name="l01874"></a>01874             <span class="keywordflow">foreach</span>($this-&gt;interfaces as $interface){
-<a name="l01875"></a>01875                 <span class="keywordflow">if</span>($interface-&gt;process()){
-<a name="l01876"></a>01876                     $lastLoop = 0;
-<a name="l01877"></a>01877                 }
-<a name="l01878"></a>01878             }
-<a name="l01879"></a>01879             $this-&gt;generationManager-&gt;handlePackets();
-<a name="l01880"></a>01880 
-<a name="l01881"></a>01881             <span class="keywordflow">if</span>(($ticks = $this-&gt;tick()) !== <span class="keyword">true</span>){
-<a name="l01882"></a>01882                 ++$lastLoop;
-<a name="l01883"></a>01883                 <span class="keywordflow">if</span>($lastLoop &gt; 16 and $lastLoop &lt; 128){
-<a name="l01884"></a>01884                     usleep(200);
-<a name="l01885"></a>01885                 }elseif($lastLoop &lt; 512){
-<a name="l01886"></a>01886                     usleep(400);
-<a name="l01887"></a>01887                 }<span class="keywordflow">else</span>{
-<a name="l01888"></a>01888                     usleep(1000);
-<a name="l01889"></a>01889                 }
-<a name="l01890"></a>01890             }<span class="keywordflow">else</span>{
-<a name="l01891"></a>01891                 $lastLoop = 0;
-<a name="l01892"></a>01892             }
-<a name="l01893"></a>01893         }
-<a name="l01894"></a>01894     }
-<a name="l01895"></a>01895 
-<a name="l01896"></a>01896     <span class="keyword">public</span> <span class="keyword">function</span> addPlayer($identifier, Player $player){
-<a name="l01897"></a>01897         $this-&gt;players[$identifier] = $player;
-<a name="l01898"></a>01898     }
-<a name="l01899"></a>01899 
-<a name="l01900"></a>01900     <span class="keyword">private</span> <span class="keyword">function</span> checkTickUpdates($currentTick){
-<a name="l01901"></a>01901         <span class="comment">//Update entities that need update</span>
-<a name="l01902"></a>01902         <span class="keywordflow">if</span>(count(Entity::$needUpdate) &gt; 0){
-<a name="l01903"></a>01903             <span class="keywordflow">foreach</span>(Entity::$needUpdate as $id =&gt; $entity){
-<a name="l01904"></a>01904                 <span class="keywordflow">if</span>($entity-&gt;onUpdate() === <span class="keyword">false</span>){
-<a name="l01905"></a>01905                     unset(Entity::$needUpdate[$id]);
-<a name="l01906"></a>01906                 }
-<a name="l01907"></a>01907             }
-<a name="l01908"></a>01908         }
-<a name="l01909"></a>01909 
-<a name="l01910"></a>01910         <span class="comment">//Update tiles that need update</span>
-<a name="l01911"></a>01911         <span class="keywordflow">if</span>(count(Tile::$needUpdate) &gt; 0){
-<a name="l01912"></a>01912             <span class="keywordflow">foreach</span>(Tile::$needUpdate as $id =&gt; $tile){
-<a name="l01913"></a>01913                 <span class="keywordflow">if</span>($tile-&gt;onUpdate() === <span class="keyword">false</span>){
-<a name="l01914"></a>01914                     unset(Tile::$needUpdate[$id]);
-<a name="l01915"></a>01915                 }
-<a name="l01916"></a>01916             }
-<a name="l01917"></a>01917         }
-<a name="l01918"></a>01918 
-<a name="l01919"></a>01919         <span class="comment">//TODO: Add level blocks</span>
-<a name="l01920"></a>01920 
-<a name="l01921"></a>01921         <span class="comment">//Do level ticks</span>
-<a name="l01922"></a>01922         <span class="keywordflow">foreach</span>($this-&gt;getLevels() as $level){
-<a name="l01923"></a>01923             $level-&gt;doTick($currentTick);
-<a name="l01924"></a>01924         }
-<a name="l01925"></a>01925     }
+<a name="l01822"></a>01822 
+<a name="l01823"></a>01823         $dump .= <span class="stringliteral">&quot;Code: \r\n&quot;</span>;
+<a name="l01824"></a>01824         $file = @file($er[<span class="stringliteral">&quot;file&quot;</span>], FILE_IGNORE_NEW_LINES);
+<a name="l01825"></a>01825         <span class="keywordflow">for</span>($l = max(0, $er[<span class="stringliteral">&quot;line&quot;</span>] - 10); $l &lt; $er[<span class="stringliteral">&quot;line&quot;</span>] + 10; ++$l){
+<a name="l01826"></a>01826             $dump .= <span class="stringliteral">&quot;[&quot;</span> . ($l + 1) . <span class="stringliteral">&quot;] &quot;</span> . @$file[$l] . <span class="stringliteral">&quot;\r\n&quot;</span>;
+<a name="l01827"></a>01827         }
+<a name="l01828"></a>01828         $dump .= <span class="stringliteral">&quot;\r\n\r\n&quot;</span>;
+<a name="l01829"></a>01829         $dump .= <span class="stringliteral">&quot;Backtrace: \r\n&quot;</span>;
+<a name="l01830"></a>01830         <span class="keywordflow">foreach</span>(getTrace() as $line){
+<a name="l01831"></a>01831             $dump .= <span class="stringliteral">&quot;$line\r\n&quot;</span>;
+<a name="l01832"></a>01832         }
+<a name="l01833"></a>01833         $dump .= <span class="stringliteral">&quot;\r\n\r\n&quot;</span>;
+<a name="l01834"></a>01834         $version = <span class="keyword">new</span> VersionString();
+<a name="l01835"></a>01835         $dump .= <span class="stringliteral">&quot;PocketMine-MP version: &quot;</span> . $version-&gt;get(<span class="keyword">false</span>). <span class="stringliteral">&quot; #&quot;</span> . $version-&gt;getNumber() . <span class="stringliteral">&quot; [Protocol &quot;</span> . Info::CURRENT_PROTOCOL . <span class="stringliteral">&quot;; API &quot;</span> . API_VERSION . <span class="stringliteral">&quot;]\r\n&quot;</span>;
+<a name="l01836"></a>01836         $dump .= <span class="stringliteral">&quot;Git commit: &quot;</span> . GIT_COMMIT . <span class="stringliteral">&quot;\r\n&quot;</span>;
+<a name="l01837"></a>01837         $dump .= <span class="stringliteral">&quot;uname -a: &quot;</span> . php_uname(<span class="stringliteral">&quot;a&quot;</span>) . <span class="stringliteral">&quot;\r\n&quot;</span>;
+<a name="l01838"></a>01838         $dump .= <span class="stringliteral">&quot;PHP Version: &quot;</span> . phpversion() . <span class="stringliteral">&quot;\r\n&quot;</span>;
+<a name="l01839"></a>01839         $dump .= <span class="stringliteral">&quot;Zend version: &quot;</span> . zend_version() . <span class="stringliteral">&quot;\r\n&quot;</span>;
+<a name="l01840"></a>01840         $dump .= <span class="stringliteral">&quot;OS : &quot;</span> . PHP_OS . <span class="stringliteral">&quot;, &quot;</span> . Utils::getOS() . <span class="stringliteral">&quot;\r\n&quot;</span>;
+<a name="l01841"></a>01841         $dump .= <span class="stringliteral">&quot;Debug Info: &quot;</span> . var_export($this-&gt;debugInfo(<span class="keyword">false</span>), <span class="keyword">true</span>) . <span class="stringliteral">&quot;\r\n\r\n\r\n&quot;</span>;
+<a name="l01842"></a>01842         global $arguments;
+<a name="l01843"></a>01843         $dump .= <span class="stringliteral">&quot;Parameters: &quot;</span> . var_export($arguments, <span class="keyword">true</span>) . <span class="stringliteral">&quot;\r\n\r\n\r\n&quot;</span>;
+<a name="l01844"></a>01844         $p = $this-&gt;api-&gt;getProperties();
+<a name="l01845"></a>01845         <span class="keywordflow">if</span>($p[<span class="stringliteral">&quot;rcon.password&quot;</span>] != <span class="stringliteral">&quot;&quot;</span>){
+<a name="l01846"></a>01846             $p[<span class="stringliteral">&quot;rcon.password&quot;</span>] = <span class="stringliteral">&quot;******&quot;</span>;
+<a name="l01847"></a>01847         }
+<a name="l01848"></a>01848         $dump .= <span class="stringliteral">&quot;server.properties: &quot;</span> . var_export($p, <span class="keyword">true</span>) . <span class="stringliteral">&quot;\r\n\r\n\r\n&quot;</span>;
+<a name="l01849"></a>01849         <span class="keywordflow">if</span>(class_exists(<span class="stringliteral">&quot;pocketmine\\plugin\\PluginManager&quot;</span>, <span class="keyword">false</span>)){
+<a name="l01850"></a>01850             $dump .= <span class="stringliteral">&quot;Loaded plugins:\r\n&quot;</span>;
+<a name="l01851"></a>01851             <span class="keywordflow">foreach</span>($this-&gt;getPluginManager()-&gt;getPlugins() as $p){
+<a name="l01852"></a>01852                 $d = $p-&gt;getDescription();
+<a name="l01853"></a>01853                 $dump .= $d-&gt;getName() . <span class="stringliteral">&quot; &quot;</span> . $d-&gt;getVersion() . <span class="stringliteral">&quot; by &quot;</span> . implode(<span class="stringliteral">&quot;, &quot;</span>, $d-&gt;getAuthors()) . <span class="stringliteral">&quot;\r\n&quot;</span>;
+<a name="l01854"></a>01854             }
+<a name="l01855"></a>01855             $dump .= <span class="stringliteral">&quot;\r\n\r\n&quot;</span>;
+<a name="l01856"></a>01856         }
+<a name="l01857"></a>01857 
+<a name="l01858"></a>01858         $extensions = [];
+<a name="l01859"></a>01859         <span class="keywordflow">foreach</span>(get_loaded_extensions() as $ext){
+<a name="l01860"></a>01860             $extensions[$ext] = phpversion($ext);
+<a name="l01861"></a>01861         }
+<a name="l01862"></a>01862 
+<a name="l01863"></a>01863         $dump .= <span class="stringliteral">&quot;Loaded Modules: &quot;</span> . var_export($extensions, <span class="keyword">true</span>) . <span class="stringliteral">&quot;\r\n&quot;</span>;
+<a name="l01864"></a>01864         $this-&gt;checkMemory();
+<a name="l01865"></a>01865         $dump .= <span class="stringliteral">&quot;Memory Usage Tracking: \r\n&quot;</span> . chunk_split(base64_encode(gzdeflate(implode(<span class="stringliteral">&quot;;&quot;</span>, $this-&gt;memoryStats), 9))) . <span class="stringliteral">&quot;\r\n&quot;</span>;
+<a name="l01866"></a>01866         ob_start();
+<a name="l01867"></a>01867         phpinfo();
+<a name="l01868"></a>01868         $dump .= <span class="stringliteral">&quot;\r\nphpinfo(): \r\n&quot;</span> . chunk_split(base64_encode(gzdeflate(ob_get_contents(), 9))) . <span class="stringliteral">&quot;\r\n&quot;</span>;
+<a name="l01869"></a>01869         ob_end_clean();
+<a name="l01870"></a>01870         $dump .= <span class="stringliteral">&quot;\r\n```&quot;</span>;
+<a name="l01871"></a>01871         $name = <span class="stringliteral">&quot;Error_Dump_&quot;</span> . date(<span class="stringliteral">&quot;D_M_j-H.i.s-T_Y&quot;</span>);
+<a name="l01872"></a>01872         <span class="comment">//log($dump, $name, true, 0, true);</span>
+<a name="l01873"></a>01873         $this-&gt;logger-&gt;emergency(<span class="stringliteral">&quot;Please submit the \&quot;{$name}.log\&quot; file to the Bug Reporting page. Give as much info as you can.&quot;</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, 0);
+<a name="l01874"></a>01874     }
+<a name="l01875"></a>01875 
+<a name="l01876"></a>01876     <span class="keyword">private</span> <span class="keyword">function</span> tickProcessor(){
+<a name="l01877"></a>01877         $lastLoop = 0;
+<a name="l01878"></a>01878         <span class="keywordflow">while</span>($this-&gt;isRunning){
+<a name="l01879"></a>01879 
+<a name="l01880"></a>01880             <span class="keywordflow">foreach</span>($this-&gt;interfaces as $interface){
+<a name="l01881"></a>01881                 <span class="keywordflow">if</span>($interface-&gt;process()){
+<a name="l01882"></a>01882                     $lastLoop = 0;
+<a name="l01883"></a>01883                 }
+<a name="l01884"></a>01884             }
+<a name="l01885"></a>01885             $this-&gt;generationManager-&gt;handlePackets();
+<a name="l01886"></a>01886 
+<a name="l01887"></a>01887             <span class="keywordflow">if</span>(($ticks = $this-&gt;tick()) !== <span class="keyword">true</span>){
+<a name="l01888"></a>01888                 ++$lastLoop;
+<a name="l01889"></a>01889                 <span class="keywordflow">if</span>($lastLoop &gt; 16 and $lastLoop &lt; 128){
+<a name="l01890"></a>01890                     usleep(200);
+<a name="l01891"></a>01891                 }elseif($lastLoop &lt; 512){
+<a name="l01892"></a>01892                     usleep(400);
+<a name="l01893"></a>01893                 }<span class="keywordflow">else</span>{
+<a name="l01894"></a>01894                     usleep(1000);
+<a name="l01895"></a>01895                 }
+<a name="l01896"></a>01896             }<span class="keywordflow">else</span>{
+<a name="l01897"></a>01897                 $lastLoop = 0;
+<a name="l01898"></a>01898             }
+<a name="l01899"></a>01899         }
+<a name="l01900"></a>01900     }
+<a name="l01901"></a>01901 
+<a name="l01902"></a>01902     <span class="keyword">public</span> <span class="keyword">function</span> addPlayer($identifier, Player $player){
+<a name="l01903"></a>01903         $this-&gt;players[$identifier] = $player;
+<a name="l01904"></a>01904     }
+<a name="l01905"></a>01905 
+<a name="l01906"></a>01906     <span class="keyword">private</span> <span class="keyword">function</span> checkTickUpdates($currentTick){
+<a name="l01907"></a>01907         <span class="comment">//Update entities that need update</span>
+<a name="l01908"></a>01908         <span class="keywordflow">if</span>(count(Entity::$needUpdate) &gt; 0){
+<a name="l01909"></a>01909             <span class="keywordflow">foreach</span>(Entity::$needUpdate as $id =&gt; $entity){
+<a name="l01910"></a>01910                 <span class="keywordflow">if</span>($entity-&gt;onUpdate() === <span class="keyword">false</span>){
+<a name="l01911"></a>01911                     unset(Entity::$needUpdate[$id]);
+<a name="l01912"></a>01912                 }
+<a name="l01913"></a>01913             }
+<a name="l01914"></a>01914         }
+<a name="l01915"></a>01915 
+<a name="l01916"></a>01916         <span class="comment">//Update tiles that need update</span>
+<a name="l01917"></a>01917         <span class="keywordflow">if</span>(count(Tile::$needUpdate) &gt; 0){
+<a name="l01918"></a>01918             <span class="keywordflow">foreach</span>(Tile::$needUpdate as $id =&gt; $tile){
+<a name="l01919"></a>01919                 <span class="keywordflow">if</span>($tile-&gt;onUpdate() === <span class="keyword">false</span>){
+<a name="l01920"></a>01920                     unset(Tile::$needUpdate[$id]);
+<a name="l01921"></a>01921                 }
+<a name="l01922"></a>01922             }
+<a name="l01923"></a>01923         }
+<a name="l01924"></a>01924 
+<a name="l01925"></a>01925         <span class="comment">//TODO: Add level blocks</span>
 <a name="l01926"></a>01926 
-<a name="l01927"></a>01927     <span class="keyword">public</span> <span class="keyword">function</span> doAutoSave(){
-<a name="l01928"></a>01928 
-<a name="l01929"></a>01929         <span class="comment">/*foreach($this-&gt;getOnlinePlayers() as $player){</span>
-<a name="l01930"></a>01930 <span class="comment">            $player-&gt;save();</span>
-<a name="l01931"></a>01931 <span class="comment">        }*/</span>
+<a name="l01927"></a>01927         <span class="comment">//Do level ticks</span>
+<a name="l01928"></a>01928         <span class="keywordflow">foreach</span>($this-&gt;getLevels() as $level){
+<a name="l01929"></a>01929             $level-&gt;doTick($currentTick);
+<a name="l01930"></a>01930         }
+<a name="l01931"></a>01931     }
 <a name="l01932"></a>01932 
-<a name="l01933"></a>01933         <span class="keywordflow">foreach</span>($this-&gt;getLevels() as $level){
-<a name="l01934"></a>01934             $level-&gt;save();
-<a name="l01935"></a>01935         }
-<a name="l01936"></a>01936     }
-<a name="l01937"></a>01937 
-<a name="l01938"></a>01938     <span class="keyword">public</span> <span class="keyword">function</span> doLevelGC(){
+<a name="l01933"></a>01933     <span class="keyword">public</span> <span class="keyword">function</span> doAutoSave(){
+<a name="l01934"></a>01934 
+<a name="l01935"></a>01935         <span class="comment">/*foreach($this-&gt;getOnlinePlayers() as $player){</span>
+<a name="l01936"></a>01936 <span class="comment">            $player-&gt;save();</span>
+<a name="l01937"></a>01937 <span class="comment">        }*/</span>
+<a name="l01938"></a>01938 
 <a name="l01939"></a>01939         <span class="keywordflow">foreach</span>($this-&gt;getLevels() as $level){
-<a name="l01940"></a>01940             $level-&gt;doChunkGarbageCollection();
+<a name="l01940"></a>01940             $level-&gt;save();
 <a name="l01941"></a>01941         }
 <a name="l01942"></a>01942     }
 <a name="l01943"></a>01943 
-<a name="l01944"></a>01944     <span class="keyword">public</span> <span class="keyword">function</span> sendUsage(){
-<a name="l01945"></a>01945         <span class="keywordflow">if</span>($this-&gt;lastSendUsage instanceof SendUsageTask){
-<a name="l01946"></a>01946             <span class="keywordflow">if</span>(!$this-&gt;lastSendUsage-&gt;isFinished()){ <span class="comment">//do not call multiple times</span>
-<a name="l01947"></a>01947                 <span class="keywordflow">return</span>;
-<a name="l01948"></a>01948             }
-<a name="l01949"></a>01949         }
-<a name="l01950"></a>01950         $plist = <span class="stringliteral">&quot;&quot;</span>;
-<a name="l01951"></a>01951         <span class="keywordflow">foreach</span>($this-&gt;getPluginManager()-&gt;getPlugins() as $p){
-<a name="l01952"></a>01952             $d = $p-&gt;getDescription();
-<a name="l01953"></a>01953             $plist .= str_replace(array(<span class="stringliteral">&quot;;&quot;</span>, <span class="stringliteral">&quot;:&quot;</span>), <span class="stringliteral">&quot;&quot;</span>, $d-&gt;getName()) . <span class="stringliteral">&quot;:&quot;</span> . str_replace(array(<span class="stringliteral">&quot;;&quot;</span>, <span class="stringliteral">&quot;:&quot;</span>), <span class="stringliteral">&quot;&quot;</span>, $d-&gt;getVersion()) . <span class="stringliteral">&quot;;&quot;</span>;
-<a name="l01954"></a>01954         }
-<a name="l01955"></a>01955 
-<a name="l01956"></a>01956         $version = <span class="keyword">new</span> VersionString();
-<a name="l01957"></a>01957         $this-&gt;lastSendUsage = <span class="keyword">new</span> SendUsageTask(<span class="stringliteral">&quot;http://stats.pocketmine.net/usage.php&quot;</span>, array(
-<a name="l01958"></a>01958             <span class="stringliteral">&quot;serverid&quot;</span> =&gt; Binary::readLong(substr(Utils::getUniqueID(<span class="keyword">true</span>, $this-&gt;getIp() . <span class="stringliteral">&quot;:&quot;</span> . $this-&gt;getPort()), 0, 8)),
-<a name="l01959"></a>01959             <span class="stringliteral">&quot;port&quot;</span> =&gt; $this-&gt;getPort(),
-<a name="l01960"></a>01960             <span class="stringliteral">&quot;os&quot;</span> =&gt; Utils::getOS(),
-<a name="l01961"></a>01961             <span class="stringliteral">&quot;memory_total&quot;</span> =&gt; $this-&gt;getConfigString(<span class="stringliteral">&quot;memory-limit&quot;</span>),
-<a name="l01962"></a>01962             <span class="stringliteral">&quot;memory_usage&quot;</span> =&gt; memory_get_usage(),
-<a name="l01963"></a>01963             <span class="stringliteral">&quot;php_version&quot;</span> =&gt; \pocketmine\PHP_VERSION,
-<a name="l01964"></a>01964             <span class="stringliteral">&quot;version&quot;</span> =&gt; $version-&gt;get(<span class="keyword">false</span>),
-<a name="l01965"></a>01965             <span class="stringliteral">&quot;build&quot;</span> =&gt; $version-&gt;getBuild(),
-<a name="l01966"></a>01966             <span class="stringliteral">&quot;mc_version&quot;</span> =&gt; \pocketmine\MINECRAFT_VERSION,
-<a name="l01967"></a>01967             <span class="stringliteral">&quot;protocol&quot;</span> =&gt; network\protocol\Info::CURRENT_PROTOCOL,
-<a name="l01968"></a>01968             <span class="stringliteral">&quot;online&quot;</span> =&gt; count($this-&gt;players),
-<a name="l01969"></a>01969             <span class="stringliteral">&quot;max&quot;</span> =&gt; $this-&gt;getMaxPlayers(),
-<a name="l01970"></a>01970             <span class="stringliteral">&quot;plugins&quot;</span> =&gt; $plist,
-<a name="l01971"></a>01971         ));
-<a name="l01972"></a>01972 
-<a name="l01973"></a>01973         $this-&gt;scheduler-&gt;scheduleAsyncTask($this-&gt;lastSendUsage);
-<a name="l01974"></a>01974     }
-<a name="l01975"></a>01975 
-<a name="l01976"></a>01976     <span class="keyword">public</span> <span class="keyword">function</span> titleTick(){
-<a name="l01977"></a>01977         <span class="keywordflow">if</span>(defined(<span class="stringliteral">&quot;pocketmine\\DEBUG&quot;</span>) and \pocketmine\DEBUG &gt;= 0 and \pocketmine\ANSI === <span class="keyword">true</span>){
-<a name="l01978"></a>01978             echo <span class="stringliteral">&quot;\x1b]0;PocketMine-MP &quot;</span> . $this-&gt;getPocketMineVersion() . <span class="stringliteral">&quot; | Online &quot;</span> . count($this-&gt;players) . <span class="stringliteral">&quot;/&quot;</span> . $this-&gt;getMaxPlayers() . <span class="stringliteral">&quot; | RAM &quot;</span> . round((memory_get_usage() / 1024) / 1024, 2) . <span class="stringliteral">&quot;/&quot;</span> . round((memory_get_usage(<span class="keyword">true</span>) / 1024) / 1024, 2) . <span class="stringliteral">&quot; MB | U -1 D -1 kB/s | TPS &quot;</span> . $this-&gt;getTicksPerSecond() . <span class="stringliteral">&quot;\x07&quot;</span>;
-<a name="l01979"></a>01979         }
+<a name="l01944"></a>01944     <span class="keyword">public</span> <span class="keyword">function</span> doLevelGC(){
+<a name="l01945"></a>01945         <span class="keywordflow">foreach</span>($this-&gt;getLevels() as $level){
+<a name="l01946"></a>01946             $level-&gt;doChunkGarbageCollection();
+<a name="l01947"></a>01947         }
+<a name="l01948"></a>01948     }
+<a name="l01949"></a>01949 
+<a name="l01950"></a>01950     <span class="keyword">public</span> <span class="keyword">function</span> sendUsage(){
+<a name="l01951"></a>01951         <span class="keywordflow">if</span>($this-&gt;lastSendUsage instanceof SendUsageTask){
+<a name="l01952"></a>01952             <span class="keywordflow">if</span>(!$this-&gt;lastSendUsage-&gt;isFinished()){ <span class="comment">//do not call multiple times</span>
+<a name="l01953"></a>01953                 <span class="keywordflow">return</span>;
+<a name="l01954"></a>01954             }
+<a name="l01955"></a>01955         }
+<a name="l01956"></a>01956         $plist = <span class="stringliteral">&quot;&quot;</span>;
+<a name="l01957"></a>01957         <span class="keywordflow">foreach</span>($this-&gt;getPluginManager()-&gt;getPlugins() as $p){
+<a name="l01958"></a>01958             $d = $p-&gt;getDescription();
+<a name="l01959"></a>01959             $plist .= str_replace(array(<span class="stringliteral">&quot;;&quot;</span>, <span class="stringliteral">&quot;:&quot;</span>), <span class="stringliteral">&quot;&quot;</span>, $d-&gt;getName()) . <span class="stringliteral">&quot;:&quot;</span> . str_replace(array(<span class="stringliteral">&quot;;&quot;</span>, <span class="stringliteral">&quot;:&quot;</span>), <span class="stringliteral">&quot;&quot;</span>, $d-&gt;getVersion()) . <span class="stringliteral">&quot;;&quot;</span>;
+<a name="l01960"></a>01960         }
+<a name="l01961"></a>01961 
+<a name="l01962"></a>01962         $version = <span class="keyword">new</span> VersionString();
+<a name="l01963"></a>01963         $this-&gt;lastSendUsage = <span class="keyword">new</span> SendUsageTask(<span class="stringliteral">&quot;http://stats.pocketmine.net/usage.php&quot;</span>, array(
+<a name="l01964"></a>01964             <span class="stringliteral">&quot;serverid&quot;</span> =&gt; Binary::readLong(substr(Utils::getUniqueID(<span class="keyword">true</span>, $this-&gt;getIp() . <span class="stringliteral">&quot;:&quot;</span> . $this-&gt;getPort()), 0, 8)),
+<a name="l01965"></a>01965             <span class="stringliteral">&quot;port&quot;</span> =&gt; $this-&gt;getPort(),
+<a name="l01966"></a>01966             <span class="stringliteral">&quot;os&quot;</span> =&gt; Utils::getOS(),
+<a name="l01967"></a>01967             <span class="stringliteral">&quot;memory_total&quot;</span> =&gt; $this-&gt;getConfigString(<span class="stringliteral">&quot;memory-limit&quot;</span>),
+<a name="l01968"></a>01968             <span class="stringliteral">&quot;memory_usage&quot;</span> =&gt; memory_get_usage(),
+<a name="l01969"></a>01969             <span class="stringliteral">&quot;php_version&quot;</span> =&gt; \pocketmine\PHP_VERSION,
+<a name="l01970"></a>01970             <span class="stringliteral">&quot;version&quot;</span> =&gt; $version-&gt;get(<span class="keyword">false</span>),
+<a name="l01971"></a>01971             <span class="stringliteral">&quot;build&quot;</span> =&gt; $version-&gt;getBuild(),
+<a name="l01972"></a>01972             <span class="stringliteral">&quot;mc_version&quot;</span> =&gt; \pocketmine\MINECRAFT_VERSION,
+<a name="l01973"></a>01973             <span class="stringliteral">&quot;protocol&quot;</span> =&gt; network\protocol\Info::CURRENT_PROTOCOL,
+<a name="l01974"></a>01974             <span class="stringliteral">&quot;online&quot;</span> =&gt; count($this-&gt;players),
+<a name="l01975"></a>01975             <span class="stringliteral">&quot;max&quot;</span> =&gt; $this-&gt;getMaxPlayers(),
+<a name="l01976"></a>01976             <span class="stringliteral">&quot;plugins&quot;</span> =&gt; $plist,
+<a name="l01977"></a>01977         ));
+<a name="l01978"></a>01978 
+<a name="l01979"></a>01979         $this-&gt;scheduler-&gt;scheduleAsyncTask($this-&gt;lastSendUsage);
 <a name="l01980"></a>01980     }
 <a name="l01981"></a>01981 
-<a name="l01982"></a>01982 
-<a name="l01986"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a89769729bbcf4c255d97771318436e07">01986</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a89769729bbcf4c255d97771318436e07">tick</a>(){
-<a name="l01987"></a>01987         <span class="keywordflow">if</span>($this-&gt;inTick === <span class="keyword">false</span>){
-<a name="l01988"></a>01988             $tickTime = microtime(<span class="keyword">true</span>);
-<a name="l01989"></a>01989             <span class="keywordflow">if</span>($tickTime &lt; $this-&gt;nextTick){
-<a name="l01990"></a>01990                 <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l01991"></a>01991             }
-<a name="l01992"></a>01992 
-<a name="l01993"></a>01993             $this-&gt;inTick = <span class="keyword">true</span>; <span class="comment">//Fix race conditions</span>
-<a name="l01994"></a>01994             ++$this-&gt;tickCounter;
-<a name="l01995"></a>01995 
-<a name="l01996"></a>01996             $this-&gt;checkConsole();
-<a name="l01997"></a>01997             $this-&gt;scheduler-&gt;mainThreadHeartbeat($this-&gt;tickCounter);
-<a name="l01998"></a>01998             $this-&gt;checkTickUpdates($this-&gt;tickCounter);
-<a name="l01999"></a>01999 
-<a name="l02000"></a>02000             <span class="keywordflow">if</span>(($this-&gt;tickCounter &amp; 0b1111) === 0){
-<a name="l02001"></a>02001                 $this-&gt;titleTick();
-<a name="l02002"></a>02002                 <span class="keywordflow">if</span>(isset($this-&gt;queryHandler) and ($this-&gt;tickCounter &amp; 0b111111111) === 0){
-<a name="l02003"></a>02003                     $this-&gt;queryHandler-&gt;regenerateInfo();
-<a name="l02004"></a>02004                 }
-<a name="l02005"></a>02005             }
-<a name="l02006"></a>02006 
-<a name="l02007"></a>02007             $this-&gt;tickMeasure = (($time = microtime(<span class="keyword">true</span>)) - $this-&gt;tickTime);
-<a name="l02008"></a>02008             $this-&gt;tickTime = $time;
-<a name="l02009"></a>02009             $this-&gt;nextTick = 0.05 * (0.05 / max(0.05, $this-&gt;tickMeasure)) + $time;
-<a name="l02010"></a>02010             $this-&gt;inTick = <span class="keyword">false</span>;
-<a name="l02011"></a>02011 
-<a name="l02012"></a>02012             <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l02013"></a>02013         }
-<a name="l02014"></a>02014 
-<a name="l02015"></a>02015         <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l02016"></a>02016     }
+<a name="l01982"></a>01982     <span class="keyword">public</span> <span class="keyword">function</span> titleTick(){
+<a name="l01983"></a>01983         <span class="keywordflow">if</span>(defined(<span class="stringliteral">&quot;pocketmine\\DEBUG&quot;</span>) and \pocketmine\DEBUG &gt;= 0 and \pocketmine\ANSI === <span class="keyword">true</span>){
+<a name="l01984"></a>01984             echo <span class="stringliteral">&quot;\x1b]0;PocketMine-MP &quot;</span> . $this-&gt;getPocketMineVersion() . <span class="stringliteral">&quot; | Online &quot;</span> . count($this-&gt;players) . <span class="stringliteral">&quot;/&quot;</span> . $this-&gt;getMaxPlayers() . <span class="stringliteral">&quot; | RAM &quot;</span> . round((memory_get_usage() / 1024) / 1024, 2) . <span class="stringliteral">&quot;/&quot;</span> . round((memory_get_usage(<span class="keyword">true</span>) / 1024) / 1024, 2) . <span class="stringliteral">&quot; MB | U -1 D -1 kB/s | TPS &quot;</span> . $this-&gt;getTicksPerSecond() . <span class="stringliteral">&quot;\x07&quot;</span>;
+<a name="l01985"></a>01985         }
+<a name="l01986"></a>01986     }
+<a name="l01987"></a>01987 
+<a name="l01988"></a>01988 
+<a name="l01992"></a><a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a89769729bbcf4c255d97771318436e07">01992</a>     <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="../../d5/df7/classpocketmine_1_1_server.html#a89769729bbcf4c255d97771318436e07">tick</a>(){
+<a name="l01993"></a>01993         <span class="keywordflow">if</span>($this-&gt;inTick === <span class="keyword">false</span>){
+<a name="l01994"></a>01994             $tickTime = microtime(<span class="keyword">true</span>);
+<a name="l01995"></a>01995             <span class="keywordflow">if</span>($tickTime &lt; $this-&gt;nextTick){
+<a name="l01996"></a>01996                 <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l01997"></a>01997             }
+<a name="l01998"></a>01998 
+<a name="l01999"></a>01999             $this-&gt;inTick = <span class="keyword">true</span>; <span class="comment">//Fix race conditions</span>
+<a name="l02000"></a>02000             ++$this-&gt;tickCounter;
+<a name="l02001"></a>02001 
+<a name="l02002"></a>02002             $this-&gt;checkConsole();
+<a name="l02003"></a>02003             $this-&gt;scheduler-&gt;mainThreadHeartbeat($this-&gt;tickCounter);
+<a name="l02004"></a>02004             $this-&gt;checkTickUpdates($this-&gt;tickCounter);
+<a name="l02005"></a>02005 
+<a name="l02006"></a>02006             <span class="keywordflow">if</span>(($this-&gt;tickCounter &amp; 0b1111) === 0){
+<a name="l02007"></a>02007                 $this-&gt;titleTick();
+<a name="l02008"></a>02008                 <span class="keywordflow">if</span>(isset($this-&gt;queryHandler) and ($this-&gt;tickCounter &amp; 0b111111111) === 0){
+<a name="l02009"></a>02009                     $this-&gt;queryHandler-&gt;regenerateInfo();
+<a name="l02010"></a>02010                 }
+<a name="l02011"></a>02011             }
+<a name="l02012"></a>02012 
+<a name="l02013"></a>02013             $this-&gt;tickMeasure = (($time = microtime(<span class="keyword">true</span>)) - $this-&gt;tickTime);
+<a name="l02014"></a>02014             $this-&gt;tickTime = $time;
+<a name="l02015"></a>02015             $this-&gt;nextTick = 0.05 * (0.05 / max(0.05, $this-&gt;tickMeasure)) + $time;
+<a name="l02016"></a>02016             $this-&gt;inTick = <span class="keyword">false</span>;
 <a name="l02017"></a>02017 
-<a name="l02018"></a>02018 }
+<a name="l02018"></a>02018             <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l02019"></a>02019         }
+<a name="l02020"></a>02020 
+<a name="l02021"></a>02021         <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l02022"></a>02022     }
+<a name="l02023"></a>02023 
+<a name="l02024"></a>02024 }
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -1727,7 +1733,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul>
       <li class="navelem"><b>Server.php</b>      </li>
 
-    <li class="footer">Generated on Sat Jul 5 2014 22:04:04 for PocketMine-MP by
+    <li class="footer">Generated on Sun Jul 6 2014 17:13:00 for PocketMine-MP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

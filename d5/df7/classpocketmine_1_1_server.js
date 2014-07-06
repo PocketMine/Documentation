@@ -7,7 +7,7 @@ var classpocketmine_1_1_server =
     [ "addRecipe", "d5/df7/classpocketmine_1_1_server.html#ac801d7f3320a54acfcdf0496c2ca7795", null ],
     [ "addWhitelist", "d5/df7/classpocketmine_1_1_server.html#aa49d4ae6654a2661dc8d3486d03a74ca", null ],
     [ "broadcastMessage", "d5/df7/classpocketmine_1_1_server.html#a42a1b94e72b0cb2072709c314ea0e78a", null ],
-    [ "broadcastPacket", "d5/df7/classpocketmine_1_1_server.html#a2713a3d6f609a81b92d53a8a8af68b42", null ],
+    [ "broadcastPacket", "d5/df7/classpocketmine_1_1_server.html#a3f4968a94dbe06c71c5649fd1dd41e7f", null ],
     [ "checkConsole", "d5/df7/classpocketmine_1_1_server.html#a50e8c3a91b08d9af6975d1e336bdca10", null ],
     [ "checkMemory", "d5/df7/classpocketmine_1_1_server.html#ade3e51fcd56405466cedfc20762e0228", null ],
     [ "checkTicks", "d5/df7/classpocketmine_1_1_server.html#ae53e197821fa8b72467209e127a7b5a3", null ],

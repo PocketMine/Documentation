@@ -1,5 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$da/da3/interfacepocketmine_1_1inventory_1_1_transaction_group.html" title="pocketmine\\inventory\\TransactionGroup" alt="" coords="5,5,259,35"/>
-<area shape="rect" id="node3" href="$df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html" title="pocketmine\\inventory\\SimpleTransactionGroup" alt="" coords="307,5,600,35"/>
-<area shape="rect" id="node5" href="$d6/d42/classpocketmine_1_1inventory_1_1_crafting_transaction_group.html" title="pocketmine\\inventory\\CraftingTransactionGroup" alt="" coords="648,5,947,35"/>
+<area shape="rect" id="node1" href="$d8/d63/interfacepocketmine_1_1inventory_1_1_transaction.html" title="pocketmine\\inventory\\Transaction" alt="" coords="5,5,224,35"/>
+<area shape="rect" id="node3" href="$db/db5/classpocketmine_1_1inventory_1_1_base_transaction.html" title="pocketmine\\inventory\\BaseTransaction" alt="" coords="272,5,520,35"/>
 </map>

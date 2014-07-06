@@ -200,6 +200,12 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2c/classpocketmine_1_1_player.html#a3684d481cd56f1cf6efa1418f1ed9b34">close</a> ($message=&quot;&quot;, $reason=&quot;generic reason&quot;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2c/classpocketmine_1_1_player.html#a5ca632b75ba3c04f5964e5092b38032e">save</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2c/classpocketmine_1_1_player.html#a890409beec631f5cbc42d602ad94eb2b">getName</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a199dc9337bc5954716c728931d6618c4"></a><!-- doxytag: member="pocketmine::Player::kill" ref="a199dc9337bc5954716c728931d6618c4" args="()" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>kill</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf752e34bbdc3f1bfb9e77f804f12445"></a><!-- doxytag: member="pocketmine::Player::setHealth" ref="adf752e34bbdc3f1bfb9e77f804f12445" args="($amount)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>setHealth</b> ($amount)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6fc1bf61484ec0aacddd1a2f9d460cf"></a><!-- doxytag: member="pocketmine::Player::attack" ref="ab6fc1bf61484ec0aacddd1a2f9d460cf" args="($damage, $source=EntityDamageEvent::CAUSE_MAGIC)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>attack</b> ($damage, $source=EntityDamageEvent::CAUSE_MAGIC)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2c/classpocketmine_1_1_player.html#ab6f53e7a66f91513248608f9823e7bef">getWindowId</a> (Inventory $inventory)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2c/classpocketmine_1_1_player.html#abbb921d948b40349700ab6f956e80f67">addWindow</a> (Inventory $inventory, $forceId=null)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa911b0cb5d837f19b25c788c6fcb1e7"></a><!-- doxytag: member="pocketmine::Player::removeWindow" ref="afa911b0cb5d837f19b25c788c6fcb1e7" args="(Inventory $inventory)" -->
@@ -310,7 +316,7 @@ Protected Attributes</h2></td></tr>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Main class that handles networking, recovery, and packet sending to the server part </p>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00092">92</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00098">98</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4cda231053a2c4e8ca15d57c06aff1ef"></a><!-- doxytag: member="pocketmine::Player::__construct" ref="a4cda231053a2c4e8ca15d57c06aff1ef" args="(SourceInterface $interface, $clientID, $ip, $port)" -->
 <div class="memitem">
@@ -358,7 +364,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00376">376</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00382">382</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -403,7 +409,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>permission </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00337">337</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00343">343</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -441,7 +447,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02110">2110</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02209">2209</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -467,7 +473,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00884">884</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00890">890</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -493,11 +499,11 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00255">255</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00261">261</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
-<p>References <a class="el" href="../../d9/d76/_player_8php_source.html#l02084">pocketmine\Player\getName()</a>.</p>
+<p>References <a class="el" href="../../d9/d76/_player_8php_source.html#l02117">pocketmine\Player\getName()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d76/_player_8php_source.html#l00214">pocketmine\Player\spawnTo()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d76/_player_8php_source.html#l00220">pocketmine\Player\spawnTo()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -543,7 +549,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00517">517</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00523">523</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -562,7 +568,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <p>WARNING: Do not use this, it's only for internal use. Changes to this function won't be recorded on the version. </p>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00820">820</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00826">826</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -598,7 +604,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02020">2020</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02053">2053</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -636,9 +642,9 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int|bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00720">720</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00726">726</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/d3c/_human_8php_source.html#l00167">pocketmine\entity\Human\despawnFrom()</a>, <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00236">pocketmine\entity\Entity\despawnFrom()</a>, <a class="el" href="../../df/da7/_container_inventory_8php_source.html#l00049">pocketmine\inventory\ContainerInventory\onClose()</a>, <a class="el" href="../../df/da7/_container_inventory_8php_source.html#l00030">pocketmine\inventory\ContainerInventory\onOpen()</a>, <a class="el" href="../../d1/d3c/_human_8php_source.html#l00133">pocketmine\entity\Human\spawnTo()</a>, and <a class="el" href="../../d5/d2f/_dropped_item_8php_source.html#l00195">pocketmine\entity\DroppedItem\spawnTo()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/d3c/_human_8php_source.html#l00171">pocketmine\entity\Human\despawnFrom()</a>, <a class="el" href="../../d1/d1d/_entity_8php_source.html#l00240">pocketmine\entity\Entity\despawnFrom()</a>, <a class="el" href="../../df/da7/_container_inventory_8php_source.html#l00049">pocketmine\inventory\ContainerInventory\onClose()</a>, <a class="el" href="../../df/da7/_container_inventory_8php_source.html#l00030">pocketmine\inventory\ContainerInventory\onOpen()</a>, <a class="el" href="../../d1/d3c/_human_8php_source.html#l00137">pocketmine\entity\Human\spawnTo()</a>, and <a class="el" href="../../d5/d2f/_dropped_item_8php_source.html#l00197">pocketmine\entity\DroppedItem\spawnTo()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -673,9 +679,9 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00223">223</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00229">229</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d76/_player_8php_source.html#l00262">pocketmine\Player\hidePlayer()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d76/_player_8php_source.html#l00268">pocketmine\Player\hidePlayer()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -722,7 +728,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool|int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00746">746</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00752">752</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -742,7 +748,7 @@ Protected Attributes</h2></td></tr>
 <p>Gets the player IP address</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00469">469</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00475">475</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d5/dec/_server_8php_source.html#l00802">pocketmine\Server\removePlayer()</a>.</p>
 
@@ -774,7 +780,7 @@ Protected Attributes</h2></td></tr>
 <p>Gets the "friendly" name to display of this player to use in the chat.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00435">435</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00441">441</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -793,7 +799,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>permission[] </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00365">365</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00371">371</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -814,7 +820,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d6e/interfacepocketmine_1_1_i_player.html#a4aaf1d1194396c8884e89e3f57798e1a">pocketmine\IPlayer</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00195">195</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00201">201</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -833,7 +839,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00908">908</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00914">914</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -854,7 +860,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d6e/interfacepocketmine_1_1_i_player.html#a29d22d7424db1a88ca44265babb6f70f">pocketmine\IPlayer</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00199">199</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00205">205</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -876,9 +882,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d6e/interfacepocketmine_1_1_i_player.html#a620a0b5334181d9e791999710d8000b6">pocketmine\IPlayer</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02084">2084</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02117">2117</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d76/_player_8php_source.html#l00255">pocketmine\Player\canSee()</a>, <a class="el" href="../../d9/d76/_player_8php_source.html#l00262">pocketmine\Player\hidePlayer()</a>, and <a class="el" href="../../d9/d76/_player_8php_source.html#l00273">pocketmine\Player\showPlayer()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d76/_player_8php_source.html#l00261">pocketmine\Player\canSee()</a>, <a class="el" href="../../d9/d76/_player_8php_source.html#l00268">pocketmine\Player\hidePlayer()</a>, and <a class="el" href="../../d9/d76/_player_8php_source.html#l00279">pocketmine\Player\showPlayer()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -907,7 +913,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00449">449</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00455">455</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -928,7 +934,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d6e/interfacepocketmine_1_1_i_player.html#aa63cb81f61ab79e4bec1b56e2b93c88a">pocketmine\IPlayer</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00191">191</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00197">197</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -947,7 +953,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00476">476</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00482">482</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d5/dec/_server_8php_source.html#l00802">pocketmine\Server\removePlayer()</a>.</p>
 
@@ -978,9 +984,9 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00239">239</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00245">245</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d1/d3c/_human_8php_source.html#l00133">pocketmine\entity\Human\spawnTo()</a>.</p>
+<p>Referenced by <a class="el" href="../../d1/d3c/_human_8php_source.html#l00137">pocketmine\entity\Human\spawnTo()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1009,7 +1015,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="../../d5/df7/classpocketmine_1_1_server.html">Server</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00232">232</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00238">238</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d9/d64/_base_inventory_8php_source.html#l00353">pocketmine\inventory\BaseInventory\open()</a>.</p>
 
@@ -1040,7 +1046,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>Position </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00508">508</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00514">514</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1066,7 +1072,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02094">2094</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02193">2193</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 <p>Referenced by <a class="el" href="../../df/da7/_container_inventory_8php_source.html#l00049">pocketmine\inventory\ContainerInventory\onClose()</a>, and <a class="el" href="../../df/da7/_container_inventory_8php_source.html#l00030">pocketmine\inventory\ContainerInventory\onOpen()</a>.</p>
 
@@ -1104,7 +1110,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00409">409</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00415">415</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1130,7 +1136,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00326">326</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00332">332</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1151,7 +1157,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d6e/interfacepocketmine_1_1_i_player.html#a0635ce863deec720703d164a710cff5a">pocketmine\IPlayer</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00203">203</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00209">209</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1176,9 +1182,9 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00262">262</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00268">268</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
-<p>References <a class="el" href="../../d9/d76/_player_8php_source.html#l00223">pocketmine\Player\despawnFrom()</a>, and <a class="el" href="../../d9/d76/_player_8php_source.html#l02084">pocketmine\Player\getName()</a>.</p>
+<p>References <a class="el" href="../../d9/d76/_player_8php_source.html#l00229">pocketmine\Player\despawnFrom()</a>, and <a class="el" href="../../d9/d76/_player_8php_source.html#l02117">pocketmine\Player\getName()</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1209,7 +1215,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d6e/interfacepocketmine_1_1_i_player.html#a98074b929c27c3da038c3cd654cb7c9e">pocketmine\IPlayer</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00167">167</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00173">173</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1228,7 +1234,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00426">426</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00432">432</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1249,7 +1255,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d6e/interfacepocketmine_1_1_i_player.html#a2fdc6e0ecf02fb6e7c9b8d86cc13578f">pocketmine\IPlayer</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00284">284</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00290">290</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d5/dec/_server_8php_source.html#l00802">pocketmine\Server\removePlayer()</a>.</p>
 
@@ -1280,7 +1286,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00291">291</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00297">297</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1306,7 +1312,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00317">317</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00323">323</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1325,7 +1331,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00483">483</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00489">489</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1346,7 +1352,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d6e/interfacepocketmine_1_1_i_player.html#aa3ba2e229108dd189703aa31659f2b47">pocketmine\IPlayer</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00179">179</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00185">185</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1373,7 +1379,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01968">1968</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02001">2001</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1393,7 +1399,7 @@ Protected Attributes</h2></td></tr>
 <p>WARNING: Do not use this, it's only for internal use. Changes to this function won't be recorded on the version.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00655">655</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00661">661</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1418,7 +1424,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00398">398</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00404">404</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1443,7 +1449,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00344">344</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00350">350</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1462,7 +1468,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <p>Handles player data saving </p>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02057">2057</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02090">2090</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1488,7 +1494,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l01986">1986</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l02019">2019</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1508,7 +1514,7 @@ Protected Attributes</h2></td></tr>
 <p>Sends, if available, the next ordered chunk to the client</p>
 <p>WARNING: Do not use this, it's only for internal use. Changes to this function won't be recorded on the version. </p>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00564">564</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00570">570</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1535,7 +1541,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00968">968</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00974">974</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1562,7 +1568,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d6e/interfacepocketmine_1_1_i_player.html#ab4b58cd74377a70b1692308be9bdfd8b">pocketmine\IPlayer</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00171">171</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00177">177</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1587,7 +1593,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00442">442</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00448">448</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1614,7 +1620,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00920">920</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00926">926</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1639,7 +1645,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00456">456</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00462">462</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1664,7 +1670,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00298">298</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00304">304</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1689,7 +1695,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00246">246</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00252">252</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1715,7 +1721,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00795">795</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00801">801</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1742,7 +1748,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d1/d6e/interfacepocketmine_1_1_i_player.html#afb2289ba43ea2cdfe99d54dffe5217ef">pocketmine\IPlayer</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00183">183</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00189">189</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 </div>
 </div>
@@ -1767,9 +1773,9 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00273">273</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00279">279</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
-<p>References <a class="el" href="../../d9/d76/_player_8php_source.html#l02084">pocketmine\Player\getName()</a>, and <a class="el" href="../../d9/d76/_player_8php_source.html#l00214">pocketmine\Player\spawnTo()</a>.</p>
+<p>References <a class="el" href="../../d9/d76/_player_8php_source.html#l02117">pocketmine\Player\getName()</a>, and <a class="el" href="../../d9/d76/_player_8php_source.html#l00220">pocketmine\Player\spawnTo()</a>.</p>
 
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1805,7 +1811,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>boolean </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00771">771</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00777">777</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
 <p>Referenced by <a class="el" href="../../d5/d28/block_2_bed_8php_source.html#l00036">pocketmine\block\Bed\onActivate()</a>.</p>
 
@@ -1842,11 +1848,11 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00214">214</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d76/_player_8php_source.html#l00220">220</a> of file <a class="el" href="../../d9/d76/_player_8php_source.html">Player.php</a>.</p>
 
-<p>References <a class="el" href="../../d9/d76/_player_8php_source.html#l00255">pocketmine\Player\canSee()</a>.</p>
+<p>References <a class="el" href="../../d9/d76/_player_8php_source.html#l00261">pocketmine\Player\canSee()</a>.</p>
 
-<p>Referenced by <a class="el" href="../../d9/d76/_player_8php_source.html#l00273">pocketmine\Player\showPlayer()</a>.</p>
+<p>Referenced by <a class="el" href="../../d9/d76/_player_8php_source.html#l00279">pocketmine\Player\showPlayer()</a>.</p>
 
 <p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1894,7 +1900,7 @@ Protected Attributes</h2></td></tr>
       <li class="navelem"><a class="el" href="../../d2/d69/namespacepocketmine.html">pocketmine</a>      </li>
       <li class="navelem"><a class="el" href="../../df/d2c/classpocketmine_1_1_player.html">Player</a>      </li>
 
-    <li class="footer">Generated on Sat Jul 5 2014 22:04:04 for PocketMine-MP by
+    <li class="footer">Generated on Sun Jul 6 2014 17:13:00 for PocketMine-MP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>
