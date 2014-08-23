@@ -29,6 +29,6 @@ var classpocketmine_1_1utils_1_1_binary =
     [ "writeMetadata", "d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a503f6dd81912d3e7930e16189a886dec", null ],
     [ "writeShort", "d8/d1f/classpocketmine_1_1utils_1_1_binary.html#adf4dec7ca25242cf5a438480b0f2c530", null ],
     [ "writeTriad", "d8/d1f/classpocketmine_1_1utils_1_1_binary.html#ac6887f4f8e7ba6ea08ae9bf5965131d3", null ],
-    [ "BIG_ENDIAN", "d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a20e36ecc4c1669cae5070e9e2491f912", null ],
-    [ "LITTLE_ENDIAN", "d8/d1f/classpocketmine_1_1utils_1_1_binary.html#afe5877d3b418a64effc919f07941e7b1", null ]
+    [ "BIG_ENDIAN", "d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a9e68a011e045cc89b57d0135a7723e4b", null ],
+    [ "LITTLE_ENDIAN", "d8/d1f/classpocketmine_1_1utils_1_1_binary.html#a4d745eadda51fcbd64e5a61b8dda16f6", null ]
 ];

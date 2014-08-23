@@ -1,0 +1,6 @@
+<map id="pocketmine\level\format\generic\BaseFullChunk\getZ" name="pocketmine\level\format\generic\BaseFullChunk\getZ">
+<area shape="rect" id="node3" href="$da/d9a/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_full_chunk.html#aa17851e4c448fab216cfcc57f8b63588" title="pocketmine\\level\\format\l\\generic\\BaseFullChunk\l\\isLoaded" alt="" coords="260,5,420,69"/>
+<area shape="rect" id="node5" href="$da/d9a/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_full_chunk.html#aa6162b740a19a8021ff802d5fc421c59" title="pocketmine\\level\\format\l\\generic\\BaseFullChunk\\load" alt="" coords="245,93,435,139"/>
+<area shape="rect" id="node7" href="$dc/de8/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_chunk.html#a2ffced285cefc755d5fb34ce20f75976" title="pocketmine\\level\\format\l\\generic\\BaseChunk\\load" alt="" coords="256,162,424,209"/>
+<area shape="rect" id="node9" href="$da/d9a/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_full_chunk.html#a0cd95594b690c3f8bb09937f2905b5c5" title="pocketmine\\level\\format\l\\generic\\BaseFullChunk\l\\unload" alt="" coords="260,232,420,296"/>
+</map>

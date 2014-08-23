@@ -1,4 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#a2a6455b053f0cd7d4684de964c4f5fc7" title="pocketmine\\command\\CommandSender\\getName" alt="" coords="457,5,769,35"/>
-<area shape="rect" id="node5" href="$d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#a84dfc3ca6b3d6aec33ca38b9ff39af1e" title="pocketmine\\command\\CommandSender\\sendMessage" alt="" coords="444,59,783,88"/>
+<map id="pocketmine\command\Command\broadcastCommandMessage" name="pocketmine\command\Command\broadcastCommandMessage">
+<area shape="rect" id="node3" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="320,5,523,35"/>
+<area shape="rect" id="node5" href="$d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#a2a6455b053f0cd7d4684de964c4f5fc7" title="pocketmine\\command\l\\CommandSender\\getName" alt="" coords="329,58,513,105"/>
+<area shape="rect" id="node7" href="$d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html#a84dfc3ca6b3d6aec33ca38b9ff39af1e" title="pocketmine\\command\l\\CommandSender\\sendMessage" alt="" coords="316,127,527,174"/>
 </map>

@@ -1,22 +1,23 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$df/d0c/classpocketmine_1_1entity_1_1_living.html" title="{pocketmine\\entity\\Living\n|# $gravity\l# $drag\l|+ getName()\l+ attack()\l+ heal()\l+ kill()\l+ getDrops()\l# initEntity()\l}" alt="" coords="1528,139,1691,328"/>
-<area shape="rect" id="node5" href="$d1/db7/classpocketmine_1_1entity_1_1_creature.html" title="{pocketmine\\entity\\Creature\n||}" alt="" coords="1423,376,1601,461"/>
-<area shape="rect" id="node41" href="$d2/d19/classpocketmine_1_1entity_1_1_slime.html" title="{pocketmine\\entity\\Slime\n||}" alt="" coords="1625,376,1788,461"/>
-<area shape="rect" id="node7" href="$d9/d0a/classpocketmine_1_1entity_1_1_animal.html" title="{pocketmine\\entity\\Animal\n||}" alt="" coords="563,596,731,681"/>
-<area shape="rect" id="node21" href="$d4/ddf/classpocketmine_1_1entity_1_1_human.html" title="{pocketmine\\entity\\Human\n|+ $width\l+ $length\l+ $height\l# $nameTag\l# $inventory\l|+ getInventory()\l+ getName()\l+ saveNBT()\l+ spawnTo()\l+ despawnFrom()\l+ getData()\l# initEntity()\l}" alt="" coords="1328,509,1499,768"/>
-<area shape="rect" id="node23" href="$d5/d2b/classpocketmine_1_1entity_1_1_monster.html" title="{pocketmine\\entity\\Monster\n||}" alt="" coords="1523,596,1699,681"/>
-<area shape="rect" id="node39" href="$d9/d6b/classpocketmine_1_1entity_1_1_villager.html" title="{pocketmine\\entity\\Villager\n|+ FARMER\l+ LIBRARIAN\l+ PRIEST\l+ BLACKSMITH\l+ BUTCHER\l|+ setProfession()\l}" alt="" coords="1723,561,1893,716"/>
-<area shape="rect" id="node9" href="$d9/d0b/classpocketmine_1_1entity_1_1_chicken.html" title="{pocketmine\\entity\\Chicken\n||}" alt="" coords="5,816,181,901"/>
-<area shape="rect" id="node11" href="$d4/d80/classpocketmine_1_1entity_1_1_cow.html" title="{pocketmine\\entity\\Cow\n||}" alt="" coords="205,816,360,901"/>
-<area shape="rect" id="node13" href="$d3/d91/classpocketmine_1_1entity_1_1_ocelot.html" title="{pocketmine\\entity\\Ocelot\n||}" alt="" coords="384,816,549,901"/>
-<area shape="rect" id="node15" href="$d8/d3e/classpocketmine_1_1entity_1_1_pig.html" title="{pocketmine\\entity\\Pig\n||}" alt="" coords="573,816,720,901"/>
-<area shape="rect" id="node17" href="$d4/d1e/classpocketmine_1_1entity_1_1_sheep.html" title="{pocketmine\\entity\\Sheep\n||}" alt="" coords="744,816,909,901"/>
-<area shape="rect" id="node19" href="$d1/d54/classpocketmine_1_1entity_1_1_wolf.html" title="{pocketmine\\entity\\Wolf\n||}" alt="" coords="933,816,1088,901"/>
-<area shape="rect" id="node25" href="$de/d3d/classpocketmine_1_1entity_1_1_creeper.html" title="{pocketmine\\entity\\Creeper\n||}" alt="" coords="1112,816,1285,901"/>
-<area shape="rect" id="node27" href="$d4/d3e/classpocketmine_1_1entity_1_1_enderman.html" title="{pocketmine\\entity\\Enderman\n||}" alt="" coords="1309,816,1496,901"/>
-<area shape="rect" id="node29" href="$d8/d41/classpocketmine_1_1entity_1_1_silverfish.html" title="{pocketmine\\entity\\Silverfish\n||}" alt="" coords="1520,816,1701,901"/>
-<area shape="rect" id="node31" href="$d7/d19/classpocketmine_1_1entity_1_1_skeleton.html" title="{pocketmine\\entity\\Skeleton\n||}" alt="" coords="1725,816,1904,901"/>
-<area shape="rect" id="node33" href="$d8/d2d/classpocketmine_1_1entity_1_1_spider.html" title="{pocketmine\\entity\\Spider\n||}" alt="" coords="1928,816,2093,901"/>
-<area shape="rect" id="node35" href="$d0/da7/classpocketmine_1_1entity_1_1_zombie.html" title="{pocketmine\\entity\\Zombie\n||}" alt="" coords="2117,816,2288,901"/>
-<area shape="rect" id="node37" href="$db/d86/classpocketmine_1_1entity_1_1_pig_zombie.html" title="{pocketmine\\entity\\PigZombie\n||}" alt="" coords="2108,949,2297,1035"/>
+<map id="pocketmine\entity\Damageable" name="pocketmine\entity\Damageable">
+<area shape="rect" id="node3" href="$df/d0c/classpocketmine_1_1entity_1_1_living.html" title="{pocketmine\\entity\\Living\n|# $gravity\l# $drag\l|+ saveNBT()\l+ getName()\l+ attack()\l+ heal()\l+ kill()\l+ entityBaseTick()\l+ getDrops()\l# initEntity()\l}" alt="" coords="1525,139,1688,363"/>
+<area shape="rect" id="node5" href="$d1/db7/classpocketmine_1_1entity_1_1_creature.html" title="{pocketmine\\entity\\Creature\n||}" alt="" coords="1420,411,1599,496"/>
+<area shape="rect" id="node43" href="$d2/d19/classpocketmine_1_1entity_1_1_slime.html" title="{pocketmine\\entity\\Slime\n||}" alt="" coords="1623,411,1785,496"/>
+<area shape="rect" id="node7" href="$d9/d0a/classpocketmine_1_1entity_1_1_animal.html" title="{pocketmine\\entity\\Animal\n||}" alt="" coords="563,665,731,751"/>
+<area shape="rect" id="node21" href="$d4/ddf/classpocketmine_1_1entity_1_1_human.html" title="{pocketmine\\entity\\Human\n|+ $width\l+ $length\l+ $height\l# $nameTag\l# $inventory\l|+ getInventory()\l+ getName()\l+ getDrops()\l+ saveNBT()\l+ spawnTo()\l+ despawnFrom()\l+ getData()\l# initEntity()\l}" alt="" coords="1251,570,1421,846"/>
+<area shape="rect" id="node25" href="$d5/d2b/classpocketmine_1_1entity_1_1_monster.html" title="{pocketmine\\entity\\Monster\n||}" alt="" coords="1595,665,1771,751"/>
+<area shape="rect" id="node41" href="$d9/d6b/classpocketmine_1_1entity_1_1_villager.html" title="{pocketmine\\entity\\Villager\n|+ PROFESSION_FARMER\l+ PROFESSION_LIBRARIAN\l+ PROFESSION_PRIEST\l+ PROFESSION_BLACKSMITH\l+ PROFESSION_BUTCHER\l+ PROFESSION_GENERIC\l+ NETWORK_ID\l+ $width\l+ $length\l+ $height\l|+ getName()\l+ spawnTo()\l+ getData()\l+ setProfession()\l+ getProfession()\l# initEntity()\l}" alt="" coords="1795,544,2008,872"/>
+<area shape="rect" id="node9" href="$d9/d0b/classpocketmine_1_1entity_1_1_chicken.html" title="{pocketmine\\entity\\Chicken\n||}" alt="" coords="5,1207,181,1292"/>
+<area shape="rect" id="node11" href="$d4/d80/classpocketmine_1_1entity_1_1_cow.html" title="{pocketmine\\entity\\Cow\n||}" alt="" coords="205,1207,360,1292"/>
+<area shape="rect" id="node13" href="$d3/d91/classpocketmine_1_1entity_1_1_ocelot.html" title="{pocketmine\\entity\\Ocelot\n||}" alt="" coords="384,1207,549,1292"/>
+<area shape="rect" id="node15" href="$d8/d3e/classpocketmine_1_1entity_1_1_pig.html" title="{pocketmine\\entity\\Pig\n||}" alt="" coords="573,1207,720,1292"/>
+<area shape="rect" id="node17" href="$d4/d1e/classpocketmine_1_1entity_1_1_sheep.html" title="{pocketmine\\entity\\Sheep\n||}" alt="" coords="744,1207,909,1292"/>
+<area shape="rect" id="node19" href="$d1/d54/classpocketmine_1_1entity_1_1_wolf.html" title="{pocketmine\\entity\\Wolf\n||}" alt="" coords="933,1207,1088,1292"/>
+<area shape="rect" id="node23" href="$df/d2c/classpocketmine_1_1_player.html" title="{pocketmine\\Player\n|+ SURVIVAL\l+ CREATIVE\l+ ADVENTURE\l+ SPECTATOR\l+ VIEW\l+ SURVIVAL_SLOTS\l+ CREATIVE_SLOTS\l+ $spawned\l+ $loggedIn\l+ $gamemode\land 7 more...\l# $interface\l# $windowCnt\l# $windows\l# $windowIndex\l# $sendIndex\l# $currentTransaction\l# $isCrafting\l# $lastMovement\l# $forceMovement\l# $connected\land 14 more...\l|+ isBanned()\l+ setBanned()\l+ isWhitelisted()\l+ setWhitelisted()\l+ getPlayer()\l+ getFirstPlayed()\l+ getLastPlayed()\l+ hasPlayedBefore()\l+ spawnTo()\l+ despawnFrom()\land 60 more...\l# initEntity()\l# getCreativeBlock()\l}" alt="" coords="1112,921,1264,1578"/>
+<area shape="rect" id="node27" href="$de/d3d/classpocketmine_1_1entity_1_1_creeper.html" title="{pocketmine\\entity\\Creeper\n||}" alt="" coords="1288,1207,1461,1292"/>
+<area shape="rect" id="node29" href="$d4/d3e/classpocketmine_1_1entity_1_1_enderman.html" title="{pocketmine\\entity\\Enderman\n||}" alt="" coords="1485,1207,1672,1292"/>
+<area shape="rect" id="node31" href="$d8/d41/classpocketmine_1_1entity_1_1_silverfish.html" title="{pocketmine\\entity\\Silverfish\n||}" alt="" coords="1696,1207,1877,1292"/>
+<area shape="rect" id="node33" href="$d7/d19/classpocketmine_1_1entity_1_1_skeleton.html" title="{pocketmine\\entity\\Skeleton\n||}" alt="" coords="1901,1207,2080,1292"/>
+<area shape="rect" id="node35" href="$d8/d2d/classpocketmine_1_1entity_1_1_spider.html" title="{pocketmine\\entity\\Spider\n||}" alt="" coords="2104,1207,2269,1292"/>
+<area shape="rect" id="node37" href="$d0/da7/classpocketmine_1_1entity_1_1_zombie.html" title="{pocketmine\\entity\\Zombie\n|+ NETWORK_ID\l+ $width\l+ $length\l+ $height\l|+ getName()\l+ spawnTo()\l+ getData()\l+ getDrops()\l}" alt="" coords="2293,1155,2464,1344"/>
+<area shape="rect" id="node39" href="$db/d86/classpocketmine_1_1entity_1_1_pig_zombie.html" title="{pocketmine\\entity\\PigZombie\n||}" alt="" coords="2284,1627,2473,1712"/>
 </map>

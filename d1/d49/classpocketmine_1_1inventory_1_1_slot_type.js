@@ -1,9 +1,9 @@
 var classpocketmine_1_1inventory_1_1_slot_type =
 [
-    [ "ARMOR", "d1/d49/classpocketmine_1_1inventory_1_1_slot_type.html#a444c88042b07a30c77b435822eb33e6e", null ],
-    [ "CONTAINER", "d1/d49/classpocketmine_1_1inventory_1_1_slot_type.html#aeade085bbdec38513cf7c7606cc32bca", null ],
-    [ "CRAFTING", "d1/d49/classpocketmine_1_1inventory_1_1_slot_type.html#aefb2883bc51d6b84bd4a5ae3d77dfb99", null ],
-    [ "FUEL", "d1/d49/classpocketmine_1_1inventory_1_1_slot_type.html#a90a9caba2f6979218519ee2b81f6ccfe", null ],
-    [ "HOTBAR", "d1/d49/classpocketmine_1_1inventory_1_1_slot_type.html#af8f1add75d252b7e768c53f9b50771db", null ],
-    [ "RESULT", "d1/d49/classpocketmine_1_1inventory_1_1_slot_type.html#a069a29ee0b5b838a76334d3d0bfb3eca", null ]
+    [ "ARMOR", "d1/d49/classpocketmine_1_1inventory_1_1_slot_type.html#aac2b3e46aa9e4a032434d418d87edbef", null ],
+    [ "CONTAINER", "d1/d49/classpocketmine_1_1inventory_1_1_slot_type.html#ac57d62b8e1ca3c0db5c4812dd7073d06", null ],
+    [ "CRAFTING", "d1/d49/classpocketmine_1_1inventory_1_1_slot_type.html#adc5c07082c27d32e43aa0e3c8c84bdba", null ],
+    [ "FUEL", "d1/d49/classpocketmine_1_1inventory_1_1_slot_type.html#a407b80d05c8c7efe057a99534f0bd26e", null ],
+    [ "HOTBAR", "d1/d49/classpocketmine_1_1inventory_1_1_slot_type.html#abe8715d298bbd8ea872c8ab4f1ce9f18", null ],
+    [ "RESULT", "d1/d49/classpocketmine_1_1inventory_1_1_slot_type.html#aaeb14a6c6b016f5863038d8a844300b5", null ]
 ];

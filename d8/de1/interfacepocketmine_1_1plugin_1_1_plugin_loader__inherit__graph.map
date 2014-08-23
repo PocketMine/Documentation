@@ -1,3 +1,3 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$d5/dbf/classpocketmine_1_1plugin_1_1_phar_plugin_loader.html" title="{pocketmine\\plugin\\PharPluginLoader\n||+ __construct()\l+ loadPlugin()\l+ getPluginDescription()\l+ getPluginFilters()\l+ enablePlugin()\l+ disablePlugin()\l}" alt="" coords="5,209,237,381"/>
+<map id="pocketmine\plugin\PluginLoader" name="pocketmine\plugin\PluginLoader">
+<area shape="rect" id="node3" href="$d5/dbf/classpocketmine_1_1plugin_1_1_phar_plugin_loader.html" title="{pocketmine\\plugin\\PharPlugin\lLoader\n||+ __construct()\l+ loadPlugin()\l+ getPluginDescription()\l+ getPluginFilters()\l+ enablePlugin()\l+ disablePlugin()\l}" alt="" coords="5,227,200,416"/>
 </map>

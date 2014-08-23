@@ -1,6 +1,6 @@
-<map id="G" name="G">
-<area shape="rect" id="node5" href="$df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html" title="{pocketmine\\event\\inventory\\InventoryCloseEvent\n|+ $handlerList\l|+ __construct()\l+ getPlayer()\l}" alt="" coords="5,361,312,463"/>
-<area shape="rect" id="node7" href="$db/da4/classpocketmine_1_1event_1_1inventory_1_1_inventory_open_event.html" title="{pocketmine\\event\\inventory\\InventoryOpenEvent\n|+ $handlerList\l|+ __construct()\l+ getPlayer()\l}" alt="" coords="336,361,640,463"/>
-<area shape="rect" id="node9" href="$db/d63/classpocketmine_1_1event_1_1inventory_1_1_inventory_pickup_item_event.html" title="{pocketmine\\event\\inventory\\InventoryPickupItemEvent\n|+ $handlerList\l|+ __construct()\l+ getItem()\l}" alt="" coords="664,361,1003,463"/>
-<area shape="rect" id="node2" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="407,6,569,143"/>
+<map id="pocketmine\event\inventory\InventoryEvent" name="pocketmine\event\inventory\InventoryEvent">
+<area shape="rect" id="node5" href="$df/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_close_event.html" title="{pocketmine\\event\\inventory\l\\InventoryCloseEvent\n|+ $handlerList\l|+ __construct()\l+ getPlayer()\l}" alt="" coords="5,379,187,499"/>
+<area shape="rect" id="node7" href="$db/da4/classpocketmine_1_1event_1_1inventory_1_1_inventory_open_event.html" title="{pocketmine\\event\\inventory\l\\InventoryOpenEvent\n|+ $handlerList\l|+ __construct()\l+ getPlayer()\l}" alt="" coords="211,379,392,499"/>
+<area shape="rect" id="node9" href="$db/d63/classpocketmine_1_1event_1_1inventory_1_1_inventory_pickup_item_event.html" title="{pocketmine\\event\\inventory\l\\InventoryPickupItemEvent\n|+ $handlerList\l|+ __construct()\l+ getItem()\l}" alt="" coords="416,379,597,499"/>
+<area shape="rect" id="node2" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="220,6,383,143"/>
 </map>

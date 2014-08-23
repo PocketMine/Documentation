@@ -9,6 +9,6 @@ var classpocketmine_1_1utils_1_1_utils =
     [ "hexdump", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a121ab8e02994513d9e597ab06a8aca54", null ],
     [ "postURL", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a3bd60f30e291d8524d0dc0d81ccc7b68", null ],
     [ "printable", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#afbf506515db8c24eca3eb390e457deb0", null ],
-    [ "$ip", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#ae5cec11fd88d977ac9daefd4a4740111", null ],
-    [ "$online", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a5ad61a74611bc2a968e38d63a3aef637", null ]
+    [ "$ip", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#ada5d54563395e1919660a76a3a600716", null ],
+    [ "$online", "dc/d1a/classpocketmine_1_1utils_1_1_utils.html#a6e376bd777bd3a7124d6f91c53fe70b8", null ]
 ];

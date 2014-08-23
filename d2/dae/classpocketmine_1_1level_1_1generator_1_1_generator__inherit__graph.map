@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$de/dee/classpocketmine_1_1level_1_1generator_1_1_flat.html" title="{pocketmine\\level\\generator\\Flat\n|+ $chunks\l+ $options\l+ $floorLevel\l+ $preset\l|+ getSettings()\l+ getName()\l+ __construct()\l+ init()\l+ generateChunk()\l+ populateChunk()\l+ getSpawn()\l# parsePreset()\l}" alt="" coords="5,296,208,555"/>
-<area shape="rect" id="node5" href="$d8/dd2/classpocketmine_1_1level_1_1generator_1_1_normal.html" title="{pocketmine\\level\\generator\\Normal\n||+ __construct()\l+ getName()\l+ getSettings()\l+ init()\l+ generateChunk()\l+ populateChunk()\l+ getSpawn()\l}" alt="" coords="232,331,456,520"/>
+<map id="pocketmine\level\generator\Generator" name="pocketmine\level\generator\Generator">
+<area shape="rect" id="node3" href="$de/dee/classpocketmine_1_1level_1_1generator_1_1_flat.html" title="{pocketmine\\level\\generator\\Flat\n|+ $chunks\l+ $options\l+ $floorLevel\l+ $preset\l|+ getSettings()\l+ getName()\l+ __construct()\l+ init()\l+ generateChunk()\l+ populateChunk()\l+ getSpawn()\l# parsePreset()\l}" alt="" coords="5,312,208,571"/>
+<area shape="rect" id="node5" href="$d8/dd2/classpocketmine_1_1level_1_1generator_1_1_normal.html" title="{pocketmine\\level\\generator\l\\Normal\n||+ __construct()\l+ getName()\l+ getSettings()\l+ init()\l+ generateChunk()\l+ populateChunk()\l+ getSpawn()\l}" alt="" coords="232,338,411,545"/>
 </map>

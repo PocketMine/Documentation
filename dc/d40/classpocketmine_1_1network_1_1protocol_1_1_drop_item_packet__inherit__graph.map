@@ -1,3 +1,3 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html" title="{pocketmine\\network\\protocol\\DataPacket\n|+ $buffer\l|+ pid()\l+ encode()\l+ decode()\l+ setBuffer()\l+ getBuffer()\l# reset()\l# get()\l# put()\l# getLong()\l# putLong()\l# getInt()\l# putInt()\l# getShort()\l# putShort()\l# getFloat()\land 13 more...}" alt="" coords="19,6,280,351"/>
+<map id="pocketmine\network\protocol\DropItemPacket" name="pocketmine\network\protocol\DropItemPacket">
+<area shape="rect" id="node2" href="$d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html" title="{pocketmine\\network\l\\protocol\\DataPacket\n|+ $buffer\l|+ pid()\l+ encode()\l+ decode()\l+ setBuffer()\l+ getBuffer()\l# reset()\l# get()\l# put()\l# getLong()\l# putLong()\l# getInt()\l# putInt()\l# getShort()\l# putShort()\l# getFloat()\land 14 more...\l}" alt="" coords="19,139,163,501"/>
 </map>

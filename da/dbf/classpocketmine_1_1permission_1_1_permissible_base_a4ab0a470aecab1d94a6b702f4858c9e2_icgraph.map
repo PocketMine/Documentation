@@ -1,0 +1,6 @@
+<map id="pocketmine\permission\PermissibleBase\isOp" name="pocketmine\permission\PermissibleBase\isOp">
+<area shape="rect" id="node3" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#a3eebd704b7bca7f878a88eadbefacc2d" title="pocketmine\\permission\l\\PermissibleBase\\hasPermission" alt="" coords="212,5,425,51"/>
+<area shape="rect" id="node5" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#ab66b7f051852303164883a77fe546ea1" title="pocketmine\\permission\l\\PermissibleBase\\recalculate\lPermissions" alt="" coords="224,75,413,139"/>
+<area shape="rect" id="node7" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#adbc073b09ae5a1558610a43b37e9c86b" title="pocketmine\\permission\l\\PermissibleBase\\addAttachment" alt="" coords="487,49,703,95"/>
+<area shape="rect" id="node9" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#ab430f0d21c423f8761e345fdcad3bc97" title="pocketmine\\permission\l\\PermissibleBase\\removeAttachment" alt="" coords="476,118,713,165"/>
+</map>

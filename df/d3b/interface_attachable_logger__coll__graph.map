@@ -1,3 +1,3 @@
-<map id="G" name="G">
+<map id="AttachableLogger" name="AttachableLogger">
 <area shape="rect" id="node2" href="$d4/d00/interface_logger.html" title="{Logger\n||+ emergency()\l+ alert()\l+ critical()\l+ error()\l+ warning()\l+ notice()\l+ info()\l+ debug()\l+ log()\l}" alt="" coords="31,5,137,229"/>
 </map>

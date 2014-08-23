@@ -1,4 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a64a56c2a5d8680274ebd9b7c3117cc69" title="pocketmine\\level\\Level\\getID" alt="" coords="471,5,660,35"/>
-<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#ac5345349fc5efaf63b8396b39b5f6960" title="pocketmine\\level\\Level\\getSeed" alt="" coords="463,59,668,88"/>
+<map id="pocketmine\level\generator\GenerationRequestManager\openLevel" name="pocketmine\level\generator\GenerationRequestManager\openLevel">
+<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a64a56c2a5d8680274ebd9b7c3117cc69" title="pocketmine\\level\\Level\l\\getID" alt="" coords="245,5,400,51"/>
+<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#ac5345349fc5efaf63b8396b39b5f6960" title="pocketmine\\level\\Level\l\\getSeed" alt="" coords="245,74,400,121"/>
+<area shape="rect" id="node7" href="$d8/d1f/classpocketmine_1_1utils_1_1_binary.html#adf4dec7ca25242cf5a438480b0f2c530" title="pocketmine\\utils\\Binary\l\\writeShort" alt="" coords="244,143,401,190"/>
 </map>

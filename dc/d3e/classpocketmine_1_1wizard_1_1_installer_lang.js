@@ -5,5 +5,5 @@ var classpocketmine_1_1wizard_1_1_installer_lang =
     [ "get", "dc/d3e/classpocketmine_1_1wizard_1_1_installer_lang.html#a11dc462d5ec5abe728e6d4933e03806f", null ],
     [ "getLang", "dc/d3e/classpocketmine_1_1wizard_1_1_installer_lang.html#a0e9bcb89e28412c0cda5292632498293", null ],
     [ "loadLang", "dc/d3e/classpocketmine_1_1wizard_1_1_installer_lang.html#ad707f8310d27adfc32e50d572e1bd7cd", null ],
-    [ "$languages", "dc/d3e/classpocketmine_1_1wizard_1_1_installer_lang.html#a14db00c5e095c2c98da7afef82916cc3", null ]
+    [ "$languages", "dc/d3e/classpocketmine_1_1wizard_1_1_installer_lang.html#a74695e28cad4df4ea5031a18ba45cfcc", null ]
 ];

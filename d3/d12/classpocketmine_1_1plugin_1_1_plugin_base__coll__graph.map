@@ -1,3 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html" title="{pocketmine\\plugin\\Plugin\n||+ onLoad()\l+ onEnable()\l+ isEnabled()\l+ onDisable()\l+ isDisabled()\l+ getDataFolder()\l+ getDescription()\l+ getResource()\l+ saveResource()\l+ getResources()\land 7 more...}" alt="" coords="21,5,187,264"/>
+<map id="pocketmine\plugin\PluginBase" name="pocketmine\plugin\PluginBase">
+<area shape="rect" id="node2" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html" title="{pocketmine\\plugin\\Plugin\n||+ onLoad()\l+ onEnable()\l+ isEnabled()\l+ onDisable()\l+ isDisabled()\l+ getDataFolder()\l+ getDescription()\l+ getResource()\l+ saveResource()\l+ getResources()\land 8 more...\l}" alt="" coords="21,157,187,416"/>
+<area shape="rect" id="node4" href="$d4/d5f/interfacepocketmine_1_1command_1_1_command_executor.html" title="{pocketmine\\command\l\\CommandExecutor\n||+ onCommand()\l}" alt="" coords="29,6,179,109"/>
 </map>

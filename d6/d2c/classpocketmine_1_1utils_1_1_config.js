@@ -19,13 +19,13 @@ var classpocketmine_1_1utils_1_1_config =
     [ "setAll", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a62a97250b2eb6082253f922db0a12fc7", null ],
     [ "setDefaults", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a64cb87afce2423d125382e872a409cfb", null ],
     [ "setPath", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a308356fc64a4cd6ff12504e7283236a0", null ],
-    [ "$formats", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a032908c26021a925db39608e7dbf0f0f", null ],
-    [ "CNF", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a877765aecc272125ec7472e8bf51c512", null ],
-    [ "DETECT", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a19c5502d56dac2db017ea6e4ba68b046", null ],
-    [ "ENUM", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#ae61a052c56096fdd32e70e453c0151b7", null ],
-    [ "ENUMERATION", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a622f1c462e693dad3a65b7e4a6c4e5f0", null ],
-    [ "JSON", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a44fe150c2ed3f3fda135f5f683e6de48", null ],
-    [ "PROPERTIES", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a22919b0c7a7ad0f19d93c0433d8fe40f", null ],
-    [ "SERIALIZED", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#af0e71e33df9f284ad5976300088a89d0", null ],
-    [ "YAML", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a37a7b806574b6e2b1566231fa768c707", null ]
+    [ "$formats", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#adb84d6221ef3223ecc0709bdf48e6ef8", null ],
+    [ "CNF", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a4a01a841b963b5e26cdd081818617ef5", null ],
+    [ "DETECT", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a23496ce98f12c6405f29588cd87b4230", null ],
+    [ "ENUM", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a5f7b93a84427442b6f93ead5c9495964", null ],
+    [ "ENUMERATION", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a0f0f3f2e1fd4f8379e994a6e0994fb4d", null ],
+    [ "JSON", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a973af8f56e5bf649b08cb7af3a4a3a2b", null ],
+    [ "PROPERTIES", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#a179584d28fdd3f5eca1b83e16e44834f", null ],
+    [ "SERIALIZED", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#ae4594c19a590f5ea5c3503c695f7a524", null ],
+    [ "YAML", "d6/d2c/classpocketmine_1_1utils_1_1_config.html#aee2c17c5a9c321e96d3becc957462651", null ]
 ];

@@ -8,5 +8,5 @@ var classpocketmine_1_1utils_1_1_random =
     [ "nextSignedFloat", "db/dcb/classpocketmine_1_1utils_1_1_random.html#ae98fc8c86f8eadc828cf5816df3fbbc3", null ],
     [ "nextSignedInt", "db/dcb/classpocketmine_1_1utils_1_1_random.html#a2a70be76d91805b530fba6389a796764", null ],
     [ "setSeed", "db/dcb/classpocketmine_1_1utils_1_1_random.html#a2a3963e435a9b2848dd7d306ebc96d2a", null ],
-    [ "$seed", "db/dcb/classpocketmine_1_1utils_1_1_random.html#a511095222cd72c85d19c740243ccc881", null ]
+    [ "$seed", "db/dcb/classpocketmine_1_1utils_1_1_random.html#a202cb864a1f59f4646b6b270573f5648", null ]
 ];

@@ -1,0 +1,10 @@
+<map id="pocketmine\utils\MainLogger\log" name="pocketmine\utils\MainLogger\log">
+<area shape="rect" id="node3" href="$d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ae335a2e31d890df2d71571a42b8ac195" title="pocketmine\\utils\\MainLogger\l\\alert" alt="" coords="277,5,464,51"/>
+<area shape="rect" id="node5" href="$d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#ac8a9d9fc975ce080645320830844196e" title="pocketmine\\utils\\MainLogger\l\\critical" alt="" coords="277,74,464,121"/>
+<area shape="rect" id="node7" href="$d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a0d28c4968574a2af8866dc9a59e60f8d" title="pocketmine\\utils\\MainLogger\l\\debug" alt="" coords="277,143,464,190"/>
+<area shape="rect" id="node9" href="$d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#aef11b3c3b4d498e4e4cd037cf4ef7b9d" title="pocketmine\\utils\\MainLogger\l\\emergency" alt="" coords="277,213,464,259"/>
+<area shape="rect" id="node11" href="$d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a5d496bba9068ecbae72b00889af0a645" title="pocketmine\\utils\\MainLogger\l\\error" alt="" coords="277,282,464,329"/>
+<area shape="rect" id="node13" href="$d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a12cd2a28feb6d4347adfdc21d650bf45" title="pocketmine\\utils\\MainLogger\\info" alt="" coords="264,352,477,381"/>
+<area shape="rect" id="node15" href="$d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7f32d187305bcfdfbda2e7bfe09afbd4" title="pocketmine\\utils\\MainLogger\l\\notice" alt="" coords="277,405,464,451"/>
+<area shape="rect" id="node17" href="$d9/d27/classpocketmine_1_1utils_1_1_main_logger.html#a7815ce47f10336df6fdc92badf5ca9be" title="pocketmine\\utils\\MainLogger\l\\warning" alt="" coords="277,474,464,521"/>
+</map>

@@ -10,8 +10,8 @@ var classpocketmine_1_1inventory_1_1_simple_transaction_group =
     [ "getTransactions", "df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#a52fb77ae95fa316dfc78de612151ebe5", null ],
     [ "hasExecuted", "df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#a733538b56586ee02abca451485ff7f82", null ],
     [ "matchItems", "df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#a510fd95f31abb7524a9dcc58a36f80b8", null ],
-    [ "$hasExecuted", "df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#a19aac473584c6e5ef47c6bb53592044e", null ],
-    [ "$inventories", "df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#ac795724c59377cf54f1429ad5d845f8d", null ],
-    [ "$source", "df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#afa4135f4e3aa50cd0e5bc3d7ce49ad12", null ],
-    [ "$transactions", "df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#a718b093e85460e59d765159fea372b29", null ]
+    [ "$hasExecuted", "df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#a388d346df5b3703577a0541519e0504c", null ],
+    [ "$inventories", "df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#adee292f9c56a5e2f9993b293c984affd", null ],
+    [ "$source", "df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#ad21dc3fbd771909e9ab473489383aa56", null ],
+    [ "$transactions", "df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#afe155177e918809cc658132e8367b647", null ]
 ];

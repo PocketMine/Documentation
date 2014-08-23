@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="pocketmine\entity\Rideable" name="pocketmine\entity\Rideable">
 <area shape="rect" id="node3" href="$d8/d3e/classpocketmine_1_1entity_1_1_pig.html" title="{pocketmine\\entity\\Pig\n||}" alt="" coords="5,139,152,224"/>
 <area shape="rect" id="node5" href="$d5/d00/classpocketmine_1_1entity_1_1_vehicle.html" title="{pocketmine\\entity\\Vehicle\n||}" alt="" coords="176,139,347,224"/>
 <area shape="rect" id="node7" href="$d9/de1/classpocketmine_1_1entity_1_1_minecart.html" title="{pocketmine\\entity\\Minecart\n||}" alt="" coords="172,272,351,357"/>

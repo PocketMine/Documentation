@@ -1,19 +1,19 @@
-<map id="G" name="G">
-<area shape="rect" id="node5" href="$de/dc2/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__0.html" title="{raklib\\protocol\\DATA_PACKET_0\n|+ $ID\l|}" alt="" coords="5,568,224,653"/>
-<area shape="rect" id="node7" href="$d9/d17/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__1.html" title="{raklib\\protocol\\DATA_PACKET_1\n|+ $ID\l|}" alt="" coords="248,568,467,653"/>
-<area shape="rect" id="node9" href="$d0/ddd/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__2.html" title="{raklib\\protocol\\DATA_PACKET_2\n|+ $ID\l|}" alt="" coords="491,568,709,653"/>
-<area shape="rect" id="node11" href="$da/d26/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__3.html" title="{raklib\\protocol\\DATA_PACKET_3\n|+ $ID\l|}" alt="" coords="733,568,952,653"/>
-<area shape="rect" id="node13" href="$db/d37/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__4.html" title="{raklib\\protocol\\DATA_PACKET_4\n|+ $ID\l|}" alt="" coords="976,568,1195,653"/>
-<area shape="rect" id="node15" href="$d4/d14/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__5.html" title="{raklib\\protocol\\DATA_PACKET_5\n|+ $ID\l|}" alt="" coords="1219,568,1437,653"/>
-<area shape="rect" id="node17" href="$d2/d4c/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__6.html" title="{raklib\\protocol\\DATA_PACKET_6\n|+ $ID\l|}" alt="" coords="1461,568,1680,653"/>
-<area shape="rect" id="node19" href="$d2/d63/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__7.html" title="{raklib\\protocol\\DATA_PACKET_7\n|+ $ID\l|}" alt="" coords="1704,568,1923,653"/>
-<area shape="rect" id="node21" href="$d0/dc3/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__8.html" title="{raklib\\protocol\\DATA_PACKET_8\n|+ $ID\l|}" alt="" coords="1947,568,2165,653"/>
-<area shape="rect" id="node23" href="$dd/dfb/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__9.html" title="{raklib\\protocol\\DATA_PACKET_9\n|+ $ID\l|}" alt="" coords="2189,568,2408,653"/>
-<area shape="rect" id="node25" href="$d4/db9/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t___a.html" title="{raklib\\protocol\\DATA_PACKET_A\n|+ $ID\l|}" alt="" coords="2432,568,2651,653"/>
-<area shape="rect" id="node27" href="$de/d1c/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t___b.html" title="{raklib\\protocol\\DATA_PACKET_B\n|+ $ID\l|}" alt="" coords="2675,568,2893,653"/>
-<area shape="rect" id="node29" href="$dd/d3e/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t___c.html" title="{raklib\\protocol\\DATA_PACKET_C\n|+ $ID\l|}" alt="" coords="2917,568,3139,653"/>
-<area shape="rect" id="node31" href="$db/d9b/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t___d.html" title="{raklib\\protocol\\DATA_PACKET_D\n|+ $ID\l|}" alt="" coords="3163,568,3384,653"/>
-<area shape="rect" id="node33" href="$d1/d91/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t___e.html" title="{raklib\\protocol\\DATA_PACKET_E\n|+ $ID\l|}" alt="" coords="3408,568,3627,653"/>
-<area shape="rect" id="node35" href="$dd/d66/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t___f.html" title="{raklib\\protocol\\DATA_PACKET_F\n|+ $ID\l|}" alt="" coords="3651,568,3869,653"/>
-<area shape="rect" id="node2" href="$d6/d53/classraklib_1_1protocol_1_1_packet.html" title="{raklib\\protocol\\Packet\n|+ $buffer\l+ $ID\l# $offset\l|+ encode()\l+ decode()\l# get()\l# getLong()\l# getInt()\l# getShort()\l# getTriad()\l# getLTriad()\l# getByte()\l# getString()\l# feof()\l# put()\land 6 more...}" alt="" coords="1861,5,2008,333"/>
+<map id="raklib\protocol\DataPacket" name="raklib\protocol\DataPacket">
+<area shape="rect" id="node5" href="$de/dc2/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__0.html" title="{raklib\\protocol\\DATA\l_PACKET_0\n|+ $ID\l|}" alt="" coords="5,569,147,671"/>
+<area shape="rect" id="node7" href="$d9/d17/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__1.html" title="{raklib\\protocol\\DATA\l_PACKET_1\n|+ $ID\l|}" alt="" coords="171,569,312,671"/>
+<area shape="rect" id="node9" href="$d0/ddd/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__2.html" title="{raklib\\protocol\\DATA\l_PACKET_2\n|+ $ID\l|}" alt="" coords="336,569,477,671"/>
+<area shape="rect" id="node11" href="$da/d26/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__3.html" title="{raklib\\protocol\\DATA\l_PACKET_3\n|+ $ID\l|}" alt="" coords="501,569,643,671"/>
+<area shape="rect" id="node13" href="$db/d37/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__4.html" title="{raklib\\protocol\\DATA\l_PACKET_4\n|+ $ID\l|}" alt="" coords="667,569,808,671"/>
+<area shape="rect" id="node15" href="$d4/d14/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__5.html" title="{raklib\\protocol\\DATA\l_PACKET_5\n|+ $ID\l|}" alt="" coords="832,569,973,671"/>
+<area shape="rect" id="node17" href="$d2/d4c/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__6.html" title="{raklib\\protocol\\DATA\l_PACKET_6\n|+ $ID\l|}" alt="" coords="997,569,1139,671"/>
+<area shape="rect" id="node19" href="$d2/d63/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__7.html" title="{raklib\\protocol\\DATA\l_PACKET_7\n|+ $ID\l|}" alt="" coords="1163,569,1304,671"/>
+<area shape="rect" id="node21" href="$d0/dc3/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__8.html" title="{raklib\\protocol\\DATA\l_PACKET_8\n|+ $ID\l|}" alt="" coords="1328,569,1469,671"/>
+<area shape="rect" id="node23" href="$dd/dfb/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__9.html" title="{raklib\\protocol\\DATA\l_PACKET_9\n|+ $ID\l|}" alt="" coords="1493,569,1635,671"/>
+<area shape="rect" id="node25" href="$d4/db9/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t___a.html" title="{raklib\\protocol\\DATA\l_PACKET_A\n|+ $ID\l|}" alt="" coords="1659,569,1800,671"/>
+<area shape="rect" id="node27" href="$de/d1c/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t___b.html" title="{raklib\\protocol\\DATA\l_PACKET_B\n|+ $ID\l|}" alt="" coords="1824,569,1965,671"/>
+<area shape="rect" id="node29" href="$dd/d3e/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t___c.html" title="{raklib\\protocol\\DATA\l_PACKET_C\n|+ $ID\l|}" alt="" coords="1989,569,2131,671"/>
+<area shape="rect" id="node31" href="$db/d9b/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t___d.html" title="{raklib\\protocol\\DATA\l_PACKET_D\n|+ $ID\l|}" alt="" coords="2155,569,2296,671"/>
+<area shape="rect" id="node33" href="$d1/d91/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t___e.html" title="{raklib\\protocol\\DATA\l_PACKET_E\n|+ $ID\l|}" alt="" coords="2320,569,2461,671"/>
+<area shape="rect" id="node35" href="$dd/d66/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t___f.html" title="{raklib\\protocol\\DATA\l_PACKET_F\n|+ $ID\l|}" alt="" coords="2485,569,2627,671"/>
+<area shape="rect" id="node2" href="$d6/d53/classraklib_1_1protocol_1_1_packet.html" title="{raklib\\protocol\\Packet\n|+ $buffer\l+ $ID\l# $offset\l|+ encode()\l+ decode()\l# get()\l# getLong()\l# getInt()\l# getShort()\l# getTriad()\l# getLTriad()\l# getByte()\l# getString()\l# feof()\l# put()\land 7 more...\l}" alt="" coords="1243,5,1389,333"/>
 </map>

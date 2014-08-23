@@ -1,0 +1,5 @@
+<map id="pocketmine\inventory\SimpleTransactionGroup\matchItems" name="pocketmine\inventory\SimpleTransactionGroup\matchItems">
+<area shape="rect" id="node3" href="$d6/d42/classpocketmine_1_1inventory_1_1_crafting_transaction_group.html#a92d6132376f461b55bb33e665042fed2" title="pocketmine\\inventory\l\\CraftingTransactionGroup\l\\addTransaction" alt="" coords="225,5,399,69"/>
+<area shape="rect" id="node5" href="$df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#aa324087f57222a5818847743b350419b" title="pocketmine\\inventory\l\\SimpleTransactionGroup\l\\canExecute" alt="" coords="228,93,396,157"/>
+<area shape="rect" id="node7" href="$df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#aa72211fd34f3f5855623f6a5acec9da4" title="pocketmine\\inventory\l\\SimpleTransactionGroup\l\\execute" alt="" coords="449,93,617,157"/>
+</map>

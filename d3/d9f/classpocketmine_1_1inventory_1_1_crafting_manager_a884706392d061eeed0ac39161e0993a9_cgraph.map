@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$d6/d74/classpocketmine_1_1inventory_1_1_shapeless_recipe.html#a4ce98da29ce6698ccaf130599660d66f" title="pocketmine\\inventory\\ShapelessRecipe\\getIngredientList" alt="" coords="448,5,800,35"/>
-<area shape="rect" id="node5" href="$d6/d74/classpocketmine_1_1inventory_1_1_shapeless_recipe.html#a0761d21cb967948e1a2c7a7f996e6463" title="pocketmine\\inventory\\ShapelessRecipe\\getResult" alt="" coords="468,59,780,88"/>
+<map id="pocketmine\inventory\CraftingManager\registerShapelessRecipe" name="pocketmine\inventory\CraftingManager\registerShapelessRecipe">
+<area shape="rect" id="node3" href="$d6/d74/classpocketmine_1_1inventory_1_1_shapeless_recipe.html#a4ce98da29ce6698ccaf130599660d66f" title="pocketmine\\inventory\l\\ShapelessRecipe\\getIngredientList" alt="" coords="287,5,513,51"/>
+<area shape="rect" id="node5" href="$d6/d74/classpocketmine_1_1inventory_1_1_shapeless_recipe.html#a0761d21cb967948e1a2c7a7f996e6463" title="pocketmine\\inventory\l\\ShapelessRecipe\\getResult" alt="" coords="307,74,493,121"/>
 </map>

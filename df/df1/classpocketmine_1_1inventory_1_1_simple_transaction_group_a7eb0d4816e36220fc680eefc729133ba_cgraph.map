@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$d8/d63/interfacepocketmine_1_1inventory_1_1_transaction.html#a8c5c2d21c338ad645667c41509b5352b" title="pocketmine\\inventory\\Transaction\\getCreationTime" alt="" coords="441,5,759,35"/>
-<area shape="rect" id="node5" href="$d8/d63/interfacepocketmine_1_1inventory_1_1_transaction.html#acef411a49e137b003fc5bb0cef7d0aac" title="pocketmine\\inventory\\Transaction\\getInventory" alt="" coords="453,59,747,88"/>
-<area shape="rect" id="node7" href="$d8/d63/interfacepocketmine_1_1inventory_1_1_transaction.html#a2d6d3e57ec7d9ee48f95b1509013bfa2" title="pocketmine\\inventory\\Transaction\\getSlot" alt="" coords="469,112,731,141"/>
+<map id="pocketmine\inventory\SimpleTransactionGroup\addTransaction" name="pocketmine\inventory\SimpleTransactionGroup\addTransaction">
+<area shape="rect" id="node3" href="$d8/d63/interfacepocketmine_1_1inventory_1_1_transaction.html#a8c5c2d21c338ad645667c41509b5352b" title="pocketmine\\inventory\l\\Transaction\\getCreationTime" alt="" coords="224,5,419,51"/>
+<area shape="rect" id="node5" href="$d8/d63/interfacepocketmine_1_1inventory_1_1_transaction.html#acef411a49e137b003fc5bb0cef7d0aac" title="pocketmine\\inventory\l\\Transaction\\getInventory" alt="" coords="236,74,407,121"/>
+<area shape="rect" id="node7" href="$d8/d63/interfacepocketmine_1_1inventory_1_1_transaction.html#a2d6d3e57ec7d9ee48f95b1509013bfa2" title="pocketmine\\inventory\l\\Transaction\\getSlot" alt="" coords="248,143,395,190"/>
 </map>

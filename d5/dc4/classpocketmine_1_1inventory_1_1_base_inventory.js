@@ -1,7 +1,7 @@
 var classpocketmine_1_1inventory_1_1_base_inventory =
 [
     [ "__construct", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#afaac83c7a4ade74f9bd461f68a48c30a", null ],
-    [ "addItem", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a407f27ab18a98d4b907bb5af82972cb7", null ],
+    [ "addItem", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a407f27ab18a98d4b907bb5af82972cb7", null ],
     [ "all", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a9e8a9a58178c93680c225de229606fec", null ],
     [ "canAddItem", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a46ca31398256b2a5fecddd025587579b", null ],
     [ "clear", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a4e37b46b040119e90211c5078dd79662", null ],
@@ -24,19 +24,19 @@ var classpocketmine_1_1inventory_1_1_base_inventory =
     [ "onSlotChange", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a372297a2da072277724b5a20453bb423", null ],
     [ "open", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a41fca235b61f94ee9729354c977f905f", null ],
     [ "remove", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a5c676080faee6eaecdc04a70fcedf142", null ],
-    [ "removeItem", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#ab357a8d967219e50421b8848662ec0fb", null ],
+    [ "removeItem", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#ab357a8d967219e50421b8848662ec0fb", null ],
     [ "sendContents", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a78e842dd42ef0a0870385092b3c30896", null ],
     [ "sendSlot", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#ad84dac811677e799d06924279a4288cc", null ],
     [ "setContents", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a295a782543c002623d01ec47a6e93329", null ],
     [ "setItem", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a99f7ddb22a3e614d55daefe9d4b9eaeb", null ],
     [ "setMaxStackSize", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a34d54226a58156eeebdf322dc9d80e99", null ],
-    [ "$holder", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a76c0b3acf3240f2277ec6d1569371504", null ],
-    [ "$maxStackSize", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a8fc6e7d9a30def4bfe26e21801f80538", null ],
-    [ "$name", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a89efe95998d8d532c05f32ea4f808cf6", null ],
-    [ "$size", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a4f9f7c3fe2f856b3d59abe76fdaf6258", null ],
-    [ "$slots", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a8ed5278e193135ac48242c605db841e4", null ],
-    [ "$title", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#affaf92a8ad01adf999607537e40c7a39", null ],
-    [ "$type", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a8cdb4e8b0f4640f47b2c5f01c0d89717", null ],
-    [ "$viewers", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a96b121caf8011b58c48f5a526191765f", null ],
-    [ "MAX_STACK", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a37deab07c9b6d9ea911bea1e52725503", null ]
+    [ "$holder", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a03c538c8e83e46305eb8df8ad36344b7", null ],
+    [ "$maxStackSize", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a18c4cc8167be0794dc1ac6d083cdbfa4", null ],
+    [ "$name", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#af0a7fcd7b83f9d856d66a94f0d262265", null ],
+    [ "$size", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a1aba05730092ab48ebc95ce4300deed4", null ],
+    [ "$slots", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#aeaa796a0643b38b24738b51fd4e2ee81", null ],
+    [ "$title", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a4a372c18ea7495a80df867a86b86fc5b", null ],
+    [ "$type", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#af5a65305e3a097f46b3cb41461ffa480", null ],
+    [ "$viewers", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#ad310e040ea4a72ab0e8fccb4837cfbbd", null ],
+    [ "MAX_STACK", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#ac77e76822c00c48cb8a89043262d99ab", null ]
 ];

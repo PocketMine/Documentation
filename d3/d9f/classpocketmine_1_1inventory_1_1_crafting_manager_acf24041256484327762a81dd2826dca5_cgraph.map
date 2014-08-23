@@ -1,0 +1,8 @@
+<map id="pocketmine\inventory\CraftingManager\registerRecipe" name="pocketmine\inventory\CraftingManager\registerRecipe">
+<area shape="rect" id="node3" href="$d3/d9f/classpocketmine_1_1inventory_1_1_crafting_manager.html#af87cd02a84b7610b1d680a7fb9d8229a" title="pocketmine\\inventory\l\\CraftingManager\\registerFurnace\lRecipe" alt="" coords="272,5,488,69"/>
+<area shape="rect" id="node7" href="$d3/d9f/classpocketmine_1_1inventory_1_1_crafting_manager.html#ab3cec4a792e29c221a33fe91b8e9ba24" title="pocketmine\\inventory\l\\CraftingManager\\registerShaped\lRecipe" alt="" coords="273,93,487,157"/>
+<area shape="rect" id="node9" href="$d3/d9f/classpocketmine_1_1inventory_1_1_crafting_manager.html#a884706392d061eeed0ac39161e0993a9" title="pocketmine\\inventory\l\\CraftingManager\\registerShapeless\lRecipe" alt="" coords="265,181,495,245"/>
+<area shape="rect" id="node5" href="$db/db2/classpocketmine_1_1inventory_1_1_furnace_recipe.html#a9a843b094fbc18003707dfad17537124" title="pocketmine\\inventory\l\\FurnaceRecipe\\getInput" alt="" coords="576,14,741,61"/>
+<area shape="rect" id="node11" href="$d6/d74/classpocketmine_1_1inventory_1_1_shapeless_recipe.html#a0761d21cb967948e1a2c7a7f996e6463" title="pocketmine\\inventory\l\\ShapelessRecipe\\getResult" alt="" coords="565,155,752,202"/>
+<area shape="rect" id="node13" href="$d6/d74/classpocketmine_1_1inventory_1_1_shapeless_recipe.html#a4ce98da29ce6698ccaf130599660d66f" title="pocketmine\\inventory\l\\ShapelessRecipe\\getIngredientList" alt="" coords="545,225,772,271"/>
+</map>

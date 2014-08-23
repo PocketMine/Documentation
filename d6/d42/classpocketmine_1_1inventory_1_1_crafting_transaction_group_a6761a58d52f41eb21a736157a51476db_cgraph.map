@@ -1,0 +1,7 @@
+<map id="pocketmine\inventory\CraftingTransactionGroup\execute" name="pocketmine\inventory\CraftingTransactionGroup\execute">
+<area shape="rect" id="node3" href="$d6/d42/classpocketmine_1_1inventory_1_1_crafting_transaction_group.html#a05e604737a07e4c9549bfc67c6ef52f0" title="pocketmine\\inventory\l\\CraftingTransactionGroup\l\\canExecute" alt="" coords="231,5,404,69"/>
+<area shape="rect" id="node5" href="$d6/d42/classpocketmine_1_1inventory_1_1_crafting_transaction_group.html#a9f16aa4dd583f69449354d98e365abdc" title="pocketmine\\inventory\l\\CraftingTransactionGroup\l\\getMatchingRecipe" alt="" coords="455,56,628,120"/>
+<area shape="rect" id="node7" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="677,108,880,137"/>
+<area shape="rect" id="node11" href="$df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#aa8d514b406c0bcbfa1a0d4f8f5ed765a" title="pocketmine\\inventory\l\\SimpleTransactionGroup\l\\getSource" alt="" coords="233,195,401,259"/>
+<area shape="rect" id="node13" href="$df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#a733538b56586ee02abca451485ff7f82" title="pocketmine\\inventory\l\\SimpleTransactionGroup\l\\hasExecuted" alt="" coords="233,283,401,347"/>
+</map>

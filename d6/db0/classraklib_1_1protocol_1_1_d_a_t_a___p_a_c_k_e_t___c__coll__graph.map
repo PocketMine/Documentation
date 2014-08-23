@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$dc/d27/classraklib_1_1protocol_1_1_data_packet.html" title="{raklib\\protocol\\DataPacket\n|+ $packets\l+ $seqNumber\l|+ encode()\l+ length()\l+ decode()\l}" alt="" coords="28,382,204,519"/>
-<area shape="rect" id="node4" href="$d6/d53/classraklib_1_1protocol_1_1_packet.html" title="{raklib\\protocol\\Packet\n|+ $buffer\l+ $ID\l# $offset\l|+ encode()\l+ decode()\l# get()\l# getLong()\l# getInt()\l# getShort()\l# getTriad()\l# getLTriad()\l# getByte()\l# getString()\l# feof()\l# put()\land 6 more...}" alt="" coords="43,5,189,333"/>
+<map id="raklib\protocol\DATA_PACKET_C" name="raklib\protocol\DATA_PACKET_C">
+<area shape="rect" id="node2" href="$dc/d27/classraklib_1_1protocol_1_1_data_packet.html" title="{raklib\\protocol\\DataPacket\n|+ $packets\l+ $seqNumber\l|+ encode()\l+ length()\l+ decode()\l}" alt="" coords="5,382,181,519"/>
+<area shape="rect" id="node4" href="$d6/d53/classraklib_1_1protocol_1_1_packet.html" title="{raklib\\protocol\\Packet\n|+ $buffer\l+ $ID\l# $offset\l|+ encode()\l+ decode()\l# get()\l# getLong()\l# getInt()\l# getShort()\l# getTriad()\l# getLTriad()\l# getByte()\l# getString()\l# feof()\l# put()\land 7 more...\l}" alt="" coords="20,5,167,333"/>
 </map>

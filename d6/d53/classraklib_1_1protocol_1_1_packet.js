@@ -19,7 +19,7 @@ var classraklib_1_1protocol_1_1_packet =
     [ "putShort", "d6/d53/classraklib_1_1protocol_1_1_packet.html#a36c494147534ac22b31f3773dc386958", null ],
     [ "putString", "d6/d53/classraklib_1_1protocol_1_1_packet.html#a794830e45f3f20b332fb4ade74916652", null ],
     [ "putTriad", "d6/d53/classraklib_1_1protocol_1_1_packet.html#adc197e7f4f37e847ac0fd366e89964c2", null ],
-    [ "$buffer", "d6/d53/classraklib_1_1protocol_1_1_packet.html#aaf2d897dd131f4858f4f8843866bea4d", null ],
-    [ "$ID", "d6/d53/classraklib_1_1protocol_1_1_packet.html#a8d3c7b7a264d12f6361be3a5616d13d6", null ],
-    [ "$offset", "d6/d53/classraklib_1_1protocol_1_1_packet.html#a93c2806c5efb167722e9d0b96dfb0b26", null ]
+    [ "$buffer", "d6/d53/classraklib_1_1protocol_1_1_packet.html#ad4d1dd29fa1e150f313569490fff8821", null ],
+    [ "$ID", "d6/d53/classraklib_1_1protocol_1_1_packet.html#aac3fb79728853ecb5b218898c2540808", null ],
+    [ "$offset", "d6/d53/classraklib_1_1protocol_1_1_packet.html#a6121f9c270693b6d82dcdf1b3a1f89c6", null ]
 ];

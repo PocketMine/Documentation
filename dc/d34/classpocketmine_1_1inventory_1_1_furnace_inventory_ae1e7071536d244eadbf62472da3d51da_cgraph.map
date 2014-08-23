@@ -1,0 +1,11 @@
+<map id="pocketmine\inventory\FurnaceInventory\setResult" name="pocketmine\inventory\FurnaceInventory\setResult">
+<area shape="rect" id="node3" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a99f7ddb22a3e614d55daefe9d4b9eaeb" title="pocketmine\\inventory\l\\BaseInventory\\setItem" alt="" coords="241,166,399,212"/>
+<area shape="rect" id="node5" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a4e37b46b040119e90211c5078dd79662" title="pocketmine\\inventory\l\\BaseInventory\\clear" alt="" coords="448,166,595,212"/>
+<area shape="rect" id="node7" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a17dc7367b4cee9f1029c38d52e448563" title="pocketmine\\inventory\l\\BaseInventory\\getHolder" alt="" coords="659,52,829,99"/>
+<area shape="rect" id="node9" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="643,122,845,152"/>
+<area shape="rect" id="node11" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a65b280b6c12e1d4e5bcd4d0de3aa4a71" title="pocketmine\\inventory\l\\BaseInventory\\getViewers" alt="" coords="893,166,1072,212"/>
+<area shape="rect" id="node13" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a372297a2da072277724b5a20453bb423" title="pocketmine\\inventory\l\\BaseInventory\\onSlotChange" alt="" coords="647,226,841,272"/>
+<area shape="rect" id="node18" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a8bc94c0515906b5c1f3af5600d89b3df" title="pocketmine\\inventory\l\\BaseInventory\\getItem" alt="" coords="1121,295,1279,342"/>
+<area shape="rect" id="node20" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a78e842dd42ef0a0870385092b3c30896" title="pocketmine\\inventory\l\\BaseInventory\\sendContents" alt="" coords="647,295,841,342"/>
+<area shape="rect" id="node16" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#ad84dac811677e799d06924279a4288cc" title="pocketmine\\inventory\l\\BaseInventory\\sendSlot" alt="" coords="900,235,1065,282"/>
+</map>

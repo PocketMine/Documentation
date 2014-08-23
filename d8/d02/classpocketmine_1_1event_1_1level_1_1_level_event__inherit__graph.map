@@ -1,8 +1,12 @@
-<map id="G" name="G">
-<area shape="rect" id="node5" href="$d6/da9/classpocketmine_1_1event_1_1level_1_1_level_init_event.html" title="{pocketmine\\event\\level\\LevelInitEvent\n|+ $handlerList\l|}" alt="" coords="5,353,248,439"/>
-<area shape="rect" id="node7" href="$d6/d2e/classpocketmine_1_1event_1_1level_1_1_level_load_event.html" title="{pocketmine\\event\\level\\LevelLoadEvent\n|+ $handlerList\l|}" alt="" coords="272,353,525,439"/>
-<area shape="rect" id="node9" href="$d3/d3b/classpocketmine_1_1event_1_1level_1_1_level_save_event.html" title="{pocketmine\\event\\level\\LevelSaveEvent\n|+ $handlerList\l|}" alt="" coords="549,353,803,439"/>
-<area shape="rect" id="node11" href="$db/d6b/classpocketmine_1_1event_1_1level_1_1_level_unload_event.html" title="{pocketmine\\event\\level\\LevelUnloadEvent\n|+ $handlerList\l|}" alt="" coords="827,353,1093,439"/>
-<area shape="rect" id="node13" href="$d3/dc3/classpocketmine_1_1event_1_1level_1_1_spawn_change_event.html" title="{pocketmine\\event\\level\\SpawnChangeEvent\n|+ $handlerList\l|+ __construct()\l+ getPreviousSpawn()\l}" alt="" coords="1117,345,1395,447"/>
-<area shape="rect" id="node2" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="595,6,757,143"/>
+<map id="pocketmine\event\level\LevelEvent" name="pocketmine\event\level\LevelEvent">
+<area shape="rect" id="node5" href="$d1/dbc/classpocketmine_1_1event_1_1level_1_1_chunk_event.html" title="{pocketmine\\event\\level\l\\ChunkEvent\n||+ __construct()\l+ getChunk()\l}" alt="" coords="184,360,339,480"/>
+<area shape="rect" id="node13" href="$d6/da9/classpocketmine_1_1event_1_1level_1_1_level_init_event.html" title="{pocketmine\\event\\level\l\\LevelInitEvent\n|+ $handlerList\l|}" alt="" coords="363,369,517,471"/>
+<area shape="rect" id="node15" href="$d6/d2e/classpocketmine_1_1event_1_1level_1_1_level_load_event.html" title="{pocketmine\\event\\level\l\\LevelLoadEvent\n|+ $handlerList\l|}" alt="" coords="541,369,696,471"/>
+<area shape="rect" id="node17" href="$d3/d3b/classpocketmine_1_1event_1_1level_1_1_level_save_event.html" title="{pocketmine\\event\\level\l\\LevelSaveEvent\n|+ $handlerList\l|}" alt="" coords="720,369,875,471"/>
+<area shape="rect" id="node19" href="$db/d6b/classpocketmine_1_1event_1_1level_1_1_level_unload_event.html" title="{pocketmine\\event\\level\l\\LevelUnloadEvent\n|+ $handlerList\l|}" alt="" coords="899,369,1053,471"/>
+<area shape="rect" id="node21" href="$d3/dc3/classpocketmine_1_1event_1_1level_1_1_spawn_change_event.html" title="{pocketmine\\event\\level\l\\SpawnChangeEvent\n|+ $handlerList\l|+ __construct()\l+ getPreviousSpawn()\l}" alt="" coords="1077,360,1232,480"/>
+<area shape="rect" id="node2" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="627,6,789,143"/>
+<area shape="rect" id="node7" href="$d9/d2d/classpocketmine_1_1event_1_1level_1_1_chunk_load_event.html" title="{pocketmine\\event\\level\l\\ChunkLoadEvent\n|+ $handlerList\l|+ __construct()\l+ isNewChunk()\l}" alt="" coords="5,528,160,648"/>
+<area shape="rect" id="node9" href="$dd/d37/classpocketmine_1_1event_1_1level_1_1_chunk_populate_event.html" title="{pocketmine\\event\\level\l\\ChunkPopulateEvent\n|+ $handlerList\l|}" alt="" coords="184,537,339,639"/>
+<area shape="rect" id="node11" href="$d9/d19/classpocketmine_1_1event_1_1level_1_1_chunk_unload_event.html" title="{pocketmine\\event\\level\l\\ChunkUnloadEvent\n|+ $handlerList\l|}" alt="" coords="363,537,517,639"/>
 </map>

@@ -1,3 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#ac85de2200030db98a2ff76f29c878c12" title="pocketmine\\scheduler\\ServerScheduler\\cancelTasks" alt="" coords="335,5,660,35"/>
+<map id="pocketmine\scheduler\PluginTask\getOwner" name="pocketmine\scheduler\PluginTask\getOwner">
+<area shape="rect" id="node3" href="$d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html#ac85de2200030db98a2ff76f29c878c12" title="pocketmine\\scheduler\l\\ServerScheduler\\cancelTasks" alt="" coords="205,5,405,51"/>
+<area shape="rect" id="node5" href="$d5/d20/classpocketmine_1_1event_1_1_timings.html#a516830247208d1337a72bd553047339b" title="pocketmine\\event\\Timings\l\\getPluginTaskTimings" alt="" coords="219,74,392,121"/>
+<area shape="rect" id="node7" href="$dd/d18/classpocketmine_1_1scheduler_1_1_task_handler.html#a62f74510e269c67d902a8bc4d315a8da" title="pocketmine\\scheduler\l\\TaskHandler\\__construct" alt="" coords="455,74,625,121"/>
 </map>

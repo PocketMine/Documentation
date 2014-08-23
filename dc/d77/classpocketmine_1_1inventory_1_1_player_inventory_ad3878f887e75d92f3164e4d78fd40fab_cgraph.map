@@ -1,0 +1,4 @@
+<map id="pocketmine\inventory\PlayerInventory\onSlotChange" name="pocketmine\inventory\PlayerInventory\onSlotChange">
+<area shape="rect" id="node3" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#af3d72b8ec9fec0a90f4d1a47057a76b2" title="pocketmine\\inventory\l\\PlayerInventory\\getHolder" alt="" coords="257,5,433,51"/>
+<area shape="rect" id="node5" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a65b280b6c12e1d4e5bcd4d0de3aa4a71" title="pocketmine\\inventory\l\\BaseInventory\\getViewers" alt="" coords="256,74,435,121"/>
+</map>

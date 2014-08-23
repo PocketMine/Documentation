@@ -1,7 +1,7 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$dc/d88/classpocketmine_1_1level_1_1generator_1_1populator_1_1_mineshaft.html" title="{pocketmine\\level\\generator\\populator\\Mineshaft\n||+ populate()\l}" alt="" coords="5,165,301,251"/>
-<area shape="rect" id="node5" href="$d4/d19/classpocketmine_1_1level_1_1generator_1_1populator_1_1_ore.html" title="{pocketmine\\level\\generator\\populator\\Ore\n||+ populate()\l+ setOreTypes()\l}" alt="" coords="325,157,584,259"/>
-<area shape="rect" id="node7" href="$df/dd0/classpocketmine_1_1level_1_1generator_1_1populator_1_1_pond.html" title="{pocketmine\\level\\generator\\populator\\Pond\n||+ populate()\l+ setWaterOdd()\l+ setLavaOdd()\l+ setLavaSurfaceOdd()\l}" alt="" coords="608,139,877,277"/>
-<area shape="rect" id="node9" href="$d5/d9e/classpocketmine_1_1level_1_1generator_1_1populator_1_1_tall_grass.html" title="{pocketmine\\level\\generator\\populator\\TallGrass\n||+ setRandomAmount()\l+ setBaseAmount()\l+ populate()\l}" alt="" coords="901,148,1195,268"/>
-<area shape="rect" id="node11" href="$d5/d35/classpocketmine_1_1level_1_1generator_1_1populator_1_1_tree.html" title="{pocketmine\\level\\generator\\populator\\Tree\n||+ setRandomAmount()\l+ setBaseAmount()\l+ populate()\l}" alt="" coords="1219,148,1483,268"/>
+<map id="pocketmine\level\generator\populator\Populator" name="pocketmine\level\generator\populator\Populator">
+<area shape="rect" id="node3" href="$dc/d88/classpocketmine_1_1level_1_1generator_1_1populator_1_1_mineshaft.html" title="{pocketmine\\level\\generator\l\\populator\\Mineshaft\n||+ populate()\l}" alt="" coords="5,183,184,286"/>
+<area shape="rect" id="node5" href="$d4/d19/classpocketmine_1_1level_1_1generator_1_1populator_1_1_ore.html" title="{pocketmine\\level\\generator\l\\populator\\Ore\n||+ populate()\l+ setOreTypes()\l}" alt="" coords="208,175,387,295"/>
+<area shape="rect" id="node7" href="$df/dd0/classpocketmine_1_1level_1_1generator_1_1populator_1_1_pond.html" title="{pocketmine\\level\\generator\l\\populator\\Pond\n||+ populate()\l+ setWaterOdd()\l+ setLavaOdd()\l+ setLavaSurfaceOdd()\l}" alt="" coords="411,157,589,312"/>
+<area shape="rect" id="node9" href="$d5/d9e/classpocketmine_1_1level_1_1generator_1_1populator_1_1_tall_grass.html" title="{pocketmine\\level\\generator\l\\populator\\TallGrass\n||+ setRandomAmount()\l+ setBaseAmount()\l+ populate()\l}" alt="" coords="613,166,792,303"/>
+<area shape="rect" id="node11" href="$d5/d35/classpocketmine_1_1level_1_1generator_1_1populator_1_1_tree.html" title="{pocketmine\\level\\generator\l\\populator\\Tree\n||+ setRandomAmount()\l+ setBaseAmount()\l+ populate()\l}" alt="" coords="816,166,995,303"/>
 </map>

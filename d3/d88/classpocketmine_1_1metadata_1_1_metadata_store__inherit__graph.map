@@ -1,6 +1,6 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$df/de8/classpocketmine_1_1metadata_1_1_block_metadata_store.html" title="{pocketmine\\metadata\\BlockMetadataStore\n||+ __construct()\l+ disambiguate()\l+ getMetadata()\l+ hasMetadata()\l+ removeMetadata()\l+ setMetadata()\l}" alt="" coords="5,209,275,381"/>
-<area shape="rect" id="node5" href="$dd/d7f/classpocketmine_1_1metadata_1_1_entity_metadata_store.html" title="{pocketmine\\metadata\\EntityMetadataStore\n||+ disambiguate()\l}" alt="" coords="299,252,568,337"/>
-<area shape="rect" id="node7" href="$d3/ddf/classpocketmine_1_1metadata_1_1_level_metadata_store.html" title="{pocketmine\\metadata\\LevelMetadataStore\n||+ disambiguate()\l}" alt="" coords="592,252,859,337"/>
-<area shape="rect" id="node9" href="$d0/db7/classpocketmine_1_1metadata_1_1_player_metadata_store.html" title="{pocketmine\\metadata\\PlayerMetadataStore\n||+ disambiguate()\l}" alt="" coords="883,252,1155,337"/>
+<map id="pocketmine\metadata\MetadataStore" name="pocketmine\metadata\MetadataStore">
+<area shape="rect" id="node3" href="$df/de8/classpocketmine_1_1metadata_1_1_block_metadata_store.html" title="{pocketmine\\metadata\l\\BlockMetadataStore\n||+ __construct()\l+ disambiguate()\l+ getMetadata()\l+ hasMetadata()\l+ removeMetadata()\l+ setMetadata()\l}" alt="" coords="5,227,152,416"/>
+<area shape="rect" id="node5" href="$dd/d7f/classpocketmine_1_1metadata_1_1_entity_metadata_store.html" title="{pocketmine\\metadata\l\\EntityMetadataStore\n||+ disambiguate()\l}" alt="" coords="176,270,323,373"/>
+<area shape="rect" id="node7" href="$d3/ddf/classpocketmine_1_1metadata_1_1_level_metadata_store.html" title="{pocketmine\\metadata\l\\LevelMetadataStore\n||+ disambiguate()\l}" alt="" coords="347,270,493,373"/>
+<area shape="rect" id="node9" href="$d0/db7/classpocketmine_1_1metadata_1_1_player_metadata_store.html" title="{pocketmine\\metadata\l\\PlayerMetadataStore\n||+ disambiguate()\l}" alt="" coords="517,270,664,373"/>
 </map>

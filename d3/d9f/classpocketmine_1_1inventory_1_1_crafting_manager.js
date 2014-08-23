@@ -18,7 +18,7 @@ var classpocketmine_1_1inventory_1_1_crafting_manager =
     [ "registerTools", "d3/d9f/classpocketmine_1_1inventory_1_1_crafting_manager.html#a7e52d1fef8b14476c83b99c2d391e939", null ],
     [ "registerWeapons", "d3/d9f/classpocketmine_1_1inventory_1_1_crafting_manager.html#a9eccd106907f939ad930652b71ba1038", null ],
     [ "sort", "d3/d9f/classpocketmine_1_1inventory_1_1_crafting_manager.html#a57f8056ecc6955e6cd251b26a4d53fb3", null ],
-    [ "$furnaceRecipes", "d3/d9f/classpocketmine_1_1inventory_1_1_crafting_manager.html#a6830892ddc66904d429e0aab4948b5e3", null ],
-    [ "$recipeLookup", "d3/d9f/classpocketmine_1_1inventory_1_1_crafting_manager.html#ae0b1882e6e019d4690bca342ac8fee60", null ],
-    [ "$recipes", "d3/d9f/classpocketmine_1_1inventory_1_1_crafting_manager.html#a4b5ba5cae56a4b900b89a4e2fea0df87", null ]
+    [ "$furnaceRecipes", "d3/d9f/classpocketmine_1_1inventory_1_1_crafting_manager.html#a7621af7397fa5aa430451988481bb6dd", null ],
+    [ "$recipeLookup", "d3/d9f/classpocketmine_1_1inventory_1_1_crafting_manager.html#a21b8e1ec0b14aabb3217f70684ff9a75", null ],
+    [ "$recipes", "d3/d9f/classpocketmine_1_1inventory_1_1_crafting_manager.html#a1ddfd0833d4134222edf2235dc9ed44e", null ]
 ];

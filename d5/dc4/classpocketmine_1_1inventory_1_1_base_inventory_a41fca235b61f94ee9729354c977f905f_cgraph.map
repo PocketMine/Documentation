@@ -1,3 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$df/d2c/classpocketmine_1_1_player.html#a6d03d1e69a0e6deea6e05d030da2bd91" title="pocketmine\\Player\\getServer" alt="" coords="321,5,511,35"/>
+<map id="pocketmine\inventory\BaseInventory\open" name="pocketmine\inventory\BaseInventory\open">
+<area shape="rect" id="node3" href="$df/d2c/classpocketmine_1_1_player.html#a6d03d1e69a0e6deea6e05d030da2bd91" title="pocketmine\\Player\\getServer" alt="" coords="201,5,391,35"/>
+<area shape="rect" id="node5" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#ad61d0fa541f73c0387c81dc3c46def67" title="pocketmine\\inventory\l\\BaseInventory\\onOpen" alt="" coords="217,58,375,105"/>
 </map>

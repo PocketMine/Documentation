@@ -1,0 +1,6 @@
+<map id="pocketmine\level\generator\GenerationChunkManager\getChunk" name="pocketmine\level\generator\GenerationChunkManager\getChunk">
+<area shape="rect" id="node3" href="$da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#ad206cb0951645d4d6d3e23700ae7a786" title="pocketmine\\level\\generator\l\\GenerationChunkManager\l\\getBlockDataAt" alt="" coords="232,5,411,69"/>
+<area shape="rect" id="node5" href="$da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a1f45c94491c14d111201d4380e4a73a8" title="pocketmine\\level\\generator\l\\GenerationChunkManager\l\\getBlockIdAt" alt="" coords="232,93,411,157"/>
+<area shape="rect" id="node7" href="$da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a4932faa9f40457e9f431e22f1d64245f" title="pocketmine\\level\\generator\l\\GenerationChunkManager\l\\setBlockDataAt" alt="" coords="232,181,411,245"/>
+<area shape="rect" id="node9" href="$da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#ade63db02936b690117faca49a2c21b57" title="pocketmine\\level\\generator\l\\GenerationChunkManager\l\\setBlockIdAt" alt="" coords="232,269,411,333"/>
+</map>

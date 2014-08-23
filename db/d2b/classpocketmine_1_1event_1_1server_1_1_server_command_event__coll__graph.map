@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$d1/d77/classpocketmine_1_1event_1_1server_1_1_server_event.html" title="{pocketmine\\event\\server\\ServerEvent\n||}" alt="" coords="5,201,245,287"/>
-<area shape="rect" id="node4" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="44,6,207,143"/>
-<area shape="rect" id="node6" href="$db/d62/interfacepocketmine_1_1event_1_1_cancellable.html" title="{pocketmine\\event\\Cancellable\n||+ isCancelled()\l+ setCancelled()\l}" alt="" coords="269,193,467,295"/>
+<map id="pocketmine\event\server\ServerCommandEvent" name="pocketmine\event\server\ServerCommandEvent">
+<area shape="rect" id="node2" href="$d1/d77/classpocketmine_1_1event_1_1server_1_1_server_event.html" title="{pocketmine\\event\\server\l\\ServerEvent\n||}" alt="" coords="5,193,171,295"/>
+<area shape="rect" id="node4" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="7,6,169,143"/>
+<area shape="rect" id="node6" href="$db/d62/interfacepocketmine_1_1event_1_1_cancellable.html" title="{pocketmine\\event\\Cancellable\n||+ isCancelled()\l+ setCancelled()\l}" alt="" coords="195,193,392,295"/>
 </map>

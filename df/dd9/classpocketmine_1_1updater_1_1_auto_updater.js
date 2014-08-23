@@ -11,8 +11,8 @@ var classpocketmine_1_1updater_1_1_auto_updater =
     [ "showChannelSuggestionStable", "df/dd9/classpocketmine_1_1updater_1_1_auto_updater.html#a645f50ec1ab6e6bc8bcfc9e939607357", null ],
     [ "showConsoleUpdate", "df/dd9/classpocketmine_1_1updater_1_1_auto_updater.html#a1784542afbac1d696953f5931656a700", null ],
     [ "showPlayerUpdate", "df/dd9/classpocketmine_1_1updater_1_1_auto_updater.html#a3d443d6b4da22526e527aeb8740002b8", null ],
-    [ "$endpoint", "df/dd9/classpocketmine_1_1updater_1_1_auto_updater.html#af8b62a07a2d8a5963b75a75330217056", null ],
-    [ "$hasUpdate", "df/dd9/classpocketmine_1_1updater_1_1_auto_updater.html#a75694527ff5f1fbe66ce56797538a844", null ],
-    [ "$server", "df/dd9/classpocketmine_1_1updater_1_1_auto_updater.html#aea6ddc7e8aed81aed3f670728b434000", null ],
-    [ "$updateInfo", "df/dd9/classpocketmine_1_1updater_1_1_auto_updater.html#a6c511994d183945d2c350800e0f89a50", null ]
+    [ "$endpoint", "df/dd9/classpocketmine_1_1updater_1_1_auto_updater.html#afc74c2f71ab934940e68644992169c64", null ],
+    [ "$hasUpdate", "df/dd9/classpocketmine_1_1updater_1_1_auto_updater.html#a2e27a557102eff8fa4f9c709a8af723b", null ],
+    [ "$server", "df/dd9/classpocketmine_1_1updater_1_1_auto_updater.html#ab3f9d9943a85e0ac25ca01b36e946beb", null ],
+    [ "$updateInfo", "df/dd9/classpocketmine_1_1updater_1_1_auto_updater.html#a4fd5711a0c97c0d83bb5fb8945744df3", null ]
 ];

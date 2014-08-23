@@ -1,5 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$d8/d5c/classpocketmine_1_1block_1_1_chest.html#a63325173d218f13a149204af816dbaa7" title="pocketmine\\block\\Chest\\place" alt="" coords="299,5,496,35"/>
-<area shape="rect" id="node5" href="$d5/df7/classpocketmine_1_1block_1_1_wood_slab.html#a4e47845b54903d664d71cce8104febf7" title="pocketmine\\block\\WoodSlab\\place" alt="" coords="287,59,508,88"/>
-<area shape="rect" id="node7" href="$dc/d60/classpocketmine_1_1block_1_1_slab.html#abc92dd48d2b5226e30be7204bbb9886e" title="pocketmine\\block\\Slab\\place" alt="" coords="303,112,492,141"/>
+<map id="pocketmine\block\Block\getDamage" name="pocketmine\block\Block\getDamage">
+<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a809bb258d797af4a4f9271addb4bfd4a" title="pocketmine\\level\\Level\l\\setBlock" alt="" coords="216,5,371,51"/>
+<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a3346679b5fe84b0fb3ae4bc27d99e18f" title="pocketmine\\level\\Level\l\\useItemOn" alt="" coords="419,5,573,51"/>
 </map>

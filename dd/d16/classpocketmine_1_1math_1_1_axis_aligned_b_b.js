@@ -17,10 +17,10 @@ var classpocketmine_1_1math_1_1_axis_aligned_b_b =
     [ "offset", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a8f862fab2106bcd48e8deac546c253fb", null ],
     [ "setBB", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a40f3332570f06b7e2dc1b9fab34caa7b", null ],
     [ "setBounds", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a4d478f784b64681312451352ee439b64", null ],
-    [ "$maxX", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a2b3089ca8dafebaf542c82d6f007731c", null ],
-    [ "$maxY", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a29313740e58eb3a4c0c7c994a1c35204", null ],
-    [ "$maxZ", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a5c830299506637990a2237a0abc8818b", null ],
-    [ "$minX", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#aa1e8c2dc9593207adef0c41db1889732", null ],
-    [ "$minY", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a0b4514a6d26a641fbf84f306825d91a7", null ],
-    [ "$minZ", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a2da15f2e0892587ea5f64d2fdb4b3bd2", null ]
+    [ "$maxX", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a052327b5403ff1e9a970fe55759ea9bf", null ],
+    [ "$maxY", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a33eac4b8cf41b7af88cd2994a11bc017", null ],
+    [ "$maxZ", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a18438ba19c802561107146fd5d334bf9", null ],
+    [ "$minX", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a9b35b61d7f29583325faee7e91c2efcc", null ],
+    [ "$minY", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#a88e7116555dc226c81808a61a4a496f0", null ],
+    [ "$minZ", "dd/d16/classpocketmine_1_1math_1_1_axis_aligned_b_b.html#ab77189d0400729a590a1c30eb4d6b5c5", null ]
 ];

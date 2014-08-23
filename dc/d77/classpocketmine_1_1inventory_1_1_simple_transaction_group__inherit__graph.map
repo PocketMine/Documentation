@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node5" href="$d6/d42/classpocketmine_1_1inventory_1_1_crafting_transaction_group.html" title="{pocketmine\\inventory\\CraftingTransactionGroup\n|# $input\l# $output\l# $recipe\l|+ __construct()\l+ addTransaction()\l+ getRecipe()\l+ getResult()\l+ canExecute()\l+ getMatchingRecipe()\l+ execute()\l}" alt="" coords="5,584,304,808"/>
-<area shape="rect" id="node2" href="$da/da3/interfacepocketmine_1_1inventory_1_1_transaction_group.html" title="{pocketmine\\inventory\\TransactionGroup\n||+ getCreationTime()\l+ getTransactions()\l+ getInventories()\l+ addTransaction()\l+ canExecute()\l+ execute()\l+ hasExecuted()\l}" alt="" coords="28,5,281,195"/>
+<map id="pocketmine\inventory\SimpleTransactionGroup" name="pocketmine\inventory\SimpleTransactionGroup">
+<area shape="rect" id="node5" href="$d6/d42/classpocketmine_1_1inventory_1_1_crafting_transaction_group.html" title="{pocketmine\\inventory\l\\CraftingTransactionGroup\n|# $input\l# $output\l# $recipe\l|+ __construct()\l+ addTransaction()\l+ getRecipe()\l+ getResult()\l+ canExecute()\l+ getMatchingRecipe()\l+ execute()\l}" alt="" coords="5,622,179,863"/>
+<area shape="rect" id="node2" href="$da/da3/interfacepocketmine_1_1inventory_1_1_transaction_group.html" title="{pocketmine\\inventory\l\\TransactionGroup\n||+ getCreationTime()\l+ getTransactions()\l+ getInventories()\l+ addTransaction()\l+ canExecute()\l+ execute()\l+ hasExecuted()\l}" alt="" coords="19,6,165,213"/>
 </map>

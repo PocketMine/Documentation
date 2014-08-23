@@ -1,14 +1,14 @@
-<map id="G" name="G">
-<area shape="rect" id="node5" href="$d7/d81/classpocketmine_1_1nbt_1_1tag_1_1_byte.html" title="{pocketmine\\nbt\\tag\\Byte\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="5,456,168,576"/>
-<area shape="rect" id="node7" href="$d4/d12/classpocketmine_1_1nbt_1_1tag_1_1_byte_array.html" title="{pocketmine\\nbt\\tag\\ByteArray\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="192,456,387,576"/>
-<area shape="rect" id="node9" href="$d6/d15/classpocketmine_1_1nbt_1_1tag_1_1_compound.html" title="{pocketmine\\nbt\\tag\\Compound\n||+ __construct()\l+ offsetExists()\l+ offsetGet()\l+ offsetSet()\l+ offsetUnset()\l+ getType()\l+ read()\l+ write()\l}" alt="" coords="411,413,611,619"/>
-<area shape="rect" id="node11" href="$d8/dcf/classpocketmine_1_1nbt_1_1tag_1_1_double.html" title="{pocketmine\\nbt\\tag\\Double\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="635,456,813,576"/>
-<area shape="rect" id="node13" href="$da/d56/classpocketmine_1_1nbt_1_1tag_1_1_enum.html" title="{pocketmine\\nbt\\tag\\Enum\n||+ __construct()\l+ getValue()\l+ offsetExists()\l+ offsetGet()\l+ offsetSet()\l+ offsetUnset()\l+ getType()\l+ setTagType()\l+ getTagType()\l+ read()\l}" alt="" coords="837,395,1008,637"/>
-<area shape="rect" id="node15" href="$d6/de7/classpocketmine_1_1nbt_1_1tag_1_1_float.html" title="{pocketmine\\nbt\\tag\\Float\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="1032,456,1197,576"/>
-<area shape="rect" id="node17" href="$d8/ddd/classpocketmine_1_1nbt_1_1tag_1_1_int.html" title="{pocketmine\\nbt\\tag\\Int\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="1221,456,1373,576"/>
-<area shape="rect" id="node19" href="$d1/dcf/classpocketmine_1_1nbt_1_1tag_1_1_int_array.html" title="{pocketmine\\nbt\\tag\\IntArray\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="1397,456,1579,576"/>
-<area shape="rect" id="node21" href="$d4/d70/classpocketmine_1_1nbt_1_1tag_1_1_long.html" title="{pocketmine\\nbt\\tag\\Long\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="1603,456,1768,576"/>
-<area shape="rect" id="node23" href="$d8/d9c/classpocketmine_1_1nbt_1_1tag_1_1_short.html" title="{pocketmine\\nbt\\tag\\Short\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="1792,456,1960,576"/>
-<area shape="rect" id="node25" href="$df/dd5/classpocketmine_1_1nbt_1_1tag_1_1_string.html" title="{pocketmine\\nbt\\tag\\String\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="1984,456,2155,576"/>
-<area shape="rect" id="node2" href="$dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html" title="{pocketmine\\nbt\\tag\\Tag\n|# $value\l|+ getValue()\l+ getType()\l+ setValue()\l+ write()\l+ read()\l+ __toString()\l}" alt="" coords="1036,6,1193,178"/>
+<map id="pocketmine\nbt\tag\NamedTag" name="pocketmine\nbt\tag\NamedTag">
+<area shape="rect" id="node7" href="$d7/d81/classpocketmine_1_1nbt_1_1tag_1_1_byte.html" title="{pocketmine\\nbt\\tag\\Byte\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="5,616,168,736"/>
+<area shape="rect" id="node9" href="$d4/d12/classpocketmine_1_1nbt_1_1tag_1_1_byte_array.html" title="{pocketmine\\nbt\\tag\l\\ByteArray\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="192,607,325,745"/>
+<area shape="rect" id="node11" href="$d6/d15/classpocketmine_1_1nbt_1_1tag_1_1_compound.html" title="{pocketmine\\nbt\\tag\l\\Compound\n||+ __construct()\l+ offsetExists()\l+ offsetGet()\l+ offsetSet()\l+ offsetUnset()\l+ getType()\l+ read()\l+ write()\l}" alt="" coords="349,564,483,788"/>
+<area shape="rect" id="node13" href="$d8/dcf/classpocketmine_1_1nbt_1_1tag_1_1_double.html" title="{pocketmine\\nbt\\tag\l\\Double\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="507,607,640,745"/>
+<area shape="rect" id="node15" href="$da/d56/classpocketmine_1_1nbt_1_1tag_1_1_enum.html" title="{pocketmine\\nbt\\tag\\Enum\n||+ __construct()\l+ getValue()\l+ offsetExists()\l+ offsetGet()\l+ offsetSet()\l+ offsetUnset()\l+ count()\l+ getType()\l+ setTagType()\l+ getTagType()\l+ read()\l}" alt="" coords="664,547,835,805"/>
+<area shape="rect" id="node17" href="$d6/de7/classpocketmine_1_1nbt_1_1tag_1_1_float.html" title="{pocketmine\\nbt\\tag\l\\Float\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="859,607,992,745"/>
+<area shape="rect" id="node19" href="$d8/ddd/classpocketmine_1_1nbt_1_1tag_1_1_int.html" title="{pocketmine\\nbt\\tag\\Int\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="1016,616,1168,736"/>
+<area shape="rect" id="node21" href="$d1/dcf/classpocketmine_1_1nbt_1_1tag_1_1_int_array.html" title="{pocketmine\\nbt\\tag\l\\IntArray\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="1192,607,1325,745"/>
+<area shape="rect" id="node23" href="$d4/d70/classpocketmine_1_1nbt_1_1tag_1_1_long.html" title="{pocketmine\\nbt\\tag\\Long\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="1349,616,1515,736"/>
+<area shape="rect" id="node25" href="$d8/d9c/classpocketmine_1_1nbt_1_1tag_1_1_short.html" title="{pocketmine\\nbt\\tag\l\\Short\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="1539,607,1672,745"/>
+<area shape="rect" id="node27" href="$df/dd5/classpocketmine_1_1nbt_1_1tag_1_1_string.html" title="{pocketmine\\nbt\\tag\l\\String\n||+ getType()\l+ read()\l+ write()\l}" alt="" coords="1696,607,1829,745"/>
+<area shape="rect" id="node2" href="$dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html" title="{pocketmine\\nbt\\tag\\Tag\n|# $value\l|+ getValue()\l+ getType()\l+ setValue()\l+ write()\l+ read()\l+ __toString()\l}" alt="" coords="847,139,1004,311"/>
 </map>

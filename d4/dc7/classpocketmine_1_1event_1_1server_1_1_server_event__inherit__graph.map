@@ -1,6 +1,7 @@
-<map id="G" name="G">
-<area shape="rect" id="node5" href="$d1/dcc/classpocketmine_1_1event_1_1server_1_1_data_packet_receive_event.html" title="{pocketmine\\event\\server\\DataPacketReceiveEvent\n|+ $handlerList\l|+ __construct()\l+ getPacket()\l+ getPlayer()\l}" alt="" coords="5,352,325,472"/>
-<area shape="rect" id="node7" href="$d5/dd4/classpocketmine_1_1event_1_1server_1_1_data_packet_send_event.html" title="{pocketmine\\event\\server\\DataPacketSendEvent\n|+ $handlerList\l|+ __construct()\l+ getPacket()\l+ getPlayer()\l}" alt="" coords="349,352,651,472"/>
-<area shape="rect" id="node9" href="$d4/de4/classpocketmine_1_1event_1_1server_1_1_server_command_event.html" title="{pocketmine\\event\\server\\ServerCommandEvent\n|+ $handlerList\l# $command\l# $sender\l|+ __construct()\l+ getSender()\l+ getCommand()\l+ setCommand()\l}" alt="" coords="675,326,976,498"/>
-<area shape="rect" id="node2" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="419,6,581,143"/>
+<map id="pocketmine\event\server\ServerEvent" name="pocketmine\event\server\ServerEvent">
+<area shape="rect" id="node5" href="$d1/dcc/classpocketmine_1_1event_1_1server_1_1_data_packet_receive_event.html" title="{pocketmine\\event\\server\l\\DataPacketReceiveEvent\n|+ $handlerList\l|+ __construct()\l+ getPacket()\l+ getPlayer()\l}" alt="" coords="5,370,181,507"/>
+<area shape="rect" id="node7" href="$d5/dd4/classpocketmine_1_1event_1_1server_1_1_data_packet_send_event.html" title="{pocketmine\\event\\server\l\\DataPacketSendEvent\n|+ $handlerList\l|+ __construct()\l+ getPacket()\l+ getPlayer()\l}" alt="" coords="205,370,371,507"/>
+<area shape="rect" id="node9" href="$d4/de4/classpocketmine_1_1event_1_1server_1_1_server_command_event.html" title="{pocketmine\\event\\server\l\\ServerCommandEvent\n|+ $handlerList\l# $command\l# $sender\l|+ __construct()\l+ getSender()\l+ getCommand()\l+ setCommand()\l}" alt="" coords="395,344,560,533"/>
+<area shape="rect" id="node2" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="207,6,369,143"/>
+<area shape="rect" id="node11" href="$d0/d79/classpocketmine_1_1event_1_1server_1_1_remote_server_command_event.html" title="{pocketmine\\event\\server\l\\RemoteServerCommandEvent\n|+ $handlerList\l|+ __construct()\l}" alt="" coords="376,582,579,685"/>
 </map>

@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html" title="{pocketmine\\command\\defaults\\VanillaCommand\n|+ MAX_COORD\l+ MIN_COORD\l|+ __construct()\l# getInteger()\l# getRelativeDouble()\l# getDouble()\l}" alt="" coords="5,331,307,485"/>
-<area shape="rect" id="node4" href="$d6/df1/classpocketmine_1_1command_1_1_command.html" title="{pocketmine\\command\\Command\n|# $description\l# $usageMessage\l|+ __construct()\l+ execute()\l+ getName()\l+ getPermission()\l+ setPermission()\l+ testPermission()\l+ testPermissionSilent()\l+ getLabel()\l+ setLabel()\l+ register()\land 10 more...+ broadcastCommandMessage()\l}" alt="" coords="8,6,304,282"/>
+<map id="pocketmine\command\defaults\TellCommand" name="pocketmine\command\defaults\TellCommand">
+<area shape="rect" id="node2" href="$d5/dfa/classpocketmine_1_1command_1_1defaults_1_1_vanilla_command.html" title="{pocketmine\\command\l\\defaults\\VanillaCommand\n|+ MAX_COORD\l+ MIN_COORD\l|+ __construct()\l# getInteger()\l# getRelativeDouble()\l# getDouble()\l}" alt="" coords="24,382,197,554"/>
+<area shape="rect" id="node4" href="$d6/df1/classpocketmine_1_1command_1_1_command.html" title="{pocketmine\\command\l\\Command\n|+ $timings\l# $description\l# $usageMessage\l|+ __construct()\l+ execute()\l+ getName()\l+ getPermission()\l+ setPermission()\l+ testPermission()\l+ testPermissionSilent()\l+ getLabel()\l+ setLabel()\l+ register()\land 11 more...\l+ broadcastCommandMessage()\l}" alt="" coords="5,5,216,333"/>
 </map>

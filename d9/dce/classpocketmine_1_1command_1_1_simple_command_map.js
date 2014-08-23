@@ -8,5 +8,5 @@ var classpocketmine_1_1command_1_1_simple_command_map =
     [ "register", "d9/dce/classpocketmine_1_1command_1_1_simple_command_map.html#ae655204955036126e108a1fafbe01e29", null ],
     [ "registerAll", "d9/dce/classpocketmine_1_1command_1_1_simple_command_map.html#a778b7bc1170795d74cbe923ae20106ce", null ],
     [ "registerServerAliases", "d9/dce/classpocketmine_1_1command_1_1_simple_command_map.html#ab0b0a76f03cad6e7203e5e84e700a5f3", null ],
-    [ "$knownCommands", "d9/dce/classpocketmine_1_1command_1_1_simple_command_map.html#abb03ebf404c708f1c48f1d9e1bbdabb1", null ]
+    [ "$knownCommands", "d9/dce/classpocketmine_1_1command_1_1_simple_command_map.html#a5997dcd7e2f112cf376047395c7de345", null ]
 ];

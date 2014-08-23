@@ -20,6 +20,6 @@ var classpocketmine_1_1math_1_1_vector2 =
     [ "normalize", "d7/d11/classpocketmine_1_1math_1_1_vector2.html#a5a032856985fe8726be18028698f7b0e", null ],
     [ "round", "d7/d11/classpocketmine_1_1math_1_1_vector2.html#a2a87f00e640f7a136cbdfcba006cb896", null ],
     [ "subtract", "d7/d11/classpocketmine_1_1math_1_1_vector2.html#a0e4b13f066aca870d03136bd6e2d8253", null ],
-    [ "$x", "d7/d11/classpocketmine_1_1math_1_1_vector2.html#a421fc206d7c9801c09ece1efd63ef69e", null ],
-    [ "$y", "d7/d11/classpocketmine_1_1math_1_1_vector2.html#aa97df5b807c064a309c01eebfb0cc4d7", null ]
+    [ "$x", "d7/d11/classpocketmine_1_1math_1_1_vector2.html#aacc91047fd4253d9e7c457f8f12bb112", null ],
+    [ "$y", "d7/d11/classpocketmine_1_1math_1_1_vector2.html#a6c1e7f719cad58f00b5f88a645f24ad9", null ]
 ];

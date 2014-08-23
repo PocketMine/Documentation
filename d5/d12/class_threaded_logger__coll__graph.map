@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$d8/d18/class_thread.html" title="{Thread\n||+ detach()\l+ getCreatorId()\l+ getThreadId()\l+ isJoined()\l+ isStarted()\l+ join()\l+ kill()\l+ start()\l+ getCurrentThread()\l+ getCurrentThreadId()\l+ globally()\l}" alt="" coords="5,312,160,571"/>
-<area shape="rect" id="node4" href="$d0/d82/class_threaded.html" title="{Threaded\n||+ chunk()\l+ count()\l+ getTerminationInfo()\l+ isRunning()\l+ isTerminated()\l+ isWaiting()\l+ lock()\l+ merge()\l+ notify()\l+ offsetGet()\land 8 more...}" alt="" coords="8,5,157,264"/>
-<area shape="rect" id="node6" href="$d4/d00/interface_logger.html" title="{Logger\n||+ emergency()\l+ alert()\l+ critical()\l+ error()\l+ warning()\l+ notice()\l+ info()\l+ debug()\l+ log()\l}" alt="" coords="184,329,291,553"/>
+<map id="ThreadedLogger" name="ThreadedLogger">
+<area shape="rect" id="node2" href="$d8/d18/class_thread.html" title="{Thread\n||+ detach()\l+ getCreatorId()\l+ getThreadId()\l+ isJoined()\l+ isStarted()\l+ join()\l+ kill()\l+ start()\l+ getCurrentThread()\l+ getCurrentThreadId()\l+ globally()\l}" alt="" coords="83,445,237,704"/>
+<area shape="rect" id="node4" href="$d0/d82/class_threaded.html" title="{Threaded\n||+ chunk()\l+ count()\l+ getTerminationInfo()\l+ isRunning()\l+ isTerminated()\l+ isWaiting()\l+ lock()\l+ merge()\l+ notify()\l+ offsetGet()\land 9 more...\l}" alt="" coords="85,139,235,397"/>
+<area shape="rect" id="node12" href="$d4/d00/interface_logger.html" title="{Logger\n||+ emergency()\l+ alert()\l+ critical()\l+ error()\l+ warning()\l+ notice()\l+ info()\l+ debug()\l+ log()\l}" alt="" coords="261,463,368,687"/>
 </map>

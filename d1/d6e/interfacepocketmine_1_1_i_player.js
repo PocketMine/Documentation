@@ -7,7 +7,9 @@ var interfacepocketmine_1_1_i_player =
     [ "hasPlayedBefore", "d1/d6e/interfacepocketmine_1_1_i_player.html#a0635ce863deec720703d164a710cff5a", null ],
     [ "isBanned", "d1/d6e/interfacepocketmine_1_1_i_player.html#a98074b929c27c3da038c3cd654cb7c9e", null ],
     [ "isOnline", "d1/d6e/interfacepocketmine_1_1_i_player.html#a2fdc6e0ecf02fb6e7c9b8d86cc13578f", null ],
+    [ "isOp", "d1/d6e/interfacepocketmine_1_1_i_player.html#a268502be922060fc85598075dd3f01ff", null ],
     [ "isWhitelisted", "d1/d6e/interfacepocketmine_1_1_i_player.html#aa3ba2e229108dd189703aa31659f2b47", null ],
     [ "setBanned", "d1/d6e/interfacepocketmine_1_1_i_player.html#ab4b58cd74377a70b1692308be9bdfd8b", null ],
+    [ "setOp", "d1/d6e/interfacepocketmine_1_1_i_player.html#a426e55586eb4d24ad7ff7e0b0492e1fe", null ],
     [ "setWhitelisted", "d1/d6e/interfacepocketmine_1_1_i_player.html#afb2289ba43ea2cdfe99d54dffe5217ef", null ]
 ];

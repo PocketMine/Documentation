@@ -12,5 +12,5 @@ var classpocketmine_1_1utils_1_1_version_string =
     [ "getRelease", "df/d22/classpocketmine_1_1utils_1_1_version_string.html#ae8a59e40ba90ec93a6c092bf1ed71649", null ],
     [ "getStage", "df/d22/classpocketmine_1_1utils_1_1_version_string.html#a406bd1b838e13fdf6f0776b2db2df862", null ],
     [ "isDev", "df/d22/classpocketmine_1_1utils_1_1_version_string.html#aea72a81511b199a1b4d89f12f9d1072c", null ],
-    [ "$stageOrder", "df/d22/classpocketmine_1_1utils_1_1_version_string.html#a7db5d261d576f37a1299e60b8367636e", null ]
+    [ "$stageOrder", "df/d22/classpocketmine_1_1utils_1_1_version_string.html#a2f5186fe83bb7f409193edb05834ce5a", null ]
 ];

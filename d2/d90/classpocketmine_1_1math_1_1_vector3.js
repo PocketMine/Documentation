@@ -30,7 +30,7 @@ var classpocketmine_1_1math_1_1_vector3 =
     [ "normalize", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#ac2f0e8bdeef3c1d2c1b0d9ccc67c74c0", null ],
     [ "round", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#add35f31224f5bc2de3a0c4b0780f35bf", null ],
     [ "subtract", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#afd165b183dba2c814e2c4a0ce5755533", null ],
-    [ "$x", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#a8fcf85587a403b9d1fa2481249bba190", null ],
-    [ "$y", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#a532b49367e3c9948f2629bc50f2dc532", null ],
-    [ "$z", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#a9a0a7bbf3eba0e3d21b59eac301a3d1e", null ]
+    [ "$x", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#add0e4e5d6c6d31d231a522625f588c22", null ],
+    [ "$y", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#ad0aefe5836b534fc90acfe88cf2523cf", null ],
+    [ "$z", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#aab40fb083f72f394744f7d42cd46e2c3", null ]
 ];

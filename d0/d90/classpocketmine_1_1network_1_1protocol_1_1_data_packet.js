@@ -9,9 +9,9 @@ var classpocketmine_1_1network_1_1protocol_1_1_data_packet =
     [ "getDataArray", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#aeb79aff9741296738ba592888fadf76a", null ],
     [ "getFloat", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#a8fe27f4f9c07d42ede630b55e3890084", null ],
     [ "getInt", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#aa8e432c32d0d2df1d6499091b97c30e9", null ],
-    [ "getLong", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#acdcdd0f280c3800d2aad7118b7034a5a", null ],
+    [ "getLong", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#a4787f7b0980de0d0a21910c65619e682", null ],
     [ "getLTriad", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#aa973f04ced929c90b608e12e866b5800", null ],
-    [ "getShort", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#a97f6b0eb0b635900504b6b5f2caef8d2", null ],
+    [ "getShort", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#a91e87d8808781a10cbcc50e694484341", null ],
     [ "getSlot", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#a21bc1362ec76e12ace742e5133d0f2c5", null ],
     [ "getString", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#a3f364b616abfd8ae3cb45cfbdf52e9d4", null ],
     [ "getTriad", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#ac4b97565d595d370e0ff071dc2b00329", null ],
@@ -29,5 +29,5 @@ var classpocketmine_1_1network_1_1protocol_1_1_data_packet =
     [ "putTriad", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#a12a0cb6d10c1dc48d75f8763f865c35a", null ],
     [ "reset", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#a5ea9e9eb5b32dee9c6bc51900f8fbb92", null ],
     [ "setBuffer", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#a165102568c1290cdfa2e9a3cda814466", null ],
-    [ "$buffer", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#aa79ce07dd1cf8ba0c72dea01ebda0aa4", null ]
+    [ "$buffer", "d0/d90/classpocketmine_1_1network_1_1protocol_1_1_data_packet.html#a87c6760a0f385b960a81d4f1fe57278d", null ]
 ];

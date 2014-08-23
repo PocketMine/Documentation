@@ -1,3 +1,3 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$d9/d6b/classpocketmine_1_1entity_1_1_villager.html" title="{pocketmine\\entity\\Villager\n|+ FARMER\l+ LIBRARIAN\l+ PRIEST\l+ BLACKSMITH\l+ BUTCHER\l|+ setProfession()\l}" alt="" coords="5,139,176,293"/>
+<map id="pocketmine\entity\NPC" name="pocketmine\entity\NPC">
+<area shape="rect" id="node3" href="$d9/d6b/classpocketmine_1_1entity_1_1_villager.html" title="{pocketmine\\entity\\Villager\n|+ PROFESSION_FARMER\l+ PROFESSION_LIBRARIAN\l+ PROFESSION_PRIEST\l+ PROFESSION_BLACKSMITH\l+ PROFESSION_BUTCHER\l+ PROFESSION_GENERIC\l+ NETWORK_ID\l+ $width\l+ $length\l+ $height\l|+ getName()\l+ spawnTo()\l+ getData()\l+ setProfession()\l+ getProfession()\l# initEntity()\l}" alt="" coords="5,139,219,467"/>
 </map>

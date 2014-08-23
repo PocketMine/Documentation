@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html" title="{pocketmine\\event\\player\\PlayerEvent\n|# $player\l|+ getPlayer()\l}" alt="" coords="17,192,255,277"/>
-<area shape="rect" id="node4" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="55,6,217,143"/>
+<map id="pocketmine\event\player\PlayerQuitEvent" name="pocketmine\event\player\PlayerQuitEvent">
+<area shape="rect" id="node2" href="$d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html" title="{pocketmine\\event\\player\l\\PlayerEvent\n|# $player\l|+ getPlayer()\l}" alt="" coords="5,193,168,295"/>
+<area shape="rect" id="node4" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="5,6,168,143"/>
 </map>

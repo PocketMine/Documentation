@@ -1,0 +1,9 @@
+<map id="pocketmine\inventory\PlayerInventory\clearAll" name="pocketmine\inventory\PlayerInventory\clearAll">
+<area shape="rect" id="node3" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#a1b9f22225b0a8cee8cd57855c02724ab" title="pocketmine\\inventory\l\\PlayerInventory\\clear" alt="" coords="219,129,368,175"/>
+<area shape="rect" id="node5" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#af3d72b8ec9fec0a90f4d1a47057a76b2" title="pocketmine\\inventory\l\\PlayerInventory\\getHolder" alt="" coords="668,74,844,121"/>
+<area shape="rect" id="node7" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="416,249,619,279"/>
+<area shape="rect" id="node9" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a65b280b6c12e1d4e5bcd4d0de3aa4a71" title="pocketmine\\inventory\l\\BaseInventory\\getViewers" alt="" coords="667,166,845,213"/>
+<area shape="rect" id="node11" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#ad3878f887e75d92f3164e4d78fd40fab" title="pocketmine\\inventory\l\\PlayerInventory\\onSlotChange" alt="" coords="416,129,619,175"/>
+<area shape="rect" id="node15" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#ac0fe6ab11ec3f4f792474dcf537819dc" title="pocketmine\\inventory\l\\PlayerInventory\\sendContents" alt="" coords="416,9,619,55"/>
+<area shape="rect" id="node17" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a8bc94c0515906b5c1f3af5600d89b3df" title="pocketmine\\inventory\l\\BaseInventory\\getItem" alt="" coords="677,5,835,51"/>
+</map>

@@ -19,13 +19,13 @@ var classraklib_1_1server_1_1_session_manager =
     [ "streamInvalid", "d7/d20/classraklib_1_1server_1_1_session_manager.html#ad62b6f69d09d92cf75563e0c0174da84", null ],
     [ "streamOpen", "d7/d20/classraklib_1_1server_1_1_session_manager.html#ac8bfbac81626d299d8e7d01a85911ff8", null ],
     [ "streamOption", "d7/d20/classraklib_1_1server_1_1_session_manager.html#ad486b1f90c3691196429d2dae7a8745a", null ],
-    [ "$internalSocket", "d7/d20/classraklib_1_1server_1_1_session_manager.html#a6449b24b84111c6a063097030b1923cd", null ],
-    [ "$name", "d7/d20/classraklib_1_1server_1_1_session_manager.html#a26d1e4069fdfeac9ed720a9042757955", null ],
-    [ "$packetPool", "d7/d20/classraklib_1_1server_1_1_session_manager.html#a91242d76cd3a3a884b41515f0a15c846", null ],
-    [ "$receiveBytes", "d7/d20/classraklib_1_1server_1_1_session_manager.html#ac56b3bd5aca345051fbd1ce54fb58971", null ],
-    [ "$sendBytes", "d7/d20/classraklib_1_1server_1_1_session_manager.html#a6b4577920e8e6d6b6aec60ceecc4df43", null ],
-    [ "$server", "d7/d20/classraklib_1_1server_1_1_session_manager.html#a5fff9e9b0de3e93b0cd6c601ffe763cc", null ],
-    [ "$sessions", "d7/d20/classraklib_1_1server_1_1_session_manager.html#a26e0b764d9446cfd3a3d3d05b4e2a81b", null ],
-    [ "$shutdown", "d7/d20/classraklib_1_1server_1_1_session_manager.html#afc1c0d2fcf504aa990bd6caf8cec1393", null ],
-    [ "$socket", "d7/d20/classraklib_1_1server_1_1_session_manager.html#aca7888e868c63b2afe0783f5ec0736c1", null ]
+    [ "$internalSocket", "d7/d20/classraklib_1_1server_1_1_session_manager.html#a416c8ee815e009605820a079d0c2c6d9", null ],
+    [ "$name", "d7/d20/classraklib_1_1server_1_1_session_manager.html#a6b083c45cd2d9e858b993973a7bc0ae0", null ],
+    [ "$packetPool", "d7/d20/classraklib_1_1server_1_1_session_manager.html#a7a20bd86085f3a478062368f225fe4ff", null ],
+    [ "$receiveBytes", "d7/d20/classraklib_1_1server_1_1_session_manager.html#a444e26b2d4b72408abc1c0b0184051e5", null ],
+    [ "$sendBytes", "d7/d20/classraklib_1_1server_1_1_session_manager.html#ae11a25176772f7a7533ce231d4d684ba", null ],
+    [ "$server", "d7/d20/classraklib_1_1server_1_1_session_manager.html#a239ff08b212021e4ca7891de7ff5c7dc", null ],
+    [ "$sessions", "d7/d20/classraklib_1_1server_1_1_session_manager.html#abd00d3e2180f8a2f8574ec6646ad556f", null ],
+    [ "$shutdown", "d7/d20/classraklib_1_1server_1_1_session_manager.html#a6c37d41d9c66e82016be593fe20bd2f9", null ],
+    [ "$socket", "d7/d20/classraklib_1_1server_1_1_session_manager.html#ab3eebdce22afbf343632485399f14abe", null ]
 ];

@@ -22,6 +22,7 @@ var classpocketmine_1_1command_1_1_command =
     [ "testPermission", "d6/df1/classpocketmine_1_1command_1_1_command.html#a26a56d9c918a77a565e9591ed0386928", null ],
     [ "testPermissionSilent", "d6/df1/classpocketmine_1_1command_1_1_command.html#a7805631da5bffb60c7b19ce4105bb1c8", null ],
     [ "unregister", "d6/df1/classpocketmine_1_1command_1_1_command.html#ac0103b6bd94cdbb4758d59bd51d05337", null ],
-    [ "$description", "d6/df1/classpocketmine_1_1command_1_1_command.html#a56a311a240d3300ee4a49b70e80407fe", null ],
-    [ "$usageMessage", "d6/df1/classpocketmine_1_1command_1_1_command.html#abf13988f70b4db5a8d1ed833a0128bb0", null ]
+    [ "$description", "d6/df1/classpocketmine_1_1command_1_1_command.html#a0d41b4f3a5a6dd9283c9f9ffde0c7ff3", null ],
+    [ "$timings", "d6/df1/classpocketmine_1_1command_1_1_command.html#a7f9702a37ca739b2df1011618747288f", null ],
+    [ "$usageMessage", "d6/df1/classpocketmine_1_1command_1_1_command.html#ad48b4085371e59844508afa41a9dbb60", null ]
 ];

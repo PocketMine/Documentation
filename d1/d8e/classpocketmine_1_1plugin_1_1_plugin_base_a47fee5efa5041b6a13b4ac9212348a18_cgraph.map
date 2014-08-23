@@ -1,0 +1,5 @@
+<map id="pocketmine\plugin\PluginBase\setEnabled" name="pocketmine\plugin\PluginBase\setEnabled">
+<area shape="rect" id="node3" href="$d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#aeac6dbec291ce12a94b6be170026181c" title="pocketmine\\plugin\\Plugin\lBase\\isEnabled" alt="" coords="223,5,388,51"/>
+<area shape="rect" id="node5" href="$d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a6257d7f6663608ddbeae784c63991abb" title="pocketmine\\plugin\\Plugin\lBase\\onDisable" alt="" coords="223,74,388,121"/>
+<area shape="rect" id="node7" href="$d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#ae33d8a71e513ca02ea36cefc72748e5a" title="pocketmine\\plugin\\Plugin\lBase\\onEnable" alt="" coords="223,143,388,190"/>
+</map>

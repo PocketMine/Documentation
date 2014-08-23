@@ -1,5 +1,7 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$df/d2c/classpocketmine_1_1_player.html#a890409beec631f5cbc42d602ad94eb2b" title="pocketmine\\Player\\getName" alt="" coords="717,5,904,35"/>
-<area shape="rect" id="node5" href="$df/d2c/classpocketmine_1_1_player.html#a64148b8f2640b851c6ad698a4044e8d4" title="pocketmine\\Player\\spawnTo" alt="" coords="256,31,443,60"/>
-<area shape="rect" id="node7" href="$df/d2c/classpocketmine_1_1_player.html#a71697b195952a333b72a27f3e0eff6e8" title="pocketmine\\Player\\canSee" alt="" coords="491,31,669,60"/>
+<map id="pocketmine\Player\showPlayer" name="pocketmine\Player\showPlayer">
+<area shape="rect" id="node3" href="$df/d2c/classpocketmine_1_1_player.html#a890409beec631f5cbc42d602ad94eb2b" title="pocketmine\\Player\\getName" alt="" coords="717,42,904,71"/>
+<area shape="rect" id="node5" href="$df/d2c/classpocketmine_1_1_player.html#ad129342e283c32902a928e413a11a136" title="pocketmine\\Player\\isOnline" alt="" coords="259,32,440,62"/>
+<area shape="rect" id="node7" href="$df/d2c/classpocketmine_1_1_player.html#a64148b8f2640b851c6ad698a4044e8d4" title="pocketmine\\Player\\spawnTo" alt="" coords="256,86,443,115"/>
+<area shape="rect" id="node9" href="$db/d9b/classpocketmine_1_1level_1_1_position.html#ae667e74646ed1b8d04db126265d75955" title="pocketmine\\level\\Position\l\\getLevel" alt="" coords="495,32,665,78"/>
+<area shape="rect" id="node11" href="$df/d2c/classpocketmine_1_1_player.html#a71697b195952a333b72a27f3e0eff6e8" title="pocketmine\\Player\\canSee" alt="" coords="491,102,669,131"/>
 </map>

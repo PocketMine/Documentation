@@ -1,3 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$de/d02/classpocketmine_1_1level_1_1format_1_1anvil_1_1_chunk.html" title="pocketmine\\level\\format\\anvil\\Chunk" alt="" coords="5,5,240,35"/>
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d3/d5d/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_region_loader.html" title="pocketmine\\level\\format\l\\mcregion\\RegionLoader" alt="" coords="5,5,168,51"/>
+<area shape="rect" id="node3" href="$de/da6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_region_loader.html" title="pocketmine\\level\\format\l\\anvil\\RegionLoader" alt="" coords="217,5,377,51"/>
 </map>

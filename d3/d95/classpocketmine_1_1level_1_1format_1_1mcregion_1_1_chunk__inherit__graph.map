@@ -1,0 +1,4 @@
+<map id="pocketmine\level\format\mcregion\Chunk" name="pocketmine\level\format\mcregion\Chunk">
+<area shape="rect" id="node2" href="$da/d9a/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_full_chunk.html" title="{pocketmine\\level\\format\l\\generic\\BaseFullChunk\n|# $entities\l# $tiles\l# $biomeIds\l# $biomeColors\l# $blocks\l# $data\l# $skyLight\l# $blockLight\l# $provider\l# $x\l# $z\l|+ getX()\l+ getZ()\l+ setX()\l+ setZ()\l+ getLevel()\l+ getProvider()\l+ setProvider()\l+ getBiomeId()\l+ setBiomeId()\l+ getBiomeColor()\land 17 more...\l# __construct()\l}" alt="" coords="5,347,165,813"/>
+<area shape="rect" id="node4" href="$d6/d3d/interfacepocketmine_1_1level_1_1format_1_1_full_chunk.html" title="{pocketmine\\level\\format\l\\FullChunk\n||+ getX()\l+ getZ()\l+ setX()\l+ setZ()\l+ getProvider()\l+ setProvider()\l+ getBlock()\l+ setBlock()\l+ getBlockId()\l+ setBlockId()\land 35 more...\l+ fromBinary()\l}" alt="" coords="5,5,165,299"/>
+</map>

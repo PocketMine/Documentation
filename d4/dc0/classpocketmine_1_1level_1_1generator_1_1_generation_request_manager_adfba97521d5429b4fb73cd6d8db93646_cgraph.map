@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$d5/df7/classpocketmine_1_1_server.html#af9c4f86ccd5d076e961e423be2fcdd9a" title="pocketmine\\Server\\getLoader" alt="" coords="469,5,661,35"/>
-<area shape="rect" id="node5" href="$d5/df7/classpocketmine_1_1_server.html#a5b32c69f8f444fc6b2768a5afc0af656" title="pocketmine\\Server\\getLogger" alt="" coords="469,59,661,88"/>
+<map id="pocketmine\level\generator\GenerationRequestManager\__construct" name="pocketmine\level\generator\GenerationRequestManager\__construct">
+<area shape="rect" id="node3" href="$d5/df7/classpocketmine_1_1_server.html#af9c4f86ccd5d076e961e423be2fcdd9a" title="pocketmine\\Server\\getLoader" alt="" coords="243,5,435,35"/>
+<area shape="rect" id="node5" href="$d5/df7/classpocketmine_1_1_server.html#a5b32c69f8f444fc6b2768a5afc0af656" title="pocketmine\\Server\\getLogger" alt="" coords="243,59,435,88"/>
 </map>

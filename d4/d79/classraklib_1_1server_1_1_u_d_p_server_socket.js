@@ -6,6 +6,6 @@ var classraklib_1_1server_1_1_u_d_p_server_socket =
     [ "setRecvBuffer", "d4/d79/classraklib_1_1server_1_1_u_d_p_server_socket.html#afb60cb2f2879a6bf95ff4a8ff7874087", null ],
     [ "setSendBuffer", "d4/d79/classraklib_1_1server_1_1_u_d_p_server_socket.html#af2d423a3c8083d8a39d5161e64d15987", null ],
     [ "writePacket", "d4/d79/classraklib_1_1server_1_1_u_d_p_server_socket.html#a4545e6f20ed991ecfd24cfc78efb762e", null ],
-    [ "$logger", "d4/d79/classraklib_1_1server_1_1_u_d_p_server_socket.html#a7a9b8f5d756ac7cf326d7615bf17f5bc", null ],
-    [ "$socket", "d4/d79/classraklib_1_1server_1_1_u_d_p_server_socket.html#a93c3a344e6130c3f8df0131357fd8733", null ]
+    [ "$logger", "d4/d79/classraklib_1_1server_1_1_u_d_p_server_socket.html#a1193bcf3d4082fbe8b039a28eca096ab", null ],
+    [ "$socket", "d4/d79/classraklib_1_1server_1_1_u_d_p_server_socket.html#a46c23d599e4a8472a64584f71a02535b", null ]
 ];

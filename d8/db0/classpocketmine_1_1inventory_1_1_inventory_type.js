@@ -5,11 +5,11 @@ var classpocketmine_1_1inventory_1_1_inventory_type =
     [ "getDefaultTitle", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#ae2527112af845076ee8e7523cf8caa4b", null ],
     [ "getNetworkType", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#a5df8967964deead8bd29538997555526", null ],
     [ "init", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#a415733d674969528a34d9a59d22711ad", null ],
-    [ "CHEST", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#ac035cc10319bfac66ad493182e488e46", null ],
-    [ "CRAFTING", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#ab0e44eb7e3656aa38bb75e815c20b065", null ],
-    [ "DOUBLE_CHEST", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#aff3c8f3c327bb57447ab9e14e7e1eee2", null ],
-    [ "FURNACE", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#a90bf46306e01daa745386780a2070c8a", null ],
-    [ "PLAYER", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#ac189d216314acfcc1abc8b381e1d5430", null ],
-    [ "STONECUTTER", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#a6aba7d078f12d5d74701aa68475a67df", null ],
-    [ "WORKBENCH", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#ac866475bc9a0f33b6eee411d54711f63", null ]
+    [ "CHEST", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#a7b6dea223e7c08be7d515542792047df", null ],
+    [ "CRAFTING", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#a2f1f0bd86eedbc06af0582adba4e8b42", null ],
+    [ "DOUBLE_CHEST", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#aeb5c5917ec8ab665d98910e632075a1c", null ],
+    [ "FURNACE", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#a1230149ee1fa72d12682d7748f9466e7", null ],
+    [ "PLAYER", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#a62c01c35b0362c1e1b2a1a9ff61b40b7", null ],
+    [ "STONECUTTER", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#ad1cbd8d3ed90b590e7ef6dfe73604765", null ],
+    [ "WORKBENCH", "d8/db0/classpocketmine_1_1inventory_1_1_inventory_type.html#a51953c10140fe8c643193b3765c7df98", null ]
 ];

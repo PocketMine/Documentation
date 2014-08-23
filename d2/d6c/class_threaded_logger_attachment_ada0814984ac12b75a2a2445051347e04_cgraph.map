@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$d2/d6c/class_threaded_logger_attachment.html#a55e48c05a75c60c85513814af5834eca" title="ThreadedLoggerAttachment\\addAttachment" alt="" coords="352,5,627,35"/>
-<area shape="rect" id="node5" href="$d2/d6c/class_threaded_logger_attachment.html#aad59352d1678b055c5b45727175a6bec" title="ThreadedLoggerAttachment\\getAttachments" alt="" coords="351,59,628,88"/>
+<map id="ThreadedLoggerAttachment\removeAttachment" name="ThreadedLoggerAttachment\removeAttachment">
+<area shape="rect" id="node3" href="$d2/d6c/class_threaded_logger_attachment.html#a55e48c05a75c60c85513814af5834eca" title="ThreadedLoggerAttachment\l\\addAttachment" alt="" coords="239,5,420,51"/>
+<area shape="rect" id="node5" href="$d2/d6c/class_threaded_logger_attachment.html#aad59352d1678b055c5b45727175a6bec" title="ThreadedLoggerAttachment\l\\getAttachments" alt="" coords="239,74,420,121"/>
 </map>

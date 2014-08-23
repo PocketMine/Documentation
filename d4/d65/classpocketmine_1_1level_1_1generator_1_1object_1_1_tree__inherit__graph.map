@@ -1,6 +1,6 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$d1/d75/classpocketmine_1_1level_1_1generator_1_1object_1_1_big_tree.html" title="{pocketmine\\level\\generator\\object\\BigTree\n|# $radiusIncrease\l|+ canPlaceObject()\l+ placeObject()\l}" alt="" coords="5,139,272,242"/>
-<area shape="rect" id="node5" href="$d6/d86/classpocketmine_1_1level_1_1generator_1_1object_1_1_pine_tree.html" title="{pocketmine\\level\\generator\\object\\PineTree\n|+ $type\l|+ canPlaceObject()\l+ placeObject()\l}" alt="" coords="296,139,568,242"/>
-<area shape="rect" id="node7" href="$d9/d33/classpocketmine_1_1level_1_1generator_1_1object_1_1_small_tree.html" title="{pocketmine\\level\\generator\\object\\SmallTree\n|+ $type\l|+ canPlaceObject()\l+ placeObject()\l}" alt="" coords="592,139,872,242"/>
-<area shape="rect" id="node9" href="$dc/dbc/classpocketmine_1_1level_1_1generator_1_1object_1_1_spruce_tree.html" title="{pocketmine\\level\\generator\\object\\SpruceTree\n|+ $type\l|+ canPlaceObject()\l+ placeObject()\l}" alt="" coords="896,139,1184,242"/>
+<map id="pocketmine\level\generator\object\Tree" name="pocketmine\level\generator\object\Tree">
+<area shape="rect" id="node3" href="$d1/d75/classpocketmine_1_1level_1_1generator_1_1object_1_1_big_tree.html" title="{pocketmine\\level\\generator\l\\object\\BigTree\n|# $radiusIncrease\l|+ canPlaceObject()\l+ placeObject()\l}" alt="" coords="5,157,184,277"/>
+<area shape="rect" id="node5" href="$d6/d86/classpocketmine_1_1level_1_1generator_1_1object_1_1_pine_tree.html" title="{pocketmine\\level\\generator\l\\object\\PineTree\n|+ $type\l|+ canPlaceObject()\l+ placeObject()\l}" alt="" coords="208,157,387,277"/>
+<area shape="rect" id="node7" href="$d9/d33/classpocketmine_1_1level_1_1generator_1_1object_1_1_small_tree.html" title="{pocketmine\\level\\generator\l\\object\\SmallTree\n|+ $type\l|+ canPlaceObject()\l+ placeObject()\l}" alt="" coords="411,157,589,277"/>
+<area shape="rect" id="node9" href="$dc/dbc/classpocketmine_1_1level_1_1generator_1_1object_1_1_spruce_tree.html" title="{pocketmine\\level\\generator\l\\object\\SpruceTree\n|+ $type\l|+ canPlaceObject()\l+ placeObject()\l}" alt="" coords="613,157,792,277"/>
 </map>

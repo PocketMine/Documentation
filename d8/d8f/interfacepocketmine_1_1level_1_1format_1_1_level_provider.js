@@ -2,6 +2,7 @@ var interfacepocketmine_1_1level_1_1format_1_1_level_provider =
 [
     [ "__construct", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a96a3dcb5cfec76a1df893c26cb2b8473", null ],
     [ "close", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a31baefdb36dbd90ddabb245eca16cec9", null ],
+    [ "createChunkSection", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#aed10cea1d420bba7fccb314443c54c8a", null ],
     [ "generate", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a5b2700076f5679c17d8bc3680902fdfd", null ],
     [ "getChunk", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a9265e6ddd069441afaaff77aa3e2f1fa", null ],
     [ "getGenerator", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#aee32cb951aa4c1be9a37fcecad3fa152", null ],
@@ -10,6 +11,8 @@ var interfacepocketmine_1_1level_1_1format_1_1_level_provider =
     [ "getLoadedChunks", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#abd04cccc917846527d449a4307f21648", null ],
     [ "getName", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a3f593367144994e28541ce435eb98c58", null ],
     [ "getPath", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#aa6d040be1d885c6669e73f91e4ccd76f", null ],
+    [ "getProviderName", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#afbdea527283b8695eb0e1beb43b73d42", null ],
+    [ "getProviderOrder", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#af8f622f171173f71c42346d23eb8247e", null ],
     [ "getSeed", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a83f2892554ea4ee338d0a1dd49ccdde6", null ],
     [ "getSpawn", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a25a430078d97e6dab620676bca680bcb", null ],
     [ "getTime", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#af7ae2d0af7cda36e4ab15180fbad2206", null ],
@@ -18,12 +21,16 @@ var interfacepocketmine_1_1level_1_1format_1_1_level_provider =
     [ "isChunkPopulated", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a1b05d320b2303700a4534248202e72ea", null ],
     [ "isValid", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#ab8db19178d7500dedd20d7b28f9bce38", null ],
     [ "loadChunk", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#adc2bae07f011ad563009f525af53f3e5", null ],
+    [ "requestChunkTask", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a584e4d6a903712afbfe5b2e07bc79f39", null ],
     [ "saveChunk", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a74e9198ec0910e45a9c7b0474c9e8f8a", null ],
     [ "saveChunks", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#aba3ddd42f86a5ab579be90af635198ce", null ],
-    [ "setChunk", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a7b8e25b7c747254b87f4dffbec3e0b57", null ],
+    [ "setChunk", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a9463d7269b16e9adcf93b444b85b5a32", null ],
     [ "setSeed", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a9781f65b82d2e0cac39f2693853824f2", null ],
     [ "setSpawn", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#afd4109a2c5e0cde08163e53b1f067f06", null ],
     [ "setTime", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#abc757e15bd6c7d7626b7283990287377", null ],
     [ "unloadChunk", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a3cc294fe4cd87808704e4b74c1a8b47c", null ],
-    [ "unloadChunks", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a3570702384b9b22559fa68bf099daec6", null ]
+    [ "unloadChunks", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a3570702384b9b22559fa68bf099daec6", null ],
+    [ "usesChunkSection", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#a7033e231b0117e7251da52d33396f95f", null ],
+    [ "ORDER_YZX", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#ac79b106af5a7358ad7f31cc8e699170e", null ],
+    [ "ORDER_ZXY", "d8/d8f/interfacepocketmine_1_1level_1_1format_1_1_level_provider.html#ae159541097c7265aa88fb0d868ddef00", null ]
 ];

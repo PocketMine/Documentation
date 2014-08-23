@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node5" href="$d9/d87/classraklib_1_1protocol_1_1_a_c_k.html" title="{raklib\\protocol\\ACK\n|+ $ID\l|}" alt="" coords="5,533,139,619"/>
-<area shape="rect" id="node7" href="$d4/d24/classraklib_1_1protocol_1_1_n_a_c_k.html" title="{raklib\\protocol\\NACK\n|+ $ID\l|}" alt="" coords="163,533,307,619"/>
-<area shape="rect" id="node2" href="$d6/d53/classraklib_1_1protocol_1_1_packet.html" title="{raklib\\protocol\\Packet\n|+ $buffer\l+ $ID\l# $offset\l|+ encode()\l+ decode()\l# get()\l# getLong()\l# getInt()\l# getShort()\l# getTriad()\l# getLTriad()\l# getByte()\l# getString()\l# feof()\l# put()\land 6 more...}" alt="" coords="80,5,227,333"/>
+<map id="raklib\protocol\AcknowledgePacket" name="raklib\protocol\AcknowledgePacket">
+<area shape="rect" id="node5" href="$d9/d87/classraklib_1_1protocol_1_1_a_c_k.html" title="{raklib\\protocol\\ACK\n|+ $ID\l|}" alt="" coords="5,549,139,635"/>
+<area shape="rect" id="node7" href="$d4/d24/classraklib_1_1protocol_1_1_n_a_c_k.html" title="{raklib\\protocol\\NACK\n|+ $ID\l|}" alt="" coords="163,549,307,635"/>
+<area shape="rect" id="node2" href="$d6/d53/classraklib_1_1protocol_1_1_packet.html" title="{raklib\\protocol\\Packet\n|+ $buffer\l+ $ID\l# $offset\l|+ encode()\l+ decode()\l# get()\l# getLong()\l# getInt()\l# getShort()\l# getTriad()\l# getLTriad()\l# getByte()\l# getString()\l# feof()\l# put()\land 7 more...\l}" alt="" coords="80,5,227,333"/>
 </map>

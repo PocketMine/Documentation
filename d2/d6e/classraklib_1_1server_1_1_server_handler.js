@@ -9,7 +9,7 @@ var classraklib_1_1server_1_1_server_handler =
     [ "sendOption", "d2/d6e/classraklib_1_1server_1_1_server_handler.html#acf797cf2914b1d1b0481be5f13fb022b", null ],
     [ "shutdown", "d2/d6e/classraklib_1_1server_1_1_server_handler.html#a85846eee406314971ec1ba12f8204362", null ],
     [ "socketRead", "d2/d6e/classraklib_1_1server_1_1_server_handler.html#a44e0b73484307ab25e3b2be0e430c1e4", null ],
-    [ "$instance", "d2/d6e/classraklib_1_1server_1_1_server_handler.html#ad98f41e12a5445787744da1c54b4138e", null ],
-    [ "$server", "d2/d6e/classraklib_1_1server_1_1_server_handler.html#a4aa66d6bbf6f9f1257e1a2ad98c71229", null ],
-    [ "$socket", "d2/d6e/classraklib_1_1server_1_1_server_handler.html#a398d5b0d013c548d312dcb4be1429d52", null ]
+    [ "$instance", "d2/d6e/classraklib_1_1server_1_1_server_handler.html#a7fe68a66b1eb95627b90c731ca094551", null ],
+    [ "$server", "d2/d6e/classraklib_1_1server_1_1_server_handler.html#a55278ecb9789778b38ca856579a89765", null ],
+    [ "$socket", "d2/d6e/classraklib_1_1server_1_1_server_handler.html#af97624f487adbcdb67f186f68bebb920", null ]
 ];

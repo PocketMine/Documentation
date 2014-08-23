@@ -1,3 +1,3 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$dc/d6e/classpocketmine_1_1plugin_1_1_method_event_executor.html" title="{pocketmine\\plugin\\MethodEventExecutor\n||+ __construct()\l+ execute()\l}" alt="" coords="5,139,264,242"/>
+<map id="pocketmine\plugin\EventExecutor" name="pocketmine\plugin\EventExecutor">
+<area shape="rect" id="node3" href="$dc/d6e/classpocketmine_1_1plugin_1_1_method_event_executor.html" title="{pocketmine\\plugin\\Method\lEventExecutor\n||+ __construct()\l+ execute()\l+ getMethod()\l}" alt="" coords="27,139,200,277"/>
 </map>

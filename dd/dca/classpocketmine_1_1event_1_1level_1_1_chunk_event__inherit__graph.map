@@ -1,0 +1,7 @@
+<map id="pocketmine\event\level\ChunkEvent" name="pocketmine\event\level\ChunkEvent">
+<area shape="rect" id="node7" href="$d9/d2d/classpocketmine_1_1event_1_1level_1_1_chunk_load_event.html" title="{pocketmine\\event\\level\l\\ChunkLoadEvent\n|+ $handlerList\l|+ __construct()\l+ isNewChunk()\l}" alt="" coords="5,528,160,648"/>
+<area shape="rect" id="node9" href="$dd/d37/classpocketmine_1_1event_1_1level_1_1_chunk_populate_event.html" title="{pocketmine\\event\\level\l\\ChunkPopulateEvent\n|+ $handlerList\l|}" alt="" coords="184,537,339,639"/>
+<area shape="rect" id="node11" href="$d9/d19/classpocketmine_1_1event_1_1level_1_1_chunk_unload_event.html" title="{pocketmine\\event\\level\l\\ChunkUnloadEvent\n|+ $handlerList\l|}" alt="" coords="363,537,517,639"/>
+<area shape="rect" id="node2" href="$d5/dbb/classpocketmine_1_1event_1_1level_1_1_level_event.html" title="{pocketmine\\event\\level\l\\LevelEvent\n||+ __construct()\l+ getLevel()\l}" alt="" coords="184,192,339,312"/>
+<area shape="rect" id="node4" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="180,6,343,143"/>
+</map>

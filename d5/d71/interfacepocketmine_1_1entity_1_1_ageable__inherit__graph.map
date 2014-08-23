@@ -1,10 +1,10 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$d9/d0a/classpocketmine_1_1entity_1_1_animal.html" title="{pocketmine\\entity\\Animal\n||}" alt="" coords="472,173,640,259"/>
-<area shape="rect" id="node17" href="$d9/d6b/classpocketmine_1_1entity_1_1_villager.html" title="{pocketmine\\entity\\Villager\n|+ FARMER\l+ LIBRARIAN\l+ PRIEST\l+ BLACKSMITH\l+ BUTCHER\l|+ setProfession()\l}" alt="" coords="664,139,835,293"/>
-<area shape="rect" id="node5" href="$d9/d0b/classpocketmine_1_1entity_1_1_chicken.html" title="{pocketmine\\entity\\Chicken\n||}" alt="" coords="5,341,181,427"/>
-<area shape="rect" id="node7" href="$d4/d80/classpocketmine_1_1entity_1_1_cow.html" title="{pocketmine\\entity\\Cow\n||}" alt="" coords="205,341,360,427"/>
-<area shape="rect" id="node9" href="$d3/d91/classpocketmine_1_1entity_1_1_ocelot.html" title="{pocketmine\\entity\\Ocelot\n||}" alt="" coords="384,341,549,427"/>
-<area shape="rect" id="node11" href="$d8/d3e/classpocketmine_1_1entity_1_1_pig.html" title="{pocketmine\\entity\\Pig\n||}" alt="" coords="573,341,720,427"/>
-<area shape="rect" id="node13" href="$d4/d1e/classpocketmine_1_1entity_1_1_sheep.html" title="{pocketmine\\entity\\Sheep\n||}" alt="" coords="744,341,909,427"/>
-<area shape="rect" id="node15" href="$d1/d54/classpocketmine_1_1entity_1_1_wolf.html" title="{pocketmine\\entity\\Wolf\n||}" alt="" coords="933,341,1088,427"/>
+<map id="pocketmine\entity\Ageable" name="pocketmine\entity\Ageable">
+<area shape="rect" id="node3" href="$d9/d0a/classpocketmine_1_1entity_1_1_animal.html" title="{pocketmine\\entity\\Animal\n||}" alt="" coords="472,260,640,345"/>
+<area shape="rect" id="node17" href="$d9/d6b/classpocketmine_1_1entity_1_1_villager.html" title="{pocketmine\\entity\\Villager\n|+ PROFESSION_FARMER\l+ PROFESSION_LIBRARIAN\l+ PROFESSION_PRIEST\l+ PROFESSION_BLACKSMITH\l+ PROFESSION_BUTCHER\l+ PROFESSION_GENERIC\l+ NETWORK_ID\l+ $width\l+ $length\l+ $height\l|+ getName()\l+ spawnTo()\l+ getData()\l+ setProfession()\l+ getProfession()\l# initEntity()\l}" alt="" coords="664,139,877,467"/>
+<area shape="rect" id="node5" href="$d9/d0b/classpocketmine_1_1entity_1_1_chicken.html" title="{pocketmine\\entity\\Chicken\n||}" alt="" coords="5,515,181,600"/>
+<area shape="rect" id="node7" href="$d4/d80/classpocketmine_1_1entity_1_1_cow.html" title="{pocketmine\\entity\\Cow\n||}" alt="" coords="205,515,360,600"/>
+<area shape="rect" id="node9" href="$d3/d91/classpocketmine_1_1entity_1_1_ocelot.html" title="{pocketmine\\entity\\Ocelot\n||}" alt="" coords="384,515,549,600"/>
+<area shape="rect" id="node11" href="$d8/d3e/classpocketmine_1_1entity_1_1_pig.html" title="{pocketmine\\entity\\Pig\n||}" alt="" coords="573,515,720,600"/>
+<area shape="rect" id="node13" href="$d4/d1e/classpocketmine_1_1entity_1_1_sheep.html" title="{pocketmine\\entity\\Sheep\n||}" alt="" coords="744,515,909,600"/>
+<area shape="rect" id="node15" href="$d1/d54/classpocketmine_1_1entity_1_1_wolf.html" title="{pocketmine\\entity\\Wolf\n||}" alt="" coords="933,515,1088,600"/>
 </map>

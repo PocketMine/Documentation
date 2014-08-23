@@ -29,5 +29,5 @@ var interfacepocketmine_1_1inventory_1_1_inventory =
     [ "setContents", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a34fee0e70cbcd7a3e2e81fa31bbb1dc6", null ],
     [ "setItem", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a6029f82c87dae11a04e36d40cb49cd22", null ],
     [ "setMaxStackSize", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a16aa317ef382ac368c28874b0156f163", null ],
-    [ "MAX_STACK", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a37deab07c9b6d9ea911bea1e52725503", null ]
+    [ "MAX_STACK", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#ac77e76822c00c48cb8a89043262d99ab", null ]
 ];

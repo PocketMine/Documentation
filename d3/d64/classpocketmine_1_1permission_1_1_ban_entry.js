@@ -13,5 +13,5 @@ var classpocketmine_1_1permission_1_1_ban_entry =
     [ "setExpires", "d3/d64/classpocketmine_1_1permission_1_1_ban_entry.html#aae04fb5688b6469e7b4f95695e61b209", null ],
     [ "setReason", "d3/d64/classpocketmine_1_1permission_1_1_ban_entry.html#a2aea8610121e1cac46b83e19cb9106c2", null ],
     [ "setSource", "d3/d64/classpocketmine_1_1permission_1_1_ban_entry.html#a512672d24bcadeebcbae9f7eba86f195", null ],
-    [ "$format", "d3/d64/classpocketmine_1_1permission_1_1_ban_entry.html#adcb4d72586d2d3ae41a3686dacf53a8e", null ]
+    [ "$format", "d3/d64/classpocketmine_1_1permission_1_1_ban_entry.html#a44dcdc2920dc32428af9d66755fe26d1", null ]
 ];

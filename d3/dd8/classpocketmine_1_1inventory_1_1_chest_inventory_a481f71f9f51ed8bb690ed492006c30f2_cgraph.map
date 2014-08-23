@@ -1,0 +1,5 @@
+<map id="pocketmine\inventory\ChestInventory\onOpen" name="pocketmine\inventory\ChestInventory\onOpen">
+<area shape="rect" id="node3" href="$d5/df7/classpocketmine_1_1_server.html#a3f4968a94dbe06c71c5649fd1dd41e7f" title="pocketmine\\Server\\broadcast\lPacket" alt="" coords="219,5,411,51"/>
+<area shape="rect" id="node5" href="$d3/dd8/classpocketmine_1_1inventory_1_1_chest_inventory.html#a5435006c4f2e7c915b0f42bded6af87f" title="pocketmine\\inventory\l\\ChestInventory\\getHolder" alt="" coords="228,74,401,121"/>
+<area shape="rect" id="node7" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a65b280b6c12e1d4e5bcd4d0de3aa4a71" title="pocketmine\\inventory\l\\BaseInventory\\getViewers" alt="" coords="225,143,404,190"/>
+</map>

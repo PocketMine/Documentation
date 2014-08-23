@@ -1,0 +1,8 @@
+<map id="pocketmine\level\Level\useBreakOn" name="pocketmine\level\Level\useBreakOn">
+<area shape="rect" id="node3" href="$d2/d90/classpocketmine_1_1math_1_1_vector3.html#a615e30967d6d81ec8d61e49a0fd02917" title="pocketmine\\math\\Vector3\\add" alt="" coords="209,5,404,35"/>
+<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a65e3a05da39c936ac2244c4e91c3527f" title="pocketmine\\level\\Level\l\\dropItem" alt="" coords="229,58,384,105"/>
+<area shape="rect" id="node9" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#ac20d8473b45c810cb8ecd57c2b938afe" title="pocketmine\\level\\Level\l\\getBlock" alt="" coords="229,127,384,174"/>
+<area shape="rect" id="node14" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a015f8239fd7254bfea605f6c18de9060" title="pocketmine\\level\\Level\l\\getSpawn" alt="" coords="229,197,384,243"/>
+<area shape="rect" id="node7" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a07cfdb965d8af5b865c2f468d3dc9f2e" title="pocketmine\\level\\Level\l\\getChunkAt" alt="" coords="468,62,623,109"/>
+<area shape="rect" id="node11" href="$d7/d27/classpocketmine_1_1block_1_1_block.html#ad1a33ab24f0c7cd9d0de92c13a516a8b" title="pocketmine\\block\\Block\\get" alt="" coords="455,136,636,165"/>
+</map>

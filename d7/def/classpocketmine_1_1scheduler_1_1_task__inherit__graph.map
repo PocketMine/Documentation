@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$df/d63/classpocketmine_1_1scheduler_1_1_callback_task.html" title="{pocketmine\\scheduler\\CallbackTask\n|# $callable\l# $args\l|+ __construct()\l+ onRun()\l}" alt="" coords="5,208,237,328"/>
-<area shape="rect" id="node5" href="$d5/d2e/classpocketmine_1_1scheduler_1_1_plugin_task.html" title="{pocketmine\\scheduler\\PluginTask\n|# $owner\l|+ __construct()\l+ getOwner()\l}" alt="" coords="261,217,480,319"/>
+<map id="pocketmine\scheduler\Task" name="pocketmine\scheduler\Task">
+<area shape="rect" id="node3" href="$df/d63/classpocketmine_1_1scheduler_1_1_callback_task.html" title="{pocketmine\\scheduler\l\\CallbackTask\n|# $callable\l# $args\l|+ __construct()\l+ onRun()\l}" alt="" coords="5,209,155,346"/>
+<area shape="rect" id="node5" href="$d5/d2e/classpocketmine_1_1scheduler_1_1_plugin_task.html" title="{pocketmine\\scheduler\l\\PluginTask\n|# $owner\l|+ __construct()\l+ getOwner()\l}" alt="" coords="179,217,328,337"/>
 </map>

@@ -12,7 +12,7 @@ var classpocketmine_1_1level_1_1format_1_1_pocket_chunk_parser =
     [ "saveMap", "d7/d2c/classpocketmine_1_1level_1_1format_1_1_pocket_chunk_parser.html#a1351efa2bf6ad197f13bd6032a033681", null ],
     [ "setBlock", "d7/d2c/classpocketmine_1_1level_1_1format_1_1_pocket_chunk_parser.html#a3b81df5a1933f77c0ebd52a36326ba91", null ],
     [ "writeChunk", "d7/d2c/classpocketmine_1_1level_1_1format_1_1_pocket_chunk_parser.html#a05a6739d255f9db29decefd9c49bbbd2", null ],
-    [ "$chunkLength", "d7/d2c/classpocketmine_1_1level_1_1format_1_1_pocket_chunk_parser.html#ada1eed6eee017f56d39f7a63f8ea0b7b", null ],
-    [ "$map", "d7/d2c/classpocketmine_1_1level_1_1format_1_1_pocket_chunk_parser.html#a8295536a6cf352455292e6d4036a3cff", null ],
-    [ "$sectorLength", "d7/d2c/classpocketmine_1_1level_1_1format_1_1_pocket_chunk_parser.html#a6a35a52d005cd8eb8f1c7fe7ca2d7a3e", null ]
+    [ "$chunkLength", "d7/d2c/classpocketmine_1_1level_1_1format_1_1_pocket_chunk_parser.html#a3e654f4a879230a3bfc937fac72ade54", null ],
+    [ "$map", "d7/d2c/classpocketmine_1_1level_1_1format_1_1_pocket_chunk_parser.html#a09faebf42ce97f9fc0e1877087955104", null ],
+    [ "$sectorLength", "d7/d2c/classpocketmine_1_1level_1_1format_1_1_pocket_chunk_parser.html#ab8ed51f68f4cba486414718144a8c0d7", null ]
 ];

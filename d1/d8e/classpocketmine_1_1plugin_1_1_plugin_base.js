@@ -5,6 +5,7 @@ var classpocketmine_1_1plugin_1_1_plugin_base =
     [ "getDataFolder", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a7974e729aef35c3c3f3c66370bfe4087", null ],
     [ "getDescription", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a0f970e341bc2c398d551f74f3ce79b90", null ],
     [ "getFile", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a7460814b7eb3c4c0498f2c90e31c4534", null ],
+    [ "getFullName", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a58af0933cbdb25f8564adde35ae63205", null ],
     [ "getLogger", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#a12252d8a233f8687aa9c8b850eeec811", null ],
     [ "getName", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#afbc5a790c40382bb653526de7f199945", null ],
     [ "getPluginLoader", "d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html#acc33ed17d94c08d8f70e611de1c35c66", null ],

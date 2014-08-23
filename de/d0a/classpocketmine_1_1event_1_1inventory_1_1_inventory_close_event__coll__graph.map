@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$db/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_event.html" title="{pocketmine\\event\\inventory\\InventoryEvent\n|# $inventory\l|+ __construct()\l+ getInventory()\l+ getViewers()\l}" alt="" coords="21,192,296,312"/>
-<area shape="rect" id="node4" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="77,6,240,143"/>
+<map id="pocketmine\event\inventory\InventoryCloseEvent" name="pocketmine\event\inventory\InventoryCloseEvent">
+<area shape="rect" id="node2" href="$db/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_event.html" title="{pocketmine\\event\\inventory\l\\InventoryEvent\n|# $inventory\l|+ __construct()\l+ getInventory()\l+ getViewers()\l}" alt="" coords="5,193,187,330"/>
+<area shape="rect" id="node4" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="15,6,177,143"/>
 </map>

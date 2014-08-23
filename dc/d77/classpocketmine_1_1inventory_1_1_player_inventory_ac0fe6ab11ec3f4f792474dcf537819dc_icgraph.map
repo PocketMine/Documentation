@@ -1,0 +1,8 @@
+<map id="pocketmine\inventory\PlayerInventory\sendContents" name="pocketmine\inventory\PlayerInventory\sendContents">
+<area shape="rect" id="node3" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#a1b9f22225b0a8cee8cd57855c02724ab" title="pocketmine\\inventory\l\\PlayerInventory\\clear" alt="" coords="283,65,432,111"/>
+<area shape="rect" id="node9" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#aa2c8b45b25cac829ee9316dd5b7b5931" title="pocketmine\\inventory\l\\PlayerInventory\\setItem" alt="" coords="507,125,672,171"/>
+<area shape="rect" id="node14" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#a725ed4489f073b21e061cef5a6bb78ed" title="pocketmine\\inventory\l\\PlayerInventory\\sendHeldItem" alt="" coords="256,185,459,231"/>
+<area shape="rect" id="node5" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#a75d7d59372f2f6e2ced5364aac6a930c" title="pocketmine\\inventory\l\\PlayerInventory\\clearAll" alt="" coords="508,5,671,51"/>
+<area shape="rect" id="node7" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#aad6eea0b7a857bd16a25329e41cbcf3d" title="pocketmine\\inventory\l\\PlayerInventory\\setArmorContents" alt="" coords="720,65,947,111"/>
+<area shape="rect" id="node11" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#aea00deec1dff34be27e648a71f3cfaa3" title="pocketmine\\inventory\l\\PlayerInventory\\setItemInHand" alt="" coords="731,134,936,181"/>
+</map>

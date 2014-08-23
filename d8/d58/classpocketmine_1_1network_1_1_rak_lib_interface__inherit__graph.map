@@ -1,3 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$dc/d93/interfacepocketmine_1_1network_1_1_source_interface.html" title="{pocketmine\\network\\SourceInterface\n||+ putPacket()\l+ close()\l+ setName()\l+ process()\l+ shutdown()\l+ emergencyShutdown()\l}" alt="" coords="5,6,240,178"/>
+<map id="pocketmine\network\RakLibInterface" name="pocketmine\network\RakLibInterface">
+<area shape="rect" id="node2" href="$d5/d5d/interfaceraklib_1_1server_1_1_server_instance.html" title="{raklib\\server\\ServerInstance\n||+ openSession()\l+ closeSession()\l+ handleEncapsulated()\l+ notifyACK()\l+ handleOption()\l}" alt="" coords="5,23,189,177"/>
+<area shape="rect" id="node4" href="$dc/d93/interfacepocketmine_1_1network_1_1_source_interface.html" title="{pocketmine\\network\l\\SourceInterface\n||+ putPacket()\l+ close()\l+ setName()\l+ process()\l+ shutdown()\l+ emergencyShutdown()\l}" alt="" coords="213,5,376,195"/>
 </map>

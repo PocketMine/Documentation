@@ -1,9 +1,9 @@
 var classpocketmine_1_1event_1_1_event_priority =
 [
-    [ "HIGH", "d6/d55/classpocketmine_1_1event_1_1_event_priority.html#ac9ed0e38552b7927da30911598315a2f", null ],
-    [ "HIGHEST", "d6/d55/classpocketmine_1_1event_1_1_event_priority.html#ae67e6b6d73ac4eff0cf71275a3b520ea", null ],
-    [ "LOW", "d6/d55/classpocketmine_1_1event_1_1_event_priority.html#ad6ab2b802d6069ee74396812fcc38c24", null ],
-    [ "LOWEST", "d6/d55/classpocketmine_1_1event_1_1_event_priority.html#a037fef70c01e7821504b5b7fb0c2920f", null ],
-    [ "MONITOR", "d6/d55/classpocketmine_1_1event_1_1_event_priority.html#a74dbae5fadae471be441b287d76a110a", null ],
-    [ "NORMAL", "d6/d55/classpocketmine_1_1event_1_1_event_priority.html#aad258c6b44c957e48b23a8c925c9c66a", null ]
+    [ "HIGH", "d6/d55/classpocketmine_1_1event_1_1_event_priority.html#a78ef27ffe0fdc8a42f4d6ef96fc0cb7f", null ],
+    [ "HIGHEST", "d6/d55/classpocketmine_1_1event_1_1_event_priority.html#ad711eaa874363f6ada16a03553393e8f", null ],
+    [ "LOW", "d6/d55/classpocketmine_1_1event_1_1_event_priority.html#a4c5376b60d0bc61e1d66d8bc671164b4", null ],
+    [ "LOWEST", "d6/d55/classpocketmine_1_1event_1_1_event_priority.html#a92ffa2932bc1b84f1439144966470cba", null ],
+    [ "MONITOR", "d6/d55/classpocketmine_1_1event_1_1_event_priority.html#a9f957ebccdcaa19c3ee770f6bf1ed59c", null ],
+    [ "NORMAL", "d6/d55/classpocketmine_1_1event_1_1_event_priority.html#ab5cc8dc7fe6aa689f2b6422a1c744c8b", null ]
 ];

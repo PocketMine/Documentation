@@ -1,4 +1,5 @@
-<map id="G" name="G">
+<map id="pocketmine\Player\spawnTo" name="pocketmine\Player\spawnTo">
 <area shape="rect" id="node3" href="$df/d2c/classpocketmine_1_1_player.html#a71697b195952a333b72a27f3e0eff6e8" title="pocketmine\\Player\\canSee" alt="" coords="240,5,419,35"/>
+<area shape="rect" id="node7" href="$db/d9b/classpocketmine_1_1level_1_1_position.html#ae667e74646ed1b8d04db126265d75955" title="pocketmine\\level\\Position\l\\getLevel" alt="" coords="244,58,415,105"/>
 <area shape="rect" id="node5" href="$df/d2c/classpocketmine_1_1_player.html#a890409beec631f5cbc42d602ad94eb2b" title="pocketmine\\Player\\getName" alt="" coords="467,5,653,35"/>
 </map>

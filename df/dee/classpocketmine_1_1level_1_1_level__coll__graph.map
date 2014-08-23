@@ -1,3 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$d4/dd9/interfacepocketmine_1_1level_1_1_chunk_manager.html" title="{pocketmine\\level\\ChunkManager\n||+ getBlockIdAt()\l+ setBlockIdAt()\l+ getBlockDataAt()\l+ setBlockDataAt()\l}" alt="" coords="16,6,227,143"/>
+<map id="pocketmine\level\Level" name="pocketmine\level\Level">
+<area shape="rect" id="node2" href="$d4/dd9/interfacepocketmine_1_1level_1_1_chunk_manager.html" title="{pocketmine\\level\\ChunkManager\n||+ getBlockIdAt()\l+ setBlockIdAt()\l+ getBlockDataAt()\l+ setBlockDataAt()\l}" alt="" coords="5,14,216,151"/>
+<area shape="rect" id="node4" href="$d8/d0b/interfacepocketmine_1_1metadata_1_1_metadatable.html" title="{pocketmine\\metadata\l\\Metadatable\n||+ setMetadata()\l+ getMetadata()\l+ hasMetadata()\l+ removeMetadata()\l}" alt="" coords="240,5,387,160"/>
 </map>

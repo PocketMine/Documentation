@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html" title="{pocketmine\\scheduler\\AsyncTask\n||+ run()\l+ isFinished()\l+ isCompleted()\l+ setCompleted()\l+ getResult()\l+ hasResult()\l+ setResult()\l+ onRun()\l+ onCompletion()\l}" alt="" coords="21,312,240,536"/>
-<area shape="rect" id="node4" href="$d0/d82/class_threaded.html" title="{Threaded\n||+ chunk()\l+ count()\l+ getTerminationInfo()\l+ isRunning()\l+ isTerminated()\l+ isWaiting()\l+ lock()\l+ merge()\l+ notify()\l+ offsetGet()\land 8 more...}" alt="" coords="56,5,205,264"/>
+<map id="pocketmine\scheduler\SendUsageTask" name="pocketmine\scheduler\SendUsageTask">
+<area shape="rect" id="node2" href="$df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html" title="{pocketmine\\scheduler\l\\AsyncTask\n|# $complete\l# $finished\l# $result\l# $taskId\l|+ run()\l+ isFinished()\l+ isCompleted()\l+ setCompleted()\l+ getResult()\l+ hasResult()\l+ setResult()\l+ setTaskId()\l+ getTaskId()\l+ onRun()\l+ onCompletion()\l}" alt="" coords="85,445,235,773"/>
+<area shape="rect" id="node4" href="$d0/d82/class_threaded.html" title="{Threaded\n||+ chunk()\l+ count()\l+ getTerminationInfo()\l+ isRunning()\l+ isTerminated()\l+ isWaiting()\l+ lock()\l+ merge()\l+ notify()\l+ offsetGet()\land 9 more...\l}" alt="" coords="85,139,235,397"/>
 </map>

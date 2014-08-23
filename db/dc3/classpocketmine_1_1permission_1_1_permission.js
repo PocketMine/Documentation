@@ -13,9 +13,9 @@ var classpocketmine_1_1permission_1_1_permission =
     [ "recalculatePermissibles", "db/dc3/classpocketmine_1_1permission_1_1_permission.html#a04a48fa4068919edacca40d22ef42e2f", null ],
     [ "setDefault", "db/dc3/classpocketmine_1_1permission_1_1_permission.html#a901d0f3108d302d9ab3bec42242a59e1", null ],
     [ "setDescription", "db/dc3/classpocketmine_1_1permission_1_1_permission.html#aecdb4207d8a86f26f90a94a95d46cd6a", null ],
-    [ "$DEFAULT_PERMISSION", "db/dc3/classpocketmine_1_1permission_1_1_permission.html#abc9983a93608588a13f6f60ac20390ae", null ],
-    [ "DEFAULT_FALSE", "db/dc3/classpocketmine_1_1permission_1_1_permission.html#a184a8a24bc6de69686f06e3b1f3a6a46", null ],
-    [ "DEFAULT_NOT_OP", "db/dc3/classpocketmine_1_1permission_1_1_permission.html#ac4dc714ff8687efedd96dd5812b3f786", null ],
-    [ "DEFAULT_OP", "db/dc3/classpocketmine_1_1permission_1_1_permission.html#a0c603fdb6bbf26ae208eb2ecc38a7513", null ],
-    [ "DEFAULT_TRUE", "db/dc3/classpocketmine_1_1permission_1_1_permission.html#affc1708eb0183b256a755891685ed94b", null ]
+    [ "$DEFAULT_PERMISSION", "db/dc3/classpocketmine_1_1permission_1_1_permission.html#a2dc0d09e3cf9a87ed57774b88639b4c2", null ],
+    [ "DEFAULT_FALSE", "db/dc3/classpocketmine_1_1permission_1_1_permission.html#ab05e556c5ede645adc97394bac9a5639", null ],
+    [ "DEFAULT_NOT_OP", "db/dc3/classpocketmine_1_1permission_1_1_permission.html#a4e8f03202bbe7e81ff23a0d0b235e7f7", null ],
+    [ "DEFAULT_OP", "db/dc3/classpocketmine_1_1permission_1_1_permission.html#af6750205e3631ac44965cf77fea4e4f9", null ],
+    [ "DEFAULT_TRUE", "db/dc3/classpocketmine_1_1permission_1_1_permission.html#ae2706cad231dff8f7ed8d66c3ef288b7", null ]
 ];

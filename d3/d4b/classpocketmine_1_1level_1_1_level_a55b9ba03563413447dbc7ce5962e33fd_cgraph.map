@@ -1,0 +1,5 @@
+<map id="pocketmine\level\Level\getCollidingEntities" name="pocketmine\level\Level\getCollidingEntities">
+<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#ad928c92eafa0c724bd3aebea4e1123e3" title="pocketmine\\level\\Level\l\\getChunkEntities" alt="" coords="208,5,363,51"/>
+<area shape="rect" id="node7" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#ad7b3b356b1f5bbc2f1ba6b13127d9a7c" title="pocketmine\\level\\Level\l\\isChunkLoaded" alt="" coords="208,74,363,121"/>
+<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a07cfdb965d8af5b865c2f468d3dc9f2e" title="pocketmine\\level\\Level\l\\getChunkAt" alt="" coords="411,5,565,51"/>
+</map>

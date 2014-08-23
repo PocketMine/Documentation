@@ -1,3 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html" title="{pocketmine\\command\\CommandSender\n||+ sendMessage()\l+ getServer()\l+ getName()\l}" alt="" coords="29,5,283,125"/>
+<map id="pocketmine\command\ConsoleCommandSender" name="pocketmine\command\ConsoleCommandSender">
+<area shape="rect" id="node2" href="$d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html" title="{pocketmine\\command\l\\CommandSender\n||+ sendMessage()\l+ getServer()\l+ getName()\l}" alt="" coords="23,411,172,549"/>
+<area shape="rect" id="node4" href="$de/da0/interfacepocketmine_1_1permission_1_1_permissible.html" title="{pocketmine\\permission\l\\Permissible\n||+ isPermissionSet()\l+ hasPermission()\l+ addAttachment()\l+ removeAttachment()\l+ recalculatePermissions()\l+ getEffectivePermissions()\l}" alt="" coords="5,173,189,363"/>
+<area shape="rect" id="node6" href="$dd/d17/interfacepocketmine_1_1permission_1_1_server_operator.html" title="{pocketmine\\permission\l\\ServerOperator\n||+ isOp()\l+ setOp()\l}" alt="" coords="20,5,175,125"/>
 </map>

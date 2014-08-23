@@ -1,0 +1,5 @@
+<map id="pocketmine\level\Level\removeTile" name="pocketmine\level\Level\removeTile">
+<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a07cfdb965d8af5b865c2f468d3dc9f2e" title="pocketmine\\level\\Level\l\\getChunkAt" alt="" coords="216,5,371,51"/>
+<area shape="rect" id="node5" href="$db/d9b/classpocketmine_1_1level_1_1_position.html#ae667e74646ed1b8d04db126265d75955" title="pocketmine\\level\\Position\l\\getLevel" alt="" coords="208,74,379,121"/>
+<area shape="rect" id="node7" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#ad7b3b356b1f5bbc2f1ba6b13127d9a7c" title="pocketmine\\level\\Level\l\\isChunkLoaded" alt="" coords="216,143,371,190"/>
+</map>
