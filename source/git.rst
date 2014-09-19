@@ -41,7 +41,7 @@ Make your changes to the code and commit it:
 	$ git commit -m 'description of changes'  # make a commit with a message
 	$ git push origin feature  # push to your branch
 
-Take a look at GitHub and make a pull request. If the pull request is accepted and merged you can pull the changes back into your fork.
+Take a look at GitHub and make a pull request. If the pull request is accepted and merged, you can pull the changes back into your fork.
 
 .. note::
 	To pull from the original repository you need to add the upstream

@@ -10,10 +10,10 @@ It has a :doc:`Plugin API <plugins>` that enables a :doc:`developer <developers>
 
 Supported features
 ------------------
-* Get all your friends in one server. Or run a public server.
-* Disables flying, item hack, running & more. With an On/Off switch.
+* Get all your friends in one server or run a public server.
+* Disables flying, item hack, running, & more with an On/Off switch.
 * Extend the game in the way you want, add awesome features.
-* Teleport players, whitelist your server, tune the server, Remote Console.
+* Teleport players, whitelist your server, tune the server, and use Remote Console.
 * Load different levels at once, and teleport back and forth.
 * Endless features, and we continuously implement new things.
 
