@@ -28,7 +28,7 @@ Update PocketMine-MP
 
 Download the latest `stable <PM-Stable_>`_ or `development <PM-Dev_>`_ release .
 
-.. note:: Dont forget to rename the file to ``PocketMine-MP.phar``
+.. note:: Don't forget to rename the file to ``PocketMine-MP.phar``
 
 .. _PHP-Windows: http://sourceforge.net/projects/pocketmine/files/windows/dev/
 .. _PHP-SourceForge: http://sourceforge.net/projects/pocketmine/files/builds/
