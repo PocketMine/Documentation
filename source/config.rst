@@ -55,7 +55,7 @@ Choose the language you want and press enter
 	[?] Do you accept the License? (y/N): y
 	[?] Do you want to skip the set-up wizard? (y/N):
 
-If this is not the first time or you already have a custom properties file you can skip the wizard.
+If this is not the first time, or you already have a custom properties file, you can skip the wizard.
 
 .. code-block:: text
 
@@ -92,7 +92,7 @@ If this is not the first time or you already have a custom properties file you c
 	[*] Check the Plugin Repository to add new features, minigames, or advanced protection to your server
 	[*] PocketMine-MP will now start. Type /help to view the list of available commands.
 
-Everything is now configurated.  PocketMine will now start.
+Everything is now configured.  PocketMine will now start.
 
 .. code-block:: text
 
@@ -111,7 +111,7 @@ Everything is now configurated.  PocketMine will now start.
 	19:01:52 [INFO] Default game type: SURVIVAL
 	19:01:52 [INFO] Done (4941.533s)! For help, type "help" or "?"
 
-When there are no errors and you see the same message then the server is started. Now you should be able to join the server!
+When there are no errors, and you see the same message, then the server has started. Now you should be able to join the server!
 
 Server properties
 -----------------
@@ -167,7 +167,7 @@ Type     Default
 boolean  false
 =======  =========
 
-RCON is a protocol to allow remote access to the server console. It'll listen y default on the same port as the server, but using TCP. You can also set the `rcon.port`, `rcon.threads` and `rcon.clients-per-thread` properties, but you'll have to manually add them.
+RCON is a protocol to allow remote access to the server console. It'll listen by default on the same port as the server, but using TCP. You can also set the `rcon.port`, `rcon.threads` and `rcon.clients-per-thread` properties, but you'll have to manually add them.
 
 rcon.password
 +++++++++++++
@@ -178,7 +178,7 @@ Type    Default
 string  random value
 ======  ============
 
-The password that RCON will check. And empty string will cause all the requests to be refused.
+The password that RCON will check. An empty string will cause all the requests to be refused.
 
 gamemode
 ++++++++
