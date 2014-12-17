@@ -72,3 +72,31 @@ Run the following code. It will download PocketMine-MP, download the PHP binarie
 Installing on Android
 ---------------------
 Install `PocketMine-MP for Android <https://play.google.com/store/apps/details?id=net.pocketmine.server>`_
+
+Installing manually
+-------------------
+Did the installer fail? It's not your taste? YOLO? DIY! 
+
+1. Create a new directory
+2. Download PocketMine-MP.phar from `Jenkins <http://jenkins.pocketmine.net/job/PocketMine-MP/promotion/>`_ or `GitHub <https://github.com/PocketMine/PocketMine-MP/releases>`_
+3. Rename the .phar to PocketMine-MP.phar
+4. Download your flavor PHP binary.
+	* `Windows <PHP-Windows_>`_
+	* `MacOS <PHP-SourceForge_>`_
+	* `CentOS <PHP-SourceForge_>`_
+	* `Linux <PHP-SourceForge_>`_ or `Jenkins <PHP-Jenkins_>`_
+	* `Linux ARM <PHP-SourceForge_>`_ or `Jenkins <PHP-Jenkins_>`_
+	* `Android <PHP-SourceForge_>`_ or `Jenkins <PHP-Jenkins_>`_
+	* `Raspbian <PHP-SourceForge_>`_
+5. Extract the PHP binary
+6. Download the `start.sh <https://raw.githubusercontent.com/PocketMine/PocketMine-MP/master/start.sh>`_
+7. Make start.sh executable (chmod +x start.sh)
+
+If you start PocketMine-MP now it will tell you that it failed to load opcache.so. `Fix it using this <faq.html#failed-loading-opcache-so>`_ Now start PocketMine-MP with ``./start.sh``
+
+.. _PHP-Windows: http://sourceforge.net/projects/pocketmine/files/windows/dev/
+.. _PHP-SourceForge: http://sourceforge.net/projects/pocketmine/files/builds/
+.. _PHP-Jenkins: http://jenkins.pocketmine.net/
+.. _PM-Stable: https://github.com/PocketMine/PocketMine-MP/releases
+.. _PM-Dev: http://jenkins.pocketmine.net/job/PocketMine-MP/
+

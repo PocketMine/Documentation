@@ -10,17 +10,18 @@ It has a :doc:`Plugin API <plugins>` that enables a :doc:`developer <developers>
 
 Supported features
 ------------------
-* Get all your friends in one server or run a public server.
-* Disables flying, item hack, running, & more with an On/Off switch.
+* Get all your friends in one server. Or run a public server.
+* Disables flying, item hack, running & more. With an On/Off switch.
 * Extend the game in the way you want, add awesome features.
-* Teleport players, whitelist your server, tune the server, and use Remote Console.
+* Teleport players, whitelist your server, tune the server, Remote Console.
 * Load different levels at once, and teleport back and forth.
 * Endless features, and we continuously implement new things.
 
 Contact and Support
 -------------------
-* `@PocketMine <https://twitter.com/PocketMine>`_ on twitter
+* `PocketMine Forums <http://forums.pocketmine.net>`_
 * `#pocketmine <http://webchat.freenode.net/?channels=pocketmine&uio=d4>`_ for support @ irc.freenode.net
 * `#mcpedevs <http://webchat.freenode.net/?channels=mcpedevs&uio=d4>`_ for development @ irc.freenode.net
+* `@PocketMine <https://twitter.com/PocketMine>`_ on twitter
 * Mailing list: `Discussion group <https://groups.google.com/forum/#!forum/pocketmine-user-discussion>`_
 

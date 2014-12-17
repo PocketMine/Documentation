@@ -2,8 +2,35 @@
 
 Requirements
 ============
-A few extra extensions are needed to run PocketMine-MP with php. Thats why it does not work on standard php binaries.
-You can get the latest versions of the binaries from a few places
+PocketMine-MP.phar, the main component, is needed to run PocketMine-MP. PocketMine-MP requires a few extra extensions because of that you need custom build PHP binaries. We precomiled a few binaries. If you have problems you could try to compile PHP yourself with the `compile script on GitHub <https://github.com/PocketMine/php-build-scripts/blob/master/compile.sh>`_. Got problems? `Contact us! <http://pocketmine-mp.readthedocs.org/en/latest/intro.html#contact-and-support>`_
+
+PocketMine-MP Installers
+------------------------
+Windows installer
++++++++++++++++++
+Download the installer from `SourceForge <http://sourceforge.net/projects/pocketmine/files/windows/dev/>`_ and start it.
+
+Linux/MacOS
++++++++++++
+You can use the following urls with curl or wget to install PocketMine-MP
+.. code-block::
+
+	http://get.pocketmine.net/
+	https://raw.githubusercontent.com/PocketMine/php-build-scripts/master/installer.sh
+
+
+Replace <URL> with a url from above and channel with ``development`` or ``beta``.
+
+
+.. code-block::
+
+	curl -sL <URL> | bash -s - -v <CHANNEL>
+	wget -q -O - <URL> | bash -s - -v <CHANNEL>
+
+PocketMine-MP.phar
+------------------
+* `Jenkins <http://jenkins.pocketmine.net/job/PocketMine-MP/promotion/>`_
+* `GitHub <https://github.com/PocketMine/PocketMine-MP/releases>`_
 
 Custom PHP binaries
 -------------------
