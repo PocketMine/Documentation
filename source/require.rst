@@ -21,8 +21,7 @@ You can use the following urls with curl or wget to install PocketMine-MP
 
 Replace <URL> with a url from above and channel with ``development`` or ``beta``.
 
-
-.. code-block::
+.. code-block:: sh
 
 	curl -sL <URL> | bash -s - -v <CHANNEL>
 	wget -q -O - <URL> | bash -s - -v <CHANNEL>
