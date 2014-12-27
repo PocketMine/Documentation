@@ -68,9 +68,15 @@ If you have a firewall setup then you need to allow access to ``UDP port 19132``
 
 Do I have to configure port forwarding?
 +++++++++++++++++++++++++++++++++++++++++++
-This is only needed when you want people from outside your network to connect. Check `portforward.com <http://portforward.com/english/routers/port_forwarding/routerindex.htm>`_ or us `Google <http://www.google.com>`_ to find the instructions
+This is only needed when you want people from outside your network to connect. 
+Check `portforward.com <http://portforward.com/english/routers/port_forwarding/routerindex.htm>`_
+or use `Google <http://www.google.com>`_ to find the instructions. Use the brand and type of your router as keywords.
 
 .. note::
 
 	* UDP port: 19132 for PocketMine and Query
 	* TCP port: 19132 for RCON
+
+.. warning::
+
+    * Forward the ports to the IP of your server

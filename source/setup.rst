@@ -5,10 +5,14 @@ Installation
 
 Installing on Windows
 ---------------------
-Download the latest version from `sourceforge <http://sourceforge.net/projects/pocketmine/files/windows/dev/>`_
+Download the latest version from `sourceforge <http://sourceforge.net/projects/pocketmine/files/windows/dev/>`_.
+Use the installer to install PocketMine-MP.
+The installer may have an outdated version of PocketMine-MP. 
+You can download the latest .phar from `github <https://github.com/PocketMine/PocketMine-MP/releases>`_ 
+or `Jenkins <http://jenkins.pocketmine.net/job/PocketMine-MP/promotion/>`_.
 
 .. warning::
-	If the provided x64 binary does not work then try the x86 binary!
+    If the provided x64 binary does not work then try the x86 binary!
 
 Installing on Linux
 -------------------
@@ -92,7 +96,8 @@ Did the installer fail? It's not your taste? YOLO? DIY!
 6. Download the `start.sh <https://raw.githubusercontent.com/PocketMine/PocketMine-MP/master/start.sh>`_
 7. Make start.sh executable (chmod +x start.sh)
 
-If you start PocketMine-MP now it will tell you that it failed to load opcache.so. `Fix it using this <faq.html#failed-loading-opcache-so>`_ Now start PocketMine-MP with ``./start.sh``
+If you start PocketMine-MP now it will tell you that it failed to load opcache.so.
+`Fix it using this <faq.html#failed-loading-opcache-so>`_. Now start PocketMine-MP with ``./start.sh``
 
 .. _PHP-Windows: http://sourceforge.net/projects/pocketmine/files/windows/dev/
 .. _PHP-SourceForge: http://sourceforge.net/projects/pocketmine/files/builds/
