@@ -1,4 +1,4 @@
 <map id="pocketmine\nbt\tag\Byte" name="pocketmine\nbt\tag\Byte">
-<area shape="rect" id="node2" href="$d9/dc5/classpocketmine_1_1nbt_1_1tag_1_1_named_tag.html" title="{pocketmine\\nbt\\tag\l\\NamedTag\n|# $name\l|+ __construct()\l+ getName()\l+ setName()\l}" alt="" coords="20,361,153,498"/>
-<area shape="rect" id="node4" href="$dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html" title="{pocketmine\\nbt\\tag\\Tag\n|# $value\l|+ getValue()\l+ getType()\l+ setValue()\l+ write()\l+ read()\l+ __toString()\l}" alt="" coords="8,139,165,311"/>
+<area shape="rect" id="node2" href="$d9/dc5/classpocketmine_1_1nbt_1_1tag_1_1_named_tag.html" title="{pocketmine\\nbt\\tag\l\\NamedTag\n|# $name\l|+ __construct()\l+ getName()\l+ setName()\l}" alt="" coords="21,331,168,453"/>
+<area shape="rect" id="node3" href="$dc/d26/classpocketmine_1_1nbt_1_1tag_1_1_tag.html" title="{pocketmine\\nbt\\tag\\Tag\n|# $value\l|+ getValue()\l+ getType()\l+ setValue()\l+ write()\l+ read()\l+ __toString()\l}" alt="" coords="9,131,180,282"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="pocketmine\level\Position\isValid" name="pocketmine\level\Position\isValid">
-<area shape="rect" id="node3" href="$db/d9b/classpocketmine_1_1level_1_1_position.html#a4df065d5ef3e5f67e3f7bb3b792c655d" title="pocketmine\\level\\Position\l\\getSide" alt="" coords="224,5,395,51"/>
-<area shape="rect" id="node5" href="$d7/d27/classpocketmine_1_1block_1_1_block.html#adbbaeb60f4776cd28192b3813733ddd2" title="pocketmine\\block\\Block\l\\getSide" alt="" coords="229,74,389,121"/>
+<area shape="rect" id="node2" href="$db/d9b/classpocketmine_1_1level_1_1_position.html#a4df065d5ef3e5f67e3f7bb3b792c655d" title="pocketmine\\level\\Position\l\\getSide" alt="" coords="237,5,421,46"/>
+<area shape="rect" id="node3" href="$d7/d27/classpocketmine_1_1block_1_1_block.html#adbbaeb60f4776cd28192b3813733ddd2" title="pocketmine\\block\\Block\l\\getSide" alt="" coords="243,70,415,111"/>
 </map>

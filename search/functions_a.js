@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['join',['join',['../d8/d18/class_thread.html#a2745378f156f833a220a045afa13ff89',1,'Thread']]]
+  ['kick',['kick',['../df/d2c/classpocketmine_1_1_player.html#af2abb8b3975a8ce2a37ee26022920396',1,'pocketmine::Player']]]
 ];

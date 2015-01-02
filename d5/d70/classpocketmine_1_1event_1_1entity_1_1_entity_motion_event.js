@@ -6,10 +6,10 @@ var classpocketmine_1_1event_1_1entity_1_1_entity_motion_event =
     [ "getHandlers", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#a9afc92a81412fb62149ed949b0193547", null ],
     [ "getVector", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#aa98d34d68da565503c525e1dd086e183", null ],
     [ "isCancelled", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#a90efcab0d539a5cb5b17968dfa164017", null ],
-    [ "isCancelled", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#a99e105e6cb8e83f3dbae1fb26d398cf4", null ],
     [ "setCancelled", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#aec2d3aa9d4d8591d5e63a7842844aba7", null ],
-    [ "setCancelled", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#a693b19eb500c69ab9f9dd9f207e5029a", null ],
     [ "$entity", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#a0b1ee6636302824822d27399be605ff6", null ],
     [ "$eventName", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#a847810daab9f3d6396db6c759038a2fd", null ],
-    [ "$handlerList", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#a3f951524bab577fa0c463a5a9afe6008", null ]
+    [ "$eventPool", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#ac9ca6527d9241354d2a28d7b6db7a8de", null ],
+    [ "$handlerList", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#a3f951524bab577fa0c463a5a9afe6008", null ],
+    [ "$nextEvent", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html#aa8da11c131096e9f15a476ea286bb0eb", null ]
 ];

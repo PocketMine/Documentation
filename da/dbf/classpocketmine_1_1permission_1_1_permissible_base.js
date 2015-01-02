@@ -2,7 +2,6 @@ var classpocketmine_1_1permission_1_1_permissible_base =
 [
     [ "__construct", "da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#a04a89e27ba0dc0f25c6a598a177db34f", null ],
     [ "addAttachment", "da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#adbc073b09ae5a1558610a43b37e9c86b", null ],
-    [ "calculateChildPermissions", "da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#aa78b67ae93c13a60a72e7cae1665e0e4", null ],
     [ "clearPermissions", "da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#a6f9eb5fa687aeabc831ea7d4a4664347", null ],
     [ "getEffectivePermissions", "da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#aaf95576687f1cad6bdc9ef4e0ef4926b", null ],
     [ "hasPermission", "da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#a3eebd704b7bca7f878a88eadbefacc2d", null ],

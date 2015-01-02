@@ -1,3 +1,3 @@
 <map id="pocketmine\level\format\generic\EmptyChunkSection" name="pocketmine\level\format\generic\EmptyChunkSection">
-<area shape="rect" id="node2" href="$d1/da6/interfacepocketmine_1_1level_1_1format_1_1_chunk_section.html" title="{pocketmine\\level\\format\l\\ChunkSection\n||+ getY()\l+ getBlockId()\l+ setBlockId()\l+ getBlockData()\l+ setBlockData()\l+ getBlock()\l+ setBlock()\l+ getBlockSkyLight()\l+ setBlockSkyLight()\l+ getBlockLight()\land 9 more...\l}" alt="" coords="21,6,181,282"/>
+<area shape="rect" id="node2" href="$d1/da6/interfacepocketmine_1_1level_1_1format_1_1_chunk_section.html" title="{pocketmine\\level\\format\l\\ChunkSection\n||+ getY()\l+ getBlockId()\l+ setBlockId()\l+ getBlockData()\l+ setBlockData()\l+ getBlock()\l+ getFullBlock()\l+ setBlock()\l+ getBlockSkyLight()\l+ setBlockSkyLight()\land 10 more...\l}" alt="" coords="19,6,196,245"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$dd/d18/classpocketmine_1_1scheduler_1_1_task_handler.html" title="pocketmine\\scheduler\l\\TaskHandler" alt="" coords="5,5,155,51"/>
+<area shape="rect" id="node1" href="$df/d5e/classpocketmine_1_1scheduler_1_1_task.html" title="pocketmine\\scheduler\\Task" alt="" coords="5,45,200,72"/>
+<area shape="rect" id="node2" href="$df/d63/classpocketmine_1_1scheduler_1_1_callback_task.html" title="pocketmine\\scheduler\l\\CallbackTask" alt="" coords="248,5,411,46"/>
+<area shape="rect" id="node3" href="$d5/d2e/classpocketmine_1_1scheduler_1_1_plugin_task.html" title="pocketmine\\scheduler\l\\PluginTask" alt="" coords="248,70,411,111"/>
 </map>

@@ -5,6 +5,8 @@ var namespacepocketmine_1_1level_1_1generator =
     [ "populator", "d2/de9/namespacepocketmine_1_1level_1_1generator_1_1populator.html", "d2/de9/namespacepocketmine_1_1level_1_1generator_1_1populator" ],
     [ "Flat", "de/dee/classpocketmine_1_1level_1_1generator_1_1_flat.html", "de/dee/classpocketmine_1_1level_1_1generator_1_1_flat" ],
     [ "GenerationChunkManager", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager" ],
+    [ "GenerationInstanceManager", "d5/db2/classpocketmine_1_1level_1_1generator_1_1_generation_instance_manager.html", "d5/db2/classpocketmine_1_1level_1_1generator_1_1_generation_instance_manager" ],
+    [ "GenerationLevelManager", "d5/ddc/classpocketmine_1_1level_1_1generator_1_1_generation_level_manager.html", "d5/ddc/classpocketmine_1_1level_1_1generator_1_1_generation_level_manager" ],
     [ "GenerationManager", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html", "df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager" ],
     [ "GenerationRequestManager", "d4/dc0/classpocketmine_1_1level_1_1generator_1_1_generation_request_manager.html", "d4/dc0/classpocketmine_1_1level_1_1generator_1_1_generation_request_manager" ],
     [ "GenerationThread", "d6/de7/classpocketmine_1_1level_1_1generator_1_1_generation_thread.html", "d6/de7/classpocketmine_1_1level_1_1generator_1_1_generation_thread" ],

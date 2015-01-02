@@ -1,4 +1,4 @@
 <map id="pocketmine\level\Level\unload" name="pocketmine\level\Level\unload">
-<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a9fb97a07c57210eb1c727e008096754b" title="pocketmine\\level\\Level\l\\getName" alt="" coords="208,5,363,51"/>
-<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#aba3e58e49b52026c29df0fa1a61998fd" title="pocketmine\\level\\Level\l\\getPlayers" alt="" coords="208,74,363,121"/>
+<area shape="rect" id="node2" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a9fb97a07c57210eb1c727e008096754b" title="pocketmine\\level\\Level\l\\getName" alt="" coords="222,5,389,46"/>
+<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#aba3e58e49b52026c29df0fa1a61998fd" title="pocketmine\\level\\Level\l\\getPlayers" alt="" coords="222,70,389,111"/>
 </map>

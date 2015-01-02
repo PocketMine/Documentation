@@ -1,5 +1,6 @@
 var classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet =
 [
+    [ "clean", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#a2ab5e54541dfab853409ab20faae5d56", null ],
     [ "decode", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#aa716908d530f051b27191763683241e3", null ],
     [ "encode", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#ac71a8a95e284cb75e6bce3a2a304dac7", null ],
     [ "feof", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#a38b7693bb0d3b4e3478f8e9afdc43609", null ],
@@ -9,7 +10,7 @@ var classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet =
     [ "getDataArray", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#aeb79aff9741296738ba592888fadf76a", null ],
     [ "getFloat", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#a8fe27f4f9c07d42ede630b55e3890084", null ],
     [ "getInt", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#aa8e432c32d0d2df1d6499091b97c30e9", null ],
-    [ "getLong", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#a4787f7b0980de0d0a21910c65619e682", null ],
+    [ "getLong", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#a46607817bbb0ca54d2bd2918538ce980", null ],
     [ "getLTriad", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#aa973f04ced929c90b608e12e866b5800", null ],
     [ "getShort", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#a91e87d8808781a10cbcc50e694484341", null ],
     [ "getSlot", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#a21bc1362ec76e12ace742e5133d0f2c5", null ],
@@ -31,5 +32,8 @@ var classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet =
     [ "setBuffer", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#a165102568c1290cdfa2e9a3cda814466", null ],
     [ "$buffer", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#a87c6760a0f385b960a81d4f1fe57278d", null ],
     [ "$chunkX", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#ab110df30320dfc63e66efa2b87fbd032", null ],
-    [ "$chunkZ", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#ae56b55236ce60f317f90a6c567917661", null ]
+    [ "$chunkZ", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#ae56b55236ce60f317f90a6c567917661", null ],
+    [ "$isEncoded", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#af5101c75e3a3da5d36158558ae1d75ab", null ],
+    [ "$next", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#a632ebeb7c058732c4f7dd29e4071876c", null ],
+    [ "$pool", "dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#a3328b91bece38b329e4094c70c013524", null ]
 ];

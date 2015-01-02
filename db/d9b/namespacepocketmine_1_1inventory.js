@@ -21,7 +21,7 @@ var namespacepocketmine_1_1inventory =
     [ "ShapedRecipe", "d7/d21/classpocketmine_1_1inventory_1_1_shaped_recipe.html", "d7/d21/classpocketmine_1_1inventory_1_1_shaped_recipe" ],
     [ "ShapelessRecipe", "d6/d74/classpocketmine_1_1inventory_1_1_shapeless_recipe.html", "d6/d74/classpocketmine_1_1inventory_1_1_shapeless_recipe" ],
     [ "SimpleTransactionGroup", "df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html", "df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group" ],
-    [ "SlotType", "d1/d49/classpocketmine_1_1inventory_1_1_slot_type.html", "d1/d49/classpocketmine_1_1inventory_1_1_slot_type" ],
+    [ "SlotType", "d3/df3/interfacepocketmine_1_1inventory_1_1_slot_type.html", "d3/df3/interfacepocketmine_1_1inventory_1_1_slot_type" ],
     [ "StonecutterShapelessRecipe", "d5/da2/classpocketmine_1_1inventory_1_1_stonecutter_shapeless_recipe.html", "d5/da2/classpocketmine_1_1inventory_1_1_stonecutter_shapeless_recipe" ],
     [ "Transaction", "d8/d63/interfacepocketmine_1_1inventory_1_1_transaction.html", "d8/d63/interfacepocketmine_1_1inventory_1_1_transaction" ],
     [ "TransactionGroup", "da/da3/interfacepocketmine_1_1inventory_1_1_transaction_group.html", "da/da3/interfacepocketmine_1_1inventory_1_1_transaction_group" ]

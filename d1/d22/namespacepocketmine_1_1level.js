@@ -17,6 +17,10 @@ var namespacepocketmine_1_1level =
         [ "BaseLevelProvider", "d5/d41/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_level_provider.html", "d5/d41/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_level_provider" ],
         [ "EmptyChunkSection", "d8/df0/classpocketmine_1_1level_1_1format_1_1generic_1_1_empty_chunk_section.html", "d8/df0/classpocketmine_1_1level_1_1format_1_1generic_1_1_empty_chunk_section" ]
       ] ],
+      [ "leveldb", null, [
+        [ "Chunk", "df/dbb/classpocketmine_1_1level_1_1format_1_1leveldb_1_1_chunk.html", "df/dbb/classpocketmine_1_1level_1_1format_1_1leveldb_1_1_chunk" ],
+        [ "LevelDB", "d2/db3/classpocketmine_1_1level_1_1format_1_1leveldb_1_1_level_d_b.html", "d2/db3/classpocketmine_1_1level_1_1format_1_1leveldb_1_1_level_d_b" ]
+      ] ],
       [ "mcregion", null, [
         [ "Chunk", "dd/dcf/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_chunk.html", "dd/dcf/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_chunk" ],
         [ "McRegion", "d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region.html", "d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region" ],
@@ -34,5 +38,7 @@ var namespacepocketmine_1_1level =
     [ "Explosion", "df/d00/classpocketmine_1_1level_1_1_explosion.html", "df/d00/classpocketmine_1_1level_1_1_explosion" ],
     [ "Level", "d3/d4b/classpocketmine_1_1level_1_1_level.html", "d3/d4b/classpocketmine_1_1level_1_1_level" ],
     [ "LevelImport", "d8/d47/classpocketmine_1_1level_1_1_level_import.html", "d8/d47/classpocketmine_1_1level_1_1_level_import" ],
+    [ "Location", "dd/dd5/classpocketmine_1_1level_1_1_location.html", "dd/dd5/classpocketmine_1_1level_1_1_location" ],
+    [ "MovingObjectPosition", "dc/dba/classpocketmine_1_1level_1_1_moving_object_position.html", "dc/dba/classpocketmine_1_1level_1_1_moving_object_position" ],
     [ "Position", "db/d9b/classpocketmine_1_1level_1_1_position.html", "db/d9b/classpocketmine_1_1level_1_1_position" ]
 ];

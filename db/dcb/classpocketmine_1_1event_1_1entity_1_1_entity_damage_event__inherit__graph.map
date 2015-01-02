@@ -1,6 +1,8 @@
 <map id="pocketmine\event\entity\EntityDamageEvent" name="pocketmine\event\entity\EntityDamageEvent">
-<area shape="rect" id="node9" href="$d0/d34/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_entity_event.html" title="{pocketmine\\event\\entity\l\\EntityDamageByEntityEvent\n|+ $handlerList\l|+ __construct()\l+ getDamager()\l}" alt="" coords="92,789,284,909"/>
-<area shape="rect" id="node2" href="$de/d84/classpocketmine_1_1event_1_1entity_1_1_entity_event.html" title="{pocketmine\\event\\entity\l\\EntityEvent\n|# $entity\l|+ getEntity()\l}" alt="" coords="7,193,167,295"/>
-<area shape="rect" id="node4" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="5,6,168,143"/>
-<area shape="rect" id="node6" href="$db/d62/interfacepocketmine_1_1event_1_1_cancellable.html" title="{pocketmine\\event\\Cancellable\n||+ isCancelled()\l+ setCancelled()\l}" alt="" coords="191,193,388,295"/>
+<area shape="rect" id="node5" href="$da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html" title="{pocketmine\\event\\entity\l\\EntityDamageByBlockEvent\n|+ $eventPool\l+ $nextEvent\l|+ __construct()\l+ getDamager()\l}" alt="" coords="5,722,208,843"/>
+<area shape="rect" id="node6" href="$d0/d34/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_entity_event.html" title="{pocketmine\\event\\entity\l\\EntityDamageByEntityEvent\n|+ $eventPool\l+ $nextEvent\l|+ __construct()\l+ getDamager()\l+ getKnockBack()\l+ setKnockBack()\l}" alt="" coords="232,707,437,858"/>
+<area shape="rect" id="node2" href="$de/d84/classpocketmine_1_1event_1_1entity_1_1_entity_event.html" title="{pocketmine\\event\\entity\l\\EntityEvent\n|# $entity\l|+ getEntity()\l}" alt="" coords="22,147,199,239"/>
+<area shape="rect" id="node3" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ getHandlers()\l}" alt="" coords="22,6,199,98"/>
+<area shape="rect" id="node4" href="$db/d62/interfacepocketmine_1_1event_1_1_cancellable.html" title="{pocketmine\\event\\Cancellable\n||+ isCancelled()\l+ setCancelled()\l}" alt="" coords="223,147,437,239"/>
+<area shape="rect" id="node7" href="$de/d62/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_child_entity_event.html" title="{pocketmine\\event\\entity\l\\EntityDamageByChildEntityEvent\n|+ $eventPool\l+ $nextEvent\l|+ __construct()\l+ getChild()\l}" alt="" coords="217,907,452,1029"/>
 </map>

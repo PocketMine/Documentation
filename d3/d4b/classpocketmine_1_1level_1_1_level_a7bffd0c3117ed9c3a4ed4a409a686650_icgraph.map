@@ -1,0 +1,9 @@
+<map id="pocketmine\level\Level\getBlock" name="pocketmine\level\Level\getBlock">
+<area shape="rect" id="node2" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#ab2c4e6d8e0a05a5f42e83fe0e49ba0b4" title="pocketmine\\level\\Level\l\\getCollisionBlocks" alt="" coords="222,5,389,46"/>
+<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a608a2c562559670a68894c6282b9c80a" title="pocketmine\\level\\Level\l\\getCollisionCubes" alt="" coords="222,70,389,111"/>
+<area shape="rect" id="node4" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a69618f606777659e0c4dcbfc046c2eef" title="pocketmine\\level\\Level\l\\isFullBlock" alt="" coords="222,135,389,177"/>
+<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a60f0a9e93625494e1d47bc9fb75c9b38" title="pocketmine\\level\\Level\l\\updateAround" alt="" coords="222,201,389,242"/>
+<area shape="rect" id="node7" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a3346679b5fe84b0fb3ae4bc27d99e18f" title="pocketmine\\level\\Level\l\\useItemOn" alt="" coords="654,230,821,271"/>
+<area shape="rect" id="node8" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#adbfdb8014d3364de28dd7909a7577d0d" title="pocketmine\\level\\Level\l\\useBreakOn" alt="" coords="222,318,389,359"/>
+<area shape="rect" id="node6" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a809bb258d797af4a4f9271addb4bfd4a" title="pocketmine\\level\\Level\l\\setBlock" alt="" coords="438,201,605,242"/>
+</map>

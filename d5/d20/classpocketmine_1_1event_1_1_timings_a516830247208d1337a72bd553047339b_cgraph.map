@@ -1,5 +1,5 @@
 <map id="pocketmine\event\Timings\getPluginTaskTimings" name="pocketmine\event\Timings\getPluginTaskTimings">
-<area shape="rect" id="node3" href="$d5/d2e/classpocketmine_1_1scheduler_1_1_plugin_task.html#a5ae8fe2dd6644393048c4b749ee19830" title="pocketmine\\scheduler\l\\PluginTask\\getOwner" alt="" coords="248,5,397,51"/>
-<area shape="rect" id="node5" href="$dd/d18/classpocketmine_1_1scheduler_1_1_task_handler.html#ada3f8dfc580c8b687d1bea2dc9876676" title="pocketmine\\scheduler\l\\TaskHandler\\getTask" alt="" coords="248,74,397,121"/>
-<area shape="rect" id="node7" href="$dd/d18/classpocketmine_1_1scheduler_1_1_task_handler.html#ab17cfbe429ef40a7a091b1cb63f94bc9" title="pocketmine\\scheduler\l\\TaskHandler\\getTaskName" alt="" coords="229,143,416,190"/>
+<area shape="rect" id="node2" href="$d5/d2e/classpocketmine_1_1scheduler_1_1_plugin_task.html#a5ae8fe2dd6644393048c4b749ee19830" title="pocketmine\\scheduler\l\\PluginTask\\getOwner" alt="" coords="261,5,424,46"/>
+<area shape="rect" id="node3" href="$dd/d18/classpocketmine_1_1scheduler_1_1_task_handler.html#ada3f8dfc580c8b687d1bea2dc9876676" title="pocketmine\\scheduler\l\\TaskHandler\\getTask" alt="" coords="261,70,424,111"/>
+<area shape="rect" id="node4" href="$dd/d18/classpocketmine_1_1scheduler_1_1_task_handler.html#ab17cfbe429ef40a7a091b1cb63f94bc9" title="pocketmine\\scheduler\l\\TaskHandler\\getTaskName" alt="" coords="245,135,440,177"/>
 </map>

@@ -6,10 +6,10 @@ var classpocketmine_1_1event_1_1player_1_1_player_drop_item_event =
     [ "getItem", "d2/d16/classpocketmine_1_1event_1_1player_1_1_player_drop_item_event.html#aec44161ba7c08d4f7ce505d7ff0f0e45", null ],
     [ "getPlayer", "d2/d16/classpocketmine_1_1event_1_1player_1_1_player_drop_item_event.html#a58fd139c0a94c72723e9a89b5b80cba1", null ],
     [ "isCancelled", "d2/d16/classpocketmine_1_1event_1_1player_1_1_player_drop_item_event.html#a90efcab0d539a5cb5b17968dfa164017", null ],
-    [ "isCancelled", "d2/d16/classpocketmine_1_1event_1_1player_1_1_player_drop_item_event.html#a99e105e6cb8e83f3dbae1fb26d398cf4", null ],
     [ "setCancelled", "d2/d16/classpocketmine_1_1event_1_1player_1_1_player_drop_item_event.html#aec2d3aa9d4d8591d5e63a7842844aba7", null ],
-    [ "setCancelled", "d2/d16/classpocketmine_1_1event_1_1player_1_1_player_drop_item_event.html#a693b19eb500c69ab9f9dd9f207e5029a", null ],
     [ "$eventName", "d2/d16/classpocketmine_1_1event_1_1player_1_1_player_drop_item_event.html#a847810daab9f3d6396db6c759038a2fd", null ],
+    [ "$eventPool", "d2/d16/classpocketmine_1_1event_1_1player_1_1_player_drop_item_event.html#aac3243cafc335a03631493c8e3ea294f", null ],
     [ "$handlerList", "d2/d16/classpocketmine_1_1event_1_1player_1_1_player_drop_item_event.html#a64ff6d49fd2884e8f177b14d7ddc0611", null ],
+    [ "$nextEvent", "d2/d16/classpocketmine_1_1event_1_1player_1_1_player_drop_item_event.html#aa46a8685416955a32ce8b4324ee5389f", null ],
     [ "$player", "d2/d16/classpocketmine_1_1event_1_1player_1_1_player_drop_item_event.html#a9788177df7d55080350ac3a589280a51", null ]
 ];

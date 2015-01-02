@@ -1,0 +1,6 @@
+<map id="pocketmine\event\player\PlayerBucketFillEvent" name="pocketmine\event\player\PlayerBucketFillEvent">
+<area shape="rect" id="node2" href="$d2/d55/classpocketmine_1_1event_1_1player_1_1_player_bucket_event.html" title="{pocketmine\\event\\player\l\\PlayerBucketEvent\n||+ __construct()\l+ getBucket()\l+ getItem()\l+ setItem()\l+ getBlockClicked()\l}" alt="" coords="115,289,295,439"/>
+<area shape="rect" id="node3" href="$d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html" title="{pocketmine\\event\\player\l\\PlayerEvent\n|# $player\l|+ getPlayer()\l}" alt="" coords="5,147,184,239"/>
+<area shape="rect" id="node4" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ getHandlers()\l}" alt="" coords="6,6,183,98"/>
+<area shape="rect" id="node5" href="$db/d62/interfacepocketmine_1_1event_1_1_cancellable.html" title="{pocketmine\\event\\Cancellable\n||+ isCancelled()\l+ setCancelled()\l}" alt="" coords="209,147,423,239"/>
+</map>

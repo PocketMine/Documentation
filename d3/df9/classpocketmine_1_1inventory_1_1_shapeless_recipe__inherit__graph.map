@@ -1,5 +1,5 @@
 <map id="pocketmine\inventory\ShapelessRecipe" name="pocketmine\inventory\ShapelessRecipe">
-<area shape="rect" id="node5" href="$d8/d7b/classpocketmine_1_1inventory_1_1_big_shapeless_recipe.html" title="{pocketmine\\inventory\l\\BigShapelessRecipe\n||}" alt="" coords="5,430,152,533"/>
-<area shape="rect" id="node7" href="$d5/da2/classpocketmine_1_1inventory_1_1_stonecutter_shapeless_recipe.html" title="{pocketmine\\inventory\l\\StonecutterShapelessRecipe\n||}" alt="" coords="176,430,371,533"/>
-<area shape="rect" id="node2" href="$d7/d3c/interfacepocketmine_1_1inventory_1_1_recipe.html" title="{pocketmine\\inventory\l\\Recipe\n||+ getResult()\l+ registerToCraftingManager()\l}" alt="" coords="79,5,273,125"/>
+<area shape="rect" id="node3" href="$d8/d7b/classpocketmine_1_1inventory_1_1_big_shapeless_recipe.html" title="{pocketmine\\inventory\l\\BigShapelessRecipe\n||}" alt="" coords="5,390,164,482"/>
+<area shape="rect" id="node4" href="$d5/da2/classpocketmine_1_1inventory_1_1_stonecutter_shapeless_recipe.html" title="{pocketmine\\inventory\l\\StonecutterShapelessRecipe\n||}" alt="" coords="190,390,399,482"/>
+<area shape="rect" id="node2" href="$d7/d3c/interfacepocketmine_1_1inventory_1_1_recipe.html" title="{pocketmine\\inventory\l\\Recipe\n||+ getResult()\l+ registerToCraftingManager()\l}" alt="" coords="82,5,296,112"/>
 </map>

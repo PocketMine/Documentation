@@ -1,4 +1,4 @@
 <map id="pocketmine\tile\Chest\setItem" name="pocketmine\tile\Chest\setItem">
-<area shape="rect" id="node3" href="$dd/dba/classpocketmine_1_1tile_1_1_chest.html#a0aaa1ce4ba912b1210ed08a077c72196" title="pocketmine\\tile\\Chest\l\\getSize" alt="" coords="203,5,352,51"/>
-<area shape="rect" id="node5" href="$dd/dba/classpocketmine_1_1tile_1_1_chest.html#a1567078b7c43db9ec1abfad3f7ce73bc" title="pocketmine\\tile\\Chest\l\\getSlotIndex" alt="" coords="203,74,352,121"/>
+<area shape="rect" id="node2" href="$dd/dba/classpocketmine_1_1tile_1_1_chest.html#a0aaa1ce4ba912b1210ed08a077c72196" title="pocketmine\\tile\\Chest\l\\getSize" alt="" coords="217,5,378,46"/>
+<area shape="rect" id="node3" href="$dd/dba/classpocketmine_1_1tile_1_1_chest.html#a1567078b7c43db9ec1abfad3f7ce73bc" title="pocketmine\\tile\\Chest\l\\getSlotIndex" alt="" coords="217,70,378,111"/>
 </map>

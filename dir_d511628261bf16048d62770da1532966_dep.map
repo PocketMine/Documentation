@@ -1,4 +1,4 @@
 <map id="player" name="player">
-<area shape="rect" id="node2" href="dir_d511628261bf16048d62770da1532966.html" title="player" alt="" coords="27,55,99,103"/>
-<area shape="rect" id="graph2" href="dir_3261a0844a72e0fdcae5259b46dea427.html" title="event" alt="" coords="16,16,109,113"/>
+<area shape="rect" id="node1" href="dir_d511628261bf16048d62770da1532966.html" title="player" alt="" coords="27,52,99,100"/>
+<area shape="rect" id="clust1" href="dir_3261a0844a72e0fdcae5259b46dea427.html" title="event" alt="" coords="16,16,109,111"/>
 </map>

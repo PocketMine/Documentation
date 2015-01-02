@@ -1,6 +1,7 @@
 <map id="pocketmine\level\Level\getChunkEntities" name="pocketmine\level\Level\getChunkEntities">
-<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a55b9ba03563413447dbc7ce5962e33fd" title="pocketmine\\level\\Level\l\\getCollidingEntities" alt="" coords="208,39,363,86"/>
-<area shape="rect" id="node9" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a69273b11463bd557e0aab505e2847891" title="pocketmine\\level\\Level\l\\getNearbyEntities" alt="" coords="208,109,363,155"/>
-<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a54ad629d27b7091b1c830fe33c00ed15" title="pocketmine\\level\\Level\l\\getCollisionCubes" alt="" coords="411,5,565,51"/>
-<area shape="rect" id="node7" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a3346679b5fe84b0fb3ae4bc27d99e18f" title="pocketmine\\level\\Level\l\\useItemOn" alt="" coords="411,74,565,121"/>
+<area shape="rect" id="node2" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a55b9ba03563413447dbc7ce5962e33fd" title="pocketmine\\level\\Level\l\\getCollidingEntities" alt="" coords="222,57,389,98"/>
+<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a69273b11463bd557e0aab505e2847891" title="pocketmine\\level\\Level\l\\getNearbyEntities" alt="" coords="222,122,389,163"/>
+<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a608a2c562559670a68894c6282b9c80a" title="pocketmine\\level\\Level\l\\getCollisionCubes" alt="" coords="438,5,605,46"/>
+<area shape="rect" id="node4" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a3346679b5fe84b0fb3ae4bc27d99e18f" title="pocketmine\\level\\Level\l\\useItemOn" alt="" coords="654,93,821,134"/>
+<area shape="rect" id="node6" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a809bb258d797af4a4f9271addb4bfd4a" title="pocketmine\\level\\Level\l\\setBlock" alt="" coords="438,122,605,163"/>
 </map>

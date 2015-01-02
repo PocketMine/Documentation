@@ -1,4 +1,4 @@
 <map id="pocketmine\event\level\LevelSaveEvent" name="pocketmine\event\level\LevelSaveEvent">
-<area shape="rect" id="node2" href="$d5/dbb/classpocketmine_1_1event_1_1level_1_1_level_event.html" title="{pocketmine\\event\\level\l\\LevelEvent\n||+ __construct()\l+ getLevel()\l}" alt="" coords="9,192,164,312"/>
-<area shape="rect" id="node4" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="5,6,168,143"/>
+<area shape="rect" id="node2" href="$d5/dbb/classpocketmine_1_1event_1_1level_1_1_level_event.html" title="{pocketmine\\event\\level\l\\LevelEvent\n||+ __construct()\l+ getLevel()\l}" alt="" coords="8,147,179,253"/>
+<area shape="rect" id="node3" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ getHandlers()\l}" alt="" coords="5,6,181,98"/>
 </map>

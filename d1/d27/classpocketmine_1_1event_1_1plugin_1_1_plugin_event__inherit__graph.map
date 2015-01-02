@@ -1,5 +1,5 @@
 <map id="pocketmine\event\plugin\PluginEvent" name="pocketmine\event\plugin\PluginEvent">
-<area shape="rect" id="node5" href="$d6/d6d/classpocketmine_1_1event_1_1plugin_1_1_plugin_disable_event.html" title="{pocketmine\\event\\plugin\l\\PluginDisableEvent\n|+ $handlerList\l|+ __construct()\l}" alt="" coords="5,361,168,463"/>
-<area shape="rect" id="node7" href="$d9/dca/classpocketmine_1_1event_1_1plugin_1_1_plugin_enable_event.html" title="{pocketmine\\event\\plugin\l\\PluginEnableEvent\n|+ $handlerList\l|+ __construct()\l}" alt="" coords="192,361,355,463"/>
-<area shape="rect" id="node2" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ isCancelled()\l+ setCancelled()\l+ getHandlers()\l}" alt="" coords="99,6,261,143"/>
+<area shape="rect" id="node3" href="$d6/d6d/classpocketmine_1_1event_1_1plugin_1_1_plugin_disable_event.html" title="{pocketmine\\event\\plugin\l\\PluginDisableEvent\n|+ $handlerList\l+ $eventPool\l+ $nextEvent\l|+ __construct()\l}" alt="" coords="5,302,184,423"/>
+<area shape="rect" id="node4" href="$d9/dca/classpocketmine_1_1event_1_1plugin_1_1_plugin_enable_event.html" title="{pocketmine\\event\\plugin\l\\PluginEnableEvent\n|+ $handlerList\l+ $eventPool\l+ $nextEvent\l|+ __construct()\l}" alt="" coords="208,302,387,423"/>
+<area shape="rect" id="node2" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ getHandlers()\l}" alt="" coords="107,6,284,98"/>
 </map>

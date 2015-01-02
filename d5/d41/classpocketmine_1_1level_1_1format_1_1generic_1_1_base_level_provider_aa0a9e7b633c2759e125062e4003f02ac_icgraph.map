@@ -1,4 +1,5 @@
 <map id="pocketmine\level\format\generic\BaseLevelProvider\getLevel" name="pocketmine\level\format\generic\BaseLevelProvider\getLevel">
-<area shape="rect" id="node3" href="$db/dbb/classpocketmine_1_1level_1_1format_1_1anvil_1_1_anvil.html#abb77a9d63aae40c46472847a25efd245" title="pocketmine\\level\\format\l\\anvil\\Anvil\\requestChunkTask" alt="" coords="263,5,463,51"/>
-<area shape="rect" id="node5" href="$d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region.html#af166601a69942266fec195f2a9364bdc" title="pocketmine\\level\\format\l\\mcregion\\McRegion\\requestChunkTask" alt="" coords="235,74,491,121"/>
+<area shape="rect" id="node2" href="$db/dbb/classpocketmine_1_1level_1_1format_1_1anvil_1_1_anvil.html#abb77a9d63aae40c46472847a25efd245" title="pocketmine\\level\\format\l\\anvil\\Anvil\\requestChunkTask" alt="" coords="279,5,489,46"/>
+<area shape="rect" id="node3" href="$d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region.html#af166601a69942266fec195f2a9364bdc" title="pocketmine\\level\\format\l\\mcregion\\McRegion\\requestChunkTask" alt="" coords="249,70,519,111"/>
+<area shape="rect" id="node4" href="$d2/db3/classpocketmine_1_1level_1_1format_1_1leveldb_1_1_level_d_b.html#acd20aa68586e4637aad80c63a5fad783" title="pocketmine\\level\\format\l\\leveldb\\LevelDB\\requestChunkTask" alt="" coords="261,135,507,177"/>
 </map>

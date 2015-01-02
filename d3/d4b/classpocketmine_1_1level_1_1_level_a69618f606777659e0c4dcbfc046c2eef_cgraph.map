@@ -1,5 +1,4 @@
 <map id="pocketmine\level\Level\isFullBlock" name="pocketmine\level\Level\isFullBlock">
-<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#ac20d8473b45c810cb8ecd57c2b938afe" title="pocketmine\\level\\Level\l\\getBlock" alt="" coords="208,27,363,74"/>
-<area shape="rect" id="node5" href="$d7/d27/classpocketmine_1_1block_1_1_block.html#ad1a33ab24f0c7cd9d0de92c13a516a8b" title="pocketmine\\block\\Block\\get" alt="" coords="412,5,593,35"/>
-<area shape="rect" id="node7" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a07cfdb965d8af5b865c2f468d3dc9f2e" title="pocketmine\\level\\Level\l\\getChunkAt" alt="" coords="425,58,580,105"/>
+<area shape="rect" id="node2" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a7bffd0c3117ed9c3a4ed4a409a686650" title="pocketmine\\level\\Level\l\\getBlock" alt="" coords="222,5,389,46"/>
+<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a4be83538c608928a193884ea26010d96" title="pocketmine\\level\\Level\l\\chunkHash" alt="" coords="438,5,605,46"/>
 </map>

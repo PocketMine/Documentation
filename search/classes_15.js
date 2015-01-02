@@ -7,5 +7,6 @@ var searchData=
   ['vehicle',['Vehicle',['../d5/d00/classpocketmine_1_1entity_1_1_vehicle.html',1,'pocketmine::entity']]],
   ['versioncommand',['VersionCommand',['../d1/d1c/classpocketmine_1_1command_1_1defaults_1_1_version_command.html',1,'pocketmine::command::defaults']]],
   ['versionstring',['VersionString',['../df/d22/classpocketmine_1_1utils_1_1_version_string.html',1,'pocketmine::utils']]],
-  ['villager',['Villager',['../d9/d6b/classpocketmine_1_1entity_1_1_villager.html',1,'pocketmine::entity']]]
+  ['villager',['Villager',['../d9/d6b/classpocketmine_1_1entity_1_1_villager.html',1,'pocketmine::entity']]],
+  ['vine',['Vine',['../d1/de5/classpocketmine_1_1block_1_1_vine.html',1,'pocketmine::block']]]
 ];

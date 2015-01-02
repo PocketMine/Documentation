@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['mainframe',['mainFrame',['../d6/db0/classpocketmine_1_1gui_1_1main_frame.html',1,'pocketmine::gui']]],
   ['mainlogger',['MainLogger',['../d9/d27/classpocketmine_1_1utils_1_1_main_logger.html',1,'pocketmine::utils']]],
   ['matchfurnacerecipe',['matchFurnaceRecipe',['../d3/d9f/classpocketmine_1_1inventory_1_1_crafting_manager.html#ac1af1d4c5c189eb9d4976946dc907140',1,'pocketmine::inventory::CraftingManager']]],
   ['matchitems',['matchItems',['../df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#a510fd95f31abb7524a9dcc58a36f80b8',1,'pocketmine::inventory::SimpleTransactionGroup']]],
@@ -13,7 +12,6 @@ var searchData=
   ['melon',['Melon',['../de/d38/classpocketmine_1_1block_1_1_melon.html',1,'pocketmine::block']]],
   ['melonseeds',['MelonSeeds',['../de/da4/classpocketmine_1_1item_1_1_melon_seeds.html',1,'pocketmine::item']]],
   ['melonstem',['MelonStem',['../db/d86/classpocketmine_1_1block_1_1_melon_stem.html',1,'pocketmine::block']]],
-  ['merge',['merge',['../d0/d82/class_threaded.html#aa1239be7eb22bf032c1a29dfc4cd391f',1,'Threaded']]],
   ['messagepacket',['MessagePacket',['../d7/d59/classpocketmine_1_1network_1_1protocol_1_1_message_packet.html',1,'pocketmine::network::protocol']]],
   ['metadatable',['Metadatable',['../d8/d0b/interfacepocketmine_1_1metadata_1_1_metadatable.html',1,'pocketmine::metadata']]],
   ['metadatastore',['MetadataStore',['../db/dfc/classpocketmine_1_1metadata_1_1_metadata_store.html',1,'pocketmine::metadata']]],
@@ -21,9 +19,6 @@ var searchData=
   ['methodeventexecutor',['MethodEventExecutor',['../dc/d6e/classpocketmine_1_1plugin_1_1_method_event_executor.html',1,'pocketmine::plugin']]],
   ['minecart',['Minecart',['../d9/de1/classpocketmine_1_1entity_1_1_minecart.html',1,'pocketmine::entity']]],
   ['mineshaft',['Mineshaft',['../dc/d88/classpocketmine_1_1level_1_1generator_1_1populator_1_1_mineshaft.html',1,'pocketmine::level::generator::populator']]],
-  ['mode_5fdebug',['MODE_DEBUG',['../d3/dce/interface_spl_autoloader.html#a64fdcd4eb8d062e190091ce5ddbf490c',1,'SplAutoloader']]],
-  ['mode_5fnormal',['MODE_NORMAL',['../d3/dce/interface_spl_autoloader.html#adebcf6a4c93c32eb8c8c93e972d63017',1,'SplAutoloader']]],
-  ['mode_5fsilent',['MODE_SILENT',['../d3/dce/interface_spl_autoloader.html#a5270698c0a5780dd7b3e6a15d6e363cc',1,'SplAutoloader']]],
   ['monitor',['MONITOR',['../d6/d55/classpocketmine_1_1event_1_1_event_priority.html#a9f957ebccdcaa19c3ee770f6bf1ed59c',1,'pocketmine::event::EventPriority']]],
   ['monkeypatch',['MonkeyPatch',['../d7/dad/classpocketmine_1_1utils_1_1_monkey_patch.html',1,'pocketmine::utils']]],
   ['monster',['Monster',['../d5/d2b/classpocketmine_1_1entity_1_1_monster.html',1,'pocketmine::entity']]],
@@ -31,7 +26,7 @@ var searchData=
   ['mossstone',['MossStone',['../d8/d55/classpocketmine_1_1block_1_1_moss_stone.html',1,'pocketmine::block']]],
   ['moveentitypacket',['MoveEntityPacket',['../d2/dd0/classpocketmine_1_1network_1_1protocol_1_1_move_entity_packet.html',1,'pocketmine::network::protocol']]],
   ['moveplayerpacket',['MovePlayerPacket',['../d0/de4/classpocketmine_1_1network_1_1protocol_1_1_move_player_packet.html',1,'pocketmine::network::protocol']]],
+  ['movingobjectposition',['MovingObjectPosition',['../dc/dba/classpocketmine_1_1level_1_1_moving_object_position.html',1,'pocketmine::level']]],
   ['mushroomstew',['MushroomStew',['../dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html',1,'pocketmine::item']]],
-  ['mutex',['Mutex',['../d4/de8/class_mutex.html',1,'']]],
   ['mycelium',['Mycelium',['../d1/d9b/classpocketmine_1_1block_1_1_mycelium.html',1,'pocketmine::block']]]
 ];

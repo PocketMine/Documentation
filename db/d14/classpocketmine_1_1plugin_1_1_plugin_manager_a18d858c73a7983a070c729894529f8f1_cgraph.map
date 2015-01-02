@@ -1,6 +1,7 @@
 <map id="pocketmine\plugin\PluginManager\disablePlugin" name="pocketmine\plugin\PluginManager\disablePlugin">
-<area shape="rect" id="node3" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html#ab7ef321b514dbd4462709e5b23278b64" title="pocketmine\\plugin\\Plugin\l\\getDescription" alt="" coords="231,5,396,51"/>
-<area shape="rect" id="node5" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html#aa0435b65492626cefe758fb86b2e6372" title="pocketmine\\plugin\\Plugin\l\\getPluginLoader" alt="" coords="231,74,396,121"/>
-<area shape="rect" id="node7" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#a1a33c91160e0c4a7ff272bee7a9aca8b" title="pocketmine\\plugin\\Plugin\lManager\\removePermission" alt="" coords="221,143,405,190"/>
-<area shape="rect" id="node9" href="$d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#ab34429e4764d2bd5ea2d118b134217aa" title="pocketmine\\event\\Handler\lList\\unregisterAll" alt="" coords="227,213,400,259"/>
+<area shape="rect" id="node2" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html#ab7ef321b514dbd4462709e5b23278b64" title="pocketmine\\plugin\\Plugin\l\\getDescription" alt="" coords="256,5,437,46"/>
+<area shape="rect" id="node3" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="235,71,458,97"/>
+<area shape="rect" id="node4" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html#aa0435b65492626cefe758fb86b2e6372" title="pocketmine\\plugin\\Plugin\l\\getPluginLoader" alt="" coords="256,122,437,163"/>
+<area shape="rect" id="node5" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#a1a33c91160e0c4a7ff272bee7a9aca8b" title="pocketmine\\plugin\\Plugin\lManager\\removePermission" alt="" coords="246,187,447,229"/>
+<area shape="rect" id="node6" href="$d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#ab34429e4764d2bd5ea2d118b134217aa" title="pocketmine\\event\\Handler\lList\\unregisterAll" alt="" coords="251,253,442,294"/>
 </map>

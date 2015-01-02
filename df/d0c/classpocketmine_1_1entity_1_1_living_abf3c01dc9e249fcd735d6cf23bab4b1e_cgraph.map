@@ -1,0 +1,4 @@
+<map id="pocketmine\entity\Living\getTargetBlock" name="pocketmine\entity\Living\getTargetBlock">
+<area shape="rect" id="node2" href="$df/d0c/classpocketmine_1_1entity_1_1_living.html#ad2a7d93e9ca3a8221f483ba96a0f3726" title="pocketmine\\entity\\Living\l\\getLineOfSight" alt="" coords="233,5,410,46"/>
+<area shape="rect" id="node3" href="$d2/d3c/classpocketmine_1_1entity_1_1_entity.html#abacf7fc4f84e0ad112ba17638dc5cd1d" title="pocketmine\\entity\\Entity\l\\getDirectionVector" alt="" coords="459,5,637,46"/>
+</map>

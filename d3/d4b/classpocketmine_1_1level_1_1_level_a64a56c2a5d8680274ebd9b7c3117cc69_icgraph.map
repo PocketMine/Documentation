@@ -1,5 +1,0 @@
-<map id="pocketmine\level\Level\getID" name="pocketmine\level\Level\getID">
-<area shape="rect" id="node3" href="$d4/dc0/classpocketmine_1_1level_1_1generator_1_1_generation_request_manager.html#a93f1fd613d45ccdfd5c0c2048e61d251" title="pocketmine\\level\\generator\l\\GenerationRequestManager\l\\closeLevel" alt="" coords="209,5,396,69"/>
-<area shape="rect" id="node5" href="$d4/dc0/classpocketmine_1_1level_1_1generator_1_1_generation_request_manager.html#aa0213bc69d54b594d7501b1de5137552" title="pocketmine\\level\\generator\l\\GenerationRequestManager\l\\openLevel" alt="" coords="209,93,396,157"/>
-<area shape="rect" id="node7" href="$d5/df7/classpocketmine_1_1_server.html#a1dbad5e1e5f4b5ac16818c5cff4ab85b" title="pocketmine\\Server\\unload\lLevel" alt="" coords="216,181,389,227"/>
-</map>

@@ -15,6 +15,10 @@ var classpocketmine_1_1math_1_1_vector3 =
     [ "getFloorY", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#a0ac3965b092095f82286b7f2034e4da7", null ],
     [ "getFloorZ", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#a145e482cd6a601a4df05ff512ddd7a3e", null ],
     [ "getForward", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#a433a67aa266f08a9cd4ebd0e47214b91", null ],
+    [ "getIntermediateWithXValue", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#ad9a6def3850bffe79e9e3c6ca1b82f77", null ],
+    [ "getIntermediateWithYValue", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#ac6803d24d2142a081049f7c86bb073b6", null ],
+    [ "getIntermediateWithZValue", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#a67eec6dc12094416e25b19c711819e27", null ],
+    [ "getOppositeSide", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#a2977add2d04b287151f959fc5652862f", null ],
     [ "getRight", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#a93e660618a298eb1e3e94a20c1ab383f", null ],
     [ "getSide", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#add7bf1ea2877383c93d86c28cfc5e4fe", null ],
     [ "getSouth", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#a7f13b1063616a78d1e542098c9a78714", null ],
@@ -29,8 +33,15 @@ var classpocketmine_1_1math_1_1_vector3 =
     [ "multiply", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#a05c4a3ead018ab11ec83e3830df4f5c7", null ],
     [ "normalize", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#ac2f0e8bdeef3c1d2c1b0d9ccc67c74c0", null ],
     [ "round", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#add35f31224f5bc2de3a0c4b0780f35bf", null ],
+    [ "setComponents", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#ae276f35969617a7f8a6b623e7e00f1c5", null ],
     [ "subtract", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#afd165b183dba2c814e2c4a0ce5755533", null ],
     [ "$x", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#add0e4e5d6c6d31d231a522625f588c22", null ],
     [ "$y", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#ad0aefe5836b534fc90acfe88cf2523cf", null ],
-    [ "$z", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#aab40fb083f72f394744f7d42cd46e2c3", null ]
+    [ "$z", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#aab40fb083f72f394744f7d42cd46e2c3", null ],
+    [ "SIDE_DOWN", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#a313cdbeda164c4f409c1c806bc1bf4e3", null ],
+    [ "SIDE_EAST", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#ab8834509a3861d73ce65d9961332f04a", null ],
+    [ "SIDE_NORTH", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#a082c8572a766b154467c0c1d6e443e31", null ],
+    [ "SIDE_SOUTH", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#a87b346436491f13525623c0803c8b270", null ],
+    [ "SIDE_UP", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#ac22c740c3c383ed9957aea077808023f", null ],
+    [ "SIDE_WEST", "d2/d90/classpocketmine_1_1math_1_1_vector3.html#aadebd711219d0658eed4b6687a1fa299", null ]
 ];

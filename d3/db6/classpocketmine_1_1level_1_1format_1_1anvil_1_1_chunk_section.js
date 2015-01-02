@@ -11,6 +11,7 @@ var classpocketmine_1_1level_1_1format_1_1anvil_1_1_chunk_section =
     [ "getBlockSkyLight", "d3/db6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_chunk_section.html#a30b8e07c243dbad9b8dccb54f91a222e", null ],
     [ "getBlockSkyLightColumn", "d3/db6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_chunk_section.html#adc78eced4b8d1cf3e61a0129c2672b1e", null ],
     [ "getDataArray", "d3/db6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_chunk_section.html#a54d92fc01dc56e19ae408cc23d83234a", null ],
+    [ "getFullBlock", "d3/db6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_chunk_section.html#ab470404aece3fc67acef5368a04cea76", null ],
     [ "getIdArray", "d3/db6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_chunk_section.html#a0f68907f8af46c936ece6c9209dd8401", null ],
     [ "getLightArray", "d3/db6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_chunk_section.html#a11df7e27611c6f8813f70e14f0dda173", null ],
     [ "getSkyLightArray", "d3/db6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_chunk_section.html#a1cf0579cd1e53de73901054b178b490f", null ],

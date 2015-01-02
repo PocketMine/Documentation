@@ -2,6 +2,11 @@ var namespacepocketmine_1_1event_1_1player =
 [
     [ "PlayerAchievementAwardedEvent", "dc/dc4/classpocketmine_1_1event_1_1player_1_1_player_achievement_awarded_event.html", "dc/dc4/classpocketmine_1_1event_1_1player_1_1_player_achievement_awarded_event" ],
     [ "PlayerAnimationEvent", "d0/d3e/classpocketmine_1_1event_1_1player_1_1_player_animation_event.html", "d0/d3e/classpocketmine_1_1event_1_1player_1_1_player_animation_event" ],
+    [ "PlayerBedEnterEvent", "d2/dd7/classpocketmine_1_1event_1_1player_1_1_player_bed_enter_event.html", "d2/dd7/classpocketmine_1_1event_1_1player_1_1_player_bed_enter_event" ],
+    [ "PlayerBedLeaveEvent", "db/d4e/classpocketmine_1_1event_1_1player_1_1_player_bed_leave_event.html", "db/d4e/classpocketmine_1_1event_1_1player_1_1_player_bed_leave_event" ],
+    [ "PlayerBucketEmptyEvent", "d9/d39/classpocketmine_1_1event_1_1player_1_1_player_bucket_empty_event.html", "d9/d39/classpocketmine_1_1event_1_1player_1_1_player_bucket_empty_event" ],
+    [ "PlayerBucketEvent", "d2/d55/classpocketmine_1_1event_1_1player_1_1_player_bucket_event.html", "d2/d55/classpocketmine_1_1event_1_1player_1_1_player_bucket_event" ],
+    [ "PlayerBucketFillEvent", "d6/dba/classpocketmine_1_1event_1_1player_1_1_player_bucket_fill_event.html", "d6/dba/classpocketmine_1_1event_1_1player_1_1_player_bucket_fill_event" ],
     [ "PlayerChatEvent", "df/d8f/classpocketmine_1_1event_1_1player_1_1_player_chat_event.html", "df/d8f/classpocketmine_1_1event_1_1player_1_1_player_chat_event" ],
     [ "PlayerCommandPreprocessEvent", "d3/dd2/classpocketmine_1_1event_1_1player_1_1_player_command_preprocess_event.html", "d3/dd2/classpocketmine_1_1event_1_1player_1_1_player_command_preprocess_event" ],
     [ "PlayerDeathEvent", "d7/d7d/classpocketmine_1_1event_1_1player_1_1_player_death_event.html", "d7/d7d/classpocketmine_1_1event_1_1player_1_1_player_death_event" ],
@@ -14,6 +19,7 @@ var namespacepocketmine_1_1event_1_1player =
     [ "PlayerJoinEvent", "d7/dcc/classpocketmine_1_1event_1_1player_1_1_player_join_event.html", "d7/dcc/classpocketmine_1_1event_1_1player_1_1_player_join_event" ],
     [ "PlayerKickEvent", "d9/dd8/classpocketmine_1_1event_1_1player_1_1_player_kick_event.html", "d9/dd8/classpocketmine_1_1event_1_1player_1_1_player_kick_event" ],
     [ "PlayerLoginEvent", "d6/d15/classpocketmine_1_1event_1_1player_1_1_player_login_event.html", "d6/d15/classpocketmine_1_1event_1_1player_1_1_player_login_event" ],
+    [ "PlayerMoveEvent", "d3/d49/classpocketmine_1_1event_1_1player_1_1_player_move_event.html", "d3/d49/classpocketmine_1_1event_1_1player_1_1_player_move_event" ],
     [ "PlayerPreLoginEvent", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event.html", "d2/d1e/classpocketmine_1_1event_1_1player_1_1_player_pre_login_event" ],
     [ "PlayerQuitEvent", "df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html", "df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event" ],
     [ "PlayerRespawnEvent", "de/d1c/classpocketmine_1_1event_1_1player_1_1_player_respawn_event.html", "de/d1c/classpocketmine_1_1event_1_1player_1_1_player_respawn_event" ]

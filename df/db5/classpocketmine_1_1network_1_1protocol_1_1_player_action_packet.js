@@ -1,5 +1,6 @@
 var classpocketmine_1_1network_1_1protocol_1_1_player_action_packet =
 [
+    [ "clean", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#a2ab5e54541dfab853409ab20faae5d56", null ],
     [ "decode", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#aa096c64890efd10d4e804f58c7d41b87", null ],
     [ "encode", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#a2c79caa8515906bdd961f0e0e1b1a7a7", null ],
     [ "feof", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#a38b7693bb0d3b4e3478f8e9afdc43609", null ],
@@ -9,7 +10,7 @@ var classpocketmine_1_1network_1_1protocol_1_1_player_action_packet =
     [ "getDataArray", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#aeb79aff9741296738ba592888fadf76a", null ],
     [ "getFloat", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#a8fe27f4f9c07d42ede630b55e3890084", null ],
     [ "getInt", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#aa8e432c32d0d2df1d6499091b97c30e9", null ],
-    [ "getLong", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#a4787f7b0980de0d0a21910c65619e682", null ],
+    [ "getLong", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#a46607817bbb0ca54d2bd2918538ce980", null ],
     [ "getLTriad", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#aa973f04ced929c90b608e12e866b5800", null ],
     [ "getShort", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#a91e87d8808781a10cbcc50e694484341", null ],
     [ "getSlot", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#a21bc1362ec76e12ace742e5133d0f2c5", null ],
@@ -33,6 +34,9 @@ var classpocketmine_1_1network_1_1protocol_1_1_player_action_packet =
     [ "$buffer", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#a87c6760a0f385b960a81d4f1fe57278d", null ],
     [ "$eid", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#a46700b82f0bad7b384305f62c3290ef8", null ],
     [ "$face", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#aeaaee1c3de26241b85536ec93948be0a", null ],
+    [ "$isEncoded", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#af5101c75e3a3da5d36158558ae1d75ab", null ],
+    [ "$next", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#a63f07472b718b48fec1d63c185da47ca", null ],
+    [ "$pool", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#acc9e58cfb2816c447f9e7bbec94e753a", null ],
     [ "$x", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#a3e8b309cfe55b020f99305be821d4813", null ],
     [ "$y", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#a72fa5bc7ae276b39b924658d7091962f", null ],
     [ "$z", "df/db5/classpocketmine_1_1network_1_1protocol_1_1_player_action_packet.html#a39354a81bdab5e8400f7563bff5a585d", null ]

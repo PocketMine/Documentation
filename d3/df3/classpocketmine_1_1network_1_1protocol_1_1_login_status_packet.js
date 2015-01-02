@@ -1,5 +1,6 @@
 var classpocketmine_1_1network_1_1protocol_1_1_login_status_packet =
 [
+    [ "clean", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#a2ab5e54541dfab853409ab20faae5d56", null ],
     [ "decode", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#a66722fc5a6019c8e14dfb3726c7090a0", null ],
     [ "encode", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#ac1655b6b904532111c1fabf78dcf33d9", null ],
     [ "feof", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#a38b7693bb0d3b4e3478f8e9afdc43609", null ],
@@ -9,7 +10,7 @@ var classpocketmine_1_1network_1_1protocol_1_1_login_status_packet =
     [ "getDataArray", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#aeb79aff9741296738ba592888fadf76a", null ],
     [ "getFloat", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#a8fe27f4f9c07d42ede630b55e3890084", null ],
     [ "getInt", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#aa8e432c32d0d2df1d6499091b97c30e9", null ],
-    [ "getLong", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#a4787f7b0980de0d0a21910c65619e682", null ],
+    [ "getLong", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#a46607817bbb0ca54d2bd2918538ce980", null ],
     [ "getLTriad", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#aa973f04ced929c90b608e12e866b5800", null ],
     [ "getShort", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#a91e87d8808781a10cbcc50e694484341", null ],
     [ "getSlot", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#a21bc1362ec76e12ace742e5133d0f2c5", null ],
@@ -30,5 +31,8 @@ var classpocketmine_1_1network_1_1protocol_1_1_login_status_packet =
     [ "reset", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#a5ea9e9eb5b32dee9c6bc51900f8fbb92", null ],
     [ "setBuffer", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#a165102568c1290cdfa2e9a3cda814466", null ],
     [ "$buffer", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#a87c6760a0f385b960a81d4f1fe57278d", null ],
+    [ "$isEncoded", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#af5101c75e3a3da5d36158558ae1d75ab", null ],
+    [ "$next", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#a3537b661fb27785e622c1628507cc637", null ],
+    [ "$pool", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#a12a348898dd7d1a01fc02d24d15f838c", null ],
     [ "$status", "d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#a8be65b52ac4391876f0342f8ffce5672", null ]
 ];

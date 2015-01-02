@@ -1,0 +1,4 @@
+<map id="pocketmine\item\GoldChestplate" name="pocketmine\item\GoldChestplate">
+<area shape="rect" id="node2" href="$db/d85/classpocketmine_1_1item_1_1_armor.html" title="{pocketmine\\item\\Armor\n||+ getMaxStackSize()\l}" alt="" coords="34,557,208,635"/>
+<area shape="rect" id="node3" href="$d5/d8a/classpocketmine_1_1item_1_1_item.html" title="{pocketmine\\item\\Item\n|+ AIR\l+ STONE\l+ GRASS\l+ DIRT\l+ COBBLESTONE\l+ COBBLE\l+ PLANK\l+ PLANKS\l+ WOODEN_PLANK\l+ WOODEN_PLANKS\land 297 more...\l+ $list\l# $block\l# $id\l# $meta\l# $durability\l# $name\l|+ canBeActivated()\l+ __construct()\l+ getCount()\l+ setCount()\l+ getName()\l+ isPlaceable()\l+ getBlock()\l+ getId()\l+ getDamage()\l+ setDamage()\land 15 more...\l+ init()\l+ get()\l+ fromString()\l}" alt="" coords="40,6,203,509"/>
+</map>

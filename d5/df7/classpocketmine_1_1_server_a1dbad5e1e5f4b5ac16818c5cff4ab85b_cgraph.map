@@ -1,7 +1,6 @@
 <map id="pocketmine\Server\unloadLevel" name="pocketmine\Server\unloadLevel">
-<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a0f8fe10921397ba85d01aa3ef532cfaa" title="pocketmine\\level\\Level\l\\getFolderName" alt="" coords="227,5,381,51"/>
-<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a64a56c2a5d8680274ebd9b7c3117cc69" title="pocketmine\\level\\Level\l\\getID" alt="" coords="227,74,381,121"/>
-<area shape="rect" id="node7" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a7d8e3bf1c57c1ce9435575c289373363" title="pocketmine\\level\\Level\l\\unload" alt="" coords="227,143,381,190"/>
-<area shape="rect" id="node9" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a9fb97a07c57210eb1c727e008096754b" title="pocketmine\\level\\Level\l\\getName" alt="" coords="429,109,584,155"/>
-<area shape="rect" id="node11" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#aba3e58e49b52026c29df0fa1a61998fd" title="pocketmine\\level\\Level\l\\getPlayers" alt="" coords="429,178,584,225"/>
+<area shape="rect" id="node2" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#af35c952cc99fd10302526c86b8639bc8" title="pocketmine\\level\\Level\l\\getId" alt="" coords="246,5,413,46"/>
+<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a7d8e3bf1c57c1ce9435575c289373363" title="pocketmine\\level\\Level\l\\unload" alt="" coords="246,70,413,111"/>
+<area shape="rect" id="node4" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a9fb97a07c57210eb1c727e008096754b" title="pocketmine\\level\\Level\l\\getName" alt="" coords="462,37,629,78"/>
+<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#aba3e58e49b52026c29df0fa1a61998fd" title="pocketmine\\level\\Level\l\\getPlayers" alt="" coords="462,102,629,143"/>
 </map>

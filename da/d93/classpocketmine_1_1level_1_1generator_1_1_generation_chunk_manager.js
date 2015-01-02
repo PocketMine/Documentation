@@ -9,7 +9,7 @@ var classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager =
     [ "getBlockIdAt", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a1f45c94491c14d111201d4380e4a73a8", null ],
     [ "getChangedChunks", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#aab41f39114eb57b8451d58644778cb9f", null ],
     [ "getChunk", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a43b916ec4575c2050a568026b94cb7a0", null ],
-    [ "getID", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#af9a2283ee55fff2f4bfd51c93abd5c5a", null ],
+    [ "getId", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a3d01f203507d97d5397021dd3f39d5c4", null ],
     [ "getSeed", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a7e2b9d0adad52dafcd799c9ffc6baecd", null ],
     [ "isChunkGenerated", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#afb40db42bf63fefe125ebe281d63e1bf", null ],
     [ "isChunkPopulated", "da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a66b3084286d12afbf90dbba75a9139ef", null ],

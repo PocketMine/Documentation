@@ -1,6 +1,3 @@
 <map id="pocketmine\level\format\mcregion\McRegion\isChunkLoaded" name="pocketmine\level\format\mcregion\McRegion\isChunkLoaded">
-<area shape="rect" id="node3" href="$d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region.html#ac0e8d5940e4d6227858940e7a62f3890" title="pocketmine\\level\\format\l\\mcregion\\McRegion\\saveChunk" alt="" coords="297,5,508,51"/>
-<area shape="rect" id="node5" href="$d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region.html#a9bb6e27addea14e16814b160f2b274ea" title="pocketmine\\level\\format\l\\mcregion\\McRegion\\unloadChunk" alt="" coords="292,74,513,121"/>
-<area shape="rect" id="node7" href="$db/dbb/classpocketmine_1_1level_1_1format_1_1anvil_1_1_anvil.html#aec1968f7e79949d34922e1d707a2ca3c" title="pocketmine\\level\\format\l\\anvil\\Anvil\\setChunk" alt="" coords="584,39,744,86"/>
-<area shape="rect" id="node9" href="$d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region.html#a6af3f40ad4eff7971dd4704180b8e127" title="pocketmine\\level\\format\l\\mcregion\\McRegion\\setChunk" alt="" coords="563,109,765,155"/>
+<area shape="rect" id="node2" href="$d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region.html#ac0e8d5940e4d6227858940e7a62f3890" title="pocketmine\\level\\format\l\\mcregion\\McRegion\\saveChunk" alt="" coords="304,5,528,46"/>
 </map>

@@ -1,7 +1,0 @@
-<map id="Logger" name="Logger">
-<area shape="rect" id="node3" href="$d9/d4f/interface_attachable_logger.html" title="{AttachableLogger\n||+ addAttachment()\l+ removeAttachment()\l+ removeAttachments()\l+ getAttachments()\l}" alt="" coords="27,278,184,415"/>
-<area shape="rect" id="node7" href="$d0/d55/class_threaded_logger.html" title="{ThreadedLogger\n||}" alt="" coords="216,304,331,389"/>
-<area shape="rect" id="node5" href="$de/dc8/classpocketmine_1_1plugin_1_1_plugin_logger.html" title="{pocketmine\\plugin\\Plugin\lLogger\n||+ addAttachment()\l+ removeAttachment()\l+ removeAttachments()\l+ getAttachments()\l+ __construct()\l+ emergency()\l+ alert()\l+ critical()\l+ error()\l+ warning()\l+ notice()\l+ info()\l+ debug()\l+ log()\l}" alt="" coords="5,464,171,792"/>
-<area shape="rect" id="node9" href="$d3/db3/class_attachable_threaded_logger.html" title="{AttachableThreadedLogger\n|# $attachment\l|+ addAttachment()\l+ removeAttachment()\l+ removeAttachments()\l+ getAttachments()\l}" alt="" coords="195,559,371,697"/>
-<area shape="rect" id="node11" href="$d9/d27/classpocketmine_1_1utils_1_1_main_logger.html" title="{pocketmine\\utils\\MainLogger\n|+ $logger\l# $logFile\l# $logStream\l# $shutdown\l# $hasANSI\l# $logDebug\l|+ __construct()\l+ emergency()\l+ alert()\l+ critical()\l+ error()\l+ warning()\l+ notice()\l+ info()\l+ debug()\l+ setLogDebug()\l+ log()\l+ shutdown()\l+ run()\l+ getLogger()\l# send()\l}" alt="" coords="189,841,376,1255"/>
-</map>

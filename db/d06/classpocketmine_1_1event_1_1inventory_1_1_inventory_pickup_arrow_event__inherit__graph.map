@@ -1,0 +1,5 @@
+<map id="pocketmine\event\inventory\InventoryPickupArrowEvent" name="pocketmine\event\inventory\InventoryPickupArrowEvent">
+<area shape="rect" id="node2" href="$db/dbc/classpocketmine_1_1event_1_1inventory_1_1_inventory_event.html" title="{pocketmine\\event\\inventory\l\\InventoryEvent\n|# $inventory\l|+ __construct()\l+ getInventory()\l+ getViewers()\l}" alt="" coords="5,147,204,269"/>
+<area shape="rect" id="node3" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ getHandlers()\l}" alt="" coords="17,6,193,98"/>
+<area shape="rect" id="node4" href="$db/d62/interfacepocketmine_1_1event_1_1_cancellable.html" title="{pocketmine\\event\\Cancellable\n||+ isCancelled()\l+ setCancelled()\l}" alt="" coords="230,162,444,254"/>
+</map>

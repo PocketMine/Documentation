@@ -1,0 +1,9 @@
+<map id="pocketmine\level\Level\getId" name="pocketmine\level\Level\getId">
+<area shape="rect" id="node2" href="$d5/db2/classpocketmine_1_1level_1_1generator_1_1_generation_instance_manager.html#a3695487bc8d84b0bd41f4b669177285c" title="pocketmine\\level\\generator\l\\GenerationInstanceManager\l\\closeLevel" alt="" coords="222,5,429,61"/>
+<area shape="rect" id="node3" href="$d4/dc0/classpocketmine_1_1level_1_1generator_1_1_generation_request_manager.html#a93f1fd613d45ccdfd5c0c2048e61d251" title="pocketmine\\level\\generator\l\\GenerationRequestManager\l\\closeLevel" alt="" coords="223,85,427,141"/>
+<area shape="rect" id="node4" href="$d4/dc0/classpocketmine_1_1level_1_1generator_1_1_generation_request_manager.html#aa0213bc69d54b594d7501b1de5137552" title="pocketmine\\level\\generator\l\\GenerationRequestManager\l\\openLevel" alt="" coords="223,165,427,221"/>
+<area shape="rect" id="node5" href="$d5/db2/classpocketmine_1_1level_1_1generator_1_1_generation_instance_manager.html#a0f2d3d78ba341ad899a8d16a2fad8933" title="pocketmine\\level\\generator\l\\GenerationInstanceManager\l\\openLevel" alt="" coords="222,245,429,301"/>
+<area shape="rect" id="node6" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a809bb258d797af4a4f9271addb4bfd4a" title="pocketmine\\level\\Level\l\\setBlock" alt="" coords="242,325,409,366"/>
+<area shape="rect" id="node8" href="$d5/df7/classpocketmine_1_1_server.html#a1dbad5e1e5f4b5ac16818c5cff4ab85b" title="pocketmine\\Server\\unload\lLevel" alt="" coords="230,390,421,431"/>
+<area shape="rect" id="node7" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a3346679b5fe84b0fb3ae4bc27d99e18f" title="pocketmine\\level\\Level\l\\useItemOn" alt="" coords="478,325,645,366"/>
+</map>

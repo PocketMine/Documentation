@@ -1,0 +1,3 @@
+<map id="pocketmine\level\generator\GenerationLevelManager" name="pocketmine\level\generator\GenerationLevelManager">
+<area shape="rect" id="node2" href="$df/dfa/classpocketmine_1_1level_1_1generator_1_1_generation_manager.html" title="{pocketmine\\level\\generator\l\\GenerationManager\n|+ PACKET_ADD_NAMESPACE\l+ PACKET_REQUEST_CHUNK\l+ PACKET_SEND_CHUNK\l+ PACKET_OPEN_LEVEL\l+ PACKET_CLOSE_LEVEL\l+ PACKET_SHUTDOWN\l# $thread\l# $logger\l# $loader\l# $levels\l# $requestQueue\l# $needsChunk\l# $shutdown\l|+ __construct()\l+ requestChunk()\l+ sendChunk()\l+ getLogger()\l# openLevel()\l# generateChunk()\l# closeLevel()\l# enqueueChunk()\l# receiveChunk()\l}" alt="" coords="5,6,213,391"/>
+</map>

@@ -1,4 +1,4 @@
 <map id="pocketmine\metadata\MetadataStore\setMetadata" name="pocketmine\metadata\MetadataStore\setMetadata">
-<area shape="rect" id="node3" href="$db/dfc/classpocketmine_1_1metadata_1_1_metadata_store.html#a391b04417ea6d706827b4962edafc2b3" title="pocketmine\\metadata\l\\MetadataStore\\disambiguate" alt="" coords="252,5,444,51"/>
-<area shape="rect" id="node5" href="$d5/d86/classpocketmine_1_1metadata_1_1_metadata_value.html#a82d081e2cb2d26b6205095aa37ccb26d" title="pocketmine\\metadata\l\\MetadataValue\\getOwningPlugin" alt="" coords="241,74,455,121"/>
+<area shape="rect" id="node2" href="$db/dfc/classpocketmine_1_1metadata_1_1_metadata_store.html#a391b04417ea6d706827b4962edafc2b3" title="pocketmine\\metadata\l\\MetadataStore\\disambiguate" alt="" coords="271,5,484,46"/>
+<area shape="rect" id="node3" href="$d5/d86/classpocketmine_1_1metadata_1_1_metadata_value.html#a82d081e2cb2d26b6205095aa37ccb26d" title="pocketmine\\metadata\l\\MetadataValue\\getOwningPlugin" alt="" coords="262,70,493,111"/>
 </map>

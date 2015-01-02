@@ -1,4 +1,4 @@
 <map id="pocketmine\OfflinePlayer" name="pocketmine\OfflinePlayer">
-<area shape="rect" id="node2" href="$d1/d6e/interfacepocketmine_1_1_i_player.html" title="{pocketmine\\IPlayer\n||+ isOnline()\l+ getName()\l+ isBanned()\l+ setBanned()\l+ isWhitelisted()\l+ setWhitelisted()\l+ getPlayer()\l+ getFirstPlayed()\l+ getLastPlayed()\l+ hasPlayedBefore()\l}" alt="" coords="19,174,160,415"/>
-<area shape="rect" id="node4" href="$dd/d17/interfacepocketmine_1_1permission_1_1_server_operator.html" title="{pocketmine\\permission\l\\ServerOperator\n||+ isOp()\l+ setOp()\l}" alt="" coords="12,5,167,125"/>
+<area shape="rect" id="node2" href="$d1/d6e/interfacepocketmine_1_1_i_player.html" title="{pocketmine\\IPlayer\n||+ isOnline()\l+ getName()\l+ isBanned()\l+ setBanned()\l+ isWhitelisted()\l+ setWhitelisted()\l+ getPlayer()\l+ getFirstPlayed()\l+ getLastPlayed()\l+ hasPlayedBefore()\l}" alt="" coords="17,161,171,370"/>
+<area shape="rect" id="node3" href="$dd/d17/interfacepocketmine_1_1permission_1_1_server_operator.html" title="{pocketmine\\permission\l\\ServerOperator\n||+ isOp()\l+ setOp()\l}" alt="" coords="9,5,180,112"/>
 </map>

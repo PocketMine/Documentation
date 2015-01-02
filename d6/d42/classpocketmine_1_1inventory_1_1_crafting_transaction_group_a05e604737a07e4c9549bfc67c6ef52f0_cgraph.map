@@ -1,4 +1,4 @@
 <map id="pocketmine\inventory\CraftingTransactionGroup\canExecute" name="pocketmine\inventory\CraftingTransactionGroup\canExecute">
-<area shape="rect" id="node3" href="$d6/d42/classpocketmine_1_1inventory_1_1_crafting_transaction_group.html#a9f16aa4dd583f69449354d98e365abdc" title="pocketmine\\inventory\l\\CraftingTransactionGroup\l\\getMatchingRecipe" alt="" coords="231,5,404,69"/>
-<area shape="rect" id="node5" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="453,23,656,52"/>
+<area shape="rect" id="node2" href="$d6/d42/classpocketmine_1_1inventory_1_1_crafting_transaction_group.html#a9f16aa4dd583f69449354d98e365abdc" title="pocketmine\\inventory\l\\CraftingTransactionGroup\l\\getMatchingRecipe" alt="" coords="240,4,427,60"/>
+<area shape="rect" id="node3" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="475,19,698,45"/>
 </map>

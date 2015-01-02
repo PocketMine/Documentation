@@ -2,10 +2,13 @@ var NAVTREE =
 [
   [ "PocketMine-MP", "index.html", [
     [ "CONTRIBUTING", "d6/dcd/md__c_o_n_t_r_i_b_u_t_i_n_g.html", null ],
-    [ "Exceptions", "df/d8f/md_src_raklib__l_i_c_e_n_s_e.html", null ],
     [ "Deprecated List", "da/d58/deprecated.html", null ],
     [ "Packages", null, [
-      [ "Packages", "namespaces.html", "namespaces" ]
+      [ "Packages", "namespaces.html", "namespaces" ],
+      [ "Package Functions", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ]
+      ] ]
     ] ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
@@ -27,264 +30,331 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"d0/d14/classpocketmine_1_1block_1_1_dirt.html#aec34fb843b8dc56317a1048b1825b674",
-"d0/d2a/classpocketmine_1_1item_1_1_iron_door.html#aa35154164799426b430a256cfc95c48b",
-"d0/d39/classpocketmine_1_1item_1_1_brick.html#a38a680bd9b3742d5acf75e798559d80a",
-"d0/d39/classpocketmine_1_1item_1_1_brick.html#afa64bb9aa4c1873daf2180767d049578",
-"d0/d41/classpocketmine_1_1block_1_1_iron.html#add35f31224f5bc2de3a0c4b0780f35bf",
-"d0/d42/classpocketmine_1_1block_1_1_bedrock.html#ae49268dd9fdf15ffb6ae79a679e74284",
-"d0/d44/classpocketmine_1_1block_1_1_birch_wood_stairs.html#ae80284d473a327e500f1b23a9bf93495",
-"d0/d6e/classpocketmine_1_1block_1_1_workbench.html#a95e5f2cf8a81cf29b64c81c40510c366",
-"d0/d81/classpocketmine_1_1block_1_1_generic.html#a666f68b3cbc89e35758d51072d1d70e3",
-"d0/da0/classpocketmine_1_1item_1_1_iron_axe.html#a1127f4c501fcd7430aade329300c8b6b",
-"d0/da0/classpocketmine_1_1item_1_1_iron_axe.html#ad36b3733fda47f12bf9c82f9df888d53",
-"d0/dc6/classpocketmine_1_1entity_1_1_painting.html#a02eb3401e4fe566c7a2528aeb7b0222a",
-"d0/dd6/classpocketmine_1_1item_1_1_stone_pickaxe.html#a3aab31c2b91806d650093275e5e96f17",
-"d0/dd6/classpocketmine_1_1item_1_1_stone_pickaxe.html#afde1edf4da6f874b89cffb0302ad06c2",
-"d0/dde/classpocketmine_1_1block_1_1_bed.html#ad9fe7795b6efd8ba6225a1896db82d9e",
-"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a95e5f2cf8a81cf29b64c81c40510c366",
-"d1/d2a/classpocketmine_1_1entity_1_1_arrow.html#acaced48bc41cc13b10c1e99ba76bdabd",
-"d1/d30/classpocketmine_1_1block_1_1_podzol.html#ada238ec3978b10a304aff01261afdc49",
-"d1/d31/classpocketmine_1_1block_1_1_gravel.html#ac2f0e8bdeef3c1d2c1b0d9ccc67c74c0",
-"d1/d40/classpocketmine_1_1block_1_1_acacia_wood_stairs.html#abee29ffd3c32b952e05413a383dcd316",
-"d1/d54/classpocketmine_1_1entity_1_1_wolf.html#aee3d239ec83fad0b7c47fb3d567687ba",
-"d1/d5f/classpocketmine_1_1block_1_1_trapdoor.html#af3a5b09038c4914b6bb16f3d35a1b58f",
-"d1/d73/classpocketmine_1_1block_1_1_glass.html#ae49268dd9fdf15ffb6ae79a679e74284",
-"d1/d79/classpocketmine_1_1block_1_1_brick_stairs.html#abb67ce526b30202c72cd7483d57a9caa",
-"d1/d7b/classpocketmine_1_1block_1_1_lava.html#abe9c4408f493987f16bce69e2644995e",
-"d1/d96/classpocketmine_1_1block_1_1_clay.html#a0ac3965b092095f82286b7f2034e4da7",
-"d1/d9b/classpocketmine_1_1block_1_1_mycelium.html#a10ccfb4bb6107931339a0fe46c36240a",
-"d1/da6/interfacepocketmine_1_1level_1_1format_1_1_chunk_section.html#ae9debc09c811767e72bb17073d059d06",
-"d1/dcf/classpocketmine_1_1nbt_1_1tag_1_1_int_array.html#a64790d40bdf2c87b1b76a20895643456",
-"d1/def/classpocketmine_1_1block_1_1_ice.html#af259e6f76114d1769acfd35ffebd152e",
-"d1/df6/classpocketmine_1_1item_1_1_painting.html#ab18cd400853f51dfe0504dbb60642353",
-"d2/d00/classpocketmine_1_1block_1_1_torch.html#a9294a01bc37c7cd405bb61401d217e30",
-"d2/d19/classpocketmine_1_1entity_1_1_slime.html#ab5858595329bee36e8784dac8c2c3e0b",
-"d2/d33/classpocketmine_1_1block_1_1_soul_sand.html#ac6b9865eca2ecb541228eaf219ef25f2",
-"d2/d3d/classpocketmine_1_1entity_1_1_ender_pearl.html#a4a0b07286a7eab15a5a4623e7489e7dd",
-"d2/d3e/classpocketmine_1_1block_1_1_water.html#a954aacefcb92cf48ceec4f7e3a34484b",
-"d2/d77/classpocketmine_1_1block_1_1_fallable.html#a388c91d0bd842cac1154410d700ff877",
-"d2/d7a/classpocketmine_1_1block_1_1_coal_ore.html#a3dd7cdc29ff5dee79eb67f52bcfbc86c",
-"d2/d91/interfacepocketmine_1_1inventory_1_1_inventory_holder.html",
-"d2/d9c/classpocketmine_1_1item_1_1_iron_ingot.html#a93730c54e41ae339ff87e531cfe314b3",
-"d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian.html#a79d58088508ad07d160756f83718417c",
-"d2/ddd/classpocketmine_1_1entity_1_1_hanging.html#a801db10d560e3cf01c66a7c107e23c93",
-"d3/d0a/classpocketmine_1_1command_1_1defaults_1_1_list_command.html#ac9790f6d386568af660860ceb824ee9a",
-"d3/d1e/classpocketmine_1_1block_1_1_flowable.html#ae0b3d608093f589183d7a271a21dbf0a",
-"d3/d20/classpocketmine_1_1block_1_1_leaves2.html#ae4c546e322be442eb2a078c0326b07f0",
-"d3/d39/classpocketmine_1_1block_1_1_sand.html#aaf2abac3bac7b9d59d66e9626e41da35",
-"d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#ae2f283ba0dc9cdcc59eeaaef040ffaa4",
-"d3/d69/classpocketmine_1_1item_1_1_gold_hoe.html#a6e274ed2d151a5e5a0d5bef9609b3505",
-"d3/d91/classpocketmine_1_1entity_1_1_ocelot.html#a31c0e7fdd1307997ff40c200a75974b5",
-"d3/d9e/classpocketmine_1_1block_1_1_dandelion.html#a71eb1a7daa89ec085bd8884fbd358993",
-"d3/da2/classpocketmine_1_1item_1_1_diamond_shovel.html#a488e276dc1932b5ae1acfc7c48a35d55",
-"d3/da8/classpocketmine_1_1command_1_1defaults_1_1_seed_command.html#a6200f78d3ec8a6b5ddc4512e4f44821c",
-"d3/dc4/classpocketmine_1_1block_1_1_cyan_flower.html#a9294a01bc37c7cd405bb61401d217e30",
-"d3/dcb/classpocketmine_1_1item_1_1_diamond_axe.html#a69819609e289bc45330b7a310ca28781",
-"d3/dd8/classpocketmine_1_1inventory_1_1_chest_inventory.html#a34d54226a58156eeebdf322dc9d80e99",
-"d3/dfd/classpocketmine_1_1item_1_1_stone_axe.html#a81ecc4d407a01d3495f8ef73e9c712b6",
-"d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html#a095aa20c07881562d969c2e9b1fdc135",
-"d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html#aca603414935fbe8e59f3febdaf432539",
-"d4/d10/classpocketmine_1_1item_1_1_gold_ingot.html#a81ecc4d407a01d3495f8ef73e9c712b6",
-"d4/d1a/classpocketmine_1_1block_1_1_snow.html#a1ae2b9a64d5682ecea37d1e98041a19e",
-"d4/d1e/classpocketmine_1_1entity_1_1_sheep.html#a230565075093f60685b2a9f602489133",
-"d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a62b88742f4e437e54b88596f3b6b9755",
-"d4/d3e/classpocketmine_1_1entity_1_1_enderman.html#a9ef80847aceea03795bfd9bd084ee943",
-"d4/d42/classpocketmine_1_1block_1_1_potato.html#acd206310e35dce01fad3c54a8a60f9c8",
-"d4/d66/classpocketmine_1_1block_1_1_furnace.html#ab9f15d33371b36a845d73215dbae9209",
-"d4/d67/classpocketmine_1_1block_1_1_double_slab.html#ac29adb1329728b321a335ca75011db89",
-"d4/d82/classpocketmine_1_1item_1_1_carrot.html#a10f09abd317c0eb2029167848d98a6b5",
-"d4/d82/classpocketmine_1_1item_1_1_carrot.html#acfda13f7aac7d695b3bfbe61fc764b17",
-"d4/d84/classpocketmine_1_1block_1_1_nether_brick_stairs.html#ac2f0e8bdeef3c1d2c1b0d9ccc67c74c0",
-"d4/db7/classpocketmine_1_1item_1_1_gold_sword.html#a51ee97cff1fa5e0692e6820f7fef364c",
-"d4/db8/classpocketmine_1_1network_1_1protocol_1_1_drop_item_packet.html#a9a10ac3e7a167fadf3a8c70a55d3973b",
-"d4/dd0/classpocketmine_1_1block_1_1_bookshelf.html#abb67ce526b30202c72cd7483d57a9caa",
-"d4/de2/classpocketmine_1_1network_1_1protocol_1_1_remove_player_packet.html#aff72abed8adc41c881c143cfc5494f05",
-"d5/d0e/classpocketmine_1_1entity_1_1_egg.html#a71b839be63501d55a10873ca8718134f",
-"d5/d1b/classpocketmine_1_1block_1_1_transparent.html#a10ccfb4bb6107931339a0fe46c36240a",
-"d5/d20/classpocketmine_1_1block_1_1_glowstone.html#a145e482cd6a601a4df05ff512ddd7a3e",
-"d5/d20/classpocketmine_1_1event_1_1_timings.html#ae426a5cc738a12e8240867ee751f0663",
-"d5/d34/classpocketmine_1_1block_1_1_quartz_stairs.html#a56076b908dd0046cd071a078eb042175",
-"d5/d43/classpocketmine_1_1command_1_1defaults_1_1_whitelist_command.html",
-"d5/d6a/classpocketmine_1_1item_1_1_block.html#a7dbf5ff46b47dfcbdf260c23aafe0ccd",
-"d5/d7b/classpocketmine_1_1block_1_1_wheat.html#a51ff3cce2e39b291a7093d715aef31f9",
-"d5/d84/classpocketmine_1_1block_1_1_netherrack.html#a56a427a8f3b5e115d9ccad47c3de09fd",
-"d5/d8a/classpocketmine_1_1item_1_1_item.html#a3d6bc43a65284e12baef29f00ec99fe4",
-"d5/d8a/classpocketmine_1_1item_1_1_item.html#afed38b73dfbed4bc3a1e1b559544c663",
-"d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a6b9f462f3b7bb3b506b94896a17afa65",
-"d5/db8/classpocketmine_1_1item_1_1_flint_steel.html#a2170428539155e99375155f199627e7d",
-"d5/db8/classpocketmine_1_1item_1_1_flint_steel.html#addc5a00b4bdf5eb54f6ea24384fb0ed9",
-"d5/dbc/classpocketmine_1_1item_1_1_bow.html#a87503f3556a1276a2a8b42f3c215233b",
-"d5/dd2/classpocketmine_1_1item_1_1_wooden_sword.html#a2f971195c1dac45db980741b99e554f3",
-"d5/dd2/classpocketmine_1_1item_1_1_wooden_sword.html#af2161607a327ab3a8b008a06ce6f31c7",
-"d5/dd4/classpocketmine_1_1block_1_1_planks.html#add35f31224f5bc2de3a0c4b0780f35bf",
-"d5/dd5/classpocketmine_1_1item_1_1_wooden_shovel.html#a9a405d2da32cb2cbc19fc037bf159df3",
-"d5/df3/classpocketmine_1_1block_1_1_glass_pane.html#a610a9cd5dc05c0ff06099cd477897e4e",
-"d5/df7/classpocketmine_1_1_server.html#ae0f9ce5a194df30a970535b18c55c095",
-"d5/df7/classpocketmine_1_1block_1_1_wood_slab.html#af3e2e00bb90493d78c0e58f088d4fa88",
-"d6/d3e/classpocketmine_1_1inventory_1_1_double_chest_inventory.html#a5b07e7dec2523174411fb7762c69bf3f",
-"d6/d5a/classpocketmine_1_1item_1_1_coal.html#a62ad8c126e87fb1f912b84bc77a87d44",
-"d6/d60/classpocketmine_1_1block_1_1_bricks.html#a362f96c53f5269eec9b6b91fa825153a",
-"d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#a3dd7cdc29ff5dee79eb67f52bcfbc86c",
-"d6/d6f/classpocketmine_1_1entity_1_1_falling_block.html#a5043efd93c48a6a7df8b8e33b316519f",
-"d6/d7c/classpocketmine_1_1block_1_1_grass.html#a9294a01bc37c7cd405bb61401d217e30",
-"d6/d87/classpocketmine_1_1block_1_1_sapling.html#a8976fc403eeeb7b63ebaa0d9e9024b13",
-"d6/dae/classpocketmine_1_1block_1_1_end_stone.html#a779f30046a5dfa9678d3c34586d0731d",
-"d6/ddd/classpocketmine_1_1command_1_1defaults_1_1_save_command.html#a073c7631b60f7760565da0147a7c85ef",
-"d6/dfc/classpocketmine_1_1block_1_1_quartz.html#a8696a4237746931ed0ceee004c17db87",
-"d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#a89f32d0054bed39731dc7799d535af0c",
-"d7/d17/classpocketmine_1_1block_1_1_solid.html#a7ade83df99a4c1ab7132307b668eeb89",
-"d7/d19/classpocketmine_1_1entity_1_1_skeleton.html#ad0e2fe5c3105fd5881967898c2f6b60c",
-"d7/d27/classpocketmine_1_1block_1_1_block.html#a91bd3674135c37ac6a45c49ef0722fd5",
-"d7/d31/classpocketmine_1_1block_1_1_air.html#a85fe5ed58a7d88ca9a5661cf815c3535",
-"d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a68159bf97b40978ffdf8ffbd32ad0dc3",
-"d7/d63/classpocketmine_1_1command_1_1_plugin_command.html#aa9e73d9071c6da0515cf1d28c3997f1a",
-"d7/d64/classpocketmine_1_1block_1_1_double_wood_slab.html#af9e478d3b1ce7facc2919512b83cba22",
-"d7/d6a/classpocketmine_1_1block_1_1_sandstone_stairs.html#acc8a16d558642a49192d02073bc3e9c4",
-"d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#acd529b0fbeaceb62e1ba55e3d30f32cf",
-"d7/d8c/classpocketmine_1_1tile_1_1_spawnable.html#ab7b9f0b73c9dcbbce617ed3cbbc986d9",
-"d7/d95/classpocketmine_1_1block_1_1_stair.html#aaeb7eac3d5624e879dff0df785239a62",
-"d7/da3/classpocketmine_1_1block_1_1_beetroot.html#ab037ebfd31f19bbf6729ce03bb20b5e9",
-"d7/dbd/classpocketmine_1_1item_1_1_diamond_hoe.html#a62cd59ad062a8299d42bdd415d72e3bc",
-"d7/dce/classpocketmine_1_1command_1_1defaults_1_1_kick_command.html#abdf70e10e9e844064c25fee148e8fb24",
-"d7/dd3/classpocketmine_1_1block_1_1_fence_gate.html#af861124ec25948f959949a6873806fbf",
-"d7/de5/classpocketmine_1_1block_1_1_nether_reactor.html#ad3455277ac5a4178e435184abbf8db95",
-"d7/df0/classpocketmine_1_1block_1_1_iron_ore.html#ada238ec3978b10a304aff01261afdc49",
-"d8/d12/classpocketmine_1_1block_1_1_stained_clay.html#ab0cf4cffe18348556c90ce075c9b10c8",
-"d8/d25/classpocketmine_1_1item_1_1_stone_shovel.html#a478336c6025c187d63cdbe156e1cee1d",
-"d8/d28/classpocketmine_1_1event_1_1player_1_1_player_interact_event.html#a693b19eb500c69ab9f9dd9f207e5029a",
-"d8/d3e/classpocketmine_1_1entity_1_1_pig.html#a572246cfc8fdec956c5db953ba75d561",
-"d8/d50/classpocketmine_1_1wizard_1_1_installer.html#aaa80bc4484844ca9d7d6d4059f6b3aa5",
-"d8/d55/classpocketmine_1_1block_1_1_moss_stone.html#a013e1822b97903d2c20da4d6217904b7",
-"d8/d56/classpocketmine_1_1command_1_1defaults_1_1_plugins_command.html#a521f6f44429c0c612518d30fdc3bb747",
-"d8/d57/classpocketmine_1_1block_1_1_liquid.html#ae7216b66927c6e17ec36557c47f5a8eb",
-"d8/d5c/classpocketmine_1_1block_1_1_chest.html#aea0a4d69106040da46df52adaec24017",
-"d8/d74/classpocketmine_1_1item_1_1_stone_sword.html#aab9256306ebdb4617667178687641f40",
-"d8/da8/classpocketmine_1_1level_1_1format_1_1anvil_1_1_chunk_request_task.html",
-"d8/db2/classpocketmine_1_1block_1_1_pumpkin.html#a9ce1c2d0877ea579d4d9c2a618a96efd",
-"d8/db9/classpocketmine_1_1block_1_1_iron_door.html#a89f32d0054bed39731dc7799d535af0c",
-"d8/dcd/classpocketmine_1_1item_1_1_diamond_sword.html#a5a214a3d382d9773842fcb5cc2ffae2b",
-"d8/dd3/namespacepocketmine_1_1level_1_1generator_1_1object.html",
-"d8/deb/classpocketmine_1_1block_1_1_leaves.html#aefdc52d079964e3c9830d3bedcc07b00",
-"d9/d07/classpocketmine_1_1item_1_1_iron_hoe.html#a6ed6306562f45a268c49b99e5dc3b6c4",
-"d9/d0a/classpocketmine_1_1entity_1_1_animal.html#a7546939af31f8d0ca445fac5bb3f0ee3",
-"d9/d17/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__1.html#afc60f8404f202733e93d6095e7e59c40",
-"d9/d20/classpocketmine_1_1block_1_1_door.html#af54fc755688966cbada1dafa7ad0268b",
-"d9/d52/classpocketmine_1_1block_1_1_spruce_wood_stairs.html#a59694a7d4b5946bbb87065f02b48bdd3",
+"d0/d14/classpocketmine_1_1block_1_1_dirt.html#ad2608a828210bf0f0d16c60965f283ff",
+"d0/d2a/classpocketmine_1_1item_1_1_iron_door.html#a8a8a85107d5945b9168ae1638353b5c5",
+"d0/d39/classpocketmine_1_1item_1_1_brick.html#a1b67795a4f0f68991455789f0f946de1",
+"d0/d39/classpocketmine_1_1item_1_1_brick.html#ad049a1f683095d4eaf75e4ac8b1b5427",
+"d0/d41/classpocketmine_1_1block_1_1_iron.html#a95e5f2cf8a81cf29b64c81c40510c366",
+"d0/d42/classpocketmine_1_1block_1_1_bedrock.html#a818a79b8052ce1b354a0671b7f86a5b6",
+"d0/d44/classpocketmine_1_1block_1_1_birch_wood_stairs.html#a68159bf97b40978ffdf8ffbd32ad0dc3",
+"d0/d6e/classpocketmine_1_1block_1_1_workbench.html#a1e42b9806b4ed135e1d5ea056e5ab979",
+"d0/d74/classpocketmine_1_1command_1_1defaults_1_1_difficulty_command.html#a837e49b03141f74ebbbd3e75a6b593d0",
+"d0/da0/classpocketmine_1_1item_1_1_iron_axe.html#a638aebd2ce3205abbc4a65c3704bbb62",
+"d0/da7/classpocketmine_1_1entity_1_1_zombie.html#a34e993ce4ddf8d09ec0f6ce09aad135c",
+"d0/dc6/classpocketmine_1_1entity_1_1_painting.html#a93e660618a298eb1e3e94a20c1ab383f",
+"d0/dc7/classpocketmine_1_1item_1_1_snowball.html#a6e274ed2d151a5e5a0d5bef9609b3505",
+"d0/dd4/classpocketmine_1_1item_1_1_chain_leggings.html#a300f7409aeb2169f12e7a7be65b5ed30",
+"d0/dd4/classpocketmine_1_1item_1_1_chain_leggings.html#aea5cae0bc559a9ca505b81ec2168439c",
+"d0/dd6/classpocketmine_1_1item_1_1_stone_pickaxe.html#a96106c643f1ebaacda0ead38f78c7bdf",
+"d0/dde/classpocketmine_1_1block_1_1_bed.html#a6b64c67e9ee0ad54c123d2ee6ffa0312",
+"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#a088afbf883e13c3d9a929ff2cc123de8",
+"d1/d03/classpocketmine_1_1block_1_1_red_mushroom.html#af1b436771280adfc645af6459053f29d",
+"d1/d30/classpocketmine_1_1block_1_1_podzol.html#a0e1c9c996a39cc34483eb285b6f1c1b7",
+"d1/d30/classpocketmine_1_1block_1_1_podzol.html#af97d045122137ac415425b45e7b22a36",
+"d1/d31/classpocketmine_1_1block_1_1_gravel.html#ad8648694d018512212103dc3dee9d52f",
+"d1/d40/classpocketmine_1_1block_1_1_acacia_wood_stairs.html#aba97ee96280645013cbaa5b22d76b6c8",
+"d1/d54/classpocketmine_1_1entity_1_1_wolf.html#af1b436771280adfc645af6459053f29d",
+"d1/d5c/classpocketmine_1_1block_1_1_fence_gate_acacia.html#ad3455277ac5a4178e435184abbf8db95",
+"d1/d5f/classpocketmine_1_1block_1_1_trapdoor.html#ac5937d31eac7063710526694081f7d1b",
+"d1/d73/classpocketmine_1_1block_1_1_glass.html#a984e7ff9e276845fe5a70ef546fccfb7",
+"d1/d79/classpocketmine_1_1block_1_1_brick_stairs.html#a610a9cd5dc05c0ff06099cd477897e4e",
+"d1/d7b/classpocketmine_1_1block_1_1_lava.html#a4be9441a4cfb683a2932f0421e2a1bd6",
+"d1/d8d/classpocketmine_1_1network_1_1protocol_1_1_explode_packet.html#a8fe27f4f9c07d42ede630b55e3890084",
+"d1/d95/classpocketmine_1_1block_1_1_fence_dark_oak.html#ab9f15d33371b36a845d73215dbae9209",
+"d1/d96/classpocketmine_1_1block_1_1_clay.html#aa7674881c1e40bb8cba0274394e98e9b",
+"d1/d9b/classpocketmine_1_1block_1_1_mycelium.html#a89d82f0c6d275e96b8b17f2bae2df073",
+"d1/db7/classpocketmine_1_1entity_1_1_creature.html#a50ad93e98b6880b105ccd46c30fe4545",
+"d1/de5/classpocketmine_1_1block_1_1_vine.html#a3925744d63d377e69c9f12a188c3c898",
+"d1/def/classpocketmine_1_1block_1_1_ice.html#a147bd839da01d4e1bb93e35891558bde",
+"d1/df2/classpocketmine_1_1_achievement.html",
+"d1/df6/classpocketmine_1_1item_1_1_painting.html#abc477b121a2fae6be7028cf81fe8f34c",
+"d2/d00/classpocketmine_1_1block_1_1_torch.html#a87b346436491f13525623c0803c8b270",
+"d2/d19/classpocketmine_1_1entity_1_1_slime.html#a72dd755bd6ed3ee7fc048d74a82cae0c",
+"d2/d33/classpocketmine_1_1block_1_1_soul_sand.html#a74fa0580f61f4af6e81206870e297e3a",
+"d2/d3c/classpocketmine_1_1entity_1_1_entity.html#a8cc7adb50e723eb6063dc0a4941cd573",
+"d2/d3e/classpocketmine_1_1block_1_1_water.html#a9d7b895e903283e48ff219296babe5d9",
+"d2/d70/classpocketmine_1_1block_1_1_crops.html#a779f30046a5dfa9678d3c34586d0731d",
+"d2/d75/classpocketmine_1_1block_1_1_thin.html#a5d893a91d1d20cb782dae1b49385a507",
+"d2/d77/classpocketmine_1_1block_1_1_fallable.html#a42a056ca1d60aef4664f5f55385dfd4d",
+"d2/d7a/classpocketmine_1_1block_1_1_coal_ore.html#a218795ae48d10fc6a77f7df7382fb61f",
+"d2/d90/classpocketmine_1_1math_1_1_vector3.html#a61d2a3fb05d1d689ba4234de981d97ce",
+"d2/d9c/classpocketmine_1_1item_1_1_iron_ingot.html#a6ed6306562f45a268c49b99e5dc3b6c4",
+"d2/db2/classpocketmine_1_1block_1_1_glowing_obsidian.html#a2fac0b58d534b6230cd6868e1e48da01",
+"d2/db3/classpocketmine_1_1level_1_1format_1_1leveldb_1_1_level_d_b.html#ab37bac8e5574e9f9be72db2d5a582aa8",
+"d2/dea/classpocketmine_1_1command_1_1defaults_1_1_pardon_command.html#a26a56d9c918a77a565e9591ed0386928",
+"d3/d1e/classpocketmine_1_1block_1_1_flowable.html#a56933e5b9dab7c426c8af39508b5e54b",
+"d3/d20/classpocketmine_1_1block_1_1_leaves2.html#a317e3b5397999c79d451742e5c968592",
+"d3/d24/classpocketmine_1_1network_1_1protocol_1_1_entity_data_packet.html#aa973f04ced929c90b608e12e866b5800",
+"d3/d25/classpocketmine_1_1block_1_1_fence_spruce.html#ad3455277ac5a4178e435184abbf8db95",
+"d3/d39/classpocketmine_1_1block_1_1_sand.html#ab037ebfd31f19bbf6729ce03bb20b5e9",
+"d3/d3f/classpocketmine_1_1item_1_1_leather_boots.html#a759096a55316af96f09b5b5e93c4a4bb",
+"d3/d4b/classpocketmine_1_1level_1_1_level.html#a44ce0ab1d94a790f2f3a02c7ff70ca83",
+"d3/d69/classpocketmine_1_1item_1_1_gold_hoe.html#a2772be6160ecf28dffe967bad477427b",
+"d3/d69/classpocketmine_1_1item_1_1_gold_hoe.html#adb57cd52398ca23850fc6768e4431247",
+"d3/d9e/classpocketmine_1_1block_1_1_dandelion.html#a96910594d76640a336e0bd6cabcd34a2",
+"d3/da2/classpocketmine_1_1item_1_1_diamond_shovel.html#a59377db91a65b4e4efe99270a7658ed9",
+"d3/da8/classpocketmine_1_1command_1_1defaults_1_1_seed_command.html#ac0103b6bd94cdbb4758d59bd51d05337",
+"d3/dcb/classpocketmine_1_1item_1_1_diamond_axe.html#a8b7d802dc32d93efbf6694a72609700e",
+"d3/df3/classpocketmine_1_1network_1_1protocol_1_1_login_status_packet.html#ad1cf6e7fcd0920f19381bc70dcba50ba",
+"d3/dfd/classpocketmine_1_1item_1_1_chain_helmet.html#aad4f3824f6df0936e1ef9638a88a9273",
+"d3/dfd/classpocketmine_1_1item_1_1_stone_axe.html#a64a39fe05b5183b051d58ad0431e84b2",
+"d4/d02/classpocketmine_1_1network_1_1protocol_1_1_send_inventory_packet.html#a1f5ac595fd23e09a965db0e73c1e3a80",
+"d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html#a96106c643f1ebaacda0ead38f78c7bdf",
+"d4/d10/classpocketmine_1_1item_1_1_gold_ingot.html#a59377db91a65b4e4efe99270a7658ed9",
+"d4/d1a/classpocketmine_1_1block_1_1_snow.html#a06e0e84a580d0a5d35866db7350f6e38",
+"d4/d1a/classpocketmine_1_1block_1_1_snow.html#ae702eb88e25ce6891838e0a3dd6cd821",
+"d4/d2f/classpocketmine_1_1block_1_1_sponge.html#a1ccbcc0f6a60e4d936bf38875b427812",
+"d4/d3e/classpocketmine_1_1entity_1_1_enderman.html#a082c8572a766b154467c0c1d6e443e31",
+"d4/d42/classpocketmine_1_1block_1_1_potato.html#a4cf18e20968f166d8de3c27d8071127a",
+"d4/d66/classpocketmine_1_1block_1_1_furnace.html#a19738e744d53ffb457cb8767cc8296c1",
+"d4/d67/classpocketmine_1_1block_1_1_double_slab.html#a079e601cdd364e85af5feca388382fe6",
+"d4/d67/classpocketmine_1_1block_1_1_double_slab.html#ae80284d473a327e500f1b23a9bf93495",
+"d4/d82/classpocketmine_1_1item_1_1_carrot.html#a29cc12711fba5932a8e2d208ee2412c1",
+"d4/d82/classpocketmine_1_1item_1_1_carrot.html#adde6a88f4513ee4cf1f54dbb87f7e7bb",
+"d4/d84/classpocketmine_1_1block_1_1_nether_brick_stairs.html#ab756761e1ecd9e9e00f2062c5d1c8bd4",
+"d4/db7/classpocketmine_1_1item_1_1_gold_sword.html#a5063b7bd6cc645c2c03b8b17d1b9609d",
+"d4/db8/classpocketmine_1_1network_1_1protocol_1_1_drop_item_packet.html#a165102568c1290cdfa2e9a3cda814466",
+"d4/dd0/classpocketmine_1_1block_1_1_bookshelf.html#aaa3d12ace2291f8195cfa5dbe0369103",
+"d4/ddf/classpocketmine_1_1entity_1_1_human.html#ad64caf2fb0e2b4897155252361c47c78",
+"d5/d00/classpocketmine_1_1entity_1_1_vehicle.html#afd165b183dba2c814e2c4a0ce5755533",
+"d5/d1b/classpocketmine_1_1block_1_1_transparent.html#a407c31a401de8d2bf3f6d35929ae9d03",
+"d5/d1d/classpocketmine_1_1item_1_1_iron_boots.html#a2ab4eebcf557a70fc2c53e8dc1b227f2",
+"d5/d1d/classpocketmine_1_1item_1_1_iron_boots.html#adf909aaf5e1822b4ba63069e21eb1c71",
+"d5/d20/classpocketmine_1_1block_1_1_glowstone.html#ab91ac299dae960f5f91b81440e7a8b52",
+"d5/d2b/classpocketmine_1_1entity_1_1_monster.html#acaced48bc41cc13b10c1e99ba76bdabd",
+"d5/d34/classpocketmine_1_1block_1_1_quartz_stairs.html#ab6dca6e5cb90220e9c7d5df543cda7bd",
+"d5/d3a/classpocketmine_1_1item_1_1_gold_helmet.html#a7743e49352278a3a196c52ed8e7497c8",
+"d5/d42/tile_2_sign_8php_source.html",
+"d5/d7b/classpocketmine_1_1block_1_1_wheat.html#a89d82f0c6d275e96b8b17f2bae2df073",
+"d5/d84/classpocketmine_1_1block_1_1_netherrack.html#a67e88339d7a07d9231ddb6b88914c992",
+"d5/d8a/classpocketmine_1_1item_1_1_item.html#a3cb70792e3a60d92a905c04396b68550",
+"d5/d8a/classpocketmine_1_1item_1_1_item.html#af8b8adfaa1316a72b73e0f88bbbd4301",
+"d5/dad/classpocketmine_1_1item_1_1_pumpkin_seeds.html#a59014b972e93551462658a72e2d8532a",
+"d5/db8/classpocketmine_1_1item_1_1_flint_steel.html#a06d4c27758301dbe997d18dd0354bb4e",
+"d5/db8/classpocketmine_1_1item_1_1_flint_steel.html#abcb0533afb74e331bd10e557ed9a173a",
+"d5/dbc/classpocketmine_1_1item_1_1_bow.html#a6b9f462f3b7bb3b506b94896a17afa65",
+"d5/dd2/classpocketmine_1_1item_1_1_wooden_sword.html#a0833d890cd1f4d1a0c911e8273444dfa",
+"d5/dd2/classpocketmine_1_1item_1_1_wooden_sword.html#abde3eb26c3282faebb230f4875d61704",
+"d5/dd4/classpocketmine_1_1block_1_1_planks.html#a8976fc403eeeb7b63ebaa0d9e9024b13",
+"d5/dd5/classpocketmine_1_1item_1_1_wooden_shovel.html#a5759b6ea39ee2a507d38970941edcdb9",
+"d5/ddc/classpocketmine_1_1level_1_1generator_1_1_generation_level_manager.html#a9f67e39b7409d9ccf109478a528cf88d",
+"d5/df3/classpocketmine_1_1block_1_1_glass_pane.html#ab306095efcb1c114b18e664906dadb31",
+"d5/df7/classpocketmine_1_1block_1_1_wood_slab.html#a30a070aa7befb02f9fff5cbf2693c01e",
+"d5/df7/classpocketmine_1_1entity_1_1_primed_t_n_t.html#a1fb5028a8c0ff0533115cd841a98ac20",
+"d6/d2c/classpocketmine_1_1utils_1_1_config.html#a30636ec61c133d63774fe214fe5e0120",
+"d6/d5a/classpocketmine_1_1item_1_1_coal.html#a46a4b303fd4cc619ea6019c6be298ce9",
+"d6/d5a/classpocketmine_1_1item_1_1_coal.html#afe96e5743f16374aae79f907fd304d5f",
+"d6/d60/classpocketmine_1_1block_1_1_bricks.html#ad925607ef09026804dbbf059583e3add",
+"d6/d6a/classpocketmine_1_1block_1_1_redstone_ore.html#ac4716592b71ccaa820e70d9a3d1ef17d",
+"d6/d79/classpocketmine_1_1block_1_1_poppy.html#a9b0ed8794735df9e0ff65c88941899da",
+"d6/d7c/classpocketmine_1_1block_1_1_grass.html#a82e3604fccc6e10a59057ac87321082d",
+"d6/d87/classpocketmine_1_1block_1_1_sapling.html#a67e88339d7a07d9231ddb6b88914c992",
+"d6/dae/classpocketmine_1_1block_1_1_end_stone.html#a27a2003df14edaf558bf3b8f8ab01b16",
+"d6/db3/classpocketmine_1_1command_1_1defaults_1_1_reload_command.html#acbccfc9431699f8cefb66e359419e1df",
+"d6/dec/classpocketmine_1_1block_1_1_fence_gate_jungle.html#a49114425ef7254003c5f6586e8631015",
+"d6/dfc/classpocketmine_1_1block_1_1_quartz.html#a08fcb4e0c7e53dfd2f7129edb29f0390",
+"d6/dfc/classpocketmine_1_1block_1_1_quartz.html#af259e6f76114d1769acfd35ffebd152e",
+"d6/dfd/classpocketmine_1_1block_1_1_snow_layer.html#ad3455277ac5a4178e435184abbf8db95",
+"d7/d17/classpocketmine_1_1block_1_1_solid.html#aaa3d12ace2291f8195cfa5dbe0369103",
+"d7/d19/classpocketmine_1_1entity_1_1_skeleton.html#add35f31224f5bc2de3a0c4b0780f35bf",
+"d7/d27/classpocketmine_1_1block_1_1_block.html#aa935adf6ef953e046046028b34abdc5a",
+"d7/d31/classpocketmine_1_1block_1_1_air.html#a7439fcfd71c917c586ecc220d402633e",
+"d7/d52/classpocketmine_1_1block_1_1_lit_pumpkin.html#a362f96c53f5269eec9b6b91fa825153a",
+"d7/d59/classpocketmine_1_1network_1_1protocol_1_1_message_packet.html#afd7b85d55b27a5c09086e8af1cc1496f",
+"d7/d5d/classpocketmine_1_1block_1_1_fence_gate_birch.html#ab306095efcb1c114b18e664906dadb31",
+"d7/d64/classpocketmine_1_1block_1_1_double_wood_slab.html#a82e3604fccc6e10a59057ac87321082d",
+"d7/d6a/classpocketmine_1_1block_1_1_sandstone_stairs.html#a3dd7cdc29ff5dee79eb67f52bcfbc86c",
+"d7/d79/classpocketmine_1_1block_1_1_tall_grass.html#a1e42b9806b4ed135e1d5ea056e5ab979",
+"d7/d7c/classpocketmine_1_1tile_1_1_furnace.html#a1ad2b64ef3a25820398a253422ac0f0f",
+"d7/d8d/classpocketmine_1_1command_1_1defaults_1_1_save_on_command.html#a92081f4a5054309f99d18a4f3911ff3d",
+"d7/d95/classpocketmine_1_1block_1_1_stair.html#aae77a38a81e039477d95fb4e728f8ea5",
+"d7/da3/classpocketmine_1_1block_1_1_beetroot.html#a943fd819823b12b14ce7f1f51aa5eee9",
+"d7/dbd/classpocketmine_1_1item_1_1_diamond_hoe.html#a4d843125e8eda754e909f7b6abf4feb2",
+"d7/dbd/classpocketmine_1_1item_1_1_diamond_hoe.html#affc11679e2c3c4aba7f3bf52ed8c3650",
+"d7/dd3/classpocketmine_1_1block_1_1_fence_gate.html#aba75f687f7cb84b44b380f7a3b398bd0",
+"d7/de5/classpocketmine_1_1block_1_1_nether_reactor.html#a79d58088508ad07d160756f83718417c",
+"d7/df0/classpocketmine_1_1block_1_1_iron_ore.html#a61d2a3fb05d1d689ba4234de981d97ce",
+"d8/d05/classpocketmine_1_1item_1_1_leather_cap.html#a2197953cfbee7877bb2b9167f31fc05b",
+"d8/d05/classpocketmine_1_1item_1_1_leather_cap.html#ad6da426c8de2c4d26d2f1a6bc83786a1",
+"d8/d12/classpocketmine_1_1block_1_1_stained_clay.html#aaa3d12ace2291f8195cfa5dbe0369103",
+"d8/d25/classpocketmine_1_1item_1_1_stone_shovel.html#a59377db91a65b4e4efe99270a7658ed9",
+"d8/d28/classpocketmine_1_1block_1_1_fence_gate_spruce.html#a10ccfb4bb6107931339a0fe46c36240a",
+"d8/d28/classpocketmine_1_1block_1_1_fence_gate_spruce.html#afbc6cfc567e3c906457ddba47f0542b6",
+"d8/d32/classpocketmine_1_1item_1_1_iron_helmet.html#a2d447c372967ef72565a7848ec194980",
+"d8/d32/classpocketmine_1_1item_1_1_iron_helmet.html#ae522355cc87bb4f870df933115856eb7",
+"d8/d41/classpocketmine_1_1entity_1_1_silverfish.html#a0070e86138b1bb1c8f0efe904abb0566",
+"d8/d55/classpocketmine_1_1block_1_1_carpet.html#a350cab594a6e434296a65e7b01297bd5",
+"d8/d55/classpocketmine_1_1block_1_1_moss_stone.html#a19738e744d53ffb457cb8767cc8296c1",
+"d8/d56/classpocketmine_1_1command_1_1defaults_1_1_plugins_command.html#a6200f78d3ec8a6b5ddc4512e4f44821c",
+"d8/d57/classpocketmine_1_1block_1_1_liquid.html#acaadf3f5cf93bef1f43c93bda8aa5805",
+"d8/d5c/classpocketmine_1_1block_1_1_chest.html#ab6dca6e5cb90220e9c7d5df543cda7bd",
+"d8/d74/classpocketmine_1_1item_1_1_stone_sword.html#a7253cb284553645cb857d24791c43490",
+"d8/d7b/classpocketmine_1_1inventory_1_1_big_shapeless_recipe.html#a8f10fa58b4f24f49231ad27db4c34598",
+"d8/d7c/classpocketmine_1_1item_1_1_diamond_leggings.html#abcb0533afb74e331bd10e557ed9a173a",
+"d8/db2/classpocketmine_1_1block_1_1_pumpkin.html#a13e24be86ef23e23654267a4738934cf",
+"d8/db2/classpocketmine_1_1block_1_1_pumpkin.html#afd165b183dba2c814e2c4a0ce5755533",
+"d8/db9/classpocketmine_1_1block_1_1_iron_door.html#acd529b0fbeaceb62e1ba55e3d30f32cf",
+"d8/dcd/classpocketmine_1_1item_1_1_diamond_sword.html#a8df823b518a9e2bec2a3b7d7301f3a44",
+"d8/dd3/classpocketmine_1_1item_1_1_gold_chestplate.html#a36d745a12cf3c56f0c013801d0053f7f",
+"d8/dd3/classpocketmine_1_1item_1_1_gold_chestplate.html#af14646cb0276ac3c25414c74104b0b3e",
+"d8/deb/classpocketmine_1_1block_1_1_leaves.html#aba97ee96280645013cbaa5b22d76b6c8",
+"d9/d07/classpocketmine_1_1item_1_1_iron_hoe.html#a48eb0f120157018067baeea3b4b03e4c",
+"d9/d07/classpocketmine_1_1item_1_1_iron_hoe.html#afeaee1d802cd73dc1b8f02f5e71ed985",
+"d9/d0b/classpocketmine_1_1entity_1_1_chicken.html#a67eec6dc12094416e25b19c711819e27",
+"d9/d20/classpocketmine_1_1block_1_1_door.html#a7b741bfecf72fa5d6c57119cfc0f5e0d",
+"d9/d48/interfacepocketmine_1_1level_1_1format_1_1_chunk.html#aa7d437f59f19209c2f6f5eddbbf6868c",
+"d9/d52/classpocketmine_1_1block_1_1_spruce_wood_stairs.html#ac6b9865eca2ecb541228eaf219ef25f2",
+"d9/d62/classpocketmine_1_1item_1_1_diamond_chestplate.html#a78c4ada5de6e90fca7128488c2ffb07b",
 "d9/d64/classpocketmine_1_1block_1_1_stone_brick_stairs.html#a3e1a9c806597ac7b1009ec3ed63bac30",
-"d9/d64/classpocketmine_1_1item_1_1_bucket.html#a36b2c62e8b95af7b6328b5455360451f",
-"d9/d64/classpocketmine_1_1item_1_1_bucket.html#af834d7a3ffcf9c18e3886b7350e50a50",
-"d9/d7d/classpocketmine_1_1item_1_1_spawn_egg.html#a3cfbe21207fc541f515d632678d6587c",
-"d9/d7d/classpocketmine_1_1item_1_1_spawn_egg.html#afea6119917670c66bc2876901cb5b7c7",
-"d9/da3/classpocketmine_1_1item_1_1_iron_sword.html#a7f10d821e6fec53e6396af6222785c72",
-"d9/da8/classpocketmine_1_1item_1_1_diamond.html#a4bdc19355f855d764485390fb26f5ea0",
-"d9/dc5/classpocketmine_1_1nbt_1_1tag_1_1_named_tag.html#aee70197d6dcce85e6a8a18f5f6c55bf8",
-"d9/dce/classpocketmine_1_1item_1_1_wooden_axe.html#a6d4e6846451c10fecb3a623c8ddb43e8",
-"d9/de1/classpocketmine_1_1entity_1_1_minecart.html#a4e46f40bee51bd8eb2a31a6137a60b5a",
-"d9/de4/classpocketmine_1_1block_1_1_burning_furnace.html#a9c4aef2dd09913be99c3c3c9bf222ed3",
-"d9/de7/classpocketmine_1_1block_1_1_lapis.html#aa5893902ba2acd81000c2cbb6e12509c",
-"da/d01/classpocketmine_1_1item_1_1_sugarcane.html#a5bc8374fc1078af92e05c3d1e62ceb8e",
-"da/d18/classpocketmine_1_1block_1_1_fire.html#a229f3e17ab04b93e2bfd44311b75ddc0",
-"da/d26/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t__3.html#a3f544fd72e03a43fc1d72558d5effae6",
-"da/d43/classpocketmine_1_1block_1_1_stone_wall.html#aba97ee96280645013cbaa5b22d76b6c8",
-"da/d4e/classpocketmine_1_1block_1_1_diamond_ore.html#aa935adf6ef953e046046028b34abdc5a",
-"da/d55/classpocketmine_1_1block_1_1_hardened_clay.html#aae36b03e7e5624cd5746f06cac5eb628",
-"da/d63/classpocketmine_1_1block_1_1_emerald.html#a5d893a91d1d20cb782dae1b49385a507",
-"da/d64/classpocketmine_1_1item_1_1_bed.html#a4bdc19355f855d764485390fb26f5ea0",
-"da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#a3a7b40665b2a4f1d6fa53fd04b8cdd83",
-"da/d71/classpocketmine_1_1block_1_1_wool.html#add1d13c8407eddad658f7946cd7e9383",
-"da/d73/classpocketmine_1_1item_1_1_iron_pickaxe.html#aa74df060b7a9216c4c22dd3c25cd7dab",
-"da/d8f/classpocketmine_1_1item_1_1_gold_axe.html#a5f528cb59838a9421eb1799aa2623f20",
-"da/d93/classpocketmine_1_1level_1_1generator_1_1_generation_chunk_manager.html#a760511414a71de96d7aaa7074cf652cb",
-"da/da9/classpocketmine_1_1block_1_1_sugarcane.html#a61d2a3fb05d1d689ba4234de981d97ce",
-"da/dbd/classpocketmine_1_1block_1_1_still_lava.html#a3e1a9c806597ac7b1009ec3ed63bac30",
-"da/dd7/classpocketmine_1_1block_1_1_carrot.html#a3181233f226f83ec9002490c48aa86b4",
-"da/de7/classpocketmine_1_1item_1_1_tool.html#a2f971195c1dac45db980741b99e554f3",
-"da/de7/classpocketmine_1_1item_1_1_tool.html#af2161607a327ab3a8b008a06ce6f31c7",
-"db/d00/classpocketmine_1_1block_1_1_gold.html#ac6244618c72971febc429ecb1c43d780",
-"db/d01/classpocketmine_1_1block_1_1_obsidian.html#acade050749b959d9302118c4b833de9e",
-"db/d15/classpocketmine_1_1block_1_1_end_portal.html#aa6ce766e13bc158cd7cd65c18f309c6d",
-"db/d16/classpocketmine_1_1item_1_1_gold_shovel.html#a7867b4c1a84f62e6ee93c2da29f455ae",
-"db/d39/classpocketmine_1_1network_1_1protocol_1_1_tile_event_packet.html#a21bc1362ec76e12ace742e5133d0f2c5",
-"db/d86/classpocketmine_1_1block_1_1_melon_stem.html#a1e009fbe5c8a20750f4f4776632d02d2",
-"db/d86/classpocketmine_1_1entity_1_1_pig_zombie.html#a2dbf8d994f5b61320cb2bc64d493eb17",
-"db/d8c/classpocketmine_1_1item_1_1_bowl.html#a66ed81ea064cd664da48fba73944f926",
-"db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a3e1a9c806597ac7b1009ec3ed63bac30",
-"db/d9b/classraklib_1_1protocol_1_1_d_a_t_a___p_a_c_k_e_t___d.html#ad4d1dd29fa1e150f313569490fff8821",
-"db/d9d/classpocketmine_1_1item_1_1_potato.html#abc75b934588a178b791273111bc4b8aa",
-"db/db0/classpocketmine_1_1block_1_1_still_water.html#a8f7ea7fef114df0b324d3ed20e321400",
-"db/db5/classpocketmine_1_1block_1_1_diamond.html#a8b2aca6280e10e6149d4fec17931d4a4",
-"db/db5/classpocketmine_1_1item_1_1_stick.html#a638aebd2ce3205abbc4a65c3704bbb62",
-"db/dc3/classpocketmine_1_1permission_1_1_permission.html",
-"db/dd0/classpocketmine_1_1item_1_1_wooden_pickaxe.html#a2772be6160ecf28dffe967bad477427b",
-"db/dd0/classpocketmine_1_1item_1_1_wooden_pickaxe.html#ae50a52da164543195e6188dcc8f2ed76",
-"db/ddc/classpocketmine_1_1block_1_1_cobweb.html#ac66b2b9e939e0dd66dafd4cdca943c20",
-"db/de7/classpocketmine_1_1block_1_1_sign_post.html#ac86c413a3fc9c6854241aaf55a2bc6ae",
-"db/deb/classpocketmine_1_1item_1_1_gold_pickaxe.html#a8ed53ec5b06a4528ce613a12a1f7736f",
-"db/df0/classpocketmine_1_1item_1_1_feather.html#a59377db91a65b4e4efe99270a7658ed9",
-"dc/d02/classpocketmine_1_1inventory_1_1_container_inventory.html#aa2d57d9cb0e9cbb043329c99539706ef",
-"dc/d2c/classpocketmine_1_1block_1_1_iron_bars.html#aae77a38a81e039477d95fb4e728f8ea5",
-"dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a79d58088508ad07d160756f83718417c",
-"dc/d4c/classpocketmine_1_1block_1_1_coal.html#a7ce891da78d8bb459f899c3aec2848f9",
-"dc/d53/classpocketmine_1_1block_1_1_glowing_redstone_ore.html#a81755ecda86267e872da08ca421ed5c0",
-"dc/d60/classpocketmine_1_1block_1_1_slab.html#a6889051863d037a2807ce525fbc3a896",
-"dc/d6f/classpocketmine_1_1block_1_1_lapis_ore.html#a4922fa4adca3eb28f1946ffc8db20ddc",
-"dc/d6f/classpocketmine_1_1block_1_1_wood2.html#a51ff3cce2e39b291a7093d715aef31f9",
-"dc/d7f/classpocketmine_1_1block_1_1_wood_door.html#a0528cd1ab847fa96f4f87f69c12c29bc",
-"dc/d93/interfacepocketmine_1_1network_1_1_source_interface.html",
-"dc/d9e/classpocketmine_1_1block_1_1_wood.html#af3e2e00bb90493d78c0e58f088d4fa88",
-"dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#ac8cfc603eb30bde576e819845e4ee2d8",
+"d9/d64/classpocketmine_1_1item_1_1_bucket.html#a29cc12711fba5932a8e2d208ee2412c1",
+"d9/d64/classpocketmine_1_1item_1_1_bucket.html#adeebc60f86de29f6ba9b0f29debbed57",
+"d9/d7d/classpocketmine_1_1item_1_1_spawn_egg.html#a0e0ca23f37180aaa03e80154ee538952",
+"d9/d7d/classpocketmine_1_1item_1_1_spawn_egg.html#aca733bb933fb057bae4ddd4cd74f292b",
+"d9/da1/classpocketmine_1_1item_1_1_diamond_helmet.html#a5eeca0b375ce8f53d07db55e8fd4503e",
+"d9/da3/classpocketmine_1_1item_1_1_iron_sword.html#a20b334bddda6f4a7195cada084bbc71b",
+"d9/da3/classpocketmine_1_1item_1_1_iron_sword.html#ad36b3733fda47f12bf9c82f9df888d53",
+"d9/da8/classpocketmine_1_1item_1_1_diamond.html#a84fccc1742d2dff6281cc847612c6a05",
+"d9/dce/classpocketmine_1_1item_1_1_wooden_axe.html#a00c6a0cbd9566bca9f3df9c0017ddc7d",
+"d9/dce/classpocketmine_1_1item_1_1_wooden_axe.html#abc6aa69c1e442d43e90938a42d8bc31a",
+"d9/de1/classpocketmine_1_1entity_1_1_minecart.html#ac98a44177dc2c32cf6d252476525e067",
+"d9/de4/classpocketmine_1_1block_1_1_burning_furnace.html#ac6803d24d2142a081049f7c86bb073b6",
+"d9/de7/classpocketmine_1_1block_1_1_lapis.html#aad8bdbc68a1cc21d33505a0521041077",
+"da/d01/classpocketmine_1_1item_1_1_sugarcane.html#a59377db91a65b4e4efe99270a7658ed9",
+"da/d18/classpocketmine_1_1block_1_1_fire.html#a11d0ee8c3d80ea8c87b131210249e557",
+"da/d18/classpocketmine_1_1block_1_1_fire.html#afa681c67afc8adfe3d00d48e319ac726",
+"da/d43/classpocketmine_1_1block_1_1_stone_wall.html#a84320093fa418c867c03dcd8b9e9f0e0",
+"da/d4e/classpocketmine_1_1block_1_1_diamond_ore.html#a5837706331222b9b6056cd3ab06b5176",
+"da/d55/classpocketmine_1_1block_1_1_hardened_clay.html#a3925744d63d377e69c9f12a188c3c898",
+"da/d5b/classpocketmine_1_1tile_1_1_tile.html#a05c4a3ead018ab11ec83e3830df4f5c7",
+"da/d63/classpocketmine_1_1block_1_1_emerald.html#a9ba6bc60006ec0070ef8dffa61d0cfb3",
+"da/d64/classpocketmine_1_1item_1_1_bed.html#a6d0f890e665e0e915827b892351921ce",
+"da/d71/classpocketmine_1_1block_1_1_wool.html#a05c4a3ead018ab11ec83e3830df4f5c7",
+"da/d71/classpocketmine_1_1block_1_1_wool.html#ae667e74646ed1b8d04db126265d75955",
+"da/d73/classpocketmine_1_1item_1_1_iron_pickaxe.html#aa744904dad9b237ce2ade5594b93795d",
+"da/d7b/classpocketmine_1_1block_1_1_fence_jungle.html#a7ade83df99a4c1ab7132307b668eeb89",
+"da/d8c/classpocketmine_1_1block_1_1_end_portal_frame.html#a615e30967d6d81ec8d61e49a0fd02917",
+"da/d8f/classpocketmine_1_1item_1_1_gold_axe.html#a36d745a12cf3c56f0c013801d0053f7f",
+"da/d8f/classpocketmine_1_1item_1_1_gold_axe.html#af1347c1c15d40a0b5d5ae94a0aaa4c49",
+"da/da9/classpocketmine_1_1block_1_1_sugarcane.html#a0ac3965b092095f82286b7f2034e4da7",
+"da/da9/classpocketmine_1_1block_1_1_sugarcane.html#af39c6b0c6a506f1f58ccd5b79db01b07",
+"da/dbd/classpocketmine_1_1block_1_1_still_lava.html#aae36b03e7e5624cd5746f06cac5eb628",
+"da/dbe/classpocketmine_1_1item_1_1_leather_tunic.html#a75ef30eddae4ccb653017fc6ae7d1eff",
+"da/dd7/classpocketmine_1_1block_1_1_carrot.html#a0feaed4c5cfddc562671e9e190131c74",
+"da/dd7/classpocketmine_1_1block_1_1_carrot.html#af9e478d3b1ce7facc2919512b83cba22",
+"da/de7/classpocketmine_1_1item_1_1_tool.html#ab18cd400853f51dfe0504dbb60642353",
+"db/d00/classpocketmine_1_1block_1_1_gold.html#a666f68b3cbc89e35758d51072d1d70e3",
+"db/d01/classpocketmine_1_1block_1_1_obsidian.html#a4e2cd41b61d6bf02620088eb852c8129",
+"db/d13/classpocketmine_1_1item_1_1_chain_chestplate.html#a29369ead795f866283a6cd269f746a85",
+"db/d13/classpocketmine_1_1item_1_1_chain_chestplate.html#addc5a00b4bdf5eb54f6ea24384fb0ed9",
+"db/d16/classpocketmine_1_1item_1_1_gold_shovel.html#a72cabc5b3b85ebce37d00fc949fd55ce",
+"db/d17/classpocketmine_1_1block_1_1_fence_gate_dark_oak.html#a365ae65d3bc9f366780b526712f579a0",
+"db/d37/classpocketmine_1_1level_1_1generator_1_1noise_1_1_simplex.html#ab34a7a83fddf56c60125ccbf880d065f",
+"db/d3c/classpocketmine_1_1block_1_1_fence_acacia.html#a95e5f2cf8a81cf29b64c81c40510c366",
+"db/d4e/classpocketmine_1_1event_1_1player_1_1_player_bed_leave_event.html#a5ce93ec35c37edc1a3c06f54f1071907",
+"db/d85/classpocketmine_1_1item_1_1_armor.html#a7f10d821e6fec53e6396af6222785c72",
+"db/d86/classpocketmine_1_1block_1_1_melon_stem.html#a49114425ef7254003c5f6586e8631015",
+"db/d86/classpocketmine_1_1entity_1_1_pig_zombie.html#a5213efc8e4d9e13e20e337d7e3970628",
+"db/d8c/classpocketmine_1_1item_1_1_bowl.html#a61fd6b08f916b2b49fc6eacb26e75ad2",
+"db/d9b/classpocketmine_1_1block_1_1_gold_ore.html#a19738e744d53ffb457cb8767cc8296c1",
+"db/d9b/classpocketmine_1_1level_1_1_position.html#a218795ae48d10fc6a77f7df7382fb61f",
+"db/d9d/classpocketmine_1_1item_1_1_potato.html#a94e0ce36e886f53d494b4a4fc06b8831",
+"db/da7/classpocketmine_1_1entity_1_1_item.html#a8300f61b889eca29d4fefc6ab33fffcd",
+"db/db0/classpocketmine_1_1block_1_1_still_water.html#a96910594d76640a336e0bd6cabcd34a2",
+"db/db2/classpocketmine_1_1item_1_1_iron_leggings.html#a61fd6b08f916b2b49fc6eacb26e75ad2",
+"db/db5/classpocketmine_1_1block_1_1_diamond.html#a1aabf3f2c98cca7f6014018f945daac2",
+"db/db5/classpocketmine_1_1inventory_1_1_base_transaction.html#afe07b479103bdedf055b433f122369bb",
+"db/db5/classpocketmine_1_1item_1_1_stick.html#abcb0533afb74e331bd10e557ed9a173a",
+"db/dc9/classpocketmine_1_1entity_1_1_snowball.html#a7306290fb52b4cc4133de2d719dbbf73",
+"db/dd0/classpocketmine_1_1item_1_1_wooden_pickaxe.html#a59014b972e93551462658a72e2d8532a",
+"db/dd5/classpocketmine_1_1network_1_1_rak_lib_interface.html#ad1d84d69f204b548baeddff9b2a19a75",
+"db/ddc/classpocketmine_1_1block_1_1_cobweb.html#adabe39410081e026f81b692926cc34c5",
+"db/de7/classpocketmine_1_1block_1_1_sign_post.html#ac8cfc603eb30bde576e819845e4ee2d8",
+"db/deb/classpocketmine_1_1item_1_1_gold_pickaxe.html#a87f01e1ce7fa13ae930594cccf0a13a1",
+"db/df0/classpocketmine_1_1item_1_1_feather.html#a4d3c296a97fe395a260dfc0c490a0243",
+"db/df9/classpocketmine_1_1item_1_1_iron_chestplate.html",
+"db/df9/classpocketmine_1_1item_1_1_iron_chestplate.html#abcb0533afb74e331bd10e557ed9a173a",
+"dc/d08/classpocketmine_1_1item_1_1_gold_leggings.html#a4d843125e8eda754e909f7b6abf4feb2",
+"dc/d12/_container_open_packet_8php_source.html",
+"dc/d2c/classpocketmine_1_1block_1_1_iron_bars.html#ac910faa6dd8cd491c0a1dfbf355515a3",
+"dc/d4a/classpocketmine_1_1block_1_1_farmland.html#a81755ecda86267e872da08ca421ed5c0",
+"dc/d4c/classpocketmine_1_1block_1_1_coal.html#a683f1156d04b0eead1aa39ee7b42523d",
+"dc/d4f/classpocketmine_1_1item_1_1_diamond_boots.html#a478336c6025c187d63cdbe156e1cee1d",
+"dc/d4f/classpocketmine_1_1item_1_1_diamond_boots.html#afed38b73dfbed4bc3a1e1b559544c663",
+"dc/d53/classpocketmine_1_1block_1_1_glowing_redstone_ore.html#ad0aefe5836b534fc90acfe88cf2523cf",
+"dc/d60/classpocketmine_1_1block_1_1_slab.html#aa31c4b43631e66d6404771ace6db0034",
+"dc/d65/classpocketmine_1_1item_1_1_chain_boots.html#a6eb3583153d2e5d322a960dfd337f8ac",
+"dc/d6f/classpocketmine_1_1block_1_1_lapis_ore.html#a10ccfb4bb6107931339a0fe46c36240a",
+"dc/d6f/classpocketmine_1_1block_1_1_lapis_ore.html#afa681c67afc8adfe3d00d48e319ac726",
+"dc/d6f/classpocketmine_1_1block_1_1_wood2.html#ad925607ef09026804dbbf059583e3add",
+"dc/d7f/classpocketmine_1_1block_1_1_wood_door.html#a870d30223891481e2aefb1b51de02bed",
+"dc/d9e/classpocketmine_1_1block_1_1_wood.html#a610a9cd5dc05c0ff06099cd477897e4e",
+"dc/da8/classpocketmine_1_1item_1_1_gold_boots.html#a2889c6e0b0c43bfc2b3812d5f27f23a9",
+"dc/da8/classpocketmine_1_1item_1_1_gold_boots.html#add13da69c7e78f00677defe8c5438016",
+"dc/dbe/classpocketmine_1_1block_1_1_dead_bush.html#a9d71a3722b16f79a526369f8a23c12e0",
+"dc/dcb/classpocketmine_1_1entity_1_1_falling_sand.html#ac22c740c3c383ed9957aea077808023f",
 "dc/dce/classpocketmine_1_1block_1_1_t_n_t.html#abe9c4408f493987f16bce69e2644995e",
-"dc/de8/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_chunk.html#a9570af95c57d88c1fbb6fdf77078dac6",
-"dc/df4/classpocketmine_1_1block_1_1_nether_brick.html#ab9f15d33371b36a845d73215dbae9209",
-"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a85c0bbd5ba1fd333a56455abd914b20a",
-"dd/d27/classpocketmine_1_1entity_1_1_t_n_t_primed.html#a120acf7d358a95f257eb646d2615c7fc",
-"dd/d42/classpocketmine_1_1block_1_1_emerald_ore.html#a52fe1fec2447177a914523be61eb0f90",
-"dd/d44/classpocketmine_1_1item_1_1_wooden_door.html#a431b5f081aadd26415438d79ded6ae39",
-"dd/d50/_chest_inventory_8php_source.html",
-"dd/d68/classpocketmine_1_1block_1_1_fence.html#add35f31224f5bc2de3a0c4b0780f35bf",
-"dd/d7b/classpocketmine_1_1item_1_1_shears.html#aa70861349afaaa8307f9b439eec079f7",
-"dd/db1/classpocketmine_1_1block_1_1_wood_stairs.html#a56076b908dd0046cd071a078eb042175",
-"dd/dba/classpocketmine_1_1tile_1_1_chest.html#aada23d9484343373e96235833f541d53",
-"dd/dc1/classpocketmine_1_1block_1_1_hay_bale.html#acc8a16d558642a49192d02073bc3e9c4",
-"dd/dd0/classpocketmine_1_1block_1_1_jungle_wood_stairs.html#a7b741bfecf72fa5d6c57119cfc0f5e0d",
-"dd/dd0/classpocketmine_1_1block_1_1_ladder.html#a80b72409d32c60c48e1089fe1fdc36aa",
-"dd/dd1/classpocketmine_1_1item_1_1_apple.html#a61fd6b08f916b2b49fc6eacb26e75ad2",
-"dd/de7/classpocketmine_1_1entity_1_1_projectile.html#a120acf7d358a95f257eb646d2615c7fc",
-"dd/df5/classpocketmine_1_1item_1_1_iron_shovel.html#a3aab31c2b91806d650093275e5e96f17",
-"dd/df5/classpocketmine_1_1item_1_1_iron_shovel.html#afde1edf4da6f874b89cffb0302ad06c2",
-"de/d38/classpocketmine_1_1block_1_1_melon.html#a433a67aa266f08a9cd4ebd0e47214b91",
-"de/d3d/classpocketmine_1_1entity_1_1_creeper.html#a4be9441a4cfb683a2932f0421e2a1bd6",
-"de/d78/classpocketmine_1_1item_1_1_sign.html#a5f528cb59838a9421eb1799aa2623f20",
-"de/d87/classpocketmine_1_1block_1_1_cobblestone_stairs.html#a0e1c9c996a39cc34483eb285b6f1c1b7",
-"de/da2/class_pool.html#a68f56e0c9009f89920eb794cc22192e5",
-"de/da4/classpocketmine_1_1item_1_1_melon_seeds.html#abc477b121a2fae6be7028cf81fe8f34c",
-"de/dad/classpocketmine_1_1block_1_1_stone.html#a81755ecda86267e872da08ca421ed5c0",
-"de/daf/classpocketmine_1_1item_1_1_wooden_hoe.html#a5f9f13654e07f806557068f88386c122",
-"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#a07faf92f146aea57594a6a82ac504ab8",
-"de/db3/classpocketmine_1_1item_1_1_stone_hoe.html#a0d11f58e181a2f37aea0cd9c6602847f",
-"de/db3/classpocketmine_1_1item_1_1_stone_hoe.html#acd6475af7da1243f7d1a438530ce372d",
-"de/dcb/classpocketmine_1_1block_1_1_sandstone.html#a870d30223891481e2aefb1b51de02bed",
-"df/d0c/classpocketmine_1_1entity_1_1_living.html#a230565075093f60685b2a9f602489133",
-"df/d0f/classpocketmine_1_1item_1_1_diamond_pickaxe.html#a624db9b852e645d83717e25d69c30708",
-"df/d1c/classpocketmine_1_1block_1_1_cake.html#a088afbf883e13c3d9a929ff2cc123de8",
-"df/d20/classpocketmine_1_1block_1_1_cobblestone.html#a0e1c9c996a39cc34483eb285b6f1c1b7",
-"df/d22/classpocketmine_1_1block_1_1_cactus.html#a139936c594fb22134e663826b864e507",
-"df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a3e51d36183fc3822c8a1b7c7f9600633",
-"df/d2c/classpocketmine_1_1_player.html#aea4d584bb31c359152951fe7333272ac",
-"df/d55/classpocketmine_1_1block_1_1_brown_mushroom.html#ad782079fcf139fbff3639dd33b0e7135",
-"df/d74/classpocketmine_1_1block_1_1_wall_sign.html#a74220f738ae4cb95d7afa54c073d21de",
-"df/d75/classpocketmine_1_1item_1_1_beetroot_soup.html#a59c26b6eef501e1b6827f846ebdda08b",
-"df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a218795ae48d10fc6a77f7df7382fb61f",
-"df/d81/classpocketmine_1_1event_1_1player_1_1_player_quit_event.html#a73a70783b4051bd081607b90445bab9e",
-"df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#ad8648694d018512212103dc3dee9d52f",
-"df/da9/classpocketmine_1_1item_1_1_beetroot_seeds.html#aa00dbee52954cc94c66c1ee414333690",
-"df/dad/classpocketmine_1_1block_1_1_dark_oak_wood_stairs.html#a871d39ecdcc87019e278bd25af7ac8c4",
-"df/dcf/classpocketmine_1_1block_1_1_stone_bricks.html#a5a3550177ec38ab23a5b807dcc147af7",
-"df/df5/classpocketmine_1_1network_1_1protocol_1_1_add_player_packet.html#aa8e432c32d0d2df1d6499091b97c30e9",
-"df/dfa/classpocketmine_1_1item_1_1_cake.html#abb9c4d230a94587c6a02fad0c765df39"
+"dc/de8/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_chunk.html#a3287f7eb85e3016d7361c1bae5078d1d",
+"dc/df4/classpocketmine_1_1block_1_1_nether_brick.html#a7f13b1063616a78d1e542098c9a78714",
+"dd/d02/classpocketmine_1_1item_1_1_mushroom_stew.html#a584cd35a3290535519a12a3d7496d58d",
+"dd/d08/classpocketmine_1_1item_1_1_item_block.html#a105a69bd2893f52eb7f96709d3953471",
+"dd/d08/classpocketmine_1_1item_1_1_item_block.html#acb464f29064a29d7a3a8a6a9a9c6c869",
+"dd/d2e/classpocketmine_1_1block_1_1_fence_birch.html#a49114425ef7254003c5f6586e8631015",
+"dd/d42/classpocketmine_1_1block_1_1_emerald_ore.html#a1e009fbe5c8a20750f4f4776632d02d2",
+"dd/d42/classpocketmine_1_1event_1_1server_1_1_query_regenerate_event.html#a73a70783b4051bd081607b90445bab9e",
+"dd/d44/classpocketmine_1_1item_1_1_wooden_door.html#ab086035facc8ee5a606d842ed3d608fd",
+"dd/d68/classpocketmine_1_1block_1_1_fence.html#a7ce891da78d8bb459f899c3aec2848f9",
+"dd/d6a/classpocketmine_1_1block_1_1_double_plant.html#a67eec6dc12094416e25b19c711819e27",
+"dd/d7b/classpocketmine_1_1item_1_1_shears.html#a3e6211f3097852fe290448311a46b465",
+"dd/d7b/classpocketmine_1_1item_1_1_shears.html#af92f1bec5c3a1651f588e41a83c940fa",
+"dd/db1/classpocketmine_1_1block_1_1_wood_stairs.html#a97141c45f6320fec41106f89aef820fd",
+"dd/dc1/classpocketmine_1_1block_1_1_hay_bale.html#a0e1c9c996a39cc34483eb285b6f1c1b7",
+"dd/dc1/classpocketmine_1_1block_1_1_hay_bale.html#af9adc5e1d2d8991b5852a45fd8cc94fa",
+"dd/dd0/classpocketmine_1_1block_1_1_jungle_wood_stairs.html#a870d30223891481e2aefb1b51de02bed",
+"dd/dd0/classpocketmine_1_1block_1_1_ladder.html#a74220f738ae4cb95d7afa54c073d21de",
+"dd/dd1/classpocketmine_1_1item_1_1_apple.html#a4ea9d73cb5ca871e9db2a8e2020d6b84",
+"dd/dd4/classpocketmine_1_1item_1_1_leather_pants.html#a06b60c56f8bb1eb43f7c9c7b7bd789ed",
+"dd/dd4/classpocketmine_1_1item_1_1_leather_pants.html#abde3eb26c3282faebb230f4875d61704",
+"dd/de7/classpocketmine_1_1entity_1_1_projectile.html#a779f30046a5dfa9678d3c34586d0731d",
+"dd/df5/classpocketmine_1_1item_1_1_iron_shovel.html#a5a84a2d27aa1f6d8b1225b018dded4fe",
+"dd/df5/classpocketmine_1_1network_1_1protocol_1_1_unload_chunk_packet.html#aa973f04ced929c90b608e12e866b5800",
+"de/d38/classpocketmine_1_1block_1_1_melon.html#a779f30046a5dfa9678d3c34586d0731d",
+"de/d3d/classpocketmine_1_1entity_1_1_creeper.html#a77616c8e549b8ac360381e4559630b63",
+"de/d78/classpocketmine_1_1item_1_1_sign.html#a50f17d90bfb645922da613822e8353de",
+"de/d7f/classpocketmine_1_1entity_1_1_ozelot.html#a033ecdaec9f837510e0b1de52be9c7db",
+"de/d87/classpocketmine_1_1block_1_1_cobblestone_stairs.html#a2e56869e592650e5270d572ebe37d404",
+"de/da4/classpocketmine_1_1item_1_1_melon_seeds.html#a0d11f58e181a2f37aea0cd9c6602847f",
+"de/da4/classpocketmine_1_1item_1_1_melon_seeds.html#ac9ffa8b5680e7b29c720a06aade834c3",
+"de/dad/classpocketmine_1_1block_1_1_stone.html#a7ce891da78d8bb459f899c3aec2848f9",
+"de/daf/classpocketmine_1_1item_1_1_wooden_hoe.html#a53e79380f172c7fcda30c9083b0ddb63",
+"de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a38b7693bb0d3b4e3478f8e9afdc43609",
+"de/db3/classpocketmine_1_1block_1_1_monster_spawner.html#ac2f0e8bdeef3c1d2c1b0d9ccc67c74c0",
+"de/db3/classpocketmine_1_1item_1_1_stone_hoe.html#a86dcd66673823228dce89514001b2270",
+"de/dcb/classpocketmine_1_1block_1_1_sandstone.html#a3dd7cdc29ff5dee79eb67f52bcfbc86c",
+"de/dee/classpocketmine_1_1network_1_1protocol_1_1_set_spawn_position_packet.html#a87c6760a0f385b960a81d4f1fe57278d",
+"df/d0f/classpocketmine_1_1item_1_1_diamond_pickaxe.html#a06b60c56f8bb1eb43f7c9c7b7bd789ed",
+"df/d0f/classpocketmine_1_1item_1_1_diamond_pickaxe.html#abd3982c917f5b9552fc552aa0ee618fa",
+"df/d1c/classpocketmine_1_1block_1_1_cake.html#a625c4a4bfafc40d2648e091724307f3f",
+"df/d20/classpocketmine_1_1block_1_1_cobblestone.html#a4be9441a4cfb683a2932f0421e2a1bd6",
+"df/d22/classpocketmine_1_1block_1_1_cactus.html#a2fac0b58d534b6230cd6868e1e48da01",
+"df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a5ea9e9eb5b32dee9c6bc51900f8fbb92",
+"df/d2c/classpocketmine_1_1_player.html#ac2f0e8bdeef3c1d2c1b0d9ccc67c74c0",
+"df/d55/classpocketmine_1_1block_1_1_brown_mushroom.html#a9294a01bc37c7cd405bb61401d217e30",
+"df/d74/classpocketmine_1_1block_1_1_wall_sign.html#a1553c69a9868c1c892c7c155cfc4165f",
+"df/d75/classpocketmine_1_1item_1_1_beetroot_soup.html#a06d4c27758301dbe997d18dd0354bb4e",
+"df/d75/classpocketmine_1_1item_1_1_beetroot_soup.html#ac12936df501fe36357381cbd29acc7a1",
+"df/d79/classpocketmine_1_1block_1_1_stonecutter.html#a954aacefcb92cf48ceec4f7e3a34484b",
+"df/da1/classpocketmine_1_1block_1_1_pumpkin_stem.html#a303b2ed272a82355d823d1b4e5356e26",
+"df/da9/classpocketmine_1_1item_1_1_beetroot_seeds.html#a1e6f04028ec7df1b17349774601c1137",
+"df/da9/classpocketmine_1_1item_1_1_beetroot_seeds.html#ad36b3733fda47f12bf9c82f9df888d53",
+"df/dad/classpocketmine_1_1block_1_1_dark_oak_wood_stairs.html#aaa3d12ace2291f8195cfa5dbe0369103",
+"df/dcf/classpocketmine_1_1block_1_1_stone_bricks.html#a0113df601726115352f33624eee9c6df",
+"df/dcf/classpocketmine_1_1block_1_1_stone_bricks.html#ae16d26b5b18ddaa47d7ea44f2232f7b4",
+"df/dfa/classpocketmine_1_1item_1_1_cake.html#a5c62df9d4d9b12c489b0cc68a9569075",
+"df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html#a41f96569228fbba9e54729a46ae5b51e"
 ];
 
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';
 var SYNCONMSG = 'click to disable panel synchronisation';
 var SYNCOFFMSG = 'click to enable panel synchronisation';
 var navTreeSubIndices = new Array();
@@ -309,21 +379,6 @@ function stripPath2(uri)
   return m ? uri.substring(i-6) : s;
 }
 
-function hashValue()
-{
-  return $(location).attr('hash').substring(1).replace(/[^\w\-]/g,'');
-}
-
-function hashUrl()
-{
-  return '#'+hashValue();
-}
-
-function pathName()
-{
-  return $(location).attr('pathname').replace(/[^-A-Za-z0-9+&@#/%?=~_|!:,.;\(\)]/g, '');
-}
-
 function localStorageSupported()
 {
   try {
@@ -346,7 +401,7 @@ function deleteLink()
 {
   if (localStorageSupported()) {
     window.localStorage.setItem('navpath','');
-  }
+  } 
 }
 
 function cachedLink()
@@ -418,13 +473,11 @@ var animationInProgress = false;
 function gotoAnchor(anchor,aname,updateLocation)
 {
   var pos, docContent = $('#doc-content');
-  var ancParent = $(anchor.parent());
-  if (ancParent.hasClass('memItemLeft') ||
-      ancParent.hasClass('fieldname') ||
-      ancParent.hasClass('fieldtype') ||
-      ancParent.is(':header'))
+  if (anchor.parent().attr('class')=='memItemLeft' ||
+      anchor.parent().attr('class')=='fieldtype' ||
+      anchor.parent().is(':header')) 
   {
-    pos = ancParent.position().top;
+    pos = anchor.parent().position().top;
   } else if (anchor.position()) {
     pos = anchor.position().top;
   }
@@ -482,7 +535,7 @@ function newNode(o, po, text, link, childrenData, lastNode)
     a.className = stripPath(link.replace('#',':'));
     if (link.indexOf('#')!=-1) {
       var aname = '#'+link.split('#')[1];
-      var srcPage = stripPath(pathName());
+      var srcPage = stripPath($(location).attr('pathname'));
       var targetPage = stripPath(link.split('#')[0]);
       a.href = srcPage!=targetPage ? url : "javascript:void(0)"; 
       a.onclick = function(){
@@ -576,13 +629,14 @@ function glowEffect(n,duration)
 
 function highlightAnchor()
 {
-  var aname = hashUrl();
+  var aname = $(location).attr('hash');
   var anchor = $(aname);
   if (anchor.parent().attr('class')=='memItemLeft'){
-    var rows = $('.memberdecls tr[class$="'+hashValue()+'"]');
+    var rows = $('.memberdecls tr[class$="'+
+               window.location.hash.substring(1)+'"]');
     glowEffect(rows.children(),300); // member without details
-  } else if (anchor.parent().attr('class')=='fieldname'){
-    glowEffect(anchor.parent().parent(),1000); // enum value
+  } else if (anchor.parents().slice(2).prop('tagName')=='TR') {
+    glowEffect(anchor.parents('div.memitem'),1000); // enum value
   } else if (anchor.parent().attr('class')=='fieldtype'){
     glowEffect(anchor.parent().parent(),1000); // struct field
   } else if (anchor.parent().is(":header")) {
@@ -597,7 +651,7 @@ function selectAndHighlight(hash,n)
 {
   var a;
   if (hash) {
-    var link=stripPath(pathName())+':'+hash.substring(1);
+    var link=stripPath($(location).attr('pathname'))+':'+hash.substring(1);
     a=$('.item a[class$="'+link+'"]');
   }
   if (a && a.length) {
@@ -708,13 +762,14 @@ function navTo(o,root,hash,relpath)
   if (link) {
     var parts = link.split('#');
     root = parts[0];
-    if (parts.length>1) hash = '#'+parts[1].replace(/[^\w\-]/g,'');
+    if (parts.length>1) hash = '#'+parts[1];
     else hash='';
   }
   if (hash.match(/^#l\d+$/)) {
     var anchor=$('a[name='+hash.substring(1)+']');
     glowEffect(anchor.parent(),1000); // line number
     hash=''; // strip line number anchors
+    //root=root.replace(/_source\./,'.'); // source link to doc link
   }
   var url=root+hash;
   var i=-1;
@@ -748,7 +803,7 @@ function toggleSyncButton(relpath)
   if (navSync.hasClass('sync')) {
     navSync.removeClass('sync');
     showSyncOff(navSync,relpath);
-    storeLink(stripPath2(pathName())+hashUrl());
+    storeLink(stripPath2($(location).attr('pathname'))+$(location).attr('hash'));
   } else {
     navSync.addClass('sync');
     showSyncOn(navSync,relpath);
@@ -788,7 +843,7 @@ function initNavTree(toroot,relpath)
   }
 
   $(window).load(function(){
-    navTo(o,toroot,hashUrl(),relpath);
+    navTo(o,toroot,window.location.hash,relpath);
     showRoot();
   });
 
@@ -796,20 +851,21 @@ function initNavTree(toroot,relpath)
      if (window.location.hash && window.location.hash.length>1){
        var a;
        if ($(location).attr('hash')){
-         var clslink=stripPath(pathName())+':'+hashValue();
-         a=$('.item a[class$="'+clslink.replace(/</g,'\\3c ')+'"]');
+         var clslink=stripPath($(location).attr('pathname'))+':'+
+                               $(location).attr('hash').substring(1);
+         a=$('.item a[class$="'+clslink+'"]');
        }
        if (a==null || !$(a).parent().parent().hasClass('selected')){
          $('.item').removeClass('selected');
          $('.item').removeAttr('id');
        }
-       var link=stripPath2(pathName());
-       navTo(o,link,hashUrl(),relpath);
+       var link=stripPath2($(location).attr('pathname'));
+       navTo(o,link,$(location).attr('hash'),relpath);
      } else if (!animationInProgress) {
        $('#doc-content').scrollTop(0);
        $('.item').removeClass('selected');
        $('.item').removeAttr('id');
-       navTo(o,toroot,hashUrl(),relpath);
+       navTo(o,toroot,window.location.hash,relpath);
      }
   })
 }

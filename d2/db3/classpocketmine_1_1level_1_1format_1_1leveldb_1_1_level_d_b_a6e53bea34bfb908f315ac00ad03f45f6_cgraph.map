@@ -1,0 +1,6 @@
+<map id="pocketmine\level\format\leveldb\LevelDB\setChunk" name="pocketmine\level\format\leveldb\LevelDB\setChunk">
+<area shape="rect" id="node2" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a4be83538c608928a193884ea26010d96" title="pocketmine\\level\\Level\l\\chunkHash" alt="" coords="515,5,682,46"/>
+<area shape="rect" id="node3" href="$d6/d3d/interfacepocketmine_1_1level_1_1format_1_1_full_chunk.html#af8849c78c6b531c91b7a15a00c1d8393" title="pocketmine\\level\\format\l\\FullChunk\\setProvider" alt="" coords="265,34,442,75"/>
+<area shape="rect" id="node4" href="$d2/db3/classpocketmine_1_1level_1_1format_1_1leveldb_1_1_level_d_b.html#a6cde3f51d37a8e9e902b5cdf2f524b18" title="pocketmine\\level\\format\l\\leveldb\\LevelDB\\unloadChunk" alt="" coords="246,99,461,141"/>
+<area shape="rect" id="node5" href="$d6/d3d/interfacepocketmine_1_1level_1_1format_1_1_full_chunk.html#ab446ee50ba4cea77040ddf6eafa69c9a" title="pocketmine\\level\\format\l\\FullChunk\\unload" alt="" coords="510,99,687,141"/>
+</map>

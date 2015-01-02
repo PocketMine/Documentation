@@ -1,5 +1,6 @@
 <map id="pocketmine\level\Level\stopTime" name="pocketmine\level\Level\stopTime">
-<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a1079deee151083b7da76d8dd57f5b2ef" title="pocketmine\\level\\Level\l\\checkTime" alt="" coords="208,5,363,51"/>
-<area shape="rect" id="node7" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#ad56d6a8573f596fddea712bdb171f866" title="pocketmine\\level\\Level\l\\startTime" alt="" coords="411,35,565,82"/>
-<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#ac2855c606dec3107ace36c3bd073b953" title="pocketmine\\level\\Level\l\\setTime" alt="" coords="613,6,768,53"/>
+<area shape="rect" id="node2" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a1079deee151083b7da76d8dd57f5b2ef" title="pocketmine\\level\\Level\l\\checkTime" alt="" coords="222,5,389,46"/>
+<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a787adc6473f820d013965a02196b02a5" title="pocketmine\\level\\Level\l\\sendTime" alt="" coords="222,70,389,111"/>
+<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#ad56d6a8573f596fddea712bdb171f866" title="pocketmine\\level\\Level\l\\startTime" alt="" coords="438,129,605,170"/>
+<area shape="rect" id="node4" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#ac2855c606dec3107ace36c3bd073b953" title="pocketmine\\level\\Level\l\\setTime" alt="" coords="438,63,605,105"/>
 </map>

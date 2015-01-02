@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node3" href="$d6/d9e/classpocketmine_1_1gui_1_1pm_gui.html" title="pocketmine\\gui\\pmGui" alt="" coords="117,5,269,35"/>
+<area shape="rect" id="node1" href="$d7/d3c/interfacepocketmine_1_1inventory_1_1_recipe.html" title="pocketmine\\inventory\l\\Recipe" alt="" coords="5,70,165,111"/>
+<area shape="rect" id="node2" href="$db/db2/classpocketmine_1_1inventory_1_1_furnace_recipe.html" title="pocketmine\\inventory\l\\FurnaceRecipe" alt="" coords="213,5,373,46"/>
+<area shape="rect" id="node3" href="$d7/d21/classpocketmine_1_1inventory_1_1_shaped_recipe.html" title="pocketmine\\inventory\l\\ShapedRecipe" alt="" coords="213,70,373,111"/>
+<area shape="rect" id="node4" href="$d6/d74/classpocketmine_1_1inventory_1_1_shapeless_recipe.html" title="pocketmine\\inventory\l\\ShapelessRecipe" alt="" coords="213,135,373,177"/>
+<area shape="rect" id="node5" href="$d8/d7b/classpocketmine_1_1inventory_1_1_big_shapeless_recipe.html" title="pocketmine\\inventory\l\\BigShapelessRecipe" alt="" coords="447,102,607,143"/>
+<area shape="rect" id="node6" href="$d5/da2/classpocketmine_1_1inventory_1_1_stonecutter_shapeless_recipe.html" title="pocketmine\\inventory\l\\StonecutterShapelessRecipe" alt="" coords="422,167,631,209"/>
 </map>

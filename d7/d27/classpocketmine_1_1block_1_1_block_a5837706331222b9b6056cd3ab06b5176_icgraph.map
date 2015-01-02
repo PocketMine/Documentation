@@ -1,0 +1,4 @@
+<map id="pocketmine\block\Block\recalculateBoundingBox" name="pocketmine\block\Block\recalculateBoundingBox">
+<area shape="rect" id="node2" href="$d7/d27/classpocketmine_1_1block_1_1_block.html#a1ccbcc0f6a60e4d936bf38875b427812" title="pocketmine\\block\\Block\l\\getBoundingBox" alt="" coords="235,5,407,46"/>
+<area shape="rect" id="node3" href="$d7/d27/classpocketmine_1_1block_1_1_block.html#a9d71a3722b16f79a526369f8a23c12e0" title="pocketmine\\block\\Block\l\\collidesWithBB" alt="" coords="457,5,629,46"/>
+</map>

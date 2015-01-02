@@ -1,7 +1,7 @@
 var classpocketmine_1_1inventory_1_1_crafting_inventory =
 [
     [ "__construct", "df/d13/classpocketmine_1_1inventory_1_1_crafting_inventory.html#ab72ca614d3595e67238a7b359cedf680", null ],
-    [ "addItem", "df/d13/classpocketmine_1_1inventory_1_1_crafting_inventory.html#a407f27ab18a98d4b907bb5af82972cb7", null ],
+    [ "addItem", "df/d13/classpocketmine_1_1inventory_1_1_crafting_inventory.html#a3ae2ddba44ba8f3cc97d888662a4c301", null ],
     [ "all", "df/d13/classpocketmine_1_1inventory_1_1_crafting_inventory.html#a9e8a9a58178c93680c225de229606fec", null ],
     [ "canAddItem", "df/d13/classpocketmine_1_1inventory_1_1_crafting_inventory.html#a46ca31398256b2a5fecddd025587579b", null ],
     [ "clear", "df/d13/classpocketmine_1_1inventory_1_1_crafting_inventory.html#a4e37b46b040119e90211c5078dd79662", null ],
@@ -25,7 +25,7 @@ var classpocketmine_1_1inventory_1_1_crafting_inventory =
     [ "onSlotChange", "df/d13/classpocketmine_1_1inventory_1_1_crafting_inventory.html#a372297a2da072277724b5a20453bb423", null ],
     [ "open", "df/d13/classpocketmine_1_1inventory_1_1_crafting_inventory.html#a41fca235b61f94ee9729354c977f905f", null ],
     [ "remove", "df/d13/classpocketmine_1_1inventory_1_1_crafting_inventory.html#a5c676080faee6eaecdc04a70fcedf142", null ],
-    [ "removeItem", "df/d13/classpocketmine_1_1inventory_1_1_crafting_inventory.html#ab357a8d967219e50421b8848662ec0fb", null ],
+    [ "removeItem", "df/d13/classpocketmine_1_1inventory_1_1_crafting_inventory.html#a4f85f97364385c5fea32887bb3350055", null ],
     [ "sendContents", "df/d13/classpocketmine_1_1inventory_1_1_crafting_inventory.html#a78e842dd42ef0a0870385092b3c30896", null ],
     [ "sendSlot", "df/d13/classpocketmine_1_1inventory_1_1_crafting_inventory.html#ad84dac811677e799d06924279a4288cc", null ],
     [ "setContents", "df/d13/classpocketmine_1_1inventory_1_1_crafting_inventory.html#a295a782543c002623d01ec47a6e93329", null ],

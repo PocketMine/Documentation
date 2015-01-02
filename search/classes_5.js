@@ -1,11 +1,21 @@
 var searchData=
 [
   ['fallable',['Fallable',['../d2/d77/classpocketmine_1_1block_1_1_fallable.html',1,'pocketmine::block']]],
-  ['fallingblock',['FallingBlock',['../d6/d6f/classpocketmine_1_1entity_1_1_falling_block.html',1,'pocketmine::entity']]],
+  ['fallingsand',['FallingSand',['../dc/dcb/classpocketmine_1_1entity_1_1_falling_sand.html',1,'pocketmine::entity']]],
   ['farmland',['Farmland',['../dc/d4a/classpocketmine_1_1block_1_1_farmland.html',1,'pocketmine::block']]],
   ['feather',['Feather',['../db/df0/classpocketmine_1_1item_1_1_feather.html',1,'pocketmine::item']]],
   ['fence',['Fence',['../dd/d68/classpocketmine_1_1block_1_1_fence.html',1,'pocketmine::block']]],
+  ['fenceacacia',['FenceAcacia',['../db/d3c/classpocketmine_1_1block_1_1_fence_acacia.html',1,'pocketmine::block']]],
+  ['fencebirch',['FenceBirch',['../dd/d2e/classpocketmine_1_1block_1_1_fence_birch.html',1,'pocketmine::block']]],
+  ['fencedarkoak',['FenceDarkOak',['../d1/d95/classpocketmine_1_1block_1_1_fence_dark_oak.html',1,'pocketmine::block']]],
   ['fencegate',['FenceGate',['../d7/dd3/classpocketmine_1_1block_1_1_fence_gate.html',1,'pocketmine::block']]],
+  ['fencegateacacia',['FenceGateAcacia',['../d1/d5c/classpocketmine_1_1block_1_1_fence_gate_acacia.html',1,'pocketmine::block']]],
+  ['fencegatebirch',['FenceGateBirch',['../d7/d5d/classpocketmine_1_1block_1_1_fence_gate_birch.html',1,'pocketmine::block']]],
+  ['fencegatedarkoak',['FenceGateDarkOak',['../db/d17/classpocketmine_1_1block_1_1_fence_gate_dark_oak.html',1,'pocketmine::block']]],
+  ['fencegatejungle',['FenceGateJungle',['../d6/dec/classpocketmine_1_1block_1_1_fence_gate_jungle.html',1,'pocketmine::block']]],
+  ['fencegatespruce',['FenceGateSpruce',['../d8/d28/classpocketmine_1_1block_1_1_fence_gate_spruce.html',1,'pocketmine::block']]],
+  ['fencejungle',['FenceJungle',['../da/d7b/classpocketmine_1_1block_1_1_fence_jungle.html',1,'pocketmine::block']]],
+  ['fencespruce',['FenceSpruce',['../d3/d25/classpocketmine_1_1block_1_1_fence_spruce.html',1,'pocketmine::block']]],
   ['fire',['Fire',['../da/d18/classpocketmine_1_1block_1_1_fire.html',1,'pocketmine::block']]],
   ['flat',['Flat',['../de/dee/classpocketmine_1_1level_1_1generator_1_1_flat.html',1,'pocketmine::level::generator']]],
   ['flintsteel',['FlintSteel',['../d5/db8/classpocketmine_1_1item_1_1_flint_steel.html',1,'pocketmine::item']]],
@@ -15,8 +25,10 @@ var searchData=
   ['fuel',['Fuel',['../dd/d62/classpocketmine_1_1inventory_1_1_fuel.html',1,'pocketmine::inventory']]],
   ['fullchunk',['FullChunk',['../d6/d3d/interfacepocketmine_1_1level_1_1format_1_1_full_chunk.html',1,'pocketmine::level::format']]],
   ['fullchunkdatapacket',['FullChunkDataPacket',['../df/d7e/classpocketmine_1_1network_1_1protocol_1_1_full_chunk_data_packet.html',1,'pocketmine::network::protocol']]],
-  ['furnace',['Furnace',['../d4/d66/classpocketmine_1_1block_1_1_furnace.html',1,'pocketmine::block']]],
   ['furnace',['Furnace',['../d7/d7c/classpocketmine_1_1tile_1_1_furnace.html',1,'pocketmine::tile']]],
+  ['furnace',['Furnace',['../d4/d66/classpocketmine_1_1block_1_1_furnace.html',1,'pocketmine::block']]],
+  ['furnaceburnevent',['FurnaceBurnEvent',['../d5/d82/classpocketmine_1_1event_1_1inventory_1_1_furnace_burn_event.html',1,'pocketmine::event::inventory']]],
   ['furnaceinventory',['FurnaceInventory',['../dc/d34/classpocketmine_1_1inventory_1_1_furnace_inventory.html',1,'pocketmine::inventory']]],
-  ['furnacerecipe',['FurnaceRecipe',['../db/db2/classpocketmine_1_1inventory_1_1_furnace_recipe.html',1,'pocketmine::inventory']]]
+  ['furnacerecipe',['FurnaceRecipe',['../db/db2/classpocketmine_1_1inventory_1_1_furnace_recipe.html',1,'pocketmine::inventory']]],
+  ['furnacesmeltevent',['FurnaceSmeltEvent',['../d8/df1/classpocketmine_1_1event_1_1inventory_1_1_furnace_smelt_event.html',1,'pocketmine::event::inventory']]]
 ];

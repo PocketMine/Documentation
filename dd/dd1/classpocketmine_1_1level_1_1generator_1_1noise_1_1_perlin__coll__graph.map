@@ -1,3 +1,3 @@
 <map id="pocketmine\level\generator\noise\Perlin" name="pocketmine\level\generator\noise\Perlin">
-<area shape="rect" id="node2" href="$d8/db5/classpocketmine_1_1level_1_1generator_1_1noise_1_1_generator.html" title="{pocketmine\\level\\generator\l\\noise\\Generator\n|# $perm\l# $offsetX\l# $offsetY\l# $offsetZ\l# $octaves\l# $frequency\l# $amplitude\l|+ getNoise2D()\l+ getNoise3D()\l+ noise2D()\l+ noise3D()\l+ setOffset()\l+ floor()\l+ fade()\l+ lerp()\l+ grad()\l}" alt="" coords="5,6,184,351"/>
+<area shape="rect" id="node2" href="$d8/db5/classpocketmine_1_1level_1_1generator_1_1noise_1_1_generator.html" title="{pocketmine\\level\\generator\l\\noise\\Generator\n|# $perm\l# $offsetX\l# $offsetY\l# $offsetZ\l# $octaves\l# $frequency\l# $amplitude\l|+ getNoise2D()\l+ getNoise3D()\l+ noise2D()\l+ noise3D()\l+ setOffset()\l+ floor()\l+ fade()\l+ lerp()\l+ grad()\l}" alt="" coords="5,6,203,303"/>
 </map>

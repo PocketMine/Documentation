@@ -1,4 +1,4 @@
 <map id="pocketmine\plugin\PluginManager\loadPlugin" name="pocketmine\plugin\PluginManager\loadPlugin">
-<area shape="rect" id="node3" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#ae9b60788bece074ae0b35205cd0a2a3e" title="pocketmine\\plugin\\Plugin\lManager\\parseYamlCommands" alt="" coords="221,5,427,51"/>
-<area shape="rect" id="node5" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html#ab7ef321b514dbd4462709e5b23278b64" title="pocketmine\\plugin\\Plugin\l\\getDescription" alt="" coords="476,5,641,51"/>
+<area shape="rect" id="node2" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#ae9b60788bece074ae0b35205cd0a2a3e" title="pocketmine\\plugin\\Plugin\lManager\\parseYamlCommands" alt="" coords="235,5,456,46"/>
+<area shape="rect" id="node3" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html#ab7ef321b514dbd4462709e5b23278b64" title="pocketmine\\plugin\\Plugin\l\\getDescription" alt="" coords="504,5,685,46"/>
 </map>

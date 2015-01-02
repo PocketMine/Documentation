@@ -1,6 +1,12 @@
 var namespacepocketmine_1_1event_1_1entity =
 [
     [ "EntityArmorChangeEvent", "d5/daa/classpocketmine_1_1event_1_1entity_1_1_entity_armor_change_event.html", "d5/daa/classpocketmine_1_1event_1_1entity_1_1_entity_armor_change_event" ],
+    [ "EntityBlockChangeEvent", "d5/d98/classpocketmine_1_1event_1_1entity_1_1_entity_block_change_event.html", "d5/d98/classpocketmine_1_1event_1_1entity_1_1_entity_block_change_event" ],
+    [ "EntityCombustByBlockEvent", "df/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_combust_by_block_event.html", "df/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_combust_by_block_event" ],
+    [ "EntityCombustByEntityEvent", "da/d59/classpocketmine_1_1event_1_1entity_1_1_entity_combust_by_entity_event.html", "da/d59/classpocketmine_1_1event_1_1entity_1_1_entity_combust_by_entity_event" ],
+    [ "EntityCombustEvent", "dd/de3/classpocketmine_1_1event_1_1entity_1_1_entity_combust_event.html", "dd/de3/classpocketmine_1_1event_1_1entity_1_1_entity_combust_event" ],
+    [ "EntityDamageByBlockEvent", "da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event.html", "da/dbf/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_block_event" ],
+    [ "EntityDamageByChildEntityEvent", "de/d62/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_child_entity_event.html", "de/d62/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_child_entity_event" ],
     [ "EntityDamageByEntityEvent", "d0/d34/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_entity_event.html", "d0/d34/classpocketmine_1_1event_1_1entity_1_1_entity_damage_by_entity_event" ],
     [ "EntityDamageEvent", "d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event.html", "d5/de3/classpocketmine_1_1event_1_1entity_1_1_entity_damage_event" ],
     [ "EntityDeathEvent", "d7/d1e/classpocketmine_1_1event_1_1entity_1_1_entity_death_event.html", "d7/d1e/classpocketmine_1_1event_1_1entity_1_1_entity_death_event" ],
@@ -12,6 +18,12 @@ var namespacepocketmine_1_1event_1_1entity =
     [ "EntityMotionEvent", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event.html", "d5/d70/classpocketmine_1_1event_1_1entity_1_1_entity_motion_event" ],
     [ "EntityMoveEvent", "d4/d22/classpocketmine_1_1event_1_1entity_1_1_entity_move_event.html", "d4/d22/classpocketmine_1_1event_1_1entity_1_1_entity_move_event" ],
     [ "EntityRegainHealthEvent", "da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event.html", "da/d3f/classpocketmine_1_1event_1_1entity_1_1_entity_regain_health_event" ],
+    [ "EntityShootBowEvent", "d2/d96/classpocketmine_1_1event_1_1entity_1_1_entity_shoot_bow_event.html", "d2/d96/classpocketmine_1_1event_1_1entity_1_1_entity_shoot_bow_event" ],
     [ "EntitySpawnEvent", "df/d6f/classpocketmine_1_1event_1_1entity_1_1_entity_spawn_event.html", "df/d6f/classpocketmine_1_1event_1_1entity_1_1_entity_spawn_event" ],
-    [ "EntityTeleportEvent", "dc/df2/classpocketmine_1_1event_1_1entity_1_1_entity_teleport_event.html", "dc/df2/classpocketmine_1_1event_1_1entity_1_1_entity_teleport_event" ]
+    [ "EntityTeleportEvent", "dc/df2/classpocketmine_1_1event_1_1entity_1_1_entity_teleport_event.html", "dc/df2/classpocketmine_1_1event_1_1entity_1_1_entity_teleport_event" ],
+    [ "ExplosionPrimeEvent", "d1/dd7/classpocketmine_1_1event_1_1entity_1_1_explosion_prime_event.html", "d1/dd7/classpocketmine_1_1event_1_1entity_1_1_explosion_prime_event" ],
+    [ "ItemDespawnEvent", "da/d1a/classpocketmine_1_1event_1_1entity_1_1_item_despawn_event.html", "da/d1a/classpocketmine_1_1event_1_1entity_1_1_item_despawn_event" ],
+    [ "ItemSpawnEvent", "d6/df9/classpocketmine_1_1event_1_1entity_1_1_item_spawn_event.html", "d6/df9/classpocketmine_1_1event_1_1entity_1_1_item_spawn_event" ],
+    [ "ProjectileHitEvent", "d3/d75/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_event.html", "d3/d75/classpocketmine_1_1event_1_1entity_1_1_projectile_hit_event" ],
+    [ "ProjectileLaunchEvent", "d1/dea/classpocketmine_1_1event_1_1entity_1_1_projectile_launch_event.html", "d1/dea/classpocketmine_1_1event_1_1entity_1_1_projectile_launch_event" ]
 ];

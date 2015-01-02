@@ -1,3 +1,4 @@
 <map id="pocketmine\level\format\generic\BaseLevelProvider\getPath" name="pocketmine\level\format\generic\BaseLevelProvider\getPath">
-<area shape="rect" id="node3" href="$d5/d41/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_level_provider.html#a7bc75f63c23736237a5a04cbbee05f8e" title="pocketmine\\level\\format\l\\generic\\BaseLevelProvider\l\\__construct" alt="" coords="235,5,416,69"/>
+<area shape="rect" id="node2" href="$d5/d41/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_level_provider.html#a7bc75f63c23736237a5a04cbbee05f8e" title="pocketmine\\level\\format\l\\generic\\BaseLevelProvider\l\\__construct" alt="" coords="253,5,448,61"/>
+<area shape="rect" id="node3" href="$d2/db3/classpocketmine_1_1level_1_1format_1_1leveldb_1_1_level_d_b.html#ace200cf084a267745b679f92ed91f106" title="pocketmine\\level\\format\l\\leveldb\\LevelDB\\__construct" alt="" coords="248,85,453,126"/>
 </map>

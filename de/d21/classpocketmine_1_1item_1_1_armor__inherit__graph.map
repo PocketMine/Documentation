@@ -1,0 +1,23 @@
+<map id="pocketmine\item\Armor" name="pocketmine\item\Armor">
+<area shape="rect" id="node3" href="$dc/d65/classpocketmine_1_1item_1_1_chain_boots.html" title="{pocketmine\\item\\ChainBoots\n||+ __construct()\l}" alt="" coords="5,683,211,760"/>
+<area shape="rect" id="node4" href="$db/d13/classpocketmine_1_1item_1_1_chain_chestplate.html" title="{pocketmine\\item\\ChainChestplate\n||+ __construct()\l}" alt="" coords="235,683,473,760"/>
+<area shape="rect" id="node5" href="$d3/dfd/classpocketmine_1_1item_1_1_chain_helmet.html" title="{pocketmine\\item\\ChainHelmet\n||+ __construct()\l}" alt="" coords="498,683,715,760"/>
+<area shape="rect" id="node6" href="$d0/dd4/classpocketmine_1_1item_1_1_chain_leggings.html" title="{pocketmine\\item\\ChainLeggings\n||+ __construct()\l}" alt="" coords="740,683,967,760"/>
+<area shape="rect" id="node7" href="$dc/d4f/classpocketmine_1_1item_1_1_diamond_boots.html" title="{pocketmine\\item\\DiamondBoots\n||+ __construct()\l}" alt="" coords="991,683,1220,760"/>
+<area shape="rect" id="node8" href="$d9/d62/classpocketmine_1_1item_1_1_diamond_chestplate.html" title="{pocketmine\\item\\DiamondChestplate\n||+ __construct()\l}" alt="" coords="1244,683,1504,760"/>
+<area shape="rect" id="node9" href="$d9/da1/classpocketmine_1_1item_1_1_diamond_helmet.html" title="{pocketmine\\item\\DiamondHelmet\n||+ __construct()\l}" alt="" coords="1530,683,1768,760"/>
+<area shape="rect" id="node10" href="$d8/d7c/classpocketmine_1_1item_1_1_diamond_leggings.html" title="{pocketmine\\item\\DiamondLeggings\n||+ __construct()\l}" alt="" coords="1793,683,2041,760"/>
+<area shape="rect" id="node11" href="$dc/da8/classpocketmine_1_1item_1_1_gold_boots.html" title="{pocketmine\\item\\GoldBoots\n||+ __construct()\l}" alt="" coords="2065,683,2264,760"/>
+<area shape="rect" id="node12" href="$d8/dd3/classpocketmine_1_1item_1_1_gold_chestplate.html" title="{pocketmine\\item\\GoldChestplate\n||+ __construct()\l}" alt="" coords="2289,683,2521,760"/>
+<area shape="rect" id="node13" href="$d5/d3a/classpocketmine_1_1item_1_1_gold_helmet.html" title="{pocketmine\\item\\GoldHelmet\n||+ __construct()\l}" alt="" coords="2545,683,2755,760"/>
+<area shape="rect" id="node14" href="$dc/d08/classpocketmine_1_1item_1_1_gold_leggings.html" title="{pocketmine\\item\\GoldLeggings\n||+ __construct()\l}" alt="" coords="2781,683,3000,760"/>
+<area shape="rect" id="node15" href="$d5/d1d/classpocketmine_1_1item_1_1_iron_boots.html" title="{pocketmine\\item\\IronBoots\n||+ __construct()\l}" alt="" coords="3025,683,3220,760"/>
+<area shape="rect" id="node16" href="$db/df9/classpocketmine_1_1item_1_1_iron_chestplate.html" title="{pocketmine\\item\\IronChestplate\n||+ __construct()\l}" alt="" coords="3244,683,3471,760"/>
+<area shape="rect" id="node17" href="$d8/d32/classpocketmine_1_1item_1_1_iron_helmet.html" title="{pocketmine\\item\\IronHelmet\n||+ __construct()\l}" alt="" coords="3495,683,3700,760"/>
+<area shape="rect" id="node18" href="$db/db2/classpocketmine_1_1item_1_1_iron_leggings.html" title="{pocketmine\\item\\IronLeggings\n||+ __construct()\l}" alt="" coords="3725,683,3939,760"/>
+<area shape="rect" id="node19" href="$d3/d3f/classpocketmine_1_1item_1_1_leather_boots.html" title="{pocketmine\\item\\LeatherBoots\n||+ __construct()\l}" alt="" coords="3963,683,4183,760"/>
+<area shape="rect" id="node20" href="$d8/d05/classpocketmine_1_1item_1_1_leather_cap.html" title="{pocketmine\\item\\LeatherCap\n||+ __construct()\l}" alt="" coords="4208,683,4416,760"/>
+<area shape="rect" id="node21" href="$dd/dd4/classpocketmine_1_1item_1_1_leather_pants.html" title="{pocketmine\\item\\LeatherPants\n||+ __construct()\l}" alt="" coords="4440,683,4659,760"/>
+<area shape="rect" id="node22" href="$da/dbe/classpocketmine_1_1item_1_1_leather_tunic.html" title="{pocketmine\\item\\LeatherTunic\n||+ __construct()\l}" alt="" coords="4683,683,4897,760"/>
+<area shape="rect" id="node2" href="$d5/d8a/classpocketmine_1_1item_1_1_item.html" title="{pocketmine\\item\\Item\n|+ AIR\l+ STONE\l+ GRASS\l+ DIRT\l+ COBBLESTONE\l+ COBBLE\l+ PLANK\l+ PLANKS\l+ WOODEN_PLANK\l+ WOODEN_PLANKS\land 297 more...\l+ $list\l# $block\l# $id\l# $meta\l# $durability\l# $name\l|+ canBeActivated()\l+ __construct()\l+ getCount()\l+ setCount()\l+ getName()\l+ isPlaceable()\l+ getBlock()\l+ getId()\l+ getDamage()\l+ setDamage()\land 15 more...\l+ init()\l+ get()\l+ fromString()\l}" alt="" coords="2447,6,2609,509"/>
+</map>

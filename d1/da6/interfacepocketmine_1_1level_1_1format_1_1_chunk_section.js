@@ -10,6 +10,7 @@ var interfacepocketmine_1_1level_1_1format_1_1_chunk_section =
     [ "getBlockSkyLight", "d1/da6/interfacepocketmine_1_1level_1_1format_1_1_chunk_section.html#a765a1b7dd5062c6daf0f573eefcf8b99", null ],
     [ "getBlockSkyLightColumn", "d1/da6/interfacepocketmine_1_1level_1_1format_1_1_chunk_section.html#a8f07df64334e53a6863518787eb72637", null ],
     [ "getDataArray", "d1/da6/interfacepocketmine_1_1level_1_1format_1_1_chunk_section.html#a904b17a355dd6314d1db52b58581fcac", null ],
+    [ "getFullBlock", "d1/da6/interfacepocketmine_1_1level_1_1format_1_1_chunk_section.html#acc8ffb3d339723fb020577ee191f4c7d", null ],
     [ "getIdArray", "d1/da6/interfacepocketmine_1_1level_1_1format_1_1_chunk_section.html#afc737a4b753ad4a55ef2977ff7f7a330", null ],
     [ "getLightArray", "d1/da6/interfacepocketmine_1_1level_1_1format_1_1_chunk_section.html#aae3294f1f315378b9ae5cc74d115c45c", null ],
     [ "getSkyLightArray", "d1/da6/interfacepocketmine_1_1level_1_1format_1_1_chunk_section.html#a8ef02ac91b03f3010bc37c852578e9db", null ],

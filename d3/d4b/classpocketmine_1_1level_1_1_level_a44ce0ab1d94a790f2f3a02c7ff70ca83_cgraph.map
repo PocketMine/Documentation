@@ -1,4 +1,4 @@
 <map id="pocketmine\level\Level\stopTime" name="pocketmine\level\Level\stopTime">
-<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a1079deee151083b7da76d8dd57f5b2ef" title="pocketmine\\level\\Level\l\\checkTime" alt="" coords="208,5,363,51"/>
-<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#ad56d6a8573f596fddea712bdb171f866" title="pocketmine\\level\\Level\l\\startTime" alt="" coords="411,5,565,51"/>
+<area shape="rect" id="node2" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a787adc6473f820d013965a02196b02a5" title="pocketmine\\level\\Level\l\\sendTime" alt="" coords="222,5,389,46"/>
+<area shape="rect" id="node3" href="$d5/df7/classpocketmine_1_1_server.html#a3f4968a94dbe06c71c5649fd1dd41e7f" title="pocketmine\\Server\\broadcast\lPacket" alt="" coords="437,5,648,46"/>
 </map>

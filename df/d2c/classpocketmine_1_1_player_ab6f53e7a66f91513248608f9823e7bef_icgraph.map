@@ -1,4 +1,4 @@
 <map id="pocketmine\Player\getWindowId" name="pocketmine\Player\getWindowId">
-<area shape="rect" id="node3" href="$dc/d02/classpocketmine_1_1inventory_1_1_container_inventory.html#a8938f6f72d2e2c069f2385db5ac3c7db" title="pocketmine\\inventory\l\\ContainerInventory\\onClose" alt="" coords="265,5,452,51"/>
-<area shape="rect" id="node5" href="$dc/d02/classpocketmine_1_1inventory_1_1_container_inventory.html#aea6c5161d4a1c36119440a95beb7c78c" title="pocketmine\\inventory\l\\ContainerInventory\\onOpen" alt="" coords="267,74,451,121"/>
+<area shape="rect" id="node2" href="$dc/d02/classpocketmine_1_1inventory_1_1_container_inventory.html#a8938f6f72d2e2c069f2385db5ac3c7db" title="pocketmine\\inventory\l\\ContainerInventory\\onClose" alt="" coords="277,5,480,46"/>
+<area shape="rect" id="node3" href="$dc/d02/classpocketmine_1_1inventory_1_1_container_inventory.html#aea6c5161d4a1c36119440a95beb7c78c" title="pocketmine\\inventory\l\\ContainerInventory\\onOpen" alt="" coords="278,70,479,111"/>
 </map>

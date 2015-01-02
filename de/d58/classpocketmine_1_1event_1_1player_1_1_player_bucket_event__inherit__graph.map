@@ -1,0 +1,7 @@
+<map id="pocketmine\event\player\PlayerBucketEvent" name="pocketmine\event\player\PlayerBucketEvent">
+<area shape="rect" id="node5" href="$d9/d39/classpocketmine_1_1event_1_1player_1_1_player_bucket_empty_event.html" title="{pocketmine\\event\\player\l\\PlayerBucketEmptyEvent\n|+ $handlerList\l+ $eventPool\l+ $nextEvent\l|+ __construct()\l}" alt="" coords="8,489,195,610"/>
+<area shape="rect" id="node6" href="$d6/dba/classpocketmine_1_1event_1_1player_1_1_player_bucket_fill_event.html" title="{pocketmine\\event\\player\l\\PlayerBucketFillEvent\n|+ $handlerList\l+ $eventPool\l+ $nextEvent\l|+ __construct()\l}" alt="" coords="219,489,399,610"/>
+<area shape="rect" id="node2" href="$d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html" title="{pocketmine\\event\\player\l\\PlayerEvent\n|# $player\l|+ getPlayer()\l}" alt="" coords="5,147,184,239"/>
+<area shape="rect" id="node3" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ getHandlers()\l}" alt="" coords="6,6,183,98"/>
+<area shape="rect" id="node4" href="$db/d62/interfacepocketmine_1_1event_1_1_cancellable.html" title="{pocketmine\\event\\Cancellable\n||+ isCancelled()\l+ setCancelled()\l}" alt="" coords="209,147,423,239"/>
+</map>

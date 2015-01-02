@@ -1,4 +1,4 @@
 <map id="pocketmine\tile\Furnace\setItem" name="pocketmine\tile\Furnace\setItem">
-<area shape="rect" id="node3" href="$d7/d7c/classpocketmine_1_1tile_1_1_furnace.html#aecbf197a59630a113bf588f85b13b9e0" title="pocketmine\\tile\\Furnace\l\\getSize" alt="" coords="217,5,377,51"/>
-<area shape="rect" id="node5" href="$d7/d7c/classpocketmine_1_1tile_1_1_furnace.html#add0e7f393ff01465894b066b6e1d255c" title="pocketmine\\tile\\Furnace\l\\getSlotIndex" alt="" coords="217,74,377,121"/>
+<area shape="rect" id="node2" href="$d7/d7c/classpocketmine_1_1tile_1_1_furnace.html#aecbf197a59630a113bf588f85b13b9e0" title="pocketmine\\tile\\Furnace\l\\getSize" alt="" coords="230,5,405,46"/>
+<area shape="rect" id="node3" href="$d7/d7c/classpocketmine_1_1tile_1_1_furnace.html#add0e7f393ff01465894b066b6e1d255c" title="pocketmine\\tile\\Furnace\l\\getSlotIndex" alt="" coords="230,70,405,111"/>
 </map>

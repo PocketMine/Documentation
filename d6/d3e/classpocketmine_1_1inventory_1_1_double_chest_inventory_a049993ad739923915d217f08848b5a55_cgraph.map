@@ -1,0 +1,4 @@
+<map id="pocketmine\inventory\DoubleChestInventory\onOpen" name="pocketmine\inventory\DoubleChestInventory\onOpen">
+<area shape="rect" id="node2" href="$d5/df7/classpocketmine_1_1_server.html#a3f4968a94dbe06c71c5649fd1dd41e7f" title="pocketmine\\Server\\broadcast\lPacket" alt="" coords="221,5,432,46"/>
+<area shape="rect" id="node3" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a65b280b6c12e1d4e5bcd4d0de3aa4a71" title="pocketmine\\inventory\l\\BaseInventory\\getViewers" alt="" coords="231,70,422,111"/>
+</map>

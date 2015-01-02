@@ -1,6 +1,6 @@
 <map id="pocketmine\permission\PermissibleBase\hasPermission" name="pocketmine\permission\PermissibleBase\hasPermission">
-<area shape="rect" id="node3" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="280,5,483,35"/>
-<area shape="rect" id="node5" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#a4ab0a470aecab1d94a6b702f4858c9e2" title="pocketmine\\permission\l\\PermissibleBase\\isOp" alt="" coords="304,58,459,105"/>
-<area shape="rect" id="node7" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#ad519cc1b25de3684253dfd13c9b13054" title="pocketmine\\permission\l\\PermissibleBase\\isPermissionSet" alt="" coords="271,127,492,174"/>
-<area shape="rect" id="node9" href="$db/dc3/classpocketmine_1_1permission_1_1_permission.html#a7d2c3cc786d1bba634bb234a8f593a32" title="pocketmine\\permission\l\\Permission\\getName" alt="" coords="543,127,697,174"/>
+<area shape="rect" id="node2" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="290,5,513,32"/>
+<area shape="rect" id="node3" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#a4ab0a470aecab1d94a6b702f4858c9e2" title="pocketmine\\permission\l\\PermissibleBase\\isOp" alt="" coords="316,57,487,98"/>
+<area shape="rect" id="node4" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#ad519cc1b25de3684253dfd13c9b13054" title="pocketmine\\permission\l\\PermissibleBase\\isPermissionSet" alt="" coords="283,122,520,163"/>
+<area shape="rect" id="node5" href="$db/dc3/classpocketmine_1_1permission_1_1_permission.html#a7d2c3cc786d1bba634bb234a8f593a32" title="pocketmine\\permission\l\\Permission\\getName" alt="" coords="568,122,739,163"/>
 </map>

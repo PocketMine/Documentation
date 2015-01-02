@@ -1,6 +1,6 @@
 <map id="pocketmine\level\format\mcregion\McRegion\isChunkGenerated" name="pocketmine\level\format\mcregion\McRegion\isChunkGenerated">
-<area shape="rect" id="node3" href="$d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region.html#a27e010e8d3d98672b3613fc7c0a4e5c2" title="pocketmine\\level\\format\l\\mcregion\\McRegion\\getChunk" alt="" coords="309,51,512,98"/>
-<area shape="rect" id="node10" href="$d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region.html#a75f2b90d7bf8615fab30508983c0d020" title="pocketmine\\level\\format\l\\mcregion\\McRegion\\getRegion" alt="" coords="816,86,1021,133"/>
-<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a4be83538c608928a193884ea26010d96" title="pocketmine\\level\\Level\l\\chunkHash" alt="" coords="841,5,996,51"/>
-<area shape="rect" id="node7" href="$d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region.html#adb792b4875655b069461ff49c2854e62" title="pocketmine\\level\\format\l\\mcregion\\McRegion\\loadChunk" alt="" coords="560,51,768,98"/>
+<area shape="rect" id="node2" href="$d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region.html#a27e010e8d3d98672b3613fc7c0a4e5c2" title="pocketmine\\level\\format\l\\mcregion\\McRegion\\getChunk" alt="" coords="326,28,541,70"/>
+<area shape="rect" id="node5" href="$d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region.html#a75f2b90d7bf8615fab30508983c0d020" title="pocketmine\\level\\format\l\\mcregion\\McRegion\\getRegion" alt="" coords="859,83,1077,124"/>
+<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a4be83538c608928a193884ea26010d96" title="pocketmine\\level\\Level\l\\chunkHash" alt="" coords="1126,24,1293,66"/>
+<area shape="rect" id="node4" href="$d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region.html#adb792b4875655b069461ff49c2854e62" title="pocketmine\\level\\format\l\\mcregion\\McRegion\\loadChunk" alt="" coords="589,28,811,70"/>
 </map>

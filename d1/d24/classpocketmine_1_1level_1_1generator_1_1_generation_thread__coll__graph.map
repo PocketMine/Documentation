@@ -1,5 +1,3 @@
 <map id="pocketmine\level\generator\GenerationThread" name="pocketmine\level\generator\GenerationThread">
-<area shape="rect" id="node2" href="$d1/d31/classpocketmine_1_1_thread.html" title="{pocketmine\\Thread\n||+ start()\l}" alt="" coords="93,752,227,837"/>
-<area shape="rect" id="node4" href="$d8/d18/class_thread.html" title="{Thread\n||+ detach()\l+ getCreatorId()\l+ getThreadId()\l+ isJoined()\l+ isStarted()\l+ join()\l+ kill()\l+ start()\l+ getCurrentThread()\l+ getCurrentThreadId()\l+ globally()\l}" alt="" coords="83,445,237,704"/>
-<area shape="rect" id="node6" href="$d0/d82/class_threaded.html" title="{Threaded\n||+ chunk()\l+ count()\l+ getTerminationInfo()\l+ isRunning()\l+ isTerminated()\l+ isWaiting()\l+ lock()\l+ merge()\l+ notify()\l+ offsetGet()\land 9 more...\l}" alt="" coords="85,139,235,397"/>
+<area shape="rect" id="node2" href="$d1/d31/classpocketmine_1_1_thread.html" title="{pocketmine\\Thread\n||+ start()\l}" alt="" coords="35,131,180,208"/>
 </map>

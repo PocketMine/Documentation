@@ -37,6 +37,7 @@ var namespacepocketmine_1_1network_1_1protocol =
     [ "RespawnPacket", "d0/dc6/classpocketmine_1_1network_1_1protocol_1_1_respawn_packet.html", "d0/dc6/classpocketmine_1_1network_1_1protocol_1_1_respawn_packet" ],
     [ "RotateHeadPacket", "de/df9/classpocketmine_1_1network_1_1protocol_1_1_rotate_head_packet.html", "de/df9/classpocketmine_1_1network_1_1protocol_1_1_rotate_head_packet" ],
     [ "SendInventoryPacket", "d4/d02/classpocketmine_1_1network_1_1protocol_1_1_send_inventory_packet.html", "d4/d02/classpocketmine_1_1network_1_1protocol_1_1_send_inventory_packet" ],
+    [ "SetDifficultyPacket", "db/d4a/classpocketmine_1_1network_1_1protocol_1_1_set_difficulty_packet.html", "db/d4a/classpocketmine_1_1network_1_1protocol_1_1_set_difficulty_packet" ],
     [ "SetEntityDataPacket", "d9/d80/classpocketmine_1_1network_1_1protocol_1_1_set_entity_data_packet.html", "d9/d80/classpocketmine_1_1network_1_1protocol_1_1_set_entity_data_packet" ],
     [ "SetEntityMotionPacket", "da/dec/classpocketmine_1_1network_1_1protocol_1_1_set_entity_motion_packet.html", "da/dec/classpocketmine_1_1network_1_1protocol_1_1_set_entity_motion_packet" ],
     [ "SetHealthPacket", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet" ],

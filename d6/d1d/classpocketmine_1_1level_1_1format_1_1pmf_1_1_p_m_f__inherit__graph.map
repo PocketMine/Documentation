@@ -1,3 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$d1/df9/classpocketmine_1_1level_1_1format_1_1pmf_1_1_level_format.html" title="{pocketmine\\level\\format\\pmf\\LevelFormat\n|+ VERSION\l+ ZLIB_LEVEL\l+ ZLIB_ENCODING\l+ $level\l+ $levelData\l+ $isLoaded\l+ $isGenerating\l|+ getData()\l+ setData()\l+ closeLevel()\l+ __construct()\l+ saveData()\l+ generateChunk()\l+ populateChunk()\l+ loadChunk()\l+ unloadChunk()\l+ isChunkLoaded()\land 19 more...+ getIndex()\l+ getXZ()\l# parseLevel()\l# cleanChunk()\l# fillMiniChunk()\l}" alt="" coords="5,347,267,779"/>
-</map>

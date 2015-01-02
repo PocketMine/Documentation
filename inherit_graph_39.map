@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$dd/de7/classpocketmine_1_1level_1_1generator_1_1object_1_1_ore_type.html" title="pocketmine\\level\\generator\l\\object\\OreType" alt="" coords="5,5,184,51"/>
+<area shape="rect" id="node1" href="$db/de9/classpocketmine_1_1level_1_1generator_1_1populator_1_1_populator.html" title="pocketmine\\level\\generator\l\\populator\\Populator" alt="" coords="5,135,203,177"/>
+<area shape="rect" id="node2" href="$dc/d88/classpocketmine_1_1level_1_1generator_1_1populator_1_1_mineshaft.html" title="pocketmine\\level\\generator\l\\populator\\Mineshaft" alt="" coords="251,5,448,46"/>
+<area shape="rect" id="node3" href="$d4/d19/classpocketmine_1_1level_1_1generator_1_1populator_1_1_ore.html" title="pocketmine\\level\\generator\l\\populator\\Ore" alt="" coords="251,70,448,111"/>
+<area shape="rect" id="node4" href="$df/dd0/classpocketmine_1_1level_1_1generator_1_1populator_1_1_pond.html" title="pocketmine\\level\\generator\l\\populator\\Pond" alt="" coords="251,135,448,177"/>
+<area shape="rect" id="node5" href="$d5/d9e/classpocketmine_1_1level_1_1generator_1_1populator_1_1_tall_grass.html" title="pocketmine\\level\\generator\l\\populator\\TallGrass" alt="" coords="251,201,448,242"/>
+<area shape="rect" id="node6" href="$d5/d35/classpocketmine_1_1level_1_1generator_1_1populator_1_1_tree.html" title="pocketmine\\level\\generator\l\\populator\\Tree" alt="" coords="251,266,448,307"/>
 </map>

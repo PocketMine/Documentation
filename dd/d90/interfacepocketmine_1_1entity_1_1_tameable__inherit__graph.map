@@ -1,4 +1,4 @@
 <map id="pocketmine\entity\Tameable" name="pocketmine\entity\Tameable">
-<area shape="rect" id="node3" href="$d3/d91/classpocketmine_1_1entity_1_1_ocelot.html" title="{pocketmine\\entity\\Ocelot\n||}" alt="" coords="5,139,171,224"/>
-<area shape="rect" id="node5" href="$d1/d54/classpocketmine_1_1entity_1_1_wolf.html" title="{pocketmine\\entity\\Wolf\n||}" alt="" coords="195,139,349,224"/>
+<area shape="rect" id="node2" href="$de/d7f/classpocketmine_1_1entity_1_1_ozelot.html" title="{pocketmine\\entity\\Ozelot\n||}" alt="" coords="5,131,187,208"/>
+<area shape="rect" id="node3" href="$d1/d54/classpocketmine_1_1entity_1_1_wolf.html" title="{pocketmine\\entity\\Wolf\n||}" alt="" coords="211,131,377,208"/>
 </map>

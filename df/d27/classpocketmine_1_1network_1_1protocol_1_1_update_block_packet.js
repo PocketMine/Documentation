@@ -1,5 +1,6 @@
 var classpocketmine_1_1network_1_1protocol_1_1_update_block_packet =
 [
+    [ "clean", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a2ab5e54541dfab853409ab20faae5d56", null ],
     [ "decode", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#aa37f00955b5b4dcb3372912de1a7d8a6", null ],
     [ "encode", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a40366e01859514f0554f955c44df257b", null ],
     [ "feof", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a38b7693bb0d3b4e3478f8e9afdc43609", null ],
@@ -9,7 +10,7 @@ var classpocketmine_1_1network_1_1protocol_1_1_update_block_packet =
     [ "getDataArray", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#aeb79aff9741296738ba592888fadf76a", null ],
     [ "getFloat", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a8fe27f4f9c07d42ede630b55e3890084", null ],
     [ "getInt", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#aa8e432c32d0d2df1d6499091b97c30e9", null ],
-    [ "getLong", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a4787f7b0980de0d0a21910c65619e682", null ],
+    [ "getLong", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a46607817bbb0ca54d2bd2918538ce980", null ],
     [ "getLTriad", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#aa973f04ced929c90b608e12e866b5800", null ],
     [ "getShort", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a91e87d8808781a10cbcc50e694484341", null ],
     [ "getSlot", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a21bc1362ec76e12ace742e5133d0f2c5", null ],
@@ -31,7 +32,10 @@ var classpocketmine_1_1network_1_1protocol_1_1_update_block_packet =
     [ "setBuffer", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a165102568c1290cdfa2e9a3cda814466", null ],
     [ "$block", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a10395cfd24550b8d2c9944b4ae7005d1", null ],
     [ "$buffer", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a87c6760a0f385b960a81d4f1fe57278d", null ],
+    [ "$isEncoded", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#af5101c75e3a3da5d36158558ae1d75ab", null ],
     [ "$meta", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a3a0f5d1db98e6aef88d45aeffa62286c", null ],
+    [ "$next", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#aa7d40329fb2a72e4fb286fbac5509752", null ],
+    [ "$pool", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#ae31bb69bb17e5cf495bb2d2703c53778", null ],
     [ "$x", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#af5658a8c56c26221996acee21e67d7a3", null ],
     [ "$y", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a74a8ff4765c5877a434dae2b1db9867b", null ],
     [ "$z", "df/d27/classpocketmine_1_1network_1_1protocol_1_1_update_block_packet.html#a8ee2d934d82de51eafb62e26223b6869", null ]

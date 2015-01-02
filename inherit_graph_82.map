@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node3" href="$df/dad/classpocketmine_1_1utils_1_1_reverse_priority_queue.html" title="pocketmine\\utils\\Reverse\lPriorityQueue" alt="" coords="173,5,344,51"/>
+<area shape="rect" id="node2" href="$d3/d99/classpocketmine_1_1utils_1_1_chunk_exception.html" title="pocketmine\\utils\\ChunkException" alt="" coords="190,5,423,32"/>
+<area shape="rect" id="node3" href="$d8/d65/classpocketmine_1_1utils_1_1_server_exception.html" title="pocketmine\\utils\\ServerException" alt="" coords="189,56,424,83"/>
+<area shape="rect" id="node4" href="$d2/deb/classpocketmine_1_1utils_1_1_level_exception.html" title="pocketmine\\utils\\LevelException" alt="" coords="475,31,701,57"/>
+<area shape="rect" id="node5" href="$d4/d99/classpocketmine_1_1utils_1_1_plugin_exception.html" title="pocketmine\\utils\\PluginException" alt="" coords="473,81,703,108"/>
 </map>

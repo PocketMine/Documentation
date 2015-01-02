@@ -1,7 +1,6 @@
 <map id="pocketmine\permission\PermissibleBase\removeAttachment" name="pocketmine\permission\PermissibleBase\removeAttachment">
-<area shape="rect" id="node3" href="$d0/d95/classpocketmine_1_1permission_1_1_permission_attachment.html#a66f2f58a4900ba2e523245ad773af70d" title="pocketmine\\permission\l\\PermissionAttachment\l\\getRemovalCallback" alt="" coords="311,5,468,69"/>
-<area shape="rect" id="node5" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#ab66b7f051852303164883a77fe546ea1" title="pocketmine\\permission\l\\PermissibleBase\\recalculate\lPermissions" alt="" coords="295,93,484,157"/>
-<area shape="rect" id="node7" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#aa78b67ae93c13a60a72e7cae1665e0e4" title="pocketmine\\permission\l\\PermissibleBase\\calculateChild\lPermissions" alt="" coords="533,24,744,88"/>
-<area shape="rect" id="node9" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="792,76,995,105"/>
-<area shape="rect" id="node12" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#a4ab0a470aecab1d94a6b702f4858c9e2" title="pocketmine\\permission\l\\PermissibleBase\\isOp" alt="" coords="561,162,716,209"/>
+<area shape="rect" id="node2" href="$d0/d95/classpocketmine_1_1permission_1_1_permission_attachment.html#a66f2f58a4900ba2e523245ad773af70d" title="pocketmine\\permission\l\\PermissionAttachment\l\\getRemovalCallback" alt="" coords="331,5,503,61"/>
+<area shape="rect" id="node3" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#ab66b7f051852303164883a77fe546ea1" title="pocketmine\\permission\l\\PermissibleBase\\recalculate\lPermissions" alt="" coords="315,85,520,141"/>
+<area shape="rect" id="node4" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="569,71,791,97"/>
+<area shape="rect" id="node5" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#a4ab0a470aecab1d94a6b702f4858c9e2" title="pocketmine\\permission\l\\PermissibleBase\\isOp" alt="" coords="595,122,765,163"/>
 </map>

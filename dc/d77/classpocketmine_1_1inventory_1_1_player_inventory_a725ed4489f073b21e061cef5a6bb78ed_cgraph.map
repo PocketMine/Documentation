@@ -1,5 +1,5 @@
 <map id="pocketmine\inventory\PlayerInventory\sendHeldItem" name="pocketmine\inventory\PlayerInventory\sendHeldItem">
-<area shape="rect" id="node3" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#af3d72b8ec9fec0a90f4d1a47057a76b2" title="pocketmine\\inventory\l\\PlayerInventory\\getHolder" alt="" coords="508,5,684,51"/>
-<area shape="rect" id="node5" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#ac0fe6ab11ec3f4f792474dcf537819dc" title="pocketmine\\inventory\l\\PlayerInventory\\sendContents" alt="" coords="256,65,459,111"/>
-<area shape="rect" id="node8" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a8bc94c0515906b5c1f3af5600d89b3df" title="pocketmine\\inventory\l\\BaseInventory\\getItem" alt="" coords="517,74,675,121"/>
+<area shape="rect" id="node2" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#af3d72b8ec9fec0a90f4d1a47057a76b2" title="pocketmine\\inventory\l\\PlayerInventory\\getHolder" alt="" coords="539,5,730,46"/>
+<area shape="rect" id="node3" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#ac0fe6ab11ec3f4f792474dcf537819dc" title="pocketmine\\inventory\l\\PlayerInventory\\sendContents" alt="" coords="273,63,490,105"/>
+<area shape="rect" id="node4" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a8bc94c0515906b5c1f3af5600d89b3df" title="pocketmine\\inventory\l\\BaseInventory\\getItem" alt="" coords="549,70,720,111"/>
 </map>

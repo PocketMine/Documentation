@@ -1,6 +1,7 @@
 var classpocketmine_1_1scheduler_1_1_callback_task =
 [
     [ "__construct", "df/d63/classpocketmine_1_1scheduler_1_1_callback_task.html#a9c352dc0d77ee60f12408bdc73caffbd", null ],
+    [ "getCallable", "df/d63/classpocketmine_1_1scheduler_1_1_callback_task.html#a34c57b5e0cf6c87c8ebae60041f6208f", null ],
     [ "getHandler", "df/d63/classpocketmine_1_1scheduler_1_1_callback_task.html#a153c9206c78219aa5ce67f6397bd385e", null ],
     [ "getTaskId", "df/d63/classpocketmine_1_1scheduler_1_1_callback_task.html#ae7663c3ff9b6c6948c40ea9581ed9398", null ],
     [ "onCancel", "df/d63/classpocketmine_1_1scheduler_1_1_callback_task.html#a6a74daa0d11c2b41aff8beaca7b9d6ab", null ],

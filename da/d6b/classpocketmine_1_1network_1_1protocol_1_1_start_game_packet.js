@@ -1,5 +1,6 @@
 var classpocketmine_1_1network_1_1protocol_1_1_start_game_packet =
 [
+    [ "clean", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#a2ab5e54541dfab853409ab20faae5d56", null ],
     [ "decode", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#a8156023eaa715aaf72cf71aa64d6a98b", null ],
     [ "encode", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#aefb527130923a0ab393239d79fc07427", null ],
     [ "feof", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#a38b7693bb0d3b4e3478f8e9afdc43609", null ],
@@ -9,7 +10,7 @@ var classpocketmine_1_1network_1_1protocol_1_1_start_game_packet =
     [ "getDataArray", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#aeb79aff9741296738ba592888fadf76a", null ],
     [ "getFloat", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#a8fe27f4f9c07d42ede630b55e3890084", null ],
     [ "getInt", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#aa8e432c32d0d2df1d6499091b97c30e9", null ],
-    [ "getLong", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#a4787f7b0980de0d0a21910c65619e682", null ],
+    [ "getLong", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#a46607817bbb0ca54d2bd2918538ce980", null ],
     [ "getLTriad", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#aa973f04ced929c90b608e12e866b5800", null ],
     [ "getShort", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#a91e87d8808781a10cbcc50e694484341", null ],
     [ "getSlot", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#a21bc1362ec76e12ace742e5133d0f2c5", null ],
@@ -33,6 +34,9 @@ var classpocketmine_1_1network_1_1protocol_1_1_start_game_packet =
     [ "$eid", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#ae17612918e67ecb15a746c2d83689e05", null ],
     [ "$gamemode", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#a68f298679ebf9e9f80b28af6a85f060c", null ],
     [ "$generator", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#a3a4b1d4e3ac4ff36c069508cbeec1d2d", null ],
+    [ "$isEncoded", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#af5101c75e3a3da5d36158558ae1d75ab", null ],
+    [ "$next", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#ac30021bac9423d4dfe6e612ecb2071e4", null ],
+    [ "$pool", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#a12096ef10c36d167fe3da3f7d0e3ff1b", null ],
     [ "$seed", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#a1c9c30c87c6dbf3eaea4d7945a0aebdf", null ],
     [ "$spawnX", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#aed8169ac5754cbe7829c39b5ec57e602", null ],
     [ "$spawnY", "da/d6b/classpocketmine_1_1network_1_1protocol_1_1_start_game_packet.html#a033b22b1949d1c922fd253257f2bb465", null ],

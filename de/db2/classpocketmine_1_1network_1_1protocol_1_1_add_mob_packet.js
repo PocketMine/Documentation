@@ -1,5 +1,6 @@
 var classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet =
 [
+    [ "clean", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a2ab5e54541dfab853409ab20faae5d56", null ],
     [ "decode", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a5b2ee20479a35dfb3e41737a23144247", null ],
     [ "encode", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#aec08df5677bf735dac72b2bd16c16ad6", null ],
     [ "feof", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a38b7693bb0d3b4e3478f8e9afdc43609", null ],
@@ -9,7 +10,7 @@ var classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet =
     [ "getDataArray", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#aeb79aff9741296738ba592888fadf76a", null ],
     [ "getFloat", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a8fe27f4f9c07d42ede630b55e3890084", null ],
     [ "getInt", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#aa8e432c32d0d2df1d6499091b97c30e9", null ],
-    [ "getLong", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a4787f7b0980de0d0a21910c65619e682", null ],
+    [ "getLong", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a46607817bbb0ca54d2bd2918538ce980", null ],
     [ "getLTriad", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#aa973f04ced929c90b608e12e866b5800", null ],
     [ "getShort", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a91e87d8808781a10cbcc50e694484341", null ],
     [ "getSlot", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a21bc1362ec76e12ace742e5133d0f2c5", null ],
@@ -31,8 +32,11 @@ var classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet =
     [ "setBuffer", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a165102568c1290cdfa2e9a3cda814466", null ],
     [ "$buffer", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a87c6760a0f385b960a81d4f1fe57278d", null ],
     [ "$eid", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#acfdbd8bb7177ea40045c23325f9c0d07", null ],
+    [ "$isEncoded", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#af5101c75e3a3da5d36158558ae1d75ab", null ],
     [ "$metadata", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a3a45ca5f49350789c27baa42669fe8be", null ],
+    [ "$next", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a8ee10137252a242269064c907ba95921", null ],
     [ "$pitch", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a6bc604c80eebba67cac4256a4178ada4", null ],
+    [ "$pool", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a0e25a7e7df7136cd7d4365e5982855d0", null ],
     [ "$type", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#a1908f7dbb3b669e4e44a8bab8c83b881", null ],
     [ "$x", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#aa3d0fa9c2f989999d35ae797bece9e4d", null ],
     [ "$y", "de/db2/classpocketmine_1_1network_1_1protocol_1_1_add_mob_packet.html#ab49359291e1cfb51851f01ed3a8d8038", null ],

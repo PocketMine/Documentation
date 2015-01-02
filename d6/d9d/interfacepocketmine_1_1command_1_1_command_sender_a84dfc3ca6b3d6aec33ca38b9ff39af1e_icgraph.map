@@ -1,5 +1,5 @@
 <map id="pocketmine\command\CommandSender\sendMessage" name="pocketmine\command\CommandSender\sendMessage">
-<area shape="rect" id="node3" href="$d6/df1/classpocketmine_1_1command_1_1_command.html#a073c7631b60f7760565da0147a7c85ef" title="pocketmine\\command\l\\Command\\broadcastCommandMessage" alt="" coords="268,5,527,51"/>
-<area shape="rect" id="node5" href="$d5/df7/classpocketmine_1_1_server.html#a5dcbe6191809a32aa98358e68c115197" title="pocketmine\\Server\\dispatch\lCommand" alt="" coords="305,74,489,121"/>
-<area shape="rect" id="node7" href="$d6/df1/classpocketmine_1_1command_1_1_command.html#a26a56d9c918a77a565e9591ed0386928" title="pocketmine\\command\l\\Command\\testPermission" alt="" coords="309,143,485,190"/>
+<area shape="rect" id="node2" href="$d6/df1/classpocketmine_1_1command_1_1_command.html#a073c7631b60f7760565da0147a7c85ef" title="pocketmine\\command\l\\Command\\broadcastCommandMessage" alt="" coords="285,5,571,46"/>
+<area shape="rect" id="node3" href="$d5/df7/classpocketmine_1_1_server.html#a5dcbe6191809a32aa98358e68c115197" title="pocketmine\\Server\\dispatch\lCommand" alt="" coords="327,70,529,111"/>
+<area shape="rect" id="node4" href="$d6/df1/classpocketmine_1_1command_1_1_command.html#a26a56d9c918a77a565e9591ed0386928" title="pocketmine\\command\l\\Command\\testPermission" alt="" coords="332,135,524,177"/>
 </map>

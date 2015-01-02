@@ -1,5 +1,5 @@
 <map id="pocketmine\utils\Config\save" name="pocketmine\utils\Config\save">
-<area shape="rect" id="node3" href="$d6/d2c/classpocketmine_1_1utils_1_1_config.html#abac0192f001a0ebc9f8f95c0f77fd25d" title="pocketmine\\utils\\Config\\load" alt="" coords="245,48,432,77"/>
-<area shape="rect" id="node5" href="$d6/d2c/classpocketmine_1_1utils_1_1_config.html#a4f4aee89fc088cd8a51a3fd36b62ad06" title="pocketmine\\utils\\Config\l\\__construct" alt="" coords="481,5,639,51"/>
-<area shape="rect" id="node7" href="$d6/d2c/classpocketmine_1_1utils_1_1_config.html#aac376eaf33921376c775496c910b8369" title="pocketmine\\utils\\Config\l\\reload" alt="" coords="481,74,639,121"/>
+<area shape="rect" id="node2" href="$d6/d2c/classpocketmine_1_1utils_1_1_config.html#abac0192f001a0ebc9f8f95c0f77fd25d" title="pocketmine\\utils\\Config\\load" alt="" coords="259,45,461,72"/>
+<area shape="rect" id="node3" href="$d6/d2c/classpocketmine_1_1utils_1_1_config.html#a4f4aee89fc088cd8a51a3fd36b62ad06" title="pocketmine\\utils\\Config\l\\__construct" alt="" coords="509,5,680,46"/>
+<area shape="rect" id="node4" href="$d6/d2c/classpocketmine_1_1utils_1_1_config.html#aac376eaf33921376c775496c910b8369" title="pocketmine\\utils\\Config\l\\reload" alt="" coords="509,70,680,111"/>
 </map>

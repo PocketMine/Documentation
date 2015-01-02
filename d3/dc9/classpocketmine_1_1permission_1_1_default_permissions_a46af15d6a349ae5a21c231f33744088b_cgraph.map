@@ -1,4 +1,4 @@
 <map id="pocketmine\permission\DefaultPermissions\registerPermission" name="pocketmine\permission\DefaultPermissions\registerPermission">
-<area shape="rect" id="node3" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="240,5,443,35"/>
-<area shape="rect" id="node5" href="$db/dc3/classpocketmine_1_1permission_1_1_permission.html#a7d2c3cc786d1bba634bb234a8f593a32" title="pocketmine\\permission\l\\Permission\\getName" alt="" coords="264,58,419,105"/>
+<area shape="rect" id="node2" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="257,5,479,32"/>
+<area shape="rect" id="node3" href="$db/dc3/classpocketmine_1_1permission_1_1_permission.html#a7d2c3cc786d1bba634bb234a8f593a32" title="pocketmine\\permission\l\\Permission\\getName" alt="" coords="283,57,453,98"/>
 </map>

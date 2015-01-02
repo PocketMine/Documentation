@@ -1,6 +1,7 @@
 var classpocketmine_1_1network_1_1_rak_lib_interface =
 [
     [ "__construct", "db/dd5/classpocketmine_1_1network_1_1_rak_lib_interface.html#a3d6228ff1727c92f8e927b8b69c41fd8", null ],
+    [ "blockAddress", "db/dd5/classpocketmine_1_1network_1_1_rak_lib_interface.html#a44551d6e1e437a57f97aa8a83c1c7771", null ],
     [ "close", "db/dd5/classpocketmine_1_1network_1_1_rak_lib_interface.html#a948e5edd8f13671619ed00a73fdd5217", null ],
     [ "closeSession", "db/dd5/classpocketmine_1_1network_1_1_rak_lib_interface.html#a39aed7dac5c51594099381891290f4be", null ],
     [ "doTick", "db/dd5/classpocketmine_1_1network_1_1_rak_lib_interface.html#a11ef95559cfa08e729ad933ca027586e", null ],
@@ -15,6 +16,8 @@ var classpocketmine_1_1network_1_1_rak_lib_interface =
     [ "process", "db/dd5/classpocketmine_1_1network_1_1_rak_lib_interface.html#a41d6926c62898249e5e70cd33ff432d8", null ],
     [ "putPacket", "db/dd5/classpocketmine_1_1network_1_1_rak_lib_interface.html#a4b8423199a9c5195ac611d036c175ea5", null ],
     [ "putRaw", "db/dd5/classpocketmine_1_1network_1_1_rak_lib_interface.html#aec5fa08bdf37dc6e0b7f9777935fa23f", null ],
+    [ "registerPacket", "db/dd5/classpocketmine_1_1network_1_1_rak_lib_interface.html#a4a6dd158c85d101502876dd9c9d104fe", null ],
     [ "setName", "db/dd5/classpocketmine_1_1network_1_1_rak_lib_interface.html#a814450ce3ded1ca4d42198c039061ac3", null ],
+    [ "setPortCheck", "db/dd5/classpocketmine_1_1network_1_1_rak_lib_interface.html#a39c459a744aa8dd58c606fb10c706e4f", null ],
     [ "shutdown", "db/dd5/classpocketmine_1_1network_1_1_rak_lib_interface.html#a24ec34b9d90ad9320c737dd8af9da4b8", null ]
 ];

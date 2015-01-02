@@ -1,5 +1,0 @@
-<map id="raklib\server\ServerHandler\handlePacket" name="raklib\server\ServerHandler\handlePacket">
-<area shape="rect" id="node3" href="$d2/df9/classraklib_1_1protocol_1_1_encapsulated_packet.html#aa65e2b6e6882b594eb7c58bf13c44f89" title="raklib\\protocol\\Encapsulated\lPacket\\fromBinary" alt="" coords="235,53,421,99"/>
-<area shape="rect" id="node5" href="$d5/db2/classraklib_1_1_binary.html#af5d51005a47534c363abe8c219261191" title="raklib\\Binary\\readShort" alt="" coords="469,5,624,35"/>
-<area shape="rect" id="node7" href="$d5/db2/classraklib_1_1_binary.html#a1c6cdbd7ce7a426a9a8469934d3f15c4" title="raklib\\Binary\\readTriad" alt="" coords="471,61,623,91"/>
-</map>

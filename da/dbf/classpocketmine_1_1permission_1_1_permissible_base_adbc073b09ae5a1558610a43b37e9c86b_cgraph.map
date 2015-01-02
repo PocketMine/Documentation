@@ -1,7 +1,6 @@
 <map id="pocketmine\permission\PermissibleBase\addAttachment" name="pocketmine\permission\PermissibleBase\addAttachment">
-<area shape="rect" id="node3" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html#ab7ef321b514dbd4462709e5b23278b64" title="pocketmine\\plugin\\Plugin\l\\getDescription" alt="" coords="283,5,448,51"/>
-<area shape="rect" id="node5" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#ab66b7f051852303164883a77fe546ea1" title="pocketmine\\permission\l\\PermissibleBase\\recalculate\lPermissions" alt="" coords="271,75,460,139"/>
-<area shape="rect" id="node7" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="768,101,971,131"/>
-<area shape="rect" id="node9" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#a4ab0a470aecab1d94a6b702f4858c9e2" title="pocketmine\\permission\l\\PermissibleBase\\isOp" alt="" coords="537,83,692,130"/>
-<area shape="rect" id="node11" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#aa78b67ae93c13a60a72e7cae1665e0e4" title="pocketmine\\permission\l\\PermissibleBase\\calculateChild\lPermissions" alt="" coords="509,153,720,217"/>
+<area shape="rect" id="node2" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html#ab7ef321b514dbd4462709e5b23278b64" title="pocketmine\\plugin\\Plugin\l\\getDescription" alt="" coords="300,5,481,46"/>
+<area shape="rect" id="node3" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#ab66b7f051852303164883a77fe546ea1" title="pocketmine\\permission\l\\PermissibleBase\\recalculate\lPermissions" alt="" coords="288,69,493,125"/>
+<area shape="rect" id="node4" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="542,55,765,81"/>
+<area shape="rect" id="node5" href="$da/dbf/classpocketmine_1_1permission_1_1_permissible_base.html#a4ab0a470aecab1d94a6b702f4858c9e2" title="pocketmine\\permission\l\\PermissibleBase\\isOp" alt="" coords="568,106,739,147"/>
 </map>

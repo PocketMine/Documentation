@@ -1,4 +1,4 @@
 <map id="pocketmine\entity\Explosive" name="pocketmine\entity\Explosive">
-<area shape="rect" id="node3" href="$de/d3d/classpocketmine_1_1entity_1_1_creeper.html" title="{pocketmine\\entity\\Creeper\n||}" alt="" coords="5,139,179,224"/>
-<area shape="rect" id="node5" href="$dd/d27/classpocketmine_1_1entity_1_1_t_n_t_primed.html" title="{pocketmine\\entity\\TNTPrimed\n||}" alt="" coords="203,139,397,224"/>
+<area shape="rect" id="node2" href="$de/d3d/classpocketmine_1_1entity_1_1_creeper.html" title="{pocketmine\\entity\\Creeper\n||}" alt="" coords="5,241,197,319"/>
+<area shape="rect" id="node3" href="$d5/df7/classpocketmine_1_1entity_1_1_primed_t_n_t.html" title="{pocketmine\\entity\\PrimedTNT\n|+ NETWORK_ID\l+ $width\l+ $length\l+ $height\l+ $canCollide\l# $gravity\l# $drag\l# $fuse\l|+ canCollideWith()\l+ getData()\l+ saveNBT()\l+ onUpdate()\l+ attack()\l+ heal()\l+ explode()\l+ spawnTo()\l# initEntity()\l}" alt="" coords="221,131,431,429"/>
 </map>

@@ -1,0 +1,4 @@
+<map id="pocketmine\entity\Projectile\onUpdate" name="pocketmine\entity\Projectile\onUpdate">
+<area shape="rect" id="node2" href="$dc/dba/classpocketmine_1_1level_1_1_moving_object_position.html#ac2a664acf3b78832cc6e5d75e91596b2" title="pocketmine\\level\\MovingObject\lPosition\\fromEntity" alt="" coords="254,5,474,46"/>
+<area shape="rect" id="node3" href="$db/d9b/classpocketmine_1_1level_1_1_position.html#ae667e74646ed1b8d04db126265d75955" title="pocketmine\\level\\Position\l\\getLevel" alt="" coords="272,70,456,111"/>
+</map>

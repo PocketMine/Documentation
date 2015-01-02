@@ -1,0 +1,6 @@
+<map id="pocketmine\level\format\FullChunk\unload" name="pocketmine\level\format\FullChunk\unload">
+<area shape="rect" id="node2" href="$d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region.html#a9bb6e27addea14e16814b160f2b274ea" title="pocketmine\\level\\format\l\\mcregion\\McRegion\\unloadChunk" alt="" coords="232,5,469,46"/>
+<area shape="rect" id="node4" href="$d2/db3/classpocketmine_1_1level_1_1format_1_1leveldb_1_1_level_d_b.html#a6cde3f51d37a8e9e902b5cdf2f524b18" title="pocketmine\\level\\format\l\\leveldb\\LevelDB\\unloadChunk" alt="" coords="243,70,458,111"/>
+<area shape="rect" id="node3" href="$d7/d67/classpocketmine_1_1level_1_1format_1_1mcregion_1_1_mc_region.html#a6af3f40ad4eff7971dd4704180b8e127" title="pocketmine\\level\\format\l\\mcregion\\McRegion\\setChunk" alt="" coords="518,5,733,46"/>
+<area shape="rect" id="node5" href="$d2/db3/classpocketmine_1_1level_1_1format_1_1leveldb_1_1_level_d_b.html#a6e53bea34bfb908f315ac00ad03f45f6" title="pocketmine\\level\\format\l\\leveldb\\LevelDB\\setChunk" alt="" coords="530,70,721,111"/>
+</map>

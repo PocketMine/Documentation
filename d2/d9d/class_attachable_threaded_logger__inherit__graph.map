@@ -1,7 +1,0 @@
-<map id="AttachableThreadedLogger" name="AttachableThreadedLogger">
-<area shape="rect" id="node17" href="$d9/d27/classpocketmine_1_1utils_1_1_main_logger.html" title="{pocketmine\\utils\\MainLogger\n|+ $logger\l# $logFile\l# $logStream\l# $shutdown\l# $hasANSI\l# $logDebug\l|+ __construct()\l+ emergency()\l+ alert()\l+ critical()\l+ error()\l+ warning()\l+ notice()\l+ info()\l+ debug()\l+ setLogDebug()\l+ log()\l+ shutdown()\l+ run()\l+ getLogger()\l# send()\l}" alt="" coords="144,1073,331,1487"/>
-<area shape="rect" id="node2" href="$d0/d55/class_threaded_logger.html" title="{ThreadedLogger\n||}" alt="" coords="180,752,295,837"/>
-<area shape="rect" id="node4" href="$d8/d18/class_thread.html" title="{Thread\n||+ detach()\l+ getCreatorId()\l+ getThreadId()\l+ isJoined()\l+ isStarted()\l+ join()\l+ kill()\l+ start()\l+ getCurrentThread()\l+ getCurrentThreadId()\l+ globally()\l}" alt="" coords="83,445,237,704"/>
-<area shape="rect" id="node6" href="$d0/d82/class_threaded.html" title="{Threaded\n||+ chunk()\l+ count()\l+ getTerminationInfo()\l+ isRunning()\l+ isTerminated()\l+ isWaiting()\l+ lock()\l+ merge()\l+ notify()\l+ offsetGet()\land 9 more...\l}" alt="" coords="85,139,235,397"/>
-<area shape="rect" id="node14" href="$d4/d00/interface_logger.html" title="{Logger\n||+ emergency()\l+ alert()\l+ critical()\l+ error()\l+ warning()\l+ notice()\l+ info()\l+ debug()\l+ log()\l}" alt="" coords="261,463,368,687"/>
-</map>

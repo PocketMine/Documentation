@@ -1,4 +1,0 @@
-<map id="AttachableLogger" name="AttachableLogger">
-<area shape="rect" id="node5" href="$de/dc8/classpocketmine_1_1plugin_1_1_plugin_logger.html" title="{pocketmine\\plugin\\Plugin\lLogger\n||+ addAttachment()\l+ removeAttachment()\l+ removeAttachments()\l+ getAttachments()\l+ __construct()\l+ emergency()\l+ alert()\l+ critical()\l+ error()\l+ warning()\l+ notice()\l+ info()\l+ debug()\l+ log()\l}" alt="" coords="5,464,171,792"/>
-<area shape="rect" id="node2" href="$d4/d00/interface_logger.html" title="{Logger\n||+ emergency()\l+ alert()\l+ critical()\l+ error()\l+ warning()\l+ notice()\l+ info()\l+ debug()\l+ log()\l}" alt="" coords="35,5,141,229"/>
-</map>

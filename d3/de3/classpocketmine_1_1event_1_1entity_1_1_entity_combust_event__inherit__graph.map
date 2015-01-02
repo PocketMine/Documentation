@@ -1,0 +1,7 @@
+<map id="pocketmine\event\entity\EntityCombustEvent" name="pocketmine\event\entity\EntityCombustEvent">
+<area shape="rect" id="node5" href="$df/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_combust_by_block_event.html" title="{pocketmine\\event\\entity\l\\EntityCombustByBlockEvent\n|+ $eventPool\l+ $nextEvent\l# $combuster\l|+ __construct()\l+ getCombuster()\l}" alt="" coords="5,501,211,637"/>
+<area shape="rect" id="node6" href="$da/d59/classpocketmine_1_1event_1_1entity_1_1_entity_combust_by_entity_event.html" title="{pocketmine\\event\\entity\l\\EntityCombustByEntityEvent\n|+ $eventPool\l+ $nextEvent\l# $combuster\l|+ __construct()\l+ getCombuster()\l}" alt="" coords="236,501,444,637"/>
+<area shape="rect" id="node2" href="$de/d84/classpocketmine_1_1event_1_1entity_1_1_entity_event.html" title="{pocketmine\\event\\entity\l\\EntityEvent\n|# $entity\l|+ getEntity()\l}" alt="" coords="26,147,203,239"/>
+<area shape="rect" id="node3" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ getHandlers()\l}" alt="" coords="26,6,203,98"/>
+<area shape="rect" id="node4" href="$db/d62/interfacepocketmine_1_1event_1_1_cancellable.html" title="{pocketmine\\event\\Cancellable\n||+ isCancelled()\l+ setCancelled()\l}" alt="" coords="227,147,441,239"/>
+</map>

@@ -1,6 +1,6 @@
 <map id="pocketmine\command\ConsoleCommandSender" name="pocketmine\command\ConsoleCommandSender">
-<area shape="rect" id="node9" href="$d8/dd0/classpocketmine_1_1command_1_1_remote_console_command_sender.html" title="{pocketmine\\command\l\\RemoteConsoleCommandSender\n||+ sendMessage()\l+ getMessage()\l+ getName()\l}" alt="" coords="5,958,227,1095"/>
-<area shape="rect" id="node2" href="$d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html" title="{pocketmine\\command\l\\CommandSender\n||+ sendMessage()\l+ getServer()\l+ getName()\l}" alt="" coords="41,411,191,549"/>
-<area shape="rect" id="node4" href="$de/da0/interfacepocketmine_1_1permission_1_1_permissible.html" title="{pocketmine\\permission\l\\Permissible\n||+ isPermissionSet()\l+ hasPermission()\l+ addAttachment()\l+ removeAttachment()\l+ recalculatePermissions()\l+ getEffectivePermissions()\l}" alt="" coords="24,173,208,363"/>
-<area shape="rect" id="node6" href="$dd/d17/interfacepocketmine_1_1permission_1_1_server_operator.html" title="{pocketmine\\permission\l\\ServerOperator\n||+ isOp()\l+ setOp()\l}" alt="" coords="39,5,193,125"/>
+<area shape="rect" id="node5" href="$d8/dd0/classpocketmine_1_1command_1_1_remote_console_command_sender.html" title="{pocketmine\\command\l\\RemoteConsoleCommandSender\n||+ sendMessage()\l+ getMessage()\l+ getName()\l}" alt="" coords="5,862,243,983"/>
+<area shape="rect" id="node2" href="$d6/d9d/interfacepocketmine_1_1command_1_1_command_sender.html" title="{pocketmine\\command\l\\CommandSender\n||+ sendMessage()\l+ getServer()\l+ getName()\l}" alt="" coords="41,374,207,495"/>
+<area shape="rect" id="node3" href="$de/da0/interfacepocketmine_1_1permission_1_1_permissible.html" title="{pocketmine\\permission\l\\Permissible\n||+ isPermissionSet()\l+ hasPermission()\l+ addAttachment()\l+ removeAttachment()\l+ recalculatePermissions()\l+ getEffectivePermissions()\l}" alt="" coords="25,160,223,325"/>
+<area shape="rect" id="node4" href="$dd/d17/interfacepocketmine_1_1permission_1_1_server_operator.html" title="{pocketmine\\permission\l\\ServerOperator\n||+ isOp()\l+ setOp()\l}" alt="" coords="39,5,209,112"/>
 </map>

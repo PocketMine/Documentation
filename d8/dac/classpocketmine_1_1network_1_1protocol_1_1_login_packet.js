@@ -1,5 +1,6 @@
 var classpocketmine_1_1network_1_1protocol_1_1_login_packet =
 [
+    [ "clean", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a2ab5e54541dfab853409ab20faae5d56", null ],
     [ "decode", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a1a32bce378ee6b94b0edcca06834a5ff", null ],
     [ "encode", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a1159e6be746eeb7a306da20a471f7318", null ],
     [ "feof", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a38b7693bb0d3b4e3478f8e9afdc43609", null ],
@@ -9,7 +10,7 @@ var classpocketmine_1_1network_1_1protocol_1_1_login_packet =
     [ "getDataArray", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#aeb79aff9741296738ba592888fadf76a", null ],
     [ "getFloat", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a8fe27f4f9c07d42ede630b55e3890084", null ],
     [ "getInt", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#aa8e432c32d0d2df1d6499091b97c30e9", null ],
-    [ "getLong", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a4787f7b0980de0d0a21910c65619e682", null ],
+    [ "getLong", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a46607817bbb0ca54d2bd2918538ce980", null ],
     [ "getLTriad", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#aa973f04ced929c90b608e12e866b5800", null ],
     [ "getShort", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a91e87d8808781a10cbcc50e694484341", null ],
     [ "getSlot", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a21bc1362ec76e12ace742e5133d0f2c5", null ],
@@ -31,7 +32,10 @@ var classpocketmine_1_1network_1_1protocol_1_1_login_packet =
     [ "setBuffer", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a165102568c1290cdfa2e9a3cda814466", null ],
     [ "$buffer", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a87c6760a0f385b960a81d4f1fe57278d", null ],
     [ "$clientId", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a3a3034a8658f00f2377ee04a17545c8f", null ],
+    [ "$isEncoded", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#af5101c75e3a3da5d36158558ae1d75ab", null ],
     [ "$loginData", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a49f825d5b0055d9d8d652949f8c49505", null ],
+    [ "$next", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a4f2279af7da0e8bd2419b5353971063e", null ],
+    [ "$pool", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a2411f9edabc8a9abd1c2c7070bd96c29", null ],
     [ "$protocol1", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#ae4429d925eca699de99ddd663e265cf6", null ],
     [ "$protocol2", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#a1df03f940f287f3483dbf7974ab64d15", null ],
     [ "$username", "d8/dac/classpocketmine_1_1network_1_1protocol_1_1_login_packet.html#ab32b89d57c2896996e1539e22ecccd00", null ]

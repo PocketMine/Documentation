@@ -19,6 +19,8 @@ var classpocketmine_1_1event_1_1_level_timings =
     [ "$syncChunkLoadTileEntitiesTimer", "d0/dfe/classpocketmine_1_1event_1_1_level_timings.html#a0dd038753ad5275738d2da50509d8317", null ],
     [ "$syncChunkLoadTileTicksTimer", "d0/dfe/classpocketmine_1_1event_1_1_level_timings.html#aaebecdac0be330d865ae748ab9ec4e22", null ],
     [ "$syncChunkLoadTimer", "d0/dfe/classpocketmine_1_1event_1_1_level_timings.html#a14295e329cf4d9d60d85155fb499cc94", null ],
+    [ "$syncChunkSendPrepareTimer", "d0/dfe/classpocketmine_1_1event_1_1_level_timings.html#a894447259ade0accff04bc6c1229f5e7", null ],
+    [ "$syncChunkSendTimer", "d0/dfe/classpocketmine_1_1event_1_1_level_timings.html#abc03616a31340af3d4b2be62563dcac2", null ],
     [ "$tickEntities", "d0/dfe/classpocketmine_1_1event_1_1_level_timings.html#ae4b1ba8cbb423e61f9a2c253d7e219ba", null ],
     [ "$tileEntityPending", "d0/dfe/classpocketmine_1_1event_1_1_level_timings.html#a2167e424a72f12da34ed060e2ba2d4a1", null ],
     [ "$tileEntityTick", "d0/dfe/classpocketmine_1_1event_1_1_level_timings.html#aa78767c36d6c54f9826de6c41319b0b0", null ],

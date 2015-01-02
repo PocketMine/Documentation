@@ -7,10 +7,10 @@ var classpocketmine_1_1event_1_1entity_1_1_entity_level_change_event =
     [ "getOrigin", "d4/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_level_change_event.html#a4e0a9152d9eb4b295324eb853de05d9d", null ],
     [ "getTarget", "d4/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_level_change_event.html#a116ab7e7e1a260cc2b03a15e6501011f", null ],
     [ "isCancelled", "d4/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_level_change_event.html#a90efcab0d539a5cb5b17968dfa164017", null ],
-    [ "isCancelled", "d4/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_level_change_event.html#a99e105e6cb8e83f3dbae1fb26d398cf4", null ],
     [ "setCancelled", "d4/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_level_change_event.html#aec2d3aa9d4d8591d5e63a7842844aba7", null ],
-    [ "setCancelled", "d4/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_level_change_event.html#a693b19eb500c69ab9f9dd9f207e5029a", null ],
     [ "$entity", "d4/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_level_change_event.html#a0b1ee6636302824822d27399be605ff6", null ],
     [ "$eventName", "d4/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_level_change_event.html#a847810daab9f3d6396db6c759038a2fd", null ],
-    [ "$handlerList", "d4/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_level_change_event.html#a85fcab95b14fdbfc49a3111e3a9362b5", null ]
+    [ "$eventPool", "d4/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_level_change_event.html#a633eceb8a7eded52596cd05a82e94c75", null ],
+    [ "$handlerList", "d4/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_level_change_event.html#a85fcab95b14fdbfc49a3111e3a9362b5", null ],
+    [ "$nextEvent", "d4/dc8/classpocketmine_1_1event_1_1entity_1_1_entity_level_change_event.html#a6f6639a8edfa3c76fc5695501587d747", null ]
 ];

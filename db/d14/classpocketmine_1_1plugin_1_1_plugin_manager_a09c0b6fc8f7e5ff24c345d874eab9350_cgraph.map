@@ -1,6 +1,10 @@
 <map id="pocketmine\plugin\PluginManager\enablePlugin" name="pocketmine\plugin\PluginManager\enablePlugin">
-<area shape="rect" id="node3" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#a96891cf3bb78422c19f7e12477d99b15" title="pocketmine\\plugin\\Plugin\lManager\\addPermission" alt="" coords="223,5,388,51"/>
-<area shape="rect" id="node7" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html#ab7ef321b514dbd4462709e5b23278b64" title="pocketmine\\plugin\\Plugin\l\\getDescription" alt="" coords="223,74,388,121"/>
-<area shape="rect" id="node9" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html#aa0435b65492626cefe758fb86b2e6372" title="pocketmine\\plugin\\Plugin\l\\getPluginLoader" alt="" coords="223,143,388,190"/>
-<area shape="rect" id="node5" href="$db/dc3/classpocketmine_1_1permission_1_1_permission.html#a7d2c3cc786d1bba634bb234a8f593a32" title="pocketmine\\permission\l\\Permission\\getName" alt="" coords="439,5,593,51"/>
+<area shape="rect" id="node2" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#a96891cf3bb78422c19f7e12477d99b15" title="pocketmine\\plugin\\Plugin\lManager\\addPermission" alt="" coords="235,10,416,51"/>
+<area shape="rect" id="node4" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#a18d858c73a7983a070c729894529f8f1" title="pocketmine\\plugin\\Plugin\lManager\\disablePlugin" alt="" coords="235,187,416,229"/>
+<area shape="rect" id="node5" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html#ab7ef321b514dbd4462709e5b23278b64" title="pocketmine\\plugin\\Plugin\l\\getDescription" alt="" coords="485,70,667,111"/>
+<area shape="rect" id="node6" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="465,136,687,163"/>
+<area shape="rect" id="node7" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html#aa0435b65492626cefe758fb86b2e6372" title="pocketmine\\plugin\\Plugin\l\\getPluginLoader" alt="" coords="485,318,667,359"/>
+<area shape="rect" id="node3" href="$db/dc3/classpocketmine_1_1permission_1_1_permission.html#a7d2c3cc786d1bba634bb234a8f593a32" title="pocketmine\\permission\l\\Permission\\getName" alt="" coords="491,5,661,46"/>
+<area shape="rect" id="node8" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#a1a33c91160e0c4a7ff272bee7a9aca8b" title="pocketmine\\plugin\\Plugin\lManager\\removePermission" alt="" coords="475,187,677,229"/>
+<area shape="rect" id="node9" href="$d0/d8a/classpocketmine_1_1event_1_1_handler_list.html#ab34429e4764d2bd5ea2d118b134217aa" title="pocketmine\\event\\Handler\lList\\unregisterAll" alt="" coords="481,253,671,294"/>
 </map>

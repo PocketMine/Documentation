@@ -1,5 +1,6 @@
 var classpocketmine_1_1network_1_1protocol_1_1_animate_packet =
 [
+    [ "clean", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#a2ab5e54541dfab853409ab20faae5d56", null ],
     [ "decode", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#a9381a2afd4466689398936f2fde3b4e7", null ],
     [ "encode", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#a2d58b1637b6dad730f6e2850b9f85e6e", null ],
     [ "feof", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#a38b7693bb0d3b4e3478f8e9afdc43609", null ],
@@ -9,7 +10,7 @@ var classpocketmine_1_1network_1_1protocol_1_1_animate_packet =
     [ "getDataArray", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#aeb79aff9741296738ba592888fadf76a", null ],
     [ "getFloat", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#a8fe27f4f9c07d42ede630b55e3890084", null ],
     [ "getInt", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#aa8e432c32d0d2df1d6499091b97c30e9", null ],
-    [ "getLong", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#a4787f7b0980de0d0a21910c65619e682", null ],
+    [ "getLong", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#a46607817bbb0ca54d2bd2918538ce980", null ],
     [ "getLTriad", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#aa973f04ced929c90b608e12e866b5800", null ],
     [ "getShort", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#a91e87d8808781a10cbcc50e694484341", null ],
     [ "getSlot", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#a21bc1362ec76e12ace742e5133d0f2c5", null ],
@@ -31,5 +32,8 @@ var classpocketmine_1_1network_1_1protocol_1_1_animate_packet =
     [ "setBuffer", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#a165102568c1290cdfa2e9a3cda814466", null ],
     [ "$action", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#aceaa52d40556f02a67c013d2496d8c2b", null ],
     [ "$buffer", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#a87c6760a0f385b960a81d4f1fe57278d", null ],
-    [ "$eid", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#ad2954f1c3e56b4e358543c79a351e4b7", null ]
+    [ "$eid", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#ad2954f1c3e56b4e358543c79a351e4b7", null ],
+    [ "$isEncoded", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#af5101c75e3a3da5d36158558ae1d75ab", null ],
+    [ "$next", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#abf545e5e0ccf153b063b901d604c0285", null ],
+    [ "$pool", "da/da3/classpocketmine_1_1network_1_1protocol_1_1_animate_packet.html#adfbd0e89691cf7b91452d2eacd6cc829", null ]
 ];

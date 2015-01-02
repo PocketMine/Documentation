@@ -1,5 +1,6 @@
 var classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet =
 [
+    [ "clean", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a2ab5e54541dfab853409ab20faae5d56", null ],
     [ "decode", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a17fa35a9fab680d74749fe515a9463eb", null ],
     [ "encode", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#aebdb52f35f9f021d7af1837a57be1c0f", null ],
     [ "feof", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a38b7693bb0d3b4e3478f8e9afdc43609", null ],
@@ -9,7 +10,7 @@ var classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet =
     [ "getDataArray", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#aeb79aff9741296738ba592888fadf76a", null ],
     [ "getFloat", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a8fe27f4f9c07d42ede630b55e3890084", null ],
     [ "getInt", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#aa8e432c32d0d2df1d6499091b97c30e9", null ],
-    [ "getLong", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a4787f7b0980de0d0a21910c65619e682", null ],
+    [ "getLong", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a46607817bbb0ca54d2bd2918538ce980", null ],
     [ "getLTriad", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#aa973f04ced929c90b608e12e866b5800", null ],
     [ "getShort", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a91e87d8808781a10cbcc50e694484341", null ],
     [ "getSlot", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a21bc1362ec76e12ace742e5133d0f2c5", null ],
@@ -31,8 +32,11 @@ var classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet =
     [ "setBuffer", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a165102568c1290cdfa2e9a3cda814466", null ],
     [ "$buffer", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a87c6760a0f385b960a81d4f1fe57278d", null ],
     [ "$eid", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a3ac3f338ef59c7ef16f3405849465db5", null ],
+    [ "$isEncoded", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#af5101c75e3a3da5d36158558ae1d75ab", null ],
     [ "$item", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a3c031313b9e4111060311bf61efcdda7", null ],
+    [ "$next", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a7ffb78cdd7e8989232634f4bde4ee5ff", null ],
     [ "$pitch", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a70c45f082a4d15b670f03d8ab3f7e31e", null ],
+    [ "$pool", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#aaf0ef2e38d75d87086839790affb5ae4", null ],
     [ "$roll", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a7b84333fa570b78c548e58c98038471c", null ],
     [ "$x", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a23a3f0aec4e8c63535ba54da9b451d5b", null ],
     [ "$y", "d3/d5a/classpocketmine_1_1network_1_1protocol_1_1_add_item_entity_packet.html#a6277bf453d827a9d7251531049fcf548", null ],

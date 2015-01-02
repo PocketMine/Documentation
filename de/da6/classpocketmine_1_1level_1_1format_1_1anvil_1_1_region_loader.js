@@ -26,5 +26,6 @@ var classpocketmine_1_1level_1_1format_1_1anvil_1_1_region_loader =
     [ "$z", "de/da6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_region_loader.html#a055e7e4d85e13feca6ca6d276a69357a", null ],
     [ "COMPRESSION_GZIP", "de/da6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_region_loader.html#a284a163c3962f8df92d18bfad1e1442d", null ],
     [ "COMPRESSION_ZLIB", "de/da6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_region_loader.html#a541709741e792854084cc06942fdfe9f", null ],
+    [ "MAX_SECTOR_LENGTH", "de/da6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_region_loader.html#a5b72cde249cbbb047ac9946ee5654a5c", null ],
     [ "VERSION", "de/da6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_region_loader.html#a8909a41d1c9ae2cab45363c8b279b201", null ]
 ];

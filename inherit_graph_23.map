@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$da/da3/interfacepocketmine_1_1inventory_1_1_transaction_group.html" title="pocketmine\\inventory\l\\TransactionGroup" alt="" coords="5,5,152,51"/>
-<area shape="rect" id="node3" href="$df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html" title="pocketmine\\inventory\l\\SimpleTransactionGroup" alt="" coords="201,5,369,51"/>
-<area shape="rect" id="node5" href="$d6/d42/classpocketmine_1_1inventory_1_1_crafting_transaction_group.html" title="pocketmine\\inventory\l\\CraftingTransactionGroup" alt="" coords="420,5,593,51"/>
+<area shape="rect" id="node1" href="$d1/da6/interfacepocketmine_1_1level_1_1format_1_1_chunk_section.html" title="pocketmine\\level\\format\l\\ChunkSection" alt="" coords="6,38,183,79"/>
+<area shape="rect" id="node2" href="$d3/db6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_chunk_section.html" title="pocketmine\\level\\format\l\\anvil\\ChunkSection" alt="" coords="247,5,425,46"/>
+<area shape="rect" id="node3" href="$d8/df0/classpocketmine_1_1level_1_1format_1_1generic_1_1_empty_chunk_section.html" title="pocketmine\\level\\format\l\\generic\\EmptyChunkSection" alt="" coords="233,70,439,111"/>
 </map>

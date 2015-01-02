@@ -1,7 +1,7 @@
 <map id="pocketmine\inventory\SimpleTransactionGroup\execute" name="pocketmine\inventory\SimpleTransactionGroup\execute">
-<area shape="rect" id="node3" href="$df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#aa324087f57222a5818847743b350419b" title="pocketmine\\inventory\l\\SimpleTransactionGroup\l\\canExecute" alt="" coords="241,5,409,69"/>
-<area shape="rect" id="node7" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="224,93,427,123"/>
-<area shape="rect" id="node9" href="$df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#aa8d514b406c0bcbfa1a0d4f8f5ed765a" title="pocketmine\\inventory\l\\SimpleTransactionGroup\l\\getSource" alt="" coords="241,147,409,211"/>
-<area shape="rect" id="node11" href="$df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#a733538b56586ee02abca451485ff7f82" title="pocketmine\\inventory\l\\SimpleTransactionGroup\l\\hasExecuted" alt="" coords="241,235,409,299"/>
-<area shape="rect" id="node5" href="$df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#a510fd95f31abb7524a9dcc58a36f80b8" title="pocketmine\\inventory\l\\SimpleTransactionGroup\l\\matchItems" alt="" coords="476,5,644,69"/>
+<area shape="rect" id="node2" href="$df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#aa324087f57222a5818847743b350419b" title="pocketmine\\inventory\l\\SimpleTransactionGroup\l\\canExecute" alt="" coords="256,5,437,61"/>
+<area shape="rect" id="node4" href="$d5/df7/classpocketmine_1_1_server.html#a8d9b9873eb3c7efce048f10f803c2b2e" title="pocketmine\\Server\\getInstance" alt="" coords="235,85,458,112"/>
+<area shape="rect" id="node5" href="$df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#aa8d514b406c0bcbfa1a0d4f8f5ed765a" title="pocketmine\\inventory\l\\SimpleTransactionGroup\l\\getSource" alt="" coords="256,136,437,192"/>
+<area shape="rect" id="node6" href="$df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#a733538b56586ee02abca451485ff7f82" title="pocketmine\\inventory\l\\SimpleTransactionGroup\l\\hasExecuted" alt="" coords="256,216,437,272"/>
+<area shape="rect" id="node3" href="$df/df1/classpocketmine_1_1inventory_1_1_simple_transaction_group.html#a510fd95f31abb7524a9dcc58a36f80b8" title="pocketmine\\inventory\l\\SimpleTransactionGroup\l\\matchItems" alt="" coords="507,5,688,61"/>
 </map>

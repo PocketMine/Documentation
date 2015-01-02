@@ -1,4 +1,13 @@
 <map id="pocketmine\Server\broadcastPacket" name="pocketmine\Server\broadcastPacket">
-<area shape="rect" id="node3" href="$d3/dd8/classpocketmine_1_1inventory_1_1_chest_inventory.html#affd188f523d964cb81d7edb052ada726" title="pocketmine\\inventory\l\\ChestInventory\\onClose" alt="" coords="247,5,412,51"/>
-<area shape="rect" id="node5" href="$d3/dd8/classpocketmine_1_1inventory_1_1_chest_inventory.html#a481f71f9f51ed8bb690ed492006c30f2" title="pocketmine\\inventory\l\\ChestInventory\\onOpen" alt="" coords="248,74,411,121"/>
+<area shape="rect" id="node2" href="$d3/dd8/classpocketmine_1_1inventory_1_1_chest_inventory.html#affd188f523d964cb81d7edb052ada726" title="pocketmine\\inventory\l\\ChestInventory\\onClose" alt="" coords="265,5,442,46"/>
+<area shape="rect" id="node3" href="$d6/d3e/classpocketmine_1_1inventory_1_1_double_chest_inventory.html#af9429bec4a66b057677785590389636a" title="pocketmine\\inventory\l\\DoubleChestInventory\l\\onClose" alt="" coords="270,69,437,125"/>
+<area shape="rect" id="node4" href="$d3/dd8/classpocketmine_1_1inventory_1_1_chest_inventory.html#a481f71f9f51ed8bb690ed492006c30f2" title="pocketmine\\inventory\l\\ChestInventory\\onOpen" alt="" coords="265,149,441,190"/>
+<area shape="rect" id="node5" href="$d6/d3e/classpocketmine_1_1inventory_1_1_double_chest_inventory.html#a049993ad739923915d217f08848b5a55" title="pocketmine\\inventory\l\\DoubleChestInventory\l\\onOpen" alt="" coords="270,213,437,269"/>
+<area shape="rect" id="node6" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a787adc6473f820d013965a02196b02a5" title="pocketmine\\level\\Level\l\\sendTime" alt="" coords="270,293,437,334"/>
+<area shape="rect" id="node11" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a809bb258d797af4a4f9271addb4bfd4a" title="pocketmine\\level\\Level\l\\setBlock" alt="" coords="270,383,437,425"/>
+<area shape="rect" id="node7" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#ac2855c606dec3107ace36c3bd073b953" title="pocketmine\\level\\Level\l\\setTime" alt="" coords="491,227,658,269"/>
+<area shape="rect" id="node8" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a44ce0ab1d94a790f2f3a02c7ff70ca83" title="pocketmine\\level\\Level\l\\stopTime" alt="" coords="491,293,658,334"/>
+<area shape="rect" id="node10" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#ad56d6a8573f596fddea712bdb171f866" title="pocketmine\\level\\Level\l\\startTime" alt="" coords="707,351,874,393"/>
+<area shape="rect" id="node9" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a1079deee151083b7da76d8dd57f5b2ef" title="pocketmine\\level\\Level\l\\checkTime" alt="" coords="707,286,874,327"/>
+<area shape="rect" id="node12" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a3346679b5fe84b0fb3ae4bc27d99e18f" title="pocketmine\\level\\Level\l\\useItemOn" alt="" coords="491,410,658,451"/>
 </map>

@@ -1,6 +1,6 @@
 var interfacepocketmine_1_1inventory_1_1_inventory =
 [
-    [ "addItem", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a407f27ab18a98d4b907bb5af82972cb7", null ],
+    [ "addItem", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a3ae2ddba44ba8f3cc97d888662a4c301", null ],
     [ "all", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#abb666489d4b5edc982ec5184b2f21e76", null ],
     [ "canAddItem", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#afea13e7026268a4849d99998851efe37", null ],
     [ "clear", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a2e2634e2e1fc57539affd96550dd325c", null ],
@@ -23,7 +23,7 @@ var interfacepocketmine_1_1inventory_1_1_inventory =
     [ "onSlotChange", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#abdc14d7381b0328db9e179374265972e", null ],
     [ "open", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#affa52e2740923574d38aae8fbf7206d5", null ],
     [ "remove", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#aea5495912b12da4b7649c1ab6690e02f", null ],
-    [ "removeItem", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#ab357a8d967219e50421b8848662ec0fb", null ],
+    [ "removeItem", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a4f85f97364385c5fea32887bb3350055", null ],
     [ "sendContents", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#af24ece9d29ceacdf6dadbdd3e92bd645", null ],
     [ "sendSlot", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#ad6e2a84e85c36745f7f6b1473614a68b", null ],
     [ "setContents", "db/d39/interfacepocketmine_1_1inventory_1_1_inventory.html#a34fee0e70cbcd7a3e2e81fa31bbb1dc6", null ],

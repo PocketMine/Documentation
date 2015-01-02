@@ -2,8 +2,6 @@ var searchData=
 [
   ['wallsign',['WallSign',['../df/d74/classpocketmine_1_1block_1_1_wall_sign.html',1,'pocketmine::block']]],
   ['water',['Water',['../d2/d3e/classpocketmine_1_1block_1_1_water.html',1,'pocketmine::block']]],
-  ['weakmap',['WeakMap',['../d5/db9/class_weak_map.html',1,'']]],
-  ['weakref',['WeakRef',['../d6/d37/class_weak_ref.html',1,'']]],
   ['wheat',['Wheat',['../d5/d7b/classpocketmine_1_1block_1_1_wheat.html',1,'pocketmine::block']]],
   ['wheatseeds',['WheatSeeds',['../d4/d0e/classpocketmine_1_1item_1_1_wheat_seeds.html',1,'pocketmine::item']]],
   ['whitelistcommand',['WhitelistCommand',['../d5/d43/classpocketmine_1_1command_1_1defaults_1_1_whitelist_command.html',1,'pocketmine::command::defaults']]],
@@ -21,6 +19,5 @@ var searchData=
   ['woodstairs',['WoodStairs',['../dd/db1/classpocketmine_1_1block_1_1_wood_stairs.html',1,'pocketmine::block']]],
   ['wool',['Wool',['../da/d71/classpocketmine_1_1block_1_1_wool.html',1,'pocketmine::block']]],
   ['workbench',['Workbench',['../d0/d6e/classpocketmine_1_1block_1_1_workbench.html',1,'pocketmine::block']]],
-  ['worker',['Worker',['../d1/d8c/classpocketmine_1_1_worker.html',1,'pocketmine']]],
-  ['worker',['Worker',['../d3/d0a/class_worker.html',1,'']]]
+  ['worker',['Worker',['../d1/d8c/classpocketmine_1_1_worker.html',1,'pocketmine']]]
 ];

@@ -7,6 +7,7 @@ var classpocketmine_1_1network_1_1query_1_1_query_handler =
     [ "regenerateToken", "dd/dee/classpocketmine_1_1network_1_1query_1_1_query_handler.html#a3b27ae2ce21b6f5c5ddf4620f53d53b7", null ],
     [ "$lastToken", "dd/dee/classpocketmine_1_1network_1_1query_1_1_query_handler.html#a65fa3ed5ee88f20561454b5909ce62f6", null ],
     [ "$longData", "dd/dee/classpocketmine_1_1network_1_1query_1_1_query_handler.html#a2d7457768d67e91b6480a396ed681192", null ],
+    [ "$shortData", "dd/dee/classpocketmine_1_1network_1_1query_1_1_query_handler.html#aa6f2e0bc06166ca4e01361be6009fcfd", null ],
     [ "$timeout", "dd/dee/classpocketmine_1_1network_1_1query_1_1_query_handler.html#a27ee244f04640470d7b63fa1a3708cf0", null ],
     [ "$token", "dd/dee/classpocketmine_1_1network_1_1query_1_1_query_handler.html#a840a56253c132eff140cf29adf9dca25", null ],
     [ "HANDSHAKE", "dd/dee/classpocketmine_1_1network_1_1query_1_1_query_handler.html#ae6238fdd0ef7cc327f99fc03a40d86b8", null ],

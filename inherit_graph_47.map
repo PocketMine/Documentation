@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$d7/d11/classpocketmine_1_1math_1_1_vector2.html" title="pocketmine\\math\\Vector2" alt="" coords="5,5,176,35"/>
+<area shape="rect" id="node1" href="$db/dfc/classpocketmine_1_1metadata_1_1_metadata_store.html" title="pocketmine\\metadata\l\\MetadataStore" alt="" coords="6,103,170,145"/>
+<area shape="rect" id="node2" href="$df/de8/classpocketmine_1_1metadata_1_1_block_metadata_store.html" title="pocketmine\\metadata\l\\BlockMetadataStore" alt="" coords="219,5,383,46"/>
+<area shape="rect" id="node3" href="$dd/d7f/classpocketmine_1_1metadata_1_1_entity_metadata_store.html" title="pocketmine\\metadata\l\\EntityMetadataStore" alt="" coords="219,70,383,111"/>
+<area shape="rect" id="node4" href="$d3/ddf/classpocketmine_1_1metadata_1_1_level_metadata_store.html" title="pocketmine\\metadata\l\\LevelMetadataStore" alt="" coords="219,135,383,177"/>
+<area shape="rect" id="node5" href="$d0/db7/classpocketmine_1_1metadata_1_1_player_metadata_store.html" title="pocketmine\\metadata\l\\PlayerMetadataStore" alt="" coords="219,201,383,242"/>
 </map>

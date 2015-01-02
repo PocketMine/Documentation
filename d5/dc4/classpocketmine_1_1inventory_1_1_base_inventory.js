@@ -1,7 +1,7 @@
 var classpocketmine_1_1inventory_1_1_base_inventory =
 [
     [ "__construct", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#afaac83c7a4ade74f9bd461f68a48c30a", null ],
-    [ "addItem", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a407f27ab18a98d4b907bb5af82972cb7", null ],
+    [ "addItem", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a3ae2ddba44ba8f3cc97d888662a4c301", null ],
     [ "all", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a9e8a9a58178c93680c225de229606fec", null ],
     [ "canAddItem", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a46ca31398256b2a5fecddd025587579b", null ],
     [ "clear", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a4e37b46b040119e90211c5078dd79662", null ],
@@ -24,7 +24,7 @@ var classpocketmine_1_1inventory_1_1_base_inventory =
     [ "onSlotChange", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a372297a2da072277724b5a20453bb423", null ],
     [ "open", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a41fca235b61f94ee9729354c977f905f", null ],
     [ "remove", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a5c676080faee6eaecdc04a70fcedf142", null ],
-    [ "removeItem", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#ab357a8d967219e50421b8848662ec0fb", null ],
+    [ "removeItem", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a4f85f97364385c5fea32887bb3350055", null ],
     [ "sendContents", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a78e842dd42ef0a0870385092b3c30896", null ],
     [ "sendSlot", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#ad84dac811677e799d06924279a4288cc", null ],
     [ "setContents", "d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a295a782543c002623d01ec47a6e93329", null ],

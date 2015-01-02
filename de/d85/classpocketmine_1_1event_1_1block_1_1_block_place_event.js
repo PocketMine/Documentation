@@ -9,14 +9,14 @@ var classpocketmine_1_1event_1_1block_1_1_block_place_event =
     [ "getItem", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#ab02d04685762f60601967c920566605b", null ],
     [ "getPlayer", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#aad2f55c09d5ab65313386cbcf9c0f602", null ],
     [ "isCancelled", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#a90efcab0d539a5cb5b17968dfa164017", null ],
-    [ "isCancelled", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#a99e105e6cb8e83f3dbae1fb26d398cf4", null ],
     [ "setCancelled", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#aec2d3aa9d4d8591d5e63a7842844aba7", null ],
-    [ "setCancelled", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#a693b19eb500c69ab9f9dd9f207e5029a", null ],
     [ "$block", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#ac2ebee8641d257c40b3d8e26f4deec32", null ],
     [ "$blockAgainst", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#a250f7ab196123021b1b1071b1bcabf15", null ],
     [ "$blockReplace", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#a0ea734dd1844b60f14b251ec5bb913d2", null ],
     [ "$eventName", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#a847810daab9f3d6396db6c759038a2fd", null ],
+    [ "$eventPool", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#a1f9d8fb9b3e4209cf28c03f1c80b4ea1", null ],
     [ "$handlerList", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#abd65fcb1b4024ca12f383fcc05c6e397", null ],
     [ "$item", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#a94cb658e186cb9a6300f2fbe2ad07a7e", null ],
+    [ "$nextEvent", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#acac85cfb6eda039ab447641dcedb712d", null ],
     [ "$player", "de/d85/classpocketmine_1_1event_1_1block_1_1_block_place_event.html#ac23b139389393fe41b61e331c40d1b4f", null ]
 ];

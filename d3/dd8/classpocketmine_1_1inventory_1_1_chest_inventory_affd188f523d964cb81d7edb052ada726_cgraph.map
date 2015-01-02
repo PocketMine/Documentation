@@ -1,5 +1,5 @@
 <map id="pocketmine\inventory\ChestInventory\onClose" name="pocketmine\inventory\ChestInventory\onClose">
-<area shape="rect" id="node3" href="$d5/df7/classpocketmine_1_1_server.html#a3f4968a94dbe06c71c5649fd1dd41e7f" title="pocketmine\\Server\\broadcast\lPacket" alt="" coords="221,5,413,51"/>
-<area shape="rect" id="node5" href="$d3/dd8/classpocketmine_1_1inventory_1_1_chest_inventory.html#a5435006c4f2e7c915b0f42bded6af87f" title="pocketmine\\inventory\l\\ChestInventory\\getHolder" alt="" coords="231,74,404,121"/>
-<area shape="rect" id="node7" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a65b280b6c12e1d4e5bcd4d0de3aa4a71" title="pocketmine\\inventory\l\\BaseInventory\\getViewers" alt="" coords="228,143,407,190"/>
+<area shape="rect" id="node2" href="$d5/df7/classpocketmine_1_1_server.html#a3f4968a94dbe06c71c5649fd1dd41e7f" title="pocketmine\\Server\\broadcast\lPacket" alt="" coords="232,5,443,46"/>
+<area shape="rect" id="node3" href="$d3/dd8/classpocketmine_1_1inventory_1_1_chest_inventory.html#a5435006c4f2e7c915b0f42bded6af87f" title="pocketmine\\inventory\l\\ChestInventory\\getHolder" alt="" coords="243,70,432,111"/>
+<area shape="rect" id="node4" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a65b280b6c12e1d4e5bcd4d0de3aa4a71" title="pocketmine\\inventory\l\\BaseInventory\\getViewers" alt="" coords="242,135,433,177"/>
 </map>

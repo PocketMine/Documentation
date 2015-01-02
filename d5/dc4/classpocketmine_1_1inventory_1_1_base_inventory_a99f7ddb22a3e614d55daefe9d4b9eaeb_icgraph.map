@@ -1,7 +1,7 @@
 <map id="pocketmine\inventory\BaseInventory\setItem" name="pocketmine\inventory\BaseInventory\setItem">
-<area shape="rect" id="node3" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a295a782543c002623d01ec47a6e93329" title="pocketmine\\inventory\l\\BaseInventory\\setContents" alt="" coords="221,5,405,51"/>
-<area shape="rect" id="node7" href="$dc/d34/classpocketmine_1_1inventory_1_1_furnace_inventory.html#a5c9e307818bee9a64b8aae1a3e4e58a9" title="pocketmine\\inventory\l\\FurnaceInventory\\setFuel" alt="" coords="227,74,400,121"/>
-<area shape="rect" id="node9" href="$dc/d34/classpocketmine_1_1inventory_1_1_furnace_inventory.html#ae1e7071536d244eadbf62472da3d51da" title="pocketmine\\inventory\l\\FurnaceInventory\\setResult" alt="" coords="220,143,407,190"/>
-<area shape="rect" id="node11" href="$dc/d34/classpocketmine_1_1inventory_1_1_furnace_inventory.html#a45d3b373d8adb32961d8d08fc970c3ec" title="pocketmine\\inventory\l\\FurnaceInventory\\setSmelting" alt="" coords="213,213,413,259"/>
-<area shape="rect" id="node5" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#afaac83c7a4ade74f9bd461f68a48c30a" title="pocketmine\\inventory\l\\BaseInventory\\__construct" alt="" coords="463,5,644,51"/>
+<area shape="rect" id="node2" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#a295a782543c002623d01ec47a6e93329" title="pocketmine\\inventory\l\\BaseInventory\\setContents" alt="" coords="233,5,431,46"/>
+<area shape="rect" id="node4" href="$dc/d34/classpocketmine_1_1inventory_1_1_furnace_inventory.html#a5c9e307818bee9a64b8aae1a3e4e58a9" title="pocketmine\\inventory\l\\FurnaceInventory\\setFuel" alt="" coords="240,70,424,111"/>
+<area shape="rect" id="node5" href="$dc/d34/classpocketmine_1_1inventory_1_1_furnace_inventory.html#ae1e7071536d244eadbf62472da3d51da" title="pocketmine\\inventory\l\\FurnaceInventory\\setResult" alt="" coords="233,135,431,177"/>
+<area shape="rect" id="node6" href="$dc/d34/classpocketmine_1_1inventory_1_1_furnace_inventory.html#a45d3b373d8adb32961d8d08fc970c3ec" title="pocketmine\\inventory\l\\FurnaceInventory\\setSmelting" alt="" coords="224,201,440,242"/>
+<area shape="rect" id="node3" href="$d5/dc4/classpocketmine_1_1inventory_1_1_base_inventory.html#afaac83c7a4ade74f9bd461f68a48c30a" title="pocketmine\\inventory\l\\BaseInventory\\__construct" alt="" coords="488,5,683,46"/>
 </map>

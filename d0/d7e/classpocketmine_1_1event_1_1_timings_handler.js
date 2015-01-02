@@ -1,6 +1,6 @@
 var classpocketmine_1_1event_1_1_timings_handler =
 [
-    [ "__construct", "d0/d7e/classpocketmine_1_1event_1_1_timings_handler.html#a93d4cc00c11f12772fb1f69d8de9a1e6", null ],
+    [ "__construct", "d0/d7e/classpocketmine_1_1event_1_1_timings_handler.html#a5beb879a7c77b5df2ffa1b14fcfc9909", null ],
     [ "printTimings", "d0/d7e/classpocketmine_1_1event_1_1_timings_handler.html#ac0c7e45623050b75bf4ff20f1badefcb", null ],
     [ "reload", "d0/d7e/classpocketmine_1_1event_1_1_timings_handler.html#ac2b09068fe6829de6ce1c7ed3d4cf1ff", null ],
     [ "remove", "d0/d7e/classpocketmine_1_1event_1_1_timings_handler.html#a6f55555493019b390b675e1e2c632961", null ],

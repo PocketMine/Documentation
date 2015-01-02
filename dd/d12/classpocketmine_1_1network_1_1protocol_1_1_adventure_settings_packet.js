@@ -1,5 +1,6 @@
 var classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet =
 [
+    [ "clean", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#a2ab5e54541dfab853409ab20faae5d56", null ],
     [ "decode", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#a7be6fd23138916b9e132e3c76092a68c", null ],
     [ "encode", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#aefe1e0e94ee3391b606bd7d46cd42756", null ],
     [ "feof", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#a38b7693bb0d3b4e3478f8e9afdc43609", null ],
@@ -9,7 +10,7 @@ var classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet =
     [ "getDataArray", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#aeb79aff9741296738ba592888fadf76a", null ],
     [ "getFloat", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#a8fe27f4f9c07d42ede630b55e3890084", null ],
     [ "getInt", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#aa8e432c32d0d2df1d6499091b97c30e9", null ],
-    [ "getLong", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#a4787f7b0980de0d0a21910c65619e682", null ],
+    [ "getLong", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#a46607817bbb0ca54d2bd2918538ce980", null ],
     [ "getLTriad", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#aa973f04ced929c90b608e12e866b5800", null ],
     [ "getShort", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#a91e87d8808781a10cbcc50e694484341", null ],
     [ "getSlot", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#a21bc1362ec76e12ace742e5133d0f2c5", null ],
@@ -30,5 +31,8 @@ var classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet =
     [ "reset", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#a5ea9e9eb5b32dee9c6bc51900f8fbb92", null ],
     [ "setBuffer", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#a165102568c1290cdfa2e9a3cda814466", null ],
     [ "$buffer", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#a87c6760a0f385b960a81d4f1fe57278d", null ],
-    [ "$flags", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#a5890923d2ed0e769e7ddc8042057934c", null ]
+    [ "$flags", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#a5890923d2ed0e769e7ddc8042057934c", null ],
+    [ "$isEncoded", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#af5101c75e3a3da5d36158558ae1d75ab", null ],
+    [ "$next", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#aa5adc13264c092d4584c81bc1de2575b", null ],
+    [ "$pool", "dd/d12/classpocketmine_1_1network_1_1protocol_1_1_adventure_settings_packet.html#a961bb50575ed4225d8f495241a1a32c1", null ]
 ];

@@ -3,7 +3,7 @@ var classpocketmine_1_1command_1_1defaults_1_1_help_command =
     [ "__construct", "da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#abd898824d0b4bec4cb959fda3089c9ee", null ],
     [ "__toString", "da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#aa9e73d9071c6da0515cf1d28c3997f1a", null ],
     [ "broadcastCommandMessage", "da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#a073c7631b60f7760565da0147a7c85ef", null ],
-    [ "execute", "da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#ac5ab34b69ac2d49775598b82200a3edc", null ],
+    [ "execute", "da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#a209ba06cab4ca9980ff9c4e2b97d3119", null ],
     [ "getAliases", "da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#acbccfc9431699f8cefb66e359419e1df", null ],
     [ "getDescription", "da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#a2229222640248db2e89b20406b7eb958", null ],
     [ "getDouble", "da/d3a/classpocketmine_1_1command_1_1defaults_1_1_help_command.html#abdf70e10e9e844064c25fee148e8fb24", null ],

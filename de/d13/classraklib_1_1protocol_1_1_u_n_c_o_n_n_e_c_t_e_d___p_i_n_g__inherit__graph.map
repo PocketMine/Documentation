@@ -1,4 +1,0 @@
-<map id="raklib\protocol\UNCONNECTED_PING" name="raklib\protocol\UNCONNECTED_PING">
-<area shape="rect" id="node5" href="$d2/d7f/classraklib_1_1protocol_1_1_u_n_c_o_n_n_e_c_t_e_d___p_i_n_g___o_p_e_n___c_o_n_n_e_c_t_i_o_n_s.html" title="{raklib\\protocol\\UNCONNECTED\l_PING_OPEN_CONNECTIONS\n|+ $ID\l|}" alt="" coords="25,550,239,653"/>
-<area shape="rect" id="node2" href="$d6/d53/classraklib_1_1protocol_1_1_packet.html" title="{raklib\\protocol\\Packet\n|+ $buffer\l+ $ID\l# $offset\l|+ encode()\l+ decode()\l# get()\l# getLong()\l# getInt()\l# getShort()\l# getTriad()\l# getLTriad()\l# getByte()\l# getString()\l# feof()\l# put()\land 7 more...\l}" alt="" coords="59,5,205,333"/>
-</map>

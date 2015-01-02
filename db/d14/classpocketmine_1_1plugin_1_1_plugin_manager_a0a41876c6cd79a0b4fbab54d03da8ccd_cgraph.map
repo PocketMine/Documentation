@@ -1,6 +1,6 @@
 <map id="pocketmine\plugin\PluginManager\loadPlugins" name="pocketmine\plugin\PluginManager\loadPlugins">
-<area shape="rect" id="node3" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#a60c056861e722e07a5d1a20b7e1ecd78" title="pocketmine\\plugin\\Plugin\lManager\\getPlugin" alt="" coords="223,5,388,51"/>
-<area shape="rect" id="node5" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#a759d1aaaad5d7d951f174dfe9e0d18ea" title="pocketmine\\plugin\\Plugin\lManager\\loadPlugin" alt="" coords="223,74,388,121"/>
-<area shape="rect" id="node7" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#ae9b60788bece074ae0b35205cd0a2a3e" title="pocketmine\\plugin\\Plugin\lManager\\parseYamlCommands" alt="" coords="437,74,643,121"/>
-<area shape="rect" id="node9" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html#ab7ef321b514dbd4462709e5b23278b64" title="pocketmine\\plugin\\Plugin\l\\getDescription" alt="" coords="692,74,857,121"/>
+<area shape="rect" id="node2" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#a60c056861e722e07a5d1a20b7e1ecd78" title="pocketmine\\plugin\\Plugin\lManager\\getPlugin" alt="" coords="235,5,416,46"/>
+<area shape="rect" id="node3" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#a759d1aaaad5d7d951f174dfe9e0d18ea" title="pocketmine\\plugin\\Plugin\lManager\\loadPlugin" alt="" coords="235,70,416,111"/>
+<area shape="rect" id="node4" href="$db/d14/classpocketmine_1_1plugin_1_1_plugin_manager.html#ae9b60788bece074ae0b35205cd0a2a3e" title="pocketmine\\plugin\\Plugin\lManager\\parseYamlCommands" alt="" coords="464,70,685,111"/>
+<area shape="rect" id="node5" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html#ab7ef321b514dbd4462709e5b23278b64" title="pocketmine\\plugin\\Plugin\l\\getDescription" alt="" coords="733,70,915,111"/>
 </map>

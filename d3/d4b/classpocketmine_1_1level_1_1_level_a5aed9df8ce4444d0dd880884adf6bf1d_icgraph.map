@@ -1,4 +1,8 @@
 <map id="pocketmine\level\Level\getSpawnLocation" name="pocketmine\level\Level\getSpawnLocation">
-<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a63f7175d8a8b38046986a673f2b4fb0b" title="pocketmine\\level\\Level\l\\setSpawnLocation" alt="" coords="208,5,363,51"/>
-<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#afed3137b3fb6b6d9469b23f8e206807f" title="pocketmine\\level\\Level\l\\setSpawn" alt="" coords="411,5,565,51"/>
+<area shape="rect" id="node2" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a3167219fc8feab0852933dd2c265f6d8" title="pocketmine\\level\\Level\l\\getSafeSpawn" alt="" coords="222,5,389,46"/>
+<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a015f8239fd7254bfea605f6c18de9060" title="pocketmine\\level\\Level\l\\getSpawn" alt="" coords="222,70,389,111"/>
+<area shape="rect" id="node4" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a63f7175d8a8b38046986a673f2b4fb0b" title="pocketmine\\level\\Level\l\\setSpawnLocation" alt="" coords="222,135,389,177"/>
+<area shape="rect" id="node6" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#adbfdb8014d3364de28dd7909a7577d0d" title="pocketmine\\level\\Level\l\\useBreakOn" alt="" coords="222,201,389,242"/>
+<area shape="rect" id="node7" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a3346679b5fe84b0fb3ae4bc27d99e18f" title="pocketmine\\level\\Level\l\\useItemOn" alt="" coords="222,266,389,307"/>
+<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#afed3137b3fb6b6d9469b23f8e206807f" title="pocketmine\\level\\Level\l\\setSpawn" alt="" coords="438,135,605,177"/>
 </map>

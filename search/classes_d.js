@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['nack',['NACK',['../d4/d24/classraklib_1_1protocol_1_1_n_a_c_k.html',1,'raklib::protocol']]],
   ['namedtag',['NamedTag',['../d9/dc5/classpocketmine_1_1nbt_1_1tag_1_1_named_tag.html',1,'pocketmine::nbt::tag']]],
   ['nbt',['NBT',['../d5/d67/classpocketmine_1_1nbt_1_1_n_b_t.html',1,'pocketmine::nbt']]],
   ['netherbrick',['NetherBrick',['../dc/df4/classpocketmine_1_1block_1_1_nether_brick.html',1,'pocketmine::block']]],

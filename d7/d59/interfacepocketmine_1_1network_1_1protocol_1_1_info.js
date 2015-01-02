@@ -36,6 +36,7 @@ var interfacepocketmine_1_1network_1_1protocol_1_1_info =
     [ "RESPAWN_PACKET", "d7/d59/interfacepocketmine_1_1network_1_1protocol_1_1_info.html#a1544236cefab0ca02b12eb6fac84f845", null ],
     [ "ROTATE_HEAD_PACKET", "d7/d59/interfacepocketmine_1_1network_1_1protocol_1_1_info.html#aaaef4da14bccb250ada8fea94f4413fd", null ],
     [ "SEND_INVENTORY_PACKET", "d7/d59/interfacepocketmine_1_1network_1_1protocol_1_1_info.html#a3e4d0f6ec2e2b8a0a755f9c1b35e1f3f", null ],
+    [ "SET_DIFFICULTY_PACKET", "d7/d59/interfacepocketmine_1_1network_1_1protocol_1_1_info.html#a17a1400fcd5c7126fd03fc1f53752391", null ],
     [ "SET_ENTITY_DATA_PACKET", "d7/d59/interfacepocketmine_1_1network_1_1protocol_1_1_info.html#a899b6bbc2d517716be750a27454eefd0", null ],
     [ "SET_ENTITY_MOTION_PACKET", "d7/d59/interfacepocketmine_1_1network_1_1protocol_1_1_info.html#ade58d67617ba07432a8d6b352f496cff", null ],
     [ "SET_HEALTH_PACKET", "d7/d59/interfacepocketmine_1_1network_1_1protocol_1_1_info.html#aeb4dc40d67038ed4c4ab57c11d534192", null ],

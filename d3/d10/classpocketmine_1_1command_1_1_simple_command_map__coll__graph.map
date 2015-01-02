@@ -1,3 +1,3 @@
 <map id="pocketmine\command\SimpleCommandMap" name="pocketmine\command\SimpleCommandMap">
-<area shape="rect" id="node2" href="$de/d06/interfacepocketmine_1_1command_1_1_command_map.html" title="{pocketmine\\command\l\\CommandMap\n||+ registerAll()\l+ register()\l+ dispatch()\l+ clearCommands()\l+ getCommand()\l}" alt="" coords="13,6,163,178"/>
+<area shape="rect" id="node2" href="$de/d06/interfacepocketmine_1_1command_1_1_command_map.html" title="{pocketmine\\command\l\\CommandMap\n||+ registerAll()\l+ register()\l+ dispatch()\l+ clearCommands()\l+ getCommand()\l}" alt="" coords="13,6,179,157"/>
 </map>

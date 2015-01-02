@@ -1,3 +1,4 @@
 <map id="pocketmine\level\format\generic\BaseChunk\setBlockSkyLight" name="pocketmine\level\format\generic\BaseChunk\setBlockSkyLight">
-<area shape="rect" id="node3" href="$da/d9a/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_full_chunk.html#a0fb118fe67d326822e163bfeaaf1114b" title="pocketmine\\level\\format\l\\generic\\BaseFullChunk\l\\getProvider" alt="" coords="303,5,463,69"/>
+<area shape="rect" id="node2" href="$da/d9a/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_full_chunk.html#a0fb118fe67d326822e163bfeaaf1114b" title="pocketmine\\level\\format\l\\generic\\BaseFullChunk\l\\getProvider" alt="" coords="315,5,493,61"/>
+<area shape="rect" id="node3" href="$da/d9a/classpocketmine_1_1level_1_1format_1_1generic_1_1_base_full_chunk.html#af66cc6951f866ad4d7359010a9e452c1" title="pocketmine\\level\\format\l\\generic\\BaseFullChunk\l\\hasChanged" alt="" coords="315,85,493,141"/>
 </map>

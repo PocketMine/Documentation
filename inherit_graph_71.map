@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$d3/d25/classpocketmine_1_1scheduler_1_1_server_scheduler.html" title="pocketmine\\scheduler\l\\ServerScheduler" alt="" coords="5,5,155,51"/>
+<area shape="rect" id="node2" href="$df/dfa/classpocketmine_1_1scheduler_1_1_async_task.html" title="pocketmine\\scheduler\l\\AsyncTask" alt="" coords="147,38,309,79"/>
+<area shape="rect" id="node3" href="$d8/da8/classpocketmine_1_1level_1_1format_1_1anvil_1_1_chunk_request_task.html" title="pocketmine\\level\\format\l\\anvil\\ChunkRequestTask" alt="" coords="358,5,535,46"/>
+<area shape="rect" id="node4" href="$da/d91/classpocketmine_1_1scheduler_1_1_send_usage_task.html" title="pocketmine\\scheduler\l\\SendUsageTask" alt="" coords="365,70,528,111"/>
 </map>

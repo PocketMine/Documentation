@@ -1,4 +1,4 @@
 <map id="pocketmine\Player\canSee" name="pocketmine\Player\canSee">
-<area shape="rect" id="node3" href="$df/d2c/classpocketmine_1_1_player.html#a64148b8f2640b851c6ad698a4044e8d4" title="pocketmine\\Player\\spawnTo" alt="" coords="232,5,419,35"/>
-<area shape="rect" id="node5" href="$df/d2c/classpocketmine_1_1_player.html#a4d2609373c9c8d5a444acb38214031f6" title="pocketmine\\Player\\showPlayer" alt="" coords="467,5,669,35"/>
+<area shape="rect" id="node2" href="$df/d2c/classpocketmine_1_1_player.html#a64148b8f2640b851c6ad698a4044e8d4" title="pocketmine\\Player\\spawnTo" alt="" coords="245,5,443,32"/>
+<area shape="rect" id="node3" href="$df/d2c/classpocketmine_1_1_player.html#a4d2609373c9c8d5a444acb38214031f6" title="pocketmine\\Player\\showPlayer" alt="" coords="491,5,706,32"/>
 </map>

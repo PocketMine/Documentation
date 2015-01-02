@@ -1,5 +1,6 @@
 var classpocketmine_1_1network_1_1protocol_1_1_set_health_packet =
 [
+    [ "clean", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a2ab5e54541dfab853409ab20faae5d56", null ],
     [ "decode", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a6e115036b42aa49505cb6970c33d48bb", null ],
     [ "encode", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a043bf02ac8c0a4f2b0a794bf352adc10", null ],
     [ "feof", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a38b7693bb0d3b4e3478f8e9afdc43609", null ],
@@ -9,7 +10,7 @@ var classpocketmine_1_1network_1_1protocol_1_1_set_health_packet =
     [ "getDataArray", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#aeb79aff9741296738ba592888fadf76a", null ],
     [ "getFloat", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a8fe27f4f9c07d42ede630b55e3890084", null ],
     [ "getInt", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#aa8e432c32d0d2df1d6499091b97c30e9", null ],
-    [ "getLong", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a4787f7b0980de0d0a21910c65619e682", null ],
+    [ "getLong", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a46607817bbb0ca54d2bd2918538ce980", null ],
     [ "getLTriad", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#aa973f04ced929c90b608e12e866b5800", null ],
     [ "getShort", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a91e87d8808781a10cbcc50e694484341", null ],
     [ "getSlot", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a21bc1362ec76e12ace742e5133d0f2c5", null ],
@@ -30,5 +31,8 @@ var classpocketmine_1_1network_1_1protocol_1_1_set_health_packet =
     [ "reset", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a5ea9e9eb5b32dee9c6bc51900f8fbb92", null ],
     [ "setBuffer", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a165102568c1290cdfa2e9a3cda814466", null ],
     [ "$buffer", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a87c6760a0f385b960a81d4f1fe57278d", null ],
-    [ "$health", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a05bdbc77ebb5a85022bc97aeeb6b570e", null ]
+    [ "$health", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a05bdbc77ebb5a85022bc97aeeb6b570e", null ],
+    [ "$isEncoded", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#af5101c75e3a3da5d36158558ae1d75ab", null ],
+    [ "$next", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a2b7d694beb5ea941d0642d93cfd38bb8", null ],
+    [ "$pool", "dc/df1/classpocketmine_1_1network_1_1protocol_1_1_set_health_packet.html#a7a8f7b25ec8fb1d8be143c821ff74d3c", null ]
 ];

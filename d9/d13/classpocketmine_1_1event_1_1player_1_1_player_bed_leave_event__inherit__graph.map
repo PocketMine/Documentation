@@ -1,0 +1,4 @@
+<map id="pocketmine\event\player\PlayerBedLeaveEvent" name="pocketmine\event\player\PlayerBedLeaveEvent">
+<area shape="rect" id="node2" href="$d1/db1/classpocketmine_1_1event_1_1player_1_1_player_event.html" title="{pocketmine\\event\\player\l\\PlayerEvent\n|# $player\l|+ getPlayer()\l}" alt="" coords="5,147,184,239"/>
+<area shape="rect" id="node3" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html" title="{pocketmine\\event\\Event\n|# $eventName\l|+ getEventName()\l+ getHandlers()\l}" alt="" coords="6,6,183,98"/>
+</map>

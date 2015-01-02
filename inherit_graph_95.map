@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$d7/d20/classraklib_1_1server_1_1_session_manager.html" title="raklib\\server\\SessionManager" alt="" coords="5,5,200,35"/>
+<area shape="rect" id="node2" href="$d1/d8c/classpocketmine_1_1_worker.html" title="pocketmine\\Worker" alt="" coords="120,12,264,39"/>
+<area shape="rect" id="node3" href="$d1/d4e/classpocketmine_1_1scheduler_1_1_async_worker.html" title="pocketmine\\scheduler\l\\AsyncWorker" alt="" coords="312,5,475,46"/>
 </map>

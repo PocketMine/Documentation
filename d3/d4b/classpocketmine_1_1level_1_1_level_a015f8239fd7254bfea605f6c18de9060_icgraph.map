@@ -1,5 +1,0 @@
-<map id="pocketmine\level\Level\getSpawn" name="pocketmine\level\Level\getSpawn">
-<area shape="rect" id="node3" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a3167219fc8feab0852933dd2c265f6d8" title="pocketmine\\level\\Level\l\\getSafeSpawn" alt="" coords="208,5,363,51"/>
-<area shape="rect" id="node5" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#adbfdb8014d3364de28dd7909a7577d0d" title="pocketmine\\level\\Level\l\\useBreakOn" alt="" coords="208,74,363,121"/>
-<area shape="rect" id="node7" href="$d3/d4b/classpocketmine_1_1level_1_1_level.html#a3346679b5fe84b0fb3ae4bc27d99e18f" title="pocketmine\\level\\Level\l\\useItemOn" alt="" coords="208,143,363,190"/>
-</map>

@@ -1,4 +1,4 @@
 <map id="pocketmine\inventory\PlayerInventory\setItem" name="pocketmine\inventory\PlayerInventory\setItem">
-<area shape="rect" id="node3" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#aad6eea0b7a857bd16a25329e41cbcf3d" title="pocketmine\\inventory\l\\PlayerInventory\\setArmorContents" alt="" coords="219,5,445,51"/>
-<area shape="rect" id="node5" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#aea00deec1dff34be27e648a71f3cfaa3" title="pocketmine\\inventory\l\\PlayerInventory\\setItemInHand" alt="" coords="229,74,435,121"/>
+<area shape="rect" id="node2" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#aad6eea0b7a857bd16a25329e41cbcf3d" title="pocketmine\\inventory\l\\PlayerInventory\\setArmorContents" alt="" coords="233,5,479,46"/>
+<area shape="rect" id="node3" href="$dc/d77/classpocketmine_1_1inventory_1_1_player_inventory.html#ab204245a5947b86e206ff07fbeb17a33" title="pocketmine\\inventory\l\\PlayerInventory\\setItemInHand" alt="" coords="245,70,467,111"/>
 </map>

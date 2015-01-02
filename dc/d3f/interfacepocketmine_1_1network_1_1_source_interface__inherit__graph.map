@@ -1,3 +1,3 @@
 <map id="pocketmine\network\SourceInterface" name="pocketmine\network\SourceInterface">
-<area shape="rect" id="node3" href="$db/dd5/classpocketmine_1_1network_1_1_rak_lib_interface.html" title="{pocketmine\\network\l\\RakLibInterface\n||+ __construct()\l+ doTick()\l+ process()\l+ closeSession()\l+ close()\l+ shutdown()\l+ emergencyShutdown()\l+ openSession()\l+ handleEncapsulated()\l+ handleRaw()\land 7 more...\l}" alt="" coords="5,243,168,519"/>
+<area shape="rect" id="node2" href="$db/dd5/classpocketmine_1_1network_1_1_rak_lib_interface.html" title="{pocketmine\\network\l\\RakLibInterface\n||+ __construct()\l+ doTick()\l+ process()\l+ closeSession()\l+ close()\l+ shutdown()\l+ emergencyShutdown()\l+ openSession()\l+ handleEncapsulated()\l+ blockAddress()\land 10 more...\l}" alt="" coords="5,219,187,458"/>
 </map>

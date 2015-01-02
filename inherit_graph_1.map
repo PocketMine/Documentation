@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$dd/de7/interface_log_level.html" title="LogLevel" alt="" coords="5,5,80,35"/>
+<area shape="rect" id="node1" href="$d4/d5f/interfacepocketmine_1_1command_1_1_command_executor.html" title="pocketmine\\command\l\\CommandExecutor" alt="" coords="6,5,173,46"/>
+<area shape="rect" id="node2" href="$d4/d92/interfacepocketmine_1_1plugin_1_1_plugin.html" title="pocketmine\\plugin\\Plugin" alt="" coords="221,12,403,39"/>
+<area shape="rect" id="node3" href="$d1/d8e/classpocketmine_1_1plugin_1_1_plugin_base.html" title="pocketmine\\plugin\\PluginBase" alt="" coords="451,12,664,39"/>
 </map>

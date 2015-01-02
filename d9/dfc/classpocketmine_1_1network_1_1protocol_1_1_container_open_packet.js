@@ -1,5 +1,6 @@
 var classpocketmine_1_1network_1_1protocol_1_1_container_open_packet =
 [
+    [ "clean", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#a2ab5e54541dfab853409ab20faae5d56", null ],
     [ "decode", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#a9c8ec892ceca4e9b19f56d65d9024502", null ],
     [ "encode", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#a08fe0337120102f2a95b3ee8c0de1a41", null ],
     [ "feof", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#a38b7693bb0d3b4e3478f8e9afdc43609", null ],
@@ -9,7 +10,7 @@ var classpocketmine_1_1network_1_1protocol_1_1_container_open_packet =
     [ "getDataArray", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#aeb79aff9741296738ba592888fadf76a", null ],
     [ "getFloat", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#a8fe27f4f9c07d42ede630b55e3890084", null ],
     [ "getInt", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#aa8e432c32d0d2df1d6499091b97c30e9", null ],
-    [ "getLong", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#a4787f7b0980de0d0a21910c65619e682", null ],
+    [ "getLong", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#a46607817bbb0ca54d2bd2918538ce980", null ],
     [ "getLTriad", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#aa973f04ced929c90b608e12e866b5800", null ],
     [ "getShort", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#a91e87d8808781a10cbcc50e694484341", null ],
     [ "getSlot", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#a21bc1362ec76e12ace742e5133d0f2c5", null ],
@@ -30,6 +31,9 @@ var classpocketmine_1_1network_1_1protocol_1_1_container_open_packet =
     [ "reset", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#a5ea9e9eb5b32dee9c6bc51900f8fbb92", null ],
     [ "setBuffer", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#a165102568c1290cdfa2e9a3cda814466", null ],
     [ "$buffer", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#a87c6760a0f385b960a81d4f1fe57278d", null ],
+    [ "$isEncoded", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#af5101c75e3a3da5d36158558ae1d75ab", null ],
+    [ "$next", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#a47e40747f98c309d3712b68e0c8b37ac", null ],
+    [ "$pool", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#a0a86e4cae71be85f00d98694bd9b0fa3", null ],
     [ "$slots", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#a75b72fa8bc765fcf4a6e99f055238300", null ],
     [ "$type", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#adac0b834d5598b9261911953c62db1ef", null ],
     [ "$windowid", "d9/dfc/classpocketmine_1_1network_1_1protocol_1_1_container_open_packet.html#ac4f85d0b7b0192f230079c134e42eff6", null ],

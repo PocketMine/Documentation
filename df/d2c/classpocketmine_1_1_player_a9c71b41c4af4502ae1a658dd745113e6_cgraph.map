@@ -1,4 +1,3 @@
 <map id="pocketmine\Player\hidePlayer" name="pocketmine\Player\hidePlayer">
-<area shape="rect" id="node3" href="$df/d2c/classpocketmine_1_1_player.html#ad3ca35a6d37581802eb5de88ee938c9c" title="pocketmine\\Player\\despawnFrom" alt="" coords="248,5,464,35"/>
-<area shape="rect" id="node5" href="$df/d2c/classpocketmine_1_1_player.html#a890409beec631f5cbc42d602ad94eb2b" title="pocketmine\\Player\\getName" alt="" coords="263,59,449,88"/>
+<area shape="rect" id="node2" href="$df/d2c/classpocketmine_1_1_player.html#a890409beec631f5cbc42d602ad94eb2b" title="pocketmine\\Player\\getName" alt="" coords="265,5,469,32"/>
 </map>

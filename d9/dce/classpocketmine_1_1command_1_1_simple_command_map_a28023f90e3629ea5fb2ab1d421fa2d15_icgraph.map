@@ -1,4 +1,4 @@
 <map id="pocketmine\command\SimpleCommandMap\getCommand" name="pocketmine\command\SimpleCommandMap\getCommand">
-<area shape="rect" id="node3" href="$d9/dce/classpocketmine_1_1command_1_1_simple_command_map.html#a9a281c05b213ede1c92da2aa452ae338" title="pocketmine\\command\l\\SimpleCommandMap\\dispatch" alt="" coords="289,5,492,51"/>
-<area shape="rect" id="node5" href="$d9/dce/classpocketmine_1_1command_1_1_simple_command_map.html#ab0b0a76f03cad6e7203e5e84e700a5f3" title="pocketmine\\command\l\\SimpleCommandMap\\register\lServerAliases" alt="" coords="292,75,489,139"/>
+<area shape="rect" id="node2" href="$d9/dce/classpocketmine_1_1command_1_1_simple_command_map.html#a9a281c05b213ede1c92da2aa452ae338" title="pocketmine\\command\l\\SimpleCommandMap\\dispatch" alt="" coords="310,5,533,46"/>
+<area shape="rect" id="node3" href="$d9/dce/classpocketmine_1_1command_1_1_simple_command_map.html#ab0b0a76f03cad6e7203e5e84e700a5f3" title="pocketmine\\command\l\\SimpleCommandMap\\register\lServerAliases" alt="" coords="313,69,530,125"/>
 </map>

@@ -1,4 +1,3 @@
 <map id="pocketmine\plugin\RegisteredListener\callEvent" name="pocketmine\plugin\RegisteredListener\callEvent">
-<area shape="rect" id="node3" href="$d1/d2f/classpocketmine_1_1event_1_1_event.html#a99e105e6cb8e83f3dbae1fb26d398cf4" title="pocketmine\\event\\Event\l\\isCancelled" alt="" coords="264,5,427,51"/>
-<area shape="rect" id="node5" href="$d9/d40/classpocketmine_1_1plugin_1_1_registered_listener.html#a55df410a685b40384af93676cdf4ff62" title="pocketmine\\plugin\\Registered\lListener\\isIgnoringCancelled" alt="" coords="248,74,443,121"/>
+<area shape="rect" id="node2" href="$d9/d40/classpocketmine_1_1plugin_1_1_registered_listener.html#a55df410a685b40384af93676cdf4ff62" title="pocketmine\\plugin\\Registered\lListener\\isIgnoringCancelled" alt="" coords="264,5,475,46"/>
 </map>

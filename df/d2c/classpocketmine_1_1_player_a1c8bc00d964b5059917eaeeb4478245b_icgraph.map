@@ -1,5 +1,5 @@
 <map id="pocketmine\Player\dataPacket" name="pocketmine\Player\dataPacket">
-<area shape="rect" id="node3" href="$d2/d3c/classpocketmine_1_1entity_1_1_entity.html#ad0e2fe5c3105fd5881967898c2f6b60c" title="pocketmine\\entity\\Entity\l\\despawnFrom" alt="" coords="267,5,429,51"/>
-<area shape="rect" id="node5" href="$dc/d02/classpocketmine_1_1inventory_1_1_container_inventory.html#a8938f6f72d2e2c069f2385db5ac3c7db" title="pocketmine\\inventory\l\\ContainerInventory\\onClose" alt="" coords="255,74,441,121"/>
-<area shape="rect" id="node7" href="$dc/d02/classpocketmine_1_1inventory_1_1_container_inventory.html#aea6c5161d4a1c36119440a95beb7c78c" title="pocketmine\\inventory\l\\ContainerInventory\\onOpen" alt="" coords="256,143,440,190"/>
+<area shape="rect" id="node2" href="$d2/d3c/classpocketmine_1_1entity_1_1_entity.html#ad0e2fe5c3105fd5881967898c2f6b60c" title="pocketmine\\entity\\Entity\l\\despawnFrom" alt="" coords="282,5,459,46"/>
+<area shape="rect" id="node3" href="$dc/d02/classpocketmine_1_1inventory_1_1_container_inventory.html#a8938f6f72d2e2c069f2385db5ac3c7db" title="pocketmine\\inventory\l\\ContainerInventory\\onClose" alt="" coords="269,70,472,111"/>
+<area shape="rect" id="node4" href="$dc/d02/classpocketmine_1_1inventory_1_1_container_inventory.html#aea6c5161d4a1c36119440a95beb7c78c" title="pocketmine\\inventory\l\\ContainerInventory\\onOpen" alt="" coords="270,135,471,177"/>
 </map>

@@ -1,3 +1,3 @@
 <map id="pocketmine\level\format\mcregion\RegionLoader" name="pocketmine\level\format\mcregion\RegionLoader">
-<area shape="rect" id="node3" href="$de/da6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_region_loader.html" title="{pocketmine\\level\\format\l\\anvil\\RegionLoader\n|+ VERSION\l+ COMPRESSION_GZIP\l+ COMPRESSION_ZLIB\l+ $COMPRESSION_LEVEL\l|+ __construct()\l+ readChunk()\l+ generateChunk()\l}" alt="" coords="5,608,195,797"/>
+<area shape="rect" id="node2" href="$de/da6/classpocketmine_1_1level_1_1format_1_1anvil_1_1_region_loader.html" title="{pocketmine\\level\\format\l\\anvil\\RegionLoader\n|+ VERSION\l+ COMPRESSION_GZIP\l+ COMPRESSION_ZLIB\l+ $COMPRESSION_LEVEL\l|+ __construct()\l+ readChunk()\l+ generateChunk()\l}" alt="" coords="5,541,192,707"/>
 </map>

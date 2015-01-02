@@ -1,5 +1,6 @@
 var classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet =
 [
+    [ "clean", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#a2ab5e54541dfab853409ab20faae5d56", null ],
     [ "decode", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#ada608ead47058bbbc011093ce9cfc522", null ],
     [ "encode", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#a0563cf41de8e566f9d23aef222edb8d7", null ],
     [ "feof", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#a38b7693bb0d3b4e3478f8e9afdc43609", null ],
@@ -9,7 +10,7 @@ var classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet =
     [ "getDataArray", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#aeb79aff9741296738ba592888fadf76a", null ],
     [ "getFloat", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#a8fe27f4f9c07d42ede630b55e3890084", null ],
     [ "getInt", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#aa8e432c32d0d2df1d6499091b97c30e9", null ],
-    [ "getLong", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#a4787f7b0980de0d0a21910c65619e682", null ],
+    [ "getLong", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#a46607817bbb0ca54d2bd2918538ce980", null ],
     [ "getLTriad", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#aa973f04ced929c90b608e12e866b5800", null ],
     [ "getShort", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#a91e87d8808781a10cbcc50e694484341", null ],
     [ "getSlot", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#a21bc1362ec76e12ace742e5133d0f2c5", null ],
@@ -32,6 +33,9 @@ var classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet =
     [ "$buffer", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#a87c6760a0f385b960a81d4f1fe57278d", null ],
     [ "$direction", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#a873ccc4d89d1ebb449c99d02a828c627", null ],
     [ "$eid", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#a5522d0276879b45da498a341edc4639a", null ],
+    [ "$isEncoded", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#af5101c75e3a3da5d36158558ae1d75ab", null ],
+    [ "$next", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#ae1744e4cb375afe7d87badcb2b90d265", null ],
+    [ "$pool", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#a9812e192289bcaa351827b5b69b826e4", null ],
     [ "$title", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#a1f896da598b14326857693d34d0bbf65", null ],
     [ "$x", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#a7a1e44dc40550ccd6bddb7fd405419e6", null ],
     [ "$y", "da/db2/classpocketmine_1_1network_1_1protocol_1_1_add_painting_packet.html#acced74fe41d520b90f1ff038ce67b751", null ],

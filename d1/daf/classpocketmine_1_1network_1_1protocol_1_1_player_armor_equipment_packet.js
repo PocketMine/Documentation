@@ -1,5 +1,6 @@
 var classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet =
 [
+    [ "clean", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#a2ab5e54541dfab853409ab20faae5d56", null ],
     [ "decode", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#a947840ec63c94c61fd498807599925cb", null ],
     [ "encode", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#ae5c2928cde3d83a12ccc17d4f2935ed6", null ],
     [ "feof", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#a38b7693bb0d3b4e3478f8e9afdc43609", null ],
@@ -9,7 +10,7 @@ var classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet =
     [ "getDataArray", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#aeb79aff9741296738ba592888fadf76a", null ],
     [ "getFloat", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#a8fe27f4f9c07d42ede630b55e3890084", null ],
     [ "getInt", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#aa8e432c32d0d2df1d6499091b97c30e9", null ],
-    [ "getLong", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#a4787f7b0980de0d0a21910c65619e682", null ],
+    [ "getLong", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#a46607817bbb0ca54d2bd2918538ce980", null ],
     [ "getLTriad", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#aa973f04ced929c90b608e12e866b5800", null ],
     [ "getShort", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#a91e87d8808781a10cbcc50e694484341", null ],
     [ "getSlot", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#a21bc1362ec76e12ace742e5133d0f2c5", null ],
@@ -31,5 +32,8 @@ var classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet =
     [ "setBuffer", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#a165102568c1290cdfa2e9a3cda814466", null ],
     [ "$buffer", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#a87c6760a0f385b960a81d4f1fe57278d", null ],
     [ "$eid", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#a693290e9fdd8529e3ea30caa2110c1eb", null ],
+    [ "$isEncoded", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#af5101c75e3a3da5d36158558ae1d75ab", null ],
+    [ "$next", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#ac321960d8b9edae7031d132d992142e1", null ],
+    [ "$pool", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#a32d704e75f4f233eaff14ea46b671103", null ],
     [ "$slots", "d1/daf/classpocketmine_1_1network_1_1protocol_1_1_player_armor_equipment_packet.html#a2d9d627d521203416c82089197ba5f6b", null ]
 ];
