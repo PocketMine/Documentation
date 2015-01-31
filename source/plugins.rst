@@ -8,6 +8,9 @@ Plugins are available on the `PocketMine website <http://forums.pocketmine.net/p
 
 Below is an skeleton with the minimal needed directories, files and content.
 
+.. note::
+    To run plugins from source or create .phar files you need `DevTools <http://jenkins.pocketmine.net/job/DevTools%20Plugin/>`_.
+
 Basic plugin structure
 ----------------------
 
