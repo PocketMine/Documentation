@@ -2,7 +2,11 @@
 
 Requirements
 ============
-PocketMine-MP.phar, the main component, is needed to run PocketMine-MP. PocketMine-MP requires a few extra extensions because of that you need custom build PHP binaries. We precomiled a few binaries. If you have problems you could try to compile PHP yourself with the `compile script on GitHub <https://github.com/PocketMine/php-build-scripts/blob/master/compile.sh>`_. Got problems? `Contact us! <http://pocketmine-mp.readthedocs.org/en/latest/intro.html#contact-and-support>`_
+PocketMine-MP.phar, the main component, is needed to run PocketMine-MP. 
+PocketMine-MP requires a few extra extensions because of that you need custom build PHP binaries. 
+We precomiled a few binaries. 
+If you have problems you could try to compile PHP with our `compile script from GitHub <https://github.com/PocketMine/php-build-scripts/blob/master/compile.sh>`_. 
+Got problems? `Contact us! <http://pocketmine-mp.readthedocs.org/en/latest/intro.html#contact-and-support>`_
 
 PocketMine-MP Installers
 ------------------------
@@ -12,8 +16,9 @@ Download the installer from `SourceForge <http://sourceforge.net/projects/pocket
 
 Linux/MacOS
 +++++++++++
-You can use the following urls with curl or wget to install PocketMine-MP
-.. code-block::
+Use one of the following urls with ``curl`` or ``wget`` to install PocketMine-MP.
+
+.. code-block:: sh
 
 	http://get.pocketmine.net/
 	https://raw.githubusercontent.com/PocketMine/php-build-scripts/master/installer.sh
@@ -25,6 +30,13 @@ Replace <URL> with a url from above and channel with ``development`` or ``beta``
 
 	curl -sL <URL> | bash -s - -v <CHANNEL>
 	wget -q -O - <URL> | bash -s - -v <CHANNEL>
+
+
+.. warning::
+
+    It is recommended to run it as a normal user as it doesn't need further permissions.
+    Don't run the installer as root, this is discouraged.
+
 
 PocketMine-MP.phar
 ------------------
