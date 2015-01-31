@@ -14,6 +14,21 @@ How do I install PHP? / How do I install this Server?
 +++++++++++++++++++++++++++++++++++++++++++++++++++++
 Check the installation instructions on the :ref:`installation <setup>` page.
 
+Can't install as user root
+++++++++++++++++++++++++++
+.. warning::
+
+    This script is running as root, this is discouraged.
+    It is recommended to run it as a normal user as it doesn't need further permissions.
+
+We recommend you to install PocketMine-MP as a normal user, not as root. 
+Create one if you don't have one.
+
+.. code-block:: sh
+
+    useradd -d /home/pocketmine -m pocketmine
+    passwd pocketmine
+
 Failed loading opcache.so
 +++++++++++++++++++++++++
 This will fail when you did not use the installer. This can be fixed with a single command.
