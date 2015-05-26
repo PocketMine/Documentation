@@ -55,7 +55,7 @@ Plugins
 
 How do I install Plugins
 ++++++++++++++++++++++++
-Download the ``.phar`` file and move it to the ``plugins`` folder
+Download the ``.phar`` file and move it to the ``plugins`` folder. Reload the server by typing 'reload' on the terminal console.
 
 Can i use .php files
 ++++++++++++++++++++
