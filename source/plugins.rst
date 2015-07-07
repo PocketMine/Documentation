@@ -24,13 +24,15 @@ Make sure your base structure looks like this
 
 .. code-block:: sh
 
-	Example
-	├── plugin.yml
-	└── src
+	PocketMine-MP
+	└── plugins
 	    └── Example
-		└── Main.php
+    	        ├── plugin.yml
+    	        └── src
+                    └── Example
+                        └── Main.php
 
-	2 directories, 2 files
+	5 directories, 2 files
 
 plugin.yml
 ++++++++++
