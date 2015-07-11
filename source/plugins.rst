@@ -1,5 +1,3 @@
-.. plugins:
-
 Plugins
 =======
 **PocketMine is extendable!**
@@ -55,7 +53,7 @@ api     Minimal PocketMine-MP API version required for your plugin (`current <ht
 	api: 1.12.0
 
 Example.php
-++++++++
++++++++++++
 Now, create the main class file, that will include the PluginBase Class that starts the plugin. You can name it whatever you want, but a common way to name it is like the plugin name or Main.
 
 .. code-block:: php

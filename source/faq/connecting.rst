@@ -1,0 +1,7 @@
+Connecting
+~~~~~~~~~~
+
+.. toctree::
+    :glob:
+    
+    connecting/*

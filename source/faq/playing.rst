@@ -1,0 +1,7 @@
+Playing
+~~~~~~~
+
+.. toctree::
+    :glob:
+
+    playing/*

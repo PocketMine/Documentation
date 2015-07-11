@@ -5,15 +5,15 @@ PocketMine Documentation
 ========================
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
-   intro
-   require
-   setup
-   config
-   update
-   faq
-   developers
-   plugins
-   issues
-   
+    intro
+    requirements
+    installation
+    configuration
+    update
+    faq
+    developers
+    plugins
+    issues
+    contact
