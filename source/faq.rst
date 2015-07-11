@@ -8,5 +8,4 @@ FAQ
     faq/connecting.rst
     faq/playing.rst
     faq/plugins.rst
-
     protocolversions.rst

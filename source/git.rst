@@ -1,10 +1,8 @@
-.. _git:
-
 How to use git
-==============
+--------------
 
 Clone PocketMine-MP
--------------------
+^^^^^^^^^^^^^^^^^^^
 Get the clone URL from `PocketMine/PocketMine-MP <https://github.com/PocketMine/PocketMine-MP>`_
 
 .. code-block:: sh
@@ -14,7 +12,7 @@ Get the clone URL from `PocketMine/PocketMine-MP <https://github.com/PocketMine/
 
 
 How to make a pull request
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 Go to the `PocketMine/PocketMine-MP <https://github.com/PocketMine/PocketMine-MP>`_ repository and hit the **Fork** button. You should now have a forked repo from **PocketMine/PocketMine-MP** in your own repositories.
 
 .. image:: img/git-fork.png
@@ -35,7 +33,7 @@ Make your changes to the code and commit it:
 	Only commit changes described in the commit message
 
 .. code-block:: sh
-	
+
 	$ git status  # check the status
 	$ git add <filename>  # add all changed files
 	$ git commit -m 'description of changes'  # make a commit with a message
@@ -48,7 +46,7 @@ Take a look at GitHub and make a pull request. If the pull request is accepted a
 	``$ git remote add upstream git@github.com:PocketMine/PocketMine-MP.git``
 
 .. code-block:: sh
-	
+
 	$ git checkout master  # switch back to the master branch
 	$ git fetch upstream  # download latest commits from the upstream
 	$ git merge upstream/master  # merge changes from upstream/master into your master branch
@@ -56,6 +54,5 @@ Take a look at GitHub and make a pull request. If the pull request is accepted a
 Remove the branch you made with
 
 .. code-block:: sh
-	
-	$ git branch -d feature  # remove the branch to keep it clean
 
+	$ git branch -d feature  # remove the branch to keep it clean

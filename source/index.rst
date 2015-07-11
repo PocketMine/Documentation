@@ -17,3 +17,4 @@ PocketMine Documentation
     plugins
     issues
     contact
+    links

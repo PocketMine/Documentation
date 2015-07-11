@@ -235,16 +235,14 @@ You can skip the wizard from here and start the server with the default settings
 
 The server should have started now and you should be able to join.
 
+
 .. _Win-Bintray: https://bintray.com/pocketmine/PocketMine/Windows-PHP-Binaries/view#files
 .. _GitHub: https://github.com/PocketMine/PocketMine-MP/releases
 .. _Jenkins: http://jenkins.pocketmine.net/job/PocketMine-MP/promotion/
-
 .. _PHP-Bintray: https://bintray.com/pocketmine/PocketMine/Unix-PHP-Binaries/view#files
 .. _PHP-Jenkins: http://jenkins.pocketmine.net/
 .. _PM-Stable: https://github.com/PocketMine/PocketMine-MP/releases
 .. _PM-Dev: http://jenkins.pocketmine.net/job/PocketMine-MP/
-
 .. _PocketMine-MP for Android: https://play.google.com/store/apps/details?id=net.pocketmine.server
-
 .. _Crowdin: http://translate.pocketmine.net
 .. _License: https://github.com/PocketMine/PocketMine-MP/blob/master/LICENSE
