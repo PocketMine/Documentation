@@ -14,7 +14,7 @@ Basic plugin structure
 
 .. contents::
 	:local:
-	:depth: 2
+	:depth: 3
 
 Directories
 +++++++++++
@@ -103,8 +103,17 @@ The ``<plugin name>`` should be the same as the name in plugin.yml.
   [Server thread/INFO]: [DevTools] Adding src/Example/Example.php
   [Server thread/INFO]: Phar plugin Example v1.0.0 has been created on /Pocketmine-MP/dev/plugins/DevTools//Example_v1.0.0.phar
 
-More information
-----------------
+More examples
+-------------
+
+.. toctree::
+    :glob:
+
+    pluginexamples/*
+
+
+Resources
+---------
 
 * `PocketMine-MP Stable API Documentation <http://docs.pocketmine.net/>`_
 * `PocketMine-MP Development API Documentation <http://jenkins.pocketmine.net/job/PocketMine-MP-doc/doxygen/>`_
