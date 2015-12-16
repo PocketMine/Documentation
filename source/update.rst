@@ -26,7 +26,10 @@ Download the PHP binary for your OS:
 Update PocketMine-MP
 ++++++++++++++++++++
 
-Download the latest `stable <PM-Stable_>`_ or `development <PM-Dev_>`_ release .
+* Download the .phar matching your MCPE version from :ref:`here <supportedMCPEversions>`.
+* Change the name to ``PocketMine-MP.phar``
+* Place it in the server folder
+* Start the server and make sure the versions match
 
 .. note:: Don't forget to rename the file to ``PocketMine-MP.phar``
 

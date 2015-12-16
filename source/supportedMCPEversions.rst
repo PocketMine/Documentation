@@ -3,8 +3,11 @@
 Supported MCPE Versions
 ~~~~~~~~~~~~~~~~~~~~~~~
 To check the current PocketMine-MP supported protocol version run the ``version`` command when PocketMine-MP is running.
-The latest supported MCPE version is `v0.13.1.0 <bleeding-52_>`_. Running the ``version`` command outputs
-.. code-block::
+
+The latest supported MCPE version is `v0.13.1.0 <bleeding-52_>`_.
+Running the ``version`` command outputs:
+
+.. code-block:: none
 
     This server is running PocketMine-MP 1.6dev-52 「[REDACTED]」
     implementing API version 1.13.1
@@ -17,7 +20,7 @@ The latest supported MCPE version is `v0.13.1.0 <bleeding-52_>`_. Running the ``
 +-------------------+------------------+--------------------------------+
 | v0.13.0.0         | 38               | `Bleeding #51 <bleeding-51_>`_ |
 +-------------------+------------------+--------------------------------+
-| v0.11.1.0         | 27               | development                    |
+| v0.11.1.0         | 27               | `Development <dev_>`_          |
 +-------------------+------------------+--------------------------------+
 | v0.11.0.0         | 27               |                                |
 +-------------------+------------------+--------------------------------+
@@ -49,9 +52,9 @@ The latest supported MCPE version is `v0.13.1.0 <bleeding-52_>`_. Running the ``
 +-------------------+------------------+--------------------------------+
 | v0.11.0.1         | 21               |                                |
 +-------------------+------------------+--------------------------------+
-| v0.10.5.0         | 20               | stable                         |
+| v0.10.5.0         | 20               | `Stable <stable_>`_            |
 +-------------------+------------------+--------------------------------+
-| v0.10.4.0         | 20               | beta                           |
+| v0.10.4.0         | 20               |                                |
 +-------------------+------------------+--------------------------------+
 | v0.10.3.0         | 20               |                                |
 +-------------------+------------------+--------------------------------+
@@ -150,3 +153,5 @@ The latest supported MCPE version is `v0.13.1.0 <bleeding-52_>`_. Running the ``
 
 .. _bleeding-52: http://jenkins.pocketmine.net/job/PocketMine-MP-Bleeding/52/
 .. _bleeding-51: http://jenkins.pocketmine.net/job/PocketMine-MP-Bleeding/51/
+.. _dev: http://jenkins.pocketmine.net/job/PocketMine-MP/
+.. _stable: https://github.com/PocketMine/PocketMine-MP/releases
