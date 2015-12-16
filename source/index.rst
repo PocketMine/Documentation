@@ -9,6 +9,7 @@ PocketMine Documentation
 
     intro
     requirements
+    supportedMCPEversions
     installation
     configuration
     update
