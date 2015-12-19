@@ -1,7 +1,7 @@
 Can't connect to the server
 """""""""""""""""""""""""""
 
-Run the ``version`` command to check the supported MCPE version or :doc:`/protocolversions`.
+Run the ``version`` command to check the supported MCPE version or :doc:`/supportedMCPEversions`.
 
 Example:
 

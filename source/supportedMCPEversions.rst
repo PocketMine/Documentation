@@ -4,23 +4,23 @@ Supported MCPE Versions
 ~~~~~~~~~~~~~~~~~~~~~~~
 To check the current PocketMine-MP supported protocol version run the ``version`` command when PocketMine-MP is running.
 
-The latest supported MCPE version is `v0.13.1.0 <bleeding-52_>`_.
+The latest supported MCPE version is `v0.13.1.0 <dev_>`_.
 Running the ``version`` command outputs:
 
 .. code-block:: none
 
-    This server is running PocketMine-MP 1.6dev-52 「[REDACTED]」
+    This server is running PocketMine-MP 1.6dev-1265 「[REDACTED]」
     implementing API version 1.13.1
     for Minecraft: PE v0.13.1 alpha (protocol version 38)
 
 +-------------------+------------------+--------------------------------+
 | Minecraft version | Protocol version | PocketMine version             |
 +===================+==================+================================+
-| v0.13.1.0         | 38               | `Bleeding #52 <bleeding-52_>`_ |
+| v0.13.1.0         | 38               | `Development <dev_>`_          |
 +-------------------+------------------+--------------------------------+
 | v0.13.0.0         | 38               | `Bleeding #51 <bleeding-51_>`_ |
 +-------------------+------------------+--------------------------------+
-| v0.11.1.0         | 27               | `Development <dev_>`_          |
+| v0.11.1.0         | 27               |                                |
 +-------------------+------------------+--------------------------------+
 | v0.11.0.0         | 27               |                                |
 +-------------------+------------------+--------------------------------+
@@ -151,7 +151,6 @@ Running the ``version`` command outputs:
 | v0.1.0.0          |                  |                                |
 +-------------------+------------------+--------------------------------+
 
-.. _bleeding-52: http://jenkins.pocketmine.net/job/PocketMine-MP-Bleeding/52/
 .. _bleeding-51: http://jenkins.pocketmine.net/job/PocketMine-MP-Bleeding/51/
-.. _dev: http://jenkins.pocketmine.net/job/PocketMine-MP/
-.. _stable: https://github.com/PocketMine/PocketMine-MP/releases
+.. _dev: http://jenkins.pocketmine.net/job/PocketMine-MP/Development/
+.. _stable: http://jenkins.pocketmine.net/job/PocketMine-MP/Stable/
