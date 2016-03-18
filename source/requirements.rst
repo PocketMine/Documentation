@@ -12,15 +12,14 @@ Got problems? :doc:`contact`.
 Download links
 --------------
 
-* `Windows installer`_
+* `Windows PHP binaries`_
 * `Linux/MacOS install script`_
-* `Linux/MacOS binaries`_
-* PocketMine-MP.phar (`GitHub`_, `Jenkins`_)
+* `Linux/MacOS PHP binaries`_
+* `PocketMine-MP.phar`_
 
 
-.. _compile script: https://github.com/PocketMine/php-build-scripts/blob/master/compile.sh
-.. _Windows installer: https://bintray.com/pocketmine/PocketMine/Windows-PHP-Binaries/view#files
-.. _Linux/MacOS install script: http://get.pocketmine.net/
-.. _Linux/MacOS binaries: https://bintray.com/pocketmine/PocketMine/Unix-PHP-Binaries/view#files
-.. _GitHub: https://github.com/PocketMine/PocketMine-MP/releases
-.. _Jenkins: http://jenkins.pocketmine.net/job/PocketMine-MP/promotion/
+.. _compile script: https://raw.githubusercontent.com/PocketMine/php-build-scripts/master/compile.sh
+.. _Windows PHP binaries: https://bintray.com/pocketmine/PocketMine/Windows-PHP-Binaries/view#files
+.. _Linux/MacOS install script: https://raw.githubusercontent.com/PocketMine/php-build-scripts/master/installer.sh
+.. _Linux/MacOS PHP binaries: https://bintray.com/pocketmine/PocketMine/Unix-PHP-Binaries/view#files
+.. _PocketMine-MP.phar: https://bintray.com/pocketmine/PocketMine/PocketMine-MP-phar/view#files

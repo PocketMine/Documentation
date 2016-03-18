@@ -4,19 +4,18 @@ Supported MCPE Versions
 ~~~~~~~~~~~~~~~~~~~~~~~
 To check the current PocketMine-MP supported protocol version run the ``version`` command when PocketMine-MP is running.
 
-The latest supported MCPE version is `v0.13.1.0 <dev_>`_.
 Running the ``version`` command outputs:
 
 .. code-block:: none
 
-    This server is running PocketMine-MP 1.6dev-1265 「[REDACTED]」
-    implementing API version 1.13.1
-    for Minecraft: PE v0.13.1 alpha (protocol version 38)
+    This server is running PocketMine-MP 1.6dev 「[REDACTED]」
+    implementing API version 2.0.0
+    for Minecraft: PE v0.14.0.0 alpha (protocol version 45)
 
 +-------------------+------------------+--------------------------------+
 | Minecraft version | Protocol version | PocketMine version             |
 +===================+==================+================================+
-| v0.14.0.0         | 45               | `Latest <bintray_>`            |
+| v0.14.0.0         | 45               | `bintray`_                     |
 +-------------------+------------------+--------------------------------+
 | v0.14.0.7         | 45               |                                |
 +-------------------+------------------+--------------------------------+
@@ -36,7 +35,7 @@ Running the ``version`` command outputs:
 +-------------------+------------------+--------------------------------+
 | v0.13.1.0         | 38               |                                |
 +-------------------+------------------+--------------------------------+
-| v0.13.0.0         | 38               | `Bleeding #51 <bleeding-51_>`_ |
+| v0.13.0.0         | 38               |                                |
 +-------------------+------------------+--------------------------------+
 | v0.13.0.5         | 38               |                                |
 +-------------------+------------------+--------------------------------+
@@ -80,7 +79,7 @@ Running the ``version`` command outputs:
 +-------------------+------------------+--------------------------------+
 | v0.11.0.1         | 21               |                                |
 +-------------------+------------------+--------------------------------+
-| v0.10.5.0         | 20               | `Stable <stable_>`_            |
+| v0.10.5.0         | 20               |                                |
 +-------------------+------------------+--------------------------------+
 | v0.10.4.0         | 20               |                                |
 +-------------------+------------------+--------------------------------+
@@ -180,5 +179,3 @@ Running the ``version`` command outputs:
 +-------------------+------------------+--------------------------------+
 
 .. _bintray: https://bintray.com/pocketmine/PocketMine/PocketMine-MP-phar/view#files
-.. _dev: http://jenkins.pocketmine.net/job/PocketMine-MP/Development/
-.. _stable: http://jenkins.pocketmine.net/job/PocketMine-MP/Stable/

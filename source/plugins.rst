@@ -7,7 +7,7 @@ Plugins are available on the `PocketMine website <http://forums.pocketmine.net/p
 Below is an skeleton with the minimal needed directories, files and content.
 
 .. note::
-    To run plugins from source or `create .phar files`_ you need `DevTools <http://jenkins.pocketmine.net/job/DevTools%20Plugin/>`_.
+    To run plugins from source or `create .phar files`_ you need `DevTools <https://github.com/PocketMine/DevTools/releases>`_.
 
 Basic plugin structure
 ----------------------
@@ -83,7 +83,7 @@ Create .phar files
 ------------------
 
 The easiest way to release a plugin is in .phar format.
-To create a .phar you need `DevTools <http://jenkins.pocketmine.net/job/DevTools%20Plugin/>`_.
+To create a .phar you need `DevTools <https://github.com/PocketMine/DevTools/releases>`_.
 
 1. Start PocketMine-MP
 2. Make sure the plugin is loaded. Look for ``Loading source plugin <plugin name>``
@@ -115,6 +115,4 @@ More examples
 Resources
 ---------
 
-* `PocketMine-MP Stable API Documentation <http://docs.pocketmine.net/>`_
-* `PocketMine-MP Development API Documentation <http://jenkins.pocketmine.net/job/PocketMine-MP-doc/doxygen/>`_
 * `Plugin Development forum <https://forums.pocketmine.net/forums/development/>`_

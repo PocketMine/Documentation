@@ -6,30 +6,25 @@ Installation
 Installing on Windows
 ---------------------
 
-Download the latest version from `Bintray <Win-Bintray_>`_.
+Download the latest PHP binary from `Bintray <Win-Bintray_>`_.
 Use the installer to install PocketMine-MP.
 The installer may have an outdated version of PocketMine-MP.
-You can download the latest .phar from `GitHub`_ or `Jenkins`_.
+You can download the latest .phar from `Bintray <Phar-Bintray_>`_.
 
 .. warning::
     If the provided x64 binary does not work then try the x86 binary.
 
 Installing on Linux/MacOS
 -------------------------
+.. warning::
+    Only works on Linux or MacOS.
 
-Use one of the following urls with ``curl`` or ``wget`` to install PocketMine-MP.
-
-.. code-block:: sh
-
-	https://get.pocketmine.net/
-	https://raw.githubusercontent.com/PocketMine/php-build-scripts/master/installer.sh
-
-Replace ``<URL>`` with one from above and ``<VERSION>`` with ``stable``, ``beta``, ``development``.
+Use ``curl`` or ``wget`` to install PocketMine-MP using the following command.
 
 .. code-block:: sh
 
-	curl -sL <URL> | bash -s - -v <VERSION>
-	wget -q -O - <URL> | bash -s - -v <VERSION>
+	curl -sL https://raw.githubusercontent.com/PocketMine/php-build-scripts/master/installer.sh | bash -s -
+	wget -q -O - https://raw.githubusercontent.com/PocketMine/php-build-scripts/master/installer.sh | bash -s -
 
 .. code-block:: sh
 
@@ -62,7 +57,7 @@ Using .phar
 ~~~~~~~~~~~
 
 1. Create a new directory for PocketMine-MP.
-2. Download PocketMine-MP.phar from `GitHub`_ or `Jenkins`_.
+2. Download PocketMine-MP.phar from `Bintray <Phar-Bintray_>`_.
 3. Rename the .phar to ``PocketMine-MP.phar``.
 4. Place it in the PocketMine-MP directory you just created.
 
@@ -119,9 +114,9 @@ Getting PHP and the start script
    * Windows `Bintray <Bintray_>`_
    * MacOS `Bintray <PHP-Bintray_>`_
    * CentOS `Bintray <PHP-Bintray_>`_
-   * Linux `Bintray <PHP-Bintray_>`_ or `Jenkins <PHP-Jenkins_>`_
-   * Linux ARM `Bintray <PHP-Bintray_>`_ or `Jenkins <PHP-Jenkins_>`_
-   * Android `Bintray <PHP-Bintray_>`_ or `Jenkins <PHP-Jenkins_>`_
+   * Linux `Bintray <PHP-Bintray_>`_
+   * Linux ARM `Bintray <PHP-Bintray_>`_
+   * Android `Bintray <PHP-Bintray_>`_
    * Raspbian `Bintray <PHP-Bintray_>`_
 
 2. Extract the PHP binary
@@ -238,11 +233,9 @@ The server should have started now and you should be able to join.
 
 .. _Win-Bintray: https://bintray.com/pocketmine/PocketMine/Windows-PHP-Binaries/view#files
 .. _GitHub: https://github.com/PocketMine/PocketMine-MP/releases
-.. _Jenkins: http://jenkins.pocketmine.net/job/PocketMine-MP/promotion/
 .. _PHP-Bintray: https://bintray.com/pocketmine/PocketMine/Unix-PHP-Binaries/view#files
-.. _PHP-Jenkins: http://jenkins.pocketmine.net/
 .. _PM-Stable: https://github.com/PocketMine/PocketMine-MP/releases
-.. _PM-Dev: http://jenkins.pocketmine.net/job/PocketMine-MP/
 .. _PocketMine-MP for Android: https://play.google.com/store/apps/details?id=net.pocketmine.server
 .. _Crowdin: http://translate.pocketmine.net
 .. _License: https://github.com/PocketMine/PocketMine-MP/blob/master/LICENSE
+.. _Phar-Bintray: https://bintray.com/pocketmine/PocketMine/PocketMine-MP-phar/view#files

@@ -16,7 +16,7 @@ Check the `Contribution Guidelines <https://github.com/PocketMine/PocketMine-MP/
 
 API Documentation
 -----------------
-Read the documentation on `docs.pocketmine.net <http://docs.pocketmine.net>`_ or the latest on `jenkins.pocketmine.net <http://jenkins.pocketmine.net/job/PocketMine-MP-doc/doxygen/>`_
+Read the documentation on `docs.pocketmine.net <http://docs.pocketmine.net>`_.
 
 Extending PocketMine-MP
 -----------------------
