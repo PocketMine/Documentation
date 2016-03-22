@@ -6,13 +6,49 @@ Installation
 Installing on Windows
 ---------------------
 
-Download the latest PHP binary from `Bintray <Win-Bintray_>`_.
-Use the installer to install PocketMine-MP.
-The installer may have an outdated version of PocketMine-MP.
-You can download the latest .phar from `Bintray <Phar-Bintray_>`_.
+There are 2 Un-Official PocketMine-MP Installers by TheDeibo Click either x64, or x86 to download your chosen one.
 
-.. warning::
-    If the provided x64 binary does not work then try the x86 binary.
+- One for `x64 <https://github.com/thedeibo/Windows-PocketMine-MP/raw/master/PocketMine-MP-x64.exe>`_
+- One for `x86 <https://github.com/thedeibo/Windows-PocketMine-MP/raw/master/PocketMine-MP-x86.exe>`_
+You can also download the latest .phar from `Bintray <https://bintray.com/pocketmine/PocketMine/PocketMine-MP-phar/view#files>`_.
+These installers provide you with the files you need to make a server!
+
+This installer provides you with these folders and files:
+
+1. /bin (And ALL its files inside)
+2. /start.cmd
+3. PocketMine-MP.phar
+
+You will also need to download this.
+
+`https://www.microsoft.com/en-gb/download/details.aspx?id=48145 <https://www.microsoft.com/en-gb/download/details.aspx?id=48145>`_
+Please use the correct version, else the server may not work. It supplies the essential code for running the server. Without it, You will recieve an error, and would not be able to run the server, and would recieve this error
+
+.. code-block:: winerror1
+
+	/usr/bin/php/php.exe: error while loading shared libraries: ?:
+	cannot open shared object file: No such file or directory
+	
+	bin\php\php.exe: Exit 127
+	
+
+If you have recieved this error:
+
+.. code-block:: winerror2
+
+	/usr/bin/php/php.exe: error while loading shared libraries: api-ms-win-crt-locale-l1-1-0.dll: cannot open shared object file: 
+	No such file or directory
+	
+	bin\php\php.exe: Exit 127
+	
+
+Then, you'll need to download the correct version of this, `https://support.microsoft.com/en-us/kb/2999226 <https://support.microsoft.com/en-us/kb/2999226>`_
+
+For more information about the installer, or how to fix some errors, please `CLICK HERE <https://forums.pocketmine.net/threads/pocketmine-1-6-php7-installer-windows.15493/>`_
+
+
+
+
 
 Installing on Linux/MacOS
 -------------------------
@@ -51,13 +87,13 @@ Install `PocketMine-MP for Android`_ from the Google play.
 Installing manually
 -------------------
 
-Did the installer fail? It is not your taste? YOLO? DIY!
+Did the installer fail? It is not your taste? You cah do it your self!
 
 Using .phar
 ~~~~~~~~~~~
 
 1. Create a new directory for PocketMine-MP.
-2. Download PocketMine-MP.phar from `Bintray <Phar-Bintray_>`_.
+2. Download PocketMine-MP.phar from `Bintray <https://bintray.com/pocketmine/PocketMine/PocketMine-MP-phar/view#files>`_.
 3. Rename the .phar to ``PocketMine-MP.phar``.
 4. Place it in the PocketMine-MP directory you just created.
 
@@ -111,16 +147,16 @@ Getting PHP and the start script
 
 1. Downlad your flavor PHP binary.
 
-   * Windows `Bintray <Bintray_>`_
-   * MacOS `Bintray <PHP-Bintray_>`_
-   * CentOS `Bintray <PHP-Bintray_>`_
-   * Linux `Bintray <PHP-Bintray_>`_
-   * Linux ARM `Bintray <PHP-Bintray_>`_
-   * Android `Bintray <PHP-Bintray_>`_
-   * Raspbian `Bintray <PHP-Bintray_>`_
+   * Windows `Bintray <https://bintray.com/pocketmine/PocketMine/Windows-PHP-Binaries/view>`_
+   * MacOS `Bintray <https://bintray.com/pocketmine/PocketMine/Unix-PHP-Binaries/view#files>`_
+   * CentOS `Bintray <https://bintray.com/pocketmine/PocketMine/Unix-PHP-Binaries/view#files>`_
+   * Linux `Bintray <https://bintray.com/pocketmine/PocketMine/Unix-PHP-Binaries/view#files>`_
+   * Linux ARM `Bintray <https://bintray.com/pocketmine/PocketMine/Unix-PHP-Binaries/view#files>`_
+   * Android `Bintray <https://bintray.com/pocketmine/PocketMine/Unix-PHP-Binaries/view#files>`_
+   * Raspbian `Bintray <https://bintray.com/pocketmine/PocketMine/Unix-PHP-Binaries/view#files>`_
 
 2. Extract the PHP binary
-3. Download the `start.sh <https://raw.githubusercontent.com/PocketMine/PocketMine-MP/master/start.sh>`_
+3. Download the `start.sh <https://raw.githubusercontent.com/PocketMine/PocketMine-MP/master/start.sh>`_ (For Windows, it's `start.cmd <https://raw.githubusercontent.com/PocketMine/PocketMine-MP/master/start.cmd>`_)
 4. Make start.sh executable (chmod +x start.sh)
 
 Starting for the first time
@@ -136,20 +172,20 @@ this can be disabled by running ``./start.sh --no-wizard``.
     [*] PocketMine-MP set-up wizard
     [*] Please select a language:
     English => en
-    EspaÃ±ol => es
-    ä¸­æ–‡ => zh
-    PyccÄ¸Ð¸Ð¹ => ru
-    æ—¥æœ¬èªž => ja
+    Español => es
+    中文 => zh
+    Pусский => ru
+    日本語 => ja
     Deutsch => de
-    í•œêµ­ì–´ => ko
+    한국어 => ko
     Nederlands => nl
-    FranÃ§ais => fr
+    Français  => fr
     Italiano => it
     Melayu => ms
     Norsk => no
     Svenska => sv
     Suomi => fi
-    TÃ¼rkÃ§e => tr
+    Türkçe => tr
     [?] Language (en):
 
 PocketMine-MP supports a few other languages.
@@ -229,7 +265,6 @@ You can skip the wizard from here and start the server with the default settings
     [Server thread/INFO]: Done (19.485s)! For help, type "help" or "?"
 
 The server should have started now and you should be able to join.
-
 
 .. _Win-Bintray: https://bintray.com/pocketmine/PocketMine/Windows-PHP-Binaries/view#files
 .. _GitHub: https://github.com/PocketMine/PocketMine-MP/releases
