@@ -21,7 +21,7 @@ Get the clone URL from the fork and clone it into another directory:
 
 .. code-block:: sh
 
-	$ git clone git clone <YOUR SSH/HTTPS clone URL> PocketMine-MP-Fork.git  # clone the original repository into PocketMine-MP-Fork.git
+	$ git clone <YOUR SSH/HTTPS clone URL> PocketMine-MP-Fork.git  # clone the original repository into PocketMine-MP-Fork.git
 	$ git checkout -b feature  # create and switch to branch feature (it can be any name)
 	$ git branch # shows current branch
 	* feature  # current branch
