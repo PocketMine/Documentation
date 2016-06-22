@@ -109,7 +109,7 @@ Using GitHub
 Getting PHP and the start script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Downlad your flavor PHP binary.
+1. Download your flavor PHP binary.
 
    * Windows `Bintray <Bintray_>`_
    * MacOS `Bintray <PHP-Bintray_>`_
